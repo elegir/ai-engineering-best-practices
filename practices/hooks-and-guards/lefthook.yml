@@ -1,0 +1,33 @@
+# Lefthook: git hooks for humans AND agents (works with every tool, not only Claude Code).
+# Install once per clone: `npx lefthook install` (Node) or `lefthook install`.
+# Replace <<…>> with the stack's commands (see variants/).
+
+pre-commit:
+  parallel: true
+  commands:
+    format-check:
+      glob: "*.{ts,tsx,js,jsx,py,php}"
+      run: <<npx biome format --check {staged_files}>>
+    lint:
+      glob: "*.{ts,tsx,js,jsx,py,php}"
+      run: <<npx biome lint {staged_files}>>
+    typecheck:
+      run: <<npx tsc --noEmit>>
+    unit:
+      run: <<npm test -- --silent>>
+    no-secrets:
+      run: |
+        if git diff --cached --name-only | grep -Eq '(^|/)\.env'; then
+          echo "Refusing to commit a .env file"; exit 1; fi
+
+pre-push:
+  commands:
+    integration:
+      run: <<npm run test:integration>>
+
+commit-msg:
+  commands:
+    conventional:
+      run: |
+        head -n1 {1} | grep -Eq '^(feat|fix|docs|chore|refactor|test|perf|build|ci)(\(.+\))?!?: .{1,72}' \
+          || { echo "Commit message must follow Conventional Commits: type(scope): summary"; exit 1; }

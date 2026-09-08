@@ -1,0 +1,5 @@
+# Keep line endings consistent across Windows (Git Bash / Cowork VM) and Linux
+* text=auto eol=lf
+*.sh text eol=lf
+*.ps1 text eol=crlf
+*.bats text eol=lf

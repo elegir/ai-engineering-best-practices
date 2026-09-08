@@ -1,0 +1,8 @@
+# OS
+Thumbs.db
+.DS_Store
+# editors
+.vscode/
+.idea/
+# local agent notes
+CLAUDE.local.md

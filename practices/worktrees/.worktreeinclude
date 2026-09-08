@@ -1,0 +1,7 @@
+# Files/globs copied from the main checkout into every new worktree.
+# Keep secrets out of git; keep them IN this list so worktrees can run.
+.env
+.env.local
+<<.claude/settings.local.json>>
+<<config/local.json>>
+<<docker-compose.override.yml>>

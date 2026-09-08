@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "project": "<<project-name>>",
+    "health_check": "<<curl -sf http://localhost:3000/health>>",
+    "unit_tests": "<<npm test -- --silent>>",
+    "e2e_smoke": "<<npx playwright test e2e/smoke>>",
+    "rules": "Agents: append to sessions, update task.status/notes, add questions. Humans: edit tasks. Never delete history; archive sessions older than 30 days to docs/progress-archive/."
+  },
+  "current_task": "T-003",
+  "tasks": [
+    {
+      "id": "T-001",
+      "title": "<<Set up docs/ skeleton>>",
+      "spec": "<<specs/context-docs.md>>",
+      "status": "done",
+      "worktree": null,
+      "verification": "docs/README.md lists all files; /context shows CLAUDE.md loaded",
+      "notes": "Completed 2026-09-08."
+    },
+    {
+      "id": "T-002",
+      "title": "<<Add hooks and Lefthook>>",
+      "spec": null,
+      "status": "done",
+      "worktree": null,
+      "verification": "editing .env is blocked; stop hook runs unit tests",
+      "notes": ""
+    },
+    {
+      "id": "T-003",
+      "title": "<<SSO sign-up (US-1)>>",
+      "spec": "<<specs/sso.md#us-1>>",
+      "status": "in_progress",
+      "worktree": "<<../project-sso-signup>>",
+      "verification": "e2e/auth/sso-signup.spec.ts green",
+      "notes": "Step 2 of 4 done: provider config + callback route. Next: account creation + duplicate-email handling.",
+      "blocked_by": null
+    },
+    {
+      "id": "T-004",
+      "title": "<<SSO login (US-2)>>",
+      "spec": "<<specs/sso.md#us-2>>",
+      "status": "todo",
+      "worktree": null,
+      "verification": "e2e/auth/sso-login.spec.ts green",
+      "notes": "",
+      "blocked_by": "T-003"
+    }
+  ],
+  "questions_for_martin": [
+    {
+      "asked": "2026-09-08",
+      "task": "T-003",
+      "question": "<<Should an existing password account be auto-linked to Google on matching email, or require password confirmation first?>>",
+      "answer": null
+    }
+  ],
+  "sessions": [
+    {
+      "date": "2026-09-08",
+      "agent": "<<claude-code / cursor>>",
+      "task": "T-003",
+      "summary": "Implemented provider config and callback route with tests. Health check OK. Left a question about account linking.",
+      "commits": ["<<abc1234>>"]
+    }
+  ]
+}

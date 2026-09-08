@@ -1,0 +1,6 @@
+---
+description: Project entry rules — always read AGENTS.md first
+alwaysApply: true
+---
+
+Read `AGENTS.md` at the repository root before doing anything. It is the single source of instructions for every agent working on this repo; do not rely on any other rules file that contradicts it. Technical conventions are in `docs/` (start at `docs/README.md`).

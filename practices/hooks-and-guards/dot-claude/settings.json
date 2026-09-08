@@ -1,0 +1,55 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git add*)",
+      "Bash(git commit -m*)",
+      "Bash(git worktree list*)",
+      "Bash(<<npm test*>>)",
+      "Bash(<<npm run lint*>>)",
+      "Bash(<<npm run typecheck*>>)",
+      "Bash(<<npx playwright test*>>)",
+      "Bash(ls*)",
+      "Bash(cat *)"
+    ],
+    "deny": [
+      "Bash(git push --force*)",
+      "Bash(git commit --no-verify*)",
+      "Bash(rm -rf*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/protect-files.sh" }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/block-dangerous-bash.sh" }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/post-edit-quality.sh" }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          { "type": "command", "command": "bash .claude/hooks/stop-gate.sh" }
+        ]
+      }
+    ]
+  }
+}
