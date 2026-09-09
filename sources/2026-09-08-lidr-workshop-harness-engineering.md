@@ -9,6 +9,8 @@ sources:
   - https://notes.granola.ai/t/86ac645f-dc67-4dcd-be4c-2487162f6943
   - https://www.lidr.co/blog/que-es-harness-engineering/
   - https://www.lidr.co/blog/como-ahorrar-tokens-en-desarrollo-de-software/
+verdict: adopted
+domains: [all]
 supersedes: null
 superseded-by: null
 ---

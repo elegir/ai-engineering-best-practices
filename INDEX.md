@@ -39,6 +39,14 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | `practices/token-savings/` | 07 | ordered checklist, MCP audit, measurement log | current | 2026-09-08 |
 | `practices/_template/` | — | README template for new practices | — | — |
 
+## Domains (vertical-specific; extend the agnostic layer)
+
+| Folder | Status | Scope | Practices |
+|---|---|---|---|
+| `domains/security/` | draft | Security of agent-driven development: secrets, dependencies, prompt injection via tool output, MCP trust, permission scopes | `domains/security/practices/security-baseline/` (draft: secret scan, MCP trust register, agentic threat model, dependency policy, injection fixture) |
+| `domains/product/` | draft | PRDs → executable user stories, discovery interviews with agents, functional docs for non-technical readers | planned: `prd-to-stories/`, `discovery-interview/`, `functional-docs/` |
+| planned | — | `web-wordpress/`, `data-pipelines/`, `gtm-sales-automation/`, `fintech-payments/`, `mobile/` — see `domains/README.md` | — |
+
 ## Decisions
 
 | # | File | Status |
@@ -51,7 +59,8 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 |---|---|
 | `playbooks/adopt-kb-in-a-repo.md` | Make a repo point to this KB (Windows-safe, no symlinks) |
 | `playbooks/audit-repo-against-kb.md` | Inventory → score → findings → plan → stop for approval |
-| `playbooks/ingest-new-source.md` | Turn raw material into a source entry + principle/practice updates |
+| `playbooks/evaluate-new-material.md` | **The improvement gate**: triage → compare with current → score (evidence, applicability, delta, maturity, cost, reversibility) → adopt / refine / park / reject; rejections recorded |
+| `playbooks/ingest-new-source.md` | Turn raw material into a source entry + principle/practice updates (runs after the gate) |
 | `playbooks/publish-change.md` | Ship one improvement: check → branch → commit → push → merge → delete branch (`scripts/kb-check.sh`, `scripts/kb-publish.sh`, `/publish`) |
 
 ## Templates
@@ -64,7 +73,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 
 ## Skills
 
-`skills/apply-ai-engineering-kb/SKILL.md` — Agent-Skills-format entry point; copy to `~/.claude/skills/` to make it global.
+`skills/README.md` — what skills are and the rules · `skills/apply-ai-engineering-kb/SKILL.md` — Agent-Skills-format entry point; copy to `~/.claude/skills/` to make it global · `practices/prompt-library/commit-skill/SKILL.md` — commit procedure
 
 ## Topic map
 
@@ -84,6 +93,9 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | How this KB is structured | `09-knowledge-base-design.md` | `practices/README.md` | research (all) |
 
 ## Open actions (from sources)
+
+- [ ] Security domain: answer the open questions in `domains/security/README.md` (secret scanner choice, injection eval, MCP trust policy, supply-chain rule) and ingest a dedicated security source → promote to `current`.
+- [ ] Product domain: create `prd-to-stories/`, `discovery-interview/`, `functional-docs/` practices.
 
 - [ ] Workshop homework 1: update each repo's technical context docs → run `audit-repo-against-kb.md` per repo.
 - [ ] Workshop homework 2: draft the SSO open spec (sign-up, login) in one repo → `templates/open-spec-user-story.md`.
