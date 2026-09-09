@@ -17,7 +17,7 @@ Every markdown file except `README.md`, `AGENTS.md`, `CLAUDE.md`, `INDEX.md` and
 ```yaml
 ---
 title: Human-readable title
-type: source | principle | practice | decision | playbook | template
+type: source | principle | practice | decision | playbook | template | domain
 status: current | draft | superseded | accepted | proposed | deprecated
 date: 2026-09-08            # sources & decisions: the event/decision date
 last-reviewed: 2026-09-08   # principles & playbooks: last time a human or agent confirmed it is still right
@@ -25,6 +25,8 @@ tags: [harness-engineering, context-engineering]
 sources:                    # principles/decisions/playbooks: what they were built from
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
   - https://example.com/article
+verdict: adopted            # sources only: adopted | refined | parked | rejected (from playbooks/evaluate-new-material.md)
+domains: [all]              # which verticals this applies to: all, or e.g. [security, product]
 supersedes: null            # path of the file this replaces, if any
 superseded-by: null         # path of the file that replaced this, if any
 ---
@@ -32,7 +34,7 @@ superseded-by: null         # path of the file that replaced this, if any
 
 Status vocabulary:
 
-- **Sources**: always `current` (they are snapshots; they do not go stale, they just get older).
+- **Sources**: always `current` (they are snapshots; they do not go stale, they just get older). Their `verdict` field records the gate outcome; a `## Gate` section holds the scores and reasoning.
 - **Principles / playbooks**: `draft` (not yet trusted), `current` (trusted), `superseded` (kept for history; read `superseded-by`).
 - **Decisions**: `proposed`, `accepted`, `deprecated` (with `superseded-by`).
 
@@ -47,7 +49,8 @@ Long and digested. The point is that someone (or an agent) who was not there can
 5. **What is contested / trade-offs** — where reasonable people disagree, or where the speaker's interest may bias the advice (e.g. a vendor recommending its own product).
 6. **Implications for Martin's repos** — concrete, repo-by-repo if possible.
 7. **Actions taken / to take** — checklist; link to the decision or principle files that were created or changed because of this source.
-8. **Raw notes / transcript excerpts** — optional appendix; verbatim material that supports the digest.
+8. **Gate** — kind, concrete delta vs current, the six scores, verdict, files to change (see `playbooks/evaluate-new-material.md`).
+9. **Raw notes / transcript excerpts** — optional appendix; verbatim material that supports the digest.
 
 ## 4. Structure of a principle
 

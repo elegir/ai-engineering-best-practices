@@ -4,7 +4,7 @@ You are reading Martin Weidemann's **AI Engineering Knowledge Base**. It is a re
 
 1. **Consult** — answer "what is the current best practice for X?" by reading `principles/` first (current, distilled), then `sources/` (dated evidence) only if you need the reasoning or the original wording.
 2. **Apply** — evaluate another repository against these practices and propose (not silently execute) a plan. Use `playbooks/audit-repo-against-kb.md`; each gap maps to a folder in `practices/` with ready-to-copy files, an "applies when / does not apply when" test, and verification steps.
-3. **Ingest** — turn new raw material (a transcript, an article, notes) into a dated source entry and update the principles. Use `playbooks/ingest-new-source.md`.
+3. **Ingest** — turn new raw material (a transcript, an article, notes) into a dated source entry and update principles/practices. **First run the gate** `playbooks/evaluate-new-material.md` (is it better? does it add anything? is it dominated by a known alternative? score it; verdict adopt / refine / park / reject), then `playbooks/ingest-new-source.md`. Rejections are recorded as sources too.
 
 ## Where things are
 
@@ -15,6 +15,8 @@ You are reading Martin Weidemann's **AI Engineering Knowledge Base**. It is a re
 - `decisions/NNNN-slug.md` — decisions about how Martin's repos work. Respect any with status `accepted`.
 - `playbooks/` — procedures. Follow them literally. `ingest-new-source.md` (add knowledge) and `publish-change.md` (ship it) are the two this folder runs on itself; `adopt-kb-in-a-repo.md` and `audit-repo-against-kb.md` are for agents in *other* repos.
 - `scripts/` — `kb-check.sh` (the KB's own verification) and `kb-publish.sh` (branch/commit/push/merge/cleanup).
+- `domains/` — vertical-specific knowledge (security, product, web-wordpress, data-pipelines, gtm, fintech, mobile…) that *extends* the agnostic layer; each has its own `practices/`. Start at `domains/README.md`.
+- `skills/` — agent-loadable procedures (Agent Skills standard); see `skills/README.md`.
 - `templates/` — copy these when creating new entries.
 - `CONVENTIONS.md` — formatting rules for anything you write here.
 
@@ -27,6 +29,7 @@ You are reading Martin Weidemann's **AI Engineering Knowledge Base**. It is a re
 - When a new source contradicts a principle, do **not** overwrite the old text silently. Add a "Change log" line to the principle explaining what changed, why, and which source triggered it. If the old advice is fully obsolete, set its status to `superseded` and point to the replacement.
 - Update `INDEX.md` in the same change.
 - Never delete files. Mark them superseded.
+- Nothing enters `principles/` or `practices/` without a gate verdict written in its source entry (`playbooks/evaluate-new-material.md`). Anything that removes a sensor (tests, hooks, review) to gain speed is rejected by default.
 - **Publish every improvement through `playbooks/publish-change.md`**: `bash scripts/kb-check.sh` then `bash scripts/kb-publish.sh <slug> "<message>"` (branch → commit → push → merge to `main` → branch deleted). Never commit by hand on `main`; never `--no-verify`.
 
 ## Rules when applying this knowledge to another repo

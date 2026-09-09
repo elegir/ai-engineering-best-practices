@@ -19,6 +19,8 @@ superseded-by: null
 
 ## Steps
 
+0. **Gate first.** Run `playbooks/evaluate-new-material.md`. Only `adopted` and `refined` verdicts continue past step 2; `parked` and `rejected` get the source entry, an `INDEX.md` line, and a publish — nothing else changes.
+
 1. **Capture everything first.** Save raw material verbatim under `sources/raw/YYYY-MM-DD-slug/` (transcripts, page text, exported notes). For YouTube videos, extract transcripts (Apify `johnvc/YoutubeTranscripts` or similar) and save one file per video with a header noting title, channel, upload date, duration, language, extraction date. For web pages, save the full text. Note anything that could **not** be captured (videos without captions, images, PDFs) so the gap is visible.
 
 2. **Write the source entry** from `templates/source-entry.md`, named `sources/YYYY-MM-DD-slug.md` with the *event* date. Follow `CONVENTIONS.md` §3: context; one-paragraph summary; detailed digest section by section in prose (explain terms; keep numbers, tool names, exact commands); claims worth checking; what is contested (including vendor interest); implications for Martin's repos, by repo; actions; raw-notes appendix pointing to `sources/raw/`.
