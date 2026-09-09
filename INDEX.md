@@ -37,15 +37,8 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | `practices/spec-driven/` | 04 | `specs/README.md`, `/plan-ticket`, `/develop-task`, `constitution.md`, OpenSpec quickstart | current | 2026-09-08 |
 | `practices/prompt-library/` | 01, 04 | meta-prompt, ask-the-expert, readme-by-index, openapi, standards-doc, `/audit`, commit skill, `/lesson` | current | 2026-09-08 |
 | `practices/token-savings/` | 07 | ordered checklist, MCP audit, measurement log | current | 2026-09-08 |
+| `practices/security-baseline/` | 02, 05 | secret-scan hook, MCP trust register, agentic threat model, dependency policy, injection fixture | draft | 2026-09-09 |
 | `practices/_template/` | — | README template for new practices | — | — |
-
-## Domains (vertical-specific; extend the agnostic layer)
-
-| Folder | Status | Scope | Practices |
-|---|---|---|---|
-| `domains/security/` | draft | Security of agent-driven development: secrets, dependencies, prompt injection via tool output, MCP trust, permission scopes | `domains/security/practices/security-baseline/` (draft: secret scan, MCP trust register, agentic threat model, dependency policy, injection fixture) |
-| `domains/product/` | draft | PRDs → executable user stories, discovery interviews with agents, functional docs for non-technical readers | planned: `prd-to-stories/`, `discovery-interview/`, `functional-docs/` |
-| planned | — | `web-wordpress/`, `data-pipelines/`, `gtm-sales-automation/`, `fintech-payments/`, `mobile/` — see `domains/README.md` | — |
 
 ## Decisions
 
@@ -85,6 +78,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | CLAUDE.md / AGENTS.md design, rules, imports | `03-agent-instruction-files.md` | `agent-entry-file/` | research §3.2, §3.7; workshop §3.2 |
 | OpenSpec / Spec-Kit / Superpowers / Spec-Boot; ask-the-expert; plan mode | `04-spec-driven-development.md` | `spec-driven/` | workshop §3.4, videos C/D |
 | Tests, e2e, Playwright, Stop hooks, evals | `05-verification-loops.md` | `verification/`, `hooks-and-guards/` | workshop §3.6, video D; research §3.2 |
+| Security: secrets, dependencies, prompt injection, MCP trust | `02-harness-engineering.md` | `security-baseline/` (draft) | research §3.2; workshop §3.2, videos C/D |
 | Worktrees, parallel sessions, subagents | `06-parallel-agents-and-worktrees.md` | `worktrees/` | workshop §3.4 |
 | rtk, codegraph, caveman, ponytail, Headroom, routing | `07-token-economy.md` | `token-savings/` | workshop §3.5 |
 | Opus/Sonnet/Gemini/Codex by phase | `08-model-selection.md` | `context-docs-skeleton/docs/workflow.md` §3 | workshop §3.2, video C |
@@ -94,8 +88,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 
 ## Open actions (from sources)
 
-- [ ] Security domain: answer the open questions in `domains/security/README.md` (secret scanner choice, injection eval, MCP trust policy, supply-chain rule) and ingest a dedicated security source → promote to `current`.
-- [ ] Product domain: create `prd-to-stories/`, `discovery-interview/`, `functional-docs/` practices.
+- [ ] `practices/security-baseline/`: answer its open questions (secret scanner, injection eval, MCP trust policy, supply-chain rule) and ingest a dedicated security source → promote to `current`.
 
 - [ ] Workshop homework 1: update each repo's technical context docs → run `audit-repo-against-kb.md` per repo.
 - [ ] Workshop homework 2: draft the SSO open spec (sign-up, login) in one repo → `templates/open-spec-user-story.md`.

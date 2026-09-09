@@ -10,7 +10,6 @@ sources:
   - https://www.lidr.co/blog/que-es-harness-engineering/
   - https://www.lidr.co/blog/como-ahorrar-tokens-en-desarrollo-de-software/
 verdict: adopted
-domains: [all]
 supersedes: null
 superseded-by: null
 ---

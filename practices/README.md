@@ -23,6 +23,7 @@ Never copy blindly. Every README has an "Adapt" section listing what must change
 | `spec-driven/` | Work goes from a one-line request straight to code; no reviewable plan | `04-spec-driven-development.md` | S–M |
 | `prompt-library/` | The same context-generating prompts get reinvented; quality depends on who prompts | `01-context-engineering.md`, `04-spec-driven-development.md` | S |
 | `token-savings/` | Weekly token limits hit; tool output and repo exploration burn context | `07-token-economy.md` | S |
+| `security-baseline/` (draft) | Agent can leak secrets, add unsafe dependencies, follow injected instructions, or reach prod through over-broad tools | `02-harness-engineering.md`, `05-verification-loops.md` | S–M |
 
 Recommended order for a repo with nothing: `verification` (can the agent even run tests?) → `context-docs-skeleton` → `agent-entry-file` → `hooks-and-guards` → `session-state` → `prompt-library` → `spec-driven` → `worktrees` → `token-savings`. The audit playbook applies this order.
 

@@ -17,7 +17,7 @@ Every markdown file except `README.md`, `AGENTS.md`, `CLAUDE.md`, `INDEX.md` and
 ```yaml
 ---
 title: Human-readable title
-type: source | principle | practice | decision | playbook | template | domain
+type: source | principle | practice | decision | playbook | template
 status: current | draft | superseded | accepted | proposed | deprecated
 date: 2026-09-08            # sources & decisions: the event/decision date
 last-reviewed: 2026-09-08   # principles & playbooks: last time a human or agent confirmed it is still right
@@ -26,7 +26,6 @@ sources:                    # principles/decisions/playbooks: what they were bui
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
   - https://example.com/article
 verdict: adopted            # sources only: adopted | refined | parked | rejected (from playbooks/evaluate-new-material.md)
-domains: [all]              # which verticals this applies to: all, or e.g. [security, product]
 supersedes: null            # path of the file this replaces, if any
 superseded-by: null         # path of the file that replaced this, if any
 ---

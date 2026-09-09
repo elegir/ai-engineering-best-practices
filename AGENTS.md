@@ -10,12 +10,11 @@ You are reading Martin Weidemann's **AI Engineering Knowledge Base**. It is a re
 
 - `INDEX.md` — chronological list of every source entry and a topic → file map. Start here for orientation.
 - `principles/` — one file per topic: the *what* and *why*. Each has frontmatter with `status` (`current` | `draft` | `superseded`) and `last-reviewed`. **Only trust files whose status is `current`.**
-- `practices/` — one folder per practice: the *how*, with copyable files (docs skeletons, `AGENTS.md` model, hook scripts, `PROGRESS.json`, worktree scripts, smoke tests per app type, spec commands, prompts, token checklist) and stack variants. Start at `practices/README.md`. Copy and adapt; never copy blindly.
+- `practices/` — one folder per practice: the *how*, with copyable files (docs skeletons, `AGENTS.md` model, hook scripts, `PROGRESS.json`, worktree scripts, smoke tests per app type, spec commands, prompts, token checklist, security baseline) and stack variants. Start at `practices/README.md`. Copy and adapt; never copy blindly.
 - `sources/YYYY-MM-DD-slug.md` — immutable digests. Never edit the body of an existing source; add a new one.
 - `decisions/NNNN-slug.md` — decisions about how Martin's repos work. Respect any with status `accepted`.
 - `playbooks/` — procedures. Follow them literally. `ingest-new-source.md` (add knowledge) and `publish-change.md` (ship it) are the two this folder runs on itself; `adopt-kb-in-a-repo.md` and `audit-repo-against-kb.md` are for agents in *other* repos.
 - `scripts/` — `kb-check.sh` (the KB's own verification) and `kb-publish.sh` (branch/commit/push/merge/cleanup).
-- `domains/` — vertical-specific knowledge (security, product, web-wordpress, data-pipelines, gtm, fintech, mobile…) that *extends* the agnostic layer; each has its own `practices/`. Start at `domains/README.md`.
 - `skills/` — agent-loadable procedures (Agent Skills standard); see `skills/README.md`.
 - `templates/` — copy these when creating new entries.
 - `CONVENTIONS.md` — formatting rules for anything you write here.
@@ -53,6 +52,7 @@ You are reading Martin Weidemann's **AI Engineering Knowledge Base**. It is a re
 | make agents verify their own work (tests, hooks, e2e) | `principles/05-verification-loops.md` | `practices/verification/`, `practices/hooks-and-guards/` |
 | run several agents in parallel safely (worktrees) | `principles/06-parallel-agents-and-worktrees.md` | `practices/worktrees/` |
 | spend fewer tokens | `principles/07-token-economy.md` | `practices/token-savings/` |
+| secure an agent-driven repo (secrets, dependencies, injection, MCP trust) | `principles/02-harness-engineering.md` | `practices/security-baseline/` (draft) |
 | pick a model for a task | `principles/08-model-selection.md` | (policy table in `practices/context-docs-skeleton/docs/workflow.md` §3) |
 | reuse the high-leverage prompts (meta-prompt, ask-the-expert, audit, lesson→rule) | `principles/01-context-engineering.md`, `principles/04-spec-driven-development.md` | `practices/prompt-library/` |
 | structure a knowledge base like this one | `principles/09-knowledge-base-design.md` | — |

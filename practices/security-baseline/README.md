@@ -4,7 +4,6 @@ type: practice
 status: draft
 date: 2026-09-09
 last-reviewed: 2026-09-09
-domains: [security]
 tags: [security, secrets, dependencies, mcp, threat-model]
 principle: principles/02-harness-engineering.md
 sources:
@@ -20,7 +19,7 @@ superseded-by: null
 
 Agents with shell, file, git and MCP access can leak secrets, add unsafe dependencies, follow instructions hidden in fetched content, or run destructive commands — and none of that shows up in a unit test. This practice adds the minimum mechanical defenses on top of `practices/hooks-and-guards/` and a written trust policy for tools.
 
-**Status: draft.** The files below are a first cut from the two sources already in the KB; the open questions in `domains/security/README.md` must be answered (and a dedicated security source ingested) before this becomes `current`.
+**Status: draft.** The files below are a first cut from the two sources already in the KB. Open questions before this becomes `current`: which secret scanner to standardize on (gitleaks vs trufflehog vs GitHub push protection) and where it runs; a concrete prompt-injection eval; an MCP trust policy (read-only by default, documented blast radius); a mechanical rule for adding dependencies; what a security review of an agent-written PR checks. A dedicated security source must be ingested first.
 
 ## Applies when
 
