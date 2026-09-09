@@ -29,7 +29,7 @@ Regardless of the verdict, save the raw material under `sources/raw/YYYY-MM-DD-s
 | **Tool** | rtk, OpenSpec, Playwright MCP | `practices/` as a variant or option — never as *the* answer |
 | **Number / benchmark / claim** | "Faros: incidents per PR +243%" | cited inside a source; enters a principle only as attributed evidence |
 | **Decision for Martin's repos** | "all repos use worktrees per ticket" | `decisions/` |
-| **Vertical-specific knowledge** | product-management specs, fintech compliance, WordPress fleet ops | `domains/<vertical>/` |
+| **Stack- or domain-specific mechanism** | a WordPress-only hook, a payments-only audit step | `practices/<name>/variants/` — the KB stays agnostic; specifics live as variants of an agnostic practice, never as a separate vertical |
 | **Vendor pitch / marketing** | "use our framework" | source entry only, with the bias noted |
 
 ## Step 2 — Compare against what exists

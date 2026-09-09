@@ -9,7 +9,7 @@ fail=0
 say() { echo "  - $*"; fail=1; }
 
 echo "[1/4] frontmatter"
-for f in principles/*.md decisions/*.md playbooks/*.md sources/*.md practices/*/README.md domains/*/README.md domains/*/practices/*/README.md; do
+for f in principles/*.md decisions/*.md playbooks/*.md sources/*.md practices/*/README.md; do
   [ -f "$f" ] || continue
   head -n1 "$f" | grep -q '^---$' || say "$f: missing frontmatter"
   grep -Eq '^status: *(current|draft|superseded|accepted|proposed|deprecated)' "$f" || say "$f: missing/invalid status"
@@ -21,8 +21,8 @@ echo "[2/4] INDEX.md coverage"
 for f in principles/*.md decisions/*.md playbooks/*.md sources/*.md; do
   grep -Fq "$f" INDEX.md || say "$f not listed in INDEX.md"
 done
-for d in practices/*/ domains/*/; do
-  case "$d" in practices/_template/|domains/_template/) continue;; esac
+for d in practices/*/; do
+  [ "$d" = "practices/_template/" ] && continue
   grep -Fq "$d" INDEX.md || say "$d not listed in INDEX.md"
 done
 

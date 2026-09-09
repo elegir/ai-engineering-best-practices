@@ -14,7 +14,6 @@ sources:
   - https://code.claude.com/docs/en/memory
   - https://www.lidr.co/blog/que-es-harness-engineering/
 verdict: adopted
-domains: [all]
 supersedes: null
 superseded-by: null
 ---
