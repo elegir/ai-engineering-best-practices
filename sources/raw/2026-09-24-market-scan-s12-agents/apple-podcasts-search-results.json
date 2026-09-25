@@ -1,0 +1,282 @@
+{
+ "scanned": "2026-09-24",
+ "actor": "automation-lab/podcast-scraper",
+ "run": "6wTby4sxl4JBYGKih",
+ "queries": [
+  "AI agents engineering",
+  "building AI agents",
+  "AI engineer podcast"
+ ],
+ "results": [
+  {
+   "podcastName": "Chain of Thought | AI Agents, Infrastructure & Engineering",
+   "artistName": "Conor Bronsdon",
+   "episodeCount": 76,
+   "releaseDate": "2026-09-22T11:00:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/chain-of-thought-ai-agents-infrastructure-engineering/id1776879655?uo=4",
+   "feedUrl": "https://feeds.transistor.fm/chain-of-thought",
+   "searchTerm": "AI agents engineering"
+  },
+  {
+   "podcastName": "LambdaCast - Tech & AI: Generative AI, Agents, LLMs, Prompt Engineering, Machine Learning",
+   "artistName": "Marcos Nat\u00e3 Santos",
+   "episodeCount": 14,
+   "releaseDate": "2024-02-29T12:03:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/lambdacast-tech-ai-generative-ai-agents-llms-prompt/id1714709078?uo=4",
+   "feedUrl": "https://anchor.fm/s/eb9cc750/podcast/rss",
+   "searchTerm": "AI agents engineering"
+  },
+  {
+   "podcastName": "Agents and Engineers | Agentic AI, Software & Agentic Engineering",
+   "artistName": "Dan Gerlanc",
+   "episodeCount": 18,
+   "releaseDate": "2026-09-22T13:00:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/agents-and-engineers-agentic-ai-software-agentic/id1895419697?uo=4",
+   "feedUrl": "https://feeds.transistor.fm/agentsandengineers",
+   "searchTerm": "AI agents engineering"
+  },
+  {
+   "podcastName": "Agentic DevOps : AI Engineering for Infrastructure",
+   "artistName": "Bret Fisher",
+   "episodeCount": 14,
+   "releaseDate": "2026-08-21T05:33:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/agentic-devops-ai-engineering-for-infrastructure/id1817231147?uo=4",
+   "feedUrl": "https://feeds.transistor.fm/agentic-devops",
+   "searchTerm": "AI agents engineering"
+  },
+  {
+   "podcastName": "Arky | AI Agent Deep Dive",
+   "artistName": "Arky - AI Engineering & AI Agent Deep Dive",
+   "episodeCount": 4,
+   "releaseDate": "2026-08-28T16:00:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/arky-ai-agent-deep-dive/id6804475909?uo=4",
+   "feedUrl": "https://pub-535dd5142aed4fb1b5151fba8fcd075f.r2.dev/rss.xml",
+   "searchTerm": "AI agents engineering"
+  },
+  {
+   "podcastName": "AI Worth Using",
+   "artistName": "The Show for Agentic Engineers",
+   "episodeCount": 3,
+   "releaseDate": "2026-08-31T07:29:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/ai-worth-using/id6805129805?uo=4",
+   "feedUrl": "https://rss2.flightcast.com/wicxrhmdzmz8fve1y5nndvdz.xml",
+   "searchTerm": "AI agents engineering"
+  },
+  {
+   "podcastName": "Super Prompt: Building in the Era of AI Agents",
+   "artistName": "Tony Wan",
+   "episodeCount": 30,
+   "releaseDate": "2025-12-03T12:00:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/super-prompt-building-in-the-era-of-ai-agents/id1660801320?uo=4",
+   "feedUrl": "https://rss.buzzsprout.com/1850523.rss",
+   "searchTerm": "building AI agents"
+  },
+  {
+   "podcastName": "Solo Zero: Building a Company on AI Agents",
+   "artistName": "Solo Zero",
+   "episodeCount": 1,
+   "releaseDate": "2026-08-21T18:42:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/solo-zero-building-a-company-on-ai-agents/id6804874933?uo=4",
+   "feedUrl": "https://feed.gosolozero.com/feed.xml",
+   "searchTerm": "building AI agents"
+  },
+  {
+   "podcastName": "The Agentic Enterprise: a practitioner's guide to building agentic systems",
+   "artistName": "Agentic AI Practitioner",
+   "episodeCount": 5,
+   "releaseDate": "2026-09-22T17:29:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/the-agentic-enterprise-a-practitioners-guide/id6813299554?uo=4",
+   "feedUrl": "https://anchor.fm/s/117696244/podcast/rss",
+   "searchTerm": "building AI agents"
+  },
+  {
+   "podcastName": "AI Builds It: Easy Coding Tools",
+   "artistName": "AIAgentStore.ai",
+   "episodeCount": 20,
+   "releaseDate": "2026-09-22T14:00:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/ai-builds-it-easy-coding-tools/id1895238721?uo=4",
+   "feedUrl": "https://rss.buzzsprout.com/2612673.rss",
+   "searchTerm": "building AI agents"
+  },
+  {
+   "podcastName": "AI Explored",
+   "artistName": "Michael Stelzner, Social Media Examiner\u2014AI marketing",
+   "episodeCount": 134,
+   "releaseDate": "2026-09-22T09:30:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/ai-explored/id1740971373?uo=4",
+   "feedUrl": "https://rss.art19.com/ai-explored",
+   "searchTerm": "building AI agents"
+  },
+  {
+   "podcastName": "The Startup Ideas Podcast",
+   "artistName": "Greg Isenberg",
+   "episodeCount": 380,
+   "releaseDate": "2026-09-24T18:45:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/the-startup-ideas-podcast/id1593424985?uo=4",
+   "feedUrl": "https://rss2.flightcast.com/ordbkg8yojpehffas7vr7qpc.xml",
+   "searchTerm": "building AI agents"
+  },
+  {
+   "podcastName": "AI Agents Podcast",
+   "artistName": "AI Agents Podcast",
+   "episodeCount": 141,
+   "releaseDate": "2026-06-12T01:03:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/ai-agents-podcast/id1783076120?uo=4",
+   "feedUrl": "https://anchor.fm/s/fe2628e4/podcast/rss",
+   "searchTerm": "building AI agents"
+  },
+  {
+   "podcastName": "Early Adoptr: Simplifying AI For Founders & Small Businesses",
+   "artistName": "Early Adoptr",
+   "episodeCount": 72,
+   "releaseDate": "2026-09-23T21:18:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/early-adoptr-simplifying-ai-for-founders-small-businesses/id1815753818?uo=4",
+   "feedUrl": "https://feeds.acast.com/public/shows/68a595f43b6c865497e10d7f",
+   "searchTerm": "building AI agents"
+  },
+  {
+   "podcastName": "Behind the Craft",
+   "artistName": "Peter Yang",
+   "episodeCount": 125,
+   "releaseDate": "2026-09-13T13:00:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/behind-the-craft/id1736359687?uo=4",
+   "feedUrl": "https://anchor.fm/s/f38497cc/podcast/rss",
+   "searchTerm": "building AI agents"
+  },
+  {
+   "podcastName": "Latent Space: The AI Engineer Podcast",
+   "artistName": "Latent.Space",
+   "episodeCount": 226,
+   "releaseDate": "2026-09-22T21:07:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/latent-space-the-ai-engineer-podcast/id1674008350?uo=4",
+   "feedUrl": "https://api.substack.com/feed/podcast/1084089.rss",
+   "searchTerm": "AI engineer podcast"
+  },
+  {
+   "podcastName": "The AI Engineer Podcast",
+   "artistName": "The AI Engineer Podcast",
+   "episodeCount": 590,
+   "releaseDate": "2026-09-24T23:52:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/the-ai-engineer-podcast/id1722322146?uo=4",
+   "feedUrl": "https://rss.art19.com/the-ai-engineer-podcast",
+   "searchTerm": "AI engineer podcast"
+  },
+  {
+   "podcastName": "Michael Lorenz, M.Sc. Energy & Environment Technology (KIT) Podcast",
+   "artistName": "Strategic AI Engineer & Crunchbase Global Top 125 \ud83c\udfc6",
+   "episodeCount": 6,
+   "releaseDate": "2025-05-17T10:26:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/michael-lorenz-m-sc-energy-environment-technology-kit/id1812199274?uo=4",
+   "feedUrl": "https://api.substack.com/feed/podcast/4336081.rss",
+   "searchTerm": "AI engineer podcast"
+  },
+  {
+   "podcastName": "Agentic DevOps : AI Engineering for Infrastructure",
+   "artistName": "Bret Fisher",
+   "episodeCount": 14,
+   "releaseDate": "2026-08-21T05:33:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/agentic-devops-ai-engineering-for-infrastructure/id1817231147?uo=4",
+   "feedUrl": "https://feeds.transistor.fm/agentic-devops",
+   "searchTerm": "AI engineer podcast"
+  },
+  {
+   "podcastName": "Unboxing AI: The Podcast for Computer Vision Engineers",
+   "artistName": "Unboxing AI",
+   "episodeCount": 9,
+   "releaseDate": "2023-04-16T09:09:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/unboxing-ai-the-podcast-for-computer-vision-engineers/id1612696266?uo=4",
+   "feedUrl": "https://anchor.fm/s/85239a58/podcast/rss",
+   "searchTerm": "AI engineer podcast"
+  },
+  {
+   "podcastName": "Answer Engine Optimization (AEO): The AI Search Podcast",
+   "artistName": "AEO Engine",
+   "episodeCount": 196,
+   "releaseDate": "2026-09-14T01:30:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/answer-engine-optimization-aeo-the-ai-search-podcast/id1884409947?uo=4",
+   "feedUrl": "https://feeds.transistor.fm/aeo-engine-ai-search-show",
+   "searchTerm": "AI engineer podcast"
+  },
+  {
+   "podcastName": "Answer Engine Optimization (AEO): The AI Search Podcast",
+   "artistName": "AEO Engine",
+   "episodeCount": 196,
+   "releaseDate": "2026-09-12T00:41:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/answer-engine-optimization-aeo-the-ai-search-podcast/id1895002837?uo=4",
+   "feedUrl": "https://feeds.transistor.fm/aeo-engine-ai-search-show",
+   "searchTerm": "AI engineer podcast"
+  },
+  {
+   "podcastName": "The Engineered-Mind Podcast | Engineering, AI & Technology",
+   "artistName": "Jousef Murad",
+   "episodeCount": 170,
+   "releaseDate": "2026-04-01T07:10:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/the-engineered-mind-podcast-engineering-ai-technology/id1510183304?uo=4",
+   "feedUrl": "https://anchor.fm/s/1c0b1cbc/podcast/rss",
+   "searchTerm": "AI engineer podcast"
+  },
+  {
+   "podcastName": "AI Engineering Podcast",
+   "artistName": "Tobias Macey",
+   "episodeCount": 80,
+   "releaseDate": "2026-02-25T00:09:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/ai-engineering-podcast/id1626358243?uo=4",
+   "feedUrl": "https://serve.podhome.fm/rss/c9abdd38-a5dc-5eb2-96fd-f833f93208a7",
+   "searchTerm": "AI engineer podcast"
+  },
+  {
+   "podcastName": "AI-First Engineering Podcast",
+   "artistName": "TestGrid",
+   "episodeCount": 6,
+   "releaseDate": "2026-09-16T08:30:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/ai-first-engineering-podcast/id6800014174?uo=4",
+   "feedUrl": "https://api.riverside.com/hosting/RAxVwO7j.rss",
+   "searchTerm": "AI engineer podcast"
+  },
+  {
+   "podcastName": "Lethonium - Der AI Podcast f\u00fcr Software Engineers",
+   "artistName": "Thore und Leon",
+   "episodeCount": 25,
+   "releaseDate": "2026-09-02T05:32:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/lethonium-der-ai-podcast-f%C3%BCr-software-engineers/id1878105483?uo=4",
+   "feedUrl": "https://anchor.fm/s/10dc294e0/podcast/rss",
+   "searchTerm": "AI engineer podcast"
+  },
+  {
+   "podcastName": "Authority Hacker Podcast \u2013 AI & Automation for Small biz & Marketers",
+   "artistName": "Gael Breton & Mark Webster - Full Stack Online Marketers",
+   "episodeCount": 415,
+   "releaseDate": "2026-09-11T19:00:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/authority-hacker-podcast-ai-automation-for-small-biz/id1073349789?uo=4",
+   "feedUrl": "https://rss.buzzsprout.com/1885879.rss",
+   "searchTerm": "AI engineer podcast"
+  },
+  {
+   "podcastName": "AI Giants: A Live Interview Podcast for Engineering Leaders",
+   "artistName": "Jaime Jorge",
+   "episodeCount": 9,
+   "releaseDate": "2026-01-20T15:00:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/ai-giants-a-live-interview-podcast-for-engineering-leaders/id1869321821?uo=4",
+   "feedUrl": "https://anchor.fm/s/10dac01f8/podcast/rss",
+   "searchTerm": "AI engineer podcast"
+  },
+  {
+   "podcastName": "AI Engineering Podcast",
+   "artistName": "Christophe Blefari & Julien Hurault",
+   "episodeCount": 16,
+   "releaseDate": "2026-05-26T19:26:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/ai-engineering-podcast/id1877957479?uo=4",
+   "feedUrl": "https://pub-4ff2e85593bd4bee9df83cd32bec10ca.r2.dev/feed/podcast.xml",
+   "searchTerm": "AI engineer podcast"
+  },
+  {
+   "podcastName": "The Confessions Of an AI Engineer",
+   "artistName": "Siddhartha Samant",
+   "episodeCount": 1,
+   "releaseDate": "2023-07-21T02:28:00Z",
+   "url": "https://podcasts.apple.com/us/podcast/the-confessions-of-an-ai-engineer/id1698627889?uo=4",
+   "feedUrl": "https://media.rss.com/confessionsofanaiengineer/feed.xml",
+   "searchTerm": "AI engineer podcast"
+  }
+ ]
+}

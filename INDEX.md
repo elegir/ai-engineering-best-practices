@@ -8,6 +8,9 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 |---|---|---|---|
 | 2026-09-08 | `sources/2026-09-08-lidr-workshop-harness-engineering.md` — LIDR workshop "De Developer a AI Champion: Harness Engineering" (Álvaro Moya) + 5 embedded videos | workshop | `sources/raw/2026-09-08-lidr-workshop/` (Notion full text; 5 YouTube transcripts) |
 | 2026-09-08 | `sources/2026-09-08-how-teams-structure-agent-knowledge.md` — web survey: how pros structure knowledge for agents (OpenAI, practitioner guide, awesome-harness-engineering, SIGPLAN, docs stack, Agent Skills, Claude Code memory docs, LIDR article) | research | — |
+| 2026-09-24 | `sources/2026-09-24-market-scan-s12-intro-to-agents.md` — market scan for LIDR session 12 "Introduction to AI agents": 105 YouTube results + 30 podcast shows considered, 15 items selected and transcribed (Anthropic, AI Engineer, Stanford, Google Cloud, Cursor, IBM, Latent Space). Log only; digest pending | market scan | `sources/raw/2026-09-24-market-scan-s12-agents/` (15 transcripts, 2 search-result JSON) |
+| (living) | `sources/media-registry.json` + `sources/media-registry.md` — every video/podcast episode ever considered, with status (transcribed / digested / applied / candidate / discarded) and reason; filtered by `scripts/scan-filter.py` | registry | — |
+| (living) | `sources/scan-log.md` — one row per course module: stage reached (mapped → catalogued → scanned → transcribed → digested → principled → validated) | tracking | — |
 
 ## Principles (current answers by topic)
 
@@ -44,6 +47,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | # | File | Status |
 |---|---|---|
 | 0001 | `decisions/0001-knowledge-base-structure.md` — single local KB consulted by pointer | accepted |
+| 0002 | `decisions/0002-market-scan-protocol-and-media-registry.md` — fixed market-scan protocol; registry of every video/podcast considered; new scans only look at new items | accepted |
 
 ## Playbooks
 
@@ -53,6 +57,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | `playbooks/audit-repo-against-kb.md` | Inventory → score → findings → plan → stop for approval |
 | `playbooks/ingest-new-source.md` | Turn raw material into a source entry + principle/practice updates |
 | `playbooks/publish-change.md` | Ship one improvement: check → branch → commit → push → merge → delete branch (`scripts/kb-check.sh`, `scripts/kb-publish.sh`, `/publish`) |
+| `playbooks/scan-market-for-module.md` | For one course module: search YouTube + podcasts with Apify, select by authority, transcribe, log what was considered/selected/discarded, update `sources/scan-log.md` |
 
 ## Templates
 
@@ -60,7 +65,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 
 ## Scripts
 
-`scripts/kb-check.sh` — self-verification (frontmatter, index coverage, links, placeholders) · `scripts/kb-publish.sh` — branch/commit/push/merge/cleanup
+`scripts/kb-check.sh` — self-verification (frontmatter, index coverage, links, placeholders) · `scripts/kb-publish.sh` — branch/commit/push/merge/cleanup · `scripts/scan-filter.py` — drop already-registered media from a new scan result
 
 ## Skills
 
@@ -82,6 +87,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | MCP servers (Context7, Playwright, Sentry, Snyk, Jira/Notion, Figma) | `02-harness-engineering.md`, `01-context-engineering.md` | `token-savings/mcp-audit.md` | workshop §3.2, videos C/E |
 | Prompt techniques (meta-prompt, ask-the-expert, one-shot index, audit, lesson→rule) | `04-spec-driven-development.md`, `01-context-engineering.md` | `prompt-library/` | workshop §3.2, videos C/D |
 | How this KB is structured | `09-knowledge-base-design.md` | `practices/README.md` | research (all) |
+| Agents: anatomy, patterns, tool use / function calling, MCP as tool transport, agentic RAG | (pending: 21-agent-design-and-tools.md) | (pending: agent-patterns/) | market scan s12 (15 transcripts) |
 
 ## Open actions (from sources)
 
