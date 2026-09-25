@@ -5,7 +5,7 @@ You are reading Martin Weidemann's **AI Engineering Knowledge Base**. It is a re
 1. **Consult** — answer "what is the current best practice for X?" by reading `principles/` first (current, distilled), then `sources/` (dated evidence) only if you need the reasoning or the original wording.
 2. **Apply** — evaluate another repository against these practices and propose (not silently execute) a plan. Use `playbooks/audit-repo-against-kb.md`; each gap maps to a folder in `practices/` with ready-to-copy files, an "applies when / does not apply when" test, and verification steps.
 3. **Ingest** — turn new raw material (a transcript, an article, notes) into a dated source entry and update the principles. Use `playbooks/ingest-new-source.md`.
-4. **Scan** — for one topic or course module, find the market's most authoritative videos and podcasts, select, transcribe and log them. Use `playbooks/scan-market-for-module.md`; progress per module is tracked in `sources/scan-log.md`.
+4. **Scan** — for one topic or course module, find the market's most authoritative videos and podcasts, select, transcribe and log them. Use `playbooks/scan-market-for-module.md` (the protocol; decision `decisions/0002-market-scan-protocol-and-media-registry.md`); progress per module is tracked in `sources/scan-log.md`, and every item ever considered — including discarded ones — is in `sources/media-registry.json`. Never re-examine a registered item; run `scripts/scan-filter.py` on every new search result.
 
 ## Where things are
 
