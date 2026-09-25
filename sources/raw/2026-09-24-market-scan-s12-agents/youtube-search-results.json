@@ -1,0 +1,1071 @@
+{
+ "scanned": "2026-09-24",
+ "actor": "streamers/youtube-scraper",
+ "run": "2SuBQh2X1xhP67Sgn",
+ "filters": {
+  "dateFilter": "year",
+  "sortingOrder": "relevance",
+  "maxResultsPerQuery": 15
+ },
+ "queries": [
+  "building effective AI agents",
+  "AI agent tool use function calling",
+  "ReAct agent reasoning planning LLM",
+  "agentic RAG",
+  "Model Context Protocol agents tools",
+  "how to build AI agents 2026",
+  "anatomy of an AI agent"
+ ],
+ "results": [
+  {
+   "title": "9. ReAct Prompting Explained: The Foundation of AI Agents & Tool Calling (2026)",
+   "url": "https://www.youtube.com/watch?v=X4to5jRLEDE",
+   "channelName": "Micro Learning",
+   "numberOfSubscribers": 449,
+   "viewCount": 19,
+   "date": "2026-07-11T18:30:26.000Z",
+   "duration": "00:07:25",
+   "input": "ReAct agent reasoning planning LLM"
+  },
+  {
+   "title": "\ud83e\udd16 ReAct Design Pattern for AI Agents (Reason\u2013Act\u2013Observe)",
+   "url": "https://www.youtube.com/watch?v=2sEFIziDba4",
+   "channelName": "BioinfQuests",
+   "numberOfSubscribers": 1820,
+   "viewCount": 291,
+   "date": "2026-01-13T16:34:40.000Z",
+   "duration": "00:17:29",
+   "input": "ReAct agent reasoning planning LLM"
+  },
+  {
+   "title": "#11 ReAct Framework Explained \ud83e\udd16 | How AI Agents Reason & Act",
+   "url": "https://www.youtube.com/watch?v=QczejEN_LsA",
+   "channelName": "Tech With Mala",
+   "numberOfSubscribers": 3840,
+   "viewCount": 937,
+   "date": "2026-01-30T17:15:19.000Z",
+   "duration": "00:14:51",
+   "input": "ReAct agent reasoning planning LLM"
+  },
+  {
+   "title": "Build a ReAct Agent in Python Step by Step | LLM + Tools Explained",
+   "url": "https://www.youtube.com/watch?v=XQEXdZOMj4Q",
+   "channelName": "DATA JARVIS",
+   "numberOfSubscribers": 4110,
+   "viewCount": 140,
+   "date": "2026-05-11T10:00:50.000Z",
+   "duration": "00:03:22",
+   "input": "ReAct agent reasoning planning LLM"
+  },
+  {
+   "title": "How do thinking and reasoning models work?",
+   "url": "https://www.youtube.com/watch?v=xCRvOUykOX0",
+   "channelName": "Google for Developers",
+   "numberOfSubscribers": 2670000,
+   "viewCount": 48913,
+   "date": "2025-12-03T17:59:21.000Z",
+   "duration": "00:13:26",
+   "input": "ReAct agent reasoning planning LLM"
+  },
+  {
+   "title": "AI Agents + LLM Reasoning: Transforming Autonomous Workflows",
+   "url": "https://www.youtube.com/watch?v=2ihEirLXeas",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 27605,
+   "date": "2025-10-23T11:00:05.000Z",
+   "duration": "00:13:57",
+   "input": "ReAct agent reasoning planning LLM"
+  },
+  {
+   "title": "Agentic RAG Tutorial: RAG That Fixes Its Own Answers",
+   "url": "https://www.youtube.com/watch?v=tbkU0EvGPGU",
+   "channelName": "Oxylabs",
+   "numberOfSubscribers": 14700,
+   "viewCount": 2169,
+   "date": "2026-09-09T16:00:18.000Z",
+   "duration": "00:14:38",
+   "input": "agentic RAG"
+  },
+  {
+   "title": "RAG vs Agentic AI: How LLMs Connect Data for Smarter AI",
+   "url": "https://www.youtube.com/watch?v=fB2JQXEH_94",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 185018,
+   "date": "2025-12-08T12:01:30.000Z",
+   "duration": "00:10:00",
+   "input": "agentic RAG"
+  },
+  {
+   "title": "Building Agentic RAG From Scratch in Pure Python",
+   "url": "https://www.youtube.com/watch?v=RxwjoegpI98",
+   "channelName": "Dave Ebbelaar",
+   "numberOfSubscribers": 295000,
+   "viewCount": 36091,
+   "date": "2026-05-10T09:57:56.000Z",
+   "duration": "00:27:28",
+   "input": "agentic RAG"
+  },
+  {
+   "title": "ReAct Prompting: Synergizing Reasoning and Acting in LLMs",
+   "url": "https://www.youtube.com/watch?v=7LsMd9icgVU",
+   "channelName": "AI Explained in 5 Minutes",
+   "numberOfSubscribers": 145,
+   "viewCount": 137,
+   "date": "2026-04-06T21:29:16.000Z",
+   "duration": "00:05:50",
+   "input": "ReAct agent reasoning planning LLM"
+  },
+  {
+   "title": "Hugging Face Agents Course | Thought: Internal Reasoning and the ReAct Approach Part 2 \ud83e\udde0\u2699\ufe0f",
+   "url": "https://www.youtube.com/watch?v=Az4ORALeoVo",
+   "channelName": "codeManS",
+   "numberOfSubscribers": 14500,
+   "viewCount": 27,
+   "date": "2026-05-27T05:48:26.000Z",
+   "duration": "00:09:37",
+   "input": "ReAct agent reasoning planning LLM"
+  },
+  {
+   "title": "Waypoint-1 Explained: Agent Foundation Model for LLM Reasoning Planning and Tool Use",
+   "url": "https://www.youtube.com/watch?v=81i076H5hDE",
+   "channelName": "CosmoX",
+   "numberOfSubscribers": 912,
+   "viewCount": 10,
+   "date": "2026-01-28T11:01:39.000Z",
+   "duration": "00:05:50",
+   "input": "ReAct agent reasoning planning LLM"
+  },
+  {
+   "title": "Planning Agents \u2014 ReAct, Plan-and-Execute and When Each Wins | datarekha",
+   "url": "https://www.youtube.com/watch?v=JKz-O-OaRJk",
+   "channelName": "datarekha",
+   "numberOfSubscribers": 107,
+   "viewCount": 34,
+   "date": "2026-07-06T09:13:55.000Z",
+   "duration": "00:04:04",
+   "input": "ReAct agent reasoning planning LLM"
+  },
+  {
+   "title": "AI Agentic Design Patterns: ReAct Explained | Reasoning + Acting in AI Agents",
+   "url": "https://www.youtube.com/watch?v=WBgI9ce_7wM",
+   "channelName": "CodeCraft Academy",
+   "numberOfSubscribers": 3790,
+   "viewCount": 2387,
+   "date": "2026-02-26T15:14:40.000Z",
+   "duration": "00:06:49",
+   "input": "ReAct agent reasoning planning LLM"
+  },
+  {
+   "title": "ReAct vs ReWOO: Choosing the Right LLM Agent Reasoning Pattern | Agentic AI & Cloud Advisory",
+   "url": "https://www.youtube.com/watch?v=LLUCyGbyCXA",
+   "channelName": "Agentic AI & Cloud Advisory",
+   "numberOfSubscribers": 227,
+   "viewCount": 5,
+   "date": "2026-08-23T14:06:33.000Z",
+   "duration": "00:02:50",
+   "input": "ReAct agent reasoning planning LLM"
+  },
+  {
+   "title": "How to Build & Sell AI Agents in 2026: Ultimate Beginner\u2019s Guide",
+   "url": "https://www.youtube.com/watch?v=AYQtRqW1xX4",
+   "channelName": "Liam Ottley",
+   "numberOfSubscribers": 854000,
+   "viewCount": 315946,
+   "date": "2026-03-22T07:54:17.000Z",
+   "duration": "03:05:03",
+   "input": "how to build AI agents 2026"
+  },
+  {
+   "title": "How to Set Up AI Agents in 2026 (Use this FREE AI Tool)",
+   "url": "https://www.youtube.com/watch?v=qfXxWLxNGuM",
+   "channelName": "Youri van Hofwegen",
+   "numberOfSubscribers": 325000,
+   "viewCount": 43833,
+   "date": "2026-09-05T13:39:25.000Z",
+   "duration": "00:12:57",
+   "input": "how to build AI agents 2026"
+  },
+  {
+   "title": "How I Built an AI Agent in 14 minutes as A Beginner (2026)",
+   "url": "https://www.youtube.com/watch?v=UyoVmQLekBc",
+   "channelName": "Mikey No Code",
+   "numberOfSubscribers": 163000,
+   "viewCount": 49071,
+   "date": "2026-07-27T14:15:15.000Z",
+   "duration": "00:18:02",
+   "input": "how to build AI agents 2026"
+  },
+  {
+   "title": "AI Agents Explained - What Is an AI Agent and how to build one? (Real Examples, Not Hype)",
+   "url": "https://www.youtube.com/watch?v=ZvDkJsKE80k",
+   "channelName": "Tech With Tim",
+   "numberOfSubscribers": 2090000,
+   "viewCount": 318099,
+   "date": "2026-07-16T13:00:18.000Z",
+   "duration": "00:21:34",
+   "input": "how to build AI agents 2026"
+  },
+  {
+   "title": "AI Agent Full Tutorial for Beginners 2026: How to Build AI Agents in Minutes",
+   "url": "https://www.youtube.com/watch?v=C05XDMGaAn8",
+   "channelName": "Mikey No Code",
+   "numberOfSubscribers": 163000,
+   "viewCount": 66358,
+   "date": "2026-03-23T14:28:30.000Z",
+   "duration": "00:31:38",
+   "input": "how to build AI agents 2026"
+  },
+  {
+   "title": "n8n Tutorial for Beginners 2026: How to Build AI Agents",
+   "url": "https://www.youtube.com/watch?v=TKnaDGpN7Ns",
+   "channelName": "Youri van Hofwegen",
+   "numberOfSubscribers": 325000,
+   "viewCount": 97471,
+   "date": "2025-12-04T15:00:54.000Z",
+   "duration": "00:11:51",
+   "input": "how to build AI agents 2026"
+  },
+  {
+   "title": "Beginners Guide To Build & Sell AI Agents in 2026",
+   "url": "https://www.youtube.com/watch?v=OqKBOLplDZ8",
+   "channelName": "Zack Kirk",
+   "numberOfSubscribers": 7220,
+   "viewCount": 8501,
+   "date": "2026-02-23T18:36:22.000Z",
+   "duration": "00:28:46",
+   "input": "how to build AI agents 2026"
+  },
+  {
+   "title": "AI AGENTS MASTERCLASS 4 HOURS: Build & Sell (2026)",
+   "url": "https://www.youtube.com/watch?v=0C6xYvQhjwQ",
+   "channelName": "Michele Torti",
+   "numberOfSubscribers": 80800,
+   "viewCount": 64896,
+   "date": "2026-07-28T19:14:07.000Z",
+   "duration": "03:41:34",
+   "input": "how to build AI agents 2026"
+  },
+  {
+   "title": "How to Set Up your First AI Agent in 2026 (Step by Step)",
+   "url": "https://www.youtube.com/watch?v=vJTEyamAxFk",
+   "channelName": "Youri van Hofwegen",
+   "numberOfSubscribers": 325000,
+   "viewCount": 73322,
+   "date": "2026-04-13T15:01:42.000Z",
+   "duration": "00:08:58",
+   "input": "how to build AI agents 2026"
+  },
+  {
+   "title": "Build AI Agents in Joule Studio | SAP Sapphire Madrid 2026",
+   "url": "https://www.youtube.com/watch?v=i4bqqTehbhM",
+   "channelName": "SAP",
+   "numberOfSubscribers": 161000,
+   "viewCount": 7610,
+   "date": "2026-05-21T15:22:45.000Z",
+   "duration": "00:04:05",
+   "input": "how to build AI agents 2026"
+  },
+  {
+   "title": "AI Agents Explained: Build Your First One in 2026",
+   "url": "https://www.youtube.com/watch?v=-Zhntlk0v80",
+   "channelName": "Roboverse",
+   "numberOfSubscribers": 138000,
+   "viewCount": 21556,
+   "date": "2026-07-07T15:30:32.000Z",
+   "duration": "00:12:38",
+   "input": "how to build AI agents 2026"
+  },
+  {
+   "title": "The Complete Guide to AI Agents in 2026 (And How to Actually Use Them)",
+   "url": "https://www.youtube.com/watch?v=LNkAW4SSgdY",
+   "channelName": "Tech With Tim",
+   "numberOfSubscribers": 2090000,
+   "viewCount": 31418,
+   "date": "2026-05-21T13:00:34.000Z",
+   "duration": "00:20:38",
+   "input": "how to build AI agents 2026"
+  },
+  {
+   "title": "Stanford CME295 Transformers & LLMs | Autumn 2025 | Lecture 7 - Agentic LLMs",
+   "url": "https://www.youtube.com/watch?v=h-7S6HNq0Vg&t=398s",
+   "channelName": "Stanford Online",
+   "numberOfSubscribers": 1280000,
+   "viewCount": 144634,
+   "date": "2025-11-18T01:31:12.000Z",
+   "duration": "01:49:22",
+   "input": "agentic RAG"
+  },
+  {
+   "title": "RAG's Evolution: From Simple Retrieval to Agentic AI",
+   "url": "https://www.youtube.com/watch?v=JB2P5Gk23VI",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 161635,
+   "date": "2026-05-05T11:00:27.000Z",
+   "duration": "00:08:48",
+   "input": "agentic RAG"
+  },
+  {
+   "title": "Stop Using AI Wrong \u2014 Agentic AI vs RAG Explained",
+   "url": "https://www.youtube.com/watch?v=PmpFmclctuM",
+   "channelName": "Nana Janashia",
+   "numberOfSubscribers": 20400,
+   "viewCount": 148181,
+   "date": "2026-06-23T16:31:04.000Z",
+   "duration": "00:21:24",
+   "input": "agentic RAG"
+  },
+  {
+   "title": "The Missing Piece That Makes RAG \"Agentic\"",
+   "url": "https://www.youtube.com/watch?v=K6wpRkJrcpM",
+   "channelName": "Edward Donner",
+   "numberOfSubscribers": 18300,
+   "viewCount": 8980,
+   "date": "2026-04-15T14:18:14.000Z",
+   "duration": "00:19:40",
+   "input": "agentic RAG"
+  },
+  {
+   "title": "Agentic RAG with MCP - building an Expert Agent in 12 minutes",
+   "url": "https://www.youtube.com/watch?v=KdKqMfs-8gs",
+   "channelName": "Edward Donner",
+   "numberOfSubscribers": 18300,
+   "viewCount": 5028,
+   "date": "2026-05-13T14:02:11.000Z",
+   "duration": "00:12:07",
+   "input": "agentic RAG"
+  },
+  {
+   "title": "Why I switched my RAG decisions to Jev...",
+   "url": "https://www.youtube.com/watch?v=olIve0D8pJQ",
+   "channelName": "The AI Automators",
+   "numberOfSubscribers": 64600,
+   "viewCount": 5861,
+   "date": "2026-09-24T17:29:20.000Z",
+   "duration": "00:16:06",
+   "input": "agentic RAG"
+  },
+  {
+   "title": "Build a Local AI Agent in 10 Minutes using Python",
+   "url": "https://www.youtube.com/watch?v=ByWCsa8DbF8",
+   "channelName": "Tech With Tim",
+   "numberOfSubscribers": 2090000,
+   "viewCount": 126793,
+   "date": "2026-09-11T14:00:35.000Z",
+   "duration": "00:08:08",
+   "input": "how to build AI agents 2026"
+  },
+  {
+   "title": "Stanford CS230 | Autumn 2025 | Lecture 8: Agents, Prompts, and RAG",
+   "url": "https://www.youtube.com/watch?v=k1njvbBmfsw",
+   "channelName": "Stanford Online",
+   "numberOfSubscribers": 1280000,
+   "viewCount": 498771,
+   "date": "2025-11-21T23:08:57.000Z",
+   "duration": "01:49:54",
+   "input": "agentic RAG"
+  },
+  {
+   "title": "Is RAG Still Needed? Choosing the Best Approach for LLMs",
+   "url": "https://www.youtube.com/watch?v=UabBYexBD4k",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 1016001,
+   "date": "2026-03-09T11:00:51.000Z",
+   "duration": "00:11:09",
+   "input": "agentic RAG"
+  },
+  {
+   "title": "Anatomy of an AI Agent",
+   "url": "https://www.youtube.com/watch?v=uXI7cv8xs40",
+   "channelName": "That AI Agent",
+   "numberOfSubscribers": 6,
+   "viewCount": 24,
+   "date": "2025-11-22T00:01:12.000Z",
+   "duration": "00:15:04",
+   "input": "anatomy of an AI agent"
+  },
+  {
+   "title": "The Secret Anatomy of AI Agents Explained",
+   "url": "https://www.youtube.com/watch?v=gHVUMvx_VCc",
+   "channelName": "cholakovit",
+   "numberOfSubscribers": 2310,
+   "viewCount": 77,
+   "date": "2026-04-06T13:45:44.000Z",
+   "duration": "00:05:59",
+   "input": "anatomy of an AI agent"
+  },
+  {
+   "title": "The Anatomy of an AI Agent in 2026",
+   "url": "https://www.youtube.com/watch?v=CyB7jpMt144",
+   "channelName": "Ram Vegiraju",
+   "numberOfSubscribers": 1430,
+   "viewCount": 277,
+   "date": "2026-04-16T00:27:18.000Z",
+   "duration": "00:18:16",
+   "input": "anatomy of an AI agent"
+  },
+  {
+   "title": "Anatomy of AI Agents: Inside LLMs, RAG Systems, & Generative AI",
+   "url": "https://www.youtube.com/watch?v=CAKGKkWf0tI",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 97188,
+   "date": "2025-12-11T12:00:20.000Z",
+   "duration": "00:10:28",
+   "input": "anatomy of an AI agent"
+  },
+  {
+   "title": "The Complete Agentic RAG Build: 8 Modules, 2+ Hours, Full Stack",
+   "url": "https://www.youtube.com/watch?v=xgPWCuqLoek",
+   "channelName": "The AI Automators",
+   "numberOfSubscribers": 64600,
+   "viewCount": 59495,
+   "date": "2026-01-28T18:45:35.000Z",
+   "duration": "02:14:10",
+   "input": "agentic RAG"
+  },
+  {
+   "title": "What is OpenClaw? Inside AI Agents, LLMs and the Agentic Loop",
+   "url": "https://www.youtube.com/watch?v=L7FF8Zgab3M",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 255543,
+   "date": "2026-04-27T11:00:36.000Z",
+   "duration": "00:11:34",
+   "input": "anatomy of an AI agent"
+  },
+  {
+   "title": "Don't learn AI Agents without Learning these Fundamentals",
+   "url": "https://www.youtube.com/watch?v=ZaPbP9DwBOE",
+   "channelName": "KodeKloud",
+   "numberOfSubscribers": 451000,
+   "viewCount": 1245104,
+   "date": "2025-10-21T14:31:31.000Z",
+   "duration": "00:56:39",
+   "input": "anatomy of an AI agent"
+  },
+  {
+   "title": "Anatomy of an AI Agent",
+   "url": "https://www.youtube.com/watch?v=UHWu3FlnLRI",
+   "channelName": "Close Win",
+   "numberOfSubscribers": 3,
+   "viewCount": 13,
+   "date": "2025-10-27T21:16:26.000Z",
+   "duration": "00:06:20",
+   "input": "anatomy of an AI agent"
+  },
+  {
+   "title": "The Anatomy of an AI Agent",
+   "url": "https://www.youtube.com/watch?v=4_JGRGX2zxo",
+   "channelName": "Voxel51",
+   "numberOfSubscribers": 3580,
+   "viewCount": 83,
+   "date": "2026-04-22T17:41:50.000Z",
+   "duration": "00:28:16",
+   "input": "anatomy of an AI agent"
+  },
+  {
+   "title": "Anatomy of an AI Agent: Sensors, Actuators & Environments Explained",
+   "url": "https://www.youtube.com/watch?v=B1kFPFCBsi8",
+   "channelName": "Agentic Minds",
+   "numberOfSubscribers": 0,
+   "viewCount": 7,
+   "date": "2026-08-03T15:51:02.000Z",
+   "duration": "00:09:12",
+   "input": "anatomy of an AI agent"
+  },
+  {
+   "title": "The Anatomy of AI Agents",
+   "url": "https://www.youtube.com/watch?v=HxxoqKV6_WQ",
+   "channelName": "Student O.S (One Stop)",
+   "numberOfSubscribers": 1,
+   "viewCount": 6,
+   "date": "2026-08-01T19:58:19.000Z",
+   "duration": "00:06:13",
+   "input": "anatomy of an AI agent"
+  },
+  {
+   "title": "Day 31 - Anatomy of an AI Agent: How Autonomous Systems Learn to Think and Act",
+   "url": "https://www.youtube.com/watch?v=JmPBcLcwFHQ",
+   "channelName": "Festive Tech Calendar",
+   "numberOfSubscribers": 3020,
+   "viewCount": 63,
+   "date": "2025-12-31T10:00:35.000Z",
+   "duration": "00:12:59",
+   "input": "anatomy of an AI agent"
+  },
+  {
+   "title": "Anatomy of an AI Agent",
+   "url": "https://www.youtube.com/watch?v=OAf2etjxNOM",
+   "channelName": "Load Lobrau",
+   "numberOfSubscribers": 8,
+   "viewCount": 5,
+   "date": "2026-03-12T08:18:18.000Z",
+   "duration": "00:07:45",
+   "input": "anatomy of an AI agent"
+  },
+  {
+   "title": "Agent Harness explained in 8min..",
+   "url": "https://www.youtube.com/watch?v=1a1VXDdIyrk",
+   "channelName": "Caleb Writes Code",
+   "numberOfSubscribers": 117000,
+   "viewCount": 579402,
+   "date": "2026-05-22T18:52:18.000Z",
+   "duration": "00:08:20",
+   "input": "anatomy of an AI agent"
+  },
+  {
+   "title": "Give your voice AI agent real abilities (tool calling)",
+   "url": "https://www.youtube.com/watch?v=Sdrpso7IKtU",
+   "channelName": "Google Cloud Tech",
+   "numberOfSubscribers": 1450000,
+   "viewCount": 9878,
+   "date": "2026-09-23T16:00:02.000Z",
+   "duration": "00:09:42",
+   "input": "AI agent tool use function calling"
+  },
+  {
+   "title": "Build a Multi Tool AI Agent in Python  Function Calling & Tool Calling Explained",
+   "url": "https://www.youtube.com/watch?v=cUfjql072N8",
+   "channelName": "Dhaarani \u2013 The Practical AI Dev",
+   "numberOfSubscribers": 17,
+   "viewCount": 78,
+   "date": "2026-07-03T09:13:37.000Z",
+   "duration": "00:10:53",
+   "input": "AI agent tool use function calling"
+  },
+  {
+   "title": "Tool Based Agents & Function Calling | AI Agent Patterns #2",
+   "url": "https://www.youtube.com/watch?v=JU8tQ8AyU-A",
+   "channelName": "Lightboarding Tech",
+   "numberOfSubscribers": 3750,
+   "viewCount": 92,
+   "date": "2026-08-14T21:18:35.000Z",
+   "duration": "00:05:44",
+   "input": "AI agent tool use function calling"
+  },
+  {
+   "title": "How to Use the Call n8n Workflow Tool Inside the AI Agent",
+   "url": "https://www.youtube.com/watch?v=sHQQloMG-Fc",
+   "channelName": "Ryan & Matt Data Science",
+   "numberOfSubscribers": 46500,
+   "viewCount": 6968,
+   "date": "2025-11-20T13:39:56.000Z",
+   "duration": "00:16:10",
+   "input": "AI agent tool use function calling"
+  },
+  {
+   "title": "Building an AI Agent That Uses Real Tools (Function Calling)",
+   "url": "https://www.youtube.com/watch?v=42JPAX9MUAk",
+   "channelName": "Xavier Fok",
+   "numberOfSubscribers": 27,
+   "viewCount": 3,
+   "date": "2026-07-15T06:00:17.000Z",
+   "duration": "00:12:33",
+   "input": "AI agent tool use function calling"
+  },
+  {
+   "title": "Fix Voice Agent Tool Call Latency With Async Function Tools",
+   "url": "https://www.youtube.com/watch?v=AQZOIr3511U",
+   "channelName": "LiveKit",
+   "numberOfSubscribers": 4750,
+   "viewCount": 203234,
+   "date": "2026-07-07T17:02:45.000Z",
+   "duration": "00:06:53",
+   "input": "AI agent tool use function calling"
+  },
+  {
+   "title": "Lesson 02 AI Agent Tool Use Function Calls",
+   "url": "https://www.youtube.com/watch?v=5HgVRv37E_U",
+   "channelName": "Stephen Blum",
+   "numberOfSubscribers": 16900,
+   "viewCount": 378,
+   "date": "2026-09-15T14:30:22.000Z",
+   "duration": "00:05:32",
+   "input": "AI agent tool use function calling"
+  },
+  {
+   "title": "AI Agent Tool Use \u2014 Routing Is the Real Bottleneck",
+   "url": "https://www.youtube.com/watch?v=OIPIEiBTyyg",
+   "channelName": "Multi-Agent Academy",
+   "numberOfSubscribers": 3360,
+   "viewCount": 1259,
+   "date": "2026-07-13T02:19:48.000Z",
+   "duration": "00:06:36",
+   "input": "AI agent tool use function calling"
+  },
+  {
+   "title": "AI Voice Agent Course | #12 Tool Calling & Function Access (Voice Agent Actions)",
+   "url": "https://www.youtube.com/watch?v=zEreig4ny7U",
+   "channelName": "AgenticXLab",
+   "numberOfSubscribers": 158,
+   "viewCount": 195,
+   "date": "2026-04-24T10:36:50.000Z",
+   "duration": "00:14:35",
+   "input": "AI agent tool use function calling"
+  },
+  {
+   "title": "Build a 100% Local Tool-Calling AI Agent with Python & Ollama (No API Keys)",
+   "url": "https://www.youtube.com/watch?v=z9FZABTeeBs",
+   "channelName": "Codernex",
+   "numberOfSubscribers": 19,
+   "viewCount": 347,
+   "date": "2026-08-27T06:03:51.000Z",
+   "duration": "00:29:48",
+   "input": "AI agent tool use function calling"
+  },
+  {
+   "title": "Building more effective AI agents",
+   "url": "https://www.youtube.com/watch?v=uhJJgc-0iTQ",
+   "channelName": "Anthropic",
+   "numberOfSubscribers": 804000,
+   "viewCount": 98068,
+   "date": "2025-10-17T16:01:56.000Z",
+   "duration": "00:18:58",
+   "input": "building effective AI agents"
+  },
+  {
+   "title": "Giving AI Hands: Function Calling & Tool Execution Masterclass | Ep 02",
+   "url": "https://www.youtube.com/watch?v=kMyN5LF1BrE",
+   "channelName": "Insight Ops",
+   "numberOfSubscribers": 641,
+   "viewCount": 1,
+   "date": "2026-09-22T07:12:26.000Z",
+   "duration": "00:04:23",
+   "input": "AI agent tool use function calling"
+  },
+  {
+   "title": "You\u2019re Not Behind (Yet): How to Build Your First AI Agent (Full Guide)",
+   "url": "https://www.youtube.com/watch?v=Bm84BAtOfQw",
+   "channelName": "Dan Martell",
+   "numberOfSubscribers": 3090000,
+   "viewCount": 630185,
+   "date": "2026-07-15T13:00:36.000Z",
+   "duration": "00:22:24",
+   "input": "building effective AI agents"
+  },
+  {
+   "title": "5 Best Practices for Building AI Agent Skills",
+   "url": "https://www.youtube.com/watch?v=qYNs80FKIVc",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 72311,
+   "date": "2026-08-10T11:00:29.000Z",
+   "duration": "00:13:22",
+   "input": "building effective AI agents"
+  },
+  {
+   "title": "AI Agents Explained: How to Create and Use AI Agents in 2026",
+   "url": "https://www.youtube.com/watch?v=4TvH-OZhwxI",
+   "channelName": "AI Master",
+   "numberOfSubscribers": 330000,
+   "viewCount": 130222,
+   "date": "2026-05-13T18:56:35.000Z",
+   "duration": "00:24:28",
+   "input": "building effective AI agents"
+  },
+  {
+   "title": "The EASIEST Way to Build a Copilot Agent (NEW Agent Builder Tutorial)",
+   "url": "https://www.youtube.com/watch?v=9_Dw9qcjLgA",
+   "channelName": "Collaboration Simplified",
+   "numberOfSubscribers": 90200,
+   "viewCount": 195713,
+   "date": "2026-02-28T14:00:26.000Z",
+   "duration": "00:14:30",
+   "input": "building effective AI agents"
+  },
+  {
+   "title": "4 AI Agents To Automate 99% Of Your Life",
+   "url": "https://www.youtube.com/watch?v=TL8V41Ea6oM",
+   "channelName": "Sandeep Swadia",
+   "numberOfSubscribers": 1560000,
+   "viewCount": 1630710,
+   "date": "2026-07-30T12:18:32.000Z",
+   "duration": "00:20:46",
+   "input": "building effective AI agents"
+  },
+  {
+   "title": "AI agents explained: Build your first agent in 8 minutes",
+   "url": "https://www.youtube.com/watch?v=Zqno_vux6d8",
+   "channelName": "Google Cloud Tech",
+   "numberOfSubscribers": 1450000,
+   "viewCount": 499778,
+   "date": "2026-06-10T13:00:05.000Z",
+   "duration": "00:08:29",
+   "input": "building effective AI agents"
+  },
+  {
+   "title": "How to Build an AI Agent with Claude Code (Claude AI Agent Tutorial)",
+   "url": "https://www.youtube.com/watch?v=bcM9dP_uXJU",
+   "channelName": "AI Master",
+   "numberOfSubscribers": 330000,
+   "viewCount": 491680,
+   "date": "2026-06-30T14:26:45.000Z",
+   "duration": "00:22:07",
+   "input": "building effective AI agents"
+  },
+  {
+   "title": "How Model Context Protocol (MCP) actually works",
+   "url": "https://www.youtube.com/watch?v=cGuyrANVi4A",
+   "channelName": "Google Cloud Tech",
+   "numberOfSubscribers": 1450000,
+   "viewCount": 339509,
+   "date": "2026-06-24T16:00:39.000Z",
+   "duration": "00:07:58",
+   "input": "Model Context Protocol agents tools"
+  },
+  {
+   "title": "MCP vs gRPC: How AI Agents & LLMs Connect to Tools & Data",
+   "url": "https://www.youtube.com/watch?v=23PzNxw11jc",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 64979,
+   "date": "2025-10-13T11:00:04.000Z",
+   "duration": "00:10:34",
+   "input": "Model Context Protocol agents tools"
+  },
+  {
+   "title": "Tool Calling VS MCP in AI Agents | Model Context Protocol Explained",
+   "url": "https://www.youtube.com/watch?v=TlIOk8VuEBU",
+   "channelName": "Piyush Garg",
+   "numberOfSubscribers": 421000,
+   "viewCount": 34077,
+   "date": "2025-09-25T11:30:33.000Z",
+   "duration": "00:22:45",
+   "input": "Model Context Protocol agents tools"
+  },
+  {
+   "title": "AI Agents Full Course 2026: Master Agentic AI (2 Hours)",
+   "url": "https://www.youtube.com/watch?v=EsTrWCV0Ph4",
+   "channelName": "Nick Saraev",
+   "numberOfSubscribers": 526000,
+   "viewCount": 811641,
+   "date": "2026-03-08T05:01:31.000Z",
+   "duration": "02:13:14",
+   "input": "building effective AI agents"
+  },
+  {
+   "title": "How AI Agents Actually Work (Every Piece Explained & Built)",
+   "url": "https://www.youtube.com/watch?v=HzGOWq5UyjY&t=483s",
+   "channelName": "Tech With Tim",
+   "numberOfSubscribers": 2090000,
+   "viewCount": 153699,
+   "date": "2026-09-03T14:00:11.000Z",
+   "duration": "00:19:28",
+   "input": "building effective AI agents"
+  },
+  {
+   "title": "How to build an AI Agent and MCP Server (step-by-step)",
+   "url": "https://www.youtube.com/watch?v=wBnnA8aIxUs",
+   "channelName": "Google Cloud Tech",
+   "numberOfSubscribers": 1450000,
+   "viewCount": 102732,
+   "date": "2026-06-18T13:00:09.000Z",
+   "duration": "00:07:54",
+   "input": "Model Context Protocol agents tools"
+  },
+  {
+   "title": "5 Ways to Connect AI Agents to Tools: From APIs to MCP",
+   "url": "https://www.youtube.com/watch?v=BHGTA6ZEls4",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 25020,
+   "date": "2026-08-16T11:00:01.000Z",
+   "duration": "00:11:28",
+   "input": "Model Context Protocol agents tools"
+  },
+  {
+   "title": "MCP vs. RAG: How AI Agents & LLMs Connect to Data",
+   "url": "https://www.youtube.com/watch?v=X95MFcYH1_s",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 107408,
+   "date": "2025-11-17T12:01:09.000Z",
+   "duration": "00:08:31",
+   "input": "Model Context Protocol agents tools"
+  },
+  {
+   "title": "RAG & MCP Fundamentals \u2013 A Hands-On Crash Course",
+   "url": "https://www.youtube.com/watch?v=I7_WXKhyGms&t=3580s",
+   "channelName": "freeCodeCamp.org",
+   "numberOfSubscribers": 11900000,
+   "viewCount": 201984,
+   "date": "2026-01-22T14:27:46.000Z",
+   "duration": "01:39:53",
+   "input": "Model Context Protocol agents tools"
+  },
+  {
+   "title": "Intro to MCP Servers \u2013 Model Context Protocol with Python Course",
+   "url": "https://www.youtube.com/watch?v=DosHnyq78xY",
+   "channelName": "freeCodeCamp.org",
+   "numberOfSubscribers": 11900000,
+   "viewCount": 115400,
+   "date": "2025-10-15T12:55:53.000Z",
+   "duration": "01:12:42",
+   "input": "Model Context Protocol agents tools"
+  },
+  {
+   "title": "MCP is Dead - Why no one uses Model Context Protocol!",
+   "url": "https://www.youtube.com/watch?v=sPtTDDXsew0",
+   "channelName": "Piyush Garg",
+   "numberOfSubscribers": 421000,
+   "viewCount": 80254,
+   "date": "2026-04-26T11:30:30.000Z",
+   "duration": "00:16:51",
+   "input": "Model Context Protocol agents tools"
+  },
+  {
+   "title": "MCP Complete Explanation",
+   "url": "https://www.youtube.com/watch?v=_fzpnqt39jQ",
+   "channelName": "Aishwarya Srinivasan",
+   "numberOfSubscribers": 184000,
+   "viewCount": 117287,
+   "date": "2026-07-25T21:34:17.000Z",
+   "duration": "00:15:22",
+   "input": "Model Context Protocol agents tools"
+  },
+  {
+   "title": "Model Context Protocol (MCP) Explained: Give Your AI Access to Tools \ud83d\ude80",
+   "url": "https://www.youtube.com/watch?v=SGsoonwLI6c",
+   "channelName": "The Setup Academy",
+   "numberOfSubscribers": 75,
+   "viewCount": 13,
+   "date": "2026-09-24T14:10:30.000Z",
+   "duration": "00:07:08",
+   "input": "Model Context Protocol agents tools"
+  },
+  {
+   "title": "MCP In 26 Minutes (Model Context Protocol)",
+   "url": "https://www.youtube.com/watch?v=kOhLoixrJXo",
+   "channelName": "Tina Huang",
+   "numberOfSubscribers": 1320000,
+   "viewCount": 256978,
+   "date": "2025-10-15T14:38:05.000Z",
+   "duration": "00:26:23",
+   "input": "Model Context Protocol agents tools"
+  },
+  {
+   "title": "Building Agents LLM Autonomy | AI Agents + LLM Reasoning: Transforming Autonomous Workflows",
+   "url": "https://www.youtube.com/watch?v=v_mw4aSLKGY",
+   "channelName": "S3CloudHub",
+   "numberOfSubscribers": 41600,
+   "viewCount": 123,
+   "date": "2025-12-01T10:15:06.000Z",
+   "duration": "00:03:34",
+   "input": "ReAct agent reasoning planning LLM"
+  },
+  {
+   "title": "5-Getting Started With Agentic RAG With Detailed Implementation Using LangGraph",
+   "url": "https://www.youtube.com/watch?v=Chl-cRcwVpA",
+   "channelName": "Krish Naik",
+   "numberOfSubscribers": 1510000,
+   "viewCount": 48585,
+   "date": "2025-10-14T14:58:05.000Z",
+   "duration": "00:22:30",
+   "input": "agentic RAG"
+  },
+  {
+   "title": "AI Agents Explained for Beginners (And How to Build One)",
+   "url": "https://www.youtube.com/watch?v=HTNz4L2XM58",
+   "channelName": "Roboverse",
+   "numberOfSubscribers": 138000,
+   "viewCount": 80118,
+   "date": "2026-08-26T13:41:42.000Z",
+   "duration": "00:11:39",
+   "input": "how to build AI agents 2026"
+  },
+  {
+   "title": "ReAct vs Plan-and-Execute for AI Agents",
+   "url": "https://www.youtube.com/watch?v=Y-VCZ_KTuzo",
+   "channelName": "What's AI by Louis-Fran\u00e7ois Bouchard",
+   "numberOfSubscribers": 74200,
+   "viewCount": 3320,
+   "date": "2026-03-02T15:38:28.000Z",
+   "duration": "00:16:17",
+   "input": "ReAct agent reasoning planning LLM"
+  },
+  {
+   "title": "Build an Agentic RAG Pipeline with LangGraph + ChromaDB (Step-by-Step Tutorial)",
+   "url": "https://www.youtube.com/watch?v=oo4OeE3yVBI",
+   "channelName": "AI Bites",
+   "numberOfSubscribers": 15700,
+   "viewCount": 5292,
+   "date": "2025-12-10T09:43:01.000Z",
+   "duration": "00:27:20",
+   "input": "agentic RAG"
+  },
+  {
+   "title": "How to Build AI Agents in Python - 3 Ways",
+   "url": "https://www.youtube.com/watch?v=-RTgK6qX6A8",
+   "channelName": "Tech With Tim",
+   "numberOfSubscribers": 2090000,
+   "viewCount": 27934,
+   "date": "2026-09-23T13:30:32.000Z",
+   "duration": "00:32:18",
+   "input": "how to build AI agents 2026"
+  },
+  {
+   "title": "\u5de5\u4e1a\u7ea7\u5b9e\u6218\uff1a\u4ece\u4f20\u7edfRAG\u5230Agentic RAG\u7684\u8fdb\u9636\u4f18\u5316\uff01",
+   "url": "https://www.youtube.com/watch?v=UZs_yOKcw7A",
+   "channelName": "\u767d\u767d\u8bf4\u5927\u6a21\u578b",
+   "numberOfSubscribers": 17200,
+   "viewCount": 9118,
+   "date": "2026-01-09T12:30:48.000Z",
+   "duration": "00:18:18",
+   "input": "agentic RAG"
+  },
+  {
+   "title": "Anthropic killed Tool calling",
+   "url": "https://www.youtube.com/watch?v=3wglqgskzjQ",
+   "channelName": "AI Jason",
+   "numberOfSubscribers": 232000,
+   "viewCount": 208864,
+   "date": "2026-02-22T10:42:01.000Z",
+   "duration": "00:14:09",
+   "input": "AI agent tool use function calling"
+  },
+  {
+   "title": "MCP vs Function Calling explainer",
+   "url": "https://www.youtube.com/watch?v=Nci--nlB8CM",
+   "channelName": "AlgoFox",
+   "numberOfSubscribers": 113,
+   "viewCount": 1,
+   "date": "2026-09-24T18:02:24.000Z",
+   "duration": "00:00:30",
+   "input": "AI agent tool use function calling"
+  },
+  {
+   "title": "The Anatomy of an [Enterprise] AI Agent",
+   "url": "https://www.youtube.com/watch?v=IgbXfSdeV4c",
+   "channelName": "SAS Software",
+   "numberOfSubscribers": 86900,
+   "viewCount": 492,
+   "date": "2026-05-14T12:29:05.000Z",
+   "duration": "00:29:42",
+   "input": "anatomy of an AI agent"
+  },
+  {
+   "title": "What AI Agent Skills Are and How They Work",
+   "url": "https://www.youtube.com/watch?v=Lg-meK5IU8Q",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 458031,
+   "date": "2026-04-20T11:00:36.000Z",
+   "duration": "00:12:25",
+   "input": "building effective AI agents"
+  },
+  {
+   "title": "Building AI Agents that actually work (Full Course)",
+   "url": "https://www.youtube.com/watch?v=eA9Zf2-qYYM",
+   "channelName": "Greg Isenberg",
+   "numberOfSubscribers": 718000,
+   "viewCount": 747212,
+   "date": "2026-03-17T19:25:00.000Z",
+   "duration": "00:58:55",
+   "input": "building effective AI agents"
+  },
+  {
+   "title": "Module 2: How Agent Tool Calling Works",
+   "url": "https://www.youtube.com/watch?v=roCnw07Drlc",
+   "channelName": "TechForge",
+   "numberOfSubscribers": 5,
+   "viewCount": 17,
+   "date": "2026-09-06T00:00:12.000Z",
+   "duration": "00:16:37",
+   "input": "AI agent tool use function calling"
+  },
+  {
+   "title": "The 7 Skills You Need to Build AI Agents",
+   "url": "https://www.youtube.com/watch?v=mtiOK2QG9Q0",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 560393,
+   "date": "2026-04-14T11:01:20.000Z",
+   "duration": "00:14:36",
+   "input": "building effective AI agents"
+  },
+  {
+   "title": "STOP Building AI Agents. Do THIS Instead.",
+   "url": "https://www.youtube.com/watch?v=wqH1hTkA6qg",
+   "channelName": "Zubair Trabzada | AI Workshop",
+   "numberOfSubscribers": 165000,
+   "viewCount": 261957,
+   "date": "2026-03-05T13:24:45.000Z",
+   "duration": "00:11:50",
+   "input": "building effective AI agents"
+  },
+  {
+   "title": "Skills vs MCP vs RAG vs Memory: What AI Agents Need to Know",
+   "url": "https://www.youtube.com/watch?v=X4FVEEegCbk",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 171413,
+   "date": "2026-09-03T11:00:15.000Z",
+   "duration": "00:09:10",
+   "input": "Model Context Protocol agents tools"
+  },
+  {
+   "title": "MCP in Claude Code",
+   "url": "https://www.youtube.com/watch?v=kkBFmwkDzdo",
+   "channelName": "Claude",
+   "numberOfSubscribers": 597000,
+   "viewCount": 346687,
+   "date": "2026-05-09T16:02:16.000Z",
+   "duration": "00:03:37",
+   "input": "Model Context Protocol agents tools"
+  },
+  {
+   "title": "The Anatomy of an AI Agent",
+   "url": "https://www.youtube.com/watch?v=yHwi1jq-oqE",
+   "channelName": "Benn253",
+   "numberOfSubscribers": 10,
+   "viewCount": 10,
+   "date": "2026-05-26T03:05:50.000Z",
+   "duration": "00:07:08",
+   "input": "anatomy of an AI agent"
+  },
+  {
+   "title": "How AI Thinks: Mastering Planning & Reasoning in Agentic AI (CoT & ReAct)",
+   "url": "https://www.youtube.com/watch?v=PIv5NV9iDXQ",
+   "channelName": "SH AI Academy",
+   "numberOfSubscribers": 3570,
+   "viewCount": 228,
+   "date": "2025-12-18T02:34:22.000Z",
+   "duration": "00:07:22",
+   "input": "ReAct agent reasoning planning LLM"
+  },
+  {
+   "title": "You\u2019re Not Behind (Yet): How to Build AI Agents in 2026 (no coding)",
+   "url": "https://www.youtube.com/watch?v=ibFJ--CH3cQ",
+   "channelName": "Futurepedia",
+   "numberOfSubscribers": 754000,
+   "viewCount": 293192,
+   "date": "2026-02-21T00:50:43.000Z",
+   "duration": "00:26:05",
+   "input": "building effective AI agents"
+  },
+  {
+   "title": "AI Foundations: Tool Calling",
+   "url": "https://www.youtube.com/watch?v=byR5YVesMeg",
+   "channelName": "Cursor",
+   "numberOfSubscribers": 80300,
+   "viewCount": 20159,
+   "date": "2025-09-27T16:22:59.000Z",
+   "duration": "00:05:57",
+   "input": "AI agent tool use function calling"
+  },
+  {
+   "title": "MCP vs Skills: Which Is Right for Your AI Agent and LLMs?",
+   "url": "https://www.youtube.com/watch?v=goU9VIXA8II",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 120052,
+   "date": "2026-07-07T11:00:35.000Z",
+   "duration": "00:08:02",
+   "input": "Model Context Protocol agents tools"
+  }
+ ]
+}
