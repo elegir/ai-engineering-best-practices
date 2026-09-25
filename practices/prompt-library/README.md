@@ -59,3 +59,5 @@ Commands: copy a file to `<repo>/.claude/commands/<name>.md` (Claude Code) — t
 ## Change log
 
 - 2026-09-08 — created.
+
+- 2026-09-24 — added `trajectory-review.md` ("think like your agent": model-assisted review of context and trajectories; principle 21).

@@ -9,6 +9,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | 2026-09-08 | `sources/2026-09-08-lidr-workshop-harness-engineering.md` — LIDR workshop "De Developer a AI Champion: Harness Engineering" (Álvaro Moya) + 5 embedded videos | workshop | `sources/raw/2026-09-08-lidr-workshop/` (Notion full text; 5 YouTube transcripts) |
 | 2026-09-08 | `sources/2026-09-08-how-teams-structure-agent-knowledge.md` — web survey: how pros structure knowledge for agents (OpenAI, practitioner guide, awesome-harness-engineering, SIGPLAN, docs stack, Agent Skills, Claude Code memory docs, LIDR article) | research | — |
 | 2026-09-24 | `sources/2026-09-24-market-scan-s12-intro-to-agents.md` — market scan for LIDR session 12 "Introduction to AI agents": 105 YouTube results + 30 podcast shows considered, 15 items selected and transcribed (Anthropic, AI Engineer, Stanford, Google Cloud, Cursor, IBM, Latent Space). Log only; digest pending | market scan | `sources/raw/2026-09-24-market-scan-s12-agents/` (15 transcripts, 2 search-result JSON) |
+| 2026-09-24 | `sources/2026-09-24-s12-agents-digest.md` — digest of the 15 session-12 transcripts with the impact table (21 findings → 1 new principle, 1 new practice, 5 principles reviewed/refined, 3 parked) | digest | (raw as above) |
 | (living) | `sources/media-registry.json` + `sources/media-registry.md` — every video/podcast episode ever considered, with status (transcribed / digested / applied / candidate / discarded) and reason; filtered by `scripts/scan-filter.py` | registry | — |
 | (living) | `sources/scan-log.md` — one row per course module: stage reached (mapped → catalogued → scanned → transcribed → digested → principled → validated) | tracking | — |
 
@@ -16,16 +17,17 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 
 | # | File | Status | Last reviewed |
 |---|---|---|---|
-| 00 | `principles/00-glossary.md` | current | 2026-09-08 |
+| 00 | `principles/00-glossary.md` | current | 2026-09-24 |
 | 01 | `principles/01-context-engineering.md` | current | 2026-09-08 |
-| 02 | `principles/02-harness-engineering.md` | current | 2026-09-08 |
+| 02 | `principles/02-harness-engineering.md` | current | 2026-09-24 |
 | 03 | `principles/03-agent-instruction-files.md` | current | 2026-09-08 |
 | 04 | `principles/04-spec-driven-development.md` | current | 2026-09-08 |
-| 05 | `principles/05-verification-loops.md` | current | 2026-09-08 |
+| 05 | `principles/05-verification-loops.md` | current | 2026-09-24 |
 | 06 | `principles/06-parallel-agents-and-worktrees.md` | current | 2026-09-08 |
-| 07 | `principles/07-token-economy.md` | current | 2026-09-08 |
-| 08 | `principles/08-model-selection.md` | current (model names dated 2026-09-08) | 2026-09-08 |
+| 07 | `principles/07-token-economy.md` | current | 2026-09-24 |
+| 08 | `principles/08-model-selection.md` | current (model names dated 2026-09-08) | 2026-09-24 |
 | 09 | `principles/09-knowledge-base-design.md` | current | 2026-09-08 |
+| 21 | `principles/21-agent-design-and-tools.md` — workflow vs agent, minimal loop, tool design, CLI/MCP/skill, agentic RAG (numbered by course session; 10–20 reserved) | draft | 2026-09-24 |
 
 ## Practices (applicable — copyable files with "applies when", adapt and verify sections)
 
@@ -38,8 +40,9 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | `practices/worktrees/` | 06 | `.worktreeinclude`, `new-worktree.sh/.ps1`, `remove-worktree.sh`, `isolation.md` | current | 2026-09-08 |
 | `practices/verification/` | 05 | Playwright smoke, Hurl smoke, pytest smoke, bats, definition-of-done, harness-evals | current | 2026-09-08 |
 | `practices/spec-driven/` | 04 | `specs/README.md`, `/plan-ticket`, `/develop-task`, `constitution.md`, OpenSpec quickstart | current | 2026-09-08 |
-| `practices/prompt-library/` | 01, 04 | meta-prompt, ask-the-expert, readme-by-index, openapi, standards-doc, `/audit`, commit skill, `/lesson` | current | 2026-09-08 |
-| `practices/token-savings/` | 07 | ordered checklist, MCP audit, measurement log | current | 2026-09-08 |
+| `practices/prompt-library/` | 01, 04, 21 | meta-prompt, ask-the-expert, readme-by-index, openapi, standards-doc, `/audit`, commit skill, `/lesson`, trajectory-review | current | 2026-09-24 |
+| `practices/token-savings/` | 07 | ordered checklist, MCP audit (CLI-over-MCP rule added), measurement log | current | 2026-09-24 |
+| `practices/agent-patterns/` | 21 | decision checklist, patterns catalogue, agent-loop skeleton, tool-definition template + 12-point checklist, tool-transport decision table (CLI/MCP/skill/RAG/memory + auth ladder), agentic-RAG skeleton | draft | 2026-09-24 |
 | `practices/_template/` | — | README template for new practices | — | — |
 
 ## Decisions
@@ -55,7 +58,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 |---|---|
 | `playbooks/adopt-kb-in-a-repo.md` | Make a repo point to this KB (Windows-safe, no symlinks) |
 | `playbooks/audit-repo-against-kb.md` | Inventory → score → findings → plan → stop for approval |
-| `playbooks/ingest-new-source.md` | Turn raw material into a source entry + principle/practice updates |
+| `playbooks/ingest-new-source.md` | Turn raw material into a source entry + **impact table** (confirms/refines/new/contradicts/skip/park) + only the principle/practice updates the table says — the single protocol for any external information |
 | `playbooks/publish-change.md` | Ship one improvement: check → branch → commit → push → merge → delete branch (`scripts/kb-check.sh`, `scripts/kb-publish.sh`, `/publish`) |
 | `playbooks/scan-market-for-module.md` | For one course module: search YouTube + podcasts with Apify, select by authority, transcribe, log what was considered/selected/discarded, update `sources/scan-log.md` |
 
@@ -87,7 +90,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | MCP servers (Context7, Playwright, Sentry, Snyk, Jira/Notion, Figma) | `02-harness-engineering.md`, `01-context-engineering.md` | `token-savings/mcp-audit.md` | workshop §3.2, videos C/E |
 | Prompt techniques (meta-prompt, ask-the-expert, one-shot index, audit, lesson→rule) | `04-spec-driven-development.md`, `01-context-engineering.md` | `prompt-library/` | workshop §3.2, videos C/D |
 | How this KB is structured | `09-knowledge-base-design.md` | `practices/README.md` | research (all) |
-| Agents: anatomy, patterns, tool use / function calling, MCP as tool transport, agentic RAG | (pending: 21-agent-design-and-tools.md) | (pending: agent-patterns/) | market scan s12 (15 transcripts) |
+| Agents: workflow vs agent, minimal loop, tool design, CLI/MCP/skill/RAG/memory, agentic RAG | `21-agent-design-and-tools.md` | `agent-patterns/`, `prompt-library/trajectory-review.md` | s12 digest §3, impact table §6 |
 
 ## Open actions (from sources)
 

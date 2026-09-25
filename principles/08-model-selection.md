@@ -3,7 +3,7 @@ title: "Model selection — match reasoning depth to the task, not brand to habi
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-08
+last-reviewed: 2026-09-24
 tags: [models, opus, sonnet, codex, gemini, routing]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -53,3 +53,4 @@ Vendor preference stated in the workshop: Anthropic (latest Opus for planning, S
 ## 7. Change log
 
 - 2026-09-08 — created. Model names reflect 2026-09-08.
+- 2026-09-24 — reviewed against `sources/2026-09-24-s12-agents-digest.md`; confirms "start with the most capable model to learn the headroom, then optimise cost/latency" (Stanford CME295, Barry Zhang) and adds one datum: Notion prices custom agents by usage and nudges users away from the top tier for routine automations ("most tasks aren't Opus-level"). Do not fine-tune on your own tools (they change daily). No change to the table.

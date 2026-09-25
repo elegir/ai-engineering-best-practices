@@ -3,7 +3,7 @@ title: "Practice — token savings (measure, then cut in order)"
 type: practice
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-08
+last-reviewed: 2026-09-24
 tags: [tokens, rtk, codegraph, mcp-audit, model-routing]
 principle: principles/07-token-economy.md
 sources:

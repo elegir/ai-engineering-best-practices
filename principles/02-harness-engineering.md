@@ -3,7 +3,7 @@ title: "Harness engineering — building the environment that makes an agent rel
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-08
+last-reviewed: 2026-09-24
 tags: [harness-engineering, tools, sandbox, state, feedback]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -33,7 +33,7 @@ Build and maintain five things: **instructions** (context + entry file), **tools
 LIDR's kitchen model — the robot in a kitchen needs a recipe book, knives, a stove, a prep table, and a chef who tastes the dish — maps to:
 
 1. **Instructions**: `CLAUDE.md`/`AGENTS.md` *plus* the technical docs inside the repo (see `01-context-engineering.md`); MCPs for context that must stay external (Jira, Confluence, Notion).
-2. **Tools**: terminal, file system, git, MCP servers. Note the Vercel lesson: *fewer, better tools* beat many. Remove tools that prove irrelevant.
+2. **Tools**: terminal, file system, git, MCP servers. Note the Vercel lesson: *fewer, better tools* beat many. Remove tools that prove irrelevant. How to design a tool the model can actually use — UI-shaped returns, documented like a function, errors returned as text, bounded — is in `principles/21-agent-design-and-tools.md` §3.4 and `practices/agent-patterns/tool-definition-template.md`.
 3. **Local environment**: pinned dependencies and versions, services that can be launched, written instructions for running tests, starting the DB, and bringing up the whole stack. Without it the agent cannot verify and cannot be autonomous.
 4. **State**: a persisted task artifact recording where work stands, so a session can be resumed after a cut, a reboot, or a hand-off to another agent, and so work can be split across agents. The practitioner guide adds: standardize the startup routine (check directory, read `git log --oneline -20` and the progress file, pick the next task, sanity-check the dev server); prefer JSON for progress files.
 5. **Feedback**: linter, build, unit tests, e2e (Playwright/Cypress), API collections (Postman/Hurl) → pass means commit/PR, fail means correct. *And* feedback improves the harness: change instructions, add or remove tools, fix the environment config.
@@ -91,3 +91,4 @@ Do not run with permissions disabled on your real machine. Pre-allow known-safe 
 ## 7. Change log
 
 - 2026-09-08 — created.
+- 2026-09-24 — reviewed against `sources/2026-09-24-s12-agents-digest.md`. Confirmed: Agent = Model + Harness ("environment + tools + system prompt, model in a loop" — Zhang), "the model is almost never the problem" ("99 % of the time it's a tool bug" — Notion), keep it simple, fresh-context loops over a progress file for long tasks (the mainstream 2026 "harness" narrative matches `practices/session-state/`). Added a pointer from the Tools area to principle 21 and the tool-definition template; no other change.

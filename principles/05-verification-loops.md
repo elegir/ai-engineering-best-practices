@@ -3,7 +3,7 @@ title: "Verification loops — give the agent a way to check its own work"
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-08
+last-reviewed: 2026-09-24
 tags: [testing, e2e, playwright, hooks, sensors, definition-of-done]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -86,3 +86,4 @@ Beyond code tests: a small set of representative tasks run periodically to check
 ## 7. Change log
 
 - 2026-09-08 — created.
+- 2026-09-24 — reviewed against `sources/2026-09-24-s12-agents-digest.md`; no change to the recommendation. Two supporting quotations recorded: "if you don't have some mechanism to get feedback as you're iterating, you're not injecting any more signal, you're just going to have noise… the next limiting factor is verification" (Erik Schluntz, Anthropic, 2025-02); Notion (2026-04) runs three eval tiers — CI regression, launch report card per user journey, and "frontier headroom" evals held at ~30 % pass — parked for the evals principle (sessions 5/11/16).
