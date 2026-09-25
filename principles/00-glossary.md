@@ -3,7 +3,7 @@ title: "Glossary — the vocabulary of building software with AI agents"
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-08
+last-reviewed: 2026-09-24
 tags: [glossary, vocabulary]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -42,7 +42,11 @@ This field renames itself every few months. Below are the terms as used in this 
 
 **Subagent.** A separate agent instance spawned by the main agent for a bounded task (e.g. `code-simplifier`, `verify-app`), with its own context window. Used to keep the main context clean and to parallelize.
 
-**MCP (Model Context Protocol).** An open standard for exposing tools and data to agents through a server. An **MCP server** is configured in an `mcp.json`/`.mcp.json` file and gives the agent capabilities such as querying Postgres, controlling a browser (Playwright), reading Jira/Confluence/Notion, fetching current library docs (Context7), reading Sentry errors, or scanning with Snyk.
+**MCP (Model Context Protocol).** An open standard (Anthropic, 2024-11; specification revised 2026-07-28) for exposing capabilities to agents through a server. Three primitives, each with a different *controller*: **tools** (model-controlled — the model decides when to call), **resources** (application-controlled — the app decides what to attach; can be dynamic and subscribable), **prompts** (user-controlled — templates invoked like slash commands). Also *sampling* (a server asks the client for a completion while the client keeps control of model, cost and privacy) and *composability* (a server can itself be a client). An **MCP server** is configured in `.mcp.json` (project scope) or user scope; its tool schemas occupy context even when unused, so audit and disable (`practices/token-savings/mcp-audit.md`). When a CLI exists (`gh`, `aws`, `wp-cli`), coding agents use it more efficiently and can repair it themselves; MCP is the right choice for narrow, tightly-permissioned agents and for publishing a capability to any client. See `principles/21-agent-design-and-tools.md` §3.5.
+
+**Workflow vs agent.** A *workflow* is code that calls the model a fixed number of times in a fixed order (prompt chaining, routing, parallelisation, orchestrator–workers, evaluator–optimiser). An *agent* is a model given tools and an open-ended goal that decides how many steps to take. A *workflow of agents* is a fixed pipeline whose each step is a small closed loop. *Multi-agent* is a parent delegating to sub-agents that run at the same time; to the model a sub-agent is a tool that takes a prompt. Decide with the four-question checklist in `principles/21-agent-design-and-tools.md` §3.1.
+
+**Tool (for a model).** A function the model can call, described by name, description and parameter schema; the description is part of the prompt. Good tools return what a user would see (not one call per API endpoint), return errors as text, are bounded, and use formats the model already knows. **Tool search / router**: a first cheap step that selects the relevant tools from a large catalogue so only their schemas are loaded.
 
 **Spec-driven development (SDD).** Writing a specification (what the change must do, often as user stories or MUST/SHOULD requirements) *before* the agent implements, then verifying the implementation against it. Frameworks: **OpenSpec** (delta specs; lightweight), **Spec-Kit** (GitHub; phased with quality gates and a *constitution*), **Superpowers** (behavioral skills forcing TDD/YAGNI/DRY), **Spec-Boot** (LIDR; the context layer beneath any of them).
 
@@ -77,3 +81,4 @@ This field renames itself every few months. Below are the terms as used in this 
 ## Change log
 
 - 2026-09-08 — created from the LIDR workshop and the structuring-research entry.
+- 2026-09-24 — MCP entry rewritten with the three primitives and their controllers; added "Workflow vs agent" and "Tool (for a model)"; skills/progressive-disclosure entries reviewed and unchanged. Source: `sources/2026-09-24-s12-agents-digest.md`.

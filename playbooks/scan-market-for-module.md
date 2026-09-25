@@ -70,7 +70,7 @@ superseded-by: null
 
 9. **Track.** Update the module's row in `sources/scan-log.md` (stage → `transcribed`), add the entry to `INDEX.md`, run `bash scripts/kb-check.sh`, publish with `bash scripts/kb-publish.sh market-scan-sNN "kb: market scan sNN <topic>"`.
 
-10. **Next step (separate playbook).** Digest with `playbooks/ingest-new-source.md`: summary, detailed digest, claims to check, contested points, implications per repo, actions → new/updated `principles/` and `practices/`. Move the scan-log row to `digested`, then `principled`.
+10. **Digest and impact (separate playbook, same protocol).** Read every transcript in full — do not delegate the reading to a summary — and write the digest with `playbooks/ingest-new-source.md`, including its mandatory **impact table** (confirms / refines / new / contradicts / skip / park). The digest is a second, separate `sources/` entry (`sources/YYYY-MM-DD-sNN-<slug>-digest.md`) so the scan log stays a log. Then apply only what the table says: change-log lines for what was confirmed, targeted edits for what was refined, a new principle (status `draft`) and practice for what was new. Move the registry entries to `applied` and the scan-log row to `digested` → `principled`. Worked example: `sources/2026-09-24-s12-agents-digest.md` §6 (21 findings: 7 confirms — 3 of them also refine — 2 refines, 7 new, 1 contradicts-the-source, 3 park, 1 skip).
 
 ## Rules of thumb learned in the pilot (2026-09-24)
 
@@ -78,5 +78,6 @@ superseded-by: null
 - Reference talks are often older than 12 months. Always merge the date-filtered scan with the written canon before selecting.
 - Podcast episodes usually exist on YouTube with captions; check before paying for Whisper.
 - Keep the YouTube id in the filename; titles change, ids do not.
+- The impact table keeps the KB from bloating: in the pilot, a third of the material was already in the KB and is now recorded as *reviewed*, which is how principles earn their `last-reviewed` date.
 - Re-running the pilot's own scan through `scan-filter.py` yields 0 new items — that is the check that the registry is complete for a module.
 - Log episodes that belong to *other* modules in the current entry's §4 and in the scan-log "Notes" column, so later scans start with candidates already in hand.

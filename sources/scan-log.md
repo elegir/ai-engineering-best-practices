@@ -33,7 +33,7 @@ Written canon for all 17 sessions was catalogued on 2026-09-24 (Claude Project d
 | 9 | 2026-12-10 | RAG fundamentals | catalogued | — | — | Candidate video: Stanford CS230 L8 "Agents, prompts and RAG" |
 | 10 | 2026-12-17 | Advanced retrieval | catalogued | — | — | |
 | 11 | 2027-01-07 | Advanced RAG: generation and quality | catalogued | — | — | |
-| 12 | 2027-01-14 | Introduction to AI agents | **transcribed** | `sources/2026-09-24-market-scan-s12-intro-to-agents.md` | pending: principles/21-agent-design-and-tools.md (pending), practices/agent-patterns/ (pending) | Pilot run of the playbook. 15 transcripts, ~7.5 h |
+| 12 | 2027-01-14 | Introduction to AI agents | **principled** (draft) | `sources/2026-09-24-market-scan-s12-intro-to-agents.md` → digest `sources/2026-09-24-s12-agents-digest.md` | `principles/21-agent-design-and-tools.md` (draft), `practices/agent-patterns/`, `practices/prompt-library/trajectory-review.md`; refined 00, 02, 05, 07, 08, `mcp-audit.md` | Pilot. 15 transcripts, ~7.5 h. Parked from the digest: Notion's 3 eval tiers → S5/11/16; tool-auth ladder, multi-agent, sandboxing → S14. Becomes `validated` after LIDR session 12 |
 | 13 | 2027-01-21 | Agent orchestration | catalogued | — | — | Candidate podcasts: Latent Space "Age of async agents"; AI Eng. Podcast "Pydantic AI" |
 | 14 | 2027-01-28 | Advanced multi-agent: HITL, security, sandboxing | catalogued | — | — | Candidates: Latent Space "Giving agents computers"; AI Eng. Podcast "MCP as the API… security"; Chain of Thought "You can't secure an agent with software" |
 | 15 | 2027-02-04 | Production and LLMOps I | catalogued | — | — | Candidates: Latent Space Modal / Railway episodes |

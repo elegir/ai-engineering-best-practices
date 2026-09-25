@@ -17,38 +17,32 @@ superseded-by: null
 
 Statuses: **transcribed** — verbatim text in `sources/raw/`, digest pending · **digested** — a source entry has a full digest · **applied** — the knowledge reached `principles/` / `practices/` · **candidate** — parked on purpose for a named module · **discarded** — do not re-consider unless the reason no longer holds (e.g. the channel later publishes primary-source material).
 
-Updated: 2026-09-24. Totals: applied 5, candidate 17, discarded 92, transcribed 15.
+Updated: 2026-09-24. Totals: applied 20, candidate 17, discarded 92.
 
-
-## applied (5)
+## applied (20)
 
 | Title | Channel | Published | Module | Reason / note | Decided | Link |
 |---|---|---|---|---|---|---|
+| 5 Ways to Connect AI Agents to Tools: From APIs to MCP | IBM Technology | 2026-08-16 | s12 | selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/ | 2026-09-24 | https://www.youtube.com/watch?v=BHGTA6ZEls4 |
+| AI Foundations: Tool Calling | Cursor | 2025-09-27 | s12 | selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/ | 2026-09-24 | https://www.youtube.com/watch?v=byR5YVesMeg |
+| AI agents explained: Build your first agent in 8 minutes | Google Cloud Tech | 2026-06-10 | s12 | selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/ | 2026-09-24 | https://www.youtube.com/watch?v=Zqno_vux6d8 |
+| Agent Harness explained in 8min | Caleb Writes Code | 2026-05-22 | s12 | selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/ | 2026-09-24 | https://www.youtube.com/watch?v=1a1VXDdIyrk |
+| Building Agentic RAG From Scratch in Pure Python | Dave Ebbelaar | 2026-05-10 | s12 | selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/ | 2026-09-24 | https://www.youtube.com/watch?v=RxwjoegpI98 |
+| Building Agents with Model Context Protocol — Full Workshop with Mahesh Murag | AI Engineer | 2025-03-01 | s12 | selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/ | 2026-09-24 | https://www.youtube.com/watch?v=kQmXtrmQ5Zg |
+| Building more effective AI agents | Anthropic | 2025-10-17 | s12 | selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/ | 2026-09-24 | https://www.youtube.com/watch?v=uhJJgc-0iTQ |
+| How Model Context Protocol (MCP) actually works | Google Cloud Tech | 2026-06-24 | s12 | selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/ | 2026-09-24 | https://www.youtube.com/watch?v=cGuyrANVi4A |
+| How We Build Effective Agents: Barry Zhang, Anthropic | AI Engineer | 2025-03-01 | s12 | selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/ | 2026-09-24 | https://www.youtube.com/watch?v=D7_ipDqhtwk |
+| MCP in Claude Code | Claude | 2026-05-09 | s12 | selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/ | 2026-09-24 | https://www.youtube.com/watch?v=kkBFmwkDzdo |
+| Notion's Sarah Sachs & Simon Last on Custom Agents, Evals, and the Future of Work (Latent Space podcast) | Latent Space | 2026-04-15 | s12 | selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/ | 2026-09-24 | https://www.youtube.com/watch?v=ATt7QJgt-2k |
+| Skills vs MCP vs RAG vs Memory: What AI Agents Need to Know | IBM Technology | 2026-09-03 | s12 | selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/ | 2026-09-24 | https://www.youtube.com/watch?v=X4FVEEegCbk |
+| Stanford CME295 Autumn 2025 — Lecture 7: Agentic LLMs | Stanford Online | 2025-11-18 | s12 | selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/ | 2026-09-24 | https://www.youtube.com/watch?v=h-7S6HNq0Vg |
+| Tips for building AI agents | Anthropic | 2025-02-01 | s12 | selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/ | 2026-09-24 | https://www.youtube.com/watch?v=LP5OCa20Zpg |
+| What's next for AI agentic workflows ft. Andrew Ng | Sequoia Capital | 2024-03-26 | s12 | selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/ | 2026-09-24 | https://www.youtube.com/watch?v=sal78ACtGTc |
 | Harness Engineering: Las 5 áreas clave para controlar y guiar a tus Agentes IA | LIDR - Carreras potenciadas por IA | 2026-09 | workshop-2026-09-08 | LIDR harness workshop; digested into principles 00-09 | 2026-09-08 | https://www.youtube.com/watch?v=fCkTax4WfRA |
 | How to Use MCP Servers in Cursor | LIDR - Carreras potenciadas por IA | 2026-09 | workshop-2026-09-08 | LIDR harness workshop; digested into principles 00-09 | 2026-09-08 | https://www.youtube.com/watch?v=5s-lvoJpMTY |
 | Programa como un Senior con IA usando Context Engineering | LIDR - Carreras potenciadas por IA | 2026-09 | workshop-2026-09-08 | LIDR harness workshop; digested into principles 00-09 | 2026-09-08 | https://www.youtube.com/watch?v=okYRbetLh7M |
 | Spec-Driven Development: Cómo escalar tu productividad con IA y Contexto (prompts & settings) | LIDR - Carreras potenciadas por IA | 2026-09 | workshop-2026-09-08 | LIDR harness workshop; digested into principles 00-09 | 2026-09-08 | https://www.youtube.com/watch?v=eca3lWJgRmA |
 | ¿Qué es un Agentic Engineer? El rol de software más demandado hoy | LIDR - Carreras potenciadas por IA | 2026-09 | workshop-2026-09-08 | LIDR harness workshop; digested into principles 00-09 | 2026-09-08 | https://www.youtube.com/watch?v=rdrtQyGhjYE |
-
-## transcribed (15)
-
-| Title | Channel | Published | Module | Reason / note | Decided | Link |
-|---|---|---|---|---|---|---|
-| 5 Ways to Connect AI Agents to Tools: From APIs to MCP | IBM Technology | 2026-08-16 | s12 | selected by authority test | 2026-09-24 | https://www.youtube.com/watch?v=BHGTA6ZEls4 |
-| AI Foundations: Tool Calling | Cursor | 2025-09-27 | s12 | selected by authority test | 2026-09-24 | https://www.youtube.com/watch?v=byR5YVesMeg |
-| AI agents explained: Build your first agent in 8 minutes | Google Cloud Tech | 2026-06-10 | s12 | selected by authority test | 2026-09-24 | https://www.youtube.com/watch?v=Zqno_vux6d8 |
-| Agent Harness explained in 8min | Caleb Writes Code | 2026-05-22 | s12 | selected by authority test | 2026-09-24 | https://www.youtube.com/watch?v=1a1VXDdIyrk |
-| Building Agentic RAG From Scratch in Pure Python | Dave Ebbelaar | 2026-05-10 | s12 | selected by authority test | 2026-09-24 | https://www.youtube.com/watch?v=RxwjoegpI98 |
-| Building Agents with Model Context Protocol — Full Workshop with Mahesh Murag | AI Engineer | 2025-03-01 | s12 | selected by authority test | 2026-09-24 | https://www.youtube.com/watch?v=kQmXtrmQ5Zg |
-| Building more effective AI agents | Anthropic | 2025-10-17 | s12 | selected by authority test | 2026-09-24 | https://www.youtube.com/watch?v=uhJJgc-0iTQ |
-| How Model Context Protocol (MCP) actually works | Google Cloud Tech | 2026-06-24 | s12 | selected by authority test | 2026-09-24 | https://www.youtube.com/watch?v=cGuyrANVi4A |
-| How We Build Effective Agents: Barry Zhang, Anthropic | AI Engineer | 2025-03-01 | s12 | selected by authority test | 2026-09-24 | https://www.youtube.com/watch?v=D7_ipDqhtwk |
-| MCP in Claude Code | Claude | 2026-05-09 | s12 | selected by authority test | 2026-09-24 | https://www.youtube.com/watch?v=kkBFmwkDzdo |
-| Notion's Sarah Sachs & Simon Last on Custom Agents, Evals, and the Future of Work (Latent Space podcast) | Latent Space | 2026-04-15 | s12 | selected by authority test | 2026-09-24 | https://www.youtube.com/watch?v=ATt7QJgt-2k |
-| Skills vs MCP vs RAG vs Memory: What AI Agents Need to Know | IBM Technology | 2026-09-03 | s12 | selected by authority test | 2026-09-24 | https://www.youtube.com/watch?v=X4FVEEegCbk |
-| Stanford CME295 Autumn 2025 — Lecture 7: Agentic LLMs | Stanford Online | 2025-11-18 | s12 | selected by authority test | 2026-09-24 | https://www.youtube.com/watch?v=h-7S6HNq0Vg |
-| Tips for building AI agents | Anthropic | 2025-02-01 | s12 | selected by authority test | 2026-09-24 | https://www.youtube.com/watch?v=LP5OCa20Zpg |
-| What's next for AI agentic workflows ft. Andrew Ng | Sequoia Capital | 2024-03-26 | s12 | selected by authority test | 2026-09-24 | https://www.youtube.com/watch?v=sal78ACtGTc |
 
 ## candidate (17)
 
