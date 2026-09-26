@@ -3,7 +3,7 @@ title: "Playbook — audit a repository against the knowledge base and propose a
 type: playbook
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-08
+last-reviewed: 2026-09-26
 tags: [audit, adoption, harness, context]
 sources:
   - principles/01-context-engineering.md
@@ -21,6 +21,10 @@ superseded-by: null
 **Output.** One Markdown file, `docs/kb-audit-YYYY-MM-DD.md` in the target repo (or printed to chat if the repo has no `docs/`), containing findings and a prioritized plan. **No other files are changed by this playbook.** Implementation happens only after Martin approves, one item per prompt.
 
 **Rules.** Investigation before implementation. Reference actual files, commands and gaps in *this* repo — no generic advice. Explain each finding simply, assuming the reader may not know the term; link the principle. Prefer mechanical fixes (hooks, linters, tests) over prose additions. When unsure, ask one question at a time.
+
+## Step 0 — Which practices apply
+
+Run `playbooks/which-practices-apply.md` first (facts with evidence → one confirmation screen → applies / skipped with reasons). Audit only the practices it marked *applies* or *already present*; list the *skipped* ones at the end of the report with their reasons so the omission is visible.
 
 ## Step 1 — Inventory (read only)
 
@@ -54,10 +58,11 @@ For each row, mark **Present / Partial / Missing** and cite the file or the abse
 | Worktrees | `06-parallel-agents-and-worktrees.md` | `practices/worktrees/` | worktree per ticket, `.worktreeinclude`, infra isolation |
 | Tokens | `07-token-economy.md` | `practices/token-savings/` | instruction size, tool count, compression tools, measurement log |
 | Model policy | `08-model-selection.md` | `practices/context-docs-skeleton/docs/workflow.md` §3 | plan-high/execute-mid documented |
+| Agents & tools (only if `tools or multi_agent`) | `21-agent-design-and-tools.md` | `practices/agent-patterns/` | workflow-vs-agent decision recorded; tools pass the 12-point checklist; transport chosen; a signal closes the loop |
 
 ## Step 3 — Findings
 
-For every Partial/Missing: one paragraph — what is missing, why it matters *for this repo* (name a real recent failure or risk if `git log` or issues show one), which principle, **which practice folder provides the files**, whether its "Applies when" holds for this repo (quote the condition), which stack variant fits, and the smallest mechanical fix.
+For every Partial/Missing: one paragraph — what is missing, why it matters *for this repo* (name a real recent failure or risk if `git log` or issues show one), which principle, **which practice folder provides the files**, whether its `applies-when` line holds for this repo (quote the facts and their evidence from Step 0), which stack variant fits, and the smallest mechanical fix.
 
 ## Step 4 — Plan
 

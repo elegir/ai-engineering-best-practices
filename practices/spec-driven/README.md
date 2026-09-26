@@ -5,6 +5,8 @@ status: current
 date: 2026-09-08
 last-reviewed: 2026-09-08
 tags: [spec-driven-development, openspec, user-stories, plan-mode, commands]
+kind: working-style
+applies-when: "always"
 principle: principles/04-spec-driven-development.md
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -57,5 +59,6 @@ Work goes from "add SSO" straight to code. The agent guesses scope, builds too m
 - OpenSpec: https://github.com/Fission-AI/OpenSpec · Spec-Kit: https://github.com/github/spec-kit · Superpowers: https://github.com/obra/superpowers
 
 ## Change log
+- 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 
 - 2026-09-08 — created.

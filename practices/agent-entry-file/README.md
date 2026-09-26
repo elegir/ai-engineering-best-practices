@@ -5,6 +5,8 @@ status: current
 date: 2026-09-08
 last-reviewed: 2026-09-08
 tags: [agents-md, claude-md, rules, cursor]
+kind: working-style
+applies-when: "always"
 principle: principles/03-agent-instruction-files.md
 sources:
   - sources/2026-09-08-how-teams-structure-agent-knowledge.md
@@ -59,5 +61,6 @@ The repo has no instruction file, or it has one that is hundreds of lines of des
 - Boris Cherny's shared `CLAUDE.md` ratchet — `sources/2026-09-08-lidr-workshop-harness-engineering.md` §3.2.
 
 ## Change log
+- 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 
 - 2026-09-08 — created.

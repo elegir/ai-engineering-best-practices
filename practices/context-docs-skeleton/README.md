@@ -5,6 +5,8 @@ status: current
 date: 2026-09-08
 last-reviewed: 2026-09-08
 tags: [context-engineering, docs, standards, workflow]
+kind: working-style
+applies-when: "always"
 principle: principles/01-context-engineering.md
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -71,5 +73,6 @@ The skeletons contain the **index** (the section headings the workshop showed) p
 - Spec-Boot (LIDR) provides an equivalent template set (`api-spec.yml`, `data-model.md`, `development_guide.md`).
 
 ## Change log
+- 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 
 - 2026-09-08 — created.

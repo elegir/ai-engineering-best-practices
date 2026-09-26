@@ -12,20 +12,20 @@ Never copy blindly. Every README has an "Adapt" section listing what must change
 
 ## The practices
 
-| Practice | Solves | Principle | Difficulty |
-|---|---|---|---|
-| `context-docs-skeleton/` | The agent infers conventions from random files because there are no standards documents | `01-context-engineering.md` | M (writing the content takes days; the skeleton takes an hour) |
-| `agent-entry-file/` | `CLAUDE.md`/`AGENTS.md` is missing, bloated, or describes instead of pointing | `03-agent-instruction-files.md` | S |
-| `hooks-and-guards/` | Rules exist only as prose; the agent can skip tests, edit `.env`, or silence linters | `02-harness-engineering.md`, `05-verification-loops.md` | S–M |
-| `session-state/` | Every session starts from zero; long tasks lose their place; parallel agents don't know what's done | `02-harness-engineering.md` | S |
-| `worktrees/` | Parallel sessions overwrite each other; shared DB/ports collide | `06-parallel-agents-and-worktrees.md` | S–M |
-| `verification/` | No deterministic way for the agent to prove the feature works end to end | `05-verification-loops.md` | M |
-| `spec-driven/` | Work goes from a one-line request straight to code; no reviewable plan | `04-spec-driven-development.md` | S–M |
-| `prompt-library/` | The same context-generating prompts get reinvented; quality depends on who prompts | `01-context-engineering.md`, `04-spec-driven-development.md` | S |
-| `token-savings/` | Weekly token limits hit; tool output and repo exploration burn context | `07-token-economy.md` | S |
-| `agent-patterns/` | An LLM feature takes actions but nobody decided workflow vs agent; tools are one-per-endpoint and undocumented; the team tunes prompts instead of reading what the model saw; every integration is an MCP loaded at startup | `21-agent-design-and-tools.md` (draft) | S–M |
+| Practice | Kind | Applies when | Solves | Principle | Difficulty |
+|---|---|---|---|---|---|
+| `context-docs-skeleton/` | working-style | `always` | The agent infers conventions from random files because there are no standards documents | `01-context-engineering.md` | M (writing the content takes days; the skeleton takes an hour) |
+| `agent-entry-file/` | working-style | `always` | `CLAUDE.md`/`AGENTS.md` is missing, bloated, or describes instead of pointing | `03-agent-instruction-files.md` | S |
+| `hooks-and-guards/` | working-style | `always` | Rules exist only as prose; the agent can skip tests, edit `.env`, or silence linters | `02-harness-engineering.md`, `05-verification-loops.md` | S–M |
+| `session-state/` | working-style | `long_tasks or parallel_sessions` | Every session starts from zero; long tasks lose their place; parallel agents don't know what's done | `02-harness-engineering.md` | S |
+| `worktrees/` | working-style | `parallel_sessions` | Parallel sessions overwrite each other; shared DB/ports collide | `06-parallel-agents-and-worktrees.md` | S–M |
+| `verification/` | working-style | `always` | No deterministic way for the agent to prove the feature works end to end | `05-verification-loops.md` | M |
+| `spec-driven/` | working-style | `always` | Work goes from a one-line request straight to code; no reviewable plan | `04-spec-driven-development.md` | S–M |
+| `prompt-library/` | working-style | `always` | The same context-generating prompts get reinvented; quality depends on who prompts | `01-context-engineering.md`, `04-spec-driven-development.md` | S |
+| `token-savings/` | working-style | `always` | Weekly token limits hit; tool output and repo exploration burn context | `07-token-economy.md` | S |
+| `agent-patterns/` | capability | `tools or multi_agent` | An LLM feature takes actions but nobody decided workflow vs agent; tools are one-per-endpoint and undocumented; the team tunes prompts instead of reading what the model saw; every integration is an MCP loaded at startup | `21-agent-design-and-tools.md` (draft) | S–M |
 
-Recommended order for a repo with nothing: `verification` (can the agent even run tests?) → `context-docs-skeleton` → `agent-entry-file` → `hooks-and-guards` → `session-state` → `prompt-library` → `spec-driven` → `worktrees` → `token-savings`. The audit playbook applies this order.
+**Which of these apply to a given repo** is decided by `../playbooks/which-practices-apply.md` from the facts in `facts.md` (the `Applies when` column above uses only those words; `always` means every repo an agent works in). Recommended order for a repo with nothing: `verification` (can the agent even run tests?) → `context-docs-skeleton` → `agent-entry-file` → `hooks-and-guards` → `session-state` → `prompt-library` → `spec-driven` → `worktrees` → `token-savings`. The audit playbook applies this order.
 
 ## Format of a practice (see `_template/`)
 

@@ -5,6 +5,8 @@ status: current
 date: 2026-09-08
 last-reviewed: 2026-09-08
 tags: [hooks, claude-code, lefthook, pre-commit, guards, linters]
+kind: working-style
+applies-when: "always"
 principle: principles/02-harness-engineering.md
 sources:
   - sources/2026-09-08-how-teams-structure-agent-knowledge.md
@@ -66,5 +68,6 @@ The folder is named `dot-claude/` here because remote tools cannot write `.claud
 - Claude Code hooks docs: https://code.claude.com/docs/en/hooks-guide
 
 ## Change log
+- 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 
 - 2026-09-08 — created.

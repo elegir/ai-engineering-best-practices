@@ -5,6 +5,8 @@ status: current
 date: 2026-09-08
 last-reviewed: 2026-09-08
 tags: [prompts, meta-prompt, ask-the-expert, commands, skills]
+kind: working-style
+applies-when: "always"
 principle: principles/01-context-engineering.md
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -57,6 +59,7 @@ Commands: copy a file to `<repo>/.claude/commands/<name>.md` (Claude Code) — t
 - LIDR videos C and D (meta-prompt, ask-the-expert, README-by-index, OpenAPI prompt, standards via expert personas); Boris Cherny (slash commands for inner loops, commit workflow, `code-simplifier`/`verify-app` subagents, "add to CLAUDE.md every time Claude errs") — `sources/2026-09-08-lidr-workshop-harness-engineering.md` §3.2, §3.9.
 
 ## Change log
+- 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 
 - 2026-09-08 — created.
 

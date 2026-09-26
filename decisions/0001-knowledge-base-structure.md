@@ -32,3 +32,6 @@ Martin attended his first harness-engineering workshop on 2026-09-08 and wants a
 - Positive: one source of truth; works with every agent that reads Markdown; diffs and history for free; no symlinks (Windows-friendly); the agent can tell current from stale by frontmatter.
 - Negative: someone (Martin or an agent) must keep `INDEX.md` and `last-reviewed` honest; long-form entries cost time to write; a pointer that is never followed is inert — the audit playbook must actually be run per repo.
 - Follow-ups: adopt in each repo (`playbooks/adopt-kb-in-a-repo.md`); schedule a quarterly gardening pass; `git init` and first commit.
+
+## Notes
+- 2026-09-26 — reaffirmed by `decisions/0003-applicability-by-facts.md`: the applicability selector writes nothing into target repos.

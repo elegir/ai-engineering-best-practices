@@ -10,6 +10,8 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | 2026-09-08 | `sources/2026-09-08-how-teams-structure-agent-knowledge.md` — web survey: how pros structure knowledge for agents (OpenAI, practitioner guide, awesome-harness-engineering, SIGPLAN, docs stack, Agent Skills, Claude Code memory docs, LIDR article) | research | — |
 | 2026-09-24 | `sources/2026-09-24-market-scan-s12-intro-to-agents.md` — market scan for LIDR session 12 "Introduction to AI agents": 105 YouTube results + 30 podcast shows considered, 15 items selected and transcribed (Anthropic, AI Engineer, Stanford, Google Cloud, Cursor, IBM, Latent Space). Log only; digest pending | market scan | `sources/raw/2026-09-24-market-scan-s12-agents/` (15 transcripts, 2 search-result JSON) |
 | 2026-09-24 | `sources/2026-09-24-s12-agents-digest.md` — digest of the 15 session-12 transcripts with the impact table (21 findings → 1 new principle, 1 new practice, 5 principles reviewed/refined, 3 parked) | digest | (raw as above) |
+| 2026-09-26 | `sources/2026-09-26-selector-research.md` — web research: how AWS lenses, Google SRE, OWASP ASVS/SAMM, NIST profiles, Thoughtworks, IDP scorecards, Azure workload guides and coding-agent rules make catalogues conditional | research | — |
+| 2026-09-26 | `sources/2026-09-26-selector-debate.md` — proposal v1 for a project-profile selector, 18-point devil's-advocate attack, responses, agreed design v2 | debate | — |
 | (living) | `sources/media-registry.json` + `sources/media-registry.md` — every video/podcast episode ever considered, with status (transcribed / digested / applied / candidate / discarded) and reason; filtered by `scripts/scan-filter.py` | registry | — |
 | (living) | `sources/scan-log.md` — one row per course module: stage reached (mapped → catalogued → scanned → transcribed → digested → principled → validated) | tracking | — |
 
@@ -31,6 +33,8 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 
 ## Practices (applicable — copyable files with "applies when", adapt and verify sections)
 
+(Which practices apply to a repo: `practices/README.md` column "Applies when" + `practices/facts.md` + `playbooks/which-practices-apply.md`.)
+
 | Practice | Implements | Files | Status | Last reviewed |
 |---|---|---|---|---|
 | `practices/context-docs-skeleton/` | 01 | 9 `docs/` skeletons + `prompts/generate-docs.md` | current | 2026-09-08 |
@@ -50,6 +54,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | # | File | Status |
 |---|---|---|
 | 0001 | `decisions/0001-knowledge-base-structure.md` — single local KB consulted by pointer | accepted |
+| 0003 | `decisions/0003-applicability-by-facts.md` — practices declare `kind` + `applies-when` over the fact vocabulary in `practices/facts.md`; facts inferred from the repo; no profile schema, grammar, rigor levels or risk formula | accepted |
 | 0002 | `decisions/0002-market-scan-protocol-and-media-registry.md` — fixed market-scan protocol; registry of every video/podcast considered; new scans only look at new items | accepted |
 
 ## Playbooks
@@ -57,18 +62,19 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | File | Purpose |
 |---|---|
 | `playbooks/adopt-kb-in-a-repo.md` | Make a repo point to this KB (Windows-safe, no symlinks) |
-| `playbooks/audit-repo-against-kb.md` | Inventory → score → findings → plan → stop for approval |
+| `playbooks/audit-repo-against-kb.md` | (after `which-practices-apply.md`) Inventory → score → findings → plan → stop for approval |
 | `playbooks/ingest-new-source.md` | Turn raw material into a source entry + **impact table** (confirms/refines/new/contradicts/skip/park) + only the principle/practice updates the table says — the single protocol for any external information |
 | `playbooks/publish-change.md` | Ship one improvement: check → branch → commit → push → merge → delete branch (`scripts/kb-check.sh`, `scripts/kb-publish.sh`, `/publish`) |
+| `playbooks/which-practices-apply.md` | Day-one entry point for any repo: infer the facts with evidence → confirm in one screen → applies / skipped with reasons → hand to the audit. Worked examples for Martin's four project shapes |
 | `playbooks/scan-market-for-module.md` | For one course module: search YouTube + podcasts with Apify, select by authority, transcribe, log what was considered/selected/discarded, update `sources/scan-log.md` |
 
 ## Templates
 
-`templates/source-entry.md` · `templates/principle.md` · `templates/decision.md` · `templates/open-spec-user-story.md` (with SSO sign-up/login worked examples)
+`practices/facts.md` (applicability vocabulary: 12 facts, evidence, ordering rule) · `templates/source-entry.md` · `templates/principle.md` · `templates/decision.md` · `templates/open-spec-user-story.md` (with SSO sign-up/login worked examples)
 
 ## Scripts
 
-`scripts/kb-check.sh` — self-verification (frontmatter, index coverage, links, placeholders) · `scripts/kb-publish.sh` — branch/commit/push/merge/cleanup · `scripts/scan-filter.py` — drop already-registered media from a new scan result
+`scripts/kb-check.sh` — self-verification (frontmatter, index coverage, links, applicability fields + vocabulary, placeholders) · `scripts/kb-publish.sh` — branch/commit/push/merge/cleanup · `scripts/scan-filter.py` — drop already-registered media from a new scan result
 
 ## Skills
 
