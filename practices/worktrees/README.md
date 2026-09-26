@@ -5,6 +5,8 @@ status: current
 date: 2026-09-08
 last-reviewed: 2026-09-08
 tags: [worktrees, parallel-agents, isolation, windows]
+kind: working-style
+applies-when: "parallel_sessions"
 principle: principles/06-parallel-agents-and-worktrees.md
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -57,5 +59,6 @@ Two agent sessions in the same folder overwrite each other's files; tests fail f
 - LIDR hub §4 "Git worktrees" (mechanics, the tax, `.worktreeinclude`, `claude --worktree`, `isolation: worktree`) — `sources/2026-09-08-lidr-workshop-harness-engineering.md` §3.4.
 
 ## Change log
+- 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 
 - 2026-09-08 — created.

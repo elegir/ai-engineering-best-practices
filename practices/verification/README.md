@@ -5,6 +5,8 @@ status: current
 date: 2026-09-08
 last-reviewed: 2026-09-08
 tags: [testing, e2e, playwright, hurl, pytest, bats, evals, definition-of-done]
+kind: working-style
+applies-when: "always"
 principle: principles/05-verification-loops.md
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -59,5 +61,6 @@ The agent declares "done" when the code compiles, because nothing lets it prove 
 - Practitioner guide §5: accessibility tree over screenshots; tools per app type (Playwright, Hurl, bats, Testcontainers); generate with agent, run without it — `sources/2026-09-08-how-teams-structure-agent-knowledge.md` §3.2.
 
 ## Change log
+- 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 
 - 2026-09-08 — created.

@@ -5,6 +5,8 @@ status: current
 date: 2026-09-08
 last-reviewed: 2026-09-24
 tags: [tokens, rtk, codegraph, mcp-audit, model-routing]
+kind: working-style
+applies-when: "always"
 principle: principles/07-token-economy.md
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -50,5 +52,6 @@ Weekly token limits get hit; sessions slow down as context fills; the agent re-r
 - LIDR §5 tools and numbers (each tool's own claims); Vercel tool-pruning case; Claude Code MCP tool search; accessibility tree vs screenshots — `sources/2026-09-08-lidr-workshop-harness-engineering.md` §3.5; `sources/2026-09-08-how-teams-structure-agent-knowledge.md` §3.2–3.3.
 
 ## Change log
+- 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 
 - 2026-09-08 — created.

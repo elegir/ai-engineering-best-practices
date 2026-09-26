@@ -5,6 +5,8 @@ status: draft            # draft | current | superseded
 date: YYYY-MM-DD
 last-reviewed: YYYY-MM-DD
 tags: []
+kind: working-style | capability   # working-style = any repo an agent works in; capability = depends on what the product does
+applies-when: "always | <one line using only words from practices/facts.md>"
 principle: principles/NN-topic.md
 sources:
   - sources/YYYY-MM-DD-slug.md

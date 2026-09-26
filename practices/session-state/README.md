@@ -5,6 +5,8 @@ status: current
 date: 2026-09-08
 last-reviewed: 2026-09-08
 tags: [state, progress, session, resumability]
+kind: working-style
+applies-when: "long_tasks or parallel_sessions"
 principle: principles/02-harness-engineering.md
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -56,5 +58,6 @@ Every agent session starts with an empty memory. Long tasks lose their place whe
 - Practitioner guide §6 — standardized startup routine, git log as the record, JSON over Markdown for progress — `sources/2026-09-08-how-teams-structure-agent-knowledge.md` §3.2.
 
 ## Change log
+- 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 
 - 2026-09-08 — created.

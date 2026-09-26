@@ -5,6 +5,8 @@ status: draft            # draft until principle 21 is confirmed against LIDR se
 date: 2026-09-24
 last-reviewed: 2026-09-24
 tags: [agents, tools, function-calling, mcp, agentic-rag, patterns]
+kind: capability
+applies-when: "tools or multi_agent"
 principle: principles/21-agent-design-and-tools.md
 sources:
   - sources/2026-09-24-s12-agents-digest.md
@@ -59,4 +61,5 @@ A repo is about to add (or already has) a feature where a language model takes a
 `sources/2026-09-24-s12-agents-digest.md` §3.1–3.6 and the impact table §6; primary texts listed in `principles/21-agent-design-and-tools.md` §6.
 
 ## Change log
+- 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 - 2026-09-24 — created from the session-12 market scan (draft).
