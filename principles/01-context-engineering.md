@@ -3,7 +3,7 @@ title: "Context engineering — what the agent must know before it acts"
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-08
+last-reviewed: 2026-09-27
 tags: [context-engineering, documentation, standards]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -87,3 +87,4 @@ All of the above is referenced from one short base file (`CLAUDE.md` / `AGENTS.m
 ## 7. Change log
 
 - 2026-09-08 — created.
+- 2026-09-27 — reviewed against `sources/2026-09-27-s01-llm-setup-digest.md`; confirmed with the mechanism: knowledge in the weights is "a vague recollection", knowledge in the context window is "the working memory" (Karpathy, 2025-02, demonstrated on a chapter of *Pride and Prejudice*: pasted beats remembered). The same rule for a product's *runtime* prompts — write it as a complete briefing for a competent stranger, iterate against real inputs — is now in `principles/10-llm-api-fundamentals.md` §3.3. No change to this text.

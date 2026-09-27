@@ -3,7 +3,7 @@ title: "Token economy — spend fewer tokens per task without losing quality"
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-24
+last-reviewed: 2026-09-27
 tags: [tokens, cost, context-management, rtk, codegraph]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -26,10 +26,11 @@ Most waste comes from four things: the agent re-exploring the repo every request
 
 ### Where the tokens go
 
-Every session starts by loading instruction files, rules, and skill metadata; every tool call adds its schema; every command adds its output; every file the agent reads to "understand the codebase" adds its content; and every turn re-sends the growing context. A large `CLAUDE.md` plus a dozen MCPs plus a verbose test run can consume most of a window before real work starts. Context rot then degrades quality, and the agent compensates by reading more — a spiral.
+Every session starts by loading instruction files, rules, and skill metadata; every tool call adds its schema; every command adds its output; every file the agent reads to "understand the codebase" adds its content; and every turn re-sends the growing context. A large `CLAUDE.md` plus a dozen MCPs plus a verbose test run can consume most of a window before real work starts. Context rot then degrades quality, and the agent compensates by reading more — a spiral. Quality drops before the window is full: material in the middle of a long context is recalled worse than the start and the end ("lost in the middle"; Pocock, 2025-10), and stale context from a previous topic contaminates answers in ways you cannot detect afterwards (Ng, 2026-05) — so start a new session or thread on a topic change, `/clear` rather than `/compact` between unrelated tasks.
 
 ### The levers, with the workshop's numbers (each tool's own claims)
 
+0. **Prompt caching (products that call a model).** Vendors cache a stable, append-only prefix and bill it at a fraction of the input price; order every request static-first (system prompt, tool definitions, reference material, examples) and dynamic-last, and verify with the cached-token count in the usage log — a multi-turn feature with zero cached tokens has its prompt in the wrong order (`principles/10-llm-api-fundamentals.md` §3.4; `practices/llm-api-calls/context-budget.md`). Cheapest lever in this list; nothing to install.
 1. **Context first.** With `docs/` in place the agent reads `testing-standards.md` instead of ten test files. This is the largest and least-discussed saving.
 2. **Shorter instructions, fewer tools.** Vercel: removing 80% of tools cut tokens 37% and raised success. Claude Code's MCP Tool Search loads tool schemas on demand (up to ~85% less context per the practitioner guide). Notion (2026-04) found the cost is quality as well as tokens: with 100+ tools "saying hello was thousands of tokens" *and* any niche tool could make the agent over-call it; their fix was progressive disclosure of tools plus goal-driven descriptions owned per team with their own evals. Prefer a CLI over an MCP server when one exists (context-efficient, self-repairing) — decision table in `practices/agent-patterns/tool-transport-decision-table.md`.
 3. **rtk** — compresses terminal output before the model sees it; 60–90% fewer tokens on common commands. Easiest install; first thing to try. github.com/rtk-ai/rtk
@@ -73,3 +74,4 @@ Verification. A skipped e2e run saves tokens once and costs a production inciden
 
 - 2026-09-08 — created.
 - 2026-09-24 — lever 2 refined with Notion's progressive-disclosure finding and the CLI-over-MCP rule; source `sources/2026-09-24-s12-agents-digest.md` §3.3–3.4. Other levers reviewed, unchanged.
+- 2026-09-27 — refined against `sources/2026-09-27-s01-llm-setup-digest.md`: added **prompt caching** as lever 0 for products that call a model (static prefix first, dynamic last; verify with cached-token counts) and two sentences to "Where the tokens go" (lost-in-the-middle; new thread on topic change). Cursor's three price classes and Pocock's `/clear`-over-`/compact` recorded. Runtime-side detail in `principles/10-llm-api-fundamentals.md` §3.4 and `practices/llm-api-calls/context-budget.md`.

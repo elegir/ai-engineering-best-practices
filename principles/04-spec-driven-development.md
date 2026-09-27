@@ -3,7 +3,7 @@ title: "Spec-driven development — plan in writing before the agent implements"
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-08
+last-reviewed: 2026-09-27
 tags: [spec-driven-development, openspec, spec-kit, superpowers, spec-boot, plan-mode]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -79,3 +79,4 @@ The spec is ingredient 3 (the task); the workflow document (`01-context-engineer
 ## 7. Change log
 
 - 2026-09-08 — created.
+- 2026-09-27 — reviewed against `sources/2026-09-27-s01-llm-setup-digest.md`; the plan-before-code shape is confirmed for *content* generation too: outline → critique → expand, and piecewise edits over whole-document rewrites, because an outline edit is high-leverage and a full rewrite is unreviewable (Andrew Ng, 2026-05). No change.

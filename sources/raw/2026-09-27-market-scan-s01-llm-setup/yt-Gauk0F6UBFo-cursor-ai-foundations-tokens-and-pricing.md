@@ -1,0 +1,19 @@
+---
+title: "RAW transcript — AI Foundations: Tokens & Pricing"
+type: source
+status: current
+date: 2025-09-27
+tags: [raw, transcript, llm-api, prompting, tokens, providers, market-scan, s01]
+sources:
+  - https://www.youtube.com/watch?v=Gauk0F6UBFo
+---
+
+> **Video:** "AI Foundations: Tokens & Pricing" — channel *Cursor* — uploaded 2025-09-27 — 3m 34s — English, auto-generated captions. Extracted 2026-09-27 via Apify (`johnvc/YoutubeTranscripts`, dataset `Ye5IdCl1b0t2xUNSN`). Selected in the market scan for course session 1 (see `sources/2026-09-27-market-scan-s01-llm-setup.md`). Verbatim; only whitespace was normalised and paragraphs added every ~900 characters.
+
+Now that we understand how AI models work at a high level, let's dive into something that will help you understand both how these models think and how much they cost to use, and that's tokens. You can think about tokens kind of like the words an AI model actually understands. But here's the thing, they're not quite the same as the words that you or I would use. Just like your computer doesn't actually understand the letter A, but instead works with binary like ones and zeros, AI models don't work directly with words like hello or world either. They break everything down into smaller chunks called tokens. For example, if we look at the open AI tokenizer, we can see how their models take text and turn them into tokens. So, we could type and say hello world. And you can see the color coding down below showing how that's broken into two tokens.
+
+But if I actually paste in a larger sentence here, we can see hello might be one token, but the word understanding is actually multiple tokens. And parts of words or punctuation and spaces can also become their own tokens. The reason this is important is because tokens are how models are priced. You pay per token, not per word or character. And this is also how many folks measure the speed of a model. So a faster model is going to generate more tokens per second or a faster tokens per second, which is how fast you're getting a response back from talking to a model. So let's talk about pricing first since this is going to impact how much you spend when you're using AI models to do coding. If we keep this analogy going that AI models are kind of like these super powerful APIs, tokens are the units that we can use to measure and charge for the input and output traffic.
+
+So there's two different types of tokens we're working with. One is the input tokens which include everything that you send to the model like your prompt and the existing conversation and then output tokens which is what the model generates back to you. Now, output tokens typically cost more than input tokens because generating this new content requires a bit more computational work than just processing what you sent. Have you ever noticed how chat GBT and other AI bots seem to type their responses in almost real time? It's not just a visual effect. It's actually how the models work under the hood. These models are generating tokens one at a time in a sequence. they're predicting the next token and then they use that prediction to help predict the next token after that and so on and so forth. This is why you see the responses kind of come in word by word or rather token by token.
+
+Now these responses can stream back to you. This is great because you don't have to wait for the entire response to finish which you know could take minutes uh and you can go interrupt the model if it starts to go off track. AI tools like Cursor also can use a number of techniques to optimize the information that gets sent to the underlying models. For example, Cursor can automatically cache parts of the prompt that you use repeatedly, especially in larger conversations. That can help you save money on the tokens used. Part of understanding this is understanding what context is. So, let's dive into that in our next lesson. [Music]

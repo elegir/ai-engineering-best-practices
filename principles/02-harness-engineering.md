@@ -3,7 +3,7 @@ title: "Harness engineering — building the environment that makes an agent rel
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-24
+last-reviewed: 2026-09-27
 tags: [harness-engineering, tools, sandbox, state, feedback]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -92,3 +92,4 @@ Do not run with permissions disabled on your real machine. Pre-allow known-safe 
 
 - 2026-09-08 — created.
 - 2026-09-24 — reviewed against `sources/2026-09-24-s12-agents-digest.md`. Confirmed: Agent = Model + Harness ("environment + tools + system prompt, model in a loop" — Zhang), "the model is almost never the problem" ("99 % of the time it's a tool bug" — Notion), keep it simple, fresh-context loops over a progress file for long tasks (the mainstream 2026 "harness" narrative matches `practices/session-state/`). Added a pointer from the Tools area to principle 21 and the tool-definition template; no other change.
+- 2026-09-27 — reviewed against `sources/2026-09-27-s01-llm-setup-digest.md`; "mechanism over prompts" confirmed independently: prompting is "not a control surface with any kind of precise semantics" and LLMs are "plausibility engines" (Dan Klein, 2026-04) — guarantees belong in code, schemas, tool restrictions and hooks. No change.

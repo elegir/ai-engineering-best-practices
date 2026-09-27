@@ -3,7 +3,7 @@ title: "Agent design and tools — an agent is a model calling well-designed too
 type: principle
 status: draft              # draft until LIDR session 12 (2027-01-14) is ingested and compared
 date: 2026-09-24
-last-reviewed: 2026-09-24
+last-reviewed: 2026-09-27
 tags: [agents, workflows, tool-design, function-calling, mcp, agentic-rag, react, s12]
 sources:
   - sources/2026-09-24-s12-agents-digest.md
@@ -47,6 +47,8 @@ Three components and a loop: the **environment** (the system the agent acts in),
 ### 3.3 Think like your agent
 
 Every serious practitioner in the scan repeats this. At each step the model knows only what is in its context window — 10–20k tokens of system prompt, tool schemas, tool results — and nothing else. Builders design from their own perspective, then are puzzled by the agent's choices. The fix is mechanical: dump exactly what the model receives and read it as if you knew nothing else (Zhang's team literally closed their eyes for a minute and then blinked at one screenshot to understand a computer-use agent); print every tool call's *parameters* — what the model chose to search for — and every *result*; then ask the model itself: "Is anything here ambiguous? Can you follow it? Does this tool need more or fewer parameters? Why did you decide this at step 7, and what would have helped?" A model reviewing its own trajectory is not a substitute for your understanding, but it closes the gap fast. Prompt: `practices/prompt-library/trajectory-review.md`.
+
+A second habit from the vendor APIs (`sources/2026-09-27-s01-llm-setup-digest.md` §3.2): keep the model's *own reasoning* in the loop — pass reasoning items back on the next turn (OpenAI reports better tool use and lower latency; Anthropic's thinking blocks work the same way) — so that the model sees its plan and you can read it when a trajectory goes wrong.
 
 ### 3.4 Tool design
 
@@ -109,3 +111,4 @@ An agent converges only if each iteration injects signal: a test that passes or 
 ## 7. Change log
 
 - 2026-09-24 — created from the session-12 market scan digest. Status `draft` until the LIDR session of 2027-01-14 is ingested and compared.
+- 2026-09-27 — reviewed against `sources/2026-09-27-s01-llm-setup-digest.md`; the vendor APIs confirm the loop as the unit of the API (typed items in / typed items out; hosted tools and remote MCP with `allowed_tools` / `require_approval`; "tools are prompts", few tools per server). One refinement to §3.3: besides reading what the model saw, feed its *own reasoning* back into the next turn — OpenAI reports better tool use and lower latency when reasoning items persist across turns. The call itself is now `principles/10-llm-api-fundamentals.md`.

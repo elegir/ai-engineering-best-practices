@@ -3,7 +3,7 @@ title: "Verification loops — give the agent a way to check its own work"
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-24
+last-reviewed: 2026-09-27
 tags: [testing, e2e, playwright, hooks, sensors, definition-of-done]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -43,6 +43,8 @@ Push checks to the fastest layer that can host them; CI-only linters move to pre
 ### End-to-end is mandatory, not optional
 
 LIDR: e2e with Playwright or Cypress is part of the definition of done. Cherny: Claude tests every change through the Chrome extension, "opens a browser, tests the UI, iterates until the UX feels right." Without eyes on the running application, agents declare done as soon as compilation passes. Prefer **structured text over screenshots** — the accessibility tree (role/name/state) is the universal interface and is far cheaper in tokens (practitioner guide: Playwright CLI ~27K vs Playwright MCP ~114K per session on its tasks; screenshots only for visual/layout bugs). Strategy: use the MCP/agent to *generate* the test suite, then run the generated tests deterministically in CI without an agent in the loop.
+
+An LLM-as-judge is one more sensor in this table, and a weak one on its own: its failures are correlated with the generator's (Dan Klein, 2026-04 — `sources/2026-09-27-s01-llm-setup-digest.md` §3.1), so it never gates an irreversible action alone, and its verdicts, like every other sensor's, are read per scenario across N runs rather than as one aggregate pass rate.
 
 ### Tests as specs
 
@@ -87,3 +89,4 @@ Beyond code tests: a small set of representative tasks run periodically to check
 
 - 2026-09-08 — created.
 - 2026-09-24 — reviewed against `sources/2026-09-24-s12-agents-digest.md`; no change to the recommendation. Two supporting quotations recorded: "if you don't have some mechanism to get feedback as you're iterating, you're not injecting any more signal, you're just going to have noise… the next limiting factor is verification" (Erik Schluntz, Anthropic, 2025-02); Notion (2026-04) runs three eval tiers — CI regression, launch report card per user journey, and "frontier headroom" evals held at ~30 % pass — parked for the evals principle (sessions 5/11/16).
+- 2026-09-27 — refined against `sources/2026-09-27-s01-llm-setup-digest.md`: an LLM checking an LLM does not compound reliability because their failures are correlated ("80 % checking 80 %" lands near 82 %, not 96 % — Dan Klein, 2026-04); an LLM judge is one sensor beside deterministic ones, never the sole gate for anything irreversible. And measure per-scenario consistency (run each case N times, read the worst case), not an aggregate pass rate. One sentence added to §3 "Sensors by layer and speed"; detail parked for the evals principle.
