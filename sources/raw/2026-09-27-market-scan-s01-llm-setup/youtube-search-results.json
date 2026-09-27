@@ -1,0 +1,1071 @@
+{
+ "scanned": "2026-09-27",
+ "actor": "streamers/youtube-scraper",
+ "run": "BwTdh891dMcyydwAa",
+ "filters": {
+  "dateFilter": "year",
+  "sortingOrder": "relevance",
+  "maxResultsPerQuery": 15
+ },
+ "queries": [
+  "how LLM API calls work messages system prompt",
+  "Claude API tutorial for developers",
+  "OpenAI Responses API tutorial",
+  "prompt engineering for developers 2026",
+  "tokens context window explained developers",
+  "choosing an LLM provider Anthropic OpenAI Gemini comparison for developers",
+  "LLM application architecture production case study"
+ ],
+ "results": [
+  {
+   "title": "OpenAI featured my app. Here's how I use Responses API.",
+   "url": "https://www.youtube.com/watch?v=TGDS3K-1oZ4",
+   "channelName": "meremortaldev",
+   "numberOfSubscribers": 157,
+   "viewCount": 134,
+   "date": "2026-04-06T03:02:52.000Z",
+   "duration": "00:37:24",
+   "input": "OpenAI Responses API tutorial"
+  },
+  {
+   "title": "Ep 06 | Structured Outputs: Stop Regexing LLM Responses (JSON Schema + Pydantic)",
+   "url": "https://www.youtube.com/watch?v=tbXu2rAL1Aw",
+   "channelName": "@TechLifeWithAI",
+   "numberOfSubscribers": 4,
+   "viewCount": 0,
+   "date": "2026-09-27T16:11:10.000Z",
+   "duration": "00:08:09",
+   "input": "how LLM API calls work messages system prompt"
+  },
+  {
+   "title": "How an LLM Request Works?",
+   "url": "https://www.youtube.com/watch?v=AxdGI_P11qM",
+   "channelName": "lustoykov",
+   "numberOfSubscribers": 5140,
+   "viewCount": 516,
+   "date": "2026-07-17T11:35:49.000Z",
+   "duration": "00:19:50",
+   "input": "how LLM API calls work messages system prompt"
+  },
+  {
+   "title": "OpenAI API Quickstart with JavaScript: Your First API Call in Node.js",
+   "url": "https://www.youtube.com/watch?v=i-v-MsmiM3U",
+   "channelName": "Build with Joon",
+   "numberOfSubscribers": 7,
+   "viewCount": 244,
+   "date": "2026-05-11T16:13:00.000Z",
+   "duration": "00:10:33",
+   "input": "OpenAI Responses API tutorial"
+  },
+  {
+   "title": "\ud83d\udee0\ufe0f OpenAI Responses API in Python | Switching from Chat Completions for Tool-Based Agents",
+   "url": "https://www.youtube.com/watch?v=OSrBjHlW42o",
+   "channelName": "Super Data Science",
+   "numberOfSubscribers": 24700,
+   "viewCount": 141,
+   "date": "2026-06-08T20:00:06.000Z",
+   "duration": "00:06:49",
+   "input": "OpenAI Responses API tutorial"
+  },
+  {
+   "title": "Claude API Crash Course #1 - Introduction & Setup",
+   "url": "https://www.youtube.com/watch?v=H7LZb20-fUY",
+   "channelName": "Net Ninja",
+   "numberOfSubscribers": 1900000,
+   "viewCount": 12412,
+   "date": "2026-06-16T09:47:26.000Z",
+   "duration": "00:09:11",
+   "input": "Claude API tutorial for developers"
+  },
+  {
+   "title": "Agent AI System Design Explained in 27 Minutes",
+   "url": "https://www.youtube.com/watch?v=mwN75EiGfCE",
+   "channelName": "Aishwarya Srinivasan",
+   "numberOfSubscribers": 184000,
+   "viewCount": 220222,
+   "date": "2026-07-15T07:02:50.000Z",
+   "duration": "00:26:56",
+   "input": "LLM application architecture production case study"
+  },
+  {
+   "title": "Most devs don\u2019t understand how context windows work",
+   "url": "https://www.youtube.com/watch?v=-uW5-TaVXu4",
+   "channelName": "Matt Pocock",
+   "numberOfSubscribers": 392000,
+   "viewCount": 286706,
+   "date": "2025-10-22T11:27:43.000Z",
+   "duration": "00:09:33",
+   "input": "tokens context window explained developers"
+  },
+  {
+   "title": "Demo to Production. Architect a Real Agentic AI System (Step by Step)",
+   "url": "https://www.youtube.com/watch?v=ZIAzZtKWmbI",
+   "channelName": "Applied with AI - Sanjay Kumar",
+   "numberOfSubscribers": 71700,
+   "viewCount": 401899,
+   "date": "2026-07-26T12:50:17.000Z",
+   "duration": "00:23:00",
+   "input": "LLM application architecture production case study"
+  },
+  {
+   "title": "Ep 04 | Calling LLM APIs the Right Way: Messages, System Prompts, Temperature, Streaming",
+   "url": "https://www.youtube.com/watch?v=KG6dyeXNLxU",
+   "channelName": "@TechLifeWithAI",
+   "numberOfSubscribers": 4,
+   "viewCount": 1,
+   "date": "2026-09-27T15:59:46.000Z",
+   "duration": "00:08:05",
+   "input": "how LLM API calls work messages system prompt"
+  },
+  {
+   "title": "Ep 02 | LLM Costs Explained: Tokens, Context Windows, and Caching for Devs",
+   "url": "https://www.youtube.com/watch?v=Z3OcrB_rS2Q",
+   "channelName": "@TechLifeWithAI",
+   "numberOfSubscribers": 4,
+   "viewCount": 1,
+   "date": "2026-09-27T15:32:14.000Z",
+   "duration": "00:07:40",
+   "input": "tokens context window explained developers"
+  },
+  {
+   "title": "Build Hour: Responses API",
+   "url": "https://www.youtube.com/watch?v=hNr5EebepYs",
+   "channelName": "OpenAI",
+   "numberOfSubscribers": 2070000,
+   "viewCount": 24455,
+   "date": "2025-10-14T13:08:17.000Z",
+   "duration": "00:51:15",
+   "input": "OpenAI Responses API tutorial"
+  },
+  {
+   "title": "OpenAI API Tutorial: Handling Chat Completions & Markdown in Python",
+   "url": "https://www.youtube.com/watch?v=cHtu_ZJWinw",
+   "channelName": "Super Data Science",
+   "numberOfSubscribers": 24700,
+   "viewCount": 97,
+   "date": "2026-05-20T19:30:06.000Z",
+   "duration": "00:04:08",
+   "input": "OpenAI Responses API tutorial"
+  },
+  {
+   "title": "How Large Language Models LLMs Work Explained | Tokens, Context Windows, Parameters & Training Proce",
+   "url": "https://www.youtube.com/watch?v=u523JOz2VaU",
+   "channelName": "AI Hints",
+   "numberOfSubscribers": 55,
+   "viewCount": 625,
+   "date": "2026-05-10T17:36:17.000Z",
+   "duration": "00:04:44",
+   "input": "tokens context window explained developers"
+  },
+  {
+   "title": "Is RAG Still Needed? Choosing the Best Approach for LLMs",
+   "url": "https://www.youtube.com/watch?v=UabBYexBD4k",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 1020419,
+   "date": "2026-03-09T11:00:51.000Z",
+   "duration": "00:11:09",
+   "input": "LLM application architecture production case study"
+  },
+  {
+   "title": "EP 01 | How LLMs Really Work: Tokens, Context Window & Hallucinations | Claude Architect (CCAR-P)",
+   "url": "https://www.youtube.com/watch?v=ELRoo5H5l94",
+   "channelName": "BSP Blueprint",
+   "numberOfSubscribers": 80,
+   "viewCount": 4,
+   "date": "2026-09-27T13:39:26.000Z",
+   "duration": "00:06:50",
+   "input": "tokens context window explained developers"
+  },
+  {
+   "title": "LLM Tokens Explained | Prompt vs Completion Tokens & Context Window (LLM Rate Limits #1)",
+   "url": "https://www.youtube.com/watch?v=Jc0N4uUUqUQ",
+   "channelName": "The Calm Engineer",
+   "numberOfSubscribers": 15,
+   "viewCount": 61,
+   "date": "2026-07-10T20:51:09.000Z",
+   "duration": "00:26:01",
+   "input": "tokens context window explained developers"
+  },
+  {
+   "title": "\ud83d\ude80 Audit Your Context Window Like a Pro | Track Every Claude Code Token \ud83d\udd0d\ud83d\udcbb",
+   "url": "https://www.youtube.com/watch?v=WlWRTegMj5A",
+   "channelName": "Technical Rajni",
+   "numberOfSubscribers": 11700,
+   "viewCount": 121,
+   "date": "2026-05-08T00:05:57.000Z",
+   "duration": "00:02:26",
+   "input": "tokens context window explained developers"
+  },
+  {
+   "title": "AI Foundations: Tokens & Pricing",
+   "url": "https://www.youtube.com/watch?v=Gauk0F6UBFo",
+   "channelName": "Cursor",
+   "numberOfSubscribers": 80500,
+   "viewCount": 48862,
+   "date": "2025-09-27T16:22:59.000Z",
+   "duration": "00:03:32",
+   "input": "tokens context window explained developers"
+  },
+  {
+   "title": "The Ultimate Beginner\u2019s Guide to Claude AI",
+   "url": "https://www.youtube.com/watch?v=9oJySubZRSA",
+   "channelName": "Metics Media",
+   "numberOfSubscribers": 707000,
+   "viewCount": 1043519,
+   "date": "2026-08-10T11:00:20.000Z",
+   "duration": "01:00:48",
+   "input": "Claude API tutorial for developers"
+  },
+  {
+   "title": "Token Context Window",
+   "url": "https://www.youtube.com/watch?v=c3dPt4_qPbY",
+   "channelName": "The Vibe Engineer",
+   "numberOfSubscribers": 240,
+   "viewCount": 0,
+   "date": "2026-09-26T18:30:08.000Z",
+   "duration": "00:02:42",
+   "input": "tokens context window explained developers"
+  },
+  {
+   "title": "How LLM Tokens Work (Attention)",
+   "url": "https://www.youtube.com/watch?v=T2Hxgfv8cEU",
+   "channelName": "lustoykov",
+   "numberOfSubscribers": 5140,
+   "viewCount": 1192,
+   "date": "2025-12-01T12:01:04.000Z",
+   "duration": "00:07:30",
+   "input": "tokens context window explained developers"
+  },
+  {
+   "title": "LLM Interview Prep: How to Explain Context Windows & Tokens Perfectly",
+   "url": "https://www.youtube.com/watch?v=Jz7eIJvxHK0",
+   "channelName": "Peetha Academy ",
+   "numberOfSubscribers": 3190,
+   "viewCount": 550,
+   "date": "2025-11-24T04:30:13.000Z",
+   "duration": "00:06:08",
+   "input": "tokens context window explained developers"
+  },
+  {
+   "title": "LLM Context Windows Explained: Why More Tokens Don\u2019t Always Mean Better Answers",
+   "url": "https://www.youtube.com/watch?v=mIgDGCMU4YM",
+   "channelName": "Schovia",
+   "numberOfSubscribers": 1080,
+   "viewCount": 422,
+   "date": "2026-06-02T22:00:02.000Z",
+   "duration": "00:13:12",
+   "input": "tokens context window explained developers"
+  },
+  {
+   "title": "Claude Code - Full Tutorial for Beginners",
+   "url": "https://www.youtube.com/watch?v=ntDIxaeo3Wg",
+   "channelName": "Tech With Tim",
+   "numberOfSubscribers": 2090000,
+   "viewCount": 1717213,
+   "date": "2026-02-27T13:01:25.000Z",
+   "duration": "00:35:48",
+   "input": "Claude API tutorial for developers"
+  },
+  {
+   "title": "Tokens, Context Windows & Cost Mechanics | Fundamentals of Gen AI 2026 | Lecture 9",
+   "url": "https://www.youtube.com/watch?v=8N_1mYHB3k0",
+   "channelName": "LearnYard",
+   "numberOfSubscribers": 79200,
+   "viewCount": 554,
+   "date": "2026-07-13T12:30:17.000Z",
+   "duration": "00:28:25",
+   "input": "tokens context window explained developers"
+  },
+  {
+   "title": "Claude Code Crash Course For Developers",
+   "url": "https://www.youtube.com/watch?v=C2GpeepcmYs",
+   "channelName": "Traversy Media",
+   "numberOfSubscribers": 2420000,
+   "viewCount": 255563,
+   "date": "2026-06-22T14:00:05.000Z",
+   "duration": "01:03:23",
+   "input": "Claude API tutorial for developers"
+  },
+  {
+   "title": "Got a dumb Agent? It\u2019s the Context. Learn about Tokens, Context Windows, and Prompt Caching",
+   "url": "https://www.youtube.com/watch?v=v4MHGGdW-s4",
+   "channelName": "Justin Lee",
+   "numberOfSubscribers": 23,
+   "viewCount": 99,
+   "date": "2026-03-31T11:38:06.000Z",
+   "duration": "00:09:42",
+   "input": "tokens context window explained developers"
+  },
+  {
+   "title": "Tokens & Context Window Explained for Beginners",
+   "url": "https://www.youtube.com/watch?v=MsppVHXk3e0",
+   "channelName": "Stats Wire",
+   "numberOfSubscribers": 15100,
+   "viewCount": 203,
+   "date": "2026-07-27T03:52:45.000Z",
+   "duration": "00:06:12",
+   "input": "tokens context window explained developers"
+  },
+  {
+   "title": "How to Build an AI Agent with Claude Code (Claude AI Agent Tutorial)",
+   "url": "https://www.youtube.com/watch?v=bcM9dP_uXJU",
+   "channelName": "AI Master",
+   "numberOfSubscribers": 331000,
+   "viewCount": 516390,
+   "date": "2026-06-30T14:26:45.000Z",
+   "duration": "00:22:07",
+   "input": "Claude API tutorial for developers"
+  },
+  {
+   "title": "Learn 80% of Claude Code in 10 Minutes (2026 Tutorial)",
+   "url": "https://www.youtube.com/watch?v=3aKVArutiIU",
+   "channelName": "Sajjaad Khader",
+   "numberOfSubscribers": 350000,
+   "viewCount": 310697,
+   "date": "2026-01-07T22:00:09.000Z",
+   "duration": "00:09:56",
+   "input": "Claude API tutorial for developers"
+  },
+  {
+   "title": "Responses API - OpenAI node in n8n. How to use build-in node without http-node",
+   "url": "https://www.youtube.com/watch?v=g4cO35LCDxc",
+   "channelName": "Tech with Ilia",
+   "numberOfSubscribers": 82,
+   "viewCount": 643,
+   "date": "2025-11-05T22:35:11.000Z",
+   "duration": "00:04:39",
+   "input": "OpenAI Responses API tutorial"
+  },
+  {
+   "title": "CLAUDE CODE FULL COURSE 4 HOURS: Build & Sell (2026)",
+   "url": "https://www.youtube.com/watch?v=QoQBzR1NIqI",
+   "channelName": "Nick Saraev",
+   "numberOfSubscribers": 528000,
+   "viewCount": 2557307,
+   "date": "2026-02-12T17:14:59.000Z",
+   "duration": "04:10:43",
+   "input": "Claude API tutorial for developers"
+  },
+  {
+   "title": "Claude AI Tutorial for Beginners (Step-by-Step)",
+   "url": "https://www.youtube.com/watch?v=r2vYObllqJU",
+   "channelName": "Kevin Stratvert",
+   "numberOfSubscribers": 4450000,
+   "viewCount": 1170383,
+   "date": "2026-04-30T07:00:55.000Z",
+   "duration": "00:08:36",
+   "input": "Claude API tutorial for developers"
+  },
+  {
+   "title": "FULL Claude Tutorial For Beginners in 2026! (FULL COURSE)",
+   "url": "https://www.youtube.com/watch?v=Xg55nTrbYYY",
+   "channelName": "Productive Dude",
+   "numberOfSubscribers": 172000,
+   "viewCount": 1020262,
+   "date": "2026-04-13T13:01:03.000Z",
+   "duration": "01:52:38",
+   "input": "Claude API tutorial for developers"
+  },
+  {
+   "title": "How to Add OpenAI API Key for AI Agent || Enable AI-Powered Responses || BotPenguin",
+   "url": "https://www.youtube.com/watch?v=g1NNfDhnDPs",
+   "channelName": "BotPenguin Customer Support",
+   "numberOfSubscribers": 190,
+   "viewCount": 21,
+   "date": "2026-03-28T10:08:53.000Z",
+   "duration": "00:01:13",
+   "input": "OpenAI Responses API tutorial"
+  },
+  {
+   "title": "OpenAI API Legacy to Responses API Migration Guide",
+   "url": "https://www.youtube.com/watch?v=rhA9TRDRDys",
+   "channelName": "Standarity",
+   "numberOfSubscribers": 698,
+   "viewCount": 22,
+   "date": "2026-05-15T09:46:03.000Z",
+   "duration": "00:02:44",
+   "input": "OpenAI Responses API tutorial"
+  },
+  {
+   "title": "Full Claude Tutorial: Beginner to Advanced in 19 Minutes",
+   "url": "https://www.youtube.com/watch?v=WSPChlfxJyA",
+   "channelName": "Futurepedia",
+   "numberOfSubscribers": 754000,
+   "viewCount": 907943,
+   "date": "2026-04-08T13:53:01.000Z",
+   "duration": "00:19:12",
+   "input": "Claude API tutorial for developers"
+  },
+  {
+   "title": "Building with MCP and the Claude API",
+   "url": "https://www.youtube.com/watch?v=aZLr962R6Ag&t=640s",
+   "channelName": "Anthropic",
+   "numberOfSubscribers": 806000,
+   "viewCount": 44662,
+   "date": "2025-10-09T19:09:40.000Z",
+   "duration": "00:25:59",
+   "input": "Claude API tutorial for developers"
+  },
+  {
+   "title": "Step-by-Step Guide to Setting Up the OpenAI API with Python for Beginners",
+   "url": "https://www.youtube.com/watch?v=jDa8GEtpnu4",
+   "channelName": "Mathew K Analytics",
+   "numberOfSubscribers": 1360,
+   "viewCount": 147,
+   "date": "2025-12-01T05:16:08.000Z",
+   "duration": "00:20:08",
+   "input": "OpenAI Responses API tutorial"
+  },
+  {
+   "title": "GPT-Live-1 is now in the API",
+   "url": "https://www.youtube.com/watch?v=OSaP6bJoU44",
+   "channelName": "OpenAI",
+   "numberOfSubscribers": 2070000,
+   "viewCount": 907981,
+   "date": "2026-09-11T17:06:25.000Z",
+   "duration": "00:01:17",
+   "input": "OpenAI Responses API tutorial"
+  },
+  {
+   "title": "Prompt Engineering for Developers | How to Make AI Write Production-Ready Code | Geekific",
+   "url": "https://www.youtube.com/watch?v=lZnCO0CuOhc",
+   "channelName": "Geekific",
+   "numberOfSubscribers": 89600,
+   "viewCount": 1608,
+   "date": "2026-03-14T14:01:13.000Z",
+   "duration": "00:06:36",
+   "input": "prompt engineering for developers 2026"
+  },
+  {
+   "title": "Is Prompt Engineering Still Worth It in 2026?",
+   "url": "https://www.youtube.com/watch?v=ibcMs4KUvTw",
+   "channelName": "James Blue",
+   "numberOfSubscribers": 40000,
+   "viewCount": 14341,
+   "date": "2026-08-07T15:02:28.000Z",
+   "duration": "00:09:47",
+   "input": "prompt engineering for developers 2026"
+  },
+  {
+   "title": "How to Call the OpenAI API and Build an AI Agent",
+   "url": "https://www.youtube.com/watch?v=bIryfwdFSoU",
+   "channelName": "Tech Rostrum",
+   "numberOfSubscribers": 4430,
+   "viewCount": 50,
+   "date": "2026-06-29T13:02:06.000Z",
+   "duration": "00:09:06",
+   "input": "OpenAI Responses API tutorial"
+  },
+  {
+   "title": "Prompting Is Dead in 6 Months. Andrew Ng, Stanford",
+   "url": "https://www.youtube.com/watch?v=9EuNUe-CJRM",
+   "channelName": "philia",
+   "numberOfSubscribers": 2640,
+   "viewCount": 186022,
+   "date": "2026-09-05T01:09:30.000Z",
+   "duration": "01:43:02",
+   "input": "prompt engineering for developers 2026"
+  },
+  {
+   "title": "Is Prompt Engineering Still Worth It in 2026? (The Truth)",
+   "url": "https://www.youtube.com/watch?v=pi86am09amg",
+   "channelName": "Aishwarya Srinivasan",
+   "numberOfSubscribers": 184000,
+   "viewCount": 9219,
+   "date": "2026-02-20T09:37:34.000Z",
+   "duration": "00:09:50",
+   "input": "prompt engineering for developers 2026"
+  },
+  {
+   "title": "Full AI Prompting Course with Andrew Ng",
+   "url": "https://www.youtube.com/watch?v=8ib4Qnh2HFE",
+   "channelName": "DeepLearningAI",
+   "numberOfSubscribers": 725000,
+   "viewCount": 478109,
+   "date": "2026-05-18T14:45:42.000Z",
+   "duration": "02:28:46",
+   "input": "prompt engineering for developers 2026"
+  },
+  {
+   "title": "Prompt Engineering for Developers - Workshop",
+   "url": "https://www.youtube.com/watch?v=yDHgZRKB7H8",
+   "channelName": "Bitovi",
+   "numberOfSubscribers": 2460,
+   "viewCount": 4418,
+   "date": "2025-12-18T21:58:42.000Z",
+   "duration": "01:33:07",
+   "input": "prompt engineering for developers 2026"
+  },
+  {
+   "title": "Prompt Engineering Guide: 2026 Edition (Steal My System)",
+   "url": "https://www.youtube.com/watch?v=zAkMuMddM2E",
+   "channelName": "Ali H. Salem",
+   "numberOfSubscribers": 104000,
+   "viewCount": 33785,
+   "date": "2025-11-12T19:53:02.000Z",
+   "duration": "00:14:53",
+   "input": "prompt engineering for developers 2026"
+  },
+  {
+   "title": "How to Become a $300K AI Engineer in 2026 (Complete Roadmap)",
+   "url": "https://www.youtube.com/watch?v=E6lvgbayD04",
+   "channelName": "Sajjaad Khader",
+   "numberOfSubscribers": 350000,
+   "viewCount": 290101,
+   "date": "2026-08-27T21:00:10.000Z",
+   "duration": "00:12:28",
+   "input": "prompt engineering for developers 2026"
+  },
+  {
+   "title": "Is Software Engineering Dying in 2026? (What the Data Actually Says)",
+   "url": "https://www.youtube.com/watch?v=1PdgNyOy20w",
+   "channelName": "Tech With Tim",
+   "numberOfSubscribers": 2090000,
+   "viewCount": 160167,
+   "date": "2026-09-19T13:00:13.000Z",
+   "duration": "00:12:18",
+   "input": "prompt engineering for developers 2026"
+  },
+  {
+   "title": "Prompt Engineering Full Course 2026 | Generative AI | Prompt Engineering Tutorial| Simplilearn",
+   "url": "https://www.youtube.com/watch?v=DvhFcIRRXyI",
+   "channelName": "Simplilearn",
+   "numberOfSubscribers": 6730000,
+   "viewCount": 222416,
+   "date": "2025-12-05T14:30:11.000Z",
+   "duration": "09:08:16",
+   "input": "prompt engineering for developers 2026"
+  },
+  {
+   "title": "Prompt Caching with Anthropic Claude API",
+   "url": "https://www.youtube.com/watch?v=tWJzCxV6Aqc",
+   "channelName": "Design Solve & Code",
+   "numberOfSubscribers": 326,
+   "viewCount": 788,
+   "date": "2026-04-15T04:25:07.000Z",
+   "duration": "00:05:39",
+   "input": "how LLM API calls work messages system prompt"
+  },
+  {
+   "title": "ChatDatabricks Full Tutorial: Call LLMs on Databricks using LangChain",
+   "url": "https://www.youtube.com/watch?v=wzv4TNTgZdg",
+   "channelName": "datageekrj",
+   "numberOfSubscribers": 1300,
+   "viewCount": 531,
+   "date": "2026-04-30T10:17:54.000Z",
+   "duration": "00:30:21",
+   "input": "how LLM API calls work messages system prompt"
+  },
+  {
+   "title": "AI Security 3.3: System Prompt Leakage - Protecting Your AI's Hidden Instructions",
+   "url": "https://www.youtube.com/watch?v=74Jok8nyZFc",
+   "channelName": "WiseBuilder",
+   "numberOfSubscribers": 1160,
+   "viewCount": 65,
+   "date": "2026-05-31T13:01:29.000Z",
+   "duration": "00:13:10",
+   "input": "how LLM API calls work messages system prompt"
+  },
+  {
+   "title": "RAG vs Agentic AI: How LLMs Connect Data for Smarter AI",
+   "url": "https://www.youtube.com/watch?v=fB2JQXEH_94",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 185825,
+   "date": "2025-12-08T12:01:30.000Z",
+   "duration": "00:10:00",
+   "input": "LLM application architecture production case study"
+  },
+  {
+   "title": "How I Made a Support Chatbot Leak Its System Prompt",
+   "url": "https://www.youtube.com/watch?v=Dj4iv3L8nFI",
+   "channelName": "Blackthink-labs",
+   "numberOfSubscribers": 72,
+   "viewCount": 82,
+   "date": "2026-09-08T18:34:03.000Z",
+   "duration": "00:06:55",
+   "input": "how LLM API calls work messages system prompt"
+  },
+  {
+   "title": "Episode 03 02 \u2014 System prompt leakage why your hidden prompt isn't hidden",
+   "url": "https://www.youtube.com/watch?v=LZf_RNTE7W0",
+   "channelName": "The Stack Underflow",
+   "numberOfSubscribers": 63,
+   "viewCount": 27,
+   "date": "2026-06-23T18:08:20.000Z",
+   "duration": "00:04:22",
+   "input": "how LLM API calls work messages system prompt"
+  },
+  {
+   "title": "How to Build a Scalable RAG System for AI Apps (Full Architecture)",
+   "url": "https://www.youtube.com/watch?v=4KiiKQ9RVvA",
+   "channelName": "ByteMonk",
+   "numberOfSubscribers": 403000,
+   "viewCount": 166629,
+   "date": "2026-02-08T11:00:06.000Z",
+   "duration": "00:15:52",
+   "input": "LLM application architecture production case study"
+  },
+  {
+   "title": "How Do AI Chatbots Actually Work? You Re-Send The Whole Chat Every Ti",
+   "url": "https://www.youtube.com/watch?v=FKt7hhNueZQ",
+   "channelName": "The Automation Stack ",
+   "numberOfSubscribers": 164,
+   "viewCount": 87,
+   "date": "2026-08-26T14:55:18.000Z",
+   "duration": "00:14:27",
+   "input": "how LLM API calls work messages system prompt"
+  },
+  {
+   "title": "The Journey of a Prompt: Production-Grade AI App Architecture (RAG & Backend)",
+   "url": "https://www.youtube.com/watch?v=ZscTNnClmr4",
+   "channelName": "AI Product Studio",
+   "numberOfSubscribers": 19,
+   "viewCount": 22,
+   "date": "2026-04-02T09:04:59.000Z",
+   "duration": "00:06:18",
+   "input": "LLM application architecture production case study"
+  },
+  {
+   "title": "How to Use Agentic AI: LLMs, AI Agents & Prompt Engineering in Action",
+   "url": "https://www.youtube.com/watch?v=bwvfdFWR1RI",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 67190,
+   "date": "2025-12-27T12:01:19.000Z",
+   "duration": "00:06:31",
+   "input": "LLM application architecture production case study"
+  },
+  {
+   "title": "Best LLM Providers for AI Agents: OpenAI vs Claude vs Gemini & Open Source",
+   "url": "https://www.youtube.com/watch?v=TMRoMHQfBHw",
+   "channelName": "Divesh Jadhwani",
+   "numberOfSubscribers": 2720,
+   "viewCount": 278,
+   "date": "2026-06-21T04:27:00.000Z",
+   "duration": "00:15:06",
+   "input": "choosing an LLM provider Anthropic OpenAI Gemini comparison for developers"
+  },
+  {
+   "title": "Agentic AI Frameworks Explained: Workflows, Multi-Agent, & Production",
+   "url": "https://www.youtube.com/watch?v=ZVPlLaehjLk",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 90782,
+   "date": "2026-07-09T11:00:08.000Z",
+   "duration": "00:11:53",
+   "input": "LLM application architecture production case study"
+  },
+  {
+   "title": "AI Agent System designD9: Production Agentic AI.  #Kubernetes #EKS #vLLM #Ollama #SystemDesign",
+   "url": "https://www.youtube.com/watch?v=P6Qxj5UXYXM",
+   "channelName": "Abhigya AI Lab",
+   "numberOfSubscribers": 33,
+   "viewCount": 52,
+   "date": "2026-08-23T08:07:39.000Z",
+   "duration": "00:32:42",
+   "input": "LLM application architecture production case study"
+  },
+  {
+   "title": "The architecture mistake that doubled our inference cost: A Production failed Case Study.",
+   "url": "https://www.youtube.com/watch?v=VVkJcN4JDjA",
+   "channelName": "Abhigya AI Lab",
+   "numberOfSubscribers": 33,
+   "viewCount": 5,
+   "date": "2026-06-30T14:30:34.000Z",
+   "duration": "00:37:58",
+   "input": "LLM application architecture production case study"
+  },
+  {
+   "title": "ChatGPT vs Claude vs Gemini: Which $20 AI Plan Is Worth It?",
+   "url": "https://www.youtube.com/watch?v=ftNYhk3RQ-M",
+   "channelName": "Parker Prompts",
+   "numberOfSubscribers": 132000,
+   "viewCount": 164599,
+   "date": "2026-08-12T13:59:33.000Z",
+   "duration": "00:12:54",
+   "input": "choosing an LLM provider Anthropic OpenAI Gemini comparison for developers"
+  },
+  {
+   "title": "Every LLM Explained: ChatGPT vs Claude vs Gemini",
+   "url": "https://www.youtube.com/watch?v=Xk1lq7LZasU",
+   "channelName": "Chip Clarity",
+   "numberOfSubscribers": 198,
+   "viewCount": 1076,
+   "date": "2026-01-12T22:10:52.000Z",
+   "duration": "00:13:25",
+   "input": "choosing an LLM provider Anthropic OpenAI Gemini comparison for developers"
+  },
+  {
+   "title": "Popular Large Language Models (LLMs) Explained | ChatGPT vs Gemini vs Claude vs Llama vs Mistral",
+   "url": "https://www.youtube.com/watch?v=XVijTYXJuF8",
+   "channelName": "LearnIT with Lakmal",
+   "numberOfSubscribers": 42,
+   "viewCount": 52,
+   "date": "2026-07-15T06:28:57.000Z",
+   "duration": "00:14:06",
+   "input": "choosing an LLM provider Anthropic OpenAI Gemini comparison for developers"
+  },
+  {
+   "title": "ChatGPT, Claude, and Gemini: how to choose the right AI tool for real work",
+   "url": "https://www.youtube.com/watch?v=ZDTt-Pe7_yw",
+   "channelName": "Leaders insights",
+   "numberOfSubscribers": 5,
+   "viewCount": 9,
+   "date": "2026-07-03T15:18:39.000Z",
+   "duration": "00:04:18",
+   "input": "choosing an LLM provider Anthropic OpenAI Gemini comparison for developers"
+  },
+  {
+   "title": "ChatGPT Plus vs Claude Pro vs Gemini Pro: The Best $20 AI Plan",
+   "url": "https://www.youtube.com/watch?v=w21XAsgoQ5o",
+   "channelName": "Paul J Lipsky",
+   "numberOfSubscribers": 503000,
+   "viewCount": 548412,
+   "date": "2026-06-07T13:00:16.000Z",
+   "duration": "00:20:57",
+   "input": "choosing an LLM provider Anthropic OpenAI Gemini comparison for developers"
+  },
+  {
+   "title": "ChatGPT vs Claude vs Gemini  | Which AI Tool Wins?",
+   "url": "https://www.youtube.com/watch?v=QbtFcbAyxAI",
+   "channelName": "Vishal Nagpal - TechIntel AI",
+   "numberOfSubscribers": 447,
+   "viewCount": 42,
+   "date": "2026-07-15T08:30:28.000Z",
+   "duration": "00:03:33",
+   "input": "choosing an LLM provider Anthropic OpenAI Gemini comparison for developers"
+  },
+  {
+   "title": "Open Responses - The NEW Standard API for Open Models",
+   "url": "https://www.youtube.com/watch?v=b-BzeHF6WLA",
+   "channelName": "Sam Witteveen",
+   "numberOfSubscribers": 133000,
+   "viewCount": 10786,
+   "date": "2026-01-20T13:30:38.000Z",
+   "duration": "00:15:53",
+   "input": "OpenAI Responses API tutorial"
+  },
+  {
+   "title": "How to Use OpenAI API with Node JS Javascript | 2026 Latest Tutorial",
+   "url": "https://www.youtube.com/watch?v=fga7_aUtmWk",
+   "channelName": "United Top Tech",
+   "numberOfSubscribers": 48400,
+   "viewCount": 822,
+   "date": "2026-03-04T16:12:09.000Z",
+   "duration": "00:03:56",
+   "input": "OpenAI Responses API tutorial"
+  },
+  {
+   "title": "How to Use Claude AI API with Python | Latest 2026 Tutorial",
+   "url": "https://www.youtube.com/watch?v=oH00h-zpfTE",
+   "channelName": "United Top Tech",
+   "numberOfSubscribers": 48400,
+   "viewCount": 8439,
+   "date": "2026-04-18T07:58:31.000Z",
+   "duration": "00:07:23",
+   "input": "Claude API tutorial for developers"
+  },
+  {
+   "title": "1h Claude Code Crash Course For App Developers (Beginner Level)",
+   "url": "https://www.youtube.com/watch?v=gq5uGNSUVx4",
+   "channelName": "Philipp Lackner",
+   "numberOfSubscribers": 259000,
+   "viewCount": 68206,
+   "date": "2026-03-22T17:32:50.000Z",
+   "duration": "00:58:47",
+   "input": "Claude API tutorial for developers"
+  },
+  {
+   "title": "Real-Time AI Responses in Bubble.io: OpenAI Streaming API Connector Setup",
+   "url": "https://www.youtube.com/watch?v=LJhu2JC7wVY",
+   "channelName": "Build With Lucas",
+   "numberOfSubscribers": 227,
+   "viewCount": 393,
+   "date": "2025-10-17T20:00:16.000Z",
+   "duration": "00:08:51",
+   "input": "OpenAI Responses API tutorial"
+  },
+  {
+   "title": "System Prompts Explained \u2014 Control AI Behaviour Like a Pro | Sukrid LearnHub",
+   "url": "https://www.youtube.com/watch?v=P20S5yJLI-s",
+   "channelName": "Sukrid LearnHub",
+   "numberOfSubscribers": 66,
+   "viewCount": 14,
+   "date": "2026-04-27T04:52:51.000Z",
+   "duration": "00:08:42",
+   "input": "how LLM API calls work messages system prompt"
+  },
+  {
+   "title": "This Is REAL Agentic AI (Enterprise Architecture Explained)",
+   "url": "https://www.youtube.com/watch?v=ALr8bjRu3W4",
+   "channelName": "Manifold AI Learning",
+   "numberOfSubscribers": 14900,
+   "viewCount": 16210,
+   "date": "2025-12-23T17:45:00.000Z",
+   "duration": "00:16:30",
+   "input": "LLM application architecture production case study"
+  },
+  {
+   "title": "Full Claude Code Tutorial for Non-Technical Beginners in 2026 (step-by-step)",
+   "url": "https://www.youtube.com/watch?v=bqJzIWAEn40",
+   "channelName": "Futurepedia",
+   "numberOfSubscribers": 754000,
+   "viewCount": 216298,
+   "date": "2026-04-30T17:09:53.000Z",
+   "duration": "00:40:52",
+   "input": "Claude API tutorial for developers"
+  },
+  {
+   "title": "Prompt Engineering Full Course",
+   "url": "https://www.youtube.com/watch?v=2BpCk4d2Cc0&t=104s",
+   "channelName": "Tech With Tim",
+   "numberOfSubscribers": 2090000,
+   "viewCount": 329584,
+   "date": "2026-03-11T14:50:08.000Z",
+   "duration": "00:37:44",
+   "input": "prompt engineering for developers 2026"
+  },
+  {
+   "title": "User Messages In LLM Apis Explained: A Simple Guide in Telugu",
+   "url": "https://www.youtube.com/watch?v=PCWWoRscSmg",
+   "channelName": "KKPBT Online Training by Vicky",
+   "numberOfSubscribers": 5750,
+   "viewCount": 12,
+   "date": "2026-09-19T06:59:49.000Z",
+   "duration": "00:01:38",
+   "input": "how LLM API calls work messages system prompt"
+  },
+  {
+   "title": "AI Engineering Day 1: How to Make Your First LLM API Call with Python | AI for Beginners",
+   "url": "https://www.youtube.com/watch?v=osV7GpzBcBg",
+   "channelName": "System and design",
+   "numberOfSubscribers": 42,
+   "viewCount": 123,
+   "date": "2026-08-23T14:26:32.000Z",
+   "duration": "00:10:41",
+   "input": "how LLM API calls work messages system prompt"
+  },
+  {
+   "title": "LLM Fundamentals Crash Course For Beginners 2026 (Tokens, Prompting, APIs & Tool Calls)",
+   "url": "https://www.youtube.com/watch?v=YHNi88FaGug",
+   "channelName": "Harish Neel | AI",
+   "numberOfSubscribers": 22900,
+   "viewCount": 16721,
+   "date": "2026-08-14T05:22:29.000Z",
+   "duration": "01:13:43",
+   "input": "how LLM API calls work messages system prompt"
+  },
+  {
+   "title": "L12- Prompt Templates, Pipe Operator & LLM Memory | ChatPromptTemplate \u00b7 Variables \u00b7 Chat History",
+   "url": "https://www.youtube.com/watch?v=kW768UnkMuE",
+   "channelName": "Zero to Deployed",
+   "numberOfSubscribers": 245,
+   "viewCount": 139,
+   "date": "2026-04-06T16:04:36.000Z",
+   "duration": "00:54:45",
+   "input": "how LLM API calls work messages system prompt"
+  },
+  {
+   "title": "AI Agents For Beginners \u2013 OpenClaw Case Study",
+   "url": "https://www.youtube.com/watch?v=AZDSpS5v57w",
+   "channelName": "freeCodeCamp.org",
+   "numberOfSubscribers": 11900000,
+   "viewCount": 156096,
+   "date": "2026-07-07T12:13:50.000Z",
+   "duration": "03:05:58",
+   "input": "LLM application architecture production case study"
+  },
+  {
+   "title": "What Is an AI Stack? LLMs, RAG, & AI Hardware",
+   "url": "https://www.youtube.com/watch?v=RRKwmeyIc24",
+   "channelName": "IBM Technology",
+   "numberOfSubscribers": 1800000,
+   "viewCount": 351943,
+   "date": "2025-11-03T12:01:01.000Z",
+   "duration": "00:09:05",
+   "input": "LLM application architecture production case study"
+  },
+  {
+   "title": "Claude vs ChatGPT vs Gemini: I Tested All 3 (2025 Results)",
+   "url": "https://www.youtube.com/watch?v=HMGBFguB0qM",
+   "channelName": "EKSATech",
+   "numberOfSubscribers": 2,
+   "viewCount": 55,
+   "date": "2026-05-14T18:00:25.000Z",
+   "duration": "00:06:46",
+   "input": "choosing an LLM provider Anthropic OpenAI Gemini comparison for developers"
+  },
+  {
+   "title": "Key Generative LLM Models, RAG Architecture, Embedded Models, Agentic AI & MCP Protocol \u2014 Hands-On",
+   "url": "https://www.youtube.com/watch?v=roeR9eNioIA",
+   "channelName": "Biomedical",
+   "numberOfSubscribers": 841,
+   "viewCount": 58,
+   "date": "2026-01-19T13:34:53.000Z",
+   "duration": "02:46:27",
+   "input": "LLM application architecture production case study"
+  },
+  {
+   "title": "20 Agentic AI System Design Interview Questions & Solutions",
+   "url": "https://www.youtube.com/watch?v=I4sGn8Z1vpI",
+   "channelName": "Keerti Purswani",
+   "numberOfSubscribers": 399000,
+   "viewCount": 51139,
+   "date": "2026-08-08T11:47:36.000Z",
+   "duration": "00:29:41",
+   "input": "LLM application architecture production case study"
+  },
+  {
+   "title": "I Have Spent 500+ Hours Programming With AI. This Is what I learned",
+   "url": "https://www.youtube.com/watch?v=91B_v-wOaws",
+   "channelName": "The Coding Sloth",
+   "numberOfSubscribers": 639000,
+   "viewCount": 752270,
+   "date": "2026-01-22T15:48:48.000Z",
+   "duration": "00:13:38",
+   "input": "prompt engineering for developers 2026"
+  },
+  {
+   "title": "LLM Tier List for Recruiters: Claude vs ChatGPT vs Gemini | HR Built With AI",
+   "url": "https://www.youtube.com/watch?v=cEszBvQvB9E",
+   "channelName": "The Talent Supply Chain",
+   "numberOfSubscribers": 1040,
+   "viewCount": 190,
+   "date": "2026-06-04T11:00:39.000Z",
+   "duration": "00:15:19",
+   "input": "choosing an LLM provider Anthropic OpenAI Gemini comparison for developers"
+  },
+  {
+   "title": "Claude Developer Certification | Tokens, Context Window, Tokens | Model Family Explained",
+   "url": "https://www.youtube.com/watch?v=IoHPSd6Bh1A",
+   "channelName": "SkyLabs Learning",
+   "numberOfSubscribers": 135,
+   "viewCount": 49,
+   "date": "2026-08-25T11:13:51.000Z",
+   "duration": "00:12:40",
+   "input": "tokens context window explained developers"
+  },
+  {
+   "title": "You SUCK at Prompting AI (Here's the secret)",
+   "url": "https://www.youtube.com/watch?v=pwWBcsxEoLk",
+   "channelName": "NetworkChuck",
+   "numberOfSubscribers": 5420000,
+   "viewCount": 833649,
+   "date": "2025-11-26T18:13:53.000Z",
+   "duration": "00:23:59",
+   "input": "prompt engineering for developers 2026"
+  },
+  {
+   "title": "The Architectural Differences Between GPT, Gemini & Claude That Every Engineer Should Know",
+   "url": "https://www.youtube.com/watch?v=GBGUnGWWBWQ",
+   "channelName": "Aseesh",
+   "numberOfSubscribers": 168,
+   "viewCount": 87,
+   "date": "2026-06-19T12:23:49.000Z",
+   "duration": "00:07:16",
+   "input": "choosing an LLM provider Anthropic OpenAI Gemini comparison for developers"
+  },
+  {
+   "title": "Claude Code Tutorial for Beginners",
+   "url": "https://www.youtube.com/watch?v=eMZmDH3T2bY",
+   "channelName": "Kevin Stratvert",
+   "numberOfSubscribers": 4450000,
+   "viewCount": 940413,
+   "date": "2025-12-22T15:26:27.000Z",
+   "duration": "00:14:43",
+   "input": "Claude API tutorial for developers"
+  },
+  {
+   "title": "Introducing the Agents API",
+   "url": "https://www.youtube.com/watch?v=2YHa1vhnmK0",
+   "channelName": "OpenAI",
+   "numberOfSubscribers": 2070000,
+   "viewCount": 287425,
+   "date": "2026-09-10T19:26:05.000Z",
+   "duration": "00:02:18",
+   "input": "OpenAI Responses API tutorial"
+  },
+  {
+   "title": "Claude vs GPT-4o vs Gemini vs Mistral \u2014 Which AI API Should You Use?",
+   "url": "https://www.youtube.com/watch?v=0H6eDOKg6ao",
+   "channelName": "Sukrid LearnHub",
+   "numberOfSubscribers": 66,
+   "viewCount": 68,
+   "date": "2026-04-28T04:59:19.000Z",
+   "duration": "00:13:34",
+   "input": "choosing an LLM provider Anthropic OpenAI Gemini comparison for developers"
+  },
+  {
+   "title": "ChatGPT vs Claude vs Gemini \u2014 which AI should you choose?",
+   "url": "https://www.youtube.com/watch?v=IzC55_KeKYw",
+   "channelName": "SN ByteNexus",
+   "numberOfSubscribers": 89,
+   "viewCount": 298,
+   "date": "2026-09-17T04:00:06.000Z",
+   "duration": "00:03:27",
+   "input": "choosing an LLM provider Anthropic OpenAI Gemini comparison for developers"
+  },
+  {
+   "title": "ChatGPT, Claude and Gemini: how to pick the right tool for actual work",
+   "url": "https://www.youtube.com/watch?v=iaXcVUobjEI",
+   "channelName": "Leaders insights",
+   "numberOfSubscribers": 5,
+   "viewCount": 1,
+   "date": "2026-07-06T00:02:41.000Z",
+   "duration": "00:04:08",
+   "input": "choosing an LLM provider Anthropic OpenAI Gemini comparison for developers"
+  },
+  {
+   "title": "A Practical Guide To Becoming An AI Engineer (2026)",
+   "url": "https://www.youtube.com/watch?v=oHu_xWe0agI",
+   "channelName": "CodeHead",
+   "numberOfSubscribers": 101000,
+   "viewCount": 260416,
+   "date": "2026-01-19T15:01:27.000Z",
+   "duration": "00:05:05",
+   "input": "prompt engineering for developers 2026"
+  },
+  {
+   "title": "How to Write Better AI Prompts as a Software Developer in 2026",
+   "url": "https://www.youtube.com/watch?v=--XpNP6NsqE",
+   "channelName": "JetBrains",
+   "numberOfSubscribers": 234000,
+   "viewCount": 7696,
+   "date": "2026-02-02T16:25:50.000Z",
+   "duration": "00:04:20",
+   "input": "prompt engineering for developers 2026"
+  },
+  {
+   "title": "Learn AI Part 4 | Current State of AI LLMs 2026 - OpenAI, Claude, Gemini & DeepSeek Compared",
+   "url": "https://www.youtube.com/watch?v=wuCGsSA0L-U",
+   "channelName": "Tech Explained",
+   "numberOfSubscribers": 626,
+   "viewCount": 187,
+   "date": "2026-01-01T10:26:21.000Z",
+   "duration": "00:09:48",
+   "input": "choosing an LLM provider Anthropic OpenAI Gemini comparison for developers"
+  },
+  {
+   "title": "GPT vs Claude vs Gemini \ud83e\udd16 | Which AI Model Wins in 2026? \ud83d\udd25",
+   "url": "https://www.youtube.com/watch?v=gaN_kAwMxNw",
+   "channelName": "TechFuelAI",
+   "numberOfSubscribers": 41,
+   "viewCount": 56,
+   "date": "2026-05-30T04:42:15.000Z",
+   "duration": "00:08:37",
+   "input": "choosing an LLM provider Anthropic OpenAI Gemini comparison for developers"
+  },
+  {
+   "title": "Build Your First AI Chatbot with Python (No OpenAI API Cost!)",
+   "url": "https://www.youtube.com/watch?v=WjtBdKrZzf4",
+   "channelName": "Sarvin Style Coding",
+   "numberOfSubscribers": 73100,
+   "viewCount": 8147,
+   "date": "2026-09-23T09:34:28.000Z",
+   "duration": "00:31:40",
+   "input": "how LLM API calls work messages system prompt"
+  }
+ ]
+}

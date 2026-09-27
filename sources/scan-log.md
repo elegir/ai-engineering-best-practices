@@ -22,7 +22,7 @@ Written canon for all 17 sessions was catalogued on 2026-09-24 (Claude Project d
 
 | S | Date | Topic | Stage | Scan entry | Principle / practice | Notes |
 |---|---|---|---|---|---|---|
-| 1 | 2026-10-15 | LLMs and environment setup | catalogued | — | — | |
+| 1 | 2026-10-15 | LLMs and environment setup | **principled** (draft) | `sources/2026-09-27-market-scan-s01-llm-setup.md` → digest `sources/2026-09-27-s01-llm-setup-digest.md` | `principles/10-llm-api-fundamentals.md` (draft), `practices/llm-api-calls/`; refined 00 (6 glossary entries), 01, 02, 04, 05, 07, 08, 21 | 13 transcripts, ~9 h 20 min; 94 discarded, 6 podcasts parked. Parked from the digest: per-scenario consistency, rubric grading, cross-model review → S5/11/16 evals; source-quality steering, citation verification, deep-research loop → S9–11; prompt injection via fetched content, encoding jailbreaks, moderation layer → S14. Becomes `validated` after LIDR session 1 |
 | 2 | 2026-10-22 | CAG: context, parameters, costs | catalogued | — | — | Candidate video from S12 scan: IBM "Is RAG still needed?" (1.0M views) |
 | 3 | 2026-10-29 | Wrappers and layered architecture | catalogued | — | — | |
 | 4 | 2026-11-05 | Advanced AI products (structured outputs, guardrails) | catalogued | — | — | |

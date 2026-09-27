@@ -1,0 +1,19 @@
+---
+title: "RAW transcript — How to Write Better AI Prompts as a Software Developer in 2026"
+type: source
+status: current
+date: 2026-02-02
+tags: [raw, transcript, llm-api, prompting, tokens, providers, market-scan, s01]
+sources:
+  - https://www.youtube.com/watch?v=--XpNP6NsqE
+---
+
+> **Video:** "How to Write Better AI Prompts as a Software Developer in 2026" — channel *JetBrains* — uploaded 2026-02-02 — 4m 18s — English, auto-generated captions. Extracted 2026-09-27 via Apify (`johnvc/YoutubeTranscripts`, dataset `Ye5IdCl1b0t2xUNSN`). Selected in the market scan for course session 1 (see `sources/2026-09-27-market-scan-s01-llm-setup.md`). Verbatim; only whitespace was normalised and paragraphs added every ~900 characters.
+
+Have you ever been in a situation where the right tool or the right question can save hours of useless work? But what if asking better questions could make AI your most effective coding partner? That's what prompt engineering is about. And today I'll show you how to turn bank ideas into working code. And no, you don't need a PhD in talking to robots, just the skills you already use every day. Using the right techniques, we can frame problems more clearly, like rubber duck debugging. Except the duck can actually write code. Strong prompts cut down on trial and error, reduce the number of tokens needed, and unlock AI as a reliable coding assistant instead of being a random guess generator. But we need to follow several principles. Be specific in your prompts, provide context, define the output you want, set constraints, and most importantly, iterate. Prompts are like unit tests.
+
+The more precise they are, the more reliable the results. Think of AI as an intern. The more you explain, the less clean up you'll have to do. Bad and the specified prompts are no different from asking a new hire to just build a feature. Good luck with that. Instead, we could start by assigning a role. Ask the AI to act as a reviewer or as a language specific expert. Then we inject context. Paste in logs, API docs or signatures. We also guide the model step by step. Get a plan before you get code. Don't forget to specify the output. We don't want to scroll through walls of explanations when we just need code. And finally, we refine iteratively. If the first attempt isn't perfect, we don't rage quit. We debug our prompt like we debug our code. With good prompts, we'll more likely get code that we would want to commit. Watch out for pitfalls. Vagueness is the biggest.
+
+Overloading a prompt with too many requests is another. Asking for an entire back end in one go usually gets you something between spaghetti code and science fiction. Don't forget security. Never pay secrets. And don't treat AI output as final. Always review it like a teammate's PR, except this teammate never sleeps and sometimes hallucinates. Hallucinates. Then again, don't real teammates sometimes do that too. The real mindset shift is simple. Prompting is communication. You are not tricking AI. You are being clear and structured. It's the same skill you use when writing bug reports, code comments, or commit messages. And if you've ever explained a bug to a rubber duck at 2 a.m., congrats. You are already halfway to being a prompt engineer. Here's how you can practice daily. Take a week prompt and rewrite it until the output improves, like refactoring, but for words.
+
+Save prompt snippets you can reuse, just like code snippets. Experiment with variations to see what works best and treat reviewing AI output like a code review. You'll learn faster and avoid bad habits. Great prompts make great developers even more effective. Next time you ask AI for help, spend an extra 30 seconds refining your request. You'll be amazed at the difference. Remember, the future of development isn't just about writing code. It's also about asking the right questions. And maybe, just maybe, keeping your ducks employed [music] >> [music]

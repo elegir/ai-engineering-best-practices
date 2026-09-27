@@ -3,7 +3,7 @@ title: "Glossary — the vocabulary of building software with AI agents"
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-24
+last-reviewed: 2026-09-27
 tags: [glossary, vocabulary]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -74,11 +74,24 @@ This field renames itself every few months. Below are the terms as used in this 
 
 **Agentic engineer.** An engineer who designs the systems agents execute ("from artisan to manufacturer"). The AI Champion adds the organizational side (influence, change management, training).
 
-**Token.** The unit models are billed and limited by (~¾ of an English word). **Token economy** = the practices that reduce tokens per task: short instruction files, compressed tool output (rtk), code graphs instead of file exploration (codegraph), compacted context (Headroom), terse output (caveman), less over-built code (ponytail), model routing.
+**Token.** The unit models are billed and limited by (~¾ of an English word); priced per million in three classes — input, output (several times input) and *cached input* (a fraction of input). **Token economy** = the practices that reduce tokens per task: short instruction files, compressed tool output (rtk), code graphs instead of file exploration (codegraph), compacted context (Headroom), terse output (caveman), less over-built code (ponytail), model routing.
+
+**Context window.** The hard, per-model limit on how many tokens one call can contain — system prompt, tool definitions, history, attached files, tool results and the output all share it. Karpathy's frame: the window is the model's *working memory*; the weights are only a *vague recollection*. Quality drops before the limit is reached ("lost in the middle"). Principle: `10-llm-api-fundamentals.md` §3.4.
+
+**Tokenization.** The split of text into tokens (byte-pair encoding, ~100k-symbol vocabularies). The model never sees characters, which is why it cannot reliably count letters, slice strings or spell; those tasks go to a code tool.
+
+**System prompt.** The static part of a call — role, rules, background documents, examples, output format — sent with every request and kept identical between turns so that it can be cached. The ten-part structure: `practices/llm-api-calls/system-prompt-template.md`.
+
+**Prompt caching.** Vendors cache a stable, append-only *prefix* of the request and bill re-used tokens at a fraction of the input price; the first byte that differs breaks the cache for everything after it. Hence: static parts first, dynamic last.
+
+**Reasoning model / extended thinking.** A model trained with reinforcement learning on *verifiable* answers (maths, code with tests) so that it produces long, self-correcting reasoning before answering; exposed in APIs as a thinking budget or effort level. Pays where the answer can be checked, costs tokens and latency everywhere; closed vendors return only a summary of the reasoning.
+
+**Hallucination.** Fluent output that is not grounded in the context or in fact. A structural property of a next-token predictor whose knowledge is a lossy compression ("plausibility engines", Dan Klein), not a bug a prompt fixes: mitigated by putting the source in the context, tools for facts and arithmetic, an explicit "I don't know" out, and deterministic checks outside the model. Failure-mode table: `practices/llm-api-calls/failure-modes-and-mitigations.md`.
 
 **Brownfield / greenfield.** Existing codebase vs. new project. Most real work is brownfield; frameworks that require describing the whole system up front fit it badly.
 
 ## Change log
 
 - 2026-09-08 — created from the LIDR workshop and the structuring-research entry.
+- 2026-09-27 — Token entry extended (three price classes); added Context window, Tokenization, System prompt, Prompt caching, Reasoning model / extended thinking, Hallucination. Source: `sources/2026-09-27-s01-llm-setup-digest.md`.
 - 2026-09-24 — MCP entry rewritten with the three primitives and their controllers; added "Workflow vs agent" and "Tool (for a model)"; skills/progressive-disclosure entries reviewed and unchanged. Source: `sources/2026-09-24-s12-agents-digest.md`.
