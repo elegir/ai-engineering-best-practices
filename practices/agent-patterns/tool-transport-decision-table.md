@@ -27,6 +27,8 @@ Operational rules (Claude Code, 2026-05): MCP tool definitions occupy context ev
 
 Keep an internal abstraction (`tool`, `agent`, `completion`, `integration`) so that MCP is one integration type among others; expect to rebuild it.
 
+**Keep the loaded set stable within a session.** Whatever the transport, loading and unloading tool schemas per turn resets the provider's prompt cache and leaves the model remembering tools that no longer exist (Manus, 2025-10). Disclose progressively *between* sessions, or through a search-tools tool with a fixed schema, or — Manus's layering — a small fixed set of functions plus a shell (`--help`) and a code tool that reach the rest. Session-2 scan: `../../sources/2026-09-27-s02-context-caching-digest.md` §3.3.
+
 ## Third: which rung of the auth ladder? (detail in the session-14 practice, pending)
 
 | Rung | Pattern | The tool knows… | Risk |

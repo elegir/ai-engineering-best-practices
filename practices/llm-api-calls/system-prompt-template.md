@@ -67,7 +67,7 @@ Repeat the two rules that matter most here; the end of the prompt is remembered 
 ## Checklist before shipping a prompt change
 
 1. The header is filled: purpose, model, version, last-evaluated, changelog line.
-2. Everything above `--- dynamic ---` is identical between calls (diff two rendered prompts).
+2. Everything above `--- dynamic ---` is identical between calls (diff two rendered prompts). The usual offenders: a timestamp, the current directory, the user's name, a tool list that changes per turn. Rules are positive examples of the right behaviour, not a growing list of "don't" patches; when one prompt covers many workflows, route to sub-prompts or swap segments by phase instead.
 3. The rules are numbered, one behaviour each, and include an **out** ("if none apply, say so").
 4. Every fact, number, id or date the answer may need is in §3 or reachable by a tool — none is expected from memory.
 5. Examples: at least one illustrative, at least one edge case; none that the model could copy verbatim into a real answer.

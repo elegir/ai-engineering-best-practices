@@ -29,3 +29,4 @@ Ng's **reflection** = evaluator–optimiser with the same model in two roles (co
 2. Every loop has a cap (iterations, tokens, seconds) and a signal that ends it (test, checker, eval).
 3. Read what the model sees before changing what the model does (`../prompt-library/trajectory-review.md`).
 4. Optimise (cache the prefix, parallelise tool calls, show progress) only after behaviour is right.
+5. Sub-agents (session-2 scan, 2026-09-27): the final message is the only thing the parent sees, so it must be self-contained; default to *communicate* (short brief in, structured result out) rather than *share memory* (whole history in — forfeits the cache); fan out only read-only gathering and converge for anything that must cohere; no org-chart roles — an executor, a planner, a memory agent at most. Detail: `../context-management/context-metrics-and-evals.md` §3.

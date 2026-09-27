@@ -14,6 +14,8 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | 2026-09-26 | `sources/2026-09-26-selector-debate.md` — proposal v1 for a project-profile selector, 18-point devil's-advocate attack, responses, agreed design v2 | debate | — |
 | 2026-09-27 | `sources/2026-09-27-market-scan-s01-llm-setup.md` — market scan for LIDR session 1 "LLMs and environment setup": 105 YouTube results + 25 podcast episodes considered, 13 items selected and transcribed (OpenAI, Anthropic ×3, Cursor, JetBrains, DeepLearning.AI/Ng, Karpathy ×2, Pocock, Witteveen, IBM, Chain of Thought) | market scan | `sources/raw/2026-09-27-market-scan-s01-llm-setup/` |
 | 2026-09-27 | `sources/2026-09-27-s01-llm-setup-digest.md` — digest of the 13 session-1 transcripts with the impact table (34 findings → 1 new principle, 1 new practice, 6 glossary entries, 8 principles reviewed/refined, 3 parked) | digest | `sources/raw/2026-09-27-market-scan-s01-llm-setup/` |
+| 2026-09-27 | `sources/2026-09-27-market-scan-s02-context-caching.md` — market scan for LIDR session 2 "CAG: context, parameters, costs": 105 YouTube results + 9 podcast episodes considered, 16 items selected and transcribed (Claude, Google Cloud, AWS, LangChain ×2, AI Engineer ×2, Sequoia/Harrison Chase, Dex Horthy, Ebbelaar, Hugging Face, IBM ×3, Latent Space, Chain of Thought) | market scan | `sources/raw/2026-09-27-market-scan-s02-context-caching/` |
+| 2026-09-27 | `sources/2026-09-27-s02-context-caching-digest.md` — digest of the 16 session-2 transcripts with the impact table (36 findings → 1 new principle, 1 new practice, 1 new fact word, 6 glossary entries, 8 principles reviewed/refined, 2 parked) | digest | `sources/raw/2026-09-27-market-scan-s02-context-caching/` |
 | (living) | `sources/media-registry.json` + `sources/media-registry.md` — every video/podcast episode ever considered, with status (transcribed / digested / applied / candidate / discarded) and reason; filtered by `scripts/scan-filter.py` | registry | — |
 | (living) | `sources/scan-log.md` — one row per course module: stage reached (mapped → catalogued → scanned → transcribed → digested → principled → validated) | tracking | — |
 
@@ -27,12 +29,13 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | 03 | `principles/03-agent-instruction-files.md` | current | 2026-09-08 |
 | 04 | `principles/04-spec-driven-development.md` | current | 2026-09-27 |
 | 05 | `principles/05-verification-loops.md` | current | 2026-09-27 |
-| 06 | `principles/06-parallel-agents-and-worktrees.md` | current | 2026-09-08 |
+| 06 | `principles/06-parallel-agents-and-worktrees.md` | current | 2026-09-27 |
 | 07 | `principles/07-token-economy.md` | current | 2026-09-27 |
 | 08 | `principles/08-model-selection.md` | current (model names dated 2026-09-08) | 2026-09-27 |
 | 09 | `principles/09-knowledge-base-design.md` | current | 2026-09-08 |
 | 10 | `principles/10-llm-api-fundamentals.md` — what a model call is, what the model cannot do, prompt structure and iteration, tokens/caching, provider checklist (course session 1) | draft | 2026-09-27 |
-| 21 | `principles/21-agent-design-and-tools.md` — workflow vs agent, minimal loop, tool design, CLI/MCP/skill, agentic RAG (numbered by course session; 10–20 reserved) | draft | 2026-09-24 |
+| 11 | `principles/11-runtime-context-management.md` — the window as a budget; offload / reduce / retrieve / isolate / cache; compaction rules; prompt caching and KV-cache economics; long context vs CAG vs retrieval (course session 2) | draft | 2026-09-27 |
+| 21 | `principles/21-agent-design-and-tools.md` — workflow vs agent, minimal loop, tool design, CLI/MCP/skill, agentic RAG (numbered by course session; 10–20 reserved) | draft | 2026-09-27 |
 
 ## Practices (applicable — copyable files with "applies when", adapt and verify sections)
 
@@ -50,6 +53,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | `practices/prompt-library/` | 01, 04, 21 | meta-prompt, ask-the-expert, readme-by-index, openapi, standards-doc, `/audit`, commit skill, `/lesson`, trajectory-review | current | 2026-09-24 |
 | `practices/token-savings/` | 07 | ordered checklist, MCP audit (CLI-over-MCP rule added), measurement log | current | 2026-09-24 |
 | `practices/llm-api-calls/` | 10 | `llm_call_skeleton.py` (one client module, usage log incl. cached tokens), `system-prompt-template.md` (ten parts, static-first, 12-point checklist), `failure-modes-and-mitigations.md`, `provider-selection-checklist.md`, `context-budget.md` | draft | 2026-09-27 |
+| `practices/context-management/` | 11 | `context-budget-and-triggers.md`, `compaction-policy.md`, `compaction_skeleton.py`, `context-failure-modes.md`, `context-store-decision.md`, `context-metrics-and-evals.md` | draft | 2026-09-27 |
 | `practices/agent-patterns/` | 21 | decision checklist, patterns catalogue, agent-loop skeleton, tool-definition template + 12-point checklist, tool-transport decision table (CLI/MCP/skill/RAG/memory + auth ladder), agentic-RAG skeleton | draft | 2026-09-24 |
 | `practices/_template/` | — | README template for new practices | — | — |
 
@@ -100,6 +104,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | MCP servers (Context7, Playwright, Sentry, Snyk, Jira/Notion, Figma) | `02-harness-engineering.md`, `01-context-engineering.md` | `token-savings/mcp-audit.md` | workshop §3.2, videos C/E |
 | Prompt techniques (meta-prompt, ask-the-expert, one-shot index, audit, lesson→rule) | `04-spec-driven-development.md`, `01-context-engineering.md` | `prompt-library/` | workshop §3.2, videos C/D |
 | LLM API call structure, prompt structure and iteration, tokens / context window / prompt caching, reasoning models, provider selection, model failure modes | `10-llm-api-fundamentals.md` | `llm-api-calls/` | s1 digest `sources/2026-09-27-s01-llm-setup-digest.md` |
+| Runtime context management: window budget, compaction, offloading, sub-agent isolation, prompt caching / KV cache economics, long context vs CAG vs RAG, context failure modes | `11-runtime-context-management.md` | `context-management/` | s2 digest `sources/2026-09-27-s02-context-caching-digest.md` |
 | How this KB is structured | `09-knowledge-base-design.md` | `practices/README.md` | research (all) |
 | Agents: workflow vs agent, minimal loop, tool design, CLI/MCP/skill/RAG/memory, agentic RAG | `21-agent-design-and-tools.md` | `agent-patterns/`, `prompt-library/trajectory-review.md` | s12 digest §3, impact table §6 |
 

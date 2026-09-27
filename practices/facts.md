@@ -3,7 +3,7 @@ title: "Facts — the controlled vocabulary that decides which practices apply t
 type: template
 status: current
 date: 2026-09-26
-last-reviewed: 2026-09-26
+last-reviewed: 2026-09-27
 tags: [applicability, facts, selector]
 sources:
   - decisions/0003-applicability-by-facts.md
@@ -22,6 +22,7 @@ Most facts are **inferred from the repo with evidence** by `playbooks/which-prac
 | `llm_calls` | The product itself calls a language model at runtime (not just the coding agent working on the repo) | An LLM SDK in the lockfile/requirements (`anthropic`, `openai`, `google-genai`, `litellm`, `langchain`, `@ai-sdk/*`), API keys for a model vendor in `.env.example`, prompt files/templates |
 | `retrieval` | The product answers or acts using documents/data fetched at query time by similarity or search | A vector store or `pgvector`, an embeddings call, chunking code, a document corpus folder, a search index (BM25, Elastic, Typesense) |
 | `tools` | The model can decide to call functions/tools (function calling, MCP client, agent loop) | Tool/function schemas passed to the model, a `tool_use`/`function_call` loop, an MCP client config used at runtime, an agent framework (LangGraph, ADK, Agents SDK, Pydantic AI, Claude Agent SDK) |
+| `multi_turn` | The product passes history back into the model — a conversation, a session with memory, or an agent loop — so the context grows across calls | A messages/threads/sessions table or store, a conversation id passed to the model call, history appended to the request, an agent loop (`tool_use` → result → call again) |
 | `multi_agent` | More than one model-driven agent runs in the same feature (orchestrator/subagents, handoffs) | Subagent spawning, orchestrator/worker roles, A2A, handoff definitions |
 | `acts_on_world` | The product takes actions with effects outside the repo that are hard to undo: sends email/messages, publishes content, moves money, changes third-party records | SMTP/email API clients, social/CMS publish calls (WordPress REST, Slack post), payment SDKs, write calls to CRMs/ticketing; scheduled jobs that trigger them |
 | `multi_tenant` | One deployment serves several *customers/organisations* whose data must not mix | A `tenant_id`/`org_id`/`workspace_id` column or foreign key across tables, per-tenant config, RLS policies, tenant-scoped API keys. (Many sites owned by one person is **not** multi-tenant; several paying customers is.) |
@@ -41,3 +42,4 @@ There is no score. The list is the plan, and each skipped practice carries a rea
 
 ## Change log
 - 2026-09-26 — created with 12 facts (10 inferred, 2 asked) from the selector debate (`decisions/0003-applicability-by-facts.md`).
+- 2026-09-27 — added `multi_turn` (inferred) for `practices/context-management/`; source `sources/2026-09-27-s02-context-caching-digest.md` row 36.

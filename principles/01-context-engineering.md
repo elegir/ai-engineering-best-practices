@@ -86,5 +86,7 @@ All of the above is referenced from one short base file (`CLAUDE.md` / `AGENTS.m
 
 ## 7. Change log
 
+- 2026-09-27 (s2) — the *runtime* sense of context engineering (what a product puts in the window on each call: offload / reduce / retrieve / isolate / cache) is now `11-runtime-context-management.md`; this principle keeps the coding-agent sense (the documents and standards the agent reads). The two share one rule — put the source in the working memory, keep it short — and Horthy's "intentional compaction" (research → plan → implement, each a small verified artifact in a fresh window) is the bridge between them. Source: `sources/2026-09-27-s02-context-caching-digest.md`.
+
 - 2026-09-08 — created.
 - 2026-09-27 — reviewed against `sources/2026-09-27-s01-llm-setup-digest.md`; confirmed with the mechanism: knowledge in the weights is "a vague recollection", knowledge in the context window is "the working memory" (Karpathy, 2025-02, demonstrated on a chapter of *Pride and Prejudice*: pasted beats remembered). The same rule for a product's *runtime* prompts — write it as a complete briefing for a competent stranger, iterate against real inputs — is now in `principles/10-llm-api-fundamentals.md` §3.3. No change to this text.
