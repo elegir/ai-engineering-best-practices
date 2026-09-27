@@ -1,0 +1,24 @@
+# Context failure modes — what you see in a trace, why, and what fixes it
+
+Read once; keep it next to the trace viewer. The four names are Drew Breunig's (2025), taught by Google Cloud (2026-07) and LangChain (2025-11); the two others are Dex Horthy's (2026-07). Principle: `../../principles/11-runtime-context-management.md` §3.1. The rule behind the table: **name the failure, then fix the context — not the prompt.**
+
+| Failure | What you see in the trace | Cause | Fix |
+|---|---|---|---|
+| **Poisoning** | A wrong fact appears once (a hallucinated field, a mis-read number, a failed tool's partial output) and is then reused as if true, turn after turn | The transcript is the model's memory; anything in it is evidence | Prune the poisoned item or restart from a verified summary; validate tool results in code before they enter the transcript; for irreversible actions, never act on an unverified value (`../llm-api-calls/failure-modes-and-mitigations.md` row 10) |
+| **Distraction** | The model stops planning and starts pattern-matching on its own history: repeats earlier steps, re-reads the same files, cites old turns instead of the current input | History dominates the window; the model predicts "more of the same" | Compact (`compaction-policy.md`); shorten the recency window; move the plan to a scratchpad file and re-inject only its current version |
+| **Confusion** | The answer is steered by material that is irrelevant to the question — a tool description, a leftover document, an earlier topic | Too much in the window; "hoarding, not selection" | Select less per step; remove unused tools from this feature's set; split a multi-workflow system prompt into on-demand skills; new session on topic change |
+| **Clash** | Two sources in the window disagree and the model picks the wrong one — an old instruction vs a new one, a stale cached document vs a fresh tool result | Contradictions are not resolved by attention | Replace, do not append, when a requirement changes; date and dedupe sources; one source of truth per fact in the window |
+| **Stale instructions** (instruction budget) | Dozens of "don't do X" patches accumulated from complaints; the model follows some and ignores others; small prompt edits change unrelated behaviour | Instruction-following degrades with the *number* of instructions, not only tokens | Rewrite the rules as positive examples; route to sub-prompts by phase or intent instead of one growing prompt; count instructions in the prompt header |
+| **Bad trajectory** | A chain of failed attempts and "you're absolutely right" corrections; each new answer repeats the pattern of the last | Autoregression: the history predicts the future | Stop prompting in this session; compact into a verified note; start a fresh window with the note only |
+| **Malformed tool calls after compaction** | Calls missing fields, wrong shapes, right after a summary | All recent tool calls were compacted; the model imitated the compacted format | Keep the last N tool calls verbatim; never compact the recency window |
+| **Blind orchestrator** | The parent agent asks the sub-agent's question again, or acts on a partial result | Only the sub-agent's *final message* crossed the boundary, and it said "see above" | Require a self-contained final message from every sub-agent (`context-metrics-and-evals.md` §isolation) |
+| **Cache never hits** | `cache_read = 0` on every turn; cost grows quadratically with the session | Something dynamic sits before the static prefix (timestamp, user, cwd), or the tool list changes per turn, or an earlier message was edited | Static first, append-only, fixed tool set (`../llm-api-calls/system-prompt-template.md`); accept the reset only at compaction |
+| **Silent retrieval failure** | The answer existed in the corpus; the model says it does not know or invents it | Retrieval returned the wrong chunks; the model never saw the right ones | For a bounded corpus, put it in the window and cache it; otherwise widen retrieval and rerank; add the metadata the query depends on (`context-store-decision.md`) |
+
+## Contested — decide per agent, and test both
+
+**Leave tool errors in the transcript, or prune them?** Manus and Lance Martin leave them in so the model self-corrects ("the model learns from the mistake"); Breunig documents a run derailed by a lodged hallucination (Gemini 2.5's Pokémon report). There is no consensus. Rule of thumb until you have data: leave *the error message* in (it is short and true), prune *the wrong output* that caused it (it is long and false), and check in the long-session eval that the agent recovers rather than compounds.
+
+## How to use this
+
+Read one full trace per week per feature. For each anomaly, write the row name in the trace's notes and the fix taken. If you cannot name it, the list is missing a row — add it here with the trace as the source.

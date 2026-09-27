@@ -49,6 +49,8 @@ The workshop's concrete format: a spec file in the repo, written as user stories
 
 OpenSpec flow: `/opsx:explore` (optional thinking out loud) → `/opsx:propose` (proposal + specs + design + tasks) → `/opsx:apply` → `/opsx:archive` (delta merged into the permanent spec).
 
+Two refinements from practitioners who run this at volume (`sources/2026-09-27-s02-context-caching-digest.md` §3.5, Dex Horthy 2026-07). *Per-task* research and plan documents are **throw-away compaction artifacts**: each phase (research → plan → implement) is condensed into a small, human-verifiable file and the next phase starts in a fresh context with only that file; nobody he knows has kept spec–code parity alive for long, so the durable documents are the conventions and standards of `01-context-engineering.md`, not the plans. And a plan should be **vertically sliced** (mock endpoint → real data → error handling, each step testable) rather than layer by layer; a plan that lists every diff doubles review time without adding leverage — the plan earns its place by changing what gets built, not by previewing the code.
+
 ### Where SDD meets the workflow document
 
 The spec is ingredient 3 (the task); the workflow document (`01-context-engineering.md`) already says TDD, docs update, e2e, coverage. SDD engines add the *artifacts* (proposal, spec, tasks) and the *gates* (`/analyze` in Spec-Kit; archive in OpenSpec). Do not adopt an engine before the context layer exists — LIDR's explicit ordering.
@@ -80,3 +82,4 @@ The spec is ingredient 3 (the task); the workflow document (`01-context-engineer
 
 - 2026-09-08 — created.
 - 2026-09-27 — reviewed against `sources/2026-09-27-s01-llm-setup-digest.md`; the plan-before-code shape is confirmed for *content* generation too: outline → critique → expand, and piecewise edits over whole-document rewrites, because an outline edit is high-leverage and a full rewrite is unreviewable (Andrew Ng, 2026-05). No change.
+- 2026-09-27 (s2) — refined against `sources/2026-09-27-s02-context-caching-digest.md`: per-task plan/research docs are ephemeral compaction artifacts (durable docs are the standards, not the plans); plans vertically sliced; no diff-level plans. Horthy's abandonment of spec–code parity is recorded as a qualification, not a supersession — the open-spec practice here is per change, not a living mirror of the code. Confirms plan-before-code from the content-generation side too (see the s1 line above).

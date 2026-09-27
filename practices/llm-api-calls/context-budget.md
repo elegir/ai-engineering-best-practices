@@ -37,4 +37,5 @@ Truncation policy for tool results:       <<max chars per result; e.g. 8,000>>
 4. **Truncate every tool result** before it enters the context; one un-truncated log dump ends the conversation's usefulness.
 5. **Audit tool and MCP schemas**: they load every turn. Anything not used by this feature is removed from *this* call, not just from the repo (`../token-savings/mcp-audit.md`).
 6. **Put the document in, do not describe it.** Even for texts the model has "read", pasting the chapter beats asking from memory (Karpathy's *Pride and Prejudice* demonstration). The window is the working memory; the weights are a vague recollection.
-7. **Measure.** Log input / output / cached tokens per call (`llm_call_skeleton.py` does); compute cost per feature per week; decide changes from the numbers, not from the vendor's pricing page.
+7. **Know the cache's limits.** Minimum cacheable prefix ≈ 1,024 tokens on most providers; TTL 5 minutes to 1 hour depending on provider and setting — a session idle over lunch pays a full cache write on resume; compaction resets the cache from the compaction point (expected). Multi-turn policy: `../context-management/`.
+8. **Measure.** Log input / output / cached tokens per call (`llm_call_skeleton.py` does); compute cost per feature per week; decide changes from the numbers, not from the vendor's pricing page.

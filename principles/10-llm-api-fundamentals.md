@@ -105,3 +105,4 @@ The labs' top models are near parity and rotate quarterly (`08-model-selection.m
 ## 7. Change log
 
 - 2026-09-27 — created from `sources/2026-09-27-s01-llm-setup-digest.md` (market scan for LIDR session 1). Status `draft` until the session on 2026-10-15.
+- 2026-09-27 (s2) — reviewed against `sources/2026-09-27-s02-context-caching-digest.md`: §3.4 caching rule confirmed and sharpened with the break list (timestamp, cwd or user name at the top; tool list changing per turn; edits to earlier messages; compaction — expected); minimum cacheable prefix ~1,024 tokens and TTLs of 5 min–1 h recorded in the practice; §3.3 gains "positive examples over negative rules; route or phase-swap instead of one growing prompt" (Anthropic's post via Ebbelaar). Multi-turn context management is `11-runtime-context-management.md`.

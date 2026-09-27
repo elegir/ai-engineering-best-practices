@@ -61,3 +61,4 @@ The product calls a language model at runtime and one of these symptoms appears:
 
 ## Change log
 - 2026-09-27 — created from the session-1 market scan (draft).
+- 2026-09-27 (s2) — checklist item 2 sharpened (cache breakers, positive rules); provider row 10 (cached-input price); `context-budget.md` rule 7 (cache limits). Source `sources/2026-09-27-s02-context-caching-digest.md`.

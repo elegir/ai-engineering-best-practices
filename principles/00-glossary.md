@@ -88,10 +88,23 @@ This field renames itself every few months. Below are the terms as used in this 
 
 **Hallucination.** Fluent output that is not grounded in the context or in fact. A structural property of a next-token predictor whose knowledge is a lossy compression ("plausibility engines", Dan Klein), not a bug a prompt fixes: mitigated by putting the source in the context, tools for facts and arithmetic, an explicit "I don't know" out, and deterministic checks outside the model. Failure-mode table: `practices/llm-api-calls/failure-modes-and-mitigations.md`.
 
+**Context engineering (runtime sense).** For a *product* that calls a model: deciding, on every call, what goes into the window and what stays out — "filling the context window with just the right information needed for the next step" (Karpathy's definition, as used by Anthropic, LangChain, Manus). Five operations: offload, reduce, retrieve, isolate, cache. Principle: `11-runtime-context-management.md`. The coding-agent sense (docs and standards the agent reads) is `01-context-engineering.md`.
+
+**Context rot.** The measured fall in answer quality as the context grows, long before the window is full and non-uniformly across models (Chroma, 2025-07). Why compaction triggers sit at 60–85 % of the window and why caching does not help quality.
+
+**Compaction.** Shrinking the history so the task can continue: *reversible* compaction drops payloads that are persisted elsewhere and keeps the pointer; *summarisation* is lossy and is done schema-constrained, on the oldest half, keeping recent turns verbatim, never touching the system prompt. Resets the provider cache from that point. Practice: `practices/context-management/compaction-policy.md`.
+
+**KV cache.** The transformer's key/value tensors for the tokens already processed. Prompt caching stores them for a stable prefix; CAG persists them for a whole corpus. Anything that changes an earlier token invalidates everything after it.
+
+**CAG (cache-augmented generation).** Pre-compute and persist the KV cache of a bounded, stable corpus, then answer every query by loading the cache and appending the question (Chan et al., 2024-12). Prompt caching is "CAG as a service"; practitioners say prompt caching, not CAG. Decision: `practices/context-management/context-store-decision.md`.
+
+**Poisoning / distraction / confusion / clash.** Drew Breunig's four context failures: a hallucination lodged in history and reused; the model leaning on a long history instead of planning; irrelevant material steering the answer; two sources disagreeing and the wrong one winning. Table with symptoms and fixes: `practices/context-management/context-failure-modes.md`.
+
 **Brownfield / greenfield.** Existing codebase vs. new project. Most real work is brownfield; frameworks that require describing the whole system up front fit it badly.
 
 ## Change log
 
 - 2026-09-08 — created from the LIDR workshop and the structuring-research entry.
+- 2026-09-27 (s2) — added Context engineering (runtime sense), Context rot, Compaction, KV cache, CAG, Poisoning/distraction/confusion/clash; Context entry's "context rot" now points to the new entry. Source: `sources/2026-09-27-s02-context-caching-digest.md`.
 - 2026-09-27 — Token entry extended (three price classes); added Context window, Tokenization, System prompt, Prompt caching, Reasoning model / extended thinking, Hallucination. Source: `sources/2026-09-27-s01-llm-setup-digest.md`.
 - 2026-09-24 — MCP entry rewritten with the three primitives and their controllers; added "Workflow vs agent" and "Tool (for a model)"; skills/progressive-disclosure entries reviewed and unchanged. Source: `sources/2026-09-24-s12-agents-digest.md`.

@@ -3,7 +3,7 @@ title: "Parallel agents and git worktrees — isolate, don't coordinate"
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-08
+last-reviewed: 2026-09-27
 tags: [worktrees, parallel-agents, subagents, isolation]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -38,6 +38,8 @@ claude --worktree feature-name   # Claude Code: creates the worktree, opens the 
 ```
 
 Each agent sees only its own files and is unaware other sessions exist. Subagents can be isolated the same way (`isolation: worktree`) — essential when one agent splits a large job across parallel subagents. Superpowers uses worktrees natively and can merge the worktree back automatically.
+
+Two rules for subagents that the session-2 scan added (`sources/2026-09-27-s02-context-caching-digest.md` §3.2): fan out only **read-only, independent gathering** and do every step that must cohere — the final report, code that must integrate — in one agent (Cognition's objection to multi-agent and Anthropic's multi-agent researcher reconcile on exactly this line); and a subagent's **final message must be self-contained**, because it is the only thing the parent sees.
 
 ### The tax
 
@@ -78,3 +80,4 @@ Boris Cherny runs ~5 local Claude Code sessions in numbered terminal tabs with s
 ## 7. Change log
 
 - 2026-09-08 — created.
+- 2026-09-27 — refined against `sources/2026-09-27-s02-context-caching-digest.md`: two subagent rules added to §3 (read-only fan-out, converge for coherence; self-contained final message). Worktree mechanics unchanged.

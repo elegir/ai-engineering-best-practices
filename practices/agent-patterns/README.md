@@ -3,7 +3,7 @@ title: "Practice — agent patterns: decide workflow vs agent, build the minimal
 type: practice
 status: draft            # draft until principle 21 is confirmed against LIDR session 12
 date: 2026-09-24
-last-reviewed: 2026-09-24
+last-reviewed: 2026-09-27
 tags: [agents, tools, function-calling, mcp, agentic-rag, patterns]
 kind: capability
 applies-when: "tools or multi_agent"
@@ -63,3 +63,4 @@ A repo is about to add (or already has) a feature where a language model takes a
 ## Change log
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 - 2026-09-24 — created from the session-12 market scan (draft).
+- 2026-09-27 (s2) — tool checklist item 13 (addressable results); sub-agent rules in `patterns-catalogue.md`; stable-tool-set note in `tool-transport-decision-table.md`. Source `sources/2026-09-27-s02-context-caching-digest.md`.

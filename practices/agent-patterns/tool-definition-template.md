@@ -17,7 +17,7 @@ Example: <<param values → what the model will see, three lines>>.
 
 Parameter descriptions: one line each, with the format and an example value (`order_id: the 8-digit id shown in the customer's email, e.g. "10482233"`).
 
-## Checklist (all twelve before the tool ships)
+## Checklist (all thirteen before the tool ships)
 
 1. [ ] **UI-shaped, not API-shaped.** One call returns what a person would see on the screen for this question, with the surrounding context. Not three endpoints the model must stitch.
 2. [ ] **Named for the intent** (`get_order`, `search_runbooks`), unique across every server/tool set the agent loads. No collisions, no `a`/`b` parameters.
@@ -31,3 +31,4 @@ Parameter descriptions: one line each, with the format and an example value (`or
 10. [ ] **Probed from the model's side.** You asked the model: "Is this description clear? Would you need more or fewer parameters?" and ran ≥ 5 requests with `debug=True`, reading the parameters it chose.
 11. [ ] **Has an eval.** ≥ 5 (request → expected tool call + parameters) pairs, run in CI, owned by the team that owns the tool.
 12. [ ] **Counted.** The agent's total tool count is known; above ~30, tools are bucketed or behind a tool-search step; unused ones are removed.
+13. [ ] **Addressable.** Any result longer than a screenful returns an id / path / URL / query alongside or instead of the payload, so it can be dropped from the transcript later and re-read on demand (`../context-management/compaction-policy.md`). Session-2 scan, 2026-09-27.
