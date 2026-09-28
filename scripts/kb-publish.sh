@@ -18,6 +18,7 @@ CUR="$(git rev-parse --abbrev-ref HEAD)"
 if [ "$CUR" != "$MAIN" ]; then echo "Switch to $MAIN first (currently on $CUR)."; exit 1; fi
 git fetch origin "$MAIN" -q 2>/dev/null || true
 if git rev-parse --verify -q "origin/$MAIN" >/dev/null; then git merge --ff-only "origin/$MAIN" -q; fi
+if [ "$(git rev-list --count "origin/$MAIN..HEAD")" -gt 0 ]; then echo "Local $MAIN has commits not on origin — run scripts/kb-sync.sh and publish them first."; exit 1; fi
 if [ -z "$(git status --porcelain)" ]; then echo "Nothing to publish (working tree clean)."; exit 0; fi
 
 # 1. The KB's own sensor

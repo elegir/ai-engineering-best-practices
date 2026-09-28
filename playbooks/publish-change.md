@@ -20,7 +20,9 @@ The KB follows its own advice: every improvement is verified by a mechanical che
 
 After any ingestion (`ingest-new-source.md`), any correction to a principle or practice, or any structural change. One improvement = one publish. Do not batch a week of unrelated edits into one commit.
 
-## Steps (agent or human)
+## Steps
+
+0. `bash scripts/kb-sync.sh` — if this copy is ahead or behind `origin/main`, resolve that first; `kb-publish.sh` refuses to start otherwise. (agent or human)
 
 1. Make sure you are on `main` with the working tree containing only this improvement (`git status`).
 2. Run the KB's own sensor: `bash scripts/kb-check.sh`. Fix anything it reports (missing frontmatter/status, file not in `INDEX.md`, broken relative link, stray `<<PLACEHOLDER>>` outside `practices/`/`templates/`).

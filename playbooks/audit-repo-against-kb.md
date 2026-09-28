@@ -22,6 +22,10 @@ superseded-by: null
 
 **Rules.** Investigation before implementation. Reference actual files, commands and gaps in *this* repo — no generic advice. Explain each finding simply, assuming the reader may not know the term; link the principle. Prefer mechanical fixes (hooks, linters, tests) over prose additions. When unsure, ask one question at a time.
 
+## Step −1 — Is the guide current?
+
+`bash <kb>/scripts/kb-sync.sh` must print "in sync" before anything else; otherwise stop and report. (2026-09-28.)
+
 ## Step 0 — Which practices apply
 
 Run `playbooks/which-practices-apply.md` first (facts with evidence → one confirmation screen → applies / skipped with reasons). Audit only the practices it marked *applies* or *already present*; list the *skipped* ones at the end of the report with their reasons so the omission is visible.

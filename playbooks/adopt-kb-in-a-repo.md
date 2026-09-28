@@ -19,6 +19,8 @@ superseded-by: null
 
 ## Steps
 
+0. **Check the guide is current.** `bash ../ai-engineering-best-practices/scripts/kb-sync.sh` (read-only). If it reports `ahead` or `behind`, fix that first (`--pull` when only behind; publish when ahead) — every step below assumes the local copy equals `origin/main`. Added 2026-09-28 after the first real test found the local copy three weeks stale in both directions.
+
 1. **Open the repo's entry file.** If it has `AGENTS.md`, use that; if only `CLAUDE.md`, use that; if neither, create `AGENTS.md` and a `CLAUDE.md` containing `@AGENTS.md`.
 
 2. **Add the pointer block** (verbatim; adjust the path if needed):
