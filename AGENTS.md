@@ -15,6 +15,7 @@ You are reading Martin Weidemann's **AI Engineering Knowledge Base**. It is a re
 - `sources/YYYY-MM-DD-slug.md` — immutable digests. Never edit the body of an existing source; add a new one.
 - `decisions/NNNN-slug.md` — decisions about how Martin's repos work. Respect any with status `accepted`.
 - `playbooks/` — procedures. Follow them literally. `ingest-new-source.md` (add knowledge) and `publish-change.md` (ship it) are the two this folder runs on itself; `adopt-kb-in-a-repo.md` and `audit-repo-against-kb.md` are for agents in *other* repos.
+- `skills/` — agent-loadable procedures (Agent Skills standard); see `skills/README.md`.
 - `scripts/` — `kb-sync.sh` (is this copy current? run it first), `kb-check.sh` (the KB's own verification) and `kb-publish.sh` (branch/commit/push/merge/cleanup).
 - `templates/` — copy these when creating new entries.
 - `CONVENTIONS.md` — formatting rules for anything you write here.
@@ -30,6 +31,7 @@ You are reading Martin Weidemann's **AI Engineering Knowledge Base**. It is a re
 - When a new source contradicts a principle, do **not** overwrite the old text silently. Add a "Change log" line to the principle explaining what changed, why, and which source triggered it. If the old advice is fully obsolete, set its status to `superseded` and point to the replacement.
 - Update `INDEX.md` in the same change.
 - Never delete files. Mark them superseded.
+- Nothing enters `principles/` or `practices/` without a gate verdict written in its source entry (`playbooks/evaluate-new-material.md`). Anything that removes a sensor (tests, hooks, review) to gain speed is rejected by default.
 - **Publish every improvement through `playbooks/publish-change.md`**: `bash scripts/kb-check.sh` then `bash scripts/kb-publish.sh <slug> "<message>"` (branch → commit → push → merge to `main` → branch deleted). Never commit by hand on `main`; never `--no-verify`.
 
 ## Rules when applying this knowledge to another repo
@@ -55,6 +57,7 @@ You are reading Martin Weidemann's **AI Engineering Knowledge Base**. It is a re
 | make agents verify their own work (tests, hooks, e2e) | `principles/05-verification-loops.md` | `practices/verification/`, `practices/hooks-and-guards/` |
 | run several agents in parallel safely (worktrees) | `principles/06-parallel-agents-and-worktrees.md` | `practices/worktrees/` |
 | spend fewer tokens | `principles/07-token-economy.md` | `practices/token-savings/` |
+| secure an agent-driven repo (secrets, dependencies, injection, MCP trust) | `principles/02-harness-engineering.md` | `practices/security-baseline/` (draft) |
 | pick a model for a task | `principles/08-model-selection.md` | (policy table in `practices/context-docs-skeleton/docs/workflow.md` §3) |
 | reuse the high-leverage prompts (meta-prompt, ask-the-expert, audit, lesson→rule) | `principles/01-context-engineering.md`, `principles/04-spec-driven-development.md` | `practices/prompt-library/` |
 | structure a knowledge base like this one | `principles/09-knowledge-base-design.md` | — |

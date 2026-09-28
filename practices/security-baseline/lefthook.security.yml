@@ -1,0 +1,14 @@
+# Merge these commands into the repo's lefthook.yml (see practices/hooks-and-guards/lefthook.yml).
+pre-commit:
+  commands:
+    secrets:
+      run: gitleaks protect --staged --redact --no-banner
+    no-env-files:
+      run: |
+        if git diff --cached --name-only | grep -Eq '(^|/)\.env(\.|$)'; then
+          echo "Refusing to commit an .env file"; exit 1; fi
+
+pre-push:
+  commands:
+    dependency-audit:
+      run: <<npm audit --audit-level=high>>   # or: pip-audit  |  composer audit  |  cargo audit

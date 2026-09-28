@@ -52,6 +52,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | `practices/spec-driven/` | 04 | `specs/README.md`, `/plan-ticket`, `/develop-task`, `constitution.md`, OpenSpec quickstart | current | 2026-09-08 |
 | `practices/prompt-library/` | 01, 04, 21 | meta-prompt, ask-the-expert, readme-by-index, openapi, standards-doc, `/audit`, commit skill, `/lesson`, trajectory-review | current | 2026-09-24 |
 | `practices/token-savings/` | 07 | ordered checklist, MCP audit (CLI-over-MCP rule added), measurement log | current | 2026-09-24 |
+| `practices/security-baseline/` | 02, 05 | secret-scan hook, MCP trust register, agentic threat model, dependency policy, injection fixture | draft | 2026-09-28 |
 | `practices/llm-api-calls/` | 10 | `llm_call_skeleton.py` (one client module, usage log incl. cached tokens), `system-prompt-template.md` (ten parts, static-first, 12-point checklist), `failure-modes-and-mitigations.md`, `provider-selection-checklist.md`, `context-budget.md` | draft | 2026-09-27 |
 | `practices/context-management/` | 11 | `context-budget-and-triggers.md`, `compaction-policy.md`, `compaction_skeleton.py`, `context-failure-modes.md`, `context-store-decision.md`, `context-metrics-and-evals.md` | draft | 2026-09-27 |
 | `practices/agent-patterns/` | 21 | decision checklist, patterns catalogue, agent-loop skeleton, tool-definition template + 12-point checklist, tool-transport decision table (CLI/MCP/skill/RAG/memory + auth ladder), agentic-RAG skeleton | draft | 2026-09-24 |
@@ -71,6 +72,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 |---|---|
 | `playbooks/adopt-kb-in-a-repo.md` | Make a repo point to this KB (Windows-safe, no symlinks) |
 | `playbooks/audit-repo-against-kb.md` | (after `which-practices-apply.md`) Inventory → score → findings → plan → stop for approval |
+| `playbooks/evaluate-new-material.md` | **superseded** (2026-09-28) by the impact table in `ingest-new-source.md` step 2b; its scoring rubric was folded there. Kept for history |
 | `playbooks/ingest-new-source.md` | Turn raw material into a source entry + **impact table** (confirms/refines/new/contradicts/skip/park) + only the principle/practice updates the table says — the single protocol for any external information |
 | `playbooks/publish-change.md` | Ship one improvement: check → branch → commit → push → merge → delete branch (`scripts/kb-check.sh`, `scripts/kb-publish.sh`, `/publish`) |
 | `playbooks/which-practices-apply.md` | Day-one entry point for any repo: infer the facts with evidence → confirm in one screen → applies / skipped with reasons → hand to the audit. Worked examples for Martin's four project shapes |
@@ -86,7 +88,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 
 ## Skills
 
-`skills/apply-ai-engineering-kb/SKILL.md` — Agent-Skills-format entry point; copy to `~/.claude/skills/` to make it global.
+`skills/README.md` — what skills are and the rules · `skills/apply-ai-engineering-kb/SKILL.md` — Agent-Skills-format entry point; copy to `~/.claude/skills/` to make it global · `practices/prompt-library/commit-skill/SKILL.md` — commit procedure
 
 ## Topic map
 
@@ -98,6 +100,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | CLAUDE.md / AGENTS.md design, rules, imports | `03-agent-instruction-files.md` | `agent-entry-file/` | research §3.2, §3.7; workshop §3.2 |
 | OpenSpec / Spec-Kit / Superpowers / Spec-Boot; ask-the-expert; plan mode | `04-spec-driven-development.md` | `spec-driven/` | workshop §3.4, videos C/D |
 | Tests, e2e, Playwright, Stop hooks, evals | `05-verification-loops.md` | `verification/`, `hooks-and-guards/` | workshop §3.6, video D; research §3.2 |
+| Security: secrets, dependencies, prompt injection, MCP trust | `02-harness-engineering.md` | `security-baseline/` (draft) | research §3.2; workshop §3.2, videos C/D |
 | Worktrees, parallel sessions, subagents | `06-parallel-agents-and-worktrees.md` | `worktrees/` | workshop §3.4 |
 | rtk, codegraph, caveman, ponytail, Headroom, routing | `07-token-economy.md` | `token-savings/` | workshop §3.5 |
 | Opus/Sonnet/Gemini/Codex by phase | `08-model-selection.md` | `context-docs-skeleton/docs/workflow.md` §3 | workshop §3.2, video C |
@@ -109,6 +112,8 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | Agents: workflow vs agent, minimal loop, tool design, CLI/MCP/skill/RAG/memory, agentic RAG | `21-agent-design-and-tools.md` | `agent-patterns/`, `prompt-library/trajectory-review.md` | s12 digest §3, impact table §6 |
 
 ## Open actions (from sources)
+
+- [ ] `practices/security-baseline/`: answer its open questions (secret scanner, injection eval, MCP trust policy, supply-chain rule) and ingest a dedicated security source → promote to `current`.
 
 - [ ] Workshop homework 1: update each repo's technical context docs → run `audit-repo-against-kb.md` per repo.
 - [ ] Workshop homework 2: draft the SSO open spec (sign-up, login) in one repo → `templates/open-spec-user-story.md`.

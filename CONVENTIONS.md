@@ -32,7 +32,7 @@ superseded-by: null         # path of the file that replaced this, if any
 
 Status vocabulary:
 
-- **Sources**: always `current` (they are snapshots; they do not go stale, they just get older).
+- **Sources**: always `current` (they are snapshots; they do not go stale, they just get older). Their impact table (section 6 below) records what changed because of them.
 - **Principles / playbooks**: `draft` (not yet trusted), `current` (trusted), `superseded` (kept for history; read `superseded-by`).
 - **Decisions**: `proposed`, `accepted`, `deprecated` (with `superseded-by`).
 
@@ -45,7 +45,7 @@ Long and digested. The point is that someone (or an agent) who was not there can
 3. **Detailed digest** — section by section, in prose. Explain every term the first time it appears. Include the numbers, the names of tools, the exact commands shown.
 4. **Claims worth checking** — anything stated as fact that you did not verify, with a note on how confident you are.
 5. **What is contested / trade-offs** — where reasonable people disagree, or where the speaker's interest may bias the advice (e.g. a vendor recommending its own product).
-6. **Implications for Martin's repos** — concrete, repo-by-repo if possible.
+6. **Impact assessment** — one row per finding: finding · where the KB stands today · verdict (confirms / refines / new / contradicts / skip / park) · action taken (`playbooks/ingest-new-source.md` step 2b). Implications for Martin's repos go here too, concrete, repo-by-repo if possible.
 7. **Actions taken / to take** — checklist; link to the decision or principle files that were created or changed because of this source.
 8. **Raw notes / transcript excerpts** — optional appendix; verbatim material that supports the digest.
 

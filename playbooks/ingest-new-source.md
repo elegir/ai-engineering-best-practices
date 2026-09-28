@@ -19,11 +19,13 @@ superseded-by: null
 
 ## Steps
 
+0. **Gate first.** Run `playbooks/evaluate-new-material.md`. Only `adopted` and `refined` verdicts continue past step 2; `parked` and `rejected` get the source entry, an `INDEX.md` line, and a publish — nothing else changes.
+
 1. **Capture everything first.** Save raw material verbatim under `sources/raw/YYYY-MM-DD-slug/` (transcripts, page text, exported notes). For YouTube videos, extract transcripts (Apify `johnvc/YoutubeTranscripts` or similar) and save one file per video with a header noting title, channel, upload date, duration, language, extraction date. For web pages, save the full text. Note anything that could **not** be captured (videos without captions, images, PDFs) so the gap is visible.
 
 2. **Write the source entry** from `templates/source-entry.md`, named `sources/YYYY-MM-DD-slug.md` with the *event* date. Follow `CONVENTIONS.md` §3: context; one-paragraph summary; detailed digest section by section in prose (explain terms; keep numbers, tool names, exact commands); claims worth checking; what is contested (including vendor interest); implications for Martin's repos, by repo; actions; raw-notes appendix pointing to `sources/raw/`.
 
-2b. **Impact assessment — mandatory, and the reason this playbook exists.** The goal is to *improve* the knowledge base, not to append everything the source said. Before touching any principle or practice, build an **impact table** in the source entry (section "Impact assessment", after "What is contested"): one row per finding, with the columns *finding · where the KB stands today (file and section, or "absent") · verdict · action*. Verdicts, exactly these six:
+2b. **Impact assessment — mandatory, and the reason this playbook exists.** (The 2026-09-09 "improvement gate" playbook is superseded by this step; when a finding's verdict is unclear, score it 0–3 on evidence · applicability · delta vs current · maturity · cost to adopt · reversibility, and use: *new/refines* needs delta ≥ 2 and evidence ≥ 2 and no existing alternative that dominates it; *park* when evidence ≤ 1 or the tool is weeks old; anything that removes a sensor — tests, hooks, review — to gain speed is *skip* whatever the score.) The goal is to *improve* the knowledge base, not to append everything the source said. Before touching any principle or practice, build an **impact table** in the source entry (section "Impact assessment", after "What is contested"): one row per finding, with the columns *finding · where the KB stands today (file and section, or "absent") · verdict · action*. Verdicts, exactly these six:
 
    | Verdict | Meaning | What you do |
    |---|---|---|

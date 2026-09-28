@@ -13,6 +13,7 @@ sources:
   - https://agentskills.io/home
   - https://code.claude.com/docs/en/memory
   - https://www.lidr.co/blog/que-es-harness-engineering/
+verdict: adopted
 supersedes: null
 superseded-by: null
 ---
