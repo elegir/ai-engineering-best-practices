@@ -15,11 +15,13 @@ You are reading Martin Weidemann's **AI Engineering Knowledge Base**. It is a re
 - `sources/YYYY-MM-DD-slug.md` — immutable digests. Never edit the body of an existing source; add a new one.
 - `decisions/NNNN-slug.md` — decisions about how Martin's repos work. Respect any with status `accepted`.
 - `playbooks/` — procedures. Follow them literally. `ingest-new-source.md` (add knowledge) and `publish-change.md` (ship it) are the two this folder runs on itself; `adopt-kb-in-a-repo.md` and `audit-repo-against-kb.md` are for agents in *other* repos.
-- `scripts/` — `kb-check.sh` (the KB's own verification) and `kb-publish.sh` (branch/commit/push/merge/cleanup).
+- `scripts/` — `kb-sync.sh` (is this copy current? run it first), `kb-check.sh` (the KB's own verification) and `kb-publish.sh` (branch/commit/push/merge/cleanup).
 - `templates/` — copy these when creating new entries.
 - `CONVENTIONS.md` — formatting rules for anything you write here.
 
 ## Rules when writing into this folder
+
+- **First command of every session: `bash scripts/kb-sync.sh`.** A copy that is behind `origin/main` gives stale answers; a copy that is ahead holds work nobody else can see (this happened on 2026-09-08: four commits sat unpushed for three weeks). If it reports `ahead`, publish those commits before anything else; if `behind`, run it with `--pull`. Never work on a copy the script does not call "in sync".
 
 - Write in **English**. Long-form, digested, explicit: assume the reader has no background. Prefer full sentences and explanations over terse bullets.
 - Every new file gets the frontmatter defined in `CONVENTIONS.md`.
@@ -31,6 +33,8 @@ You are reading Martin Weidemann's **AI Engineering Knowledge Base**. It is a re
 - **Publish every improvement through `playbooks/publish-change.md`**: `bash scripts/kb-check.sh` then `bash scripts/kb-publish.sh <slug> "<message>"` (branch → commit → push → merge to `main` → branch deleted). Never commit by hand on `main`; never `--no-verify`.
 
 ## Rules when applying this knowledge to another repo
+
+- Before reading anything else here from another repo, run `bash <kb>/scripts/kb-sync.sh` (read-only). If it is not in sync, say so to Martin and stop: a stale guide gives stale guidance. (Found by the first real test, AI SDR, 2026-09-28.)
 
 - Read the target repo before recommending anything. Recommendations must reference actual files, commands and gaps in *that* repo.
 - Investigation before implementation: produce a written plan (what, why, which principle, expected effort) and stop for Martin's approval before changing files. One problem per prompt.

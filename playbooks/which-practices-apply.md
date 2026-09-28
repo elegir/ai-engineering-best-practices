@@ -21,6 +21,10 @@ superseded-by: null
 
 **Rules.** Facts are inferred from the repo, never guessed from the project's name or Martin's description; each fact is shown with the evidence that supports it. Only two facts are asked (`parallel_sessions`, `long_tasks`), one question each. Everything else is one screen for Martin to correct. Never ask a question whose answer is visible in the repo.
 
+## Step 0 — Is the guide current?
+
+Run `bash <kb>/scripts/kb-sync.sh` (read-only). If it says anything other than "in sync", stop and tell Martin what it printed; do not run the rest of this playbook on a stale copy. (2026-09-28.)
+
 ## Step 1 — Infer the facts (read only)
 
 For each **inferred** fact in `practices/facts.md`, look for the evidence listed there and record one of:

@@ -82,7 +82,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 
 ## Scripts
 
-`scripts/kb-check.sh` — self-verification (frontmatter, index coverage, links, applicability fields + vocabulary, placeholders) · `scripts/kb-publish.sh` — branch/commit/push/merge/cleanup · `scripts/scan-filter.py` — drop already-registered media from a new scan result
+`scripts/kb-sync.sh` — is this copy in sync with `origin/main`? (run first; `--pull` fast-forwards when only behind) · `scripts/kb-check.sh` — self-verification (frontmatter, index coverage, links, applicability fields + vocabulary, placeholders) · `scripts/kb-publish.sh` — branch/commit/push/merge/cleanup · `scripts/scan-filter.py` — drop already-registered media from a new scan result
 
 ## Skills
 
