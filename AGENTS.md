@@ -31,7 +31,7 @@ You are reading Martin Weidemann's **AI Engineering Knowledge Base**. It is a re
 - When a new source contradicts a principle, do **not** overwrite the old text silently. Add a "Change log" line to the principle explaining what changed, why, and which source triggered it. If the old advice is fully obsolete, set its status to `superseded` and point to the replacement.
 - Update `INDEX.md` in the same change.
 - Never delete files. Mark them superseded.
-- Nothing enters `principles/` or `practices/` without a gate verdict written in its source entry (`playbooks/evaluate-new-material.md`). Anything that removes a sensor (tests, hooks, review) to gain speed is rejected by default.
+- Nothing enters `principles/` or `practices/` without a row in its source entry's **impact table** (`playbooks/ingest-new-source.md` step 2b; the 2026-09-09 gate playbook is superseded by it). Anything that removes a sensor (tests, hooks, review) to gain speed is skipped by default, whatever else it promises.
 - **Publish every improvement through `playbooks/publish-change.md`**: `bash scripts/kb-check.sh` then `bash scripts/kb-publish.sh <slug> "<message>"` (branch → commit → push → merge to `main` → branch deleted). Never commit by hand on `main`; never `--no-verify`.
 
 ## Rules when applying this knowledge to another repo
