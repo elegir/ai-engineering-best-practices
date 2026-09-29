@@ -6,7 +6,7 @@ date: 2026-09-24
 last-reviewed: 2026-09-27
 tags: [agents, tools, function-calling, mcp, agentic-rag, patterns]
 kind: capability
-applies-when: "tools or multi_agent"
+applies-when: "tools or multi_agent or exposes_tools"
 principle: principles/21-agent-design-and-tools.md
 sources:
   - sources/2026-09-24-s12-agents-digest.md
@@ -26,6 +26,8 @@ A repo is about to add (or already has) a feature where a language model takes a
 - The team is choosing between a fixed pipeline and an autonomous loop and wants the decision recorded.
 - Tools are being written for a model (function calling, MCP server, CLI wrapper).
 - A RAG feature needs to self-correct when the first retrieval misses.
+
+- The product **exposes** tools to an external agent (an MCP server, a function-calling API): the loop is someone else's, but the tool names, descriptions, schemas, error strings and count are yours — `tool-definition-template.md` and the progressive-disclosure rules apply in full. (Added 2026-09-28, AI SDR test.)
 
 ## Does not apply when
 - The feature is one LLM call with a fixed prompt (classification, summarisation, extraction) — use structured outputs instead (session-4 practice, pending).
@@ -64,3 +66,4 @@ A repo is about to add (or already has) a feature where a language model takes a
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 - 2026-09-24 — created from the session-12 market scan (draft).
 - 2026-09-27 (s2) — tool checklist item 13 (addressable results); sub-agent rules in `patterns-catalogue.md`; stable-tool-set note in `tool-transport-decision-table.md`. Source `sources/2026-09-27-s02-context-caching-digest.md`.
+- 2026-09-28 — `applies-when` gains `exposes_tools`; a product that serves 100+ MCP tools needs the tool-design half of this practice even without an agent loop of its own (first real test, AI SDR).

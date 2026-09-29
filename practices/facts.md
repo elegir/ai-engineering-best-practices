@@ -23,6 +23,7 @@ Most facts are **inferred from the repo with evidence** by `playbooks/which-prac
 | `retrieval` | The product answers or acts using documents/data fetched at query time by similarity or search | A vector store or `pgvector`, an embeddings call, chunking code, a document corpus folder, a search index (BM25, Elastic, Typesense) |
 | `tools` | The model can decide to call functions/tools (function calling, MCP client, agent loop) | Tool/function schemas passed to the model, a `tool_use`/`function_call` loop, an MCP client config used at runtime, an agent framework (LangGraph, ADK, Agents SDK, Pydantic AI, Claude Agent SDK) |
 | `multi_turn` | The product passes history back into the model — a conversation, a session with memory, or an agent loop — so the context grows across calls | A messages/threads/sessions table or store, a conversation id passed to the model call, history appended to the request, an agent loop (`tool_use` → result → call again) |
+| `exposes_tools` | The product *serves* tools to an external agent (it is an MCP server, a function-calling API or a plugin) — the model that decides which tool to call lives outside the product, but the tool names, descriptions, schemas and error messages are the product's | An MCP server implementation (`FastMCP`, `@mcp.tool`, an `mcp_*_router`), a tools manifest, OpenAPI operations described for LLM consumption, a plugin manifest. (Found in the first real test: AI SDR exposes 100+ MCP tools to Claude Desktop and has no agent loop of its own.) |
 | `multi_agent` | More than one model-driven agent runs in the same feature (orchestrator/subagents, handoffs) | Subagent spawning, orchestrator/worker roles, A2A, handoff definitions |
 | `acts_on_world` | The product takes actions with effects outside the repo that are hard to undo: sends email/messages, publishes content, moves money, changes third-party records | SMTP/email API clients, social/CMS publish calls (WordPress REST, Slack post), payment SDKs, write calls to CRMs/ticketing; scheduled jobs that trigger them |
 | `multi_tenant` | One deployment serves several *customers/organisations* whose data must not mix | A `tenant_id`/`org_id`/`workspace_id` column or foreign key across tables, per-tenant config, RLS policies, tenant-scoped API keys. (Many sites owned by one person is **not** multi-tenant; several paying customers is.) |
@@ -32,6 +33,10 @@ Most facts are **inferred from the repo with evidence** by `playbooks/which-prac
 | `brownfield` | There is existing code and existing users/data to protect (as opposed to a repo started this week) | `git log` older than a few weeks with real commits; a schema with migrations; a deploy that already runs |
 | `parallel_sessions` | **Asked.** Martin runs, or wants to run, more than one agent session on this repo at the same time (or a session while he edits) | Question: "Do you run more than one Claude session on this repo at once?" |
 | `long_tasks` | **Asked.** Work on this repo regularly spans more than one session (features that take days) | Question: "Do tasks here usually take more than one sitting?" |
+
+## Dormant code
+
+A fact is inferred from what *runs*, not from what exists. Code that is switched off, feature-flagged off, or documented as retired (a bot "apagado desde 07-14") makes the fact `no — dormant since <date>: <evidence>`, so that a future reader sees why, and it is re-checked if the feature comes back. Added 2026-09-28 after the AI SDR test (`multi_turn` inferred from a dormant Slack bot).
 
 ## Ordering rule (used by `which-practices-apply.md`)
 
@@ -43,3 +48,4 @@ There is no score. The list is the plan, and each skipped practice carries a rea
 ## Change log
 - 2026-09-26 — created with 12 facts (10 inferred, 2 asked) from the selector debate (`decisions/0003-applicability-by-facts.md`).
 - 2026-09-27 — added `multi_turn` (inferred) for `practices/context-management/`; source `sources/2026-09-27-s02-context-caching-digest.md` row 36.
+- 2026-09-28 — added `exposes_tools` (inferred) and the dormant-code rule; both from the first real run of `which-practices-apply.md` on AI SDR, which found a product that is a tool *provider* (MCP server with 100+ tools) rather than a tool *caller*, and a `multi_turn` signal that came only from a bot switched off in July.
