@@ -37,6 +37,8 @@ Typical commands: dependency manifests (`package.json`, `requirements*.txt`, `py
 
 Then ask the two questions, one at a time, in plain words: "¿Corrés más de una sesión de Claude a la vez en este repo?" and "¿Las tareas acá suelen llevar más de una sentada?"
 
+A fact inferred only from **dormant** code (a feature switched off or retired, per the repo's own docs) is `no — dormant since <date>`; see `practices/facts.md` §Dormant code. A product that *serves* tools to an external agent (MCP server, function-calling API) is `exposes_tools`, not `tools`.
+
 ## Step 2 — Confirm in one screen
 
 Show a table: fact · answer · evidence. Ask Martin to correct anything wrong. Pay attention to the three facts a solo owner most often under-reports, and state them explicitly with their evidence:
