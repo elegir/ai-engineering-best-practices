@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # kb-sync.sh — is this copy of the knowledge base current? Run at the start of every session (in the KB itself
-# or from another repo that consults it). Read-only unless you pass --pull.
-#   bash scripts/kb-sync.sh          → fetch, report ahead/behind, exit 1 if not in sync (nothing changed on disk)
+# or from another repo that consults it). Writes only inside .git/ (a fetch); with --pull it also fast-forwards
+# main when this copy is only BEHIND and clean — safe, no merge, no rebase, nothing of yours is touched.
+#   bash scripts/kb-sync.sh          → fetch, report ahead/behind, exit 1 if not in sync (working tree untouched)
 #   bash scripts/kb-sync.sh --pull   → additionally fast-forward main when this copy is only BEHIND
 # Never rebases, never force-pushes, never touches uncommitted work. If this copy is AHEAD (commits never pushed),
 # it tells you the one command to run; publishing stays with kb-publish.sh.
