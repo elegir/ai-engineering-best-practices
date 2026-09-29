@@ -24,7 +24,7 @@ superseded-by: null
 
 ## Step −1 — Is the guide current?
 
-`bash <kb>/scripts/kb-sync.sh` must print "in sync" before anything else; otherwise stop and report. (2026-09-28.)
+`bash <kb>/scripts/kb-sync.sh --pull` before anything else; it fast-forwards a copy that is only behind. Stop and report only on `ahead` or uncommitted changes. (2026-09-28.)
 
 ## Step 0 — Which practices apply
 

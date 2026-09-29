@@ -22,7 +22,7 @@ You are reading Martin Weidemann's **AI Engineering Knowledge Base**. It is a re
 
 ## Rules when writing into this folder
 
-- **First command of every session: `bash scripts/kb-sync.sh`.** A copy that is behind `origin/main` gives stale answers; a copy that is ahead holds work nobody else can see (this happened on 2026-09-08: four commits sat unpushed for three weeks). If it reports `ahead`, publish those commits before anything else; if `behind`, run it with `--pull`. Never work on a copy the script does not call "in sync".
+- **First command of every session: `bash scripts/kb-sync.sh`.** A copy that is behind `origin/main` gives stale answers; a copy that is ahead holds work nobody else can see (this happened on 2026-09-08: four commits sat unpushed for three weeks). If it reports `ahead`, publish those commits before anything else; if `behind`, run it with `--pull` (a fast-forward; it never merges or rebases). Never work on a copy the script does not call "in sync".
 
 - Write in **English**. Long-form, digested, explicit: assume the reader has no background. Prefer full sentences and explanations over terse bullets.
 - Every new file gets the frontmatter defined in `CONVENTIONS.md`.
@@ -36,7 +36,7 @@ You are reading Martin Weidemann's **AI Engineering Knowledge Base**. It is a re
 
 ## Rules when applying this knowledge to another repo
 
-- Before reading anything else here from another repo, run `bash <kb>/scripts/kb-sync.sh` (read-only). If it is not in sync, say so to Martin and stop: a stale guide gives stale guidance. (Found by the first real test, AI SDR, 2026-09-28.)
+- Before reading anything else here from another repo, run `bash <kb>/scripts/kb-sync.sh --pull`. It touches nothing but the guide's own `.git/` and, when the copy is only *behind* and clean, fast-forwards it — that is safe and needs no permission, even in a read-only session about *your* repo. Stop and tell Martin only if it reports `ahead` (unpublished work) or uncommitted changes: those need a human. (First real test, AI SDR, 2026-09-28; the stop-always version of this rule blocked the agent twice in one day.)
 
 - Read the target repo before recommending anything. Recommendations must reference actual files, commands and gaps in *that* repo.
 - Investigation before implementation: produce a written plan (what, why, which principle, expected effort) and stop for Martin's approval before changing files. One problem per prompt.

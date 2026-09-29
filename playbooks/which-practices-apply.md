@@ -23,7 +23,7 @@ superseded-by: null
 
 ## Step 0 — Is the guide current?
 
-Run `bash <kb>/scripts/kb-sync.sh` (read-only). If it says anything other than "in sync", stop and tell Martin what it printed; do not run the rest of this playbook on a stale copy. (2026-09-28.)
+Run `bash <kb>/scripts/kb-sync.sh --pull`. It writes only inside the guide's `.git/` and fast-forwards the guide when it is merely behind — allowed even in a read-only session, because the guide is not the repo under review. Stop and tell Martin only if it reports `ahead` or uncommitted changes. Re-run it if the session lasts hours: the guide moves. (2026-09-28.)
 
 ## Step 1 — Infer the facts (read only)
 
