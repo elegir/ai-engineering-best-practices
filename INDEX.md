@@ -18,7 +18,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | 2026-09-27 | `sources/2026-09-27-s02-context-caching-digest.md` — digest of the 16 session-2 transcripts with the impact table (36 findings → 1 new principle, 1 new practice, 1 new fact word, 6 glossary entries, 8 principles reviewed/refined, 2 parked) | digest | `sources/raw/2026-09-27-market-scan-s02-context-caching/` |
 | 2026-09-30 | `sources/2026-09-30-market-scan-s03-wrappers.md` — market scan for LIDR session 3 "Model wrappers and layered architecture": 118 YouTube results + 9 podcast episodes considered, 12 new items transcribed (AI Engineer ×2, EuroPython, API World, AI Engineering Podcast, Latent Space via Whisper, Mastra, Langfuse, PyCon DE, CNCF, Scala Days, Percona) + 5 reused | market scan | `sources/raw/2026-09-30-market-scan-s03-wrappers/` |
 | 2026-09-30 | `sources/2026-09-30-s03-wrappers-digest.md` — digest with the impact table (32 findings → 1 new principle, 1 new practice, 6 glossary entries, 5 principles refined, 2 parked) | digest | — |
-| 2026-09-30 | `sources/2026-09-30-day-one-debate.md` — clean-context devil's advocate vs the day-one goal: 20 attacks, two rounds, six agreed changes before module 4 (decision 0004 pending) | debate | — |
+| 2026-09-30 | `sources/2026-09-30-day-one-debate.md` — clean-context devil's advocate vs the day-one goal: 20 attacks, two rounds, six agreed changes before module 4 (decision 0004 pending; decision 0004 published 2026-09-30) | debate | — |
 | (living) | `sources/catalog-written-canon.md` — the written canon per course session (docs, papers, articles, courses), registered with `type: written` so none is read twice; sessions 1–3 + cross-cutting as of 2026-09-30 | catalogue | — |
 | (living) | `sources/media-registry.json` + `sources/media-registry.md` — every video/podcast episode ever considered, with status (transcribed / digested / applied / candidate / discarded) and reason; filtered by `scripts/scan-filter.py` | registry | — |
 | (living) | `sources/scan-log.md` — one row per course module: stage reached (mapped → catalogued → scanned → transcribed → digested → principled → validated) | tracking | — |
@@ -70,6 +70,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 |---|---|---|
 | 0001 | `decisions/0001-knowledge-base-structure.md` — single local KB consulted by pointer | accepted |
 | 0003 | `decisions/0003-applicability-by-facts.md` — practices declare `kind` + `applies-when` over the fact vocabulary in `practices/facts.md`; facts inferred from the repo; no profile schema, grammar, rigor levels or risk formula | accepted |
+| 0004 | `decisions/0004-day-one-for-blank-and-existing-repos.md` — two entry doors (blank repo: planned facts + bootstrap; existing repo: inferred facts + audit), one router (`scripts/applies.py` as authority); safety facts select `security-baseline` (full) and `verification/dry-run-and-approval.md`; practices promoted by adoption; new practices routed only after the previous module passed Verify in a real repo | accepted |
 | 0002 | `decisions/0002-market-scan-protocol-and-media-registry.md` — fixed market-scan protocol; registry of every video/podcast considered; new scans only look at new items | accepted |
 
 ## Playbooks
