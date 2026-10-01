@@ -120,7 +120,7 @@ This field renames itself every few months. Below are the terms as used in this 
 
 **Re-ask (validation loop).** Appending a validator's error message to the conversation and calling the model again, capped (usually once) and owned by one layer; the mechanism behind Instructor and Guardrails AI. Native constrained decoding handles the shape; the re-ask is only for invariants a schema cannot express. Liu (2023, 2024); Rajpal (2023). Practice: `practices/structured-outputs/validation-and-reask.md`.
 
-**Guardrail (runtime).** A check at a trust boundary of an LLM application — input, retrieval, tool call, output, memory, plan — with a tier (rule / classifier / LLM judge), an on-fail action (re-ask, fix, filter, refrain, log, raise), a fail-open/closed policy, a time budget and a placement (blocking or parallel). Side-effect guards run blocking. Rajpal; NeMo Guardrails; OpenAI Agents SDK (2026-10-01). Policy file: `practices/structured-outputs/guardrail-policy.md`.
+**Guardrail (runtime).** A check at a trust boundary of an LLM application — ingestion (before the index, s6), input, retrieval, tool call, output, memory, plan — with a tier (rule / classifier / LLM judge), an on-fail action (re-ask, fix, filter, refrain, log, raise), a fail-open/closed policy, a time budget and a placement (blocking or parallel). Side-effect guards run blocking. Rajpal; NeMo Guardrails; OpenAI Agents SDK (2026-10-01). Policy file: `practices/structured-outputs/guardrail-policy.md`.
 
 **System-one model / decision model.** A model that answers typed questions (choice, score, yes/no) with calibrated probabilities in one forward pass instead of generating text; Jev (Type-Safe AI, 2026-09) is the first product; a fine-tuned encoder classifier or a log-probability read over enumerated options is the older form. Decisions go to such a model with thresholds in code; generation stays with generative models. Witteveen; Boundary; Carpintero.
 
@@ -160,11 +160,28 @@ This field renames itself every few months. Below are the terms as used in this 
 
 **Approval (interruption with resumable state).** A tool call that pauses the run, returns serialisable state, resumes on a human decision; fails closed when review is unavailable. OpenAI Agents SDK (read 2026-10-01). Rule: `practices/verification/dry-run-and-approval.md` 2b.
 
+**Document parsing (document OCR).** Turning a file designed for display into a structured representation with reading order, tables and provenance. Liu (2026-05); Abraham (2026-09). `16-data-for-ai-products.md` §3.3.
+
+**Layout detection / element-typed document (partitioning); provenance.** Small models find the regions of a page; each becomes a typed element (text, title, table, image, list, code) carrying page and bounding box — the provenance a citation needs. Docling, Unstructured, LlamaIndex (read 2026-10-01). `practices/data-ingestion/ingestion_pipeline.py`.
+
+**Agentic OCR.** Token-level verification of parser output, as opposed to an LLM rewriting a page and "correcting" totals. Abraham (2026-09).
+
+**Data-centric AI.** Holding the model fixed and engineering the data: consistent labels, representative inputs, iteration on slices. Ng (2022).
+
+**Data contract / control plane / AI approval gate.** Shape, meaning, ownership, freshness, compatibility and break behaviour; the plane deciding which data may be embedded, retrieved or acted on — "gold data is not automatically AI approved data". Gambill (2026-06). `practices/data-ingestion/audit-checklist.md`.
+
+**Chunkless RAG / structure navigation.** Retrieval that keeps the parsed tree and lets the agent navigate sections instead of matching flat chunks: "similarity search to find the right document, structure to navigate inside of it". IBM Technology (2026-08). `practices/context-management/context-store-decision.md`.
+
+**Anonymisation vs pseudonymisation (EDPB three criteria).** Anonymous: no record isolation, no linkage, no inference; a reversible placeholder keeps linkage and is pseudonymised — still personal data. EDPB (2026-07-08); Huyen (2024-07).
+
+**Row Level Security (RLS).** A database policy filtering every query by the request's identity, so a similarity search returns only authorised rows — the tenant-isolation enforcement point on Postgres. Supabase (read 2026-10-01). `16-data-for-ai-products.md` §3.7.
+
 **Brownfield / greenfield.** Existing codebase vs. new project. Most real work is brownfield; frameworks that require describing the whole system up front fit it badly.
 
 ## Change log
 
 - 2026-09-08 — created from the LIDR workshop and the structuring-research entry.
+- 2026-10-01 (s6) — added Document parsing, Layout detection / element-typed document / provenance, Agentic OCR, Data-centric AI, Data contract / control plane / AI approval gate, Chunkless RAG / structure navigation, Anonymisation vs pseudonymisation, Row Level Security. Source: `sources/2026-10-01-s06-data-audit-cleaning-privacy-digest.md` §7.6.
 - 2026-10-01 (s5) — "Eval" rewritten (systematic measurement preceded by error analysis); added Error analysis, Theoretical saturation, Benevolent dictator, Criteria drift, Judge calibration, Judge bias, Task/trial/grader/transcript/outcome/harness/suite, Capability vs regression and pass@k vs pass^k, Memory (types and scopes), Extract → consolidate, Sleep-time compute, Forgetting vs deleting, Memory engineering vs context engineering, NHI / just-in-time access, Pre-filter vs post-filter authorisation, Approval (interruption with resumable state). Source: `sources/2026-10-01-s05-context-memory-permissions-evals-digest.md` §7.8.
 - 2026-10-01 (s4) — added Structured outputs / constrained decoding, JSON mode, Strict tool use, Re-ask, Guardrail (runtime), System-one model / decision model, Generative UI, Prompt injection. Source: `sources/2026-10-01-s04-structured-outputs-digest.md`.
 - 2026-09-30 (s3) — added LLM gateway, Fallback vs retry, Cooldown, SSE, Semantic cache, 12-Factor Agents. Source: `sources/2026-09-30-s03-wrappers-digest.md`.

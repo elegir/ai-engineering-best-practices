@@ -78,6 +78,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 (s6) — `context-store-decision.md` gains a *structure navigation* row (keep the parsed tree, outline with per-section summaries, open-section tools; wins on long organised documents, loses at millions of documents and fuzzy questions — IBM Technology 2026-08), question 8 ("a few long structured documents, or many short ones?") and a rule of thumb. Source: `../../sources/2026-10-01-s06-data-audit-cleaning-privacy-digest.md` §7.2.
 - 2026-10-01 (s5) — `context-store-decision.md` gains a *memory substrate* row (file interface for the model; namespaced store with concurrency and audit behind the handler); `context-metrics-and-evals.md` §2 gains the cross-session case (a fact from session 1 recalled, a contradicted fact updated, in session N; five runs). Source `sources/2026-10-01-s05-context-memory-permissions-evals-digest.md` rows 30, 31.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-27 — created from the session-2 market scan (draft).

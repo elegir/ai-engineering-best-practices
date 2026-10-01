@@ -3,7 +3,7 @@ title: "Playbook (protocol) — improve the KB from the market: scan YouTube/pod
 type: playbook
 status: current
 date: 2026-09-24
-last-reviewed: 2026-09-24
+last-reviewed: 2026-10-01
 tags: [market-scan, apify, youtube, podcasts, transcripts, courses]
 sources:
   - sources/2026-09-24-market-scan-s12-intro-to-agents.md
@@ -63,7 +63,7 @@ superseded-by: null
    hdr=open("sources/media-registry.md").read().split("\n## ")[0].rstrip()
    import re; hdr=re.sub(r"Updated: .*", "Updated: %s. Totals: %s." % (reg["updated"], ", ".join(f"{k} {len(v)}" for k,v in sorted(by.items()))), hdr)
    out=[hdr]
-   for st in ["applied","digested","transcribed","candidate","discarded"]:
+   for st in ["applied","digested","transcribed","candidate","cited","catalogued","discarded"]:   # written statuses added 2026-10-01 (s6) so the view keeps its cited / catalogued sections
        if st not in by: continue
        out.append(f"\n## {st} ({len(by[st])})\n"); out.append("| Title | Channel | Published | Module | Reason / note | Decided | Link |\n|---|---|---|---|---|---|---|")
        for e in sorted(by[st],key=lambda e:(e["module"],e["title"])):
