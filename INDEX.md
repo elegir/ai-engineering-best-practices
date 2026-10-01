@@ -45,7 +45,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 
 ## Practices (applicable — copyable files with "applies when", adapt and verify sections)
 
-(Which practices apply to a repo: `practices/README.md` column "Applies when" + `practices/facts.md` + `playbooks/which-practices-apply.md`.)
+(Which practices apply to a repo: `ROUTER.md` (generated) → `scripts/applies.py --explain <facts…>`; facts from `playbooks/which-practices-apply.md` (existing repo) or `playbooks/bootstrap-new-repo.md` (blank repo); vocabulary in `practices/facts.md`.)
 
 | Practice | Implements | Files | Status | Last reviewed |
 |---|---|---|---|---|
@@ -79,18 +79,19 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 
 | File | Purpose |
 |---|---|
+| `playbooks/bootstrap-new-repo.md` | Blank-repo door: one paragraph of intent → three intent questions → planned facts → `applies.py` list → bundle's day-zero files copied and verified one by one → facts block → first commit + field report |
 | `playbooks/adopt-variant.md` | Turn a field report from a real repo into a field-tested variant + an adoptions row + promotion of the practice (the only path for consumer code into the KB; decision 0005 §7) |
 | `playbooks/adopt-kb-in-a-repo.md` | Make a repo point to this KB (Windows-safe, no symlinks) |
 | `playbooks/audit-repo-against-kb.md` | (after `which-practices-apply.md`) Inventory → score → findings → plan → stop for approval |
 | `playbooks/evaluate-new-material.md` | **superseded** (2026-09-28) by the impact table in `ingest-new-source.md` step 2b; its scoring rubric was folded there. Kept for history |
 | `playbooks/ingest-new-source.md` | Turn raw material into a source entry + **impact table** (confirms/refines/new/contradicts/skip/park) + only the principle/practice updates the table says — the single protocol for any external information |
 | `playbooks/publish-change.md` | Ship one improvement: check → branch → commit → push → merge → delete branch (`scripts/kb-check.sh`, `scripts/kb-publish.sh`, `/publish`) |
-| `playbooks/which-practices-apply.md` | Entry point for an **existing** repo (blank repos: bootstrap, to be created): infer the facts with evidence → confirm in one screen → applies / skipped with reasons → hand to the audit. Worked examples for Martin's four project shapes |
+| `playbooks/which-practices-apply.md` | Entry point for an **existing** repo (blank repos: `playbooks/bootstrap-new-repo.md`): infer the facts with evidence → confirm in one screen → applies / skipped with reasons → hand to the audit. Worked examples for Martin's four project shapes |
 | `playbooks/scan-market-for-module.md` | For one course module: search YouTube + podcasts with Apify, select by authority, transcribe, log what was considered/selected/discarded, update `sources/scan-log.md` |
 
 ## Templates
 
-`practices/facts.md` (applicability vocabulary: 14 facts, sources inferred/planned/asked, routing fact, ordering rule) · `practices/adoptions.md` (every adoption with its field report and cost — the KB's evidence) · `templates/field-report.md` (what an adopting agent reports; numbers mandatory) · `templates/source-entry.md` · `templates/principle.md` · `templates/decision.md` · `templates/open-spec-user-story.md` (with SSO sign-up/login worked examples)
+`practices/facts.md` (applicability vocabulary: 14 facts, sources inferred/planned/asked, routing fact, ordering rule) · `practices/stack-defaults.md` (hand-written: default stack and day-zero folders per shape; TypeScript not promised) · `practices/bundles.md` (generated: per shape, the blank-repo and existing-repo lists + the stack defaults) · `ROUTER.md` (generated, ≤ 2 KB) · `practices/adoptions.md` (every adoption with its field report and cost — the KB's evidence) · `templates/field-report.md` (what an adopting agent reports; numbers mandatory) · `templates/source-entry.md` · `templates/principle.md` · `templates/decision.md` · `templates/open-spec-user-story.md` (with SSO sign-up/login worked examples)
 
 ## Scripts
 

@@ -8,6 +8,8 @@ tags: [security, secrets, dependencies, mcp, threat-model]
 kind: working-style
 applies-when: "always"
 full-when: "acts_on_world or personal_data or regulated or multi_tenant"
+when: day-0   # day-0 | first-user | at-scale — when in a product's life this practice is installed (decision 0004 §5)
+full-when-stage: day-0   # the threat model and trust register are cheapest on day zero
 reference-status: untested   # untested | field-tested | reference (decision 0005 §3)
 principle: principles/02-harness-engineering.md
 sources:

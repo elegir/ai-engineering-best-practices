@@ -7,6 +7,7 @@ last-reviewed: 2026-09-30
 tags: [agents-md, claude-md, rules, cursor]
 kind: working-style
 applies-when: "always"
+when: day-0   # day-0 | first-user | at-scale — when in a product's life this practice is installed (decision 0004 §5)
 reference-status: untested   # untested | field-tested | reference (decision 0005 §3)
 principle: principles/03-agent-instruction-files.md
 sources:

@@ -7,6 +7,7 @@ last-reviewed: 2026-09-30
 tags: [tokens, rtk, codegraph, mcp-audit, model-routing]
 kind: working-style
 applies-when: "always"
+when: first-user   # day-0 | first-user | at-scale — when in a product's life this practice is installed (decision 0004 §5)
 reference-status: untested   # untested | field-tested | reference (decision 0005 §3)
 principle: principles/07-token-economy.md
 sources:

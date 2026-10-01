@@ -8,6 +8,7 @@ tags: []
 kind: working-style | capability   # working-style = any repo an agent works in; capability = depends on what the product does
 applies-when: "always | <one line using only words from practices/facts.md>"
 # full-when: "<facts that attach the practice's conditional part>"   # optional (see security-baseline)
+when: day-0            # day-0 | first-user | at-scale — when in a product's life it is installed (decision 0004 §5)
 reference-status: untested   # untested | field-tested | reference — decision 0005 §3; only a field report moves it
 principle: principles/NN-topic.md
 sources:
