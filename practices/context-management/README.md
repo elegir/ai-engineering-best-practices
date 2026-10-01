@@ -7,6 +7,7 @@ last-reviewed: 2026-09-30
 tags: [context-engineering, compaction, prompt-caching, sub-agents, long-context, rag, evals]
 kind: capability
 applies-when: "multi_turn or retrieval"
+reference-status: untested   # untested | field-tested | reference (decision 0005 §3)
 principle: principles/11-runtime-context-management.md
 sources:
   - sources/2026-09-27-s02-context-caching-digest.md
@@ -40,6 +41,16 @@ The product keeps a conversation or an agent loop across many model calls, or an
 | `context-store-decision.md` | `<repo>/docs/architecture.md` §knowledge, or the feature spec | Long context vs cached corpus (CAG) vs retrieval vs agentic search: the decision table and the questions that decide it |
 | `context-metrics-and-evals.md` | `<repo>/docs/context-policy.md` §metrics; `<repo>/evals/` | What to log per call and per session; the long-session eval (N turns in, test N+1); the isolation rules for sub-agents |
 
+## Reference implementation
+
+`compaction_skeleton.py` — the compaction policy with its invariants (recent turns verbatim, pointers for tool results, prompt untouched). Python idioms not in the contract: the dataclass transcript and the JSON summary format; a framework's memory module satisfies the contract if assertion 2 holds against it.
+
+## Stack-sensitive points
+
+- Where the transcript lives decides everything: a long-lived process keeps it in memory; a request-scoped runtime (PHP-FPM, serverless) must load it from a store on every call, so compaction runs as a step of the request or as a job, never "in the background".
+- Prompt caching is a vendor feature with different switches per SDK (`cache_control` blocks for Anthropic; automatic prefix caching elsewhere) — the assertion is about cached tokens being read, not about which flag does it.
+- Token counting: Python/TS SDKs expose a counter; in PHP estimate (characters ÷ 4) and keep the trigger conservative.
+
 ## Adapt
 - `context-budget-and-triggers.md`: fill the window and trigger for the model actually used; numbers rot — date them. A chat product and an agent loop get different recency windows.
 - `compaction_skeleton.py`: set `<<TRIGGER_UTILISATION>>`, `<<KEEP_RECENT_TURNS>>`, `<<SUMMARY_MODEL>>`; implement `is_persisted()` for your tools (which results carry a path/URL/id); if a framework's middleware exists (LangChain summarization middleware, Strands context manager, Deep Agents), configure it with the same rules instead of copying the file — the rules are the deliverable.
@@ -48,17 +59,24 @@ The product keeps a conversation or an agent loop across many model calls, or an
 - Stack variants: Python shown; TypeScript is a direct port; the policy files are language-free.
 
 ## Verify
-- The usage log shows, per call, input / output / cached tokens and context size; per session, cache hit rate. From the second turn on, `cache_read > 0`.
-- A session that reaches the trigger compacts: the transcript shrinks, the system prompt is byte-identical before and after, the last `KEEP_RECENT_TURNS` turns are verbatim, and every compacted tool result still has a pointer that resolves.
-- The long-session eval (`context-metrics-and-evals.md`) passes: turn N+1 answers correctly with the compacted history, at least 5/5 runs.
-- No timestamp, user name, working directory or changing tool list appears before the `--- dynamic ---` line of the system prompt (`../llm-api-calls/system-prompt-template.md`).
-- Every sub-agent's final message is self-contained (test: hand it to a fresh model with no history and ask for the conclusion).
-- The corpus decision is written in the spec with the date and the reason.
-- One trace per week has been read and the failure mode named, or "none seen".
+
+Each numbered line is a stack-neutral assertion — the contract (decision 0005 §2). `observer` says who can judge it: `script` (a command's exit code), `agent` (the agent observes it in a session), `Martin` (a human reads it). `negative` is what must make it fail. `framework: beats` means the assertion wins over the repo's existing framework or library; `bends` means the repo's idiom wins and the assertion adapts to it. Stack-specific commands live only under *Example commands (Python)*.
+
+1. The usage log records, per model call, input, output and cached tokens plus the context size, and per session the cache hit rate; from the second turn of a conversation on, cached tokens read is above zero — observer: script — negative: a second-turn call with zero cached tokens (the static/dynamic order is wrong)
+2. When a session reaches the compaction trigger it compacts: the transcript shrinks, the system prompt is byte-identical before and after, the last `KEEP_RECENT_TURNS` turns are verbatim, and every compacted tool result keeps a pointer that resolves — observer: script — negative: a changed system prompt, a lost recent turn, or a pointer to nothing
+3. The long-session eval in `context-metrics-and-evals.md` passes: turn N+1 is answered correctly from the compacted history in at least five runs out of five — observer: script — negative: one failed run (the mean hides it)
+4. Nothing that changes per request (timestamp, user name, working directory, tool list) appears before the dynamic marker of the system prompt — observer: script — negative: a diff of two system prompts shows a difference above the marker
+5. Every sub-agent's final message is self-contained: handed to a fresh model with no history, the conclusion is recoverable — observer: agent — negative: a sub-agent that answers "see above" or refers to context the parent never sent
+6. The corpus decision (stuff the window, retrieve, or hybrid) is written in the feature spec with the date and the reason, per `context-store-decision.md` — observer: Martin — negative: a vector pipeline for a corpus that fits, or a corpus that changes stuffed into the window, with no written reason
+7. One trace per week has been read and the failure mode named (or "none seen") in the practice's log — observer: Martin — negative: a month with no trace read
+
+**Example commands (Python):** `python3 compaction_skeleton.py --demo`; the eval runner in `context-metrics-and-evals.md` §Runner.
 
 ## Sources
 `sources/2026-09-27-s02-context-caching-digest.md` §3.1–3.6 and impact table §6; primary texts listed in `principles/11-runtime-context-management.md` §6. Vendor docs to re-check before promoting to `current`: Anthropic prompt caching and compaction docs; OpenAI prompt caching guide; Gemini context caching.
 
 ## Change log
+
+- 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-27 — created from the session-2 market scan (draft).
 - 2026-09-30 (s3) — metrics file points at the OTel GenAI attribute names in `../llm-gateway/tracing-otel.md`.

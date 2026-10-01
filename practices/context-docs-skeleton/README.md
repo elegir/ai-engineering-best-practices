@@ -3,10 +3,11 @@ title: "Practice — context docs skeleton (the docs/ folder every repo needs)"
 type: practice
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-08
+last-reviewed: 2026-09-30
 tags: [context-engineering, docs, standards, workflow]
 kind: working-style
 applies-when: "always"
+reference-status: untested   # untested | field-tested | reference (decision 0005 §3)
 principle: principles/01-context-engineering.md
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -50,6 +51,16 @@ The agent produces inconsistent code because nothing in the repo tells it how *t
 
 The skeletons contain the **index** (the section headings the workshop showed) plus guidance comments. The agent fills them; a human reviews. Expect `backend-standards.md` to reach ~1,000 lines when done properly.
 
+## Reference implementation
+
+The `docs/` skeleton in this folder plus `prompts/generate-docs.md`, which produces the first draft of each document from the repo. The skeleton's headings are the contract; the sample sentences inside are Python/Node-flavoured and are replaced wholesale.
+
+## Stack-sensitive points
+
+- `docs/stack.md` and `docs/development-guide.md` are the two documents that differ per stack; the rest (architecture, data model, workflow, standards) have the same headings everywhere.
+- WordPress repos: the data model is largely WordPress's own (`wp_posts`, `wp_postmeta`, options); document the *custom* tables, post types and option keys, not core.
+- Laravel: `docs/backend-standards.md` should state where the repo puts business logic (controllers vs actions vs services) — the framework allows all three and an agent will otherwise pick one per feature.
+
 ## Adapt
 
 - Delete `frontend-standards.md` for pure backends/pipelines; for WordPress/PHP repos rename backend → `php-standards.md` and add a `wordpress-standards.md` (hooks, WP-CLI, plugin structure) using the same section pattern.
@@ -61,10 +72,15 @@ The skeletons contain the **index** (the section headings the workshop showed) p
 
 ## Verify
 
-1. Start a fresh agent session and ask it to run the unit tests using only `docs/development-guide.md`. It must succeed without asking.
-2. Ask it to add a small endpoint/function. In its reasoning it should cite `docs/backend-standards.md` and `docs/testing-standards.md`, not explore test files to infer style.
-3. Ask a non-technical question about the data ("which table stores X and what links it to Y?"); the answer should come from `docs/data-model.md`.
-4. `docs/README.md` lists every file in `docs/`; the entry file links `docs/README.md`.
+Each numbered line is a stack-neutral assertion — the contract (decision 0005 §2). `observer` says who can judge it: `script` (a command's exit code), `agent` (the agent observes it in a session), `Martin` (a human reads it). `negative` is what must make it fail. `framework: beats` means the assertion wins over the repo's existing framework or library; `bends` means the repo's idiom wins and the assertion adapts to it. Stack-specific commands live only under *Example commands (Python)*.
+
+1. A fresh agent session can run the unit tests using only `docs/development-guide.md`, without asking a question or exploring the tree — observer: agent — negative: the agent asks how to run tests, or opens configuration files to find out
+2. Asked to add a small endpoint or function, the agent cites `docs/backend-standards.md` and `docs/testing-standards.md` in its reasoning instead of inferring style from existing test files — observer: agent — negative: the agent reads three existing tests "to see the convention"
+3. Asked which table stores X and what links it to Y, the agent answers from `docs/data-model.md` — observer: agent — negative: the agent greps migrations to answer
+4. `docs/README.md` lists every file in `docs/`, and the entry file links `docs/README.md` — observer: script — negative: a file in `docs/` absent from the index, or an index entry with no file
+5. No document contains an unreplaced placeholder — observer: script — negative: a `<<…>>` token anywhere under `docs/`
+
+**Example commands (Python / shell):** `ls docs | sort` vs the index; `grep -rn '<<' docs/`.
 
 ## Sources
 
@@ -73,6 +89,8 @@ The skeletons contain the **index** (the section headings the workshop showed) p
 - Spec-Boot (LIDR) provides an equivalent template set (`api-spec.yml`, `data-model.md`, `development_guide.md`).
 
 ## Change log
+
+- 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 
 - 2026-09-08 — created.

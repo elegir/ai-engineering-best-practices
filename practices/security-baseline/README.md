@@ -8,6 +8,7 @@ tags: [security, secrets, dependencies, mcp, threat-model]
 kind: working-style
 applies-when: "always"
 full-when: "acts_on_world or personal_data or regulated or multi_tenant"
+reference-status: untested   # untested | field-tested | reference (decision 0005 §3)
 principle: principles/02-harness-engineering.md
 sources:
   - sources/2026-09-08-how-teams-structure-agent-knowledge.md
@@ -54,6 +55,16 @@ This practice has two parts, routed separately (decision `decisions/0004-day-one
 
 Pending files for the full part (from the s3 scan, see "Notes from later scans"): per-route and per-tenant model keys with spend caps; trace redaction rules. They land when the security module (session 14) is ingested or when a consumer needs them first.
 
+## Reference implementation
+
+`lefthook.security.yml` (core gates) and the three documents of the full part. No code file: the secret scanner (gitleaks) and the audit tools are external and the same on every stack.
+
+## Stack-sensitive points
+
+- **Dependency audit semantics differ**: `npm audit --audit-level=high` and `pip-audit` fail on a threshold; `composer audit` reports advisories without a severity flag, so the policy must say what makes it fail (any advisory, or a manual review).
+- **Where secrets live**: `.env` in Python/Node/Laravel; `wp-config.php` on WordPress (protect it like `.env`); Laravel `config:cache` copies them into `bootstrap/cache/` (protect that path too).
+- **Multi-tenant keys** (assertion 8) assume the product owns the model calls; a WordPress plugin calling a vendor API uses the site owner's key and the assertion reduces to "one key per site, in the options table only if encrypted".
+
 ## Adapt
 
 - Extend `hooks-and-guards/dot-claude/hooks/block-dangerous-bash.sh` with the repo's production hosts and cloud CLIs.
@@ -62,16 +73,24 @@ Pending files for the full part (from the s3 scan, see "Notes from later scans")
 
 ## Verify
 
-Core:
+Each numbered line is a stack-neutral assertion — the contract (decision 0005 §2). `observer` says who can judge it: `script` (a command's exit code), `agent` (the agent observes it in a session), `Martin` (a human reads it). `negative` is what must make it fail. `framework: beats` means the assertion wins over the repo's existing framework or library; `bends` means the repo's idiom wins and the assertion adapts to it. Stack-specific commands live only under *Example commands (Python)*.
 
-1. Commit a fake secret (`AKIA...` pattern) → pre-commit blocks it.
-2. `npm audit` / `pip-audit` / `composer audit` runs on push and fails on high severity.
+Core (`always`):
 
-Full (in addition):
+1. A staged commit containing a secret-shaped string is refused before it is created, with a message naming the pattern — observer: script — negative: the commit lands
+2. A staged `.env`-family file is refused — observer: script — negative: `.env` in the commit
+3. The dependency audit runs before push and fails on a vulnerability the audit tool classifies as high or critical; where the tool has no severity threshold, the policy document states what is checked instead — observer: script — negative: a known high-severity dependency pushed without a failure — framework: bends
+4. A new dependency is added only through the steps of `dependency-policy.md` (reason, maintenance check, pinned by lockfile) — observer: Martin — negative: a dependency in the lockfile with no entry in the policy's log
 
-3. The injection fixture eval passes: the agent reports the hidden instruction instead of executing it.
-4. Every server in `.mcp.json` has a row in the trust register.
-5. `docs/threat-model.md` has no row whose status is empty: each is a control in this repo or an explicit `GAP` with an owner.
+Full (`acts_on_world or personal_data or regulated or multi_tenant`, in addition):
+
+5. The injection fixture eval passes: given content with hidden instructions, the agent reports them and does not execute them — observer: agent — negative: the agent follows an instruction found in fetched content
+6. Every MCP server or external tool the agent can reach has a row in the trust register (scope, credentials, read/write, blast radius, owner) — observer: Martin — negative: a server in the agent's configuration with no row
+7. `docs/threat-model.md` has no row with an empty status: each threat has a control in this repo or an explicit `GAP` with an owner — observer: Martin — negative: an empty cell
+8. Model API keys are per route and, when `multi_tenant`, per tenant, with a spend cap and an alert — observer: Martin — negative: one key shared by every route and tenant
+9. Traces and logs contain no API key and no raw personal data — observer: script — negative: a key or an email address found in the trace store
+
+**Example commands (Python / Node / PHP):** stage `AKIA` + sixteen characters → `gitleaks protect --staged` blocks; `pip-audit` / `npm audit --audit-level=high` / `composer audit`; the injection eval in `../verification/harness-evals.md`.
 
 ## Sources
 
@@ -84,6 +103,7 @@ Full (in addition):
 
 ## Change log
 
+- 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-09 — created (draft).
 - 2026-09-30 — split into a **core** part (`applies-when: always`) and a **full** part (`full-when: acts_on_world or personal_data or regulated or multi_tenant`), per `decisions/0004-day-one-for-blank-and-existing-repos.md` §7 after the day-one debate (`sources/2026-09-30-day-one-debate.md` attack 2: the safety facts selected no practice). Files regrouped; Verify split; still draft until a real repo passes Verify.
 - 2026-09-28 — merged into `main` from the 2026-09-09 local commits (they had never been pushed); added `kind` and `applies-when` per decision 0003. Still draft; the open questions above stand. Relates to the session-14 (security) scan, pending.

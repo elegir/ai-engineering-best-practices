@@ -3,10 +3,11 @@ title: "Practice — spec-driven (plan → approve → execute one task at a tim
 type: practice
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-08
+last-reviewed: 2026-09-30
 tags: [spec-driven-development, openspec, user-stories, plan-mode, commands]
 kind: working-style
 applies-when: "always"
+reference-status: untested   # untested | field-tested | reference (decision 0005 §3)
 principle: principles/04-spec-driven-development.md
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -40,6 +41,15 @@ Work goes from "add SSO" straight to code. The agent guesses scope, builds too m
 | `openspec-quickstart.md` | read | Installing OpenSpec and mapping the manual flow to `/opsx:*` |
 | Spec template | `../../templates/open-spec-user-story.md` | User-story format with SSO worked example |
 
+## Reference implementation
+
+`constitution.md`, `openspec-quickstart.md` and the two commands. Tool-neutral: Spec-Kit, OpenSpec or a hand-rolled `specs/` folder all satisfy the contract.
+
+## Stack-sensitive points
+
+- The verification command per task is the only stack-dependent element and comes from `../verification/`.
+- Framework scaffolding generators (Laravel `artisan make:*`, Rails-style generators) tempt the agent to skip the test-first step; the develop-task command must name the test to write before the generator runs.
+
 ## Adapt
 
 - Fill `constitution.md` with the repo's real non-negotiables (from `docs/*-standards.md`); keep it under a page.
@@ -49,9 +59,14 @@ Work goes from "add SSO" straight to code. The agent guesses scope, builds too m
 
 ## Verify
 
-1. `/plan-ticket specs/<feature>.md` produces questions first, then a task list where each task has a verification command — and writes no code.
-2. `/develop-task T-00N` implements exactly one task, test first, and stops with the definition-of-done checklist filled.
-3. A reviewer can read the spec + diff + test output and approve without reading every line.
+Each numbered line is a stack-neutral assertion — the contract (decision 0005 §2). `observer` says who can judge it: `script` (a command's exit code), `agent` (the agent observes it in a session), `Martin` (a human reads it). `negative` is what must make it fail. `framework: beats` means the assertion wins over the repo's existing framework or library; `bends` means the repo's idiom wins and the assertion adapts to it. Stack-specific commands live only under *Example commands (Python)*.
+
+1. Planning a ticket produces questions first, then a task list where every task has a verification command, and writes no code — observer: agent — negative: code written during planning, or a task without a check
+2. Developing a task implements exactly one task, test first, and stops with the definition-of-done checklist filled — observer: agent — negative: two tasks in one run, or code before its test
+3. The spec, the diff and the test output together let a reviewer approve without reading every line, and the review decision is recorded on the spec — observer: Martin — negative: a merge with no recorded approval
+4. The constitution (non-negotiable rules) exists and every spec references it — observer: script — negative: a spec that does not point at it
+
+**Example commands (Claude Code):** `/plan-ticket specs/<feature>.md`; `/develop-task T-00N`.
 
 ## Sources
 
@@ -59,6 +74,8 @@ Work goes from "add SSO" straight to code. The agent guesses scope, builds too m
 - OpenSpec: https://github.com/Fission-AI/OpenSpec · Spec-Kit: https://github.com/github/spec-kit · Superpowers: https://github.com/obra/superpowers
 
 ## Change log
+
+- 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 
 - 2026-09-08 — created.

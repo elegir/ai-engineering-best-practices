@@ -18,6 +18,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | 2026-09-27 | `sources/2026-09-27-s02-context-caching-digest.md` — digest of the 16 session-2 transcripts with the impact table (36 findings → 1 new principle, 1 new practice, 1 new fact word, 6 glossary entries, 8 principles reviewed/refined, 2 parked) | digest | `sources/raw/2026-09-27-market-scan-s02-context-caching/` |
 | 2026-09-30 | `sources/2026-09-30-market-scan-s03-wrappers.md` — market scan for LIDR session 3 "Model wrappers and layered architecture": 118 YouTube results + 9 podcast episodes considered, 12 new items transcribed (AI Engineer ×2, EuroPython, API World, AI Engineering Podcast, Latent Space via Whisper, Mastra, Langfuse, PyCon DE, CNCF, Scala Days, Percona) + 5 reused | market scan | `sources/raw/2026-09-30-market-scan-s03-wrappers/` |
 | 2026-09-30 | `sources/2026-09-30-s03-wrappers-digest.md` — digest with the impact table (32 findings → 1 new principle, 1 new practice, 6 glossary entries, 5 principles refined, 2 parked) | digest | — |
+| 2026-09-30 | `sources/2026-09-30-stack-debate.md` — devil's advocate vs "contract + prompt + one Python reference, no per-stack ports": 15 attacks, two rounds; survived with conditions (structured Verify, stack-sensitive points, stack-notes, fail-closed guard, variant governance, two-arm experiment) → decision 0005 | debate | — |
 | 2026-09-30 | `sources/2026-09-30-day-one-debate.md` — clean-context devil's advocate vs the day-one goal: 20 attacks, two rounds, six agreed changes before module 4 (decision 0004 pending; decision 0004 published 2026-09-30) | debate | — |
 | (living) | `sources/catalog-written-canon.md` — the written canon per course session (docs, papers, articles, courses), registered with `type: written` so none is read twice; sessions 1–3 + cross-cutting as of 2026-09-30 | catalogue | — |
 | (living) | `sources/media-registry.json` + `sources/media-registry.md` — every video/podcast episode ever considered, with status (transcribed / digested / applied / candidate / discarded) and reason; filtered by `scripts/scan-filter.py` | registry | — |
@@ -70,6 +71,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 |---|---|---|
 | 0001 | `decisions/0001-knowledge-base-structure.md` — single local KB consulted by pointer | accepted |
 | 0003 | `decisions/0003-applicability-by-facts.md` — practices declare `kind` + `applies-when` over the fact vocabulary in `practices/facts.md`; facts inferred from the repo; no profile schema, grammar, rigor levels or risk formula | accepted |
+| 0005 | `decisions/0005-contract-first-practices-and-stacks.md` — a practice is a contract (structured Verify) + stack-sensitive points + one Python reference (`reference-status`) + an implementation prompt; no speculative ports, fifteen-line stack-notes instead; variants authored by the KB from field reports; the security guard is one fail-closed artefact; TypeScript not promised until a variant exists; two-arm Laravel experiment before module 4 is routed | accepted |
 | 0004 | `decisions/0004-day-one-for-blank-and-existing-repos.md` — two entry doors (blank repo: planned facts + bootstrap; existing repo: inferred facts + audit), one router (`scripts/applies.py` as authority); safety facts select `security-baseline` (full) and `verification/dry-run-and-approval.md`; practices promoted by adoption; new practices routed only after the previous module passed Verify in a real repo | accepted |
 | 0002 | `decisions/0002-market-scan-protocol-and-media-registry.md` — fixed market-scan protocol; registry of every video/podcast considered; new scans only look at new items | accepted |
 
@@ -77,17 +79,18 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 
 | File | Purpose |
 |---|---|
+| `playbooks/adopt-variant.md` | Turn a field report from a real repo into a field-tested variant + an adoptions row + promotion of the practice (the only path for consumer code into the KB; decision 0005 §7) |
 | `playbooks/adopt-kb-in-a-repo.md` | Make a repo point to this KB (Windows-safe, no symlinks) |
 | `playbooks/audit-repo-against-kb.md` | (after `which-practices-apply.md`) Inventory → score → findings → plan → stop for approval |
 | `playbooks/evaluate-new-material.md` | **superseded** (2026-09-28) by the impact table in `ingest-new-source.md` step 2b; its scoring rubric was folded there. Kept for history |
 | `playbooks/ingest-new-source.md` | Turn raw material into a source entry + **impact table** (confirms/refines/new/contradicts/skip/park) + only the principle/practice updates the table says — the single protocol for any external information |
 | `playbooks/publish-change.md` | Ship one improvement: check → branch → commit → push → merge → delete branch (`scripts/kb-check.sh`, `scripts/kb-publish.sh`, `/publish`) |
-| `playbooks/which-practices-apply.md` | Day-one entry point for any repo: infer the facts with evidence → confirm in one screen → applies / skipped with reasons → hand to the audit. Worked examples for Martin's four project shapes |
+| `playbooks/which-practices-apply.md` | Entry point for an **existing** repo (blank repos: bootstrap, to be created): infer the facts with evidence → confirm in one screen → applies / skipped with reasons → hand to the audit. Worked examples for Martin's four project shapes |
 | `playbooks/scan-market-for-module.md` | For one course module: search YouTube + podcasts with Apify, select by authority, transcribe, log what was considered/selected/discarded, update `sources/scan-log.md` |
 
 ## Templates
 
-`practices/facts.md` (applicability vocabulary: 12 facts, evidence, ordering rule) · `templates/source-entry.md` · `templates/principle.md` · `templates/decision.md` · `templates/open-spec-user-story.md` (with SSO sign-up/login worked examples)
+`practices/facts.md` (applicability vocabulary: 14 facts, sources inferred/planned/asked, routing fact, ordering rule) · `practices/adoptions.md` (every adoption with its field report and cost — the KB's evidence) · `templates/field-report.md` (what an adopting agent reports; numbers mandatory) · `templates/source-entry.md` · `templates/principle.md` · `templates/decision.md` · `templates/open-spec-user-story.md` (with SSO sign-up/login worked examples)
 
 ## Scripts
 
