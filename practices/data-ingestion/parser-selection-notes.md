@@ -1,0 +1,40 @@
+# Parser selection notes — local parsers, vendor APIs, VLMs and the PII detector, as read on 2026-10-01
+
+Read, do not copy. Every number and name below is a vendor or speaker fact **as read on 2026-10-01** from the s6 transcripts and snapshots (`../../sources/raw/2026-10-01-market-scan-s06-data-audit-cleaning-privacy/`); re-read the pages on adoption day and update the dates. The principle (`../../principles/16-data-for-ai-products.md` §3.3–3.4) carries the mechanisms; this file carries the dated specifics the principle leaves out on purpose (method log, 2026-10-01: dated vendor numbers live only in practice files). Who benefits: Reducto, LlamaIndex and Unstructured sell parsing; IBM authors Docling; the figures are theirs (digest §4, §5).
+
+## 1. The rule before any option: a thousand of your own pages
+
+"People will kind of benchmark like say five documents… a very high variance estimate" (Reducto, `yt-ybzR4LBY0Lo…`, 2026-01). Sample at least a thousand pages across every type in the audit report (`audit-checklist.md` §7), run every candidate, compare automatically, then track a production sample — "your production data is going to differ from whatever else you have in your contrived set" (Abraham, `yt-0I07YAuF8xA…`, 2026-09). Public benchmarks shortlist: OmniDocBench is "starting to become a little bit saturated… too rigid for what agents care about", olmOCR-bench is "academic papers… binary pass fail" (Liu, `yt-80vV6fGIlWo…`, 2026-05); ParseBench (LlamaIndex, "2000 human verified pages", parsebench.ai) and RD-TableBench (Reducto) are vendor leaderboards — read them directly before quoting a position (s6 validation pass, `../../sources/scan-log.md`).
+
+## 2. Local, open-source parsers
+
+- **Docling** (IBM Research; https://github.com/docling-project/docling; MIT; hosted by LF AI & Data per the README badge). Technical report arXiv 2408.09869 (v5, 2024-12-09): layout with **DocLayNet**, table structure with **TableFormer**, "on commodity hardware in a small resource budget". README (read 2026-10-01): parses PDF, DOCX, PPTX, XLSX, HTML, images, audio (WAV, MP3) and more into one `DoclingDocument`; exports Markdown, HTML, DocTags, "lossless JSON"; "local execution capabilities for sensitive data and air-gapped environments"; figure enrichment and chart-to-table; an **MCP server** and an **API server (docling-serve)** — the MCP server is parked for session 13. Ebbelaar (2025-02, `yt-9lBTS5dM27c…`) calls it "by far… the open-source document extraction library of choice" — his opinion, not carried as fact.
+- **Unstructured** (https://docs.unstructured.io/concepts/chunking; read 2026-10-01): *partitioning* into typed elements with `filetype`, `page_number`, `filename` metadata; `Table` elements with `text_as_html`; `orig_elements` for traceability; chunking strategies are the session-7 read.
+- **Heuristic libraries** — pypdf (https://github.com/py-pdf/pypdf), PyMuPDF, pdftotext, Tesseract: fast, model-free, and "the moment like the document format deviates from what the heuristic is able to handle… it's going to break" (Liu 2026). Right as the **first pass** in the assistant loop (text first, screenshot a page on demand), wrong as the parser of a corpus with tables and scans.
+- **LightParse** (LlamaIndex): model-free ("it doesn't use any models"), keeps bounding boxes, "one-click installable as an agent skill with native support for OCR and screenshotting" (Liu 2026-05, `yt-80vV6fGIlWo…`); at AI Engineer 2026-09 Liu called it "Rust-based… the fastest open-source parser out there" with the licence stated uncertainly ("I think it's like MIT or Apache license") and the loop "equip a VLM-based parser like Llama Parser or other frontier models as a tool" (`../../sources/raw/2026-09-27-market-scan-s02-context-caching/yt-RQi7x-navxU-ai-engineer-jerry-liu-document-context-layer.md`, s2 reused) — check the repository before relying on either claim.
+
+## 3. Vendor APIs
+
+- **Reducto** (Abraham 2026-09; team 2026-01): layout-first pipeline with per-region models, "hybrid extraction mode" that uses the file's metadata when it is good, *classify and split*, *agentic OCR* (token-level correction), grounding with "a pixel map for every single element" and citations that name a field as missing. Vendor figures not carried: "a billion pages", RD-TableBench comparisons.
+- **LlamaParse** (Liu 2024-07): "0.3 cents per page" after a free weekly quota, as stated in 2024 — a 2024 price, re-read before use. LlamaIndex's `IngestionPipeline` and readers (`canon-snapshots/llamaindex-loading-ingestion.md`) are the open-source side.
+- When to buy (position, digest §5): start local plus a VLM tool; buy a vendor when the thousand-page audit shows the long tail — scans, forms, handwriting, merged cells — is yours and the local pipeline's failure classes are the vendor's claimed strengths.
+
+## 4. Frontier VLMs as parsers — failure modes and prices (2026-10-01)
+
+- **Silent drops**: frontier models precise on what they keep, "recall really really struggles"; dedicated services the reverse (Abraham; the benchmark name is lost in the captions).
+- **Repetition at low temperature**: Gemini 2.5 Flash (a 2025 model) on a row of dots repeats "until the end of the context window"; raising temperature "from 0.1 to probably 0.5 or 0.7 the issues mostly go away. But then… the models are more likely to make up some stuff" (Reducto researcher, 2026-01).
+- **Thinking does not help vision**: "increased thinking in the frontier models… generally does not correlate to increased visual understanding accuracy" (Liu 2026).
+- **Cost**: "Gemini Pro is… 8 cents plus per page… super expensive"; "if you're trying to run and parse like a million PDFs at scale, this is not going to work" (Liu 2026). ParseBench figures quoted in the talk ("Opus 4.6… around like 53% overall accuracy") are the vendor's leaderboard with model names from auto-captions — not carried as fact.
+- **Rewriting is not correction**: a model asked to clean OCR "will see the word total and… go through and add up the values in the table themselves" (Abraham) — correction must be token-level and faithful to the page.
+- **Long documents**: "always parse them and then work with a parsed text" — a text input lets one extraction call cover "100 plus pages… maybe a 100 different fields"; "a 100 images… hallucinations are everywhere" (Reducto 2026-01).
+- **Where the VLM belongs**: as a tool the harness calls on a hard page or region (low confidence, chart, handwriting), with the model-free parse first (Liu 2026; `architecture-by-data-type.md` §3).
+
+## 5. The PII detector and its warning
+
+- **Presidio** (https://github.com/microsoft/presidio; README read 2026-10-01 — the repository has moved to `data-privacy-stack/presidio`; MIT): analyzer, anonymizer, image redactor and structured-data modules; "predefined or custom PII recognizers leveraging Named Entity Recognition, regular expressions, rule based logic and checksum with relevant context in multiple languages". The sentence to copy into every policy file: "because it is using automated detection mechanisms, there is no guarantee that Presidio will find all sensitive information. Consequently, additional systems and protections should be employed."
+- Tiers (`../../principles/13-structured-outputs-and-guardrails.md` §3.3): checksum and regex first (the reference's `find_pii()`), NER second (Presidio behind the same function), a classifier or judge last; the output net (G3) and the retrieval filter (G6) are the "additional systems".
+- **Reversible dictionary** (Huyen 2024-07): mask to a placeholder, keep the mapping outside the index, unmask only in the reply path, log every unmask; this is pseudonymisation under the EDPB's three criteria (`privacy-compliance-checklist.md` §3).
+
+## 6. Dates to re-check
+
+EDPB guidelines after the consultation closes on 2026-10-30; parsebench.ai and RD-TableBench before any number is quoted; Docling and Unstructured release notes and licences at adoption; the DeepLearning.AI *Preprocessing Unstructured Data* course and Miradi's parser comparison (both `candidate` in the registry) in the s6 validation pass.

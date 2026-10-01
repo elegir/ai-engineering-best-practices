@@ -21,7 +21,7 @@ Carpintero argues for self-hosting the classifier (privacy — "no intermediate 
 1. **Day zero: tiers 0 and 1** in the product's own code — validators (`structured_call.py`), allow-lists, size caps, tenant scoping. No extra process.
 2. **First user: tier 2 hosted** — the provider's moderation endpoint or a hosted classification service — because it is one HTTP call with no model to operate, and the fixture tells you what it misses.
 3. **At scale, or when the data must not leave your infrastructure (`personal_data`, `regulated`): tier 2 self-hosted** — Carpintero's recipe. It is a **separate process** in every stack: an HTTP sidecar next to the application, never loaded in-process (a request-scoped runtime such as PHP-FPM cannot hold a model; a Python web worker should not either — `stack-notes/`). Budget the retrain: attacks mutate, "in hours" is the claim, the fixture is the regression test.
-4. **Tier 3 only where the policy is squishy and the route is not time-critical**, and never alone on a side-effect path (`guardrail-policy.md` rule 6).
+4. **Tier 3 only where the policy is squishy and the route is not time-critical**, and never alone on a side-effect path (`guardrail-policy.md` rule 7; rule 6 before the s6 ingestion rule was inserted on 2026-10-01).
 
 ## Threat vectors a classifier is trained against (Carpintero's survey; depth parked for session 14)
 
