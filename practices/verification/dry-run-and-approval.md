@@ -8,9 +8,9 @@ A smoke test proves the code path runs. For an irreversible action that is not e
 
 ## Rule 1 — every side-effecting entry point has a dry-run mode
 
-- One switch, named the same everywhere: an environment variable `<<DRY_RUN_VAR>>` (for example `SEND_MODE=dry`) **or** a CLI flag `--dry-run`. Not both, and never a per-module boolean someone forgets.
+- One switch, named the same everywhere: an environment variable `<<DRY_RUN_VAR>>` (for example `PUBLISH_MODE=dry` — the same name the pytest fixture in `python-pytest/conftest.py` sets) **or** a CLI flag `--dry-run`. Not both, and never a per-module boolean someone forgets.
 - In dry-run mode the code does everything up to the effect — renders the email, builds the payment request, prepares the CMS payload — and then **logs the payload and returns** a result object that says `dry_run=true`. The payload goes to the log or to an outbox table, where the test can read it.
-- The default in every non-production environment is dry run. Real sending requires the switch to be set on purpose (`SEND_MODE=live`) **and** the environment to be production; the code refuses `live` outside production with a one-line error.
+- The default in every non-production environment is dry run. Real sending requires the switch to be set on purpose (`<<DRY_RUN_VAR>>=live`) **and** the environment to be production; the code refuses `live` outside production with a one-line error.
 - If the code has no dry-run mode today, **adding it is the first task** of the audit, before any other practice touches the senders.
 
 ## Rule 2 — approval before the first live run of anything new

@@ -38,19 +38,21 @@ Plus the two workflow questions of `which-practices-apply.md` (`parallel_session
 
 ## Step 2 — planned facts
 
-From the paragraph and the answers, write every fact of `practices/facts.md` as `<fact>: yes|no — planned <date> (<the sentence of Martin's that supports it>)`. `production` is `no — planned` until there is a user; `brownfield` is `no`. Show the table in one screen; Martin corrects it. A planned fact **stays until the code contradicts it or Martin drops it**; later inference may upgrade it to `inferred`, never delete it (decision 0004 §1).
+From the paragraph and the answers, write every fact of `practices/facts.md` as `<fact>: yes|no — planned <date> (<the sentence of Martin's that supports it>)`. `production` is `no — planned` until the first approved live run (a scheduled publisher with no human users still becomes `production: yes` the day it publishes for real — `practices/facts.md`); `brownfield` is `no`. Show the table in one screen; Martin corrects it. A planned fact **stays until the code contradicts it or Martin drops it**; later inference may upgrade it to `inferred`, never delete it (decision 0004 §1).
 
 ## Step 3 — the list
 
-`python3 <kb>/scripts/applies.py --explain <fact>:planned <fact>:planned … parallel_sessions long_tasks` (asked facts without suffix). The output is the day-zero list, in order; practices marked *deferred* attach once the fact is inferred; every skip has its reason. Compare with the nearest shape in `practices/bundles.md` and note where this repo differs.
+`python3 <kb>/scripts/applies.py --explain <fact>:planned <fact>:planned … parallel_sessions long_tasks` (asked facts without suffix; pass an asked fact only when the answer was yes — an absent fact is "no"). The output is the day-zero list, in order; practices marked *deferred* attach once the fact is inferred; every skip has its reason. Compare with the nearest shape in `practices/bundles.md` and note where this repo differs.
 
 ## Step 4 — the stack and the bundle
 
-Pick the shape's default stack from `practices/stack-defaults.md` unless Martin names another; record it in `docs/stack.md`. If the stack has no field-tested variant for a capability practice, say in one line: "for `<practice>` the KB gives the contract, the prompt and `stack-notes/<stack>.md`; no file is copied" — and plan that practice through `practices/prompt-library/implement-practice.md` after the working-style files are in.
+Pick the shape's default stack from `practices/stack-defaults.md` unless Martin names another; record it (with the interpreter version actually on the machine) in `docs/stack.md` as soon as `context-docs-skeleton` is copied in step 5. If the stack has no field-tested variant for a capability practice, say in one line: "for `<practice>` the KB gives the contract, the prompt and `stack-notes/<stack>.md`; no file is copied" — and plan that practice through `practices/prompt-library/implement-practice.md` after the working-style files are in.
 
 ## Step 5 — copy and adapt, in the router's order
 
 For each practice in the list, in order: read its README (`## Files in this folder`, `## Adapt`), copy the day-zero files the bundle names, replace every `<<PLACEHOLDER>>`, and **run its `## Verify`** before moving to the next — a bootstrap that copies fourteen folders and verifies at the end is the thing the first debate attacked. Minimum sequence: `verification` (one smoke command, even if it only checks a health endpoint) → `context-docs-skeleton` → `agent-entry-file` → `hooks-and-guards` (`guard.py --selftest` must print OK) → `security-baseline` core (and full when planned) → the rest.
+
+Two things the bundle does not spell out: (a) **a walking skeleton is part of day zero** — `verification`'s assertions 1, 2 and 6 need something to run, so the agent writes the minimal entry point, the configuration module with the dry-run switch, the one side-effecting module and a seeded test fixture before the smoke test can pass; keep it tiny and tested, not a feature. (b) `verification` assertion 2's stop-gate half is re-checked after `hooks-and-guards` is installed. When `session-state` is skipped (both asked facts "no"), every template line that names `PROGRESS.json` (entry file, spec commands, constitution, workflow, commit skill) is pointed at the open spec instead.
 
 ## Step 6 — the facts block
 
@@ -58,8 +60,10 @@ Paste the confirmed table from step 2 into the entry file's **Facts** section (`
 
 ## Step 7 — first commit and field report
 
-One commit: "harness: bootstrap from AI-engineering KB (<kb commit>)". Then the field report (`templates/field-report.md`): every practice's assertions with evidence, tokens, minutes, errors caught, and what in the KB was wrong or missing. Martin passes it to the KB (`playbooks/adopt-variant.md`); it is the only evidence the bootstrap works (decision 0004 §8).
+One commit: `chore(harness): bootstrap from AI-engineering KB (<kb commit>)` — the Conventional Commits shape the bootstrap's own `lefthook.yml` enforces. Then the field report (`templates/field-report.md`): every practice's assertions with evidence, tokens, minutes, errors caught, and what in the KB was wrong or missing. Martin passes it to the KB (`playbooks/adopt-variant.md`); it is the only evidence the bootstrap works (decision 0004 §8).
 
 ## Change log
+
+- 2026-10-01 — first run (shape B, sandbox, 13 min): walking-skeleton rule, `production` wording, asked-facts rule, commit message shape, `PROGRESS.json` fallback, step order for `docs/stack.md`. Source `sources/2026-10-01-field-report-shape-b-bootstrap.md`.
 
 - 2026-09-30 — created (decision 0004 §3; debate attacks 1, 4, 6 and 9 in `sources/2026-09-30-day-one-debate.md`; stack rules from decision 0005).

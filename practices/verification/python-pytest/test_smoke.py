@@ -15,7 +15,7 @@ def test_pipeline_dry_run_processes_a_small_batch(seeded_db, dry_run_env):
     result = run(limit=5)
     assert result.processed == 5
     assert result.errors == []
-    assert result.sent == 0  # DRY_RUN must not send
+    assert result.sent == 0  # dry-run mode must not send
 
 def test_cli_entrypoint_help():
     out = subprocess.run([sys.executable, "-m", "<<app>>", "--help"], capture_output=True, text=True)

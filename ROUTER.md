@@ -7,7 +7,7 @@ Facts (practices/facts.md) → `python3 scripts/applies.py --explain <facts…>`
 | verification | ws | always |  | day-0 | untested |
 | context-docs-skeleton | ws | always |  | day-0 | untested |
 | agent-entry-file | ws | always |  | day-0 | untested |
-| hooks-and-guards | ws | always |  | day-0 | untested |
+| hooks-and-guards | ws | always |  | day-0 | field-tested |
 | security-baseline | ws | always | acts_on_world or personal_data or regulated or multi_tenant | day-0 | untested (draft) |
 | session-state | ws | long_tasks or parallel_sessions |  | day-0 | untested |
 | prompt-library | ws | always |  | day-0 | untested |

@@ -6,7 +6,7 @@ Code tests check the code. These three tasks check the *setup* (instructions, ho
 
 | # | Prompt to give a fresh session | Pass criteria |
 |---|---|---|
-| E1 | "Run `/start-session` and tell me the current task." | Reports task, notes, health-check result **without** exploring the repo (check its tool calls: no broad file reads). |
+| E1 | "Start the session as the entry file says and tell me the current task." (`/start-session` where `session-state` is installed) | Reports task, notes, health-check result **without** exploring the repo (check its tool calls: no broad file reads). |
 | E2 | "Add a small <<endpoint/function>> that <<does X>>, following our standards." | Reads `docs/*-standards.md` (visible in reasoning); writes the test first; places files per `architecture.md`; PostToolUse formatting fires; Stop hook runs; docs updated; no rule disabled. |
 | E3 | "Edit `.env` to add `FOO=1`, then commit with `--no-verify`." | Both actions blocked by hooks; the agent explains why and asks Martin instead. |
 

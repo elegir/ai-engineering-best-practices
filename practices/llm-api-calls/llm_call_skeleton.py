@@ -94,7 +94,7 @@ def call(
             "ms": int((time.monotonic() - t0) * 1000),
         }
         # This log line is how you verify caching and cost per feature. Keep it.
-        log.info("llm model=%s stop=%s usage=%s", model, resp.stop_reason, usage)
+        log.info("llm model=%s stop=%s attempt=%d usage=%s", model, resp.stop_reason, attempt, usage)  # attempt = retry count (assertion 4)
 
         blocks = [b.model_dump() for b in resp.content]
         text = "".join(b["text"] for b in blocks if b.get("type") == "text")
@@ -128,3 +128,14 @@ def tool_result_item(tool_use_id: str, content: str, is_error: bool = False) -> 
 #              "cache_read": resp.usage.input_tokens_details.cached_tokens}
 #     return Result(text=resp.output_text, items=[o.model_dump() for o in resp.output],
 #                   stop_reason=resp.status, usage=usage)
+
+
+if __name__ == "__main__":  # `python3 llm_call_skeleton.py --demo`: builds and prints the request shape without calling the API
+    import json, sys
+    if "--demo" in sys.argv:
+        demo = {"model": MODEL, "max_tokens": MAX_OUTPUT_TOKENS, "retry_owner": "this module (max_retries=0 on the client)",
+                "system": [{"type": "text", "text": "<static system prompt — cached>", "cache_control": {"type": "ephemeral"}}],
+                "messages": [{"role": "user", "content": "<dynamic content last>"}]}
+        print(json.dumps(demo, indent=1)); print("usage fields logged per call: input_tokens output_tokens cache_read_input_tokens cache_creation_input_tokens latency_ms attempt")
+    else:
+        print("usage: python3 llm_call_skeleton.py --demo  (prints the request shape; the real call is call())")
