@@ -14227,6 +14227,2508 @@
    "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
    "raw": "sources/raw/2026-10-01-market-scan-s05-context-memory-permissions-evals/podcast-O7etCBod2IY-podcast-chain-of-thought-angie-jones-block-goose-12000-employees-mcp.md",
    "decided": "2026-10-01"
+  },
+  {
+   "id": "developers.llamaindex.ai/python/framework/understanding/rag/loading",
+   "url": "https://developers.llamaindex.ai/python/framework/understanding/rag/loading/",
+   "title": "Loading Data (Ingestion) — Understanding RAG (LlamaIndex docs)",
+   "channel": "LlamaIndex",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-01; read when the module is digested",
+   "module": "s6",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s6"
+   ]
+  },
+  {
+   "id": "docs.unstructured.io/concepts/chunking",
+   "url": "https://docs.unstructured.io/concepts/chunking",
+   "title": "Unstructured chunking concepts (partitioning, chunking strategies)",
+   "channel": "Unstructured.io",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-01; read when the module is digested",
+   "module": "s6",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s6"
+   ]
+  },
+  {
+   "id": "unstructured.io/blog/chunking-for-rag-best-practices",
+   "url": "https://unstructured.io/blog/chunking-for-rag-best-practices",
+   "title": "Chunking for RAG: best practices (blog)",
+   "channel": "Unstructured.io",
+   "published": "2024",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-01; read when the module is digested",
+   "module": "s6",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s6"
+   ]
+  },
+  {
+   "id": "arxiv.org/abs/2408.09869",
+   "url": "https://arxiv.org/abs/2408.09869",
+   "title": "Docling Technical Report (arXiv 2408.09869) + repo",
+   "channel": "IBM Research (Auer et al.)",
+   "published": "2024-08 / 2025",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-01; read when the module is digested",
+   "module": "s6",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s6"
+   ]
+  },
+  {
+   "id": "supabase.com/docs/guides/ai/rag-with-permissions",
+   "url": "https://supabase.com/docs/guides/ai/rag-with-permissions",
+   "title": "RAG with Permissions (Supabase docs)",
+   "channel": "Supabase",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-01; read when the module is digested",
+   "module": "s6",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s6"
+   ]
+  },
+  {
+   "id": "github.com/microsoft/presidio",
+   "url": "https://github.com/microsoft/presidio",
+   "title": "Presidio — PII detection, redaction, anonymization",
+   "channel": "Microsoft (OSS)",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-01; read when the module is digested",
+   "module": "s6",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s6"
+   ]
+  },
+  {
+   "id": "owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf",
+   "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf",
+   "title": "OWASP Top 10 for LLM Applications 2025 (PDF) — LLM02, LLM08",
+   "channel": "OWASP GenAI Security Project",
+   "published": "2024-11",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-01; read when the module is digested",
+   "module": "s6",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s6"
+   ]
+  },
+  {
+   "id": "edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en",
+   "url": "https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en",
+   "title": "EDPB: anonymisation and web scraping for generative AI (Opinion 28/2024 context)",
+   "channel": "European Data Protection Board",
+   "published": "2025",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-01; read when the module is digested",
+   "module": "s6",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s6"
+   ]
+  },
+  {
+   "id": "edps.europa.eu/system/files/2025-10/2025_11_Press%20Release_EDPS_GenAI_GL7_EN.pdf",
+   "url": "https://www.edps.europa.eu/system/files/2025-10/2025_11_Press%20Release_EDPS_GenAI_GL7_EN.pdf",
+   "title": "EDPS Generative AI guidelines (GL7) press release",
+   "channel": "European Data Protection Supervisor",
+   "published": "2025-10",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-01; read when the module is digested",
+   "module": "s6",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s6"
+   ]
+  },
+  {
+   "id": "huyenchip.com/2024/07/25/genai-platform.html",
+   "url": "https://huyenchip.com/2024/07/25/genai-platform.html",
+   "title": "Building a Generative AI Platform",
+   "channel": "Chip Huyen",
+   "published": "2024-07-25",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-01; read when the module is digested",
+   "module": "s6",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s6"
+   ]
+  },
+  {
+   "id": "arxiv.org/abs/2401.05856",
+   "url": "https://arxiv.org/abs/2401.05856",
+   "title": "Seven Failure Points When Engineering a RAG System (arXiv 2401.05856)",
+   "channel": "Barnett et al. (CSIRO/Deakin)",
+   "published": "2024-01",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-01; read when the module is digested",
+   "module": "s6",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s6"
+   ]
+  },
+  {
+   "id": "deeplearning.ai/short-courses/preprocessing-unstructured-data-for-llm-applications",
+   "url": "https://www.deeplearning.ai/short-courses/preprocessing-unstructured-data-for-llm-applications/",
+   "title": "Preprocessing Unstructured Data for LLM Applications (course)",
+   "channel": "DeepLearning.AI × Unstructured",
+   "published": "2024",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-01; read when the module is digested",
+   "module": "s6",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s6"
+   ]
+  },
+  {
+   "id": "deeplearning.ai/courses/retrieval-augmented-generation",
+   "url": "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+   "title": "Retrieval Augmented Generation (RAG) (course)",
+   "channel": "DeepLearning.AI (Zain Hasan)",
+   "published": "2025",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-01; read when the module is digested",
+   "module": "s6",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s6"
+   ]
+  },
+  {
+   "id": "o3JOtwfEdkc",
+   "url": "https://www.youtube.com/watch?v=o3JOtwfEdkc",
+   "title": "I Built an AI Agent That Doesn't Leak Sensitive Data",
+   "channel": "The AI Automators",
+   "published": "2026-02-15",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "hgxPjB3_ITQ",
+   "url": "https://www.youtube.com/watch?v=hgxPjB3_ITQ",
+   "title": "RAG Data Pipelines: Feeding Private Data to LLMs",
+   "channel": "CodeForData",
+   "published": "2026-08-31",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "YQy6WNu1jRQ",
+   "url": "https://www.youtube.com/watch?v=YQy6WNu1jRQ",
+   "title": "Decoding the RAG Pipeline: Ingestion and Retrieval Explained",
+   "channel": "Developers Journal",
+   "published": "2026-07-27",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "WwwjLX9Ow4k",
+   "url": "https://www.youtube.com/watch?v=WwwjLX9Ow4k",
+   "title": "RAG's Main Pipelines | AI RAG Course 2026",
+   "channel": "HeroDev",
+   "published": "2026-09-10",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "T8pLii4bqy0",
+   "url": "https://www.youtube.com/watch?v=T8pLii4bqy0",
+   "title": "Why Your RAG Fails on PDFs (And How Docling Fixes It)",
+   "channel": "AJAY SHARMA AI",
+   "published": "2026-05-29",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Ul0KWM-OLN8",
+   "url": "https://www.youtube.com/watch?v=Ul0KWM-OLN8",
+   "title": "The last mile of OCR [in 2026]",
+   "channel": "Voxel51",
+   "published": "2026-05-15",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "QA8hoFdtRXQ",
+   "url": "https://www.youtube.com/watch?v=QA8hoFdtRXQ",
+   "title": "Unlimited OCR + RAG: Revolutionize Complex Data Extraction (Open-Source)",
+   "channel": "Gao Dalie (高達烈)",
+   "published": "2026-06-28",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "tutorial or beginner explainer re-explaining the written canon (Docling, Unstructured, Presidio docs)"
+  },
+  {
+   "id": "Wh3k3CelSbQ",
+   "url": "https://www.youtube.com/watch?v=Wh3k3CelSbQ",
+   "title": "Taking RAG Pipeline To Production With Caching And Observability",
+   "channel": "Krish Naik",
+   "published": "2026-05-12",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "mPVVdjzsnP0",
+   "url": "https://www.youtube.com/watch?v=mPVVdjzsnP0",
+   "title": "Build an End-to-End RAG Pipeline for LLM Applications",
+   "channel": "SH AI Academy",
+   "published": "2026-04-30",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "tG-ikI5_do0",
+   "url": "https://www.youtube.com/watch?v=tG-ikI5_do0",
+   "title": "How to Use LLMWhisperer - (2026) I Replaced Traditional OCR And Never Looked Back",
+   "channel": "Dan - Smart Tutorials",
+   "published": "2026-07-07",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "tutorial or beginner explainer re-explaining the written canon (Docling, Unstructured, Presidio docs)"
+  },
+  {
+   "id": "o4q2s1u6YRk",
+   "url": "https://www.youtube.com/watch?v=o4q2s1u6YRk",
+   "title": "Build a Production-Ready RAG with Ingestion & DAG Pipelines | Datapizza AI Guide (6/8)",
+   "channel": "Datapizza",
+   "published": "2026-01-28",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "nBz-etHhWpg",
+   "url": "https://www.youtube.com/watch?v=nBz-etHhWpg",
+   "title": "How to Build a Powerful RAG Ingestion Pipeline",
+   "channel": "AIGrounded",
+   "published": "2026-04-27",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "tkFr-4r906Q",
+   "url": "https://www.youtube.com/watch?v=tkFr-4r906Q",
+   "title": "How to Design a Data Pipeline That's LLM-Ready",
+   "channel": "Chris Gambill | Data Engineering Strategy",
+   "published": "2026-06-15",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "data-engineering practitioner (2026-06): designing an LLM-ready data pipeline — audit, quality, contracts",
+   "raw": "sources/raw/2026-10-01-market-scan-s06-data-audit-cleaning-privacy/yt-tkFr-4r906Q-chris-gambill-llm-ready-data-pipeline.md",
+   "duration": "00:38:29"
+  },
+  {
+   "id": "q0txtx5UYsY",
+   "url": "https://www.youtube.com/watch?v=q0txtx5UYsY",
+   "title": "LLMOps #8 — RAG in Production, Part 1: The Pipeline Behind One Answer",
+   "channel": "LLMwork",
+   "published": "2026-08-31",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "j0d68suEaS4",
+   "url": "https://www.youtube.com/watch?v=j0d68suEaS4",
+   "title": "Why RAG Fails in Production — And How To Actually Fix It",
+   "channel": "CodeRash with Gaurav 🚀",
+   "published": "2026-02-25",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "tutorial or beginner explainer re-explaining the written canon (Docling, Unstructured, Presidio docs)"
+  },
+  {
+   "id": "DxRodOK4BD4",
+   "url": "https://www.youtube.com/watch?v=DxRodOK4BD4",
+   "title": "Private AI: Enterprise Data in the RAG Era",
+   "channel": "AI InBlog",
+   "published": "2026-04-01",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "0ll6xrdOpNg",
+   "url": "https://www.youtube.com/watch?v=0ll6xrdOpNg",
+   "title": "RAG in Action: Compliance AI with Real Policy Citations",
+   "channel": "Dr MANNY",
+   "published": "2026-03-23",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "7m1xBODl9tI",
+   "url": "https://www.youtube.com/watch?v=7m1xBODl9tI",
+   "title": "Document Processing, ETL, OCR, and DeepSeek-OCR | AI Deep Dive | Episode 1",
+   "channel": "newline",
+   "published": "2026-03-23",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "tJFzmXMISWg",
+   "url": "https://www.youtube.com/watch?v=tJFzmXMISWg",
+   "title": "Stop Building Unsafe Bots! Prompt Injection, GDPR & The EU AI Act",
+   "channel": "wecite",
+   "published": "2025-12-24",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "-8G9bBT6f5g",
+   "url": "https://www.youtube.com/watch?v=-8G9bBT6f5g",
+   "title": "AI Masterclass: Learn about AI Bias, Privacy & Risk",
+   "channel": "Vasilij Nevlev | AiGentic Lab",
+   "published": "2025-11-06",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "jRruQQBfIRQ",
+   "url": "https://www.youtube.com/watch?v=jRruQQBfIRQ",
+   "title": "olmOCR Explained | Best Open Source OCR for LLMs & AI Training",
+   "channel": "Micro Learning",
+   "published": "2026-07-07",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "As_bCnxySTg",
+   "url": "https://www.youtube.com/watch?v=As_bCnxySTg",
+   "title": "Designing a RAG Data Ingestion Pipeline | Applied AI Engineering | System Design | Code AMAUC",
+   "channel": "Code AMAUC",
+   "published": "2026-08-30",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "BaN3xDpOHb4",
+   "url": "https://www.youtube.com/watch?v=BaN3xDpOHb4",
+   "title": "AI Agent Security, PII, and Compliance",
+   "channel": "raia",
+   "published": "2025-10-07",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "mhw8D0Fn9tg",
+   "url": "https://www.youtube.com/watch?v=mhw8D0Fn9tg",
+   "title": "Fine-tuning Training Data: Format, Quality, and Best Practices | AI Engineer",
+   "channel": "LearnWithBeibei",
+   "published": "2026-01-13",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "IIvORO248Zs",
+   "url": "https://www.youtube.com/watch?v=IIvORO248Zs",
+   "title": "LLM Fine Tuning Crash Course | LLM Fine Tuning Tutorial",
+   "channel": "codebasics",
+   "published": "2025-10-28",
+   "type": "video",
+   "module": "s16",
+   "modules": [
+    "s16"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s16 (found in the s6 scan): codebasics fine-tuning crash course — parked for LLMOps II"
+  },
+  {
+   "id": "BnMqqdSQFrQ",
+   "url": "https://www.youtube.com/watch?v=BnMqqdSQFrQ",
+   "title": "UV + Ruff Explained: The FASTEST Way to Clean Python Code | Tamil | Adi Explains",
+   "channel": "Adi Explains",
+   "published": "2026-09-13",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Xujh3GxujEI",
+   "url": "https://www.youtube.com/watch?v=Xujh3GxujEI",
+   "title": "Why Enterprises Are Moving to On‑Premise AI (Private LLM for Compliance & Security)",
+   "channel": "Fortuna Data",
+   "published": "2026-03-04",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "mQvNzKIPgCk",
+   "url": "https://www.youtube.com/watch?v=mQvNzKIPgCk",
+   "title": "AI-Ready Data: Why Clean Data Is Not Enough",
+   "channel": "Zoolatech",
+   "published": "2026-09-10",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Xc_1KOc_Wbc",
+   "url": "https://www.youtube.com/watch?v=Xc_1KOc_Wbc",
+   "title": "Oracle + n8n: Full Setup & Automation in Minutes",
+   "channel": "Archetype Core by Mariana Lungu",
+   "published": "2025-11-18",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "4Jh1ITbVlOo",
+   "url": "https://www.youtube.com/watch?v=4Jh1ITbVlOo",
+   "title": "ETHICAL GUARDIAN-RAG:  Next-Generation Privacy Protection and Secure Knowledge Intelligence",
+   "channel": "Volkan OBAN",
+   "published": "2025-10-14",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "ha8Vzb0zHac",
+   "url": "https://www.youtube.com/watch?v=ha8Vzb0zHac",
+   "title": "Data Quality for RAG: Cleaning, Deduplication and Synthetic Data | NVIDIA Agentic AI Course 4.4",
+   "channel": "Cloudbrewery",
+   "published": "2026-10-01",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "STzWlOfwws8",
+   "url": "https://www.youtube.com/watch?v=STzWlOfwws8",
+   "title": "Secure Data for RAG Pipelines: Enterprise NLP Data Loss Prevention | PrivacyScrubber PRO",
+   "channel": "PrivacyScrubber",
+   "published": "2026-03-17",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "NeJKaolLQqU",
+   "url": "https://www.youtube.com/watch?v=NeJKaolLQqU",
+   "title": "Watch me Cleaning Data in minutes with Python",
+   "channel": "Lore So What",
+   "published": "2025-11-30",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "tutorial or beginner explainer re-explaining the written canon (Docling, Unstructured, Presidio docs)"
+  },
+  {
+   "id": "ugFeGm5UFf8",
+   "url": "https://www.youtube.com/watch?v=ugFeGm5UFf8",
+   "title": "LLM Privacy Architecture — Detection, Shielding & Compliance for AI Systems | Uplatz",
+   "channel": "Uplatz",
+   "published": "2025-11-26",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "N_WVZclcEV4",
+   "url": "https://www.youtube.com/watch?v=N_WVZclcEV4",
+   "title": "How to Read Excel Data with Agents in Microsoft Copilot Studio",
+   "channel": "Citizen Developer",
+   "published": "2026-02-09",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module or vendor product demo (search noise)"
+  },
+  {
+   "id": "pG1Wx6PqTxQ",
+   "url": "https://www.youtube.com/watch?v=pG1Wx6PqTxQ",
+   "title": "How to Secure Generative AI Data | Oracle AI Database Security Explained",
+   "channel": "Oracle Database Product Management",
+   "published": "2026-03-03",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "tutorial or beginner explainer re-explaining the written canon (Docling, Unstructured, Presidio docs)"
+  },
+  {
+   "id": "d5yIIjC64jI",
+   "url": "https://www.youtube.com/watch?v=d5yIIjC64jI",
+   "title": "TruthForge: The Universal Compliance Firewall for AI (Powered by Gemini)",
+   "channel": "Raja",
+   "published": "2026-02-09",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "yBc_UVnVhfY",
+   "url": "https://www.youtube.com/watch?v=yBc_UVnVhfY",
+   "title": "Real-Time Traffic Data Engineering Project | Kafka + Spark + Delta Lake",
+   "channel": "Data with Jay",
+   "published": "2026-03-22",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module or vendor product demo (search noise)"
+  },
+  {
+   "id": "sGPUzUqtkQo",
+   "url": "https://www.youtube.com/watch?v=sGPUzUqtkQo",
+   "title": "Agentic Document Extraction for Intermediate Users (Feb 4, 2026)",
+   "channel": "LandingAI",
+   "published": "2026-02-04",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "NQZqET-jjws",
+   "url": "https://www.youtube.com/watch?v=NQZqET-jjws",
+   "title": "RAG at 10 Million Documents — System Design",
+   "channel": "Code with Lucian",
+   "published": "2026-07-07",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s8 (found in the s6 scan): RAG at 10 million documents, system design — parked for vector databases"
+  },
+  {
+   "id": "BuVrxMfmVFE",
+   "url": "https://www.youtube.com/watch?v=BuVrxMfmVFE",
+   "title": "Snowflake Document AI Tutorial: Turn Unstructured Documents into Structured Data",
+   "channel": "Snowflake Developers",
+   "published": "2025-12-12",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module or vendor product demo (search noise)"
+  },
+  {
+   "id": "f2ChNIOe5Qw",
+   "url": "https://www.youtube.com/watch?v=f2ChNIOe5Qw",
+   "title": "Build a Powerful PDF AI Pipeline with Docling Parse | Advanced Document Intelligence Tutorial",
+   "channel": "Micro Learning",
+   "published": "2026-06-21",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "J6petVlupw0",
+   "url": "https://www.youtube.com/watch?v=J6petVlupw0",
+   "title": "DPIA for AI Systems: A Step-by-Step Compliance Guide for 2026",
+   "channel": "AI Buzz",
+   "published": "2026-09-30",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "qY48ZoGVgp8",
+   "url": "https://www.youtube.com/watch?v=qY48ZoGVgp8",
+   "title": "Architecting Privacy First Local LLMs",
+   "channel": "The Explainer ",
+   "published": "2026-06-15",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "btsNrIoJupE",
+   "url": "https://www.youtube.com/watch?v=btsNrIoJupE",
+   "title": "Best Open-Source AI Models for PDF to JSON Extraction (2026) | Complete Comparison",
+   "channel": "Micro Learning",
+   "published": "2026-07-11",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "heQ1E-Ty5Is",
+   "url": "https://www.youtube.com/watch?v=heQ1E-Ty5Is",
+   "title": "Docling vs Unstructured vs PyMuPDF in Python: Which PDF Parser Preserves Tables?",
+   "channel": "Professor Py: AI Engineering",
+   "published": "2026-07-24",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Y-dlvv64mB8",
+   "url": "https://www.youtube.com/watch?v=Y-dlvv64mB8",
+   "title": "Beyond OCR: How Agentic Document Extraction Handles Tables, Handwriting & Complex Layouts",
+   "channel": "LandingAI",
+   "published": "2026-04-23",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "fJ6chCcOilw",
+   "url": "https://www.youtube.com/watch?v=fJ6chCcOilw",
+   "title": "Configuring SAP Document AI for Business Document Processing | Document AI + Intelligent Automation",
+   "channel": "ZaranTech DotCom",
+   "published": "2026-08-21",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module or vendor product demo (search noise)"
+  },
+  {
+   "id": "5bLSMAlbD04",
+   "url": "https://www.youtube.com/watch?v=5bLSMAlbD04",
+   "title": "Mastering Chunking Strategies For High-Performance RAG Applications",
+   "channel": "XPLORE AI",
+   "published": "2026-02-28",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "e9UAl1dL0Vk",
+   "url": "https://www.youtube.com/watch?v=e9UAl1dL0Vk",
+   "title": "Qianfan-OCR: Unified End-to-End Document Model",
+   "channel": "AI Research Roundup",
+   "published": "2026-03-18",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "pm0_GHFNl1w",
+   "url": "https://www.youtube.com/watch?v=pm0_GHFNl1w",
+   "title": "Dataset Engineering for LLMs: Data Curation, Synthetic Data & Quality | Chapter 8",
+   "channel": "onepagecode",
+   "published": "2026-06-24",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "zCLtQCPRquo",
+   "url": "https://www.youtube.com/watch?v=zCLtQCPRquo",
+   "title": "How Data Curation Dictates LLM Capabilities: The Data Behind Modern AI",
+   "channel": "Pranjal Swarup",
+   "published": "2026-07-02",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "s_m82N3SSQA",
+   "url": "https://www.youtube.com/watch?v=s_m82N3SSQA",
+   "title": "L-32: Where training data comes from – LLM Data Curation #LLM #DataScience",
+   "channel": "Mehdi Hosseini Moghadam",
+   "published": "2026-09-27",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "q64bJlMGiLU",
+   "url": "https://www.youtube.com/watch?v=q64bJlMGiLU",
+   "title": "The 6-Step Guide to Fine-Tuning LLMs: From Model Selection to Deployment",
+   "channel": "AINexLayer",
+   "published": "2026-01-11",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "oQlIwqbBiRU",
+   "url": "https://www.youtube.com/watch?v=oQlIwqbBiRU",
+   "title": "How Can Enterprises Turn Fragmented Data into Strategic AI Advantage?",
+   "channel": "Enterprise Management 360",
+   "published": "2026-04-22",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "u0piKmEayk4",
+   "url": "https://www.youtube.com/watch?v=u0piKmEayk4",
+   "title": "How to Handle PII in RAG Applications | Healthcare, Finance & Personal Data",
+   "channel": "Osego Codes",
+   "published": "2026-08-18",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "xpOljNd9e4o",
+   "url": "https://www.youtube.com/watch?v=xpOljNd9e4o",
+   "title": "🚀 AI Agent Inference Economics - What It REALLY Costs for AI Tokens at Scale!",
+   "channel": "SystemsArchitect",
+   "published": "2026-09-01",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "VuTwBpuKoR4",
+   "url": "https://www.youtube.com/watch?v=VuTwBpuKoR4",
+   "title": "Architecting Zero Compute Triage for Agent Trajectories",
+   "channel": "Anantha Narayanan",
+   "published": "2026-04-13",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "mHiqUBZERKo",
+   "url": "https://www.youtube.com/watch?v=mHiqUBZERKo",
+   "title": "How To Find The Best Datasets On Hugging Face 2026: Complete Step By Step AI Developer Guide!",
+   "channel": "ProgrammingKnowledge2",
+   "published": "2026-07-22",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "nRN9aQ_k6do",
+   "url": "https://www.youtube.com/watch?v=nRN9aQ_k6do",
+   "title": "The Effects of Data Pruning, Representation Capacity, and Latent Trajectories | Irina Rish (UdeM)",
+   "channel": "IVADO",
+   "published": "2026-04-20",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "fECKuutsruE",
+   "url": "https://www.youtube.com/watch?v=fECKuutsruE",
+   "title": "What Is LLM Poisoning? - Anthropic’s Interesting Break Through",
+   "channel": "Codedigipt",
+   "published": "2025-10-28",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "ACSP7M_ALz8",
+   "url": "https://www.youtube.com/watch?v=ACSP7M_ALz8",
+   "title": "Ep 64: Supervised Fine-Tuning — Teaching Models to Follow Instructions | LLM Mastery Podcast",
+   "channel": "carlos Hernandez",
+   "published": "2026-03-30",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "GxNaynhIpLk",
+   "url": "https://www.youtube.com/watch?v=GxNaynhIpLk",
+   "title": "Can an AI Lie? What LLMs Actually Do Inside — and Why It Matters | Sairam Sundaresan",
+   "channel": "Prof. Dr. Anastassia Lauterbach",
+   "published": "2026-03-31",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "O46bKcm0MGE",
+   "url": "https://www.youtube.com/watch?v=O46bKcm0MGE",
+   "title": "AI Security 4.4: Context Isolation in Multi-User AI Systems - Preventing Cross-Tenant Data Leakage",
+   "channel": "WiseBuilder",
+   "published": "2026-06-01",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "gIyCXDOfFLk",
+   "url": "https://www.youtube.com/watch?v=gIyCXDOfFLk",
+   "title": "Production RAG in 4 Minutes: Hybrid Search, Reranking & Architecture",
+   "channel": "Zax - AI",
+   "published": "2026-08-17",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "zKa3Cs8SD8c",
+   "url": "https://www.youtube.com/watch?v=zKa3Cs8SD8c",
+   "title": "Comparing Agents: Paired Flips, McNemar and Inconclusive Results | NVIDIA Agentic AI Course 6.2",
+   "channel": "Cloudbrewery",
+   "published": "2026-10-01",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "lWClsIw9gN8",
+   "url": "https://www.youtube.com/watch?v=lWClsIw9gN8",
+   "title": "Day 29: Enterprise RAG + Model Context Protocol | System Design Masterclass | Production-Grade AI",
+   "channel": "rkTech",
+   "published": "2026-09-09",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "J-o33I4C5HM",
+   "url": "https://www.youtube.com/watch?v=J-o33I4C5HM",
+   "title": "Get Free API Keys for Any AI Model | Get Unlimited AI Credits Claude, OpenAI, Gemini (2026) Updated",
+   "channel": "Aura Labs",
+   "published": "2026-05-29",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module or vendor product demo (search noise)"
+  },
+  {
+   "id": "XX9GYg15xTU",
+   "url": "https://www.youtube.com/watch?v=XX9GYg15xTU",
+   "title": "Unpacking Supabase: Architecture, Technology Stack, and AI Implementation Guide",
+   "channel": "shahid khan",
+   "published": "2026-07-12",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "R9LX6DBlTVM",
+   "url": "https://www.youtube.com/watch?v=R9LX6DBlTVM",
+   "title": "AI Security: Rule of Two, Guardrails, Data Retention, Model Integrity, Access - #GRCL Session 16",
+   "channel": "Full Stack GRC",
+   "published": "2026-09-21",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "7QGYPYKQrMw",
+   "url": "https://www.youtube.com/watch?v=7QGYPYKQrMw",
+   "title": "Vamsi's Minor Project Presentation(Btech 2-2 sem BVRIT-N)",
+   "channel": "Vamsi Krishna",
+   "published": "2026-05-13",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "yJVmvrCXW_g",
+   "url": "https://www.youtube.com/watch?v=yJVmvrCXW_g",
+   "title": "PaddleOCR Explained: Document AI Without Guessing the OCR Pipeline",
+   "channel": "Doramagic AI",
+   "published": "2026-06-23",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "mHxLXzYjQRE",
+   "url": "https://www.youtube.com/watch?v=mHxLXzYjQRE",
+   "title": "Production RAG with LangChain & Vector Databases – Full Course",
+   "channel": "freeCodeCamp.org",
+   "published": "2026-05-26",
+   "type": "video",
+   "module": "s9",
+   "modules": [
+    "s9"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s9 (found in the s6 scan): freeCodeCamp 7.5-hour production RAG course — parked for RAG fundamentals (reference-course candidate, too long for a scan)"
+  },
+  {
+   "id": "2zXokvhZ0Q8",
+   "url": "https://www.youtube.com/watch?v=2zXokvhZ0Q8",
+   "title": "ChatGPT-Like Wikipedia Assistant with RAG, ReAct & LlamaIndex in Under 300 Lines",
+   "channel": "Cloudvala ",
+   "published": "2026-09-19",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "BFxSYP5IRjQ",
+   "url": "https://www.youtube.com/watch?v=BFxSYP5IRjQ",
+   "title": "I Tested 5 Document Parsers for AI Agents (Docling, Andrew Ng DPT, LlamaParse + RAG)",
+   "channel": "Dr. Maryam Miradi",
+   "published": "2025-12-01",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s6 (found in the s6 scan): Dr. Maryam Miradi: five document parsers tested — practitioner comparison, candidate for the s6 validation pass"
+  },
+  {
+   "id": "KwBexhEXOco",
+   "url": "https://www.youtube.com/watch?v=KwBexhEXOco",
+   "title": "Best OCR AI 2026: Every Model Ranked & Compared (Tier List)",
+   "channel": "Tech Expert Tutorials",
+   "published": "2026-03-09",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "9F20n6FvGRE",
+   "url": "https://www.youtube.com/watch?v=9F20n6FvGRE",
+   "title": "Production RAG on Databricks: Document Chunking, Vector Search, and Retrieval Evaluation",
+   "channel": "Databricks Events",
+   "published": "2026-09-08",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "sotq5BGfn8o",
+   "url": "https://www.youtube.com/watch?v=sotq5BGfn8o",
+   "title": "I Shipped Nexa — 4 AI Agents with Isolated Memory (Full Demo)",
+   "channel": "Engr Mejba Ahmed",
+   "published": "2026-04-26",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "kyJ1vd7yEPc",
+   "url": "https://www.youtube.com/watch?v=kyJ1vd7yEPc",
+   "title": "AI Is Exposing Your Data: An AI Security Problem You Can't See",
+   "channel": "IBM Technology",
+   "published": "2026-09-27",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "IBM 2026-09: AI is exposing your data — the privacy/compliance bullet (corporate explainer with reach)",
+   "raw": "sources/raw/2026-10-01-market-scan-s06-data-audit-cleaning-privacy/yt-kyJ1vd7yEPc-ibm-ai-is-exposing-your-data.md",
+   "duration": "00:11:29"
+  },
+  {
+   "id": "Qlt-lqJyyUA",
+   "url": "https://www.youtube.com/watch?v=Qlt-lqJyyUA",
+   "title": "Unlimited-OCR Explained | Baidu's 3B Vision AI Model for Document Parsing",
+   "channel": "Micro Learning",
+   "published": "2026-07-02",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "b8TWstsFSlw",
+   "url": "https://www.youtube.com/watch?v=b8TWstsFSlw",
+   "title": "RAG Complete Course | Retrieval, Embeddings, Reranking & Production Systems",
+   "channel": "SleepingDev",
+   "published": "2026-09-14",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "HaOxm3bJUGo",
+   "url": "https://www.youtube.com/watch?v=HaOxm3bJUGo",
+   "title": "Surya OCR Python Tutorial | Multilingual OCR & Document AI for 90+ Languages",
+   "channel": "Vivek Pol",
+   "published": "2026-09-29",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "ltxsE1rhSfI",
+   "url": "https://www.youtube.com/watch?v=ltxsE1rhSfI",
+   "title": "New course! Document AI: From OCR to Agentic Doc Extraction",
+   "channel": "DeepLearningAI",
+   "published": "2026-01-14",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s6 (found in the s6 scan): DeepLearning.AI course intro: Document AI from OCR to agentic doc extraction — course, listed in the written canon pass of the validation step"
+  },
+  {
+   "id": "7jC7Uz6vLr8",
+   "url": "https://www.youtube.com/watch?v=7jC7Uz6vLr8",
+   "title": "Your AI Model Is Failing Because of Your Data (Full Guide) | AI Engineering Ch.8",
+   "channel": "Savant Space",
+   "published": "2026-08-22",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "oUAYZPY-tw8",
+   "url": "https://www.youtube.com/watch?v=oUAYZPY-tw8",
+   "title": "How to Anonymize Your Data Before Putting in ChatGPT  ( LangChain + Presidio)",
+   "channel": "MG",
+   "published": "2023-09-19",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "tutorial or beginner explainer re-explaining the written canon (Docling, Unstructured, Presidio docs)"
+  },
+  {
+   "id": "vWyESyTiabw",
+   "url": "https://www.youtube.com/watch?v=vWyESyTiabw",
+   "title": "Addressing Privacy and the GDPR in LLM Applications // Pieter Luitjens // LLMs III Lightning Talk",
+   "channel": "AAIF Live",
+   "published": "2023-11-02",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "CefMUDF0Mks",
+   "url": "https://www.youtube.com/watch?v=CefMUDF0Mks",
+   "title": "Infrastructure Agility with Presidio, Citrix and Microsoft",
+   "channel": "Presidio",
+   "published": "2021-04-12",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "zSA7ylHP6AY",
+   "url": "https://www.youtube.com/watch?v=zSA7ylHP6AY",
+   "title": "What Is Docling? Transforming Unstructured Data for RAG and AI",
+   "channel": "IBM Technology",
+   "published": "2025-08-04",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "IBM (Docling's author): what is Docling — the OSS layout-aware converter; primary explainer",
+   "raw": "sources/raw/2026-10-01-market-scan-s06-data-audit-cleaning-privacy/yt-zSA7ylHP6AY-ibm-what-is-docling.md",
+   "duration": "00:08:18"
+  },
+  {
+   "id": "80vV6fGIlWo",
+   "url": "https://www.youtube.com/watch?v=80vV6fGIlWo",
+   "title": "AI Dev 26 x SF | Jerry Liu: My Agent Can't Read a PDF?",
+   "channel": "DeepLearningAI",
+   "published": "2026-05-22",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "AI Dev 26 (DeepLearning.AI): Jerry Liu, 'my agent can't read a PDF?' — LlamaIndex founder on document parsing for agents; primary",
+   "raw": "sources/raw/2026-10-01-market-scan-s06-data-audit-cleaning-privacy/yt-80vV6fGIlWo-aidev26-jerry-liu-my-agent-cant-read-a-pdf.md",
+   "duration": "00:31:00"
+  },
+  {
+   "id": "y1d0OSUp6sM",
+   "url": "https://www.youtube.com/watch?v=y1d0OSUp6sM",
+   "title": "Identifying Personal Identifiable Information (PII) in Unstructured Data with Microsoft Presidio",
+   "channel": "Public Spark - Making Sense of Digital Government",
+   "published": "2025-03-17",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "7w-J-91j1f8",
+   "url": "https://www.youtube.com/watch?v=7w-J-91j1f8",
+   "title": "Peter Staar - Docling: Get your documents ready for generative AI - SPS25",
+   "channel": "Swiss Python Summit",
+   "published": "2025-11-20",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "D3fjQf_OiFg",
+   "url": "https://www.youtube.com/watch?v=D3fjQf_OiFg",
+   "title": "The Future of Data Engineering in the Agent Era",
+   "channel": "AI Council",
+   "published": "2025-05-29",
+   "type": "video",
+   "module": "s15",
+   "modules": [
+    "s15"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s15 (found in the s6 scan): AI Council panel: future of data engineering in the agent era — parked for LLMOps"
+  },
+  {
+   "id": "Y7E24V74AeE",
+   "url": "https://www.youtube.com/watch?v=Y7E24V74AeE",
+   "title": "Keynote - What Does It Mean for Agentic AI to Preserve Privacy? Mapping the New Data Sinks and Leaks",
+   "channel": "CAMLIS",
+   "published": "2025-11-03",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "u7pag5p9z5o",
+   "url": "https://www.youtube.com/watch?v=u7pag5p9z5o",
+   "title": "Natalie Isak & Waris Gill - Developing & Deploying AI Fingerprints | [un]prompted 2026",
+   "channel": "unprompted",
+   "published": "2026-03-25",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module or vendor product demo (search noise)"
+  },
+  {
+   "id": "HbXvX-KtkSs",
+   "url": "https://www.youtube.com/watch?v=HbXvX-KtkSs",
+   "title": "The $1T SaaS Sell-Off: Why Agents Are Winning!",
+   "channel": "VentureBeat",
+   "published": "2026-04-29",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module or vendor product demo (search noise)"
+  },
+  {
+   "id": "0I07YAuF8xA",
+   "url": "https://www.youtube.com/watch?v=0I07YAuF8xA",
+   "title": "From Ingestion to Agents: How AI Teams Build on Document Intelligence — Adit Abraham, Reducto",
+   "channel": "AI Engineer",
+   "published": "2026-09-23",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "AI Engineer 2026 (Reducto): from ingestion to agents — document intelligence as a layer; primary vendor talk",
+   "raw": "sources/raw/2026-10-01-market-scan-s06-data-audit-cleaning-privacy/yt-0I07YAuF8xA-aie-adit-abraham-reducto-ingestion-to-agents-document-intelligence.md",
+   "duration": "00:22:29"
+  },
+  {
+   "id": "DjWd3QLfceU",
+   "url": "https://www.youtube.com/watch?v=DjWd3QLfceU",
+   "title": "How to Use Your Development Data to Make LLMs Code Like You and Your Team",
+   "channel": "AI Council",
+   "published": "2024-04-19",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "tutorial or beginner explainer re-explaining the written canon (Docling, Unstructured, Presidio docs)"
+  },
+  {
+   "id": "xchOwCMDLgE",
+   "url": "https://www.youtube.com/watch?v=xchOwCMDLgE",
+   "title": "Reasoning Machines // Justin Uberti & Jon Turow // LLMs in Production Conference Lightning Talk 1",
+   "channel": "AAIF Live",
+   "published": "2023-05-25",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "8h9B9BOO7hw",
+   "url": "https://www.youtube.com/watch?v=8h9B9BOO7hw",
+   "title": "Deep Extract: Q + A with Arth Bohra",
+   "channel": "Reducto",
+   "published": "2026-07-16",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "ybzR4LBY0Lo",
+   "url": "https://www.youtube.com/watch?v=ybzR4LBY0Lo",
+   "title": "Lessons From Processing a Billion Pages with Reducto",
+   "channel": "Jason Liu",
+   "published": "2026-01-20",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "Jason Liu × Reducto: lessons from a billion pages — parsing failure modes at scale; primary practitioner",
+   "raw": "sources/raw/2026-10-01-market-scan-s06-data-audit-cleaning-privacy/yt-ybzR4LBY0Lo-jason-liu-reducto-lessons-billion-pages.md",
+   "duration": "00:50:24"
+  },
+  {
+   "id": "y-oUftPFLBU",
+   "url": "https://www.youtube.com/watch?v=y-oUftPFLBU",
+   "title": "Reducto on the Road EP 3: In Vegas for Ai4, f1 arcade after party 🏎️",
+   "channel": "Reducto",
+   "published": "2026-09-24",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "uPsUjKLHLAg",
+   "url": "https://www.youtube.com/watch?v=uPsUjKLHLAg",
+   "title": "Data Governance Explained in 5 Minutes",
+   "channel": "IBM Technology",
+   "published": "2022-07-15",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "a-rA_LyXR8o",
+   "url": "https://www.youtube.com/watch?v=a-rA_LyXR8o",
+   "title": "The Power of Low Latency Data for AI Apps",
+   "channel": "AI Council",
+   "published": "2025-05-28",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "YJ4sMC0YrDQ",
+   "url": "https://www.youtube.com/watch?v=YJ4sMC0YrDQ",
+   "title": "#agentic  #RAG Explained: The Complete Enterprise #ai  #architecture  | BAZAI",
+   "channel": "BazAI",
+   "published": "2026-08-13",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "8q5BWtpGqVg",
+   "url": "https://www.youtube.com/watch?v=8q5BWtpGqVg",
+   "title": "PEPR '26 - Private Tuning of LLMs in Practice: From VaultGemma to Custom Fine-Tuning",
+   "channel": "USENIX",
+   "published": "2026-06-18",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "lz0L0rRV7RE",
+   "url": "https://www.youtube.com/watch?v=lz0L0rRV7RE",
+   "title": "Hacking AI Systems: How to (Still) Trick Artificial Intelligence • Katharine Jarmul • GOTO 2025",
+   "channel": "GOTO Conferences",
+   "published": "2026-01-08",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "GOTO 2026: Katharine Jarmul (privacy-engineering author) on hacking AI systems — data privacy and poisoning",
+   "raw": "sources/raw/2026-10-01-market-scan-s06-data-audit-cleaning-privacy/yt-lz0L0rRV7RE-goto-katharine-jarmul-hacking-ai-systems.md",
+   "duration": "00:35:21"
+  },
+  {
+   "id": "avoijDORAlc",
+   "url": "https://www.youtube.com/watch?v=avoijDORAlc",
+   "title": "Data centric AI development  From Big Data to Good Data   Andrew Ng",
+   "channel": "Databricks",
+   "published": "2022-07-19",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "canon (Andrew Ng, 2022): data-centric AI — from big data to good data; the audit/cleaning doctrine",
+   "raw": "sources/raw/2026-10-01-market-scan-s06-data-audit-cleaning-privacy/yt-avoijDORAlc-databricks-andrew-ng-data-centric-ai.md",
+   "duration": "00:25:50"
+  },
+  {
+   "id": "qVWcidbrOHs",
+   "url": "https://www.youtube.com/watch?v=qVWcidbrOHs",
+   "title": "data privacy in LLM using langchain & presidio| Tutorial:68",
+   "channel": "Total Technology Zonne",
+   "published": "2024-05-24",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "_yb6Nw21QxA",
+   "url": "https://www.youtube.com/watch?v=_yb6Nw21QxA",
+   "title": "How Notion Cut Millions from Their Vector DB Bill Without Sacrificing Search Quality",
+   "channel": "AI Council",
+   "published": "2025-05-29",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s8 (found in the s6 scan): AI Council: how Notion cut millions from its vector DB bill — parked for vector databases"
+  },
+  {
+   "id": "kOMmE4wRxKc",
+   "url": "https://www.youtube.com/watch?v=kOMmE4wRxKc",
+   "title": "AI engineering with open access LLMs that lie, curse, and steal - Daniel Whitenack | Craft 2024",
+   "channel": "CraftHub Events",
+   "published": "2025-05-15",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "X_oWuJhumOs",
+   "url": "https://www.youtube.com/watch?v=X_oWuJhumOs",
+   "title": "Leveraging AI - and Automating Student Data Protection 🔐🤖",
+   "channel": "Jérémie Rostan",
+   "published": "2024-07-20",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "dI_TmTW9S4c",
+   "url": "https://www.youtube.com/watch?v=dI_TmTW9S4c",
+   "title": "Building Production RAG Over Complex Documents",
+   "channel": "Databricks",
+   "published": "2024-07-23",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "Databricks 2024: building production RAG over complex documents (LlamaIndex) — canon on tables, layout, multimodal",
+   "raw": "sources/raw/2026-10-01-market-scan-s06-data-audit-cleaning-privacy/yt-dI_TmTW9S4c-databricks-production-rag-over-complex-documents.md",
+   "duration": "01:22:18"
+  },
+  {
+   "id": "i5GbgNZAEdQ",
+   "url": "https://www.youtube.com/watch?v=i5GbgNZAEdQ",
+   "title": "Inside r-1 and the Future of Document AI | MTS Interviews Reducto CEO Adit Abraham",
+   "channel": "Reducto",
+   "published": "2026-09-07",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "BSS0QN5kNNQ",
+   "url": "https://www.youtube.com/watch?v=BSS0QN5kNNQ",
+   "title": "How To Anonymize Data Transformation With Azure Synapse",
+   "channel": "Microsoft Mechanics",
+   "published": "2020-07-01",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module or vendor product demo (search noise)"
+  },
+  {
+   "id": "EUxkKELGChM",
+   "url": "https://www.youtube.com/watch?v=EUxkKELGChM",
+   "title": "RAG in 2025: State of the Art and the Road Forward",
+   "channel": "AI Council",
+   "published": "2025-05-29",
+   "type": "video",
+   "module": "s9",
+   "modules": [
+    "s9"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s9 (found in the s6 scan): AI Council: RAG in 2025 state of the art — parked for RAG fundamentals"
+  },
+  {
+   "id": "8NYeMoz9pjI",
+   "url": "https://www.youtube.com/watch?v=8NYeMoz9pjI",
+   "title": "Syllable Division | Learn the six rules of syllables | Chunking words | Learn to Read",
+   "channel": "Nessy",
+   "published": "2022-09-13",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module or vendor product demo (search noise)"
+  },
+  {
+   "id": "tLMViADvSNE",
+   "url": "https://www.youtube.com/watch?v=tLMViADvSNE",
+   "title": "Every RAG Strategy Explained in 13 Minutes (No Fluff)",
+   "channel": "Cole Medin",
+   "published": "2025-11-03",
+   "type": "video",
+   "module": "s10",
+   "modules": [
+    "s10"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s10 (found in the s6 scan): Cole Medin: every RAG strategy in 13 minutes — parked for advanced retrieval (practitioner overview)"
+  },
+  {
+   "id": "HHhCKHbm03o",
+   "url": "https://www.youtube.com/watch?v=HHhCKHbm03o",
+   "title": "Data-Centric AI Competition | From Model-centric to Data-centric AI | Andrew NG urges data-centric",
+   "channel": "Hidden Box",
+   "published": "2021-07-25",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "IqUJVGyI5to",
+   "url": "https://www.youtube.com/watch?v=IqUJVGyI5to",
+   "title": "Build AI-Ready Search: Integrating Docling with OpenSearch for Advanced RA... Carol Chen & Phil Nash",
+   "channel": "OpenSearch",
+   "published": "2026-03-24",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Uky2eJ25oHY",
+   "url": "https://www.youtube.com/watch?v=Uky2eJ25oHY",
+   "title": "Multi-modal RAG with Docling: From PDF to Agentic AI Chatbot",
+   "channel": "Case Done by AI",
+   "published": "2025-08-04",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "9lBTS5dM27c",
+   "url": "https://www.youtube.com/watch?v=9lBTS5dM27c",
+   "title": "How to Get Your Data Ready for AI Agents (Docs, PDFs, Websites)",
+   "channel": "Dave Ebbelaar",
+   "published": "2025-02-13",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "recognised practitioner (Dave Ebbelaar, 212k views): getting data ready for agents — docs, PDFs, websites",
+   "raw": "sources/raw/2026-10-01-market-scan-s06-data-audit-cleaning-privacy/yt-9lBTS5dM27c-dave-ebbelaar-get-your-data-ready-for-ai-agents.md",
+   "duration": "00:25:00"
+  },
+  {
+   "id": "uLrReyH5cu0",
+   "url": "https://www.youtube.com/watch?v=uLrReyH5cu0",
+   "title": "Multimodal RAG: Chat with PDFs (Images & Tables) [2025]",
+   "channel": "Alejandro AO",
+   "published": "2024-11-12",
+   "type": "video",
+   "module": "s10",
+   "modules": [
+    "s10"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s10 (found in the s6 scan): Alejandro AO: multimodal RAG with images and tables — parked for advanced retrieval"
+  },
+  {
+   "id": "-vJ2-0RXkmk",
+   "url": "https://www.youtube.com/watch?v=-vJ2-0RXkmk",
+   "title": "Build a Multi-Modal RAG Pipeline That Actually Works (Unstructured.io)",
+   "channel": "Harish Neel | AI",
+   "published": "2025-09-06",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "eHw_6jhK8AM",
+   "url": "https://www.youtube.com/watch?v=eHw_6jhK8AM",
+   "title": "Import EVERYTHING Into Your RAG Agent (Docling & LlamaParse)",
+   "channel": "The AI Automators",
+   "published": "2025-08-26",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "n__LhEmlTFg",
+   "url": "https://www.youtube.com/watch?v=n__LhEmlTFg",
+   "title": "Working with Andrew Ng | Podcast Clips🎙️",
+   "channel": "Jousef Murad LITE",
+   "published": "2021-12-17",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "YAgjtZKLVKo",
+   "url": "https://www.youtube.com/watch?v=YAgjtZKLVKo",
+   "title": "Convert Any Document To LLM Knowledge with Docling & Ollama (100% Local) | PDF to Markdown Pipeline",
+   "channel": "Venelin Valkov",
+   "published": "2025-12-22",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "tutorial or beginner explainer re-explaining the written canon (Docling, Unstructured, Presidio docs)"
+  },
+  {
+   "id": "vRZNJWw78BQ",
+   "url": "https://www.youtube.com/watch?v=vRZNJWw78BQ",
+   "title": "What Is Chunkless RAG? How Docling & AI Agents Navigate Documents",
+   "channel": "IBM Technology",
+   "published": "2026-08-09",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "IBM (Docling's author): chunkless RAG — agents navigating documents; 2026 signal",
+   "raw": "sources/raw/2026-10-01-market-scan-s06-data-audit-cleaning-privacy/yt-vRZNJWw78BQ-ibm-chunkless-rag-docling.md",
+   "duration": "00:07:00"
+  },
+  {
+   "id": "n0uPzvGTFI0",
+   "url": "https://www.youtube.com/watch?v=n0uPzvGTFI0",
+   "title": "LangChain: How to Properly Split your Chunks",
+   "channel": "Prompt Engineering",
+   "published": "2023-08-19",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "chunking strategies belong to session 7 — the s7 scan will consider the canon (Kamradt) directly; tutorial re-explanations not parked"
+  },
+  {
+   "id": "LIus-y2bJH4",
+   "url": "https://www.youtube.com/watch?v=LIus-y2bJH4",
+   "title": "Parse Unlimited PDFs for Multimodal RAG like a Pro using Unstructured - Production Grade RAG - EP 02",
+   "channel": "Deepak Mittal (AI Engineer)",
+   "published": "2025-06-17",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "pIGRwMjhMaQ",
+   "url": "https://www.youtube.com/watch?v=pIGRwMjhMaQ",
+   "title": "Chunking Strategies in RAG: Optimising Data for Advanced AI Responses",
+   "channel": "Mervin Praison",
+   "published": "2024-03-07",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "chunking strategies belong to session 7 — the s7 scan will consider the canon (Kamradt) directly; tutorial re-explanations not parked"
+  },
+  {
+   "id": "TU6u_T-s68Y",
+   "url": "https://www.youtube.com/watch?v=TU6u_T-s68Y",
+   "title": "Andrew Ng’s Tips for the Data-Centric AI Future",
+   "channel": "Snorkel AI",
+   "published": "2022-03-09",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "-ad1tcXbXVM",
+   "url": "https://www.youtube.com/watch?v=-ad1tcXbXVM",
+   "title": "Fireside Chat: Data-centric AI with Andrew Ng - Robust & Responsible AI Summit | 2023",
+   "channel": "WhyLabs",
+   "published": "2023-01-31",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Tl773LANRwY",
+   "url": "https://www.youtube.com/watch?v=Tl773LANRwY",
+   "title": "Data anonymization at scale with Presidio",
+   "channel": "omri374",
+   "published": "2019-12-26",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "lCP9g8cAPho",
+   "url": "https://www.youtube.com/watch?v=lCP9g8cAPho",
+   "title": "How Speculative Decoding Cuts OCR Hallucinations by 90%",
+   "channel": "Official Elastic Community",
+   "published": "2025-11-20",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "VXI872YeVLo",
+   "url": "https://www.youtube.com/watch?v=VXI872YeVLo",
+   "title": "Andrew Ng",
+   "channel": "Eye on AI",
+   "published": "2022-04-13",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "AhKFNkgl760",
+   "url": "https://www.youtube.com/watch?v=AhKFNkgl760",
+   "title": "Context Engineering 2.0: Unifying MCP, Agentic RAG, and Memory | Redis",
+   "channel": "AI Council",
+   "published": "2026-06-17",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "hiCesra9SG4",
+   "url": "https://www.youtube.com/watch?v=hiCesra9SG4",
+   "title": "Enabling Data-Centric AI Product Development for Retailers with Target",
+   "channel": "Ai4",
+   "published": "2021-09-08",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "ax-uKawA-c8",
+   "url": "https://www.youtube.com/watch?v=ax-uKawA-c8",
+   "title": "Building Defensible Products with LLMs // Raza Habib // LLMs in Production Conference Talk",
+   "channel": "AAIF Live",
+   "published": "2023-05-11",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module or vendor product demo (search noise)"
+  },
+  {
+   "id": "GJiUJMgEPwo",
+   "url": "https://www.youtube.com/watch?v=GJiUJMgEPwo",
+   "title": "Andrew Ng Announces The Launch Of NeurIPS Data-Centric AI Workshop",
+   "channel": " IIT Madras - BSc  Degree  Student Community",
+   "published": "2021-09-18",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "chain-of-thought-hallucinations-data-architecture-neo4j",
+   "url": "https://feeds.transistor.fm/chain-of-thought",
+   "title": "Hallucinations Are a Data Architecture Problem | Sudhir Hasbe, Neo4j",
+   "channel": "Chain of Thought",
+   "published": "2026-04-16",
+   "type": "podcast",
+   "status": "candidate",
+   "reason": "parked for advanced retrieval / GraphRAG (found in the s6 RSS pass)",
+   "module": "s10",
+   "modules": [
+    "s10"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01"
+  },
+  {
+   "id": "chain-of-thought-data-federation-starburst",
+   "url": "https://feeds.transistor.fm/chain-of-thought",
+   "title": "Data Federation, Not Centralization, Is What Enterprise AI Needs | Jitender Aswani, Starburst",
+   "channel": "Chain of Thought",
+   "published": "2026-07-16",
+   "type": "podcast",
+   "status": "discarded",
+   "reason": "RSS pass for s6: vendor (Starburst) on its own category; the selected data-pipeline talk covers the point",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01"
+  },
+  {
+   "id": "latent-space-better-data-is-all-you-need-datology",
+   "url": "https://api.substack.com/feed/podcast/1084089.rss",
+   "title": "Better Data is All You Need — Ari Morcos, Datology",
+   "channel": "Latent Space",
+   "published": "2025-08-29",
+   "type": "podcast",
+   "status": "candidate",
+   "reason": "parked for LLMOps II (training-data curation; found in the s6 RSS pass)",
+   "module": "s16",
+   "modules": [
+    "s16"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
+   "decided": "2026-10-01"
   }
  ]
 }
