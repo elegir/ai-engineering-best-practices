@@ -16,7 +16,7 @@ superseded-by: null
 
 # Which practices apply to this repo?
 
-**Who runs this.** An agent inside an **existing** target repository, on Martin's request, before its first audit. It is the entry point for the existing-repo door; `audit-repo-against-kb.md` runs after it and only inspects the practices this playbook marked as applying. A repository with **no code yet** takes the other door — playbooks/bootstrap-new-repo.md (to be created; decision `decisions/0004-day-one-for-blank-and-existing-repos.md` §3) — where facts are *planned* from intent instead of inferred. The routing fact `brownfield` decides: real commits older than a few weeks, a schema with migrations or a deploy that runs → this playbook; none of those → the bootstrap. Both doors end in the same router, `scripts/applies.py`.
+**Who runs this.** An agent inside an **existing** target repository, on Martin's request, before its first audit. It is the entry point for the existing-repo door; `audit-repo-against-kb.md` runs after it and only inspects the practices this playbook marked as applying. A repository with **no code yet** takes the other door — `playbooks/bootstrap-new-repo.md` (decision `decisions/0004-day-one-for-blank-and-existing-repos.md` §3) — where facts are *planned* from intent instead of inferred. The routing fact `brownfield` decides: real commits older than a few weeks, a schema with migrations or a deploy that runs → this playbook; none of those → the bootstrap. Both doors end in the same router, `scripts/applies.py`.
 
 **Output.** A short markdown block in chat (Martin may paste it into the repo's own `docs/`; this playbook writes nothing): the facts found with their evidence, the confirmed facts, and the practice list in two groups — *applies* (in order) and *skipped* (each with a reason about this repo). **No files are changed.**
 
@@ -52,7 +52,7 @@ Stop until Martin confirms.
 
 ## Step 3 — Evaluate every practice
 
-Run `python3 <kb>/scripts/applies.py <fact> <fact> …` with the confirmed facts: its output **is** the list and the order (decision 0004 §5; the `applies-when` column of `practices/README.md` is what it evaluates, so you may read the column, but you do not re-interpret it). A practice with a `full-when` line is printed as `(core)` or `(full)` — today `security-baseline`: its full part (threat model, injection fixture, trust register) attaches on `acts_on_world or personal_data or regulated or multi_tenant`. A file inside an `always` practice may still be conditional, stated in that practice's README — today `verification/dry-run-and-approval.md`, only when `acts_on_world`. For each practice write one of:
+Run `python3 <kb>/scripts/applies.py --explain <fact> <fact> …` with the confirmed facts: its output **is** the list and the order, each practice tagged with its `when` (day-0 | first-user | at-scale) and the status of its reference (`untested` until a field report exists — then implement from the contract with `practices/prompt-library/implement-practice.md`) (decision 0004 §5; the `applies-when` column of `practices/README.md` is what it evaluates, so you may read the column, but you do not re-interpret it). A practice with a `full-when` line is printed as `(core)` or `(full)` — today `security-baseline`: its full part (threat model, injection fixture, trust register) attaches on `acts_on_world or personal_data or regulated or multi_tenant`. A file inside an `always` practice may still be conditional, stated in that practice's README — today `verification/dry-run-and-approval.md`, only when `acts_on_world`. For each practice write one of:
 
 - **applies** — the line holds for the confirmed facts.
 - **skipped — reason** — the line does not hold; the reason must be a fact about *this* repo ("no retrieval: no vector store, no embeddings call, no corpus"), never a preference or a lack of time. Copy the practice's prose "Does not apply when" only if it literally describes this repo.
@@ -90,4 +90,5 @@ These four lists are produced mechanically by `python3 scripts/applies.py --shap
 
 ## Change log
 
-- 2026-09-30 — decision 0004: this playbook is now the *existing-repo* door; blank repos go to the bootstrap playbook (to be created); `brownfield` is the routing fact; `scripts/applies.py` is the authority for the list and its order; `security-baseline` prints core/full; `verification/dry-run-and-approval.md` noted as conditional on `acts_on_world`.
+- 2026-09-30 (later) — `applies.py --explain` named as the output; `when` and reference status shown; `ROUTER.md` referenced.
+- 2026-09-30 — decision 0004: this playbook is now the *existing-repo* door; blank repos go to `playbooks/bootstrap-new-repo.md`; `brownfield` is the routing fact; `scripts/applies.py` is the authority for the list and its order; `security-baseline` prints core/full; `verification/dry-run-and-approval.md` noted as conditional on `acts_on_world`.

@@ -7,6 +7,7 @@ last-reviewed: 2026-09-30
 tags: [worktrees, parallel-agents, isolation, windows]
 kind: working-style
 applies-when: "parallel_sessions"
+when: day-0   # day-0 | first-user | at-scale — when in a product's life this practice is installed (decision 0004 §5)
 reference-status: untested   # untested | field-tested | reference (decision 0005 §3)
 principle: principles/06-parallel-agents-and-worktrees.md
 sources:

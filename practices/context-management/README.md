@@ -7,6 +7,7 @@ last-reviewed: 2026-09-30
 tags: [context-engineering, compaction, prompt-caching, sub-agents, long-context, rag, evals]
 kind: capability
 applies-when: "multi_turn or retrieval"
+when: first-user   # day-0 | first-user | at-scale — when in a product's life this practice is installed (decision 0004 §5)
 reference-status: untested   # untested | field-tested | reference (decision 0005 §3)
 principle: principles/11-runtime-context-management.md
 sources:
