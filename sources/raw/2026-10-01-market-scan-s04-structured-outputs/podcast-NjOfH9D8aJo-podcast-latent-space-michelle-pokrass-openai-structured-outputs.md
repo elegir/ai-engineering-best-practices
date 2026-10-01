@@ -2,13 +2,13 @@
 title: "RAW transcript — Building AGI with OpenAI's Structured Outputs API"
 type: source
 status: current
-date: 2026-10
+date: 2024-09
 tags: [raw, transcript, structured-outputs, guardrails, generative-ui, market-scan, s04]
 sources:
   - https://www.youtube.com/watch?v=NjOfH9D8aJo
 ---
 
-> **Video:** "Building AGI with OpenAI's Structured Outputs API" — channel *Latent Space* — uploaded 2026-10-01 — 1h 12m — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Building AGI with OpenAI's Structured Outputs API" — channel *Latent Space* — uploaded 2024-09-17 — 1h 12m — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
 
 yeah hey everyone welcome to the laden space podcast this is celesio partner and c and residents and deel partners and I'm joined by my co-host swix founder of small AI hey and today we're excited to be in the inperson studio with Michelle welcome thanks thanks for having me very excited to be here this has been a long time coming uh I've been following your work on the API platform for a little bit and uh I'm finally glad that we could make this happen after you you ships structured up how does that feel yeah it feels great uh we've been working on it for quite a while so very excited to have it out there and have people using it we'll tell the story soon uh but I want to give people a little intro to your backgrounds so you've interned and or worked at Google stripe coinbase Clubhouse and obviously open AI what was that Journey like uh you know I the one that has the most appealed to
 

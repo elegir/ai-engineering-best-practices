@@ -3,7 +3,7 @@ title: "Practice — session state (progress file + startup routine)"
 type: practice
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-30
+last-reviewed: 2026-10-01
 tags: [state, progress, session, resumability]
 kind: working-style
 applies-when: "long_tasks or parallel_sessions"
@@ -48,6 +48,7 @@ Every agent session starts with an empty memory. Long tasks lose their place whe
 
 - Nothing in this practice depends on the product's stack; it depends on the **agent tool** (where commands live) and on the repo's health-check command, which comes from `../verification/`.
 - Several worktrees (`../worktrees/`) need one progress file per task or a shared one with task scoping — decide once.
+- The provider-side form of the progress file is the memory tool's multisession pattern (an initializer session writes a progress log and a feature checklist; each session reads them first, updates them last — Anthropic memory-tool docs, read 2026-10-01; `../memory-and-permissions/memory-tool-handler-notes.md`): same contract, the file lives in the memory store instead of the repo.
 
 ## Adapt
 
@@ -75,6 +76,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 (s5) — one line in Stack-sensitive points: the provider-side form of the progress file is the memory tool's multisession pattern. Source `sources/2026-10-01-s05-context-memory-permissions-evals-digest.md` row 27.
 - 2026-10-01 — `PROGRESS.json` template gains `updated` per task (its own Verify 4 required it); assertion 3 accepts the task id in the commit body. Shape-A bootstrap, `sources/2026-10-01-field-report-shape-a-bootstrap.md`.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).

@@ -2,13 +2,13 @@
 title: "RAW transcript — Practical Lessons for GenAI Evals | ft Chip Huyen & Vivienne Zhang"
 type: source
 status: current
-date: 2026-10
+date: 2024-12
 tags: [raw, transcript, evals, memory, permissions, external-context, market-scan, s05]
 sources:
   - https://www.youtube.com/watch?v=mrYn6_6gJuY
 ---
 
-> **Video:** "Practical Lessons for GenAI Evals | ft Chip Huyen & Vivienne Zhang" — channel *Galileo* — uploaded 2026-10-01 — 49m 43s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Practical Lessons for GenAI Evals | ft Chip Huyen & Vivienne Zhang" — channel *Galileo* — uploaded 2024-12-04 — 49m 43s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
 
 welcome back to Chain of Thought I'm Connor Bronson head of developer awareness at Galileo and welcome back vickram chaty co-founder and CEO at Galileo how are you doing vicam thanks Conor doing good good to be here how you doing uh I'm good I'm excited for this conversation and particularly I'm excited uh not only to talk to you but for the second half of this conversation where our listeners are going to get to hear from some fantastic panelists who joined us for productionize 2.0 uh to discuss evaluating gen Vivian Zang senior product manager generative AI software at Nvidia and another ex Nvidia person uh chip win uh folks may know her as the author of Designing machine Learning Systems she's now at T studio uh and was formerly VP at Voltron data uh you've probably seen her on X or Twitter or or LinkedIn at some point uh we're going to definitely play that conversation later in the
 

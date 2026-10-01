@@ -2,13 +2,13 @@
 title: "RAW transcript — Letta: Building Stateful AI Agents with Memory and Sleep-Time Compute"
 type: source
 status: current
-date: 2026-10
+date: 2025-07
 tags: [raw, transcript, evals, memory, permissions, external-context, market-scan, s05]
 sources:
   - https://www.youtube.com/watch?v=sgD-sw0RW78
 ---
 
-> **Video:** "Letta: Building Stateful AI Agents with Memory and Sleep-Time Compute" — channel *Arize AI* — uploaded 2026-10-01 — 36m 42s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Letta: Building Stateful AI Agents with Memory and Sleep-Time Compute" — channel *Arize AI* — uploaded 2025-07-02 — 36m 42s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
 
 Uh there's a few things I kind of want to try to help everyone understand today. I think one of the first things if you're at my panel earlier was um basically like what is an agent and like what is missing in agents today that um yeah that just really doesn't exist and maybe like what how much of it needs to be the model how much of it needs to be the framework and the title of this talk is obviously about learning and I think that is really actually the fundamental missing piece in kind of LM driven AI today. It's that a lot of these agents that we build on top of language models, they actually don't really have the capability to learn. I think there's a lot of different ways to talk about this problem. They can be phrased as like a long context problem. It can be phrased as like maybe an RL problem. But fundamentally, we just don't really have many agents that are deployed in
 

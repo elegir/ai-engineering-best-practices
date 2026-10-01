@@ -2,13 +2,13 @@
 title: "RAW transcript — Beyond Components: The Future of AI UI | Ruben Casas at Agent Conf 2026"
 type: source
 status: current
-date: 2026-10
+date: 2026-09
 tags: [raw, transcript, structured-outputs, guardrails, generative-ui, market-scan, s04]
 sources:
   - https://www.youtube.com/watch?v=DLEPGhA4NJQ
 ---
 
-> **Video:** "Beyond Components: The Future of AI UI | Ruben Casas at Agent Conf 2026" — channel *Callstack* — uploaded 2026-10-01 — 20m 31s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Beyond Components: The Future of AI UI | Ruben Casas at Agent Conf 2026" — channel *Callstack* — uploaded 2026-09-22 — 20m 31s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
 
 [music] [music] Okay. Hello everybody. I am glad that you're still here. Uh I know it's been a wonderful two days of talks. Uh but the the last few talks are really tricky but hopefully this is going to be interesting. Um I'm going to be talking about the future and before we talk about the future and this talk is called beyond components. Um we have to talk about uh the past and the present. Before uh when all of this started, we used to go to chatpt and when chatbt came out, the first thing I did was hey generate generate a react component for me. And he created this component. I took it and I had to ask specifically give me um give me uh text. Don't give me text. Just give me um something I can copy and paste. And that's what he did. I copied. I pasted. It worked. Or sometimes it didn't work. And then that was that was mind-blowing. And we're talking about three years ago, you know,
 

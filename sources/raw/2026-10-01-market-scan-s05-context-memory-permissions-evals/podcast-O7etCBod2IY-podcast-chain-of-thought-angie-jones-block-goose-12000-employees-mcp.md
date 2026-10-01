@@ -2,13 +2,13 @@
 title: "RAW transcript — How Block Deployed Goose to 12,000 Employees in 8 Weeks with MCP | Angie Jones"
 type: source
 status: current
-date: 2026-10
+date: 2026-01
 tags: [raw, transcript, evals, memory, permissions, external-context, market-scan, s05]
 sources:
   - https://www.youtube.com/watch?v=O7etCBod2IY
 ---
 
-> **Video:** "How Block Deployed Goose to 12,000 Employees in 8 Weeks with MCP | Angie Jones" — channel *The Chain of Thought Podcast* — uploaded 2026-10-01 — 50m 27s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "How Block Deployed Goose to 12,000 Employees in 8 Weeks with MCP | Angie Jones" — channel *The Chain of Thought Podcast* — uploaded 2026-01-21 — 50m 27s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
 
 [music] Welcome back to Chain of Thought everyone. I am your host Connor Bronzen, head of technical ecosystem at Modular. Today's conversation is about something most companies are still struggling with frankly. How do you actually deploy AI agents to your entire workforce, not just an elite few, not just your engineers, and do it safely at some company that maybe is regulated, say a fintech company? My guest today has actually solved that problem and maybe has some hard-earned lessons for us and that is Angie Jones. Angie is a very well-known VP of engineering for AI tools and enablement at Block. While most companies are still running pilot programs with their developers, Angie and her team actually deployed AI agents to all 12,000 Block employees in uh about 8 weeks it sounds like. And they did it at a company that handles Square and Cash App where security isn't optional. Angie is
 

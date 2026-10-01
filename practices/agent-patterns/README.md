@@ -81,6 +81,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 (s5) — `tool-transport-decision-table.md`: a paragraph for **provider server tools** (web search, web fetch, code execution, memory): no transport to run; controls are `max_uses`, domain lists, `allowed_callers`; results echoed back unchanged. Source `sources/2026-10-01-s05-context-memory-permissions-evals-digest.md` row 33.
 - 2026-10-01 (s4) — `tool-definition-template.md` §Template: mark tools `strict` where supported; description rules extend to output schemas (when / how / what). Source `sources/2026-10-01-s04-structured-outputs-digest.md` rows 2 and 4.
 - 2026-10-01 — `tool-definition-template.md` gets a day-zero home (`docs/`) before any tool exists; shape-A bootstrap: assertion 1 passed, 2/4/5 n.a. for a tool *provider* with no loop.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.

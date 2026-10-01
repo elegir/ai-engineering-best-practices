@@ -64,7 +64,7 @@ This field renames itself every few months. Below are the terms as used in this 
 
 **Plan mode.** An agent mode that reads and proposes but does not edit. Best practice: plan → human approves → execute.
 
-**Eval.** A repeatable test of *agent behavior* (not just code): given this task, does the agent produce an acceptable result? Used in CI to catch regressions in the harness.
+**Eval.** Systematic measurement of an LLM application's quality on its own tasks — code assertions and judges in CI, graded production samples, A/B tests — preceded by error analysis. The harness sense (three tasks run after a harness change, `05-verification-loops.md`) is the smallest case. Husain and Shankar (2025-09); Yan (2025-04); Anthropic (2026-01). Principle: `14-evals-and-error-analysis.md`.
 
 **Progressive disclosure.** Loading only metadata first and full content on demand, so many knowledge items can exist without consuming context. The principle behind skills, short entry files, and this KB's `INDEX.md`.
 
@@ -128,11 +128,44 @@ This field renames itself every few months. Below are the terms as used in this 
 
 **Prompt injection (direct / indirect).** Instructions that reach the model as data and are followed as commands — typed by the user (direct) or planted in content the model fetches or in a tool description (indirect). Structurally possible because the model has no separation between instructions and data, so the control is a trust boundary in code, not a prompt. Carpintero (2026-04); OWASP LLM01:2025. Rows: `practices/security-baseline/threat-model-agentic.md`.
 
+**Error analysis (open coding, axial coding).** One specific note per trace about the most upstream error, then clustering notes into named failure modes and counting. Husain and Shankar (2025-09). File: `practices/evals/error-analysis-log.md`.
+
+**Theoretical saturation.** When more traces produce no new kind of note — the stopping rule for open coding. Shankar (2025-09).
+
+**Benevolent dictator.** The one domain expert whose taste decides labels and rubrics; committees make labelling too expensive to do. Husain (2025-09).
+
+**Criteria drift.** Criteria cannot be fixed before looking at outputs; rubrics and earlier grades change as more is seen, so read at least twenty outputs first. Shankar et al. (2024); Yan (2024-08).
+
+**Judge calibration.** Measuring a judge as a classifier against human labels on a held-out set — TPR/TNR or Cohen's κ with the confusion matrix — never raw agreement; then pinning model and prompt. Husain (2024); Lucas (2026-07); Yan (2024-08). Script: `practices/evals/eval_harness.py --calibrate`.
+
+**Judge bias (position, verbosity, self-enhancement).** Preferring the first option in a pair, longer answers, and the judge's own outputs. Zheng et al. (2023) via Yan (2024-08).
+
+**Task / trial / grader / transcript / outcome / eval harness / suite.** Anthropic's agent-eval vocabulary (2026-01): a task is inputs plus success criteria; a trial is one attempt; a grader scores one aspect; the transcript is the full record; the outcome is the final environment state; the eval harness runs, records, grades and aggregates; a suite is a set of tasks.
+
+**Capability vs regression eval; pass@k vs pass^k.** Capability suites start at a low pass rate and graduate; regression suites are held near 100 %. pass@k is at least one success in k trials; pass^k is all k — (0.75)³ ≈ 42 %. Anthropic (2026-01); Klein (2026-04).
+
+**Memory (semantic / episodic / procedural; short-term / long-term).** Facts, events and instructions an agent keeps; thread-scoped state vs a cross-session namespaced store. LangChain; CoALA; Alake (2026-04). Principle: `15-memory-external-context-and-permissions.md`.
+
+**Extract → consolidate.** Candidate facts from an exchange, their nearest existing memories retrieved, a reasoning model deciding add / update / forget / noop. Mem0 (2025-04). Reference: `practices/memory-and-permissions/memory_store.py`.
+
+**Sleep-time compute.** A background agent that consolidates memory and pre-processes documents while the user is away. Letta (2025-07).
+
+**Forgetting (vs deleting).** Removing a memory from recall by status or a decayed recency × relevance × importance score while keeping its trail; a separate erasure path where law requires. Alake (2026-04); Generative Agents (2023).
+
+**Memory engineering vs context engineering.** The storage side (retrieval, indexing, forgetting) vs the window side (budget, just-in-time retrieval, composition). Alake (2026-04).
+
+**Non-human identity (NHI); just-in-time access.** An identity for an agent, controlled with the same visibility as a human user's, with short-lived, vault-issued credentials granted only while needed. IBM (2026-02). That each spawned sub-agent gets its own narrower identity is this KB's extension (opinion).
+
+**Pre-filter vs post-filter authorisation (RAG).** Constraining the query to authorised ids vs checking each result after retrieval; chosen by hit rate. Pinecone/AuthZed (2026-01).
+
+**Approval (interruption with resumable state).** A tool call that pauses the run, returns serialisable state, resumes on a human decision; fails closed when review is unavailable. OpenAI Agents SDK (read 2026-10-01). Rule: `practices/verification/dry-run-and-approval.md` 2b.
+
 **Brownfield / greenfield.** Existing codebase vs. new project. Most real work is brownfield; frameworks that require describing the whole system up front fit it badly.
 
 ## Change log
 
 - 2026-09-08 — created from the LIDR workshop and the structuring-research entry.
+- 2026-10-01 (s5) — "Eval" rewritten (systematic measurement preceded by error analysis); added Error analysis, Theoretical saturation, Benevolent dictator, Criteria drift, Judge calibration, Judge bias, Task/trial/grader/transcript/outcome/harness/suite, Capability vs regression and pass@k vs pass^k, Memory (types and scopes), Extract → consolidate, Sleep-time compute, Forgetting vs deleting, Memory engineering vs context engineering, NHI / just-in-time access, Pre-filter vs post-filter authorisation, Approval (interruption with resumable state). Source: `sources/2026-10-01-s05-context-memory-permissions-evals-digest.md` §7.8.
 - 2026-10-01 (s4) — added Structured outputs / constrained decoding, JSON mode, Strict tool use, Re-ask, Guardrail (runtime), System-one model / decision model, Generative UI, Prompt injection. Source: `sources/2026-10-01-s04-structured-outputs-digest.md`.
 - 2026-09-30 (s3) — added LLM gateway, Fallback vs retry, Cooldown, SSE, Semantic cache, 12-Factor Agents. Source: `sources/2026-09-30-s03-wrappers-digest.md`.
 - 2026-09-27 (s2) — added Context engineering (runtime sense), Context rot, Compaction, KV cache, CAG, Poisoning/distraction/confusion/clash; Context entry's "context rot" now points to the new entry. Source: `sources/2026-09-27-s02-context-caching-digest.md`.

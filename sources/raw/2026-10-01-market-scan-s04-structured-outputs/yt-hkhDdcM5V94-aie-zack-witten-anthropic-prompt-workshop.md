@@ -2,13 +2,13 @@
 title: "RAW transcript — Building with Anthropic Claude: Prompt Workshop with Zack Witten"
 type: source
 status: current
-date: 2026-10
+date: 2024
 tags: [raw, transcript, structured-outputs, guardrails, generative-ui, market-scan, s04]
 sources:
   - https://www.youtube.com/watch?v=hkhDdcM5V94
 ---
 
-> **Video:** "Building with Anthropic Claude: Prompt Workshop with Zack Witten" — channel *AI Engineer* — uploaded 2026-10-01 — 1h 34m — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Building with Anthropic Claude: Prompt Workshop with Zack Witten" — channel *AI Engineer* — uploaded 2024 — 1h 34m — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
 
 [Music] all right good afternoon everybody thank you all so much for for joining us we have the uh envi pos enviable position of being after lunch I'm seeing some cookies on the table still but thankfully you're not here to listen to me you're going to be riveted by The Prompt doctor he's going to come up in a second so I'm expecting no sleeping on the table but but you never know um excited to be here I'm Jamie newor I lead our startup team at anthropic and I just wanted to say a couple of quick things before we got going here with again the reason you're here the prompt doctor uh we've had a lot of really exciting releases just in the last couple of days some in the last couple of hours and wanted to just put these up there to highlight some of the cool things that we're doing but also share how a lot of folks not only in this room some of your peers maybe f folks back at the office
 

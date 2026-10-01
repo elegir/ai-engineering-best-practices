@@ -2,13 +2,13 @@
 title: "RAW transcript — Generative UI: Specs, Patterns, and the Protocols Behind Them (MCP Apps, A2UI, AG-UI)"
 type: source
 status: current
-date: 2026-10
+date: 2026-01
 tags: [raw, transcript, structured-outputs, guardrails, generative-ui, market-scan, s04]
 sources:
   - https://www.youtube.com/watch?v=Z4aSGCs_O5A
 ---
 
-> **Video:** "Generative UI: Specs, Patterns, and the Protocols Behind Them (MCP Apps, A2UI, AG-UI)" — channel *CopilotKit* — uploaded 2026-10-01 — 54m 18s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Generative UI: Specs, Patterns, and the Protocols Behind Them (MCP Apps, A2UI, AG-UI)" — channel *CopilotKit* — uploaded 2026-01-30 — 54m 18s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
 
 All right, cool. Welcome everyone. Um, yeah, so today we're going to be talking about building aic applications um with a focus on generative UI and um this is all within the context of copilot kits and agui uh both of which are frameworks for building aentic applications as well as transporting and rendering and creating generative UI. So let's get right into it. Um I'm Tyler. I'm a founding engineer here at Copilot Kits. I am joined by Nathan and I think Ulie is somewhere in the chat somewhere. Uh Nathan, you want to introduce yourself? >> Yeah. Yeah. So I'm the senior Devril at Copilot Kit and I spend most of my time working with the community and understanding um from a simple and deep perspective on how folks are building agentic systems and then from there how we can help them and then that usually plays into being kind of in the middle between the user teams and customers and
 

@@ -37,7 +37,7 @@ The product calls a model and one of these symptoms appears: code runs `json.loa
 - The model output is read only by a person and never by code (a draft the user edits by hand). The prompt rules of `../llm-api-calls/` still apply; nothing here does.
 - The call itself — client module, prompt structure, caching, provider choice — is `../llm-api-calls/`; this folder sits on top of its client module and imports it.
 - Routing, fallback, streaming transport and tracing are `../llm-gateway/`; guardrail *placement* rules there point here for *content*.
-- Evals as a discipline (datasets, judges, regression tiers) — evals practice (pending, sessions 5/11/16). This folder gives the per-class consistency rule and the fixture only.
+- Evals as a discipline (datasets, judges, regression tiers) — `../evals/` (draft, unrouted, 2026-10-01). This folder gives the per-class consistency rule and the fixture only.
 - Protocol detail for generative UI (AG-UI, A2UI, MCP Apps) and the depth of code sandboxing — sessions 13 and 14 (`../../sources/scan-log.md`).
 
 ## Files in this folder
@@ -96,5 +96,6 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 (s5) — `decision-vs-generation.md` rule 4: for a *grader*, binary per failure mode first, five classes only for a graded decision; `guardrail-policy.md` G4 (an approval is a paused run with serialised, resumable state) and G6 (authorisation pre-filter or post-filter chosen by hit rate → `../memory-and-permissions/permission-model.md`). Source `sources/2026-10-01-s05-context-memory-permissions-evals-digest.md` rows 6, 36, 37.
 - 2026-10-01 — created from the session-4 market scan digest (draft, **unrouted** per decision 0004 §6: no row in `practices/README.md`, absent from `ROUTER.md` until the previous module's day-0 files pass Verify in a real repo). Reference `structured_call.py` parses once placeholders are replaced and prints the request shape with `--demo`; no field report yet.
 - 2026-10-01 (review) — `structured_call.py` moved from `messages.parse` to `messages.create` + `output_config` (the SDK's `parse` validates eagerly, which made the truncated branch and the re-ask loop unreachable), now imports the vendor client from the `llm-api-calls` module instead of instantiating its own (assertion 1 of that practice), and names five branches; tested with a stubbed `messages.create`: valid → ok, `max_tokens` → truncated, `refusal` → refusal, validator failure → one re-ask carrying the message then `invalid`, transport error → error. `schema-design-rules.md`: `pattern` is supported by Anthropic's API, stripped by the Python SDK helper; optionals "roughly double" state space, unions are "exponential". `guardrail-policy.md`: `run_in_parallel` is an input-guardrail option; the parallel allowance for text guards is Twilio's; the "Output withheld" placeholder applies to terminal tool outputs. `decision-vs-generation.md`: the smart if-statement is Type-Safe AI's guidance via Witteveen; Boundary's is the threshold example. Stack-notes gain package URLs (decision 0005 §5).

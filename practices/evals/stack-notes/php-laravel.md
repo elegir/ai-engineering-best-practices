@@ -1,0 +1,15 @@
+# Stack-notes — PHP / Laravel
+
+Written 2026-10-01 from the contract; no field report yet. Tasks are data and graders are functions, so the harness ports as a test class plus a job; what changes is the runner, where the production sample runs, and that the judge call goes through the app's one LLM client. Check package versions at adoption.
+
+- **Runner:** PHPUnit (https://phpunit.de/) or Pest (https://pestphp.com/) with a **data provider** that reads the same `evals/tasks.jsonl`; one test per task runs `k` trials in a loop and fails on pass^k below the floor, printing the worst trial's reason — never `assertTrue($mean > 0.8)`.
+- **Clean environment per trial:** `RefreshDatabase` or a transaction per trial, a fresh `Storage::fake()` disk, `Http::fake()` for third parties; a trial must not see the previous trial's rows (assertion 5).
+- **Graders:** plain PHP functions returning `pass` / `fail` / `unknown` with a reason; the outcome check reads the database state after the run (a reservation row exists), not the text that says "booked".
+- **Judge call:** through the app's single LLM client class (`../../llm-api-calls/stack-notes/php-laravel.md`) with the `{reasoning, verdict}` schema as a native structured output (`../../structured-outputs/stack-notes/php-laravel.md`); the judge prompt file's header (`model`, `version`) is parsed and compared with the configured model before any call, as the Python reference does.
+- **Calibration:** a console command (`php artisan evals:calibrate handoff`) reads `evals/labels/handoff.jsonl`, runs the judge, prints TPR, TNR, κ and the 2×2 matrix (arithmetic on four integers, no package), exits non-zero below the floors in `docs/eval-policy.md`.
+- **Production sample:** a **queued job** on the scheduler (`$schedule->job(...)->daily()`) samples yesterday's traces at the policy rate and grades them with the same judges; rates appended to a table or a JSONL so the series is visible; PHP-FPM has no long-lived process to do this inline.
+- **CI gate:** the eval test class runs in the pipeline on changes to `resources/prompts/**`, schema files, tool definitions, the model registry and `docs/eval-policy.md`; it is a separate job from unit tests because it costs model calls.
+- **Datastore:** Langfuse (https://langfuse.com/) has an HTTP API usable from PHP for traces and scores; keep judge prompts, labels and calibration records in the repo.
+- **Viewer:** `annotation-ui-brief.md` built as a small Livewire (https://livewire.laravel.com/) or Filament (https://filamentphp.com/) page over the exported JSONL, local only; or the Python viewer run beside the app — the export format is the interface.
+- **Pitfall:** `Http::fake()` left active in a trial that should call the real model turns the eval into a test of the fake; the eval job sets the real client explicitly and asserts the usage log grew.
+- **Pitfall:** a judge threshold from a package default (a 0–1 "relevance" at 0.5) wired into `assert` — map through a calibrated threshold or do not gate on it (assertion 3).

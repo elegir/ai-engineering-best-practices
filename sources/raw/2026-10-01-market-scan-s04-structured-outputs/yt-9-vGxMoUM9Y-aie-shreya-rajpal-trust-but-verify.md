@@ -2,13 +2,13 @@
 title: "RAW transcript — Trust, but Verify: Shreya Rajpal"
 type: source
 status: current
-date: 2026-10
+date: 2023-11
 tags: [raw, transcript, structured-outputs, guardrails, generative-ui, market-scan, s04]
 sources:
   - https://www.youtube.com/watch?v=9-vGxMoUM9Y
 ---
 
-> **Video:** "Trust, but Verify: Shreya Rajpal" — channel *AI Engineer* — uploaded 2026-10-01 — 19m 41s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Trust, but Verify: Shreya Rajpal" — channel *AI Engineer* — uploaded 2023-11-25 — 19m 41s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
 
 [Music] hey everyone thank you for coming I am Shrea rajal I am the uh I one of the co-founders and the CEO of God rails AI uh and today we are going to be talking about trust but verify which is a new programming paradigms that we need as we're entering gen native uh application development uh before we get started a little bit about me uh uh as I mentioned I'm currently uh at God reals AI in the past I've spent about a decade or so working in machine learning uh previously I was the machine learning infrastructure lead at prase which is uh an infrastructure uh machine learning infrastructure company I spent uh a number of years in the self-driving car space working across the stack of self-driving uh and before that did Research In classical Ai and deep learning awesome so we're seeing this massive explosion in uh AI applications over the last year uh there's a lot of excitement and
 

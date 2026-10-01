@@ -1,0 +1,16 @@
+# Stack-notes — PHP / Laravel
+
+Written 2026-10-01 from the contract; no field report yet. The mechanism is a table with an owner column, a queued consolidation step that calls a reasoning model, a query whose first predicate is the identity, and a forget that updates status while erase deletes. Check package versions at adoption.
+
+- **Memory unit as an Eloquent model** (`memories` table: `owner_id`, `tenant_id`, `type`, `text`, `status`, `importance`, `source`, `trail` JSON, timestamps) with a **global scope** that adds the identity predicate to every query — the scope is the identity filter of assertion 3 and is removed only inside the erasure job and audit queries (`withoutGlobalScope`, logged).
+- **Consolidation in a queued job** dispatched after the response (`dispatch(...)->afterResponse()` or a queue worker): extract → neighbours → the reasoning-model decision → apply; PHP-FPM cannot do it after the reply inline, so the queue is the off-response path (assertion 7).
+- **Model calls** through the app's single LLM client (`../../llm-api-calls/stack-notes/php-laravel.md`) with the `{reasoning, action, target, new_text}` schema as a native structured output (`../../structured-outputs/stack-notes/php-laravel.md`); the consolidation model is a reasoning tier, the extraction model may be cheaper.
+- **Neighbours:** a full-text index (`FULLTEXT` or Postgres `tsvector`) on day one; `pgvector` (https://github.com/pgvector/pgvector) via a Laravel package such as `pgvector/pgvector-php` (https://packagist.org/packages/pgvector/pgvector) when a per-owner store grows; the similarity query still carries the tenant and owner predicates.
+- **Bounded reads:** `limit($k)` plus a character budget applied before the block is rendered into the prompt; the block is a Blade partial that labels each type (assertion 8).
+- **Forget vs erase:** `forget()` updates `status` and appends to `trail`; `erase()` is a job that deletes the row and the vector entry inside a transaction and writes the DSAR reference to the audit log (`spatie/laravel-activitylog`, https://packagist.org/packages/spatie/laravel-activitylog, if already in use) — never the content.
+- **Exclusions:** a validation rule class applied to every candidate text at extraction (secret shapes, excluded field names from `memory-design.md` §4); the rule is unit-tested with the strings that must never be stored (assertion 5).
+- **Namespace validation:** owner keys are ids, never paths; if the provider's memory tool is used, the handler canonicalises paths and refuses traversal before mapping `/memories` to `<tenant>/<user>/` (`memory-tool-handler-notes.md`).
+- **Memory tool:** the Anthropic PHP SDK wraps a handler in the generic runnable-tool helper (docs 2026-10-01); the handler class implements the six commands over the same table.
+- **Eval:** `memory-eval.md` cases as a PHPUnit/Pest data provider replaying sessions through the product with a frozen clock (`Carbon::setTestNow`) and `RefreshDatabase` per trial; pass^k 1.0 over five trials.
+- **Pitfall:** a `tenant_id` added as a trait on some models and forgotten on the memories table — the two-identity test (assertion 3) is what catches it.
+- **Pitfall:** consolidation run synchronously in the controller "for now" — assertion 7's negative; the queue is not optional in a request-scoped runtime.

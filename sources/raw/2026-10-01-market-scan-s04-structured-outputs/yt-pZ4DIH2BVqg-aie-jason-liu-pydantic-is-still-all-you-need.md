@@ -2,13 +2,13 @@
 title: "RAW transcript — Pydantic is STILL all you need: Jason Liu"
 type: source
 status: current
-date: 2026-10
+date: 2024-09
 tags: [raw, transcript, structured-outputs, guardrails, generative-ui, market-scan, s04]
 sources:
   - https://www.youtube.com/watch?v=pZ4DIH2BVqg
 ---
 
-> **Video:** "Pydantic is STILL all you need: Jason Liu" — channel *AI Engineer* — uploaded 2026-10-01 — 15m 21s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Pydantic is STILL all you need: Jason Liu" — channel *AI Engineer* — uploaded 2024-09-06 — 15m 21s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
 
 [Music] so the context from last year's talk was pantic all you need it was a very popular talk you know it kind of like kicked off my Twitter career and uh today I'm coming back a year later to basically say the same thing again uh pantic is still all you need and really my goal is to share with you sort of what I've learned for the past last year and and and the problem has always been the fact that if I had hired an intern to write an API for me and that API returns a string that I have the Json loads into a dictionary and then just pray that the data was still there to begin with I would be pretty pissed off I would probably just fire them replace them with Devon and just prompted to use fast API and pantic because you know I'm really tired of writing code like this right and this is the kind of code that we wrote when we had to work with things like chat gbt uh gbt 3 and stuff like
 

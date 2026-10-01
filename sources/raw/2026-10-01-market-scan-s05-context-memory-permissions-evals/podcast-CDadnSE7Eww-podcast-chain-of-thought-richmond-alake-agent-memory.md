@@ -2,13 +2,13 @@
 title: "RAW transcript — Agent Memory: The Last Battleground in the AI Stack | Richmond Alake, Oracle"
 type: source
 status: current
-date: 2026-10
+date: 2026-04
 tags: [raw, transcript, evals, memory, permissions, external-context, market-scan, s05]
 sources:
   - https://www.youtube.com/watch?v=CDadnSE7Eww
 ---
 
-> **Video:** "Agent Memory: The Last Battleground in the AI Stack | Richmond Alake, Oracle" — channel *The Chain of Thought Podcast* — uploaded 2026-10-01 — 59m 23s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Agent Memory: The Last Battleground in the AI Stack | Richmond Alake, Oracle" — channel *The Chain of Thought Podcast* — uploaded 2026-04-02 — 59m 23s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
 
 Memory is the last battleground for anyone that operates in the AI stack. And here's what I mean. Everyone is trying to solve memory. Database companies, model providers, everyone has got a say on how memory should be modeled in agentic systems. But a single developer can build a memory system that can remember better than a chat GPT. >> [music] >> We are back on Causal AI. Hi everyone. I am your host Connor Broxton, head of technical ecosystem at Modular. Before we dive in, a quick thank you to our presenting sponsors Galileo. Check them out at galileo.ai for your AI eval needs and much more. My guest today is really fantastic, honestly. And that is Richmond Alake. Richmond is director of AI developer experience at Oracle. He's one of the most serious technical voices on agent memory right now. His AI Engineer World's Fair talk on architecting agent memory recently crossed 100,000
 

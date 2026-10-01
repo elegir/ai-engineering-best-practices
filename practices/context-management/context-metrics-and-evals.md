@@ -30,6 +30,8 @@ Context failures are reported by users because dev testing is short. Make them r
 
 Extend with: a case where the user reverses a requirement at turn 5 (checks *replace, don't append*); a case with a duplicated tool result (checks dedupe); a case that crosses the compaction trigger between N and N+1 (checks that the summary preserved the `must_preserve` list).
 
+**Cross-session case (added 2026-10-01, s5).** The long-session eval tests turn N+1 *within* a session; memory fails *across* sessions. Add: a fact stated in session 1 is used in session N (the tool call or the answer carries it); a fact contradicted in session 3 is *updated* — session N uses the new value and the old unit is marked forgotten — never both. Five runs, worst case reported. Cases and graders: `../memory-and-permissions/memory-eval.md`, run through `../evals/eval_harness.py`.
+
 ## 3. Isolation rules for sub-agents
 
 | Rule | Why | Source |

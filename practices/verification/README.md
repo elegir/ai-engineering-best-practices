@@ -82,6 +82,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 (s5) — `dry-run-and-approval.md` rule 2b: the paused action is serialised run state resumed on the decision, so the approval survives a restart; fail closed when review is unavailable (the OpenAI Agents SDK, read 2026-10-01, agrees with this KB's inverted default). Source `sources/2026-10-01-s05-context-memory-permissions-evals-digest.md` row 36.
 - 2026-10-01 (s4) — `dry-run-and-approval.md` rule 2b: confidence-gated approval with a time-boxed window (threshold and window in code; expiry does not send). Source `sources/2026-10-01-s04-structured-outputs-digest.md` row 22 (Bhardwaj; Boundary).
 - 2026-10-01 — `stack-notes/python.md` added (walking skeleton, src layout, seeding, one-line refusal); `test_smoke.py` CLI test passes `PYTHONPATH=src`; one dry-run switch name across the practice. Two bootstraps (`sources/2026-10-01-field-report-shape-b-bootstrap.md`, `sources/2026-10-01-field-report-shape-a-bootstrap.md`): assertions 1, 2, 6 passed with negatives in both; 3–5 await Martin.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.

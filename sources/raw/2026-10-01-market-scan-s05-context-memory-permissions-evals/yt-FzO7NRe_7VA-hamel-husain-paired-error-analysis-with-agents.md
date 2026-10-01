@@ -2,13 +2,13 @@
 title: "RAW transcript — Paired Error Analysis With AI Agents"
 type: source
 status: current
-date: 2026-10
+date: 2026-04
 tags: [raw, transcript, evals, memory, permissions, external-context, market-scan, s05]
 sources:
   - https://www.youtube.com/watch?v=FzO7NRe_7VA
 ---
 
-> **Video:** "Paired Error Analysis With AI Agents" — channel *Hamel Husain* — uploaded 2026-10-01 — 25m 37s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Paired Error Analysis With AI Agents" — channel *Hamel Husain* — uploaded 2026-04-27 — 25m 37s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
 
 Today, we're here with Isaac. I've been working with Isaac for a really long time, both in open source and cross some companies. Today, we're going to be live coding an annotation app using something that he isn't built, but I don't want to ruin it. I'm going to let him tell you about it. >> So, a few weeks ago, or I guess it's been almost 6 weeks ago, I started working with a team at Spec Story, and we're getting close to a beta launch. So, we're going to show a tool that we've been building. You can kind of think about it as taking Claude code capabilities and putting it inside like a Zoom app with Google Docs, kind of all together. Okay, so this is Stoa. Couple of things that you'll notice. We are actually in a live call. You don't have to be in a call to use Stoa. You can see we have files here. You know, I can create a markdown file. And uh Hamel can go into this. This is Google
 
