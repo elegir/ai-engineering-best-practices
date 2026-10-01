@@ -3,7 +3,7 @@ title: "Knowledge-base design — how to keep accumulated know-how usable by age
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-08
+last-reviewed: 2026-10-01
 tags: [knowledge-base, documentation, adr, progressive-disclosure, rot]
 sources:
   - sources/2026-09-08-how-teams-structure-agent-knowledge.md
@@ -65,6 +65,11 @@ OpenAI runs a "doc-gardening" agent; the practitioner guide runs garbage-collect
 3. Every quarter: run the gardening pass.
 4. Never delete; supersede.
 
+
+### Learning from the method itself (added 2026-10-01)
+
+A knowledge base that improves "on the march" needs two feedback channels, and they go to different readers. **Field reports** from consuming repos (`templates/field-report.md`, `practices/adoptions.md`) change the *content* — a wrong assertion, a missing stack note, a template that fails its own Verify — and reach every reader through the practices. **The method log** (`sources/method-log.md`) records where the *production* of the KB failed (a transcript paid twice, a vendor fact read from a summary, a reference with dead code) and the rule that fixed it; its reader is whoever maintains or copies this KB's method. Both are appended in the same publish as the fix, and the fix must be a sentence in a playbook, a line in a template or a check in a script — a log row alone changes nothing.
+
 ## 5. Anti-patterns
 
 - One `BEST_PRACTICES.md` that grows forever with no dates.
@@ -80,5 +85,6 @@ OpenAI runs a "doc-gardening" agent; the practitioner guide runs garbage-collect
 
 ## 7. Change log
 
+- 2026-10-01 — section "Learning from the method itself": two feedback channels (field reports → content; method log → the KB's own method), from `sources/method-log.md`.
 - 2026-09-08 — created.
 - 2026-09-08 — added the `practices/` layer (applicable files per principle) after Martin clarified the KB must carry copyable, stack-adaptable examples, not only explanations.
