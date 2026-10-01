@@ -2,13 +2,13 @@
 title: "RAW transcript — Agent Engineering with Pydantic + Graphs — with Samuel Colvin, CEO of Pydantic Logfire"
 type: source
 status: current
-date: 2026-10
+date: 2025-02
 tags: [raw, transcript, structured-outputs, guardrails, generative-ui, market-scan, s04]
 sources:
   - https://www.youtube.com/watch?v=7wwWRph3Jls
 ---
 
-> **Video:** "Agent Engineering with Pydantic + Graphs — with Samuel Colvin, CEO of Pydantic Logfire" — channel *Latent Space* — uploaded 2026-10-01 — 1h 2m — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Agent Engineering with Pydantic + Graphs — with Samuel Colvin, CEO of Pydantic Logfire" — channel *Latent Space* — uploaded 2025-02-06 — 1h 2m — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
 
 [Music] hey everyone welcome to the lateen space podcast this is alesio partner and CTO at deible partners and I'm joined by my co-host swix founder of small AI good morning uh and uh today we're very excited to have Sam koven join us from pantic AI welcome thank you so much for having me yeah it's great to be here Sam I heard that pantic is all we need is that true I would say you might need pantic Ai and log fire as well but um it gets you a long way that's for sure hentic almost basically needs no introduction it's you know it's almost 300 million downloads in December and obviously uh in the previous podcasts and discussions we've had with Jason Lou he's been a big fan and promoter of pantic nii yeah it's it's it's weird because obviously we didn't I didn't create pantic originally for for uses in AI obviously predates llms but it's like we've been lucky that it's been picked up by
 

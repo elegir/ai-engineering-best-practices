@@ -2,13 +2,13 @@
 title: "RAW transcript — AI Evals for Cross-Functional Teams — Nachiket Paranjape & Swaroop Chitlur Haridas, DoorDash"
 type: source
 status: current
-date: 2026-10
+date: 2026-08
 tags: [raw, transcript, evals, memory, permissions, external-context, market-scan, s05]
 sources:
   - https://www.youtube.com/watch?v=bMjlRrWjdT0
 ---
 
-> **Video:** "AI Evals for Cross-Functional Teams — Nachiket Paranjape & Swaroop Chitlur Haridas, DoorDash" — channel *AI Engineer* — uploaded 2026-10-01 — 16m 11s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "AI Evals for Cross-Functional Teams — Nachiket Paranjape & Swaroop Chitlur Haridas, DoorDash" — channel *AI Engineer* — uploaded 2026-08-28 — 16m 11s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
 
 [music] Good afternoon everyone. Thanks for uh coming for a post lunch uh talk. Always appreciate that. Um my name is Farup and here's my teammate Nachiket. Uh we are uh here behalf of the Door Dash Genai platform team. Um and we kind of wanted to share our eval journey. Uh it started as uh uh you know eval is another engineering thing but then it slowly we realized it evolved into a cross functional effort and we kind of want to share our story here. So what is this team? This team is a gen platform team. Uh we are a horizontal team that helps all other product teams. So product teams at Door Dash build on top of the infrastructure and the primitives that we provide. Um and we see our uh USP and the value that we provide is that we help product teams balance these three forces which is accuracy, latency and cost. Um initially we applied this in terms of models but if you think about it
 

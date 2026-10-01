@@ -2,13 +2,13 @@
 title: "RAW transcript — Securing AI Agents with Zero Trust"
 type: source
 status: current
-date: 2026-10
+date: 2026-02
 tags: [raw, transcript, evals, memory, permissions, external-context, market-scan, s05]
 sources:
   - https://www.youtube.com/watch?v=d8d9EZHU7fw
 ---
 
-> **Video:** "Securing AI Agents with Zero Trust" — channel *IBM Technology* — uploaded 2026-10-01 — 13m 32s — English, manual captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Securing AI Agents with Zero Trust" — channel *IBM Technology* — uploaded 2026-02-10 — 13m 32s — English, manual captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
 
 We've entered the age of agentic AI, systems that don't just think, but they also act. Agents can talk to APIs. They can call tools. They can buy things. They can move data, even create sub-agents. But every new capability adds a new attack surface, yet another way the bad guys can get into our systems. So how do we protect this new ecosystem? We bring zero trust. Never trust. Always verify. I know, I know, you've heard about zero trust before. Isn't that just a marketing slogan that all the vendors used and abuse in order to get us to buy whatever they had on the truck? Well, yes and no. Definitely the term got hijacked by overzealous sellers trying to meet their quotas. But I'm a cybersecurity architect, and I never got confused by all that noise because I knew there were some solid, even game-changing security principles worth holding on to. And now that we have AI agents popping up
 

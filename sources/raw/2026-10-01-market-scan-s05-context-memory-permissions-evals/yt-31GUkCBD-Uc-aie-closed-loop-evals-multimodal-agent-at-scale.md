@@ -2,13 +2,13 @@
 title: "RAW transcript — Building Closed-Loop Evals for a Multimodal Agent at Scale — Soumya Gupta & Jai Chopra, Uber"
 type: source
 status: current
-date: 2026-10
+date: 2026-07
 tags: [raw, transcript, evals, memory, permissions, external-context, market-scan, s05]
 sources:
   - https://www.youtube.com/watch?v=31GUkCBD-Uc
 ---
 
-> **Video:** "Building Closed-Loop Evals for a Multimodal Agent at Scale — Soumya Gupta & Jai Chopra, Uber" — channel *AI Engineer* — uploaded 2026-10-01 — 21m 38s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Building Closed-Loop Evals for a Multimodal Agent at Scale — Soumya Gupta & Jai Chopra, Uber" — channel *AI Engineer* — uploaded 2026-07-24 — 21m 38s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
 
 [music] >> My name is Jay and I'm here with Sonya. We are part of the computer vision team at Aruba. We're going to talk to you about a real world production use. Oh, my son done. Okay. Try again. Okay. Don't worry. I'll I'll manage. You hear me now? Okay, so we're going to talk to you today about a real world production use case and specifically we're going to dive into how we design the e-bows and the e-bow loops. So All right, cool. So just before we get into the agent design, we're going to talk about a little bit about the use case. So our delivery marketplace Uber Eats, we do about 90 billion run rate per year at the moment. We were adding millions of items to the marketplace each and every year. Sorry, every every month. We're growing at 20% year-on-year and and we operate in 10,000 cities globally. So not many people actually know this but our delivery marketplace is just as big
 

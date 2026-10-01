@@ -2,13 +2,13 @@
 title: "RAW transcript — Securing LLMs in Production: From OWASP Top-10 to Guardrails that Work - Rohit Bhardwaj"
 type: source
 status: current
-date: 2026-10
+date: 2026-06
 tags: [raw, transcript, structured-outputs, guardrails, generative-ui, market-scan, s04]
 sources:
   - https://www.youtube.com/watch?v=v9wFSDSjb_c
 ---
 
-> **Video:** "Securing LLMs in Production: From OWASP Top-10 to Guardrails that Work - Rohit Bhardwaj" — channel *Developer Summit* — uploaded 2026-10-01 — 59m 37s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Securing LLMs in Production: From OWASP Top-10 to Guardrails that Work - Rohit Bhardwaj" — channel *Developer Summit* — uploaded 2026-06-01 — 59m 37s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
 
 And as part of today, my goal is our real goal is to really look at this a practical what can you use? What can you take from this and use it tomorrow? So, I have certain things specifics thing which you can apply if you are not doing it. And it's possible some of them you are already doing it, some you might want to do later on. So, these are the two links which are useful for you. Okay, so you just keep these two links and this has all the details you need to follow this talk with the homework given for each of the assignment I have got. Okay? So, capture these two links. In the meanwhile, I'll start with the fact that I looked at the whole spectrum. And then I say that hey, is everything covered in the security? Not really. So, I had to come up with a trademark called LLM Shield. So, I'll discuss that trademark today which I have created which is going to really help you understand
 

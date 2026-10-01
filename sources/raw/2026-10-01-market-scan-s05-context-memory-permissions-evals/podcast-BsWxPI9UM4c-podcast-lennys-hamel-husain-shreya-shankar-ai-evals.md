@@ -2,13 +2,13 @@
 title: "RAW transcript — Why AI evals are the hottest new skill for product builders | Hamel Husain & Shreya Shankar"
 type: source
 status: current
-date: 2026-10
+date: 2025-09
 tags: [raw, transcript, evals, memory, permissions, external-context, market-scan, s05]
 sources:
   - https://www.youtube.com/watch?v=BsWxPI9UM4c
 ---
 
-> **Video:** "Why AI evals are the hottest new skill for product builders | Hamel Husain & Shreya Shankar" — channel *Lenny's Podcast* — uploaded 2026-10-01 — 1h 46m — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Why AI evals are the hottest new skill for product builders | Hamel Husain & Shreya Shankar" — channel *Lenny's Podcast* — uploaded 2025-09-25 — 1h 46m — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
 
 To build great AI products, you need to be really good at building evals. It's the highest ROI activity you can engage in. This process is a lot of fun. Everyone that does this immediately gets addicted to it when you're building an AI application. You just learn a lot. What's cool about this is you don't need to do this many, many times. For most products, you do this process once and then you build on it. >> The goal is not to do evals perfectly. It's to actionably improve your product. >> I did not realize how much controversy and drama there is around eval. There's a lot of people with very strong opinions. People have been burned by evals in the past. People have done evals badly, then they didn't trust it anymore and then they're like, "Oh, I'm anti- evals." >> What are a couple of the most common misconceptions people have with EVEL? The top one is we live in the age of AI. Can't
 

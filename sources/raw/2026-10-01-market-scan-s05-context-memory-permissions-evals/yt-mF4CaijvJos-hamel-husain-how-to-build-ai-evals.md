@@ -2,13 +2,13 @@
 title: "RAW transcript — How To Build AI Evals"
 type: source
 status: current
-date: 2026-10
+date: 2026-07
 tags: [raw, transcript, evals, memory, permissions, external-context, market-scan, s05]
 sources:
   - https://www.youtube.com/watch?v=mF4CaijvJos
 ---
 
-> **Video:** "How To Build AI Evals" — channel *Hamel Husain* — uploaded 2026-10-01 — 33m 39s — English, manual captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "How To Build AI Evals" — channel *Hamel Husain* — uploaded 2026-07-17 — 33m 39s — English, manual captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
 
 Welcome, everybody. Today we have Lucas. Lucas was a student in the evals course. He then went on to implementing evals in company, in the place that he works, and has some really cool use cases, like practical examples and what he did, trade-offs he made, the challenges he faced. And I love bringing these examples back. I am of the huge pleasure to be here with you all. And I wanted to start from the end to the place where we are right now, because I think it helps to tell the story backwards and to show where we are and then how we got here. And the main message that I want to bring is that it was really hard at the beginning. Today we can run evals without having to open tickets to extract data or to wait someone to run a script. We use Claude Code, talk to our eval project, and it goes with Hamel's skills, and it's really, really helpful. So I wanted to open my Claude Code and show a
 

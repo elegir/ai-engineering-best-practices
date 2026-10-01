@@ -2,13 +2,13 @@
 title: "RAW transcript — Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory // May 2025 Reading Group"
 type: source
 status: current
-date: 2026-10
+date: 2025-06
 tags: [raw, transcript, evals, memory, permissions, external-context, market-scan, s05]
 sources:
   - https://www.youtube.com/watch?v=cHQyugatz6M
 ---
 
-> **Video:** "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory // May 2025 Reading Group" — channel *AAIF Live* — uploaded 2026-10-01 — 58m 24s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory // May 2025 Reading Group" — channel *AAIF Live* — uploaded 2025-06-05 — 58m 24s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
 
 Good evening wherever you are in the world. Uh we are now recording just so everybody knows that. Thank you for starting that Benoy. Um really excited really excited this morning. I read this paper as I prepped for this last week and learned a tremendous amount because I also read all the sub prior papers on prior technology and this is a very very cool and important development in our industry for agent memory and I am really proud to uh have we are really proud to have Pratik here who's the founding AI engineer from me zero and I'll tell you a little bit more about him in a Um, let me just remind everyone of the guiding principles. Um, these are your sessions, okay? They're intended to be interactive. Um, I'm going to keep working on this until we get lots and lots of questions from the audience because the only way to learn and especially we have an amazing engineer who built this
 

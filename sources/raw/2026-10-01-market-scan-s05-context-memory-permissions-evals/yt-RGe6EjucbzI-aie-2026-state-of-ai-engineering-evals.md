@@ -2,13 +2,13 @@
 title: "RAW transcript — 'The biggest challenge in your stack? Evals, Evals, Evals' - 2026 State of AI Engineering results"
 type: source
 status: current
-date: 2026-10
+date: 2026-07
 tags: [raw, transcript, evals, memory, permissions, external-context, market-scan, s05]
 sources:
   - https://www.youtube.com/watch?v=RGe6EjucbzI
 ---
 
-> **Video:** "'The biggest challenge in your stack? Evals, Evals, Evals' - 2026 State of AI Engineering results" — channel *AI Engineer* — uploaded 2026-10-01 — 19m 47s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "'The biggest challenge in your stack? Evals, Evals, Evals' - 2026 State of AI Engineering results" — channel *AI Engineer* — uploaded 2026-07-21 — 19m 47s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
 
 [music] Now joining us on stage is the partner at Amplify Barren. [music] Fantastic. You did a great job practicing. I feel very very loved. Um, let's get started. So, like you just heard, my name is Bar. I run a survey every year on the state of AI engineering. And the funny thing about running a survey on the state of AI engineering is that the field changes as you make the slides. Just in the past week, we've had Frontier releases treated like national security events. Meta reportedly exploring selling AI compute. By the time I get off stage, maybe something else will happen. So, if I miss a major announcement while I'm up here, please come find me after. But that's exactly why we run the survey every year to cut through the noise, take a moment, step back and understand what AI engineers are actually doing. Uh for the first time this year, we were thrilled to partner with Notion and
 

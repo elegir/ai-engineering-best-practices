@@ -2,13 +2,13 @@
 title: "RAW transcript — Pydantic is all you need: Jason Liu"
 type: source
 status: current
-date: 2026-10
+date: 2023-11
 tags: [raw, transcript, structured-outputs, guardrails, generative-ui, market-scan, s04]
 sources:
   - https://www.youtube.com/watch?v=yj-wSRJwrrc
 ---
 
-> **Video:** "Pydantic is all you need: Jason Liu" — channel *AI Engineer* — uploaded 2026-10-01 — 17m 55s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Pydantic is all you need: Jason Liu" — channel *AI Engineer* — uploaded 2023-11-01 — 17m 55s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
 
 [Music] hey guys so I didn't know I was going to be one of the keynote speakers so this is probably going to be the most reduced scope talk of today I'm talking about typ hints and in particular I'm talking about how pantic might be all you need to build with language models in particular I want to talk about structured prompting which is the idea that we can use object to Define what we want back out rather than kind of praying to the llm gods that the comma is in the right place and the bracket was closed so everyone here basically kind of knows or at least agrees that large language models are kind of eating software but what this really means in production is 90% of the applications you build are just ones when you're asking a language model to Output Json or some structured output that you're parsing with a regular expression and that experience is pretty terrible and the reason
 

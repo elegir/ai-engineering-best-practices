@@ -2,13 +2,13 @@
 title: "RAW transcript — Jev Explained: The Fast AI Model We Tried to Break on Purpose"
 type: source
 status: current
-date: 2026-10
+date: 2026-09
 tags: [raw, transcript, structured-outputs, guardrails, generative-ui, market-scan, s04]
 sources:
   - https://www.youtube.com/watch?v=35PSMmDDKP8
 ---
 
-> **Video:** "Jev Explained: The Fast AI Model We Tried to Break on Purpose" — channel *Boundary* — uploaded 2026-10-01 — 42m 37s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Jev Explained: The Fast AI Model We Tried to Break on Purpose" — channel *Boundary* — uploaded 2026-09-25 — 42m 37s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
 
 It can't give you reasoning. It can't give you a sequence of text, but [music] it can still do a lot of things that LLMs were previously used for with really good semantic understanding without having to really go to the beefier models. And there's a new way to think about problem-solving. If you've been doing constraint decoding, you've been using structured outputs, you might have thought about problems this way, but the speed and the latency wins are insane and that again, changes what's possible. Like because of how fast it is and how cheap it is, the frequency at which you can use the system is so much higher and therefore, it's a paradigm shift, in my opinion. Today's episode is going to be about this new system one model that just came out called Jev and we're going to talk about whether or not it's useful, how you can use it and where you might find it most productive for your
 

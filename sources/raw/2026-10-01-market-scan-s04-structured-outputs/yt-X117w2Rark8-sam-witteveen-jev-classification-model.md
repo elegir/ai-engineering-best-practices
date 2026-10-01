@@ -2,13 +2,13 @@
 title: "RAW transcript — Jev - The Ultimate Classification Model?"
 type: source
 status: current
-date: 2026-10
+date: 2026-09
 tags: [raw, transcript, structured-outputs, guardrails, generative-ui, market-scan, s04]
 sources:
   - https://www.youtube.com/watch?v=X117w2Rark8
 ---
 
-> **Video:** "Jev - The Ultimate Classification Model?" — channel *Sam Witteveen* — uploaded 2026-10-01 — 16m 18s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Jev - The Ultimate Classification Model?" — channel *Sam Witteveen* — uploaded 2026-09-18 — 16m 18s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
 
 Okay, so if you pretty much look at what every Frontier lab has been doing over the past 2 years, it's all been in one direction. They've all been focused on reasoning, and to get that reasoning, mostly they've been focused on longer chains of thought and thinking budgets. And while those models are great, they'll have you sit there for multiple minutes before they even give you an answer back. And of course, if you wanted to see that chain of thought, the Frontier labs are not going to let you see it even though you're paying for it. So if you read Daniel Kahneman's book, Thinking Fast and Slow, you know that all this kind of reasoning stuff is system two thinking. It's slow, deliberate, effortful, whereas system one on the other hand is fast, intuitive, sort of like a gut call that you make really quickly without any deliberation. And here's where the subject of today's video, I think,
 

@@ -88,7 +88,7 @@ Core (`always`):
 Full (`acts_on_world or personal_data or regulated or multi_tenant`, in addition):
 
 5. The injection fixture eval passes: given content with hidden instructions, the agent reports them and does not execute them — observer: agent — negative: the agent follows an instruction found in fetched content
-6. Every MCP server or external tool the agent can reach has a row in the trust register (scope, credentials, read/write, blast radius, owner) — observer: Martin — negative: a server in the agent's configuration with no row
+6. Every MCP server or external tool the agent can reach has a row in the trust register (scope, credentials, read/write, blast radius, owner; the two columns added 2026-10-01 — identity the tool runs as with its credential lifetime, and admitted-by-review date with destructive annotations honoured — are filled where the full part of the memory-and-permissions practice applies and may stay blank otherwise) — observer: Martin — negative: a server in the agent's configuration with no row
 7. `docs/threat-model.md` has no row with an empty status: each threat has a control in this repo or an explicit `GAP` with an owner — observer: Martin — negative: an empty cell
 8. When `llm_calls`: model API keys are per route and, when `multi_tenant`, per tenant, with a spend cap and an alert — observer: Martin — negative: one key shared by every route and tenant
 9. Traces and logs contain no API key and no raw personal data — observer: script — negative: a key or an email address found in the trace store
@@ -107,6 +107,7 @@ Full (`acts_on_world or personal_data or regulated or multi_tenant`, in addition
 
 ## Change log
 
+- 2026-10-01 (s5) — `threat-model-agentic.md`: T9 gains vault-issued short-lived credentials and non-human identities controlled like human users (IBM; one narrower identity per spawned sub-agent marked as this KB's extension); Verify 6 names the two new register columns and scopes them to the memory-and-permissions full part; T15/T16 gain hidden characters in shared prompt bundles (Block's red team); new **T21** untrusted file reference (a user-supplied `file_id`; control: server-side references, one workspace per tenant). `mcp-trust-register.md`: columns "identity the tool runs as (NHI) and credential lifetime" and "admitted by review on <date>; destructive annotations honoured". Source `sources/2026-10-01-s05-context-memory-permissions-evals-digest.md` rows 32, 34, 35.
 - 2026-10-01 (s4) — `threat-model-agentic.md` rows T11–T20 (attack vectors + OWASP 2025 mapping, `GAP` where uncovered); `mcp-trust-register.md` column "full description reviewed"; note in "Notes from later scans". Source `sources/2026-10-01-s04-structured-outputs-digest.md`.
 - 2026-10-01 — `stack-notes/python.md` added; `lefthook.security.yml` no longer refuses `.env.example`; injection fixture marked first-user. Two bootstraps: core 2 and full 7, 9 passed; 1 and 3 n.a. where gitleaks/pip-audit could not be installed.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.

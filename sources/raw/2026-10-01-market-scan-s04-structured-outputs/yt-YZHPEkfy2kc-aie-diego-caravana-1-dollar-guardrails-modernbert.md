@@ -2,13 +2,13 @@
 title: "RAW transcript — $1 AI Guardrails: The Unreasonable Effectiveness of Finetuned ModernBERTs – Diego Carpintero"
 type: source
 status: current
-date: 2026-10
+date: 2026-04
 tags: [raw, transcript, structured-outputs, guardrails, generative-ui, market-scan, s04]
 sources:
   - https://www.youtube.com/watch?v=YZHPEkfy2kc
 ---
 
-> **Video:** "$1 AI Guardrails: The Unreasonable Effectiveness of Finetuned ModernBERTs – Diego Carpintero" — channel *AI Engineer* — uploaded 2026-10-01 — 43m 52s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "$1 AI Guardrails: The Unreasonable Effectiveness of Finetuned ModernBERTs – Diego Carpintero" — channel *AI Engineer* — uploaded 2026-04-16 — 43m 52s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
 
 We need to protect our AI systems, in particular those that are based in LLMs. What started in '23 as regular users doing prompt injection to exfiltrate system prompts in an almost exploratory manner has evolved today into a more complex landscape where the LLM attacks are far more sophisticated and they're being amplified within identity workflows. So, these attacks, they are no longer the exception, they are now the baseline. And we're going to examine the most common attack vectors and then build a low-latency self-hosted defensive layer for under a dollar. And to do so, we will fine-tune modern bird. This is a state-of-the-art encoder model and when doing so, we will dive into the architectural components that make this model efficient and suitable for our use case. So, we're going to see the details of alternating attention between global and local, the use of rotary position
 

@@ -2,13 +2,13 @@
 title: "RAW transcript — How to Automate AI Evals (Correctly)"
 type: source
 status: current
-date: 2026-10
+date: 2026-07
 tags: [raw, transcript, evals, memory, permissions, external-context, market-scan, s05]
 sources:
   - https://www.youtube.com/watch?v=tqUDjc1HzO4
 ---
 
-> **Video:** "How to Automate AI Evals (Correctly)" — channel *Hamel Husain* — uploaded 2026-10-01 — 27m 19s — English, manual captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "How to Automate AI Evals (Correctly)" — channel *Hamel Husain* — uploaded 2026-07-03 — 27m 19s — English, manual captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
 
 This is the first part of a 12-part series, a mini course that we're hosting on AI product engineering, and we're going to kick it off with a bang. Shreya is going to go over how to use LLMs to help you with evals and do so in the right way, cuz a lot of people are getting stuck on this exact topic. Thanks, Hamel. Really excited to kick off the series. So, I'm Shreya Shankar. I am a computer science professor, and I also co-teach, co-created the AI evals course with Hamel. And today, I'm going to talk about how to automate some of the tricky parts of evals effectively. It's not automating AI evals with AI is not very easy, but I mean, it's not stopping many vendors from trying to sell you automated eval tools. Goal of this talk is not to tear down any particular vendor. In fact, I won't really get into specific vendors in this talk. The goal of this talk is to convince you that you can't
 

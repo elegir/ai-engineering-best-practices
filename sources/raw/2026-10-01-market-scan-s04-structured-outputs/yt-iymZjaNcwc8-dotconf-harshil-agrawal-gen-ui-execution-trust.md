@@ -2,13 +2,13 @@
 title: "RAW transcript — Beyond the Chatbot: Gen UI & the Execution Trust Problem - Harshil Agrawal - Cloudflare - dotJS 2026"
 type: source
 status: current
-date: 2026-10
+date: 2026-09
 tags: [raw, transcript, structured-outputs, guardrails, generative-ui, market-scan, s04]
 sources:
   - https://www.youtube.com/watch?v=iymZjaNcwc8
 ---
 
-> **Video:** "Beyond the Chatbot: Gen UI & the Execution Trust Problem - Harshil Agrawal - Cloudflare - dotJS 2026" — channel *dotconferences* — uploaded 2026-10-01 — 17m 54s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Beyond the Chatbot: Gen UI & the Execution Trust Problem - Harshil Agrawal - Cloudflare - dotJS 2026" — channel *dotconferences* — uploaded 2026-09-28 — 17m 54s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `kaNjIRfrw4p6YZ3Rr`) — selected by the s04 market scan (`sources/2026-10-01-market-scan-s04-structured-outputs.md`). Verbatim; whitespace normalised; never edit the words.
 
 [music] [music] [music] [applause] >> Hey everyone. Welcome to the talk. I am excited to talk and share my journey of building generative UI. As you heard in my introduction, I work at Cloudflare as a senior developer educator. Which means that I do a lot of work around educational content, but that's not it. I am also responsible for building Cloudflare certification platform. And this platform has two main interfaces. One is for the candidates where they can go, login, and take the exam. And the other one is for the admin, which is the internal team, who manages the whole exam. And this whole talk is around the admin application and not the candidate application for the certification platform. Now, the admin team often wants to look at the data that is available in the dashboard. They want to have the overview of what's going on. They might want to compare the results for different
 

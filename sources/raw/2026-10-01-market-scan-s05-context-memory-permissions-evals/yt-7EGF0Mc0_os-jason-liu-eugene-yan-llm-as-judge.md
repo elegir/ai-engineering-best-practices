@@ -2,13 +2,13 @@
 title: "RAW transcript — Eugene Yan on Using LLMs as Judges: Insights, Challenges, and Best Practices"
 type: source
 status: current
-date: 2026-10
+date: 2024-08
 tags: [raw, transcript, evals, memory, permissions, external-context, market-scan, s05]
 sources:
   - https://www.youtube.com/watch?v=7EGF0Mc0_os
 ---
 
-> **Video:** "Eugene Yan on Using LLMs as Judges: Insights, Challenges, and Best Practices" — channel *Jason Liu* — uploaded 2026-10-01 — 38m 59s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
+> **Video:** "Eugene Yan on Using LLMs as Judges: Insights, Challenges, and Best Practices" — channel *Jason Liu* — uploaded 2024-08-22 — 38m 59s — English, auto-generated captions — extracted 2026-10-01 with `johnvc/YoutubeTranscripts` (dataset `hyPk7aUBdYkC1imrc`) — selected by the s05 market scan (`sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md`). Verbatim; whitespace normalised; never edit the words.
 
 Eugene basically this week came out with a really great article on using LM as a judge so we're all just asking him some questions so yeah we're and then I'll let H and Eugene chat about this while I eat my lunch so we're just talking about literature review yeah like how useful have you found literature review like how does it map to there's a lot of noise and especially when you bring it down to applied context yep I find that it's very noisy yeah like how do you integrate that into your research I know you were looking at from applied lens yeah that's that's true uh maybe I can share my screen to take you through my process this is what I want to share actually I want to share the entire window I just share entire screen so this is how my so firstly the question you have is how is literature review is it useful or not I think it's very useful I think it's almost like the mindset I
 
