@@ -31,3 +31,5 @@ Numbered checklist with concrete files/commands.
 
 ## 7. Change log
 - YYYY-MM-DD — created from `sources/…`.
+
+<!-- Budget: 18–28 KB in all. Give each subsection a byte budget before writing; prose that repeats a practice file is a pointer, not a paragraph (2026-10-01, sources/method-log.md). -->
