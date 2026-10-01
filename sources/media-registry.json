@@ -11079,6 +11079,3154 @@
    ],
    "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
    "decided": "2026-10-01"
+  },
+  {
+   "id": "platform.claude.com/docs/en/build-with-claude/files",
+   "url": "https://platform.claude.com/docs/en/build-with-claude/files",
+   "title": "Files API · PDF support (Claude Platform Docs)",
+   "channel": "Anthropic",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "docs.anthropic.com/en/docs/agents-and-tools/tool-use/web-search-tool",
+   "url": "https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/web-search-tool",
+   "title": "Web search tool · Web fetch tool · MCP connector · tool-use overview (Claude Platform Docs)",
+   "channel": "Anthropic",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "anthropic.com/news/model-context-protocol",
+   "url": "https://www.anthropic.com/news/model-context-protocol",
+   "title": "Introducing the Model Context Protocol",
+   "channel": "Anthropic",
+   "published": "2024-11-25",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool",
+   "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool",
+   "title": "Memory tool (Claude Platform Docs)",
+   "channel": "Anthropic",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "docs.langchain.com/oss/python/concepts/memory",
+   "url": "https://docs.langchain.com/oss/python/concepts/memory",
+   "title": "Memory overview (LangChain docs) · LangMem conceptual guide",
+   "channel": "LangChain",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "arxiv.org/abs/2504.19413",
+   "url": "https://arxiv.org/abs/2504.19413",
+   "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory (arXiv 2504.19413)",
+   "channel": "Mem0 (Chhikara et al.)",
+   "published": "2025-04",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "arxiv.org/abs/2310.08560",
+   "url": "https://arxiv.org/abs/2310.08560",
+   "title": "MemGPT: Towards LLMs as Operating Systems (arXiv 2310.08560)",
+   "channel": "Packer et al. (UC Berkeley)",
+   "published": "2023-10",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "pinecone.io/learn/rag-access-control",
+   "url": "https://www.pinecone.io/learn/rag-access-control/",
+   "title": "RAG with Access Control",
+   "channel": "Pinecone",
+   "published": "2025",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025",
+   "url": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+   "title": "OWASP Top 10 for LLM Applications 2025 — LLM06 Excessive Agency, LLM02 Sensitive Information Disclosure",
+   "channel": "OWASP GenAI Security Project",
+   "published": "2024-11",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "developers.openai.com/api/docs/guides/agents/guardrails-approvals",
+   "url": "https://developers.openai.com/api/docs/guides/agents/guardrails-approvals",
+   "title": "Guardrails and human review (OpenAI Agents guide: guardrails & approvals)",
+   "channel": "OpenAI",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "hamel.dev/blog/posts/evals/index.html",
+   "url": "https://hamel.dev/blog/posts/evals/index.html",
+   "title": "Your AI Product Needs Evals",
+   "channel": "Hamel Husain",
+   "published": "2024-03-29",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "anthropic.com/engineering/demystifying-evals-for-ai-agents",
+   "url": "https://anthropic.com/engineering/demystifying-evals-for-ai-agents",
+   "title": "Demystifying evals for AI agents",
+   "channel": "Anthropic (Engineering)",
+   "published": "2026-01",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "docs.anthropic.com/en/docs/test-and-evaluate/develop-tests",
+   "url": "https://docs.anthropic.com/en/docs/test-and-evaluate/develop-tests",
+   "title": "Define your success criteria · Create strong empirical evaluations (Claude Platform Docs)",
+   "channel": "Anthropic",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "eugeneyan.com/writing/llm-evaluators",
+   "url": "https://eugeneyan.com/writing/llm-evaluators/",
+   "title": "Evaluating the Effectiveness of LLM-Evaluators · An LLM-as-Judge Won't Save the Product",
+   "channel": "Eugene Yan",
+   "published": "2024-08 / 2025",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "arxiv.org/abs/2306.05685",
+   "url": "https://arxiv.org/abs/2306.05685",
+   "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena (arXiv 2306.05685)",
+   "channel": "Zheng et al. (LMSYS)",
+   "published": "2023-06",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "promptfoo.dev/docs/intro",
+   "url": "https://www.promptfoo.dev/docs/intro/",
+   "title": "promptfoo docs (intro, CI/CD, red team)",
+   "channel": "promptfoo",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "deepeval.com/docs/getting-started",
+   "url": "https://deepeval.com/docs/getting-started",
+   "title": "DeepEval docs (getting started, metrics, G-Eval)",
+   "channel": "Confident AI",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "maven.com/parlance-labs/evals",
+   "url": "https://maven.com/parlance-labs/evals",
+   "title": "AI Evals For Engineers & PMs (course)",
+   "channel": "Maven — Hamel Husain & Shreya Shankar",
+   "published": "2025",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "deeplearning.ai/courses/evaluating-ai-agents",
+   "url": "https://www.deeplearning.ai/courses/evaluating-ai-agents",
+   "title": "Evaluating AI Agents (course)",
+   "channel": "DeepLearning.AI × Arize",
+   "published": "2025",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "deeplearning.ai/courses/llms-as-operating-systems-agent-memory",
+   "url": "https://www.deeplearning.ai/courses/llms-as-operating-systems-agent-memory",
+   "title": "LLMs as Operating Systems: Agent Memory (course)",
+   "channel": "DeepLearning.AI × Letta",
+   "published": "2024",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "anthropic.skilljar.com/introduction-to-model-context-protocol",
+   "url": "https://anthropic.skilljar.com/introduction-to-model-context-protocol",
+   "title": "Introduction to Model Context Protocol · MCP: Advanced Topics (courses)",
+   "channel": "Anthropic Academy",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s5",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s5"
+   ]
+  },
+  {
+   "id": "Ic5TdQ8uBWU",
+   "url": "https://www.youtube.com/watch?v=Ic5TdQ8uBWU",
+   "title": "Gateco Product Demo | Secure RAG, AI Agents & MCP with Identity-Aware Retrieval",
+   "channel": "Gateco",
+   "published": "2026-07-02",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "TKSIXTsa3YY",
+   "url": "https://www.youtube.com/watch?v=TKSIXTsa3YY",
+   "title": "Secure RAG for Beginners: How to Stop Data Leaks & enforce Permissions",
+   "channel": "AI Buzz",
+   "published": "2026-02-11",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "vivdgqR6BoY",
+   "url": "https://www.youtube.com/watch?v=vivdgqR6BoY",
+   "title": "DeepEval Explained 🚀 | Open-Source LLM Evaluation Library for AI Outputs",
+   "channel": "Pavithra’s Podcast",
+   "published": "2026-09-10",
+   "type": "podcast",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner explainer: re-explanation of the written canon (Husain/Yan/Anthropic pages)"
+  },
+  {
+   "id": "tqUDjc1HzO4",
+   "url": "https://www.youtube.com/watch?v=tqUDjc1HzO4",
+   "title": "How to Automate AI Evals (Correctly)",
+   "channel": "Hamel Husain",
+   "published": "2026-07-03",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "primary practitioner (Hamel Husain, 2026-07): automating evals correctly — what to automate and what never to",
+   "raw": "sources/raw/2026-10-01-market-scan-s05-context-memory-permissions-evals/yt-tqUDjc1HzO4-hamel-husain-how-to-automate-ai-evals-correctly.md",
+   "duration": "00:27:19"
+  },
+  {
+   "id": "nncpvPSbF-I",
+   "url": "https://www.youtube.com/watch?v=nncpvPSbF-I",
+   "title": "RAG Security Explained: Prevent Data Leaks & Attacks",
+   "channel": "AIGrounded",
+   "published": "2026-04-27",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "D9mGLmiSCWQ",
+   "url": "https://www.youtube.com/watch?v=D9mGLmiSCWQ",
+   "title": "Building a SOC 2 & HIPAA-Ready AI RAG Layer with Docker & GitHub Actions",
+   "channel": "Creole Studios",
+   "published": "2026-09-05",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "y0vm_fjkejo",
+   "url": "https://www.youtube.com/watch?v=y0vm_fjkejo",
+   "title": "LLM Eval Tools Compared: LangSmith",
+   "channel": "Hamel Husain",
+   "published": "2025-10-01",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "-jGURd2km4U",
+   "url": "https://www.youtube.com/watch?v=-jGURd2km4U",
+   "title": "RAG Security: Protect Retrieval, Embeddings & Vector Stores | Module 3.4",
+   "channel": "KryptoMindz Technologies",
+   "published": "2026-05-18",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "cAXkCFJZOPU",
+   "url": "https://www.youtube.com/watch?v=cAXkCFJZOPU",
+   "title": "Secure GenAI Apps: Identity, Authorization & Data Access | Module 4.3",
+   "channel": "KryptoMindz Technologies",
+   "published": "2026-05-30",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "II_xGPfDb6I",
+   "url": "https://www.youtube.com/watch?v=II_xGPfDb6I",
+   "title": "AI Agent Access Control: From Excessive Agency to Least Privilege",
+   "channel": "Kanerika Inc.",
+   "published": "2026-09-15",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "SPP_Psf50wo",
+   "url": "https://www.youtube.com/watch?v=SPP_Psf50wo",
+   "title": "RAGShield — Secure Enterprise RAG with ACL-Aware Hybrid Retrieval | FastAPI + Qdrant + Ollama",
+   "channel": "Code with Hari",
+   "published": "2026-08-13",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "PrUVGPtWAVg",
+   "url": "https://www.youtube.com/watch?v=PrUVGPtWAVg",
+   "title": "Why IAM Isn't Enough for AI Agents: Closing the RAG Authorization Gap",
+   "channel": "Gateco",
+   "published": "2026-05-14",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "402EyLS59ho",
+   "url": "https://www.youtube.com/watch?v=402EyLS59ho",
+   "title": "RAG Evaluation Using DeepEval & Confident AI — Full Tutorial",
+   "channel": "Yash Patil",
+   "published": "2025-10-20",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "PFbjjCuqjfU",
+   "url": "https://www.youtube.com/watch?v=PFbjjCuqjfU",
+   "title": "The AI Pivot Ep 2: Automation QA → AI Engineer in 3 Months (You're Closer Than You Think)",
+   "channel": "Maneesh Code Lab",
+   "published": "2026-08-23",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Mxso0FUP_Ns",
+   "url": "https://www.youtube.com/watch?v=Mxso0FUP_Ns",
+   "title": "AI Agent Memory Explained: Short Term, Long Term, Episodic",
+   "channel": "Agent Engineering",
+   "published": "2026-09-16",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "vIZITkcKWuo",
+   "url": "https://www.youtube.com/watch?v=vIZITkcKWuo",
+   "title": "Long-Term Memory for AI Agents",
+   "channel": "StackOps AI",
+   "published": "2026-04-09",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "NebOSOTp-zA",
+   "url": "https://www.youtube.com/watch?v=NebOSOTp-zA",
+   "title": "Mastering LLM Chatbots And RAG Evaluation Crash Course",
+   "channel": "Krish Naik",
+   "published": "2026-03-02",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner explainer: re-explanation of the written canon (Husain/Yan/Anthropic pages)"
+  },
+  {
+   "id": "uQFLY8rQVYA",
+   "url": "https://www.youtube.com/watch?v=uQFLY8rQVYA",
+   "title": "LLM Eval Methods | LLM-as-a-Judge | Reference Based Evals Vs Reference Free Evals | CampusX",
+   "channel": "CampusX",
+   "published": "2026-07-05",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "87OJr-SmzcE",
+   "url": "https://www.youtube.com/watch?v=87OJr-SmzcE",
+   "title": "Secure RAG: When Retrieval Is a Security Boundary",
+   "channel": "AI TechBook",
+   "published": "2026-06-27",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "3x_9J25hGiA",
+   "url": "https://www.youtube.com/watch?v=3x_9J25hGiA",
+   "title": "Agent memory is not “just a vector store.”",
+   "channel": "Rahul Pandey",
+   "published": "2026-06-06",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "7IREW9sh4Sk",
+   "url": "https://www.youtube.com/watch?v=7IREW9sh4Sk",
+   "title": "Agent Memory -A database problem wearing an AI hat",
+   "channel": "VIDEU",
+   "published": "2026-06-06",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "xh79H3rFsSY",
+   "url": "https://www.youtube.com/watch?v=xh79H3rFsSY",
+   "title": "AI Evals For Engineers & PMs course homework 2 using Galileo - Recipe Bot Error Analysis",
+   "channel": "Galileo",
+   "published": "2026-02-07",
+   "type": "podcast",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "AhOannZbmHw",
+   "url": "https://www.youtube.com/watch?v=AhOannZbmHw",
+   "title": "How to Evaluate LLM Apps: LLM-as-a-Judge & RAGAS (Without the Bias)",
+   "channel": "AI WITH Rithesh",
+   "published": "2026-07-21",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "mY3bR9qjZr4",
+   "url": "https://www.youtube.com/watch?v=mY3bR9qjZr4",
+   "title": "You Can Learn AI Agent Memory System In 12 Min | Semantic & Episodic Memory, RAG, Vector Database",
+   "channel": "Sean‘s AI Stories",
+   "published": "2026-06-19",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner explainer: re-explanation of the written canon (Husain/Yan/Anthropic pages)"
+  },
+  {
+   "id": "x0zifxrq9Is",
+   "url": "https://www.youtube.com/watch?v=x0zifxrq9Is",
+   "title": "Agentic Memory Part 2: Long Term Memory & Frameworks",
+   "channel": "Divesh Jadhwani",
+   "published": "2026-07-11",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "VYZgxIJKHaw",
+   "url": "https://www.youtube.com/watch?v=VYZgxIJKHaw",
+   "title": "State Management & Checkpointing in AI Agents — Graphs, Memory, HITL & Time Travel",
+   "channel": "ErrorFixer",
+   "published": "2026-09-02",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "6ZIVq7WMIMo",
+   "url": "https://www.youtube.com/watch?v=6ZIVq7WMIMo",
+   "title": "134 Milliseconds, Hidden Inside the Silence",
+   "channel": "MLSlops",
+   "published": "2026-09-04",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "mwZnz0TKJdo",
+   "url": "https://www.youtube.com/watch?v=mwZnz0TKJdo",
+   "title": "Your Evals Are Green and Users Still Complain: LLM Evaluation Explained",
+   "channel": "Decoding GCP with Ankur",
+   "published": "2026-08-30",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "c60-11mS2eM",
+   "url": "https://www.youtube.com/watch?v=c60-11mS2eM",
+   "title": "Stop Testing AI with \"Vibes\" (Do THIS Instead)",
+   "channel": "Dr. Steven A. Wright",
+   "published": "2026-08-04",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "9ta1cawyVsU",
+   "url": "https://www.youtube.com/watch?v=9ta1cawyVsU",
+   "title": "Agentic Memory Part 1: What is Agentic Memory & Types",
+   "channel": "Divesh Jadhwani",
+   "published": "2026-07-05",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "f_zZXWO0P60",
+   "url": "https://www.youtube.com/watch?v=f_zZXWO0P60",
+   "title": "4 Metrics. 1 Week. Blind Testing → Full RAG Validation | PromptFoo Setup for SDETs",
+   "channel": "Automate & Elevate",
+   "published": "2026-05-05",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "SjTaokI5K6g",
+   "url": "https://www.youtube.com/watch?v=SjTaokI5K6g",
+   "title": "Build a RAG with the File Search Tool in Google Colab",
+   "channel": "Connie Develop with Web and AI",
+   "published": "2025-11-14",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "ytip4_of9t8",
+   "url": "https://www.youtube.com/watch?v=ytip4_of9t8",
+   "title": "Agentic AI - RAG Agent for self healing test cases",
+   "channel": "Shrikant Wagh",
+   "published": "2026-01-27",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "xg2q5JvX0mg",
+   "url": "https://www.youtube.com/watch?v=xg2q5JvX0mg",
+   "title": "How to Upgrade Your Local AI [Memory, Files & Web]",
+   "channel": "RM Logic",
+   "published": "2026-03-23",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "L9QZ97y9Exg",
+   "url": "https://www.youtube.com/watch?v=L9QZ97y9Exg",
+   "title": "Your local LLM is 10x slower than it should be",
+   "channel": "Alex Ziskind",
+   "published": "2026-01-31",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "fg0_0M8kZ8g",
+   "url": "https://www.youtube.com/watch?v=fg0_0M8kZ8g",
+   "title": "Turn ANY File into LLM Knowledge in SECONDS",
+   "channel": "Cole Medin",
+   "published": "2025-10-02",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "QOyak7Gxftw",
+   "url": "https://www.youtube.com/watch?v=QOyak7Gxftw",
+   "title": "Local AI Knowledge Assistant (RAG Chatbot) | Multi-Document, Offline LLM, Streamlit",
+   "channel": "hamzah rizvi",
+   "published": "2026-04-17",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "O_08Zwdto_Q",
+   "url": "https://www.youtube.com/watch?v=O_08Zwdto_Q",
+   "title": "How to connect Local AI to Internet (Web Search MCP - LM Studio)",
+   "channel": "Red Stapler",
+   "published": "2026-02-19",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "VRub1w-APTc",
+   "url": "https://www.youtube.com/watch?v=VRub1w-APTc",
+   "title": "How to Build a Personal LLM Knowledge Base (Karpathy’s Method)",
+   "channel": "Science Based AI",
+   "published": "2026-04-07",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "kKNgRCPuObI",
+   "url": "https://www.youtube.com/watch?v=kKNgRCPuObI",
+   "title": "Local LM Studio Gets Web Browsing, Maps & Headlines – Completely Private",
+   "channel": "StanForce Labs",
+   "published": "2025-12-09",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "dmm60snscD4",
+   "url": "https://www.youtube.com/watch?v=dmm60snscD4",
+   "title": "How to INSTANTLY Search the Web in LM Studio Without MCP (DuckDuckGo Plugin)",
+   "channel": "AsapGuide",
+   "published": "2025-10-02",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "OOCioZC4tk0",
+   "url": "https://www.youtube.com/watch?v=OOCioZC4tk0",
+   "title": "LM Studio Is Getting Insane — Start Using It Now",
+   "channel": "Bart Slodyczka",
+   "published": "2026-05-04",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "4KXLW9Y1r4c",
+   "url": "https://www.youtube.com/watch?v=4KXLW9Y1r4c",
+   "title": "Run Your Own Agentic AI? 🦙 Full Ollama Setup + Hermes Workflow",
+   "channel": "Wanderloots",
+   "published": "2026-06-25",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "n4V1eC0yvHQ",
+   "url": "https://www.youtube.com/watch?v=n4V1eC0yvHQ",
+   "title": "Why Traditional Testing is Dying in the Age of LLMs & AI Agents",
+   "channel": "Logically ILLogical",
+   "published": "2026-04-17",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "_Nf7UJ9a_5o",
+   "url": "https://www.youtube.com/watch?v=_Nf7UJ9a_5o",
+   "title": "Reading Eval Results: Failure Triage and Judge Bias | NVIDIA Agentic AI Course 6.5",
+   "channel": "Cloudbrewery",
+   "published": "2026-10-01",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "sLYt1KUNXhw",
+   "url": "https://www.youtube.com/watch?v=sLYt1KUNXhw",
+   "title": "Golden Datasets and LLM-as-Judge Explained (LLMOps Part 2)",
+   "channel": "Praveenkumar Ponnam",
+   "published": "2026-09-08",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "0S76VLM23hM",
+   "url": "https://www.youtube.com/watch?v=0S76VLM23hM",
+   "title": "Evals are the Whole Job | Building Production-Ready LLM Test Suites | Uplatz",
+   "channel": "Uplatz",
+   "published": "2026-08-03",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "iH34bdWFDcs",
+   "url": "https://www.youtube.com/watch?v=iH34bdWFDcs",
+   "title": "#16 LLM Evaluation & Monitoring Explained: Golden Sets, SLAs & Drift Detection",
+   "channel": "Tech@AI-Info",
+   "published": "2026-01-27",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "WPL5aXlzCqE",
+   "url": "https://www.youtube.com/watch?v=WPL5aXlzCqE",
+   "title": "Agent as a Judge: Scaling AI Evaluation and Trace Analysis with Arize Phoenix",
+   "channel": "Databricks Events",
+   "published": "2026-09-10",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "G_uNX1aR6xQ",
+   "url": "https://www.youtube.com/watch?v=G_uNX1aR6xQ",
+   "title": "How to Calibrate LLM-as-Judge to Human Experts | CJE Framework",
+   "channel": "CIMO Labs",
+   "published": "2026-02-09",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "o-bZc-Ba03M",
+   "url": "https://www.youtube.com/watch?v=o-bZc-Ba03M",
+   "title": "23.How to Evaluate LLMs: BLEU, BERTScore, LLM-as-a-Judge & Benchmarks",
+   "channel": "AI Academy",
+   "published": "2026-08-26",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "fyfE154IZyQ",
+   "url": "https://www.youtube.com/watch?v=fyfE154IZyQ",
+   "title": "Ep 15 | LLM-as-a-Judge: Automated Evals That Actually Hold Up",
+   "channel": "@TechLifeWithAI",
+   "published": "2026-09-29",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "HxRUMKHaRDA",
+   "url": "https://www.youtube.com/watch?v=HxRUMKHaRDA",
+   "title": "How to Evaluate LLM Outputs at Scale | LangSmith + LLM-as-Judge (2026)",
+   "channel": "Hamza AI Lab",
+   "published": "2026-06-07",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "SmTJxEZR8jo",
+   "url": "https://www.youtube.com/watch?v=SmTJxEZR8jo",
+   "title": "AWS Bedrock Evaluations in 10 Minutes | LLM-as-a-Judge, Human Evals, and RAG Scoring",
+   "channel": "Pallavi Srivastava | @aiwithpallavi",
+   "published": "2026-05-01",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "AzNeZLocVLE",
+   "url": "https://www.youtube.com/watch?v=AzNeZLocVLE",
+   "title": "LLM Evals EP 3 - LLM-as-Judge: Rubric Design and Calibration",
+   "channel": "Product Decode",
+   "published": "2026-09-30",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "km5-0jhv0JI",
+   "url": "https://www.youtube.com/watch?v=km5-0jhv0JI",
+   "title": "How to Run LLMs Locally - Full Guide",
+   "channel": "Tech With Tim",
+   "published": "2025-12-19",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "CiZAkmmGiEg",
+   "url": "https://www.youtube.com/watch?v=CiZAkmmGiEg",
+   "title": "The AI Agent Permission Problem Nobody Is Solving",
+   "channel": "Agentic Frontier",
+   "published": "2026-07-19",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "N7PedAIeOSY",
+   "url": "https://www.youtube.com/watch?v=N7PedAIeOSY",
+   "title": "AI Agent Permissions",
+   "channel": "Cyprian Aarons ",
+   "published": "2026-08-19",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "WUTB2Fpn8wo",
+   "url": "https://www.youtube.com/watch?v=WUTB2Fpn8wo",
+   "title": "42. AI Agent Security Explained | Permissions, Human Approval, and Safe Tool Use",
+   "channel": "Shriram Vasudevan",
+   "published": "2026-07-03",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "1vhAL0sfEtc",
+   "url": "https://www.youtube.com/watch?v=1vhAL0sfEtc",
+   "title": "Prompt Injection Explained: How to Secure a Claude Application",
+   "channel": "Core Concept Learning",
+   "published": "2026-09-29",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "4ItlFRCqaXw",
+   "url": "https://www.youtube.com/watch?v=4ItlFRCqaXw",
+   "title": "How AI Agent Permissions Control Risk - The Permission Problem",
+   "channel": "Mini Leviathan",
+   "published": "2026-08-29",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "u4uOGM1NIQY",
+   "url": "https://www.youtube.com/watch?v=u4uOGM1NIQY",
+   "title": "AI Agent Identity and Access: How Companies Control Non-Human Users",
+   "channel": "Ghanshyam Sharma",
+   "published": "2026-09-24",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "0uvl6WfDxx4",
+   "url": "https://www.youtube.com/watch?v=0uvl6WfDxx4",
+   "title": "8. How to Build Your First AI Agent Guardrails, Permissions & Testing  No-Code Tutorial",
+   "channel": "Workspace Simplified",
+   "published": "2026-08-10",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "0JNlop4YsPI",
+   "url": "https://www.youtube.com/watch?v=0JNlop4YsPI",
+   "title": "OpenClaw: When AI Gets Access to Your Computer",
+   "channel": "Cybersecurity Learning",
+   "published": "2026-04-04",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "d8d9EZHU7fw",
+   "url": "https://www.youtube.com/watch?v=d8d9EZHU7fw",
+   "title": "Securing AI Agents with Zero Trust",
+   "channel": "IBM Technology",
+   "published": "2026-02-10",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "corporate explainer with reach (IBM, 2026-02, 203k views): zero trust for AI agents — the permissions bullet has no conference talk in the window",
+   "raw": "sources/raw/2026-10-01-market-scan-s05-context-memory-permissions-evals/yt-d8d9EZHU7fw-ibm-securing-ai-agents-zero-trust.md",
+   "duration": "00:13:32"
+  },
+  {
+   "id": "oxLBP3ayzpc",
+   "url": "https://www.youtube.com/watch?v=oxLBP3ayzpc",
+   "title": "AI Agent Guardrails Explained: Hooks, Permissions & Approval",
+   "channel": "Core Concept Learning",
+   "published": "2026-09-25",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "375Mfgr7yQU",
+   "url": "https://www.youtube.com/watch?v=375Mfgr7yQU",
+   "title": "Stop Giving AI Agents Your Permissions | Automated Privilege",
+   "channel": "EnforceAuth",
+   "published": "2026-08-23",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "FpuKUMR5xW8",
+   "url": "https://www.youtube.com/watch?v=FpuKUMR5xW8",
+   "title": "Episode 20 — Control Tool Use in Agents: Permissions, Scope, and Safe Action Boundaries",
+   "channel": "Bare Metal Cyber",
+   "published": "2026-07-27",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "J08BXqd57B4",
+   "url": "https://www.youtube.com/watch?v=J08BXqd57B4",
+   "title": "LLM Evaluation Explained: How AI Judges AI (Step-by-Step Guide) Evaluation Mechanics. Part-2",
+   "channel": "NeuralCanvas",
+   "published": "2026-04-02",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "iBg-t99bVi4",
+   "url": "https://www.youtube.com/watch?v=iBg-t99bVi4",
+   "title": "Securing RAG Pipelines with Fine Grained Authorization",
+   "channel": "PyData",
+   "published": "2025-10-05",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "WKEi9LvrtTk",
+   "url": "https://www.youtube.com/watch?v=WKEi9LvrtTk",
+   "title": "Architecting Enterprise RAG: Ingestion, ACL Security, Hybrid Search & Grounded Generation",
+   "channel": "The Tech Behind Business",
+   "published": "2026-09-13",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "9MjoW-x_pLE",
+   "url": "https://www.youtube.com/watch?v=9MjoW-x_pLE",
+   "title": "Putting Claudes \"AI Slop\" Solution to the Test",
+   "channel": "Hamel Husain",
+   "published": "2026-09-15",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "J7N9FMouSKg",
+   "url": "https://www.youtube.com/watch?v=J7N9FMouSKg",
+   "title": "How to Build AI Evals in 2026 (Step-by-Step, No Hype)",
+   "channel": "Aakash Gupta",
+   "published": "2026-01-15",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner explainer: re-explanation of the written canon (Husain/Yan/Anthropic pages)"
+  },
+  {
+   "id": "AZviMnxP5GI",
+   "url": "https://www.youtube.com/watch?v=AZviMnxP5GI",
+   "title": "RAG Tutorials don't teach you this | Must Watch",
+   "channel": "Abhishek.Veeramalla",
+   "published": "2026-05-13",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner explainer: re-explanation of the written canon (Husain/Yan/Anthropic pages)"
+  },
+  {
+   "id": "SErLmLB5RBc",
+   "url": "https://www.youtube.com/watch?v=SErLmLB5RBc",
+   "title": "RAG Architectures: Public vs. Private vs. Zero Trust",
+   "channel": "Cloud2BR",
+   "published": "2026-09-21",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "0tIYx52jbHc",
+   "url": "https://www.youtube.com/watch?v=0tIYx52jbHc",
+   "title": "3:14 A.M.: Your AI Agent Has Admin Access | Agentic AI Security 2026",
+   "channel": "Securify",
+   "published": "2026-08-27",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Kw-9UgxbbKc",
+   "url": "https://www.youtube.com/watch?v=Kw-9UgxbbKc",
+   "title": "How Modern AI Agents Manage Tools Efficiently ?Dynamic Tools, Capability Tagging & High-Speed Search",
+   "channel": "ScaleUp University",
+   "published": "2026-05-08",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "9iBWl2yScDk",
+   "url": "https://www.youtube.com/watch?v=9iBWl2yScDk",
+   "title": "How to Catch Generative AI Failures Before Production: Real Error Analysis Tools & Methods",
+   "channel": "Owl's Ledge",
+   "published": "2025-11-03",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "97iykOemOn4",
+   "url": "https://www.youtube.com/watch?v=97iykOemOn4",
+   "title": "LLM Eval Tools Compared: Braintrust",
+   "channel": "Hamel Husain",
+   "published": "2025-10-01",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "DZxaPNYi_k0",
+   "url": "https://www.youtube.com/watch?v=DZxaPNYi_k0",
+   "title": "How To Approach Your AI Evals",
+   "channel": "Hamel Husain",
+   "published": "2026-06-16",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "jefzKhIN1rk",
+   "url": "https://www.youtube.com/watch?v=jefzKhIN1rk",
+   "title": "AI Agent Evals: How to Test What Matters",
+   "channel": "Vanishing Gradients",
+   "published": "2026-09-23",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "CgZg0bZcXiI",
+   "url": "https://www.youtube.com/watch?v=CgZg0bZcXiI",
+   "title": "Why AI Product Builders Can't Hand Evals Off to a Tool",
+   "channel": "Hamel Husain",
+   "published": "2026-06-18",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "Kn1XvZhYd34",
+   "url": "https://www.youtube.com/watch?v=Kn1XvZhYd34",
+   "title": "How to Find Failure Patterns in Complex AI Agents",
+   "channel": "Hamel Husain",
+   "published": "2026-09-25",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "Sr95UascdXY",
+   "url": "https://www.youtube.com/watch?v=Sr95UascdXY",
+   "title": "How AI Product Teams Should Actually Use Eval Tools",
+   "channel": "Hamel Husain",
+   "published": "2026-06-19",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "XPei3BQIYs0",
+   "url": "https://www.youtube.com/watch?v=XPei3BQIYs0",
+   "title": "Who Gave the AI Permission?",
+   "channel": "Vibe Coding Academy",
+   "published": "2026-09-02",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "mF4CaijvJos",
+   "url": "https://www.youtube.com/watch?v=mF4CaijvJos",
+   "title": "How To Build AI Evals",
+   "channel": "Hamel Husain",
+   "published": "2026-07-17",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "primary practitioner (Hamel Husain, 2026-07): how to build AI evals end to end",
+   "raw": "sources/raw/2026-10-01-market-scan-s05-context-memory-permissions-evals/yt-mF4CaijvJos-hamel-husain-how-to-build-ai-evals.md",
+   "duration": "00:33:39"
+  },
+  {
+   "id": "hcYxzN5-x8k",
+   "url": "https://www.youtube.com/watch?v=hcYxzN5-x8k",
+   "title": "WebLLM + RAG: Private, Offline Document AI on Your Laptop",
+   "channel": "Codex Local",
+   "published": "2025-10-11",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "lRT2KQSGdvc",
+   "url": "https://www.youtube.com/watch?v=lRT2KQSGdvc",
+   "title": "P0 Security: runtime access control for AI agents",
+   "channel": "P0 Security",
+   "published": "2026-06-16",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "PlMM4VyilOo",
+   "url": "https://www.youtube.com/watch?v=PlMM4VyilOo",
+   "title": "LLM Evals EP 4 - Human Evaluation: The Layer Under the Judge",
+   "channel": "Product Decode",
+   "published": "2026-10-01",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "fSXKVJgiR5s",
+   "url": "https://www.youtube.com/watch?v=fSXKVJgiR5s",
+   "title": "Minerva Demo: Web Search + PDF Extraction + AI Synthesis in One MCP Pipeline",
+   "channel": "Adnan Bardgujar",
+   "published": "2026-05-06",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Ldu8gOJ3wvM",
+   "url": "https://www.youtube.com/watch?v=Ldu8gOJ3wvM",
+   "title": "How to Transition from QA to AI Tester in 30 Days (Complete Roadmap 2026)",
+   "channel": "Atul @ K21Academy",
+   "published": "2026-04-08",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "NM8hyiPZFKU",
+   "url": "https://www.youtube.com/watch?v=NM8hyiPZFKU",
+   "title": "How to Start AI Evals When You Have No Time",
+   "channel": "Hamel Husain",
+   "published": "2026-09-23",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "12WN6u2DrBk",
+   "url": "https://www.youtube.com/watch?v=12WN6u2DrBk",
+   "title": "You’ll Finally Understand AI Evals After Watching This",
+   "channel": "Mastra",
+   "published": "2026-06-18",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "31GUkCBD-Uc",
+   "url": "https://www.youtube.com/watch?v=31GUkCBD-Uc",
+   "title": "Building Closed-Loop Evals for a Multimodal Agent at Scale — Soumya Gupta & Jai Chopra, Uber",
+   "channel": "AI Engineer",
+   "published": "2026-07-24",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "AI Engineer 2026: closed-loop evals for a multimodal agent at scale (87k views)",
+   "raw": "sources/raw/2026-10-01-market-scan-s05-context-memory-permissions-evals/yt-31GUkCBD-Uc-aie-closed-loop-evals-multimodal-agent-at-scale.md",
+   "duration": "00:21:38"
+  },
+  {
+   "id": "Raa3qjEBvKE",
+   "url": "https://www.youtube.com/watch?v=Raa3qjEBvKE",
+   "title": "The Most Important New Skill for Product Managers in 2026: AI Evals Masterclass",
+   "channel": "Aakash Gupta",
+   "published": "2026-02-19",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner explainer: re-explanation of the written canon (Husain/Yan/Anthropic pages)"
+  },
+  {
+   "id": "_Er8Hao_gmQ",
+   "url": "https://www.youtube.com/watch?v=_Er8Hao_gmQ",
+   "title": "AI Evals Explained | How to evaluate AI Agents?",
+   "channel": "Aishwarya Srinivasan",
+   "published": "2026-07-09",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner explainer: re-explanation of the written canon (Husain/Yan/Anthropic pages)"
+  },
+  {
+   "id": "EN8jVkv0kiw",
+   "url": "https://www.youtube.com/watch?v=EN8jVkv0kiw",
+   "title": "Why Everyone Should Know About AI Evals: The Fundamentals Explained",
+   "channel": "ByteByteAI",
+   "published": "2026-04-29",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner explainer: re-explanation of the written canon (Husain/Yan/Anthropic pages)"
+  },
+  {
+   "id": "wcYnzHJlUR0",
+   "url": "https://www.youtube.com/watch?v=wcYnzHJlUR0",
+   "title": "LLM Eval Tools Compared: Arize Phoenix",
+   "channel": "Hamel Husain",
+   "published": "2025-10-01",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "VfA-vjsFQ1o",
+   "url": "https://www.youtube.com/watch?v=VfA-vjsFQ1o",
+   "title": "Own the loop: how designers and researchers win with AI evals ft. Setor Zilevu (Figma) | Config 2026",
+   "channel": "Figma",
+   "published": "2026-07-06",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "SYVPCsW4DWc",
+   "url": "https://www.youtube.com/watch?v=SYVPCsW4DWc",
+   "title": "AI Evals 101: How to Evaluate LLMs, Agentic AI & GenAI Systems (Step by Step)",
+   "channel": "Interview Kickstart US",
+   "published": "2026-02-21",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner explainer: re-explanation of the written canon (Husain/Yan/Anthropic pages)"
+  },
+  {
+   "id": "Xfl50508LZM",
+   "url": "https://www.youtube.com/watch?v=Xfl50508LZM",
+   "title": "Ship Real Agents: Hands-On Evals for Agentic Applications — Laurie Voss, Arize",
+   "channel": "AI Engineer",
+   "published": "2026-05-14",
+   "type": "video",
+   "module": "s16",
+   "modules": [
+    "s16"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s16 (found in the s5 scan): AI Engineer 2026 two-hour hands-on evals workshop (Arize) — parked for LLMOps II where tooling is covered"
+  },
+  {
+   "id": "RGe6EjucbzI",
+   "url": "https://www.youtube.com/watch?v=RGe6EjucbzI",
+   "title": "\"The biggest challenge in your stack? Evals, Evals, Evals\" - 2026 State of AI Engineering results",
+   "channel": "AI Engineer",
+   "published": "2026-07-21",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "AI Engineer 2026: 'evals, evals, evals' — the state-of-AI-engineering survey on evaluation",
+   "raw": "sources/raw/2026-10-01-market-scan-s05-context-memory-permissions-evals/yt-RGe6EjucbzI-aie-2026-state-of-ai-engineering-evals.md",
+   "duration": "00:19:47"
+  },
+  {
+   "id": "DnrOoz0Uf_4",
+   "url": "https://www.youtube.com/watch?v=DnrOoz0Uf_4",
+   "title": "LLMs Have ZERO Memory! So How Do They \"Remember\"?",
+   "channel": "Skill Advancement",
+   "published": "2026-01-09",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "rV3HJ4LEZ7k",
+   "url": "https://www.youtube.com/watch?v=rV3HJ4LEZ7k",
+   "title": "Complete Agentic AI Course In 10 Hours- Langchain, Langgraph, RAG,Vectorless RAG, Guardrails,Evals",
+   "channel": "Krish Naik",
+   "published": "2026-05-21",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner explainer: re-explanation of the written canon (Husain/Yan/Anthropic pages)"
+  },
+  {
+   "id": "dzVogKf9jIM",
+   "url": "https://www.youtube.com/watch?v=dzVogKf9jIM",
+   "title": "AI Interview Questions #4 - Evals in AI",
+   "channel": "Gaurav Sen",
+   "published": "2026-08-12",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "ztN6bE_FuQQ",
+   "url": "https://www.youtube.com/watch?v=ztN6bE_FuQQ",
+   "title": "AI Evals Advanced Masterclass in Under 57 Minutes",
+   "channel": "Aakash Gupta",
+   "published": "2026-07-28",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner explainer: re-explanation of the written canon (Husain/Yan/Anthropic pages)"
+  },
+  {
+   "id": "MltkRz94SWA",
+   "url": "https://www.youtube.com/watch?v=MltkRz94SWA",
+   "title": "The Most Important Skill for AI Engineers: Evals Explained",
+   "channel": "Aish Reganti",
+   "published": "2026-09-17",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner explainer: re-explanation of the written canon (Husain/Yan/Anthropic pages)"
+  },
+  {
+   "id": "zLeG-XJtbIE",
+   "url": "https://www.youtube.com/watch?v=zLeG-XJtbIE",
+   "title": "You're Not AI-Fluent Until You Understand Evals",
+   "channel": "Alex Lieberman",
+   "published": "2026-09-13",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner explainer: re-explanation of the written canon (Husain/Yan/Anthropic pages)"
+  },
+  {
+   "id": "ez9gIjM9C5o",
+   "url": "https://www.youtube.com/watch?v=ez9gIjM9C5o",
+   "title": "The Model Context Protocol Flaw Nobody Is Talking About (And How to Fix It)",
+   "channel": "Tiny Tech Talks by Amit",
+   "published": "2026-09-18",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "-mZL77QSDaI",
+   "url": "https://www.youtube.com/watch?v=-mZL77QSDaI",
+   "title": "Demystifying Evals for AI Agents: A Refresher on Anthropic's Guide",
+   "channel": "AI Native Way",
+   "published": "2026-09-08",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "bMjlRrWjdT0",
+   "url": "https://www.youtube.com/watch?v=bMjlRrWjdT0",
+   "title": "AI Evals for Cross-Functional Teams — Nachiket Paranjape & Swaroop Chitlur Haridas, DoorDash",
+   "channel": "AI Engineer",
+   "published": "2026-08-28",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "canon talk (AI Engineer 2026, DoorDash): eval platform for cross-functional teams — annotation, judge calibration, self-service",
+   "raw": "sources/raw/2026-10-01-market-scan-s05-context-memory-permissions-evals/yt-bMjlRrWjdT0-aie-doordash-ai-evals-cross-functional-teams.md",
+   "duration": "00:16:11"
+  },
+  {
+   "id": "7EGF0Mc0_os",
+   "url": "https://www.youtube.com/watch?v=7EGF0Mc0_os",
+   "title": "Eugene Yan on Using LLMs as Judges: Insights, Challenges, and Best Practices",
+   "channel": "Jason Liu",
+   "published": "2024-08-22",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "canon (2024-08): Eugene Yan with Jason Liu on LLM-as-judge — biases, pairwise vs direct, calibration",
+   "raw": "sources/raw/2026-10-01-market-scan-s05-context-memory-permissions-evals/yt-7EGF0Mc0_os-jason-liu-eugene-yan-llm-as-judge.md",
+   "duration": "00:38:59"
+  },
+  {
+   "id": "eur8dUO9mvE",
+   "url": "https://www.youtube.com/watch?v=eur8dUO9mvE",
+   "title": "What is MCP? Integrate AI Agents with Databases & APIs",
+   "channel": "IBM Technology",
+   "published": "2025-02-19",
+   "type": "video",
+   "module": "s13",
+   "modules": [
+    "s13"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s13 (found in the s5 scan): IBM: what is MCP — parked for orchestration/MCP"
+  },
+  {
+   "id": "GuMVcpUWgBE",
+   "url": "https://www.youtube.com/watch?v=GuMVcpUWgBE",
+   "title": "Eval Driven Development For Reliable AI Agents #systemdesign #aiagents #anthropic",
+   "channel": "Design Solve & Code",
+   "published": "2026-04-18",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "tzrwxLNHtRY",
+   "url": "https://www.youtube.com/watch?v=tzrwxLNHtRY",
+   "title": "Model Context Protocol Clearly Explained | MCP Beyond the Hype",
+   "channel": "codebasics",
+   "published": "2025-03-20",
+   "type": "video",
+   "module": "s13",
+   "modules": [
+    "s13"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s13 (found in the s5 scan): codebasics: MCP clearly explained — parked for orchestration/MCP"
+  },
+  {
+   "id": "CDadnSE7Eww",
+   "url": "https://www.youtube.com/watch?v=CDadnSE7Eww",
+   "title": "Agent Memory: The Last Battleground in the AI Stack | Richmond Alake, Oracle",
+   "channel": "The Chain of Thought Podcast",
+   "published": "2026-04-02",
+   "type": "podcast",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "reference podcast (Chain of Thought, 2026-04): agent memory as the last battleground — memory types, retrieval, forgetting (candidate parked by the s1 scan, taken now)",
+   "raw": "sources/raw/2026-10-01-market-scan-s05-context-memory-permissions-evals/podcast-CDadnSE7Eww-podcast-chain-of-thought-richmond-alake-agent-memory.md",
+   "duration": "00:59:23"
+  },
+  {
+   "id": "7j1t3UZA1TY",
+   "url": "https://www.youtube.com/watch?v=7j1t3UZA1TY",
+   "title": "MCP vs API: Simplifying AI Agent Integration with External Data",
+   "channel": "IBM Technology",
+   "published": "2025-05-05",
+   "type": "video",
+   "module": "s13",
+   "modules": [
+    "s13"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s13 (found in the s5 scan): IBM: MCP vs API — parked for orchestration/MCP"
+  },
+  {
+   "id": "uiza7wp1KrE",
+   "url": "https://www.youtube.com/watch?v=uiza7wp1KrE",
+   "title": "AI Evaluations Clearly Explained in 50 Minutes (Real Example) | Hamel Husain",
+   "channel": "Peter Yang",
+   "published": "2025-09-28",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "trfUBIDeI1Y",
+   "url": "https://www.youtube.com/watch?v=trfUBIDeI1Y",
+   "title": "LLM as a Judge: Scaling AI Evaluation Strategies",
+   "channel": "IBM Technology",
+   "published": "2025-09-15",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "pDp8Gm64EmY",
+   "url": "https://www.youtube.com/watch?v=pDp8Gm64EmY",
+   "title": "How Anthropic Actually Writes AI Evals for Agents",
+   "channel": "LiftoffPM",
+   "published": "2026-02-02",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "KEmHS1VO-jI",
+   "url": "https://www.youtube.com/watch?v=KEmHS1VO-jI",
+   "title": "How Nam Pham and Their Team Turned AI Research Skills Into Shared Infrastructure at DoorDash",
+   "channel": "The ResearchOps Review",
+   "published": "2026-07-22",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "skMH3DOV_UQ",
+   "url": "https://www.youtube.com/watch?v=skMH3DOV_UQ",
+   "title": "MIPRO and DSPy with Krista Opsahl-Ong! - Weaviate Podcast #103",
+   "channel": "Weaviate vector database",
+   "published": "2024-08-28",
+   "type": "video",
+   "module": "s16",
+   "modules": [
+    "s16"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s16 (found in the s5 scan): Weaviate podcast: MIPRO and DSPy — prompt optimisation, parked for LLMOps II"
+  },
+  {
+   "id": "cHQyugatz6M",
+   "url": "https://www.youtube.com/watch?v=cHQyugatz6M",
+   "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory // May 2025 Reading Group",
+   "channel": "AAIF Live",
+   "published": "2025-06-05",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "canon reading group (AAIF, 2025): the Mem0 paper — extraction → consolidation, LOCOMO results",
+   "raw": "sources/raw/2026-10-01-market-scan-s05-context-memory-permissions-evals/yt-cHQyugatz6M-aaif-mem0-paper-reading-group.md",
+   "duration": "00:58:24"
+  },
+  {
+   "id": "ZAukQ1QcgUQ",
+   "url": "https://www.youtube.com/watch?v=ZAukQ1QcgUQ",
+   "title": "My SON Spit On My Face At Dinner… So I Sold His House And Took Everything And I Never Came Back.",
+   "channel": "Dad Legacy",
+   "published": "2026-09-28",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "pT3T08fo6pM",
+   "url": "https://www.youtube.com/watch?v=pT3T08fo6pM",
+   "title": "Stocks Waver Ahead of Jobs Data; Trump to Meet Tech CEOs on AI",
+   "channel": "Bloomberg Television",
+   "published": "2026-09-29",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "-m1lgHybqN4",
+   "url": "https://www.youtube.com/watch?v=-m1lgHybqN4",
+   "title": "Rapidly Improve AI Products with Evals | TDE Podcast #23: Hamel Husain",
+   "channel": "The Data Entrepreneurs",
+   "published": "2025-09-27",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "n4GPdsQnHqc",
+   "url": "https://www.youtube.com/watch?v=n4GPdsQnHqc",
+   "title": "How to build your own long-term Agentic Memory System for LLMs | Mem0 from scratch in DSPy",
+   "channel": "Neural Breakdown with AVB",
+   "published": "2025-10-23",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "FDVdLrloFOw",
+   "url": "https://www.youtube.com/watch?v=FDVdLrloFOw",
+   "title": "Observability and Evals for AI Agents: A Simple Breakdown",
+   "channel": "LangChain",
+   "published": "2026-02-17",
+   "type": "video",
+   "module": "s15",
+   "modules": [
+    "s15"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s15 (found in the s5 scan): LangChain: observability and evals for agents — parked for LLMOps I"
+  },
+  {
+   "id": "RVN-K9MXbzk",
+   "url": "https://www.youtube.com/watch?v=RVN-K9MXbzk",
+   "title": "Reasoning Models (R1, O3) as LLM Judges: Better or Worse?",
+   "channel": "Alex Volkov from ThursdAI",
+   "published": "2025-03-18",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "BsWxPI9UM4c",
+   "url": "https://www.youtube.com/watch?v=BsWxPI9UM4c",
+   "title": "Why AI evals are the hottest new skill for product builders | Hamel Husain & Shreya Shankar",
+   "channel": "Lenny's Podcast",
+   "published": "2025-09-25",
+   "type": "podcast",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "canon podcast (Lenny's, 2025-09): the two reference eval instructors on error analysis, binary grading, judge calibration",
+   "raw": "sources/raw/2026-10-01-market-scan-s05-context-memory-permissions-evals/podcast-BsWxPI9UM4c-podcast-lennys-hamel-husain-shreya-shankar-ai-evals.md",
+   "duration": "01:46:33"
+  },
+  {
+   "id": "k5NhsF7t68M",
+   "url": "https://www.youtube.com/watch?v=k5NhsF7t68M",
+   "title": "100 hours of Hermes Agent lessons in 23 minutes",
+   "channel": "Jack Roberts",
+   "published": "2026-05-24",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "jjKgTbC6Tsk",
+   "url": "https://www.youtube.com/watch?v=jjKgTbC6Tsk",
+   "title": "Karpathy vs OpenBrain: Which AI Memory System Wins? 🏆",
+   "channel": "AUTOHOTKEY Gurus",
+   "published": "2026-05-02",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "MFSd-_pMExI",
+   "url": "https://www.youtube.com/watch?v=MFSd-_pMExI",
+   "title": "Hamel Husain - Building LLM Apps in Production",
+   "channel": "Aleksa Gordić - The AI Epiphany",
+   "published": "2024-05-26",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "Aw7iQjKAX2k",
+   "url": "https://www.youtube.com/watch?v=Aw7iQjKAX2k",
+   "title": "GraphRAG vs. Traditional RAG: Higher Accuracy & Insight with LLM",
+   "channel": "IBM Technology",
+   "published": "2025-02-17",
+   "type": "video",
+   "module": "s10",
+   "modules": [
+    "s10"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s10 (found in the s5 scan): IBM: GraphRAG vs traditional RAG — parked for advanced retrieval"
+  },
+  {
+   "id": "Dq3R3uS0sQ4",
+   "url": "https://www.youtube.com/watch?v=Dq3R3uS0sQ4",
+   "title": "How the CEO of Obsidian Takes his Notes (Underrated Genius)",
+   "channel": "Karlos Obsidian Tutorials",
+   "published": "2025-12-05",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "bMk2IjMz7nM",
+   "url": "https://www.youtube.com/watch?v=bMk2IjMz7nM",
+   "title": "Morning News NOW Full Episode – Oct. 1",
+   "channel": "NBC News",
+   "published": "2026-10-01",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "FzO7NRe_7VA",
+   "url": "https://www.youtube.com/watch?v=FzO7NRe_7VA",
+   "title": "Paired Error Analysis With AI Agents",
+   "channel": "Hamel Husain",
+   "published": "2026-04-27",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "primary practitioner (Hamel Husain, 2026-04): paired error analysis with agents — the newest form of the method",
+   "raw": "sources/raw/2026-10-01-market-scan-s05-context-memory-permissions-evals/yt-FzO7NRe_7VA-hamel-husain-paired-error-analysis-with-agents.md",
+   "duration": "00:25:37"
+  },
+  {
+   "id": "rwq-zclOXXQ",
+   "url": "https://www.youtube.com/watch?v=rwq-zclOXXQ",
+   "title": "Dynamite 8/5/2020",
+   "channel": "HBO Max",
+   "published": "2025-05-15",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "4X4fCknI4vw",
+   "url": "https://www.youtube.com/watch?v=4X4fCknI4vw",
+   "title": "LLM Eval Office Hours #1: Multi-Turn Chat Evals",
+   "channel": "Hamel Husain",
+   "published": "2024-12-06",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "TMe8xz4cUKs",
+   "url": "https://www.youtube.com/watch?v=TMe8xz4cUKs",
+   "title": "Hamel Husain — Building Machine Learning Tools",
+   "channel": "CoreWeave",
+   "published": "2020-06-24",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "rffqHVK-m_w",
+   "url": "https://www.youtube.com/watch?v=rffqHVK-m_w",
+   "title": "The LLM Evals Stack: How to Actually Measure Your AI Feature",
+   "channel": "Glasp",
+   "published": "2026-06-05",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "qbvY0dQgSJ4",
+   "url": "https://www.youtube.com/watch?v=qbvY0dQgSJ4",
+   "title": "Al Engineering 101 with Chip Huyen (Nvidia, Stanford, Netflix)",
+   "channel": "Lenny's Podcast",
+   "published": "2025-10-23",
+   "type": "podcast",
+   "module": "s1",
+   "modules": [
+    "s1"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s1 (found in the s5 scan): Lenny's: Chip Huyen AI engineering 101 — general; parked for the s1 validation pass"
+  },
+  {
+   "id": "JolFqvXj3BE",
+   "url": "https://www.youtube.com/watch?v=JolFqvXj3BE",
+   "title": "Don't Build Agents, Build Environments Instead",
+   "channel": "Hamel Husain",
+   "published": "2026-08-25",
+   "type": "video",
+   "module": "s13",
+   "modules": [
+    "s13"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s13 (found in the s5 scan): Hamel Husain: don't build agents, build environments — parked for orchestration"
+  },
+  {
+   "id": "rWToRi2_SeY",
+   "url": "https://www.youtube.com/watch?v=rWToRi2_SeY",
+   "title": "A Field Guide to Rapidly Improving AI Products -- With Hamel Husain",
+   "channel": "Vanishing Gradients",
+   "published": "2025-06-17",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "i7twT3x5yv8",
+   "url": "https://www.youtube.com/watch?v=i7twT3x5yv8",
+   "title": "System Design Interview: A Step-By-Step Guide",
+   "channel": "ByteByteGo",
+   "published": "2023-02-09",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "bBvPQZmPXwQ",
+   "url": "https://www.youtube.com/watch?v=bBvPQZmPXwQ",
+   "title": "Behavioral Interview Discussion with Ex-Meta Hiring Committee Member",
+   "channel": "Hello Interview",
+   "published": "2025-02-04",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "60a0nHFefn4",
+   "url": "https://www.youtube.com/watch?v=60a0nHFefn4",
+   "title": "How To Create Cinematic Websites Using GPT-6 Astra",
+   "channel": "Paul J Lipsky",
+   "published": "2026-09-09",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "9bLgDoFkdqo",
+   "url": "https://www.youtube.com/watch?v=9bLgDoFkdqo",
+   "title": "Taking Control of Our Thoughts– Dr. Charles Stanley",
+   "channel": "In Touch Ministries",
+   "published": "2015-01-12",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "lYsrzaO2Mew",
+   "url": "https://www.youtube.com/watch?v=lYsrzaO2Mew",
+   "title": "Why the Human Layer Is Cybersecurity's Real Battleground | Sarah Gosler (Wells Fargo)",
+   "channel": "Semperis",
+   "published": "2026-09-29",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "TL527yTpxlk",
+   "url": "https://www.youtube.com/watch?v=TL527yTpxlk",
+   "title": "Complete Beginner's Course on AI Evaluations in 50 Minutes (2025) | Aman Khan",
+   "channel": "Peter Yang",
+   "published": "2025-08-24",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "dNtks5NfUwc",
+   "url": "https://www.youtube.com/watch?v=dNtks5NfUwc",
+   "title": "How to Answer ANY Product Management Interview Question",
+   "channel": "Aced (formerly Exponent)",
+   "published": "2022-11-22",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "nbxi7_I09fI",
+   "url": "https://www.youtube.com/watch?v=nbxi7_I09fI",
+   "title": "Memorize Anything So Fast It's Almost Unfair",
+   "channel": "BetterU",
+   "published": "2026-04-03",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "lzbbPBLPtdY",
+   "url": "https://www.youtube.com/watch?v=lzbbPBLPtdY",
+   "title": "Top 10 MCP Use Cases - Using Claude & Model Context Protocol",
+   "channel": "Codex Community",
+   "published": "2025-04-24",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "sgD-sw0RW78",
+   "url": "https://www.youtube.com/watch?v=sgD-sw0RW78",
+   "title": "Letta: Building Stateful AI Agents with Memory and Sleep-Time Compute",
+   "channel": "Arize AI",
+   "published": "2025-07-02",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "primary (Letta, 2025-07): stateful agents, tiered memory, sleep-time compute — the MemGPT lineage",
+   "raw": "sources/raw/2026-10-01-market-scan-s05-context-memory-permissions-evals/yt-sgD-sw0RW78-arize-letta-stateful-agents-sleep-time-compute.md",
+   "duration": "00:36:42"
+  },
+  {
+   "id": "3CB2RspIBrM",
+   "url": "https://www.youtube.com/watch?v=3CB2RspIBrM",
+   "title": "Advancing AI Frontiers with Long-Term Memory | Al Agents Podcast ft. Charles Packer",
+   "channel": "Composio",
+   "published": "2024-12-02",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "qphw6WeA7eQ",
+   "url": "https://www.youtube.com/watch?v=qphw6WeA7eQ",
+   "title": "Letta Office Hours: Dynamic Workflows, Cloud Agents, Grok 4.6, and Personalized Software",
+   "channel": "Letta",
+   "published": "2026-08-14",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "rxjsbUiuOFo",
+   "url": "https://www.youtube.com/watch?v=rxjsbUiuOFo",
+   "title": "Charles Packer on MemGPT - Weaviate Podcast #73!",
+   "channel": "Weaviate vector database",
+   "published": "2023-11-02",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Hamel Husain, Charles Packer, Eugene Yan on other channels or shorter cuts); the higher-authority or more complete version was transcribed"
+  },
+  {
+   "id": "zQK8apxUIS8",
+   "url": "https://www.youtube.com/watch?v=zQK8apxUIS8",
+   "title": "From Academia to Agentic AI: Ion Stoica of Databricks with Charles Packer & Sarah Wooders of Letta",
+   "channel": "Felicis",
+   "published": "2025-05-07",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "tTw1z10yMCI",
+   "url": "https://www.youtube.com/watch?v=tTw1z10yMCI",
+   "title": "MCP Servers Explained in 5 Minutes (for beginners)",
+   "channel": "corbin",
+   "published": "2025-04-06",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner explainer: re-explanation of the written canon (Husain/Yan/Anthropic pages)"
+  },
+  {
+   "id": "NGX-IDfC2DM",
+   "url": "https://www.youtube.com/watch?v=NGX-IDfC2DM",
+   "title": "MemGPT - Unlimited Context Window (Memory) for LLMs | Paper review, Installation & Demo",
+   "channel": "Venelin Valkov",
+   "published": "2023-10-30",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "FcyD85z3JSI",
+   "url": "https://www.youtube.com/watch?v=FcyD85z3JSI",
+   "title": "Congrats! You're the tech lead - now what? Eryn O'Neil | The Lead Developer New York 2017",
+   "channel": "LeadDev",
+   "published": "2017-03-15",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "off-topic for this module (local LLM tooling, news, interview prep, search noise)"
+  },
+  {
+   "id": "E9PCwRvIA8c",
+   "url": "https://www.youtube.com/watch?v=E9PCwRvIA8c",
+   "title": "SQL-MCP : How to connect SQL database with Claude AI using Model Context Protocol",
+   "channel": "Data Science in your pocket",
+   "published": "2025-03-23",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "JoAxZsdw_3w",
+   "url": "https://www.youtube.com/watch?v=JoAxZsdw_3w",
+   "title": "Carrying Out Error Analysis (C3W2L01)",
+   "channel": "DeepLearningAI",
+   "published": "2017-08-25",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "4aOLxPdx1Dg",
+   "url": "https://www.youtube.com/watch?v=4aOLxPdx1Dg",
+   "title": "Generating Conversation: MemGPT, Memory Management for LLMs - Charles Packer (Episode 9)",
+   "channel": "Herald",
+   "published": "2023-10-18",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "F84poRGVk-s",
+   "url": "https://www.youtube.com/watch?v=F84poRGVk-s",
+   "title": "Episode 5 - Crossroads",
+   "channel": "HBO Max",
+   "published": "2026-02-27",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "chain-of-thought-every-agent-has-an-evaluation-gap",
+   "url": "https://feeds.transistor.fm/chain-of-thought",
+   "title": "Every AI Agent Has an Evaluation Gap | Alex Ratner, Snorkel AI",
+   "channel": "Chain of Thought",
+   "published": "2026-04-29",
+   "type": "podcast",
+   "status": "candidate",
+   "reason": "already a candidate for s16 from the s1 pass; kept there",
+   "module": "s16",
+   "modules": [
+    "s16"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01"
+  },
+  {
+   "id": "chain-of-thought-why-context-alone-isnt-enough",
+   "url": "https://feeds.transistor.fm/chain-of-thought",
+   "title": "Why Context Alone Isn't Enough for Enterprise AI Agents | WisdomAI CPO Kapil Chhabra",
+   "channel": "Chain of Thought",
+   "published": "2026-09-24",
+   "type": "podcast",
+   "status": "candidate",
+   "reason": "parked for advanced retrieval (found in the s5 RSS pass)",
+   "module": "s10",
+   "modules": [
+    "s10"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01"
+  },
+  {
+   "id": "chain-of-thought-explaining-eval-engineering-galileo",
+   "url": "https://feeds.transistor.fm/chain-of-thought",
+   "title": "Explaining Eval Engineering | Galileo's Vikram Chatterji",
+   "channel": "Chain of Thought",
+   "published": "2025-12-19",
+   "type": "podcast",
+   "status": "discarded",
+   "reason": "RSS pass for s5: vendor (Galileo) on its own product category; Chip Huyen episode on the same feed taken instead",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01"
+  },
+  {
+   "id": "latent-space-production-ai-engineering-starts-with-evals-braintrust",
+   "url": "https://api.substack.com/feed/podcast/1084089.rss",
+   "title": "Production AI Engineering starts with Evals — with Ankur Goyal of Braintrust",
+   "channel": "Latent Space",
+   "published": "2024-10-11",
+   "type": "podcast",
+   "status": "discarded",
+   "reason": "RSS pass for s5: vendor founder (Braintrust); Husain's tool comparisons and the Lenny's episode cover the same ground; time budget",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01"
+  },
+  {
+   "id": "latent-space-reality-the-final-eval-andon-labs",
+   "url": "https://api.substack.com/feed/podcast/1084089.rss",
+   "title": "Reality: The Final Eval — Lukas Petersson and Axel Backlund of Andon Labs",
+   "channel": "Latent Space",
+   "published": "2026-06-04",
+   "type": "podcast",
+   "status": "candidate",
+   "reason": "parked for LLMOps II (found in the s5 RSS pass): real-world agent evals",
+   "module": "s16",
+   "modules": [
+    "s16"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01"
+  },
+  {
+   "id": "latent-space-creators-of-mcp",
+   "url": "https://api.substack.com/feed/podcast/1084089.rss",
+   "title": "The Creators of Model Context Protocol",
+   "channel": "Latent Space",
+   "published": "2025-04-03",
+   "type": "podcast",
+   "status": "candidate",
+   "reason": "parked for orchestration/MCP (found in the s5 RSS pass)",
+   "module": "s13",
+   "modules": [
+    "s13"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01"
+  },
+  {
+   "id": "latent-space-notion-token-town",
+   "url": "https://api.substack.com/feed/podcast/1084089.rss",
+   "title": "Notion's Token Town: 5 Rebuilds, 100+ Tools, MCP vs CLIs — Simon Last & Sarah Sachs",
+   "channel": "Latent Space",
+   "published": "2026-04-15",
+   "type": "podcast",
+   "status": "candidate",
+   "reason": "parked for orchestration (found in the s5 RSS pass): MCP vs CLIs at Notion",
+   "module": "s13",
+   "modules": [
+    "s13"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "decided": "2026-10-01"
+  },
+  {
+   "id": "mrYn6_6gJuY",
+   "url": "https://www.youtube.com/watch?v=mrYn6_6gJuY",
+   "title": "Practical Lessons for GenAI Evals | ft Chip Huyen & Vivienne Zhang",
+   "channel": "Galileo (Chain of Thought podcast)",
+   "published": "2024-12-04",
+   "duration": "00:49:43",
+   "type": "podcast",
+   "status": "transcribed",
+   "reason": "reference podcast (Chain of Thought, 2024-12): Chip Huyen on practical GenAI evals; found via the RSS pass, YouTube version with captions",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "raw": "sources/raw/2026-10-01-market-scan-s05-context-memory-permissions-evals/podcast-mrYn6_6gJuY-podcast-chain-of-thought-chip-huyen-practical-lessons-genai-evals.md",
+   "decided": "2026-10-01"
+  },
+  {
+   "id": "O7etCBod2IY",
+   "url": "https://www.youtube.com/watch?v=O7etCBod2IY",
+   "title": "How Block Deployed Goose to 12,000 Employees in 8 Weeks with MCP | Angie Jones",
+   "channel": "The Chain of Thought Podcast",
+   "published": "2026-01-21",
+   "duration": "00:50:27",
+   "type": "podcast",
+   "status": "transcribed",
+   "reason": "reference podcast (Chain of Thought, 2026-01): Block's Goose to 12,000 employees with MCP — external context and permissions at enterprise scale; found via the RSS pass",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s05-context-memory-permissions-evals.md",
+   "raw": "sources/raw/2026-10-01-market-scan-s05-context-memory-permissions-evals/podcast-O7etCBod2IY-podcast-chain-of-thought-angie-jones-block-goose-12000-employees-mcp.md",
+   "decided": "2026-10-01"
   }
  ]
 }
