@@ -5,7 +5,7 @@ pre-commit:
       run: gitleaks protect --staged --redact --no-banner
     no-env-files:
       run: |
-        if git diff --cached --name-only | grep -Eq '(^|/)\.env(\.|$)'; then
+        if git diff --cached --name-only | grep -Ev '\.env\.example$' | grep -Eq '(^|/)\.env(\.|$)'; then
           echo "Refusing to commit an .env file"; exit 1; fi
 
 pre-push:

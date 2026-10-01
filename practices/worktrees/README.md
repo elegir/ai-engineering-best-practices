@@ -8,7 +8,7 @@ tags: [worktrees, parallel-agents, isolation, windows]
 kind: working-style
 applies-when: "parallel_sessions"
 when: day-0   # day-0 | first-user | at-scale — when in a product's life this practice is installed (decision 0004 §5)
-reference-status: untested   # untested | field-tested | reference (decision 0005 §3)
+reference-status: field-tested   # 2026-10-01, shape-A bootstrap: sources/2026-10-01-field-report-shape-a-bootstrap.md
 principle: principles/06-parallel-agents-and-worktrees.md
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -77,6 +77,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 — `new-worktree.sh`: base branch defaults to the current branch (was `main`; failed on `master`); fetch only when a remote exists; the include loop no longer dies under `set -e`; `isolation.md` gains "the app must read `.env`". `reference-status: field-tested` after the shape-A bootstrap (`sources/2026-10-01-field-report-shape-a-bootstrap.md`).
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 

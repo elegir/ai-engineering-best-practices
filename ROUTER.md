@@ -12,7 +12,7 @@ Facts (practices/facts.md) → `python3 scripts/applies.py --explain <facts…>`
 | session-state | ws | long_tasks or parallel_sessions |  | day-0 | untested |
 | prompt-library | ws | always |  | day-0 | untested |
 | spec-driven | ws | always |  | day-0 | untested |
-| worktrees | ws | parallel_sessions |  | day-0 | untested |
+| worktrees | ws | parallel_sessions |  | day-0 | field-tested |
 | token-savings | ws | always |  | first-user | untested |
 | llm-api-calls | cap | llm_calls |  | day-0 | untested (draft) |
 | context-management | cap | multi_turn or retrieval |  | first-user | untested (draft) |

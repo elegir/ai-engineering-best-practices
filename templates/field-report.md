@@ -17,6 +17,8 @@ A field report is the only thing that moves a practice from `untested` to `field
 
 ## 1. What was adopted
 
+(A bootstrap adopts several practices at once: list them all here, give §2 one table per practice, and report §4 once for the whole run with the per-practice share estimated.)
+
 - Practice: `practices/<practice>/` at `last-reviewed: YYYY-MM-DD` (this is the `verified-against` date of any variant born from this report).
 - Repo and commit before / after: `<repo>@<sha>` → `<repo>@<sha>`.
 - Stack and runtime: e.g. PHP 8.3 / Laravel 11 / PHP-FPM; Python 3.12 / FastAPI; Node 22.

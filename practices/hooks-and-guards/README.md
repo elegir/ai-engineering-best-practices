@@ -64,7 +64,8 @@ The folder is named `dot-claude/` here because remote tools cannot write `.claud
 3. In `hooks.json` replace every `<<…>>`: the repo-specific protected path (`wp-config.php`, `bootstrap/cache/`, merged migrations), the repo-specific deny (production hosts, `wp db reset`, deploy commands), the format/lint commands per extension (copy the lines from `stack-notes/<stack>.md`; delete extensions the repo has no tool for), the stop test command (fast: under ~60 s), the timeouts.
 4. Run `<<PYTHON>> .claude/hooks/guard.py --selftest` until it prints OK: it checks that every tool resolves and that the protected/deny lists cover `.env`, the hooks themselves, `--force`, `--no-verify` and `rm -rf`.
 5. Add the self-test line to the entry file's startup routine (`../agent-entry-file/`, assertion 6) so a dead guard is reported every session.
-6. Merge `lefthook.yml`; install lefthook (`npm i -D lefthook` / `pip install lefthook` / `composer require --dev` equivalent) and run `lefthook install`.
+6. Exclude `.claude/` from the repo's formatter and linter (`guard.py` is formatted at ruff's default line length; a repo with another length would fail its own format check on the copied file).
+7. Merge `lefthook.yml`; install lefthook (`npm i -D lefthook` / `pip install lefthook` / `composer require --dev` equivalent) and run `lefthook install`.
 
 ## Verify
 

@@ -25,6 +25,7 @@ import glob, json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FACT_PRIORITY = ["acts_on_world", "personal_data", "regulated", "multi_tenant", "production"]
 WHEN_ORDER = {"day-0": 0, "first-user": 1, "at-scale": 2}
+ASKED = {"parallel_sessions", "long_tasks"}  # workflow facts: evidence about Martin, not about code
 
 SHAPES = {
     "A multi-tenant agent SaaS acting on the world (AI SDR)": "llm_calls exposes_tools acts_on_world multi_tenant production personal_data regulated brownfield parallel_sessions long_tasks",
@@ -120,7 +121,7 @@ def route(args, vocab, plist):
         holds = evaluate(p["applies"], allf, vocab)
         holds_inferred = evaluate(p["applies"], inferred, vocab)
         entry = {"name": p["name"], "kind": p["kind"], "when": p["when"], "ref": p["ref"], "status": p["status"], "applies_when": p["applies"], "variants": p["variants"]}
-        blank = not inferred  # a blank repo: nothing inferred yet
+        blank = not (inferred - ASKED)  # a blank repo: nothing inferred from code yet (asked facts do not count)
         if not holds:
             entry["verdict"] = "skipped"; entry["why"] = f"[{p['applies']}] does not hold"
         elif not holds_inferred and p["when"] != "day-0":

@@ -1,4 +1,5 @@
 """Smoke tests for a Python service or pipeline. Run: pytest -q -x tests/test_smoke.py"""
+import os
 import subprocess
 import sys
 
@@ -18,7 +19,8 @@ def test_pipeline_dry_run_processes_a_small_batch(seeded_db, dry_run_env):
     assert result.sent == 0  # dry-run mode must not send
 
 def test_cli_entrypoint_help():
-    out = subprocess.run([sys.executable, "-m", "<<app>>", "--help"], capture_output=True, text=True)
+    # src layout: pytest's pythonpath does not reach subprocesses; pass it explicitly (or `pip install -e .`).
+    out = subprocess.run([sys.executable, "-m", "<<app>>", "--help"], capture_output=True, text=True, env={**os.environ, "PYTHONPATH": "src"})
     assert out.returncode == 0
     assert "usage" in out.stdout.lower()
 
