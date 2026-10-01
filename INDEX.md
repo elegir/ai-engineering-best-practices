@@ -16,6 +16,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | 2026-09-27 | `sources/2026-09-27-s01-llm-setup-digest.md` — digest of the 13 session-1 transcripts with the impact table (34 findings → 1 new principle, 1 new practice, 6 glossary entries, 8 principles reviewed/refined, 3 parked) | digest | `sources/raw/2026-09-27-market-scan-s01-llm-setup/` |
 | 2026-09-27 | `sources/2026-09-27-market-scan-s02-context-caching.md` — market scan for LIDR session 2 "CAG: context, parameters, costs": 105 YouTube results + 9 podcast episodes considered, 16 items selected and transcribed (Claude, Google Cloud, AWS, LangChain ×2, AI Engineer ×2, Sequoia/Harrison Chase, Dex Horthy, Ebbelaar, Hugging Face, IBM ×3, Latent Space, Chain of Thought) | market scan | `sources/raw/2026-09-27-market-scan-s02-context-caching/` |
 | 2026-09-27 | `sources/2026-09-27-s02-context-caching-digest.md` — digest of the 16 session-2 transcripts with the impact table (36 findings → 1 new principle, 1 new practice, 1 new fact word, 6 glossary entries, 8 principles reviewed/refined, 2 parked) | digest | `sources/raw/2026-09-27-market-scan-s02-context-caching/` |
+| (living) | `sources/catalog-written-canon.md` — the written canon per course session (docs, papers, articles, courses), registered with `type: written` so none is read twice; sessions 1–3 + cross-cutting as of 2026-09-30 | catalogue | — |
 | (living) | `sources/media-registry.json` + `sources/media-registry.md` — every video/podcast episode ever considered, with status (transcribed / digested / applied / candidate / discarded) and reason; filtered by `scripts/scan-filter.py` | registry | — |
 | (living) | `sources/scan-log.md` — one row per course module: stage reached (mapped → catalogued → scanned → transcribed → digested → principled → validated) | tracking | — |
 
@@ -84,7 +85,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 
 ## Scripts
 
-`scripts/kb-sync.sh` — is this copy in sync with `origin/main`? (run first; `--pull` fast-forwards when only behind) · `scripts/kb-check.sh` — self-verification (frontmatter, index coverage, links, applicability fields + vocabulary, placeholders) · `scripts/kb-publish.sh` — branch/commit/push/merge/cleanup · `scripts/scan-filter.py` — drop already-registered media from a new scan result
+`scripts/kb-sync.sh` — is this copy in sync with `origin/main`? (run first; `--pull` fast-forwards when only behind) · `scripts/kb-check.sh` — self-verification (frontmatter, index coverage, links, applicability fields + vocabulary, placeholders) · `scripts/kb-publish.sh` — branch/commit/push/merge/cleanup · `scripts/scan-filter.py` — drop already-registered media from a new scan result · `scripts/written-filter.py` — same for written sources (URLs)
 
 ## Skills
 

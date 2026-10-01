@@ -18,7 +18,7 @@ Stages: `mapped` (topic listed, nothing done) → `catalogued` (written canon li
 
 ## LIDR — Máster AI Engineering (Oct 2026 – Feb 2027)
 
-Written canon for all 17 sessions was catalogued on 2026-09-24 (Claude Project docs `curso-fuentes-sesiones-*.md`; to be moved into this repo as sources/catalog.md (pending)).
+Written canon for all 17 sessions was catalogued on 2026-09-24 (Claude Project docs `curso-fuentes-sesiones-*.md`); it moves into `sources/catalog-written-canon.md` and the registry (`type: written`) session by session as each module is scanned (sessions 1–3 done 2026-09-30).
 
 | S | Date | Topic | Stage | Scan entry | Principle / practice | Notes |
 |---|---|---|---|---|---|---|
