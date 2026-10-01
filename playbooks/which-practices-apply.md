@@ -3,7 +3,7 @@ title: "Playbook — which practices apply to this repo: infer the facts with ev
 type: playbook
 status: current
 date: 2026-09-26
-last-reviewed: 2026-09-26
+last-reviewed: 2026-09-30
 tags: [applicability, selector, day-one, facts, audit]
 sources:
   - decisions/0003-applicability-by-facts.md
@@ -51,7 +51,7 @@ Stop until Martin confirms.
 
 ## Step 3 — Evaluate every practice
 
-Read the `applies-when` column of `practices/README.md` (do not open every README yet). For each practice write one of:
+Read the `applies-when` column of `practices/README.md` (do not open every README yet); `python3 <kb>/scripts/applies.py <fact> <fact> …` prints the mechanical result for the confirmed facts as a cross-check. For each practice write one of:
 
 - **applies** — the line holds for the confirmed facts.
 - **skipped — reason** — the line does not hold; the reason must be a fact about *this* repo ("no retrieval: no vector store, no embeddings call, no corpus"), never a preference or a lack of time. Copy the practice's prose "Does not apply when" only if it literally describes this repo.
@@ -77,10 +77,12 @@ Then run `playbooks/audit-repo-against-kb.md` on the *applies* + *already presen
 
 These are the shapes his repos actually have (2026-09). They are examples for the agent, not templates to copy; a shape becomes a copyable bundle only after it has been applied to two real repos (decision 0003 §7).
 
-**A. Multi-tenant agent SaaS that acts on the world** (cold-email system for law firms). Facts: `llm_calls`, `tools`, `acts_on_world` (sends email on a schedule), `multi_tenant` (customer workspaces), `production`, `personal_data` (lawyer contact lists, reply text), `regulated` (CAN-SPAM/TCPA consent), `brownfield`, `parallel_sessions`, `long_tasks`; `retrieval` = no unless a vector store exists; `multi_agent` = usually no. → All nine working-style practices; `agent-patterns/`; then, as they land: guardrails/structured outputs, agent security & permissions, tenant isolation, evals, LLMOps. Skipped: RAG/vector-store practices (no retrieval).
+**A. Multi-tenant agent SaaS that acts on the world** (cold-email system for law firms — confirmed on the real repo 2026-09-28). Facts: `llm_calls`, `exposes_tools` (an MCP server with 100+ tools; no agent loop of its own, so `tools` = no), `acts_on_world` (sends email and writes to the CRM on a schedule), `multi_tenant` (customer workspaces with RLS), `production`, `personal_data` (contact lists, reply text), `regulated` (CAN-SPAM, LFPDPPP), `brownfield`, `parallel_sessions`, `long_tasks`; `retrieval` = no (no vector store, embeddings or corpus); `multi_turn` = no — dormant since 2026-07 (Slack bot switched off); `multi_agent` = no. → Working-style: all ten (`context-docs-skeleton`, `agent-entry-file`, `hooks-and-guards`, `session-state`, `worktrees`, `verification`, `spec-driven`, `prompt-library`, `token-savings`, `security-baseline`). Capability, in the ordering rule: `llm-gateway/` (acts_on_world + production: fallback, keys per tenant, model registry), `agent-patterns/` (exposes_tools: the tool-design half), `llm-api-calls/`; then, as they land: structured outputs/guardrails (S4), tenant isolation, evals, LLMOps. Skipped: `context-management/` — no `multi_turn` (bot dormant) and no `retrieval`; RAG practices — no retrieval.
 
-**B. Scheduled LLM publishing pipeline** (RSS → rewrite → WordPress). Facts: `llm_calls`, `acts_on_world` (publishes to public sites), `production`, `brownfield`; `tools` = no (one call with a fixed prompt), `retrieval` = no, `multi_tenant` = **no** (many sites, one owner), `personal_data` = usually no. → Working-style practices; then structured outputs/guardrails (output validation before publishing), prompt caching/cost, evals of output quality, LLMOps (cost per run). Skipped: `agent-patterns/` (no model-driven control flow — say so), RAG practices, tenant isolation.
+**B. Scheduled LLM publishing pipeline** (RSS → rewrite → WordPress). Facts: `llm_calls`, `acts_on_world` (publishes to public sites), `production`, `brownfield`; `tools` = no (one call with a fixed prompt), `exposes_tools` = no, `multi_turn` = no, `retrieval` = no, `multi_tenant` = **no** (many sites, one owner), `personal_data` = usually no, `parallel_sessions`/`long_tasks` as answered. → Working-style: eight (`session-state` and `worktrees` only if the two asked facts are yes). Capability: `llm-api-calls/` (one client module, versioned prompt, caching order), `llm-gateway/` (production: fallback and timeouts for a scheduled job that must not silently stall, model registry); then structured outputs/guardrails (output validation before publishing, S4), evals of output quality, LLMOps (cost per run). Skipped: `agent-patterns/` — no model-driven control flow and no tools exposed (say so); `context-management/` — single-shot calls, no history, no retrieval; RAG practices; tenant isolation.
 
-**C. Content or marketing site with no LLM at runtime**. Facts: `production`, `brownfield` (or not); everything LLM-related = no. → Working-style practices only (the coding agent still needs verification, context docs, an entry file, hooks). Skipped: every capability practice, each with "no `llm_calls`: no model SDK, no API key, no prompts".
+**C. Content or marketing site with no LLM at runtime**. Facts: `production`, `brownfield` (or not); everything LLM-related = no. → Working-style practices only — the coding agent still needs verification, context docs, an entry file, hooks and the security baseline. Skipped: every capability practice, each with "no `llm_calls`: no model SDK, no API key, no prompts".
 
-**D. Payments / fintech**. Facts: `regulated` (PCI/KYC), `personal_data`, `production`, `multi_tenant` if several merchants; LLM facts as found. → Working-style; the security-by-design and compliance practices attach on `regulated` regardless of whether an LLM is present.
+**D. Payments / fintech**. Facts: `regulated` (PCI/KYC), `personal_data`, `production`, `multi_tenant` if several merchants; LLM facts as found. → Working-style incl. `security-baseline/`; the security-by-design and compliance practices attach on `regulated` regardless of whether an LLM is present; capability practices only when the LLM facts are found.
+
+These four lists are produced mechanically by `python3 scripts/applies.py --shapes` from the `applies-when` lines in `practices/README.md`; `scripts/kb-check.sh` runs it so the examples cannot drift from the practices (they did between 2026-09-26 and 2026-09-30). The script is a helper: the agent still writes the evidence and the repo-specific reasons.
