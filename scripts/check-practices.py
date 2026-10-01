@@ -22,9 +22,10 @@ ASSERT = re.compile(r"^\d+\. .+ — observer: (script|agent|Martin) — negative
 STACKY = re.compile(r"\b(npx|npm|pip|pip-audit|pytest|composer|vendor/bin|phpunit|pest|ruff|biome|playwright|python3)\b|src/|`/(context|ask-expert|audit|lesson|plan-ticket|develop-task|start-session|end-session)`")
 
 def routed():
-    for line in open(os.path.join(P, "README.md"), encoding="utf-8"):
-        m = re.match(r"\| `([a-z0-9-]+)/` \|", line)
-        if m: yield m.group(1)
+    """Every practice folder with a README (routed or 'routed: false'): the schema applies to both."""
+    for name in sorted(os.listdir(P)):
+        if name.startswith("_") or not os.path.isfile(os.path.join(P, name, "README.md")): continue
+        yield name
 
 def frontmatter(text):
     m = re.match(r"^---\n(.*?)\n---\n", text, re.S)

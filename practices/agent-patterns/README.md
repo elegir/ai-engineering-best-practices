@@ -3,7 +3,7 @@ title: "Practice — agent patterns: decide workflow vs agent, build the minimal
 type: practice
 status: draft            # draft until principle 21 is confirmed against LIDR session 12
 date: 2026-09-24
-last-reviewed: 2026-09-30
+last-reviewed: 2026-10-01
 tags: [agents, tools, function-calling, mcp, agentic-rag, patterns]
 kind: capability
 applies-when: "tools or multi_agent or exposes_tools"
@@ -81,6 +81,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 (s4) — `tool-definition-template.md` §Template: mark tools `strict` where supported; description rules extend to output schemas (when / how / what). Source `sources/2026-10-01-s04-structured-outputs-digest.md` rows 2 and 4.
 - 2026-10-01 — `tool-definition-template.md` gets a day-zero home (`docs/`) before any tool exists; shape-A bootstrap: assertion 1 passed, 2/4/5 n.a. for a tool *provider* with no loop.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).

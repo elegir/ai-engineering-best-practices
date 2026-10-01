@@ -45,7 +45,11 @@ for d in practices/*/; do
   for w in $(echo "$aw $fw" | tr -c 'a-z_' ' '); do
     case " always and or not $vocab " in *" $w "*) ;; *) say "$f: applies-when/full-when uses undeclared word '$w' (add it to practices/facts.md)";; esac
   done
-  grep -Fq "| \`$name/\` |" practices/README.md || say "$d: no row in practices/README.md table"
+  if grep -Eq '^routed: *false' "$f"; then
+    grep -Fq "| \`$name/\` |" practices/README.md && say "$f: says routed: false but has a row in practices/README.md"
+  else
+    grep -Fq "| \`$name/\` |" practices/README.md || say "$d: no row in practices/README.md table (a draft practice that must stay unrouted per decision 0004 §6 declares 'routed: false' in its frontmatter)"
+  fi
 done
 
 echo "[5/11] placeholders outside practices/ and templates/"

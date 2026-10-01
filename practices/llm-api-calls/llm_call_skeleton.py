@@ -34,6 +34,12 @@ MAX_RETRIES = 2                      # on rate limit / overload only; never retr
 _client = anthropic.Anthropic(timeout=TIMEOUT_S, max_retries=0)  # we handle retries ourselves
 
 
+def client() -> anthropic.Anthropic:
+    """The ONE vendor client (assertion 1). Other modules that need the raw SDK — e.g. the structured-outputs
+    module ../structured-outputs/structured_call.py — import this accessor instead of instantiating their own."""
+    return _client
+
+
 @dataclass
 class Result:
     """What every caller gets back. `error` is set instead of raising."""
@@ -96,6 +102,8 @@ def call(
         # This log line is how you verify caching and cost per feature. Keep it.
         log.info("llm model=%s stop=%s attempt=%d usage=%s", model, resp.stop_reason, attempt, usage)  # attempt = retry count (assertion 4)
 
+        # `stop_reason` values `refusal` and `max_tokens` are NOT parse errors: a structured call returns them as typed
+        # branches — see ../structured-outputs/structured_call.py (practices/structured-outputs/, 2026-10-01).
         blocks = [b.model_dump() for b in resp.content]
         text = "".join(b["text"] for b in blocks if b.get("type") == "text")
         return Result(text=text, items=blocks, stop_reason=resp.stop_reason, usage=usage)

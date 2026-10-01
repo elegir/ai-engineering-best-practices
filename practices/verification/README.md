@@ -3,7 +3,7 @@ title: "Practice — verification (deterministic sensors per application type)"
 type: practice
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-30
+last-reviewed: 2026-10-01
 tags: [testing, e2e, playwright, hurl, pytest, bats, evals, definition-of-done]
 kind: working-style
 applies-when: "always"
@@ -82,6 +82,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 (s4) — `dry-run-and-approval.md` rule 2b: confidence-gated approval with a time-boxed window (threshold and window in code; expiry does not send). Source `sources/2026-10-01-s04-structured-outputs-digest.md` row 22 (Bhardwaj; Boundary).
 - 2026-10-01 — `stack-notes/python.md` added (walking skeleton, src layout, seeding, one-line refusal); `test_smoke.py` CLI test passes `PYTHONPATH=src`; one dry-run switch name across the practice. Two bootstraps (`sources/2026-10-01-field-report-shape-b-bootstrap.md`, `sources/2026-10-01-field-report-shape-a-bootstrap.md`): assertions 1, 2, 6 passed with negatives in both; 3–5 await Martin.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-30 — added `dry-run-and-approval.md`, a section that applies only when the repo's facts include `acts_on_world`; per `decisions/0004-day-one-for-blank-and-existing-repos.md` §7 (debate attack 2: the fintech moves money with no LLM, so the dry-run rule belongs here, not in `llm-gateway`). The practice stays `always`; the file is conditional.
