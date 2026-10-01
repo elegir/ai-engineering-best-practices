@@ -17,6 +17,8 @@ Example: <<param values → what the model will see, three lines>>.
 
 Parameter descriptions: one line each, with the format and an example value (`order_id: the 8-digit id shown in the customer's email, e.g. "10482233"`).
 
+Mark the tool `strict` where the provider supports it (`strict: true` per tool on Anthropic and OpenAI as of 2026-10-01): constrained decoding then removes hallucinated tool names and malformed arguments (Pokrass, 2024-09). The same description rules apply to **output schemas** — the system prompt says *when*, the field description says *how*; a descriptive key name helps but the key-name trick is swyx's, not officially endorsed (`../structured-outputs/schema-design-rules.md`).
+
 ## Checklist (all thirteen before the tool ships)
 
 1. [ ] **UI-shaped, not API-shaped.** One call returns what a person would see on the screen for this question, with the surrounding context. Not three endpoints the model must stitch.

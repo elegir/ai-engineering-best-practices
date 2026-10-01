@@ -3,7 +3,7 @@ title: "Model selection — match reasoning depth to the task, not brand to habi
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-30
+last-reviewed: 2026-10-01
 tags: [models, opus, sonnet, codex, gemini, routing]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -32,6 +32,7 @@ The workshop's table (2026-09-08) is reproduced in the source entry. The durable
 - **Route by verifiability as well as by phase.** Reasoning tiers are trained by reinforcement learning on *checkable* answers and earn their tokens where the output can be checked — code with tests, maths, schema-bound extraction, deep debugging; on open-ended writing or brainstorming they add latency and cost for no measurable gain (Karpathy, 2025-02; Klein, 2026-04 — `sources/2026-09-27-s01-llm-setup-digest.md` §3.1, §5). On a reasoning tier set the thinking budget instead of writing "step 1, step 2" into the prompt.
 - **Auto routing** (Cursor/Copilot "Auto", OpenRouter/LiteLLM) is acceptable for cost control when the task is routine; the speaker "barely notices differences" on daily work. Turn it off for planning.
 - **Privacy mode on, memories on** regardless of model.
+- **A decision task is its own tier, below the cheapest chat model.** Classify, route, gate, score: a discriminative classifier, a provider's moderation endpoint or a probability-returning "system-one" model with enumerated options and a threshold in code answers in tens of milliseconds for a fraction of a cent; generative models are used only where text or tool arguments are produced (Rajpal, 2023-11; Carpintero, 2026-04; Boundary and Witteveen on Jev, 2026-09 — `sources/2026-10-01-s04-structured-outputs-digest.md` §3.4; `principles/13-structured-outputs-and-guardrails.md` §3.4). Table unchanged: the table is about generative tiers.
 
 Vendor preference stated in the workshop: Anthropic (latest Opus for planning, Sonnet 4.6 for execution as of 2026-09-08), with Codex (if already paying ChatGPT) and Gemini Pro as fully valid alternatives; Cursor's Composer 2 for speed.
 
@@ -58,3 +59,4 @@ Vendor preference stated in the workshop: Anthropic (latest Opus for planning, S
 - 2026-09-27 — refined against `sources/2026-09-27-s01-llm-setup-digest.md`: a second routing criterion beside *phase* — **verifiability**. Reasoning models are trained by RL on checkable answers and pay off where the output can be checked (code, maths, schema-bound extraction); on open-ended tasks they burn tokens for no measurable gain (Karpathy, 2025-02; Klein, 2026-04). Karpathy's own split: a fast model for 80–90 % of queries, a thinking model for hard, checkable problems. On a reasoning model use the native thinking budget, not hand-written step scaffolds (Ng, 2026-05). One bullet added to §3.
 - 2026-09-27 (s2) — one datum from `sources/2026-09-27-s02-context-caching-digest.md`: for input-heavy agent workloads, compare models on *cached-input* price and cache infrastructure, not sticker price — Manus reports hosted frontier models coming out cheaper than open-weight ones once hit rate is counted. Row 10 of `practices/llm-api-calls/provider-selection-checklist.md` updated; table unchanged.
 - 2026-09-30 (s3) — refined against `sources/2026-09-30-s03-wrappers-digest.md`: routes carry a **latency class** besides a tier (chat ~seconds, embeddings sub-second, reasoning tens of seconds on the same prompt) and the reasoning level is pinned per route; model choice is re-evaluated quarterly because the market swings (frontier launch → surge → invoices → cheaper option months later — OpenRouter); a model id lives in a registry with a daily availability check, never in code. Table unchanged.
+- 2026-10-01 (s4) — refined against `sources/2026-10-01-s04-structured-outputs-digest.md`: a *decision* task (classify, route, gate, score) is its own tier below the cheapest chat model — a discriminative classifier, a moderation endpoint or a probability-returning "system-one" model with enumerated options and a threshold in code; generative models only where text or tool arguments are produced (Rajpal 2023; Carpintero 2026-04; Boundary/Witteveen 2026-09). One sentence under the tier list; table unchanged.

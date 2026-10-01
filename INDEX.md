@@ -19,6 +19,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 | 2026-09-30 | `sources/2026-09-30-market-scan-s03-wrappers.md` — market scan for LIDR session 3 "Model wrappers and layered architecture": 118 YouTube results + 9 podcast episodes considered, 12 new items transcribed (AI Engineer ×2, EuroPython, API World, AI Engineering Podcast, Latent Space via Whisper, Mastra, Langfuse, PyCon DE, CNCF, Scala Days, Percona) + 5 reused | market scan | `sources/raw/2026-09-30-market-scan-s03-wrappers/` |
 | 2026-09-30 | `sources/2026-09-30-s03-wrappers-digest.md` — digest with the impact table (32 findings → 1 new principle, 1 new practice, 6 glossary entries, 5 principles refined, 2 parked) | digest | — |
 | 2026-10-01 | `sources/2026-10-01-market-scan-s04-structured-outputs.md` — market scan for session 4 (structured outputs, guardrails, non-conversational UX): 165 items considered, 13 transcribed (~8 h 20 min: Jason Liu ×2, Pokrass/OpenAI, Colvin/Pydantic, Boundary Jev, Witteveen, ModernBERT guardrails, Rajpal, OWASP→guardrails, three gen-UI talks, Zack Witten), 9 parked, 15 written canon registered | market scan | — |
+| 2026-10-01 | `sources/2026-10-01-s04-structured-outputs-digest.md` — digest with the impact table for session 4 (34 findings → 1 new principle, 1 new unrouted practice, 8 glossary entries, 6 principles and 5 practices refined, Jev attribution corrected, depth parked to s5/s13/s14/s16) | digest | — |
 | 2026-10-01 | `sources/2026-10-01-field-report-shape-a-bootstrap.md` — second arm: blank shape-A repo (multi-tenant cold-email SaaS exposing MCP tools) bootstrapped in 23 min / 297k tokens, 13 practices, tenant isolation and suppression as tested code on day zero, 26 findings (22 fixed), `worktrees` → field-tested; acceptance test of decision 0004 §8 passed in the reference stack | field report | — |
 | 2026-10-01 | `sources/2026-10-01-field-report-shape-b-bootstrap.md` — first field report: blank shape-B repo bootstrapped from the KB in 13 min / 268k tokens, 8 practices, 22 findings (19 fixed the same day), `hooks-and-guards` → field-tested | field report | — |
 | 2026-09-30 | `sources/2026-09-30-stack-debate.md` — devil's advocate vs "contract + prompt + one Python reference, no per-stack ports": 15 attacks, two rounds; survived with conditions (structured Verify, stack-sensitive points, stack-notes, fail-closed guard, variant governance, two-arm experiment) → decision 0005 | debate | — |
@@ -31,26 +32,27 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 
 | # | File | Status | Last reviewed |
 |---|---|---|---|
-| 00 | `principles/00-glossary.md` | current | 2026-09-30 |
+| 00 | `principles/00-glossary.md` | current | 2026-10-01 |
 | 01 | `principles/01-context-engineering.md` | current | 2026-09-27 |
 | 02 | `principles/02-harness-engineering.md` | current | 2026-09-27 |
 | 03 | `principles/03-agent-instruction-files.md` | current | 2026-09-08 |
 | 04 | `principles/04-spec-driven-development.md` | current | 2026-09-27 |
-| 05 | `principles/05-verification-loops.md` | current | 2026-09-30 |
+| 05 | `principles/05-verification-loops.md` | current | 2026-10-01 |
 | 06 | `principles/06-parallel-agents-and-worktrees.md` | current | 2026-09-27 |
 | 07 | `principles/07-token-economy.md` | current | 2026-09-27 |
-| 08 | `principles/08-model-selection.md` | current (model names dated 2026-09-08) | 2026-09-30 |
+| 08 | `principles/08-model-selection.md` | current (model names dated 2026-09-08) | 2026-10-01 |
 | 09 | `principles/09-knowledge-base-design.md` | current | 2026-09-08 |
-| 10 | `principles/10-llm-api-fundamentals.md` — what a model call is, what the model cannot do, prompt structure and iteration, tokens/caching, provider checklist (course session 1) | draft | 2026-09-30 |
-| 11 | `principles/11-runtime-context-management.md` — the window as a budget; offload / reduce / retrieve / isolate / cache; compaction rules; prompt caching and KV-cache economics; long context vs CAG vs retrieval (course session 2) | draft | 2026-09-30 |
-| 12 | `principles/12-llm-gateway-layer.md` — the layer between code and providers: fallback over retry, one retry owner, cooldown, timeouts per route, tiers and shedding, keys, model registry, streaming pipeline, OTel tracing, semantic-cache boundary (course session 3) | draft | 2026-09-30 |
-| 21 | `principles/21-agent-design-and-tools.md` — workflow vs agent, minimal loop, tool design, CLI/MCP/skill, agentic RAG (numbered by course session; 10–20 reserved) | draft | 2026-09-30 |
+| 10 | `principles/10-llm-api-fundamentals.md` — what a model call is, what the model cannot do, prompt structure and iteration, tokens/caching, provider checklist (course session 1) | draft | 2026-10-01 |
+| 11 | `principles/11-runtime-context-management.md` — the window as a budget; offload / reduce / retrieve / isolate / cache; compaction rules; prompt caching and KV-cache economics; long context vs CAG vs retrieval (course session 2) | draft | 2026-10-01 |
+| 12 | `principles/12-llm-gateway-layer.md` — the layer between code and providers: fallback over retry, one retry owner, cooldown, timeouts per route, tiers and shedding, keys, model registry, streaming pipeline, OTel tracing, semantic-cache boundary (course session 3) | draft | 2026-10-01 |
+| 13 | `principles/13-structured-outputs-and-guardrails.md` — three layers of structured output and what each guarantees; schema design rules; validators with one bounded re-ask; decisions as classifications (calibration, classifiers, system-one models); guardrails by checkpoint, tier, on-fail action and placement; generative UI in three tiers with an allow-list renderer and untrusted model-written code; prompt templates confirmed (course session 4) | draft | 2026-10-01 |
+| 21 | `principles/21-agent-design-and-tools.md` — workflow vs agent, minimal loop, tool design, CLI/MCP/skill, agentic RAG (numbered by course session; 10–20 reserved) | draft | 2026-10-01 |
 
 ## Practices (applicable — copyable files with "applies when", adapt and verify sections)
 
 (Which practices apply to a repo: `ROUTER.md` (generated) → `scripts/applies.py --explain <facts…>`; facts from `playbooks/which-practices-apply.md` (existing repo) or `playbooks/bootstrap-new-repo.md` (blank repo); vocabulary in `practices/facts.md`.)
 
-All fourteen routed practices carry a structured Verify (the contract), `## Reference implementation`, `## Stack-sensitive points`, `when` and `reference-status: untested` since 2026-09-30 (decision 0005); `ROUTER.md` is the generated summary.
+All fourteen routed practices (and the unrouted `structured-outputs/` draft) carry a structured Verify (the contract), `## Reference implementation`, `## Stack-sensitive points`, `when` and `reference-status: untested` since 2026-09-30 (decision 0005); `ROUTER.md` is the generated summary.
 
 | Practice | Implements | Files | Status | Last reviewed |
 |---|---|---|---|---|
@@ -59,15 +61,16 @@ All fourteen routed practices carry a structured Verify (the contract), `## Refe
 | `practices/hooks-and-guards/` | 02, 05 | `.claude/settings.json` (native deny list + hooks wired `|| exit 2`), `guard.py` (one fail-closed hook: protect, deny, format/lint, stop gate, `--selftest`), `hooks.json`, `lefthook.yml`, stack-notes node/python/php-wordpress/php-laravel, legacy shell hooks | current | 2026-09-30 |
 | `practices/session-state/` | 02 | `PROGRESS.json`, `/start-session`, `/end-session`, startup routine | current | 2026-09-30 |
 | `practices/worktrees/` | 06 | `.worktreeinclude`, `new-worktree.sh/.ps1`, `remove-worktree.sh`, `isolation.md` | current | 2026-09-30 |
-| `practices/verification/` | 05 | Playwright smoke, Hurl smoke, pytest smoke, bats, definition-of-done, harness-evals, `dry-run-and-approval.md` (when `acts_on_world`), stack-notes php-laravel | current | 2026-09-30 |
+| `practices/verification/` | 05 | Playwright smoke, Hurl smoke, pytest smoke, bats, definition-of-done, harness-evals, `dry-run-and-approval.md` (when `acts_on_world`), stack-notes php-laravel | current | 2026-10-01 |
 | `practices/spec-driven/` | 04 | `specs/README.md`, `/plan-ticket`, `/develop-task`, `constitution.md`, OpenSpec quickstart | current | 2026-09-30 |
 | `practices/prompt-library/` | 01, 04, 21 | meta-prompt, ask-the-expert, readme-by-index, openapi, standards-doc, `/audit`, commit skill, `/lesson`, trajectory-review, `implement-practice.md` (the one prompt to implement any practice in any stack) | current | 2026-09-30 |
 | `practices/token-savings/` | 07 | ordered checklist, MCP audit (CLI-over-MCP rule added), measurement log | current | 2026-09-30 |
-| `practices/security-baseline/` | 02, 05 | core (`always`): secret-scan hook, dependency policy · full (`acts_on_world or personal_data or regulated or multi_tenant`): MCP trust register, agentic threat model, injection fixture · stack-notes php-laravel | draft | 2026-09-30 |
-| `practices/llm-api-calls/` | 10 | `llm_call_skeleton.py` (one client module, usage log incl. cached tokens), `system-prompt-template.md` (ten parts, static-first, 12-point checklist), `failure-modes-and-mitigations.md`, `provider-selection-checklist.md`, `context-budget.md`, stack-notes python/php-laravel | draft | 2026-09-30 |
+| `practices/security-baseline/` | 02, 05 | core (`always`): secret-scan hook, dependency policy · full (`acts_on_world or personal_data or regulated or multi_tenant`): MCP trust register, agentic threat model, injection fixture · stack-notes php-laravel | draft | 2026-10-01 |
+| `practices/llm-api-calls/` | 10 | `llm_call_skeleton.py` (one client module, usage log incl. cached tokens), `system-prompt-template.md` (ten parts, static-first, 12-point checklist), `failure-modes-and-mitigations.md`, `provider-selection-checklist.md`, `context-budget.md`, stack-notes python/php-laravel | draft | 2026-10-01 |
 | `practices/context-management/` | 11 | `context-budget-and-triggers.md`, `compaction-policy.md`, `compaction_skeleton.py`, `context-failure-modes.md`, `context-store-decision.md`, `context-metrics-and-evals.md` | draft | 2026-09-30 |
-| `practices/llm-gateway/` | 12 | `routing-policy.md`, `gateway_config.yaml` (LiteLLM shape), `fallback-approval.md`, `model-registry.md`, `streaming-pipeline.md`, `tracing-otel.md`, `semantic-cache-decision.md`, stack-notes php-laravel | draft | 2026-09-30 |
-| `practices/agent-patterns/` | 21 | decision checklist, patterns catalogue, agent-loop skeleton, tool-definition template + 12-point checklist, tool-transport decision table (CLI/MCP/skill/RAG/memory + auth ladder), agentic-RAG skeleton | draft | 2026-09-30 |
+| `practices/llm-gateway/` | 12 | `routing-policy.md`, `gateway_config.yaml` (LiteLLM shape), `fallback-approval.md`, `model-registry.md`, `streaming-pipeline.md`, `tracing-otel.md`, `semantic-cache-decision.md`, stack-notes php-laravel | draft | 2026-10-01 |
+| `practices/agent-patterns/` | 21 | decision checklist, patterns catalogue, agent-loop skeleton, tool-definition template + 12-point checklist, tool-transport decision table (CLI/MCP/skill/RAG/memory + auth ladder), agentic-RAG skeleton | draft | 2026-10-01 |
+| `practices/structured-outputs/` | 13 | `structured_call.py` (typed result with ok / refusal / truncated / invalid branches, validators, one re-ask, schema version logged), `schema-design-rules.md` (dated vendor table), `validation-and-reask.md`, `decision-vs-generation.md`, `guardrail-policy.md`, `guardrail-tiers.md`, `guardrail-fixture.md`, `generative-ui-decision.md`, stack-notes python/php-laravel | draft, **unrouted** until the routing gate of decision 0004 §6 (no row in `practices/README.md`, absent from `ROUTER.md`) | 2026-10-01 |
 | `practices/_template/` | — | README template for new practices | — | — |
 
 ## Decisions
@@ -125,6 +128,7 @@ All fourteen routed practices carry a structured Verify (the contract), `## Refe
 | LLM API call structure, prompt structure and iteration, tokens / context window / prompt caching, reasoning models, provider selection, model failure modes | `10-llm-api-fundamentals.md` | `llm-api-calls/` | s1 digest `sources/2026-09-27-s01-llm-setup-digest.md` |
 | Runtime context management: window budget, compaction, offloading, sub-agent isolation, prompt caching / KV cache economics, long context vs CAG vs RAG, context failure modes | `11-runtime-context-management.md` | `context-management/` | s2 digest `sources/2026-09-27-s02-context-caching-digest.md` |
 | LLM gateway layer: routing, fallback, retries, cooldown, timeouts, capacity tiers, keys, model registry, streaming (SSE, pipeline stages), OTel GenAI tracing, semantic caching | `12-llm-gateway-layer.md` | `llm-gateway/` | s3 digest `sources/2026-09-30-s03-wrappers-digest.md` |
+| Structured outputs (constrained decoding, JSON mode, strict tools, schema design, validation and re-ask), decisions vs generation (calibration, classifiers, system-one models), runtime guardrails (checkpoints, tiers, on-fail, placement, fixture), generative UI (static / declarative / open-ended, untrusted code), prompt templates | `13-structured-outputs-and-guardrails.md` | `structured-outputs/` (unrouted draft) | s4 digest `sources/2026-10-01-s04-structured-outputs-digest.md` |
 | How this KB is structured | `09-knowledge-base-design.md` | `practices/README.md` | research (all) |
 | Agents: workflow vs agent, minimal loop, tool design, CLI/MCP/skill/RAG/memory, agentic RAG | `21-agent-design-and-tools.md` | `agent-patterns/`, `prompt-library/trajectory-review.md` | s12 digest §3, impact table §6 |
 

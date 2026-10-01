@@ -3,7 +3,7 @@ title: "Glossary — the vocabulary of building software with AI agents"
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-30
+last-reviewed: 2026-10-01
 tags: [glossary, vocabulary]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -112,11 +112,28 @@ This field renames itself every few months. Below are the terms as used in this 
 
 **12-Factor Agents.** Dex Horthy's 2025 list of patterns for reliable LLM applications: own your prompts, own your context window, tools are structured outputs (JSON + code), own your control flow, unify state, launch/pause/resume, contact humans with tool calls, compact errors, small focused agents, trigger from anywhere, stateless reducer. The design stance behind the thin wrapper layer.
 
+**Structured outputs / constrained decoding.** A provider feature that masks the model's next-token choices so the output must conform to a supplied JSON Schema (or a strict tool schema); it guarantees the *shape*, not the correctness, calibration or absence of a refusal or truncation. Three layers exist: prompt-and-parse (tags, prefill, regex), JSON mode, native structured outputs. Pokrass (2024-09); OpenAI and Anthropic docs (read 2026-10-01). Principle: `13-structured-outputs-and-guardrails.md`.
+
+**JSON mode.** The weaker predecessor of structured outputs: the output is constrained to valid JSON, but keys and types are left to the model ("you don't want the model to kind of make up the keys"). Pokrass (2024-09).
+
+**Strict tool use.** The same constrained decoding applied to a tool's argument schema, so tool names and arguments cannot be hallucinated or malformed; combinable with JSON outputs in one request, `strict: true` per tool. Anthropic docs (2026-10-01); Pokrass.
+
+**Re-ask (validation loop).** Appending a validator's error message to the conversation and calling the model again, capped (usually once) and owned by one layer; the mechanism behind Instructor and Guardrails AI. Native constrained decoding handles the shape; the re-ask is only for invariants a schema cannot express. Liu (2023, 2024); Rajpal (2023). Practice: `practices/structured-outputs/validation-and-reask.md`.
+
+**Guardrail (runtime).** A check at a trust boundary of an LLM application — input, retrieval, tool call, output, memory, plan — with a tier (rule / classifier / LLM judge), an on-fail action (re-ask, fix, filter, refrain, log, raise), a fail-open/closed policy, a time budget and a placement (blocking or parallel). Side-effect guards run blocking. Rajpal; NeMo Guardrails; OpenAI Agents SDK (2026-10-01). Policy file: `practices/structured-outputs/guardrail-policy.md`.
+
+**System-one model / decision model.** A model that answers typed questions (choice, score, yes/no) with calibrated probabilities in one forward pass instead of generating text; Jev (Type-Safe AI, 2026-09) is the first product; a fine-tuned encoder classifier or a log-probability read over enumerated options is the older form. Decisions go to such a model with thresholds in code; generation stays with generative models. Witteveen; Boundary; Carpintero.
+
+**Generative UI.** A model deciding what interface to show: *static* (tool call → developer-built component), *declarative* (JSON spec → component catalogue; A2UI, json-render), *open-ended* (model-written HTML or code in an iframe or isolate; MCP Apps). Declarative is the stated balance; the renderer is an allow-list; model-written code is untrusted code. CopilotKit (2026-01); Casas (2026-09); Agrawal (2026-09). Decision file: `practices/structured-outputs/generative-ui-decision.md`.
+
+**Prompt injection (direct / indirect).** Instructions that reach the model as data and are followed as commands — typed by the user (direct) or planted in content the model fetches or in a tool description (indirect). Structurally possible because the model has no separation between instructions and data, so the control is a trust boundary in code, not a prompt. Carpintero (2026-04); OWASP LLM01:2025. Rows: `practices/security-baseline/threat-model-agentic.md`.
+
 **Brownfield / greenfield.** Existing codebase vs. new project. Most real work is brownfield; frameworks that require describing the whole system up front fit it badly.
 
 ## Change log
 
 - 2026-09-08 — created from the LIDR workshop and the structuring-research entry.
+- 2026-10-01 (s4) — added Structured outputs / constrained decoding, JSON mode, Strict tool use, Re-ask, Guardrail (runtime), System-one model / decision model, Generative UI, Prompt injection. Source: `sources/2026-10-01-s04-structured-outputs-digest.md`.
 - 2026-09-30 (s3) — added LLM gateway, Fallback vs retry, Cooldown, SSE, Semantic cache, 12-Factor Agents. Source: `sources/2026-09-30-s03-wrappers-digest.md`.
 - 2026-09-27 (s2) — added Context engineering (runtime sense), Context rot, Compaction, KV cache, CAG, Poisoning/distraction/confusion/clash; Context entry's "context rot" now points to the new entry. Source: `sources/2026-09-27-s02-context-caching-digest.md`.
 - 2026-09-27 — Token entry extended (three price classes); added Context window, Tokenization, System prompt, Prompt caching, Reasoning model / extended thinking, Hallucination. Source: `sources/2026-09-27-s01-llm-setup-digest.md`.

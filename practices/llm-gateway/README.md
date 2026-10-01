@@ -3,7 +3,7 @@ title: "Practice — LLM gateway layer: routing and fallback policy, per-route c
 type: practice
 status: draft            # draft until principle 12 is confirmed against LIDR session 3
 date: 2026-09-30
-last-reviewed: 2026-09-30
+last-reviewed: 2026-10-01
 tags: [llm-gateway, routing, fallback, retries, timeouts, streaming, observability, opentelemetry, semantic-cache, model-registry]
 kind: capability
 applies-when: "llm_calls and production"
@@ -82,5 +82,6 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 (s4) — `routing-policy.md` §Guardrails: table gains *tier* and *on-fail* columns and a blocking row for side-effect tools; content now points to `../structured-outputs/guardrail-policy.md` (closes the s3 park). Source `sources/2026-10-01-s04-structured-outputs-digest.md` rows 14, 16, 17.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-30 — created from the session-3 market scan (draft).

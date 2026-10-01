@@ -28,15 +28,16 @@ Copy to `<repo>/docs/llm-gateway.md`. Each rule names the failure it prevents an
 13. **No model id in code.** Ids live in the registry (`model-registry.md`); the daily availability check alerts on a missing model *and* on its own failure.
 14. **Quarterly re-evaluation** of model choice per route; prices and names are never in product logic.
 
-## Guardrails (placement and failure policy; content is the session-4 practice)
+## Guardrails (placement and failure policy; content, checkpoints, tiers and on-fail actions are in `../structured-outputs/guardrail-policy.md`)
 
-| Guardrail | Where it runs | Fails | Time budget | Why |
-|---|---|---|---|---|
-| <<input injection check>> | pre-hook (serial, before the call) | closed | <<200 ms>> | injection must not reach the model |
-| <<PII in output>> | post-hook / buffered on streams | closed | <<300 ms>> | must not reach the user |
-| <<toxicity / tone>> | parallel with generation (non-streamed routes only) | open | <<300 ms>> | latency matters more than a rare miss |
+| Guardrail | Where it runs | Tier | On-fail | Fails | Time budget | Why |
+|---|---|---|---|---|---|---|
+| <<input injection check>> | pre-hook (serial, before the call) | rule → classifier | raise | closed | <<50–200 ms>> | injection must not reach the model |
+| <<PII in output>> | post-hook / buffered on streams | rule + classifier | fix (redact) | closed | <<300 ms>> | must not reach the user |
+| <<tool call with a side effect>> | pre-hook on the tool, **blocking** | rule (allow-list, limits) | refrain → approval | closed | — | the tool must not run until the check passes (Agents SDK, 2026-10-01) |
+| <<toxicity / tone>> | parallel with generation (non-streamed routes only) | LLM judge | log | open | <<300 ms>> | latency matters more than a rare miss |
 
-Rules: every guardrail has a fail-open/closed decision written before launch, a time budget so the model stays the rate-determining step, and its own fallback (a secondary check or a cached decision). Parallel guardrails do not combine with streaming (Twilio).
+Rules: every guardrail has a fail-open/closed decision written before launch, a time budget so the model stays the rate-determining step, and its own fallback (a secondary check or a cached decision). Parallel guardrails do not combine with streaming (Twilio), and never guard a tool with side effects — those run blocking at the tool boundary (OpenAI Agents SDK guardrails page, read 2026-10-01). The tier column follows `../structured-outputs/guardrail-tiers.md` (rule / classifier / LLM judge); the on-fail vocabulary (re-ask, fix, filter, refrain, log, raise) is Rajpal's and Guardrails AI's (2026-10-01 digest §3.3).
 
 ## Streams (detail in `streaming-pipeline.md`)
 

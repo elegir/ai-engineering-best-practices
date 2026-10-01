@@ -41,6 +41,14 @@ Numbered, one behaviour each. Prohibitions as well as obligations.
 <example type="edge">           ← at least one that covers the RANGE: empty, off-topic, malformed
 <<input → ideal output>>
 </example>
+<example type="contrast">       ← a PAIR for the same input: a poor output and an excellent one, each with one line of reasoning
+<<input>>
+<poor reason="<<why this misses: generic, no number, wrong tone>>"><<poor output>></poor>
+<excellent reason="<<why this works: specific, cites the document, right length>>"><<excellent output>></excellent>
+</example>
+(Examples are the biggest lever — "more important than everything else combined" (Witten, 2024-06). ONE excellent, complete
+example beats several truncated ones; contrasting pairs with a reasoning line teach the boundary; negative examples are a
+tool, not a requirement.)
 
 --- dynamic (everything below may change per request) ---
 
@@ -57,11 +65,15 @@ Other models: "Before answering, work through <<the steps>> inside <thinking> ta
 Never: "reply with just the number" on a multi-step problem.
 
 # 9. Output format
-<<Return JSON matching this schema: … / Markdown with these headings: … >>
-Repeat the two rules that matter most here; the end of the prompt is remembered best.
+<<A native JSON schema / strict tool where the model supports it — the schema is sent in the API call, not pasted here
+  (see ../structured-outputs/); the prompt only says WHEN to produce it. Otherwise: "Return the answer inside <json>…</json>"
+  with the closing tag as a stop sequence, or Markdown with these headings: … >>
+Repeat the two rules that matter most here; the end of the prompt is remembered best. If the output is a decision
+(label, route, gate, score): enumerated options with an out, ≤ 5 levels — ../structured-outputs/decision-vs-generation.md.
 
 # 10. Prefill (Anthropic: first assistant tokens; OpenAI: omit)
-<<"{" to force JSON / "## Summary" to force the structure>>
+<<Only for models WITHOUT native structured outputs: "{" to force JSON / "## Summary" to force the structure.
+  Incompatible with Anthropic JSON outputs (docs read 2026-10-01): never combine prefill with output_config.format.>>
 ```
 
 ## Checklist before shipping a prompt change
@@ -72,7 +84,7 @@ Repeat the two rules that matter most here; the end of the prompt is remembered 
 4. Every fact, number, id or date the answer may need is in §3 or reachable by a tool — none is expected from memory.
 5. Examples: at least one illustrative, at least one edge case; none that the model could copy verbatim into a real answer.
 6. §8 matches the model: thinking budget for a reasoning model, explicit "show your work" otherwise; no bare-answer demand on multi-step tasks.
-7. Output format stated once in §9, and validated in code (schema / parser) — the prompt is not the guarantee.
+7. Output format stated once in §9, produced as a native structured output where the model supports it and parsed into a typed object with validators and one bounded re-ask (`../structured-outputs/README.md`) — the prompt is not the guarantee.
 8. Sycophancy test: the same question phrased leading ("don't you think X?") and neutral ("is X true?") gives the same answer.
 9. Ten real inputs and five edge cases (empty, off-topic, malformed, hostile, very long) were run **at least 5× each**; the worst case is recorded in the header, not the mean.
 10. You read the outputs. All of them.

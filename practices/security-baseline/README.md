@@ -3,7 +3,7 @@ title: "Practice — security baseline for agent-driven repos"
 type: practice
 status: draft
 date: 2026-09-09
-last-reviewed: 2026-09-30
+last-reviewed: 2026-10-01
 tags: [security, secrets, dependencies, mcp, threat-model]
 kind: working-style
 applies-when: "always"
@@ -103,9 +103,11 @@ Full (`acts_on_world or personal_data or regulated or multi_tenant`, in addition
 ## Notes from later scans
 
 - 2026-09-30 (s3): two rows to add to the trust/threat files when this practice is revised — **model API keys per route and per tenant with spend caps and anomaly alerts** (one shared key lets a noisy tenant or a runaway agent exhaust everyone's quota; a gateway is a fraud target — Twilio, OpenRouter) and **tracing decorators capture function arguments by default** (an API key in a traced call lands in the trace store — PyCon DE). Detail: `../llm-gateway/routing-policy.md` §keys, `../llm-gateway/tracing-otel.md` §rules.
+- 2026-10-01 (s4): the runtime threat model of a product that calls a model is now rows T11–T20 of `threat-model-agentic.md` (direct and indirect injection, adversarial suffix, RAG poisoning, MCP tool-description asymmetry, agentic click-and-run / supply chain, with the OWASP 2025 names as a mapping column; `GAP` where no control exists yet — depth parked for session 14); `mcp-trust-register.md` gains the column "full description reviewed (not the summary)". The product-side guardrail checkpoints, tiers, on-fail actions and the CI fixture live in `../structured-outputs/` (draft, unrouted); this practice's `injection-fixture.md` stays the *coding-agent* eval. Source: `../../sources/2026-10-01-s04-structured-outputs-digest.md` rows 19–21.
 
 ## Change log
 
+- 2026-10-01 (s4) — `threat-model-agentic.md` rows T11–T20 (attack vectors + OWASP 2025 mapping, `GAP` where uncovered); `mcp-trust-register.md` column "full description reviewed"; note in "Notes from later scans". Source `sources/2026-10-01-s04-structured-outputs-digest.md`.
 - 2026-10-01 — `stack-notes/python.md` added; `lefthook.security.yml` no longer refuses `.env.example`; injection fixture marked first-user. Two bootstraps: core 2 and full 7, 9 passed; 1 and 3 n.a. where gitleaks/pip-audit could not be installed.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-09 — created (draft).

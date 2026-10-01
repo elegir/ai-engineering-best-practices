@@ -1,0 +1,40 @@
+# Guardrail policy — one row per guardrail, versioned beside the prompts
+
+Copy to `<repo>/docs/llm-guardrails.md`. This file is the product's list of every runtime check on model inputs, tool calls and outputs, with the six decisions each check needs. It is a **versioned artifact next to the prompts** — committed, reviewed and gated in CI like them (Rohit Bhardwaj, Developer Summit, 2026-06: prompts and the per-domain policy file go through "prompt linting" and injection tests before deployment). Principle: `../../principles/13-structured-outputs-and-guardrails.md` §3.3. Sources: Shreya Rajpal (AI Engineer, 2023-11); Guardrails AI README, NeMo Guardrails overview and the OpenAI Agents SDK guardrails page (all read 2026-10-01); Diego Carpintero (AI Engineer, 2026-04) — digest `../../sources/2026-10-01-s04-structured-outputs-digest.md` §3.3. The gateway's placement rules (`../llm-gateway/routing-policy.md` §Guardrails) point here for content.
+
+## The six columns
+
+| Column | Values | Why it exists |
+|---|---|---|
+| **Checkpoint** | `input` · `retrieval` · `tool-in` · `tool-out` · `output` · `memory` · `plan` | The trust boundaries of an LLM application. Input and output are the minimum in production; retrieval, tool calls, memory and plans are added "the more autonomy in our systems" (Carpintero). NeMo's five rails (input, retrieval, dialog, execution, output) and the Agents SDK's three (input on the first agent, output on the last, tool before/after each invocation) are the same list. |
+| **Tier** | `rule` · `classifier` · `judge` | How the check is made — `guardrail-tiers.md`. Rules and grounding first (an external system, a regex, a schema), a small classifier for recurring risk classes, an LLM judge only where the content is "squishy" and the latency budget allows (Rajpal's ordering). |
+| **On-fail** | `re-ask` · `fix` · `filter` · `refrain` · `log` · `raise` | What happens when the check fails. Rajpal's enumeration (re-ask, filter, fix, fallback, refrain, noop-and-log); the Guardrails AI README's `on_fail` per validator; the Agents SDK's tripwire (`raise`). A guardrail without an on-fail action is a log line, not a guardrail. |
+| **Fails** | `open` · `closed` | If the *check itself* fails or times out: `closed` blocks the request (injection, PII, anything irreversible); `open` lets it through (tone, style). Decided before launch (`../llm-gateway/routing-policy.md`). |
+| **Budget** | milliseconds | The check's time budget so that the model stays the rate-determining step. A judge "can easily compound into… seconds of latency" (Carpintero). |
+| **Placement** | `blocking` · `parallel` | `blocking`: the model or tool does not run until the check passes — "the agent never executes, preventing token consumption and tool execution… ideal when you want to avoid potential side effects from tool calls" (Agents SDK). `parallel`: the check runs beside generation and cancels it — best latency, but "the agent may have already consumed tokens and executed tools before being cancelled" (the Agents SDK offers this choice, `run_in_parallel`, for *input* guardrails; its output guardrails always run after the output exists). **Rule: a guard on a tool with side effects is `blocking`, always. Parallel is allowed only for guards on user-visible text on non-streamed routes** — Twilio's allowance (s3, `../llm-gateway/routing-policy.md`). |
+
+## The table (fill one row per guardrail; delete the examples)
+
+| # | Guardrail | Checkpoint | Tier | On-fail | Fails | Budget | Placement | Owner / test |
+|---|---|---|---|---|---|---|---|---|
+| G1 | `<<prompt-injection in user input>>` | input | classifier (`<<hosted moderation | self-hosted encoder>>`) | raise | closed | `<<50 ms>>` | blocking | `guardrail-fixture.md` §injection |
+| G2 | `<<output schema + invariants>>` | output | rule (`structured_call.py` validators) | re-ask (cap 1) → `invalid` to caller | closed | — | blocking | unit tests on validators |
+| G3 | `<<PII in a reply that leaves the tenant>>` | output | rule (regex) + classifier | fix (redact) then log | closed | `<<100 ms>>` | blocking | fixture §pii |
+| G4 | `<<tool call: send_email / charge / publish>>` | tool-in | rule (allow-list; per-agent, per-day, per-amount, per-tenant limits — Bhardwaj) + confidence threshold (`decision-vs-generation.md`) | refrain → approval queue (`../verification/dry-run-and-approval.md` 2b) | closed | — | **blocking** | dry-run smoke test |
+| G5 | `<<fetched page / MCP result treated as data>>` | tool-out | rule (strip instructions, size cap) + classifier | filter + log | closed | `<<50 ms>>` | blocking | fixture §indirect |
+| G6 | `<<retrieved chunk relevance / poisoning>>` | retrieval | rule (tenant ACL, signed source) + classifier | filter | closed | `<<50 ms>>` | blocking | fixture §retrieval |
+| G7 | `<<tone / brand voice>>` | output | judge (small model) | log (fix in a later pass) | open | `<<300 ms>>` | parallel (non-streamed route only) | eval, 5 runs |
+| G8 | `<<memory write: no secrets, no other tenant>>` | memory | rule | refrain + log | closed | — | blocking | unit test |
+
+## Rules
+
+1. **Every guardrail in code has a row; every row has an on-fail action.** A check the table does not know is a liability nobody reviews; a row with no action is a wish.
+2. **Input and output at minimum** in production (Carpintero: "the minimum safety requirements… check at least for the user inputs and the model responses"); add `retrieval`, `tool-in`/`tool-out`, `memory`, `plan` as the product gains retrieval, tools and autonomy (NeMo's agentic list: "Isolate all authentication information from the LLM. Validate and sanitize all tool inputs. Apply execution rails to tool calls. Monitor agent behavior.").
+3. **Side-effect guards are blocking.** No parallel guard on a send, a payment, a publish or a write (Agents SDK; `../llm-api-calls/failure-modes-and-mitigations.md` row 10).
+4. **A rejected output is not persisted or replayed.** The Agents SDK excludes a rejected *final output* from the session and replaces a rejected terminal *tool* output with the data-free placeholder "Output withheld by an output guardrail."; do the equivalent so that the rejected payload does not leak into history, traces or the next turn.
+5. **Prompt-level defences are a first layer, never the control.** Wrapping user input in tags, the "sandwich" prompt and a regex for "ignore previous instructions" are cheap and go in `rule`; they do not make a checkpoint unnecessary (Carpintero: alignment is "a probabilistic preference, not a hard constraint"; Rajpal: prompting "doesn't act as a guarantee").
+6. **An LLM judge is never the sole gate on anything irreversible** (`../../principles/05-verification-loops.md`; row 11 of the failure-modes table): correlated failures. A judge may be one of two checks, never the only one, on a side-effect path.
+7. **The policy file is reviewed as code.** Changes to this table, to a blocked-phrase list or to a domain policy (`<<"do not diagnose", "no guaranteed returns">>`) are commits, reviewed, and the fixture runs in CI before deployment (Bhardwaj's "shift left").
+8. **Each guardrail has a budget and its own fallback** (a cheaper check or a cached decision) so a slow check cannot take the route down (`../llm-gateway/routing-policy.md`).
+9. **Streams buffer, never token-filter.** A guard on a streamed route runs on a buffer whose size is a per-route number (`../llm-gateway/streaming-pipeline.md`); parallel guards do not combine with streaming (Twilio, s3).
+10. **The classifier tier is first-user, not day-0.** Rows G1, G3, G5 and G6 start as `rule` on day zero and gain a classifier when the product has users and the fixture shows the rules miss cases — `guardrail-tiers.md`.

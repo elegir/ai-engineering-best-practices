@@ -3,7 +3,7 @@ title: "Practice — LLM API calls: one client module, a structured versioned pr
 type: practice
 status: draft            # draft until principle 10 is confirmed against LIDR session 1
 date: 2026-09-27
-last-reviewed: 2026-09-30
+last-reviewed: 2026-10-01
 tags: [llm-api, prompting, tokens, prompt-caching, providers, reliability]
 kind: capability
 applies-when: "llm_calls"
@@ -31,7 +31,7 @@ The product calls a language model at runtime and one of these symptoms appears:
 ## Does not apply when
 - The only model in the picture is the coding agent working on the repo (Claude Code, Cursor). That is `../agent-entry-file/`, `../hooks-and-guards/`, `../token-savings/`.
 - The feature is an agent with tools and the question is workflow-vs-agent, tool design or transport — `../agent-patterns/` (this folder is the layer *under* it: the call itself and the prompt).
-- Structured outputs, guardrails and output validation in depth — session-4 practice (pending). This folder only says *where* deterministic checks belong.
+- Structured outputs, guardrails and output validation in depth — `../structured-outputs/` (draft, unrouted until the routing gate of decision 0004 §6). This folder only says *where* deterministic checks belong.
 - Evals as a discipline (datasets, judges, regression tiers) — evals practice (pending, sessions 5/11/16). This folder gives the one rule: run each scenario N times and read the worst case.
 
 ## Files in this folder
@@ -83,6 +83,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 (s4) — `failure-modes-and-mitigations.md` rows 1 (verify quotes exist in code), 7 (the Maybe shape), 10 (native structured output for the shape, validators for invariants, re-ask ≤ 1), 11 (scores: ≤ 5 classes, reason first, probabilities not written numbers), 14 (prompt-level defences are the first layer only); `system-prompt-template.md` §5 contrasting-pair example and "one excellent beats many truncated", §9 native structured output where supported, §10 prefill only without it and incompatible with Anthropic JSON outputs, checklist item 7 → `../structured-outputs/`; skeleton comment at `stop_reason` (refusal / max_tokens are not parse errors). Source `sources/2026-10-01-s04-structured-outputs-digest.md`.
 - 2026-10-01 — skeleton logs `attempt`, has `--demo`; assertion 3's n.a. for short prefixes confirmed in both bootstraps; assertion 8 (eval, 5× worst case) is the open item in both repos.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-27 — created from the session-1 market scan (draft).
