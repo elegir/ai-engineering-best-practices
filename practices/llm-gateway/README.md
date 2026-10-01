@@ -42,6 +42,7 @@ The product depends on model providers in production and one of these symptoms a
 | `streaming-pipeline.md` | `<repo>/docs/llm-gateway.md` §streaming (+ the stage skeleton) | SSE at the edge, stage pipeline (timeout → tokens → guardrail buffer → decode → finish check), `[DONE]`, first-token fallback, typed events to the UI |
 | `tracing-otel.md` | `<repo>/docs/observability.md` §llm | The GenAI span attributes to emit, content opt-in, redaction, session and pseudonymous user ids, replay requirement, what to page on |
 | `semantic-cache-decision.md` | the feature spec | Whether a semantic cache is allowed at all for this route; filters, threshold, TTL, false-positive check |
+| `stack-notes/php-laravel.md` | (read) | Where cooldown state, retries, streaming and keys live in a request-scoped runtime |
 
 ## Reference implementation
 

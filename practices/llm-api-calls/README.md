@@ -41,6 +41,7 @@ The product calls a language model at runtime and one of these symptoms appears:
 | `failure-modes-and-mitigations.md` | read; copy the table rows that apply into the feature spec | What the model is structurally bad at and the tool, retrieval or deterministic check that covers each case |
 | `provider-selection-checklist.md` | `<repo>/docs/llm-provider.md` (next to the model policy from `08-model-selection.md`) | Developer criteria for choosing and re-checking a provider; switching-cost estimate |
 | `context-budget.md` | `<repo>/docs/llm-provider.md` §context, or the feature spec | How to size a request: what shares the window, where the caching boundary goes, when to start a new thread |
+| `stack-notes/python.md`, `stack-notes/php-laravel.md` | (read) | Package family, retry defaults, differing names and runtime pitfalls per stack — fifteen lines, no code (decision 0005 §5) |
 
 ## Reference implementation
 

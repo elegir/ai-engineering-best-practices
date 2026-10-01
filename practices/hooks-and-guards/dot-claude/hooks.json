@@ -1,0 +1,43 @@
+{
+  "_comment": "Config for .claude/hooks/guard.py. Replace every <<PLACEHOLDER>> — the guard refuses to run while one remains. Commands: {file} is the edited file. See variants/*.md for each stack's lines.",
+  "protected_paths": [
+    "(^|/)\\.env(\\.|$)",
+    "(^|/)(package-lock\\.json|pnpm-lock\\.yaml|yarn\\.lock|poetry\\.lock|uv\\.lock|composer\\.lock)$",
+    "(^|/)(\\.eslintrc|eslint\\.config|biome\\.json|\\.prettierrc|tsconfig\\.json)",
+    "(^|/)(pyproject\\.toml|ruff\\.toml|setup\\.cfg|mypy\\.ini)$",
+    "(^|/)(phpcs\\.xml|\\.php-cs-fixer|pint\\.json)",
+    "(^|/)(lefthook\\.yml|\\.pre-commit-config\\.yaml)$",
+    "(^|/)\\.github/workflows/",
+    "(^|/)\\.claude/(settings\\.json|hooks\\.json|hooks/)",
+    "\\.(pem|key|p12)$",
+    "<<REPO_SPECIFIC_PROTECTED_PATH, e.g. (^|/)wp-config\\.php$ or (^|/)bootstrap/cache/ or migrations/.*merged>>"
+  ],
+  "deny_commands": [
+    "rm -rf",
+    "git push( .*)? (--force|-f)\\b",
+    "git commit[^|]*--no-verify",
+    "git reset --hard",
+    "\\bDROP (TABLE|DATABASE|SCHEMA)\\b",
+    "\\bTRUNCATE\\b",
+    "terraform (apply|destroy)",
+    "kubectl (delete|apply)[^|]*prod",
+    "<<REPO_SPECIFIC_DENY, e.g. wp db reset | deploy.*production | ssh .*prod>>"
+  ],
+  "format": {
+    ".py": "<<ruff format {file}>>",
+    ".ts": "<<npx biome format --write {file}>>",
+    ".tsx": "<<npx biome format --write {file}>>",
+    ".js": "<<npx biome format --write {file}>>",
+    ".php": "<<vendor/bin/pint {file}>>"
+  },
+  "lint": {
+    ".py": "<<ruff check {file}>>",
+    ".ts": "<<npx biome lint {file}>>",
+    ".tsx": "<<npx biome lint {file}>>",
+    ".js": "<<npx biome lint {file}>>",
+    ".php": "<<vendor/bin/phpstan analyse {file} --no-progress>>"
+  },
+  "stop_test_command": "<<pytest -q -x tests/unit   | npm test -- --silent   | vendor/bin/pest --compact>>",
+  "stop_timeout_seconds": 90,
+  "tool_timeout_seconds": 60
+}

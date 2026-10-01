@@ -41,6 +41,7 @@ The agent declares "done" when the code compiles, because nothing lets it prove 
 | `definition-of-done.md` | Every repo | paste into `docs/workflow.md` §2 |
 | `harness-evals.md` | Every repo once the harness exists | `<repo>/docs/harness-evals.md` |
 | `dry-run-and-approval.md` | **Only when `acts_on_world`** (sends, publishes, pays or writes third-party records on its own, LLM or not) | `<repo>/docs/dry-run-and-approval.md`; its rule 3 tests go into the smoke suite |
+| `stack-notes/php-laravel.md` | (read) | How the contract is usually satisfied in Laravel: Pest smoke group, tenant-aware tests, dry-run switch |
 
 ## Reference implementation
 
