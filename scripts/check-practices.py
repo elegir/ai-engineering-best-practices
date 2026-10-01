@@ -12,7 +12,7 @@ A second, lexical net flags stack commands inside assertions.
 status, verified-against and field-report, and verified-against is not older than the practice's last-reviewed.
 Exit 1 on any problem; problems printed as "  - ...".
 """
-import os, re, sys
+import glob, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 P = os.path.join(ROOT, "practices")
@@ -60,6 +60,19 @@ def check_practice(name):
     if n == 0: probs.append(f"{name}: Verify has no numbered assertion")
     return probs
 
+STACK_NOTES_CAP = 20
+
+def check_stack_notes():
+    probs = []
+    for name in routed():
+        for f in sorted(glob.glob(os.path.join(P, name, "stack-notes", "*.md"))):
+            n = sum(1 for l in open(f, encoding="utf-8") if l.strip())
+            if n > STACK_NOTES_CAP:
+                probs.append(f"{os.path.relpath(f, ROOT)}: {n} non-blank lines > {STACK_NOTES_CAP} (decision 0005 §5: knowledge, not a port — condense)")
+            if re.search(r"^```", open(f, encoding="utf-8").read(), re.M):
+                probs.append(f"{os.path.relpath(f, ROOT)}: contains a code block (stack-notes carry no code)")
+    return probs
+
 def check_variants():
     probs = []
     for name in routed():
@@ -81,6 +94,6 @@ def check_variants():
     return probs
 
 if __name__ == "__main__":
-    probs = check_variants() if "--variants" in sys.argv else [p for n in routed() for p in check_practice(n)]
+    probs = (check_variants() + check_stack_notes()) if "--variants" in sys.argv else [p for n in routed() for p in check_practice(n)]
     for p in probs: print("  -", p)
     sys.exit(1 if probs else 0)

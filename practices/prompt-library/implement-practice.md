@@ -22,4 +22,4 @@ Rules that hold throughout: investigate before you implement and show the plan f
 
 ---
 
-**Adapt:** `<<PRACTICE>>`, `<<KB_PATH>>` (the guide's path on this machine; `scripts/kb-sync.sh --pull` has been run). Nothing else; the prompt reads the practice's headings, which `scripts/kb-check.sh` keeps stable.
+**Adapt:** `<<KB_PATH>>` once (the guide's path on this machine; `scripts/kb-sync.sh --pull` has been run). When installed as a Claude Code command, replace `<<PRACTICE>>` with `$ARGUMENTS` so `/implement-practice llm-api-calls` fills it per invocation; when pasted, replace it by hand. Nothing else; the prompt reads the practice's headings, which `scripts/kb-check.sh` keeps stable.

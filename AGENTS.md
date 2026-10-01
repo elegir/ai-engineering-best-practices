@@ -17,7 +17,7 @@ You are reading Martin Weidemann's **AI Engineering Knowledge Base**. It is a re
 - `playbooks/` — procedures. Follow them literally. `ingest-new-source.md` (add knowledge) and `publish-change.md` (ship it) are the two this folder runs on itself; `adopt-kb-in-a-repo.md` and `audit-repo-against-kb.md` are for agents in *other* repos.
 - `skills/` — agent-loadable procedures (Agent Skills standard); see `skills/README.md`.
 - `ROUTER.md` — generated (≤ 2 KB) table of every routed practice with `applies-when`, `full-when`, `when` and reference status; what an agent in another repo reads first. `scripts/make-router.py` regenerates it; `kb-check.sh` fails if it is stale.
-- `scripts/` — `kb-sync.sh` (is this copy current? run it first), `kb-check.sh` (the KB's own verification, ten checks), `kb-publish.sh` (branch/commit/push/merge/cleanup), `applies.py` (**the authority** for which practices apply to a set of facts and in which order; `--explain`, planned facts as `fact:planned`), `make-router.py`, `check-practices.py` (section schema + structured Verify + variant staleness), `scan-filter.py`, `written-filter.py`.
+- `scripts/` — `kb-sync.sh` (is this copy current? run it first), `kb-check.sh` (the KB's own verification, eleven checks), `kb-publish.sh` (branch/commit/push/merge/cleanup), `applies.py` (**the authority** for which practices apply to a set of facts and in which order; `--explain`, planned facts as `fact:planned`), `make-router.py`, `make-bundles.py`, `check-practices.py` (section schema + structured Verify + variant staleness), `scan-filter.py`, `written-filter.py`.
 - `templates/` — copy these when creating new entries.
 - `CONVENTIONS.md` — formatting rules for anything you write here.
 

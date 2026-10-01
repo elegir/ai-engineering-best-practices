@@ -106,7 +106,7 @@ def post_edit(cfg, ev):
     fmt, lint = cfg["format"].get(ext), cfg["lint"].get(ext)
     if not fmt and not lint:
         return
-    q = shlex.quote(path)
+    q = f'"{path}"' if os.name == "nt" else shlex.quote(path)  # cmd.exe does not understand POSIX quotes
     if fmt:
         run(fmt.replace("{file}", q), cfg.get("tool_timeout_seconds", 60))
     if lint:
@@ -121,7 +121,8 @@ def stop(cfg, ev):
         return  # already ran once for this stop; let the session end
     cmd = cfg["stop_test_command"]
     code, out = run(cmd, cfg.get("stop_timeout_seconds", 90))
-    if code == 127 or "not found" in out.lower() and code != 0 and len(out) < 300:
+    low = out.lower()
+    if code == 127 or (code != 0 and ("command not found" in low or "is not recognized as an internal or external command" in low)):
         die(f"the stop test command could not run ({cmd!r}): {out.strip()[:200]} — fix the command in hooks.json; the session cannot end until the sensor works")
     if code != 0:
         print(json.dumps({"decision": "block",

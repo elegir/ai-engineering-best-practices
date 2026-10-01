@@ -16,7 +16,7 @@ A smoke test proves the code path runs. For an irreversible action that is not e
 ## Rule 2 — approval before the first live run of anything new
 
 - A new template, a new recipient list, a new publishing target, a new price or a changed amount is first run in dry-run mode and the produced payload is shown to a human (Martin) in one screen: *what would be sent, to whom, how many*. Only after an explicit "go" does the switch move to live.
-- Record the approval where the code can check it: a row in an approvals table, a dated line in `docs/harness-changelog.md`, or a tag — whatever the repo already has. The agent must not be able to flip `live` by itself; the Stop hook (`practices/hooks-and-guards/`) refuses to end a session that changed the switch's default.
+- Record the approval where the code can check it: a row in an approvals table, a dated line in `docs/harness-changelog.md`, or a tag — whatever the repo already has. The agent must not be able to flip `live` by itself: add the file that holds the switch's default to `protected_paths` in `.claude/hooks.json` (`practices/hooks-and-guards/`), so the edit is blocked before it happens.
 - Volume guard: the first live run of a new thing is capped (`<<FIRST_RUN_CAP>>`, for example 10 recipients or 1 post) and the cap is lifted by a second approval, not by editing the number.
 
 ## Rule 3 — the smoke test runs the real path in dry-run mode

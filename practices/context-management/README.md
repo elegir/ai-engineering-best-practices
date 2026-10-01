@@ -57,19 +57,19 @@ The product keeps a conversation or an agent loop across many model calls, or an
 - `compaction_skeleton.py`: set `<<TRIGGER_UTILISATION>>`, `<<KEEP_RECENT_TURNS>>`, `<<SUMMARY_MODEL>>`; implement `is_persisted()` for your tools (which results carry a path/URL/id); if a framework's middleware exists (LangChain summarization middleware, Strands context manager, Deep Agents), configure it with the same rules instead of copying the file — the rules are the deliverable.
 - `context-store-decision.md`: answer the questions once per corpus; write the answer and the date into the spec.
 - `context-metrics-and-evals.md`: wire the log lines into whatever tracing you have (Langfuse, LangSmith, OpenTelemetry GenAI attributes); the long-session eval needs real transcripts — collect ten from production first.
-- Stack variants: Python shown; TypeScript is a direct port; the policy files are language-free.
+- Stacks: Python shown; the policy files are language-free; TypeScript is not a promised stack (decision 0005 §4) — implement from the contract until a field-tested variant exists.
 
 ## Verify
 
 Each numbered line is a stack-neutral assertion — the contract (decision 0005 §2). `observer` says who can judge it: `script` (a command's exit code), `agent` (the agent observes it in a session), `Martin` (a human reads it). `negative` is what must make it fail. `framework: beats` means the assertion wins over the repo's existing framework or library; `bends` means the repo's idiom wins and the assertion adapts to it. Stack-specific commands live only under *Example commands (Python)*.
 
-1. The usage log records, per model call, input, output and cached tokens plus the context size, and per session the cache hit rate; from the second turn of a conversation on, cached tokens read is above zero — observer: script — negative: a second-turn call with zero cached tokens (the static/dynamic order is wrong)
+1. The usage log records, per model call, input, output and cached tokens plus the context size, and per session the cache hit rate; from the second turn of a conversation on, once the stable prefix exceeds the vendor's minimum cacheable length (about 1,024 tokens), cached tokens read is above zero — observer: script — negative: a later turn with a long stable prefix and zero cached tokens (the static/dynamic order is wrong)
 2. When a session reaches the compaction trigger it compacts: the transcript shrinks, the system prompt is byte-identical before and after, the last `KEEP_RECENT_TURNS` turns are verbatim, and every compacted tool result keeps a pointer that resolves — observer: script — negative: a changed system prompt, a lost recent turn, or a pointer to nothing
 3. The long-session eval in `context-metrics-and-evals.md` passes: turn N+1 is answered correctly from the compacted history in at least five runs out of five — observer: script — negative: one failed run (the mean hides it)
 4. Nothing that changes per request (timestamp, user name, working directory, tool list) appears before the dynamic marker of the system prompt — observer: script — negative: a diff of two system prompts shows a difference above the marker
 5. Every sub-agent's final message is self-contained: handed to a fresh model with no history, the conclusion is recoverable — observer: agent — negative: a sub-agent that answers "see above" or refers to context the parent never sent
 6. The corpus decision (stuff the window, retrieve, or hybrid) is written in the feature spec with the date and the reason, per `context-store-decision.md` — observer: Martin — negative: a vector pipeline for a corpus that fits, or a corpus that changes stuffed into the window, with no written reason
-7. One trace per week has been read and the failure mode named (or "none seen") in the practice's log — observer: Martin — negative: a month with no trace read
+7. (Ongoing — not required for field-tested.) One trace per week has been read and the failure mode named (or "none seen") in the practice's log — observer: Martin — negative: a month with no trace read
 
 **Example commands (Python):** `python3 compaction_skeleton.py --demo`; the eval runner in `context-metrics-and-evals.md` §Runner.
 

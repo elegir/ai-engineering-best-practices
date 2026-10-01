@@ -62,7 +62,7 @@ For each row, mark **Present / Partial / Missing** and cite the file or the abse
 | Worktrees | `06-parallel-agents-and-worktrees.md` | `practices/worktrees/` | worktree per ticket, `.worktreeinclude`, infra isolation |
 | Tokens | `07-token-economy.md` | `practices/token-savings/` | instruction size, tool count, compression tools, measurement log |
 | Model policy | `08-model-selection.md` | `practices/context-docs-skeleton/docs/workflow.md` §3 | plan-high/execute-mid documented |
-| Agents & tools (only if `tools or multi_agent`) | `21-agent-design-and-tools.md` | `practices/agent-patterns/` | workflow-vs-agent decision recorded; tools pass the 12-point checklist; transport chosen; a signal closes the loop |
+| Agents & tools (only if `tools or multi_agent or exposes_tools`) | `21-agent-design-and-tools.md` | `practices/agent-patterns/` | workflow-vs-agent decision recorded; tools pass the 12-point checklist; transport chosen; a signal closes the loop |
 
 ## Step 3 — Findings
 
@@ -70,8 +70,12 @@ For every Partial/Missing: one paragraph — what is missing, why it matters *fo
 
 ## Step 4 — Plan
 
-Order by: (1) things that block the agent from verifying its work (environment, sensors → `verification/`), (2) context docs (`context-docs-skeleton/`), (3) entry-file cleanup (`agent-entry-file/`), (4) hooks (`hooks-and-guards/`), (5) state (`session-state/`), (6) prompts/commands (`prompt-library/`), (7) specs (`spec-driven/`), (8) worktrees, (9) token savings. Each item: title, practice folder + variant, files to copy and where, placeholders to fill, effort (S/M/L), done-when (the practice's Verify section). Keep it to the top 7. Append "later" items separately.
+Order = the order printed by `python3 <kb>/scripts/applies.py --explain <facts…>` (working-style first, `verification` at the top; then `security-baseline (full)` and the capability practices by the fact that fired them — `practices/facts.md` §Ordering). Do not re-order by hand. Each item: title, practice folder + variant, files to copy and where, placeholders to fill, effort (S/M/L), done-when (the practice's Verify section). Keep it to the top 7. Append "later" items separately.
 
 ## Step 5 — Stop
 
 Present the plan. Wait for Martin's approval. Then execute **one item per prompt**: copy the practice's files, replace every `<<PLACEHOLDER>>`, adapt per its "Adapt" section, run its "Verify" section, and add a one-line entry to the repo's `docs/harness-changelog.md` (`YYYY-MM-DD — adopted practices/<name> (<variant>)`).
+
+## Change log
+
+- 2026-09-30 — step 4 order is now `applies.py`'s order (decision 0004 §5); agent-patterns row includes `exposes_tools`.

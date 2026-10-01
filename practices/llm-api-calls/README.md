@@ -60,7 +60,7 @@ The product calls a language model at runtime and one of these symptoms appears:
 - `system-prompt-template.md`: delete the sections a prompt does not need (a classifier has no conversation history); never reorder static and dynamic parts. Fill the header (purpose, model, version, last evaluated on). Store under version control; the vendor's prompt dashboard (OpenAI prompt objects) is an alternative only if every change still lands in git.
 - `failure-modes-and-mitigations.md`: keep the rows that apply; for each, name the concrete tool or check in *this* repo.
 - `provider-selection-checklist.md`: fill it once per product; re-check the dated rows when a vendor ships a new generation.
-- Stack variants: Python shown; TypeScript is a direct port (`@anthropic-ai/sdk`, `openai`); keep the same module boundary.
+- Stacks: Python shown; TypeScript is not a promised stack (decision 0005 §4) — implement from the contract with `../prompt-library/implement-practice.md` until a field-tested variant exists; PHP/Laravel: `stack-notes/php-laravel.md`.
 
 ## Verify
 
@@ -68,7 +68,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 1. Exactly one module in the product imports or instantiates the model vendor's client; every other call site goes through it — observer: script — negative: a second import, or a handler that builds a request itself — framework: beats
 2. Every runtime prompt is a versioned file with the header block (id, version, date, model, owner) filled, and its history is visible in version control — observer: script — negative: a prompt as a string literal, or a file without the header
-3. In a logged multi-turn conversation, cached tokens read are above zero from the second call on — observer: script — negative: zero cached tokens on the second call (variable content is placed before stable content)
+3. When calls share a stable prefix longer than the vendor's minimum cacheable length (about 1,024 tokens for both major vendors; 2,048 for the smallest models), the second call that shares it reports cached tokens read above zero — observer: script — negative: zero cached tokens on that second call (variable content placed before the stable part); single-shot calls with short prompts are n.a. with that reason
 4. Retries have a single owner: either the client or the vendor SDK retries, never both, and the retry count appears in the log — observer: script — negative: a 429 that produces more attempts than the single owner's cap — framework: beats
 5. The model is never asked for facts, counts or arithmetic the code can compute, and no irreversible action is guarded by an LLM's opinion alone — observer: Martin — negative: a prompt that asks "how many…", or a send/pay/publish whose only gate is a model's yes
 6. Per-call usage (input, output, cached tokens, latency, model id) is logged in a form that can be aggregated — observer: script — negative: a call with no usage record

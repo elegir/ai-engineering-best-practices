@@ -1,5 +1,5 @@
 {
-  "_comment": "Config for .claude/hooks/guard.py. Replace every <<PLACEHOLDER>> — the guard refuses to run while one remains. Commands: {file} is the edited file. See variants/*.md for each stack's lines.",
+  "_comment": "Config for .claude/hooks/guard.py. Replace every <<PLACEHOLDER>> — the guard refuses to run while one remains. Commands: {file} is the edited file. See stack-notes/*.md for each stack's lines. rm with both -r and -f in any spelling is denied; git push --force-with-lease is allowed on purpose.",
   "protected_paths": [
     "(^|/)\\.env(\\.|$)",
     "(^|/)(package-lock\\.json|pnpm-lock\\.yaml|yarn\\.lock|poetry\\.lock|uv\\.lock|composer\\.lock)$",
@@ -13,8 +13,8 @@
     "<<REPO_SPECIFIC_PROTECTED_PATH, e.g. (^|/)wp-config\\.php$ or (^|/)bootstrap/cache/ or migrations/.*merged>>"
   ],
   "deny_commands": [
-    "rm -rf",
-    "git push( .*)? (--force|-f)\\b",
+    "\\brm\\b(?=[^|;&]*\\s-[a-zA-Z]*r)(?=[^|;&]*\\s-[a-zA-Z]*f)",
+    "git push( .*)? (--force(?!-with-lease)|-f)\\b",
     "git commit[^|]*--no-verify",
     "git reset --hard",
     "\\bDROP (TABLE|DATABASE|SCHEMA)\\b",

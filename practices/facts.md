@@ -42,7 +42,7 @@ A fact is inferred from what *runs*, not from what exists. Code that is switched
 ## Ordering rule (implemented by `scripts/applies.py`, used by `which-practices-apply.md`)
 
 1. Working-style practices first: `verification` → `context-docs-skeleton` → `agent-entry-file` → `hooks-and-guards` → `security-baseline` → `session-state` → `prompt-library` → `spec-driven` → `worktrees` → `token-savings`. (This is also the row order of the table in practices/README.md; applies.py --check fails if the two differ. The core of security-baseline sits here; its full part is listed again under step 2 when its full-when line holds.)
-2. Then capability practices and the full part of `security-baseline`, ordered by the fact that triggered them: `acts_on_world` → `personal_data` / `regulated` → `multi_tenant` → `production` → everything else.
+2. Then capability practices and the full part of `security-baseline`: by stage first (`when`: `day-0` → `first-user` → `at-scale`, so the client module precedes the gateway that wraps it), and within a stage by the fact that triggered them: `acts_on_world` → `personal_data` / `regulated` → `multi_tenant` → `production` → everything else.
 
 There is no score. The list is the plan, and each skipped practice carries a reason *about this repo*.
 

@@ -55,7 +55,7 @@ A repo is about to add (or already has) a feature where a language model takes a
 
 - A long-lived process (Python service, Node) can hold the loop and its trace in memory; a request-scoped runtime (PHP-FPM) must persist the trajectory per step (database or queue) or run the loop in a queued worker — the pattern changes, not just the syntax.
 - Tool transport (`tool-transport-decision-table.md`): an MCP server is natural where the host already speaks MCP; in a PHP app a plain internal function registry is usually the right first step.
-- Token budget for schemas is counted by the vendor SDK in Python/TS; in PHP there is often no tokenizer at hand — estimate by characters ÷ 4 and record the estimate.
+- Token budget for schemas: count it through the vendor's count-tokens endpoint (Anthropic) or a local tokenizer (OpenAI's tiktoken, Python/TS); in PHP estimate by characters ÷ 4 and record the estimate.
 
 ## Adapt
 - `agent-loop-skeleton.py`: replace `<<MODEL>>`, the tool list and `MAX_ITERATIONS`; swap the SDK block if you use OpenAI / Gemini / a framework (the loop shape is the same: call → if tool_use, run tools, append results, repeat).
@@ -72,7 +72,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 3. Every tool passes the twelve-point checklist in `tool-definition-template.md`: a description that says when *not* to use it, bounded reads, errors returned as data (never raised into the loop), no two tools with overlapping purpose — observer: agent — negative: a tool that raises, returns unbounded output, or whose description duplicates another's — framework: beats
 4. The retrieval loop (when `retrieval`) returns answers with at least one citation that resolves to a real document and location — observer: script — negative: an answer with no citation, or a citation that points nowhere
 5. Tool schemas occupy under a tenth of the context window at session start, and every MCP server or tool set loaded is used by the feature — observer: agent — negative: an unused server loaded at startup, or schemas above the budget
-6. Three real trajectories have been reviewed with `../prompt-library/trajectory-review.md` and at least one tool description changed as a result, recorded in the change log — observer: Martin — negative: a tuning change made to a prompt without a trajectory read
+6. (Ongoing — not required for field-tested.) Three real trajectories have been reviewed with `../prompt-library/trajectory-review.md` and at least one tool description changed as a result, recorded in the change log — observer: Martin — negative: a tuning change made to a prompt without a trajectory read
 
 **Example commands (Python):** `python3 agent-loop-skeleton.py --debug`; `python3 agentic-rag-skeleton.py "<question>"`; `/context` in Claude Code for the schema budget.
 

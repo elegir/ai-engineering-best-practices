@@ -47,22 +47,24 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 
 (Which practices apply to a repo: `ROUTER.md` (generated) → `scripts/applies.py --explain <facts…>`; facts from `playbooks/which-practices-apply.md` (existing repo) or `playbooks/bootstrap-new-repo.md` (blank repo); vocabulary in `practices/facts.md`.)
 
+All fourteen routed practices carry a structured Verify (the contract), `## Reference implementation`, `## Stack-sensitive points`, `when` and `reference-status: untested` since 2026-09-30 (decision 0005); `ROUTER.md` is the generated summary.
+
 | Practice | Implements | Files | Status | Last reviewed |
 |---|---|---|---|---|
-| `practices/context-docs-skeleton/` | 01 | 9 `docs/` skeletons + `prompts/generate-docs.md` | current | 2026-09-08 |
-| `practices/agent-entry-file/` | 03 | `AGENTS.md`, `CLAUDE.md`, `CLAUDE.local.md.example`, `.claude/rules/api.md`, Cursor pointer | current | 2026-09-08 |
-| `practices/hooks-and-guards/` | 02, 05 | `.claude/settings.json`, 4 hook scripts, `lefthook.yml`, variants node/python/php-wordpress | current | 2026-09-08 |
-| `practices/session-state/` | 02 | `PROGRESS.json`, `/start-session`, `/end-session`, startup routine | current | 2026-09-08 |
-| `practices/worktrees/` | 06 | `.worktreeinclude`, `new-worktree.sh/.ps1`, `remove-worktree.sh`, `isolation.md` | current | 2026-09-08 |
-| `practices/verification/` | 05 | Playwright smoke, Hurl smoke, pytest smoke, bats, definition-of-done, harness-evals | current | 2026-09-08 |
-| `practices/spec-driven/` | 04 | `specs/README.md`, `/plan-ticket`, `/develop-task`, `constitution.md`, OpenSpec quickstart | current | 2026-09-08 |
-| `practices/prompt-library/` | 01, 04, 21 | meta-prompt, ask-the-expert, readme-by-index, openapi, standards-doc, `/audit`, commit skill, `/lesson`, trajectory-review | current | 2026-09-24 |
-| `practices/token-savings/` | 07 | ordered checklist, MCP audit (CLI-over-MCP rule added), measurement log | current | 2026-09-24 |
-| `practices/security-baseline/` | 02, 05 | secret-scan hook, MCP trust register, agentic threat model, dependency policy, injection fixture | draft | 2026-09-28 |
-| `practices/llm-api-calls/` | 10 | `llm_call_skeleton.py` (one client module, usage log incl. cached tokens), `system-prompt-template.md` (ten parts, static-first, 12-point checklist), `failure-modes-and-mitigations.md`, `provider-selection-checklist.md`, `context-budget.md` | draft | 2026-09-27 |
-| `practices/context-management/` | 11 | `context-budget-and-triggers.md`, `compaction-policy.md`, `compaction_skeleton.py`, `context-failure-modes.md`, `context-store-decision.md`, `context-metrics-and-evals.md` | draft | 2026-09-27 |
-| `practices/llm-gateway/` | 12 | `routing-policy.md`, `gateway_config.yaml` (LiteLLM shape), `fallback-approval.md`, `model-registry.md`, `streaming-pipeline.md`, `tracing-otel.md`, `semantic-cache-decision.md` | draft | 2026-09-30 |
-| `practices/agent-patterns/` | 21 | decision checklist, patterns catalogue, agent-loop skeleton, tool-definition template + 12-point checklist, tool-transport decision table (CLI/MCP/skill/RAG/memory + auth ladder), agentic-RAG skeleton | draft | 2026-09-24 |
+| `practices/context-docs-skeleton/` | 01 | 9 `docs/` skeletons + `prompts/generate-docs.md` | current | 2026-09-30 |
+| `practices/agent-entry-file/` | 03 | `AGENTS.md`, `CLAUDE.md`, `CLAUDE.local.md.example`, `.claude/rules/api.md`, Cursor pointer | current | 2026-09-30 |
+| `practices/hooks-and-guards/` | 02, 05 | `.claude/settings.json` (native deny list + hooks wired `|| exit 2`), `guard.py` (one fail-closed hook: protect, deny, format/lint, stop gate, `--selftest`), `hooks.json`, `lefthook.yml`, stack-notes node/python/php-wordpress/php-laravel, legacy shell hooks | current | 2026-09-30 |
+| `practices/session-state/` | 02 | `PROGRESS.json`, `/start-session`, `/end-session`, startup routine | current | 2026-09-30 |
+| `practices/worktrees/` | 06 | `.worktreeinclude`, `new-worktree.sh/.ps1`, `remove-worktree.sh`, `isolation.md` | current | 2026-09-30 |
+| `practices/verification/` | 05 | Playwright smoke, Hurl smoke, pytest smoke, bats, definition-of-done, harness-evals, `dry-run-and-approval.md` (when `acts_on_world`), stack-notes php-laravel | current | 2026-09-30 |
+| `practices/spec-driven/` | 04 | `specs/README.md`, `/plan-ticket`, `/develop-task`, `constitution.md`, OpenSpec quickstart | current | 2026-09-30 |
+| `practices/prompt-library/` | 01, 04, 21 | meta-prompt, ask-the-expert, readme-by-index, openapi, standards-doc, `/audit`, commit skill, `/lesson`, trajectory-review, `implement-practice.md` (the one prompt to implement any practice in any stack) | current | 2026-09-30 |
+| `practices/token-savings/` | 07 | ordered checklist, MCP audit (CLI-over-MCP rule added), measurement log | current | 2026-09-30 |
+| `practices/security-baseline/` | 02, 05 | core (`always`): secret-scan hook, dependency policy · full (`acts_on_world or personal_data or regulated or multi_tenant`): MCP trust register, agentic threat model, injection fixture · stack-notes php-laravel | draft | 2026-09-30 |
+| `practices/llm-api-calls/` | 10 | `llm_call_skeleton.py` (one client module, usage log incl. cached tokens), `system-prompt-template.md` (ten parts, static-first, 12-point checklist), `failure-modes-and-mitigations.md`, `provider-selection-checklist.md`, `context-budget.md`, stack-notes python/php-laravel | draft | 2026-09-30 |
+| `practices/context-management/` | 11 | `context-budget-and-triggers.md`, `compaction-policy.md`, `compaction_skeleton.py`, `context-failure-modes.md`, `context-store-decision.md`, `context-metrics-and-evals.md` | draft | 2026-09-30 |
+| `practices/llm-gateway/` | 12 | `routing-policy.md`, `gateway_config.yaml` (LiteLLM shape), `fallback-approval.md`, `model-registry.md`, `streaming-pipeline.md`, `tracing-otel.md`, `semantic-cache-decision.md`, stack-notes php-laravel | draft | 2026-09-30 |
+| `practices/agent-patterns/` | 21 | decision checklist, patterns catalogue, agent-loop skeleton, tool-definition template + 12-point checklist, tool-transport decision table (CLI/MCP/skill/RAG/memory + auth ladder), agentic-RAG skeleton | draft | 2026-09-30 |
 | `practices/_template/` | — | README template for new practices | — | — |
 
 ## Decisions
@@ -95,7 +97,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 
 ## Scripts
 
-`scripts/kb-sync.sh` — is this copy in sync with `origin/main`? (run first; `--pull` fast-forwards when only behind) · `scripts/kb-check.sh` — self-verification (frontmatter, index coverage, links, applicability fields + vocabulary, placeholders) · `scripts/kb-publish.sh` — branch/commit/push/merge/cleanup · `scripts/scan-filter.py` — drop already-registered media from a new scan result · `scripts/written-filter.py` — same for written sources (URLs) · `scripts/applies.py` — which practices apply for a set of facts (helper + consistency check of the playbook's worked shapes)
+`scripts/kb-sync.sh` — is this copy in sync with `origin/main`? (run first; `--pull` fast-forwards when only behind) · `scripts/kb-check.sh` — self-verification, eleven checks (frontmatter, index coverage, links, applicability fields + vocabulary + README row, placeholders, `applies.py --check`, every fact word used, practice section schema + structured Verify, variant staleness + stack-notes cap, `ROUTER.md` not stale, `bundles.md` not stale) · `scripts/kb-publish.sh` — branch/commit/push/merge/cleanup · `scripts/applies.py` — **the authority** for which practices apply to a set of facts and in which order (`--explain`, `fact:planned`, `--json`, `--shapes`, `--check`) · `scripts/make-router.py` → `ROUTER.md` · `scripts/make-bundles.py` → `practices/bundles.md` · `scripts/check-practices.py` — section schema, structured Verify, variants, stack-notes · `scripts/scan-filter.py`, `scripts/written-filter.py` — registry filters for media and written sources
 
 ## Skills
 

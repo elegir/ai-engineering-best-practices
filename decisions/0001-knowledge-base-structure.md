@@ -35,3 +35,4 @@ Martin attended his first harness-engineering workshop on 2026-09-08 and wants a
 
 ## Notes
 - 2026-09-26 — reaffirmed by `decisions/0003-applicability-by-facts.md`: the applicability selector writes nothing into target repos.
+- 2026-09-30 — clarified with decision 0004 §4 and 0005: repos *do* copy practice files (and own the copies, adapted); what is never copied is principles and sources, which are consulted by pointer. The KB still writes nothing into target repos.

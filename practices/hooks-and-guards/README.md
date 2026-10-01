@@ -53,9 +53,9 @@ The folder is named `dot-claude/` here because remote tools cannot write `.claud
 ## Stack-sensitive points
 
 - The guard runs on the **developer's machine** around the agent, not on the product's host: its runtime is whatever the developer has (Python 3 is assumed; the `|| exit 2` wiring makes its absence block, not pass).
-- Test / format / lint commands are the only stack-specific input: `pytest` + `ruff`; `npm test` + `biome`; `vendor/bin/pest` + `pint`/`phpcbf`; WP-CLI checks for WordPress. They live in `hooks.json` (see `variants/*.md` for each stack's lines).
+- Test / format / lint commands are the only stack-specific input: `pytest` + `ruff`; `npm test` + `biome`; `vendor/bin/pest` + `pint`/`phpcbf`; WP-CLI checks for WordPress. They live in `hooks.json` (see `stack-notes/*.md` for each stack's lines).
 - Protected paths differ: `.env` and lockfiles everywhere; `wp-config.php` on WordPress; `bootstrap/cache/config.php` on Laravel after `config:cache` (secrets are copied there); `*.pem`, `*.key` anywhere.
-- Windows: shell hooks need Git Bash; the Python guard removes that dependency, which is the main reason for the rewrite.
+- Windows: the four shell hooks needed Git Bash for their *logic*; the Python guard moves the logic into Python and leaves only the `|| exit 2` wrapper to the shell Claude Code already uses. The interpreter name differs (`python`, `py -3`) — `<<PYTHON>>` in `settings.json` exists for that.
 
 ## Adapt
 
@@ -72,9 +72,9 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 1. Asked to edit a protected file (`.env`, lockfiles, the hooks themselves), the agent is blocked before the write and reports the reason — observer: agent — negative: the edit lands
 2. After the agent writes a badly formatted file, the file is auto-formatted and any lint error returns to the agent, which fixes it — observer: agent — negative: a file left unformatted, or a lint error the agent never sees
-3. With a failing test, asked to "finish", the agent is refused by the stop gate until the test passes — observer: agent — negative: the session ends green with a red test
+3. With a failing test, asked to "finish", the agent is refused by the stop gate once per stop attempt and told which tests failed (the second attempt in a row is let through so the session cannot hang) — observer: agent — negative: a first stop attempt that ends the session with a red test
 4. A destructive command from the agent (`--no-verify`, force push, a database drop, a production deploy) is blocked by the guard **and** by the tool's native deny list — observer: agent — negative: either layer alone lets it through
-5. The guard fails closed: with the interpreter renamed or missing, every guarded action is blocked and the error names the guard — observer: script — negative: an action that proceeds with "command not found" on stderr (decision 0005 §6)
+5. The guard fails closed: with the interpreter renamed or missing, every PreToolUse and Stop action is blocked (a wrong `<<PYTHON>>` makes the session unusable until `settings.json` is fixed by hand — that is the intended failure) and the error names the guard — observer: script — negative: an edit or command that proceeds with "command not found" on stderr (decision 0005 §6)
 6. `guard --selftest` passes on a clean tree and is run by the entry-file startup routine — observer: script — negative: a session that starts without the self-test result
 7. The pre-commit gate (lefthook or the repo's equivalent) passes on a clean tree and fails on a staged secret or a failing lint — observer: script — negative: a clean tree that fails, or a secret that passes — framework: bends
 
