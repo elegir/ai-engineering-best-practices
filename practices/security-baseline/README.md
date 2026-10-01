@@ -3,7 +3,7 @@ title: "Practice — security baseline for agent-driven repos"
 type: practice
 status: draft
 date: 2026-09-09
-last-reviewed: 2026-09-09
+last-reviewed: 2026-09-30
 tags: [security, secrets, dependencies, mcp, threat-model]
 kind: working-style
 applies-when: "always"
@@ -58,6 +58,10 @@ Agents with shell, file, git and MCP access can leak secrets, add unsafe depende
 
 - Practitioner guide §2 (safety gates, protected configs, security linters, AI code anti-patterns) — `sources/2026-09-08-how-teams-structure-agent-knowledge.md`.
 - LIDR: Snyk MCP for vulnerability scans, security-by-design conventions — `sources/2026-09-08-lidr-workshop-harness-engineering.md`.
+
+## Notes from later scans
+
+- 2026-09-30 (s3): two rows to add to the trust/threat files when this practice is revised — **model API keys per route and per tenant with spend caps and anomaly alerts** (one shared key lets a noisy tenant or a runaway agent exhaust everyone's quota; a gateway is a fraud target — Twilio, OpenRouter) and **tracing decorators capture function arguments by default** (an API key in a traced call lands in the trace store — PyCon DE). Detail: `../llm-gateway/routing-policy.md` §keys, `../llm-gateway/tracing-otel.md` §rules.
 
 ## Change log
 

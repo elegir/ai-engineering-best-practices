@@ -3,7 +3,7 @@ title: "Glossary — the vocabulary of building software with AI agents"
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-27
+last-reviewed: 2026-09-30
 tags: [glossary, vocabulary]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -100,11 +100,24 @@ This field renames itself every few months. Below are the terms as used in this 
 
 **Poisoning / distraction / confusion / clash.** Drew Breunig's four context failures: a hallucination lodged in history and reused; the model leaning on a long history instead of planning; irrelevant material steering the answer; two sources disagreeing and the wrong one winning. Table with symptoms and fixes: `practices/context-management/context-failure-modes.md`.
 
+**LLM gateway (wrapper layer).** The layer between application code and model providers that handles the provider-interface mismatch, routing, fallback, retries, cooldown, timeouts, keys and spend, streaming, tracing and accounting — "one endpoint instead of five SDKs". A library in each service or a small deployment; never the place where prompts or control flow live. Principle: `12-llm-gateway-layer.md`.
+
+**Fallback vs retry.** A *retry* calls the same endpoint again; for LLM calls it burns the latency budget and multiplies cost. A *fallback* goes to the next deployment (same model elsewhere: transparent; a different model: a pre-approved product change). One owner of retries per stack; "available is not approved" for fallbacks.
+
+**Cooldown.** Taking a deployment out of the routing pool for a fixed time after it crosses an allowed number of failures, then re-trying it — the LLM-world form of a circuit breaker (LiteLLM `allowed_fails` / `cooldown_time`).
+
+**SSE (Server-Sent Events).** The default transport for streaming tokens to a browser: one-way text over HTTP with auto-reconnect; `data:` lines that can split across network chunks and a `[DONE]` sentinel that separates a finished stream from a dropped one. WebSockets are for client→server streams; gRPC stays internal.
+
+**Semantic cache.** A cache keyed by embedding similarity that returns a *similar earlier question's* answer. Safe only for stateless, non-personal, slow-changing content behind tenant/domain/version filters and a conservative threshold (0.90–0.95). Not the same as provider *prompt caching*, which caches your own request's prefix. Decision: `practices/llm-gateway/semantic-cache-decision.md`.
+
+**12-Factor Agents.** Dex Horthy's 2025 list of patterns for reliable LLM applications: own your prompts, own your context window, tools are structured outputs (JSON + code), own your control flow, unify state, launch/pause/resume, contact humans with tool calls, compact errors, small focused agents, trigger from anywhere, stateless reducer. The design stance behind the thin wrapper layer.
+
 **Brownfield / greenfield.** Existing codebase vs. new project. Most real work is brownfield; frameworks that require describing the whole system up front fit it badly.
 
 ## Change log
 
 - 2026-09-08 — created from the LIDR workshop and the structuring-research entry.
+- 2026-09-30 (s3) — added LLM gateway, Fallback vs retry, Cooldown, SSE, Semantic cache, 12-Factor Agents. Source: `sources/2026-09-30-s03-wrappers-digest.md`.
 - 2026-09-27 (s2) — added Context engineering (runtime sense), Context rot, Compaction, KV cache, CAG, Poisoning/distraction/confusion/clash; Context entry's "context rot" now points to the new entry. Source: `sources/2026-09-27-s02-context-caching-digest.md`.
 - 2026-09-27 — Token entry extended (three price classes); added Context window, Tokenization, System prompt, Prompt caching, Reasoning model / extended thinking, Hallucination. Source: `sources/2026-09-27-s01-llm-setup-digest.md`.
 - 2026-09-24 — MCP entry rewritten with the three primitives and their controllers; added "Workflow vs agent" and "Tool (for a model)"; skills/progressive-disclosure entries reviewed and unchanged. Source: `sources/2026-09-24-s12-agents-digest.md`.
