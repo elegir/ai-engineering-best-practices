@@ -36,19 +36,18 @@ Rules live only as sentences in the instruction file, so the agent can skip test
 
 | File | Copy to | Purpose |
 |---|---|---|
-| `dot-claude/settings.json` | `<repo>/.claude/settings.json` (merge if exists) | PreToolUse guard, PostToolUse quality loop, Stop completion gate, safe permissions |
-| `dot-claude/hooks/protect-files.sh` | `<repo>/.claude/hooks/` | Blocks edits to `.env*`, lock files, linter/formatter configs, CI config |
-| `dot-claude/hooks/post-edit-quality.sh` | `<repo>/.claude/hooks/` | Auto-format then lint the edited file; returns violations as JSON context |
-| `dot-claude/hooks/stop-gate.sh` | `<repo>/.claude/hooks/` | Runs the fast test subset before the agent may stop; avoids loops |
-| `dot-claude/hooks/block-dangerous-bash.sh` | `<repo>/.claude/hooks/` | Blocks `rm -rf`, `DROP`, `--no-verify`, prod deploy commands |
-| `lefthook.yml` | `<repo>/lefthook.yml` | Pre-commit: format check, lint, typecheck, unit; pre-push: integration |
-| `variants/node.md`, `variants/python.md`, `variants/php-wordpress.md` | (read) | Exact tool commands per stack to paste into the scripts |
+| `dot-claude/settings.json` | `<repo>/.claude/settings.json` (merge if exists) | Layer 1: native `permissions.deny` for destructive commands and `.env`/`.claude` edits; wires the guard on PreToolUse, PostToolUse and Stop with `|| exit 2` (fail closed) |
+| `dot-claude/hooks/guard.py` | `<repo>/.claude/hooks/guard.py` | Layer 2, one script for all events: protected paths, deny patterns, format + lint after edits, stop gate on the fast tests, `--selftest`. Standard library only; refuses to run while `hooks.json` has a placeholder; any internal error blocks |
+| `dot-claude/hooks.json` | `<repo>/.claude/hooks.json` | The only stack-specific input: protected paths, deny patterns, format/lint commands per extension, the stop test command, timeouts |
+| `lefthook.yml` | `<repo>/lefthook.yml` | Pre-commit: format check, lint, typecheck, unit; pre-push: integration (the human-side gate; the guard is the agent-side gate) |
+| `stack-notes/python.md`, `stack-notes/node.md`, `stack-notes/php-wordpress.md`, `stack-notes/php-laravel.md` | (read) | The exact lines for `hooks.json` per stack, and the stack's pitfalls |
+| `dot-claude/hooks/legacy-sh/` | (do not copy) | The four Bash hooks this guard replaced on 2026-09-30; kept for history |
 
-The folder is named `dot-claude/` here because remote tools cannot write `.claude/`; rename it to `.claude/` when copying. Scripts are Bash (Claude Code runs hooks through a shell on Windows too — Git Bash is required; note it in `docs/development-guide.md`).
+The folder is named `dot-claude/` here because remote tools cannot write `.claude/`; rename it to `.claude/` when copying.
 
 ## Reference implementation
 
-The `dot-claude/hooks/*.sh` scripts are the current reference and are **being replaced** by a single `guard.py` + `hooks.json` (decision 0005 §6; the migration is item 3 of `../../sources/2026-09-30-stack-debate.md` §4). Until then the shell scripts stand with their known weaknesses (sed-parsed JSON; fail-open when the shell is missing). Stack commands (test, format, lint) belong in `hooks.json`, never in the guard itself.
+`dot-claude/hooks/guard.py` + `dot-claude/hooks.json` + `dot-claude/settings.json`. This is the one place in the KB where the reference **is** the artefact every repo copies regardless of stack (decision 0005 §6): the guard runs around the agent on the developer's machine, not inside the product, so there is nothing to port — only `hooks.json` changes per stack. *Idiom, not required:* nothing; the three files are copied as they are. A repo whose developer machine has no Python at all falls back to `legacy-sh/` and accepts its weaknesses.
 
 ## Stack-sensitive points
 
@@ -59,11 +58,12 @@ The `dot-claude/hooks/*.sh` scripts are the current reference and are **being re
 
 ## Adapt
 
-- Open each `.sh` and replace the `<<…>>` commands with the stack's tools from `variants/`.
-- In `settings.json`, the `permissions.allow` list must contain only commands you consider safe on your machine; remove anything you do not use.
-- Add repo-specific protected paths (migrations that are merged, generated files).
-- If the repo already has `.claude/settings.json`, merge the `hooks` and `permissions` keys; do not overwrite.
-- Install Lefthook: `npm i -D lefthook && npx lefthook install` (Node) or `pip install lefthook` / a downloaded binary; run `lefthook install` once per clone (put it in `development-guide.md` §2).
+1. Copy the three files; rename `dot-claude/` to `.claude/`.
+2. In `settings.json` replace `<<PYTHON>>` with the interpreter name that works on **this machine** (`python3` on macOS/Linux/Git Bash; `python` or `py -3` on Windows) — test it in the same shell Claude Code uses — and the two allow-list commands.
+3. In `hooks.json` replace every `<<…>>`: the repo-specific protected path (`wp-config.php`, `bootstrap/cache/`, merged migrations), the repo-specific deny (production hosts, `wp db reset`, deploy commands), the format/lint commands per extension (copy the lines from `stack-notes/<stack>.md`; delete extensions the repo has no tool for), the stop test command (fast: under ~60 s), the timeouts.
+4. Run `<<PYTHON>> .claude/hooks/guard.py --selftest` until it prints OK: it checks that every tool resolves and that the protected/deny lists cover `.env`, the hooks themselves, `--force`, `--no-verify` and `rm -rf`.
+5. Add the self-test line to the entry file's startup routine (`../agent-entry-file/`, assertion 6) so a dead guard is reported every session.
+6. Merge `lefthook.yml`; install lefthook (`npm i -D lefthook` / `pip install lefthook` / `composer require --dev` equivalent) and run `lefthook install`.
 
 ## Verify
 
@@ -77,7 +77,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 6. `guard --selftest` passes on a clean tree and is run by the entry-file startup routine — observer: script — negative: a session that starts without the self-test result
 7. The pre-commit gate (lefthook or the repo's equivalent) passes on a clean tree and fails on a staged secret or a failing lint — observer: script — negative: a clean tree that fails, or a secret that passes — framework: bends
 
-**Example commands (Python / Node):** `python3 .claude/hooks/guard.py --selftest`; `mv $(which python3) /tmp && <any guarded edit>` → blocked; `npx lefthook run pre-commit`.
+**Example commands (Python / Node):** `python3 .claude/hooks/guard.py --selftest`; `echo '{"tool_input":{"file_path":".env"}}' | python3 .claude/hooks/guard.py pre-edit; echo $?` → `2`; with the interpreter renamed, any guarded edit → "command not found" **and** blocked (the `|| exit 2`); `npx lefthook run pre-commit`.
 
 ## Sources
 
@@ -87,6 +87,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-09-30 — the four Bash hooks replaced by `guard.py` + `hooks.json` + a rewired `settings.json` (fail closed with `|| exit 2`, refuses placeholders, `--selftest`, native deny list as layer 1); `variants/` renamed `stack-notes/` and `php-laravel.md` added. Decision 0005 §6; `sources/2026-09-30-stack-debate.md` attack 5.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 

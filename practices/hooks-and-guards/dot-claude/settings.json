@@ -1,4 +1,5 @@
 {
+  "_comment": "Merge into <repo>/.claude/settings.json. <<PYTHON>> = the interpreter name on this machine (python3 on macOS/Linux/Git Bash; python or py -3 on Windows). The '|| exit 2' makes a missing interpreter BLOCK instead of pass. Layer 1 is the native deny list; layer 2 is guard.py reading .claude/hooks.json.",
   "permissions": {
     "allow": [
       "Bash(git status*)",
@@ -7,49 +8,36 @@
       "Bash(git add*)",
       "Bash(git commit -m*)",
       "Bash(git worktree list*)",
-      "Bash(<<npm test*>>)",
-      "Bash(<<npm run lint*>>)",
-      "Bash(<<npm run typecheck*>>)",
-      "Bash(<<npx playwright test*>>)",
+      "Bash(<<TEST_COMMAND, e.g. pytest*>>)",
+      "Bash(<<LINT_COMMAND, e.g. ruff*>>)",
       "Bash(ls*)",
       "Bash(cat *)"
     ],
     "deny": [
       "Bash(git push --force*)",
+      "Bash(git push -f*)",
       "Bash(git commit --no-verify*)",
-      "Bash(rm -rf*)"
+      "Bash(git commit * --no-verify*)",
+      "Bash(git reset --hard*)",
+      "Bash(rm -rf*)",
+      "Bash(terraform apply*)",
+      "Bash(terraform destroy*)",
+      "Edit(.env*)",
+      "Write(.env*)",
+      "Edit(.claude/**)",
+      "Write(.claude/**)"
     ]
   },
   "hooks": {
     "PreToolUse": [
-      {
-        "matcher": "Write|Edit|MultiEdit",
-        "hooks": [
-          { "type": "command", "command": "bash .claude/hooks/protect-files.sh" }
-        ]
-      },
-      {
-        "matcher": "Bash",
-        "hooks": [
-          { "type": "command", "command": "bash .claude/hooks/block-dangerous-bash.sh" }
-        ]
-      }
+      { "matcher": "Write|Edit|MultiEdit", "hooks": [ { "type": "command", "command": "<<PYTHON>> .claude/hooks/guard.py pre-edit || exit 2" } ] },
+      { "matcher": "Bash",                 "hooks": [ { "type": "command", "command": "<<PYTHON>> .claude/hooks/guard.py pre-bash || exit 2" } ] }
     ],
     "PostToolUse": [
-      {
-        "matcher": "Write|Edit|MultiEdit",
-        "hooks": [
-          { "type": "command", "command": "bash .claude/hooks/post-edit-quality.sh" }
-        ]
-      }
+      { "matcher": "Write|Edit|MultiEdit", "hooks": [ { "type": "command", "command": "<<PYTHON>> .claude/hooks/guard.py post-edit || exit 2" } ] }
     ],
     "Stop": [
-      {
-        "matcher": "",
-        "hooks": [
-          { "type": "command", "command": "bash .claude/hooks/stop-gate.sh" }
-        ]
-      }
+      { "matcher": "", "hooks": [ { "type": "command", "command": "<<PYTHON>> .claude/hooks/guard.py stop || exit 2" } ] }
     ]
   }
 }
