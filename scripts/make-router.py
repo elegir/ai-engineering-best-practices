@@ -17,8 +17,9 @@ def render():
            "| practice | kind | applies-when | full-when | when | ref |", "|---|---|---|---|---|---|"]
     for p in rows:
         kind = "ws" if p["kind"] == "working-style" else "cap"
-        out.append(f"| {p['name']} | {kind} | {p['applies']} | {p['full'] or ''} | {p['when']} | {p['ref']}{'' if p['status']=='current' else ' ('+p['status']+')'} |")
-    out += ["", "ws = working-style (any repo an agent works in); cap = capability (depends on what the product does). when = day-0 | first-user | at-scale. ref = reference-status: untested | field-tested | reference. A practice folder with no row here is draft and unrouted (decision 0004 §6).", ""]
+        v = ("; " + ", ".join(f"{k}={s}" for k, s in p["variants"].items())) if p["variants"] else ""
+        out.append(f"| {p['name']} | {kind} | {p['applies']} | {p['full'] or ''} | {p['when']} | {p['ref']}{v}{'' if p['status']=='current' else ' ('+p['status']+')'} |")
+    out += ["", "ws = working-style (any repo an agent works in); cap = capability (depends on what the product does). when = day-0 | first-user | at-scale. ref = reference-status: untested | field-tested | reference, then any field-tested variants per stack. A practice folder with no row here is draft and unrouted (decision 0004 §6).", ""]
     text = "\n".join(out)
     if len(text.encode("utf-8")) > LIMIT:
         sys.stderr.write(f"ROUTER.md would be {len(text.encode('utf-8'))} bytes > {LIMIT}\n"); sys.exit(1)

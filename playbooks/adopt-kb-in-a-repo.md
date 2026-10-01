@@ -30,7 +30,7 @@ superseded-by: null
    Martin's AI-engineering best practices live in `../ai-engineering-best-practices/` (a sibling folder, not part of this repo).
    - Read `../ai-engineering-best-practices/AGENTS.md` before proposing changes to agent instructions, tooling, MCPs, testing strategy, specs, worktrees or workflow.
    - To evaluate this repo against those practices, run `../ai-engineering-best-practices/playbooks/audit-repo-against-kb.md` and present a plan before changing anything.
-   - Do not copy files from the knowledge base into this repo; link to them.
+   - Copy practices from `../ai-engineering-best-practices/practices/`, adapted (this repo owns the copies); never copy principles or sources — link to them.
    ```
 
    Keep it as prose. Do **not** use `@../ai-engineering-best-practices/AGENTS.md` by default: an import loads at every launch (costs context), triggers a one-time external-import approval, and is skipped in Cowork desktop sessions.

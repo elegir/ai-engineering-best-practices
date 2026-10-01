@@ -1,6 +1,6 @@
 # Lefthook: git hooks for humans AND agents (works with every tool, not only Claude Code).
 # Install once per clone: `npx lefthook install` (Node) or `lefthook install`.
-# Replace <<…>> with the stack's commands (see variants/).
+# Replace <<…>> with the stack's commands (see stack-notes/).
 
 pre-commit:
   parallel: true

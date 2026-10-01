@@ -49,7 +49,7 @@ Two agent sessions in the same folder overwrite each other's files; tests fail f
 
 ## Stack-sensitive points
 
-- **WordPress stores its URL in the database**, so a worktree with its own port needs its own database *and* a search-replace of the URL — in practice a staging clone, not a worktree; the practice then reduces to "one session per site" (`../hooks-and-guards/variants/php-wordpress.md`).
+- **WordPress stores its URL in the database**, so a worktree with its own port needs its own database *and* a search-replace of the URL — in practice a staging clone, not a worktree; the practice then reduces to "one session per site" (`../hooks-and-guards/stack-notes/php-wordpress.md`).
 - **Laravel**: `php artisan serve --port` and a per-worktree `DB_DATABASE` in `.env` make it straightforward; queues and caches need a per-worktree prefix.
 - **Node**: port and database as in Python; `node_modules` is installed per worktree (large; consider pnpm's store).
 

@@ -19,4 +19,4 @@ Facts (practices/facts.md) → `python3 scripts/applies.py --explain <facts…>`
 | llm-gateway | cap | llm_calls and production |  | first-user | untested (draft) |
 | agent-patterns | cap | tools or multi_agent or exposes_tools |  | day-0 | untested (draft) |
 
-ws = working-style (any repo an agent works in); cap = capability (depends on what the product does). when = day-0 | first-user | at-scale. ref = reference-status: untested | field-tested | reference. A practice folder with no row here is draft and unrouted (decision 0004 §6).
+ws = working-style (any repo an agent works in); cap = capability (depends on what the product does). when = day-0 | first-user | at-scale. ref = reference-status: untested | field-tested | reference, then any field-tested variants per stack. A practice folder with no row here is draft and unrouted (decision 0004 §6).

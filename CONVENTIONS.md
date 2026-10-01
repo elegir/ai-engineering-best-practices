@@ -8,7 +8,7 @@ These rules exist so that an agent reading this folder in a year can tell what i
 - `principles/`: `NN-topic.md` with a two-digit prefix that fixes reading order. Example: `02-harness-engineering.md`.
 - `decisions/`: `NNNN-slug.md`, four-digit sequential number. Example: `0001-knowledge-base-structure.md`.
 - `playbooks/`: `verb-object.md`. Example: `audit-repo-against-kb.md`.
-- `practices/`: one folder per practice, `kebab-case-noun/`, containing a `README.md` (frontmatter `type: practice`, plus `principle:` pointing at the principle it implements) and the copyable files. Placeholders inside copyable files are written `<<LIKE_THIS>>`. Stack variants go in `variants/` or per-stack subfolders. Template: `practices/_template/`.
+- `practices/`: one folder per practice, `kebab-case-noun/`, containing a `README.md` (frontmatter `type: practice`, plus `principle:` pointing at the principle it implements) and the copyable files. Placeholders inside copyable files are written `<<LIKE_THIS>>`. Per-stack notes go in `stack-notes/`; `variants/` is reserved for field-tested copies (decision 0005 §5, §7). Template: `practices/_template/`.
 
 ## 2. Frontmatter (mandatory)
 
@@ -63,7 +63,7 @@ A principle is the *current answer* to one question. Sections:
 
 ## 4b. Structure of a practice README
 
-Solves (symptoms in a repo) → Applies when → Does not apply when → Files in this folder (table: file, copy to, purpose) → Adapt (placeholders, variants, what to delete) → Verify (what the agent must observe) → Sources → Change log. Copyable files carry a short header comment saying what to replace.
+Solves (symptoms in a repo) → Applies when → Does not apply when → Files in this folder (table: file, copy to, purpose) → Reference implementation (the Python example; what is idiom, not required) → Stack-sensitive points (where the mechanism changes with the runtime) → Adapt (placeholders, what to delete) → Verify (the contract: numbered assertions `N. <assertion> — observer: script | agent | Martin — negative: <…>`; stack commands only under **Example commands**) → Sources → Change log. `scripts/check-practices.py` enforces the headings and the Verify shape. Copyable files carry a short header comment saying what to replace. Per-stack knowledge goes in `stack-notes/<stack>.md` (≤ 20 non-blank lines, no code, no version pins); `variants/<stack>/` holds only field-tested copies born from a field report (decision 0005).
 
 ## 5. Style
 

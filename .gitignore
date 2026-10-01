@@ -6,3 +6,5 @@ Thumbs.db
 .idea/
 # local agent notes
 CLAUDE.local.md
+__pycache__/
+*.pyc

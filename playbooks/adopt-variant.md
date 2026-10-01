@@ -48,7 +48,7 @@ stack: <stack>
 ---
 ```
 
-`scripts/kb-check.sh` [9/9] fails when `verified-against` is older than the practice's `last-reviewed`: a practice revised after the variant was tested needs the variant re-verified (a new report) or its status noted as stale in its README.
+`scripts/kb-check.sh` (the variants check) fails when `verified-against` is older than the practice's `last-reviewed`: a practice revised after the variant was tested needs the variant re-verified (a new report) or its status noted as stale in its README.
 
 If the variant already exists: record the second adoption in `practices/adoptions.md`; update the variant only through a new field report.
 
@@ -56,7 +56,7 @@ If the variant already exists: record the second adoption in `practices/adoption
 
 - The **practice**'s `reference-status` moves `untested → field-tested` on the first report whose assertions all pass (or `n.a.` with reason) in the reference stack; the practice's `status` moves `draft → current` on the same event unless the README names another blocker.
 - A **variant** moves `field-tested → reference` after a clean-context agent reviews it against the practice's negatives (every assertion's "negative" tried against the variant's files) within thirty days of the report; record the review as a source entry. There is no "second consumer" requirement.
-- The router (`scripts/applies.py --explain`, `ROUTER.md`) shows the status of the reference and of each variant, so an adopting agent sees "field-tested" or "no reference yet" at adoption time.
+- The router (`scripts/applies.py --explain`, `ROUTER.md`) shows the practice's reference status and each variant's status (read from `variants/<stack>/README.md`), so an adopting agent sees "field-tested" or "no reference yet" at adoption time.
 
 ## Step 6 — record and publish
 

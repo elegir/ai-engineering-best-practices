@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # kb-check.sh — the knowledge base verifies itself before every publish (its own "sensor").
-# Checks: frontmatter present with a status; INDEX.md lists every principle/practice/source/decision/playbook;
-# no dangling relative links; no lingering <<PLACEHOLDER>> outside practices/ and templates/.
+# Eleven checks: frontmatter; INDEX coverage; relative links; applicability fields + vocabulary + README row; placeholders;
+# applies.py --check (parse, table = frontmatter, when, ordering); every fact word used; practice section schema + structured Verify;
+# variant staleness; ROUTER.md not stale; practices/bundles.md not stale.
 # Usage: scripts/kb-check.sh   (exit 0 = ok, 1 = problems listed)
 set -u
 cd "$(dirname "$(readlink -f "$0")")/.." || exit 1
@@ -71,7 +72,7 @@ done
 echo "[8/11] practice section schema + structured Verify (decision 0005 §2, §9)"
 python3 scripts/check-practices.py || fail=1
 
-echo "[9/11] variants: verified-against not older than the practice's last-reviewed (decision 0005 §7)"
+echo "[9/11] variants: verified-against not older than the practice's last-reviewed; stack-notes ≤ 20 non-blank lines, no code (decision 0005 §5, §7)"
 python3 scripts/check-practices.py --variants || fail=1
 
 echo "[10/11] ROUTER.md is generated from the practice frontmatter and not stale (scripts/make-router.py --check)"

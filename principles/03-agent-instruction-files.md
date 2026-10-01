@@ -35,10 +35,11 @@ A pointer ("ADRs live in `docs/adr/`; run `archgate check` to verify architectur
 ### What goes in (root file)
 
 - The three to six commands that matter: install, run, test, lint, e2e, deploy-to-staging.
-- The startup routine: read the progress file, check `git log`, pick the next task.
+- The startup routine: run the guard self-test, read the progress file, check `git log`, re-check the facts block against the code, pick the next task.
 - Prohibitions, each with a pointer: "never edit `.env` (PreToolUse hook enforces)", "never `--no-verify`", "never merge without e2e passing (see `docs/workflow.md`)".
 - Map of `docs/`: one line per document with when to read it.
 - Pointers to skills/commands and to shared knowledge (this KB).
+- The repo's **facts block**: which observable facts (`practices/facts.md`) hold, each with its source (`inferred | planned | asked`) and date — the input to the KB's router, owned by the repo (decision 0004 §4).
 - Tool-specific notes in a short section under the import (e.g. "use plan mode for changes under `src/billing/`").
 
 ### What stays out
@@ -99,4 +100,5 @@ Add a line when: the agent makes the same mistake twice; a code review catches s
 
 ## 7. Change log
 
+- 2026-09-30 — the root file now carries the repo's facts block and a startup routine that runs the guard self-test and re-checks the facts (decisions 0004 §4, 0005 §6); practice `practices/agent-entry-file/` updated the same day.
 - 2026-09-08 — created.

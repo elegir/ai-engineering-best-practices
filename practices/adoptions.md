@@ -14,7 +14,7 @@ superseded-by: null
 
 # Adoptions
 
-This table is the KB's evidence that any of its copyable material works. One row per adoption (one practice in one repo), added by `playbooks/adopt-variant.md` step 6 from a field report (`templates/field-report.md`). A practice with no row here is `reference-status: untested` whatever its README says; the router reads this. The flow is: field report → ingest (impact table) → row here → status change on the practice or variant.
+This table is the KB's evidence that any of its copyable material works. One row per adoption (one practice in one repo), added by `playbooks/adopt-variant.md` step 6 from a field report (`templates/field-report.md`). A practice with no row here must have `reference-status: untested` in its README (the router reads the README; `playbooks/adopt-variant.md` is the only step that changes it). The flow is: field report → ingest (impact table) → row here → status change on the practice or variant.
 
 | Date | Practice | Repo | Stack | Door | Outcome (assertions pass / total; n.a. with reason) | Tokens | Minutes | Errors caught by Verify | Report |
 |---|---|---|---|---|---|---|---|---|---|

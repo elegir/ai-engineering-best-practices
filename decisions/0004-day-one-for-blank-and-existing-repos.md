@@ -85,3 +85,4 @@ Before module 4 is routed, two empty repos (shapes A and B) are bootstrapped thr
 ## Change log
 
 - 2026-09-30 — `decisions/0005-contract-first-practices-and-stacks.md` supersedes two sentences of §3 (Python hooks → one fail-closed guard; TS day-0 client → no port before a consumer, TypeScript not promised) and amends the day-one goal for stacks without a field-tested variant. §8's acceptance test runs both shapes on Python until a variant exists elsewhere. Triggered by `sources/2026-09-30-stack-debate.md`.
+- 2026-09-30 (review) — §6 applies from this date forward: the nine working-style practices that were `status: current` before 0004 keep that status (it records that the course material confirmed them); their `reference-status: untested` is the honest statement about field evidence, and `practices/adoptions.md` is where it changes.

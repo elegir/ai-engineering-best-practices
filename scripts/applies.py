@@ -17,12 +17,14 @@ Usage:
 Facts: words from practices/facts.md, optionally suffixed `:inferred` (default), `:planned` or `:asked`.
 Grammar of applies-when / full-when: `always`, fact words, `and`, `or`, `not`, parentheses.
 Order: practices/facts.md §Ordering — working-style in the README order, then capability practices (and the full
-part of a practice with `full-when`) by the triggering fact: acts_on_world → personal_data / regulated → multi_tenant → production → the rest.
+part of a practice with `full-when`) by stage (`when`: day-0 → first-user → at-scale) and, within a stage, by the triggering
+fact: acts_on_world → personal_data / regulated → multi_tenant → production → the rest.
 """
-import json, os, re, sys
+import glob, json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FACT_PRIORITY = ["acts_on_world", "personal_data", "regulated", "multi_tenant", "production"]
+WHEN_ORDER = {"day-0": 0, "first-user": 1, "at-scale": 2}
 
 SHAPES = {
     "A multi-tenant agent SaaS acting on the world (AI SDR)": "llm_calls exposes_tools acts_on_world multi_tenant production personal_data regulated brownfield parallel_sessions long_tasks",
@@ -51,6 +53,16 @@ def frontmatter(name):
     return fm
 
 
+def variants(name):
+    """{stack: status} from practices/<name>/variants/<stack>/README.md (field-tested copies, decision 0005 §7)."""
+    out = {}
+    for f in sorted(glob.glob(os.path.join(ROOT, "practices", name, "variants", "*", "README.md"))):
+        m = re.match(r"^---\n(.*?)\n---\n", open(f, encoding="utf-8").read(), re.S)
+        st = re.search(r"^status: *([a-z-]+)", m.group(1), re.M) if m else None
+        out[os.path.basename(os.path.dirname(f))] = st.group(1) if st else "?"
+    return out
+
+
 def practices():
     """Routed practices in README table order, with their frontmatter. The table is the routing gate (decision 0004 §6):
     a folder without a row is draft and unrouted."""
@@ -61,7 +73,7 @@ def practices():
             name = m.group(1); fm = frontmatter(name)
             out.append({"name": name, "kind": m.group(2), "table_applies": m.group(3), "applies": fm.get("applies-when", ""),
                         "full": fm.get("full-when"), "when": fm.get("when", "day-0"), "full_when_stage": fm.get("full-when-stage"),
-                        "ref": fm.get("reference-status", "untested"), "status": fm.get("status", "draft")})
+                        "ref": fm.get("reference-status", "untested"), "status": fm.get("status", "draft"), "variants": variants(name)})
     return out
 
 
@@ -92,6 +104,8 @@ def parse_facts(args):
     inferred, planned = set(), set()
     for a in args:
         name, _, src = a.partition(":")
+        if src not in ("", "inferred", "planned", "asked"):
+            raise ValueError(f"bad fact source {src!r} in {a!r}: use fact, fact:inferred, fact:planned or fact:asked")
         (planned if src == "planned" else inferred).add(name)
     return inferred, planned
 
@@ -105,11 +119,14 @@ def route(args, vocab, plist):
     for p in plist:
         holds = evaluate(p["applies"], allf, vocab)
         holds_inferred = evaluate(p["applies"], inferred, vocab)
-        entry = {"name": p["name"], "kind": p["kind"], "when": p["when"], "ref": p["ref"], "status": p["status"], "applies_when": p["applies"]}
+        entry = {"name": p["name"], "kind": p["kind"], "when": p["when"], "ref": p["ref"], "status": p["status"], "applies_when": p["applies"], "variants": p["variants"]}
+        blank = not inferred  # a blank repo: nothing inferred yet
         if not holds:
             entry["verdict"] = "skipped"; entry["why"] = f"[{p['applies']}] does not hold"
         elif not holds_inferred and p["when"] != "day-0":
             entry["verdict"] = "deferred"; entry["why"] = f"fires only on planned facts {firing_facts(p['applies'], planned)}; when={p['when']} — attaches once inferred"
+        elif blank and p["when"] != "day-0":
+            entry["verdict"] = "deferred"; entry["why"] = f"blank repo; when={p['when']} — install once the product has users"
         else:
             entry["verdict"] = "applies"; entry["why"] = "always" if p["applies"] == "always" else "fired by " + ", ".join(firing_facts(p["applies"], allf))
             entry["rank"] = rank(p["applies"], allf)
@@ -125,7 +142,7 @@ def route(args, vocab, plist):
     ws = [r for r in rows if r["verdict"] == "applies" and r["kind"] == "working-style"]
     caps = [r for r in rows if r["verdict"] == "applies" and r["kind"] == "capability"]
     fulls = [dict(r, name=r["name"] + " (full)", rank=r["full"]["rank"], why=r["full"]["why"], when=r["full"]["when"]) for r in rows if r.get("full", {}).get("verdict") == "applies"]
-    second = sorted(caps + fulls, key=lambda r: (r["rank"], [p["name"] for p in plist].index(r["name"].split(" ")[0])))
+    second = sorted(caps + fulls, key=lambda r: (WHEN_ORDER.get(r["when"], 9), r["rank"], [p["name"] for p in plist].index(r["name"].split(" ")[0])))
     deferred = [r for r in rows if r["verdict"] == "deferred"] + [dict(r, name=r["name"] + " (full)", why=r["full"]["why"]) for r in rows if r.get("full", {}).get("verdict") == "deferred"]
     skipped = [r for r in rows if r["verdict"] == "skipped"]
     return {"facts": {"inferred": sorted(inferred), "planned": sorted(planned)}, "order": [r["name"] for r in ws] + [r["name"] for r in second],
@@ -133,7 +150,9 @@ def route(args, vocab, plist):
 
 
 def tag(r):
-    return f"{r['name']} [{r['when']}; ref {r['ref']}" + ("" if r["status"] == "current" else f"; {r['status']}") + "]"
+    name = r["name"] + (" (core)" if r.get("full") and not r["name"].endswith("(full)") else "")
+    v = ("; variants: " + ", ".join(f"{k}={s}" for k, s in r["variants"].items())) if r.get("variants") else ""
+    return f"{name} [{r['when']}; ref {r['ref']}{v}" + ("" if r["status"] == "current" else f"; {r['status']}") + "]"
 
 
 def print_route(title, res, explain):

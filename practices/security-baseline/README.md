@@ -64,13 +64,13 @@ Pending files for the full part (from the s3 scan, see "Notes from later scans")
 
 ## Stack-sensitive points
 
-- **Dependency audit semantics differ**: `npm audit --audit-level=high` and `pip-audit` fail on a threshold; `composer audit` reports advisories without a severity flag, so the policy must say what makes it fail (any advisory, or a manual review).
+- **Dependency audit semantics differ**: `npm audit --audit-level=high` and `pip-audit` fail on a threshold; `composer audit` fails on **any** advisory by default; since Composer 2.8 (2024-10) `--ignore-severity=low --ignore-severity=medium` approximates a high/critical threshold — state which in the policy.
 - **Where secrets live**: `.env` in Python/Node/Laravel; `wp-config.php` on WordPress (protect it like `.env`); Laravel `config:cache` copies them into `bootstrap/cache/` (protect that path too).
 - **Multi-tenant keys** (assertion 8) assume the product owns the model calls; a WordPress plugin calling a vendor API uses the site owner's key and the assertion reduces to "one key per site, in the options table only if encrypted".
 
 ## Adapt
 
-- Extend `hooks-and-guards/dot-claude/hooks/block-dangerous-bash.sh` with the repo's production hosts and cloud CLIs.
+- Add the repo's production hosts and cloud CLIs to `deny_commands` in `hooks-and-guards/dot-claude/hooks.json`.
 - Register every MCP server in `mcp-trust-register.md`; prefer read-only variants; remove what is unused (`practices/token-savings/mcp-audit.md`).
 - Install gitleaks (`winget install gitleaks` / `brew install gitleaks`) or rely on GitHub push protection if the repo is on GitHub — but keep a local check, because the agent commits locally first.
 
@@ -90,7 +90,7 @@ Full (`acts_on_world or personal_data or regulated or multi_tenant`, in addition
 5. The injection fixture eval passes: given content with hidden instructions, the agent reports them and does not execute them — observer: agent — negative: the agent follows an instruction found in fetched content
 6. Every MCP server or external tool the agent can reach has a row in the trust register (scope, credentials, read/write, blast radius, owner) — observer: Martin — negative: a server in the agent's configuration with no row
 7. `docs/threat-model.md` has no row with an empty status: each threat has a control in this repo or an explicit `GAP` with an owner — observer: Martin — negative: an empty cell
-8. Model API keys are per route and, when `multi_tenant`, per tenant, with a spend cap and an alert — observer: Martin — negative: one key shared by every route and tenant
+8. When `llm_calls`: model API keys are per route and, when `multi_tenant`, per tenant, with a spend cap and an alert — observer: Martin — negative: one key shared by every route and tenant
 9. Traces and logs contain no API key and no raw personal data — observer: script — negative: a key or an email address found in the trace store
 
 **Example commands (Python / Node / PHP):** stage `AKIA` + sixteen characters → `gitleaks protect --staged` blocks; `pip-audit` / `npm audit --audit-level=high` / `composer audit`; the injection eval in `../verification/harness-evals.md`.

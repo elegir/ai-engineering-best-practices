@@ -50,7 +50,7 @@ One folder per application type: `python-pytest/`, `web-playwright/`, `api-hurl/
 
 ## Stack-sensitive points
 
-- **The sensor differs by application type more than by language**: an HTTP API is smoked with Hurl in any language; a WordPress theme has no callable entry point, so its smoke is HTTP + WP-CLI checks (`hooks-and-guards/variants/php-wordpress.md`).
+- **The sensor differs by application type more than by language**: an HTTP API is smoked with Hurl in any language; a WordPress theme has no callable entry point, so its smoke is HTTP + WP-CLI checks (`hooks-and-guards/stack-notes/php-wordpress.md`).
 - **Seeding**: Python/Node repos seed a local database in the test fixture; Laravel has migrations + factories (`RefreshDatabase`); WordPress needs a fixture export or a disposable site — budget for it, the sixty-second target is hard there.
 - **Dry-run switch** (assertion 6): an environment variable works everywhere; in WordPress prefer a constant in `wp-config.php` so a plugin cannot override it from the options table.
 
@@ -59,7 +59,7 @@ One folder per application type: `python-pytest/`, `web-playwright/`, `api-hurl/
 - Pick the folder(s) matching the app. A repo can need two (API + UI).
 - Replace `<<BASE_URL>>`, seed credentials, and the three or four "must never break" flows. Smoke = the flows that, if broken, make everything else irrelevant (login, the core transaction, the main pipeline step).
 - Prefer accessibility-tree selectors (`getByRole`, `getByLabel`) over CSS; prefer text assertions over screenshots. Use screenshots only in a separate visual-regression job.
-- Wire the smoke command into `.claude/hooks/stop-gate.sh` (`hooks-and-guards/`) and the full suite into CI. Do not put the agent in CI; the agent *writes* tests, CI *runs* them.
+- Put the smoke command in `stop_test_command` of `.claude/hooks.json` (`hooks-and-guards/`) and the full suite into CI. Do not put the agent in CI; the agent *writes* tests, CI *runs* them.
 - For pipelines with side effects (emails, posts, payments): a `--dry-run` or sandbox mode is part of the sensor. If the code has none, adding it is the first task. The full rule set — one switch, approval before the first live run, smoke tests that run the real path in dry-run mode — is `dry-run-and-approval.md`; copy it only when the repo's facts include `acts_on_world`.
 
 ## Verify
