@@ -5,7 +5,9 @@ The knowledge base keeps sources/media-registry.json: every video or podcast epi
 considered, with a status (transcribed / digested / applied / candidate / discarded) and the
 reason. A new market scan (playbooks/scan-market-for-module.md) must only spend attention on
 items that are NOT already in the registry, so this script splits a scan result into
-"new" and "already decided".
+"new", "reuse" (already transcribed for another module — read the raw file, free) and "already decided".
+The registry prevents paying twice for search, transcription and triage; it never prevents REUSE:
+a transcript in sources/raw/ may feed any number of modules (`modules` lists them).
 
 Usage:
   python3 scripts/scan-filter.py <scan-results.json> [--show-known] [--include-candidates]
@@ -63,9 +65,15 @@ def main():
         print("\n## Parked candidates that surfaced again (decide now if this module is theirs)\n")
         for i, e in cands:
             print(f"- {e['title']} — parked for {e['module']} ({e['reason']})")
+    reusable = [(i, e) for i, e in dropped if e['status'] in ('applied', 'digested', 'transcribed')]
+    if reusable:
+        print("\n## Already transcribed — REUSE, do not re-transcribe (read the raw file; add this module to `modules` if the digest cites it)\n")
+        for i, e in reusable:
+            print(f"- [{e['status']}, used in {','.join(e.get('modules', [e['module']]))}] {e['title']} — {e.get('raw', '(no raw path)')}")
     if show_known and dropped:
-        print("\n## Already decided (dropped)\n")
+        print("\n## Discarded earlier (not re-examined unless the reason stopped being true)\n")
         for i, e in dropped:
+            if e['status'] in ('applied', 'digested', 'transcribed'): continue
             print(f"- [{e['status']}] {e['title']} — {e['reason']} ({e['scan']})")
 
 if __name__ == '__main__':

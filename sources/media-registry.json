@@ -1,5 +1,5 @@
 {
- "about": "Registry of every source this KB has ever considered — videos and podcast episodes (type video/podcast) AND written sources (type written: docs, papers, articles, courses). Media statuses: transcribed (raw text in sources/raw/), digested (source entry has a digest), applied (knowledge reached principles/practices), candidate (parked for a named module), discarded (do not re-consider unless the reason no longer holds). Written statuses: catalogued (listed as canon, not yet read in full), cited (used in a digest/principle — the reason says where), discarded. One entry per URL; scripts/scan-filter.py (media) and scripts/written-filter.py (written) drop anything already here.",
+ "about": "Registry of every source this KB has ever considered — videos and podcast episodes (type video/podcast) AND written sources (type written: docs, papers, articles, courses). Media statuses: transcribed (raw text in sources/raw/), digested (source entry has a digest), applied (knowledge reached principles/practices), candidate (parked for a named module), discarded (do not re-consider unless the reason no longer holds). Written statuses: catalogued (listed as canon, not yet read in full), cited (used in a digest/principle — the reason says where), discarded. One entry per URL; `modules` lists every module that used it (reading an existing transcript again for another module is free and encouraged — the registry prevents paying twice for search, transcription and triage, never reuse); scripts/scan-filter.py (media) and scripts/written-filter.py (written) drop anything already here.",
  "updated": "2026-09-30",
  "items": [
   {
@@ -13,7 +13,10 @@
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
    "raw": "sources/raw/2026-09-24-market-scan-s12-agents/yt-BHGTA6ZEls4-ibm-5-ways-to-connect-agents-to-tools.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "byR5YVesMeg",
@@ -26,7 +29,10 @@
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
    "raw": "sources/raw/2026-09-24-market-scan-s12-agents/yt-byR5YVesMeg-cursor-ai-foundations-tool-calling.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "Zqno_vux6d8",
@@ -39,7 +45,10 @@
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
    "raw": "sources/raw/2026-09-24-market-scan-s12-agents/yt-Zqno_vux6d8-google-cloud-first-agent-in-8-minutes.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "1a1VXDdIyrk",
@@ -52,7 +61,10 @@
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
    "raw": "sources/raw/2026-09-24-market-scan-s12-agents/yt-1a1VXDdIyrk-caleb-writes-code-agent-harness-in-8min.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "RxwjoegpI98",
@@ -65,7 +77,10 @@
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
    "raw": "sources/raw/2026-09-24-market-scan-s12-agents/yt-RxwjoegpI98-dave-ebbelaar-agentic-rag-pure-python.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "kQmXtrmQ5Zg",
@@ -78,7 +93,10 @@
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
    "raw": "sources/raw/2026-09-24-market-scan-s12-agents/yt-kQmXtrmQ5Zg-aie-mahesh-murag-mcp-full-workshop.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "uhJJgc-0iTQ",
@@ -91,7 +109,10 @@
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
    "raw": "sources/raw/2026-09-24-market-scan-s12-agents/yt-uhJJgc-0iTQ-anthropic-building-more-effective-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "cGuyrANVi4A",
@@ -104,7 +125,10 @@
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
    "raw": "sources/raw/2026-09-24-market-scan-s12-agents/yt-cGuyrANVi4A-google-cloud-how-mcp-actually-works.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "D7_ipDqhtwk",
@@ -117,7 +141,10 @@
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
    "raw": "sources/raw/2026-09-24-market-scan-s12-agents/yt-D7_ipDqhtwk-aie-barry-zhang-how-we-build-effective-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "kkBFmwkDzdo",
@@ -130,7 +157,10 @@
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
    "raw": "sources/raw/2026-09-24-market-scan-s12-agents/yt-kkBFmwkDzdo-claude-mcp-in-claude-code.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "ATt7QJgt-2k",
@@ -143,7 +173,10 @@
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
    "raw": "sources/raw/2026-09-24-market-scan-s12-agents/podcast-ATt7QJgt-2k-podcast-latent-space-notion-custom-agents-evals.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "X4FVEEegCbk",
@@ -156,7 +189,10 @@
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
    "raw": "sources/raw/2026-09-24-market-scan-s12-agents/yt-X4FVEEegCbk-ibm-skills-vs-mcp-vs-rag-vs-memory.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "h-7S6HNq0Vg",
@@ -169,7 +205,10 @@
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
    "raw": "sources/raw/2026-09-24-market-scan-s12-agents/yt-h-7S6HNq0Vg-stanford-cme295-lecture7-agentic-llms.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "LP5OCa20Zpg",
@@ -182,7 +221,10 @@
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
    "raw": "sources/raw/2026-09-24-market-scan-s12-agents/yt-LP5OCa20Zpg-anthropic-tips-for-building-ai-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "sal78ACtGTc",
@@ -195,7 +237,10 @@
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
    "raw": "sources/raw/2026-09-24-market-scan-s12-agents/yt-sal78ACtGTc-sequoia-andrew-ng-agentic-workflows.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "fCkTax4WfRA",
@@ -208,7 +253,10 @@
    "module": "workshop-2026-09-08",
    "scan": "sources/2026-09-08-lidr-workshop-harness-engineering.md",
    "raw": "sources/raw/2026-09-08-lidr-workshop/yt-fCkTax4WfRA-harness-5-areas.md",
-   "decided": "2026-09-08"
+   "decided": "2026-09-08",
+   "modules": [
+    "workshop-2026-09-08"
+   ]
   },
   {
    "id": "5s-lvoJpMTY",
@@ -221,7 +269,10 @@
    "module": "workshop-2026-09-08",
    "scan": "sources/2026-09-08-lidr-workshop-harness-engineering.md",
    "raw": "sources/raw/2026-09-08-lidr-workshop/yt-5s-lvoJpMTY-mcp-in-cursor.md",
-   "decided": "2026-09-08"
+   "decided": "2026-09-08",
+   "modules": [
+    "workshop-2026-09-08"
+   ]
   },
   {
    "id": "okYRbetLh7M",
@@ -234,7 +285,10 @@
    "module": "workshop-2026-09-08",
    "scan": "sources/2026-09-08-lidr-workshop-harness-engineering.md",
    "raw": "sources/raw/2026-09-08-lidr-workshop/yt-okYRbetLh7M-context-engineering.md",
-   "decided": "2026-09-08"
+   "decided": "2026-09-08",
+   "modules": [
+    "workshop-2026-09-08"
+   ]
   },
   {
    "id": "eca3lWJgRmA",
@@ -247,7 +301,10 @@
    "module": "workshop-2026-09-08",
    "scan": "sources/2026-09-08-lidr-workshop-harness-engineering.md",
    "raw": "sources/raw/2026-09-08-lidr-workshop/yt-eca3lWJgRmA-sdd-prompts-settings.md",
-   "decided": "2026-09-08"
+   "decided": "2026-09-08",
+   "modules": [
+    "workshop-2026-09-08"
+   ]
   },
   {
    "id": "rdrtQyGhjYE",
@@ -260,7 +317,10 @@
    "module": "workshop-2026-09-08",
    "scan": "sources/2026-09-08-lidr-workshop-harness-engineering.md",
    "raw": "sources/raw/2026-09-08-lidr-workshop/yt-rdrtQyGhjYE-agentic-engineer.md",
-   "decided": "2026-09-08"
+   "decided": "2026-09-08",
+   "modules": [
+    "workshop-2026-09-08"
+   ]
   },
   {
    "id": "xCRvOUykOX0",
@@ -273,7 +333,10 @@
    "reason": "parked for module s1",
    "module": "s1",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "https://www.aiengineeringpodcast.com/pydantic-ai-type-safe-agent-framework-episode-63",
@@ -285,7 +348,10 @@
    "reason": "parked for module s13",
    "module": "s13",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s13"
+   ]
   },
   {
    "id": "https://www.latent.space/p/cognition",
@@ -297,7 +363,10 @@
    "reason": "parked for module s13",
    "module": "s13",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s13"
+   ]
   },
   {
    "id": "https://www.latent.space/p/daytona",
@@ -309,7 +378,10 @@
    "reason": "parked for module s14",
    "module": "s14",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s14"
+   ]
   },
   {
    "id": "https://www.aiengineeringpodcast.com/trueforge-ai-agent-harness-engineering-episode-79",
@@ -321,7 +393,10 @@
    "reason": "parked for module s14",
    "module": "s14",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s14"
+   ]
   },
   {
    "id": "https://www.aiengineeringpodcast.com/stacklok-toolhive-mcp-curation-episode-71",
@@ -333,7 +408,10 @@
    "reason": "parked for module s14",
    "module": "s14",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s14"
+   ]
   },
   {
    "id": "https://share.transistor.fm/s/bbbcbe24",
@@ -345,7 +423,10 @@
    "reason": "parked for module s14",
    "module": "s14",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s14"
+   ]
   },
   {
    "id": "https://www.aiengineeringpodcast.com/openlit-open-source-llmops-episode-77",
@@ -357,7 +438,10 @@
    "reason": "parked for module s15",
    "module": "s15",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s15"
+   ]
   },
   {
    "id": "https://www.latent.space/p/railway",
@@ -369,7 +453,10 @@
    "reason": "parked for module s15",
    "module": "s15",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s15"
+   ]
   },
   {
    "id": "https://www.latent.space/p/inference-eng",
@@ -381,7 +468,10 @@
    "reason": "parked for module s15",
    "module": "s15",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s15"
+   ]
   },
   {
    "id": "https://www.latent.space/p/modal2026",
@@ -393,7 +483,10 @@
    "reason": "parked for module s15",
    "module": "s15",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s15"
+   ]
   },
   {
    "id": "https://www.latent.space/p/databricks",
@@ -405,7 +498,10 @@
    "reason": "parked for module s15",
    "module": "s15",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s15"
+   ]
   },
   {
    "id": "https://share.transistor.fm/s/18593a4c",
@@ -417,7 +513,10 @@
    "reason": "parked for module s16",
    "module": "s16",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s16"
+   ]
   },
   {
    "id": "https://www.latent.space/p/shopify",
@@ -429,7 +528,10 @@
    "reason": "parked for module s16",
    "module": "s16",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s16"
+   ]
   },
   {
    "id": "https://share.transistor.fm/s/81534de0",
@@ -441,7 +543,10 @@
    "reason": "parked for module s16",
    "module": "s16",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s16"
+   ]
   },
   {
    "id": "https://www.aiengineeringpodcast.com/fastmcp-ai-tools-integration-episode-58",
@@ -453,7 +558,10 @@
    "reason": "parked for module s17",
    "module": "s17",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "https://www.latent.space/p/harness-eng",
@@ -465,7 +573,10 @@
    "reason": "parked for module s17",
    "module": "s17",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "https://www.latent.space/p/github",
@@ -477,7 +588,10 @@
    "reason": "parked for module s17",
    "module": "s17",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "https://share.transistor.fm/s/e9df3b6f",
@@ -490,7 +604,10 @@
    "module": "s2",
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
-   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/podcast-tYJmgpIEd-Y-podcast-chain-of-thought-michel-tricot-context-poisoning.md"
+   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/podcast-tYJmgpIEd-Y-podcast-chain-of-thought-michel-tricot-context-poisoning.md",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "UabBYexBD4k",
@@ -504,7 +621,10 @@
    "module": "s2",
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
-   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-UabBYexBD4k-ibm-is-rag-still-needed.md"
+   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-UabBYexBD4k-ibm-is-rag-still-needed.md",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "https://www.aiengineeringpodcast.com/tensorzero-llm-gateway-prompt-optimization-episode-45",
@@ -516,7 +636,10 @@
    "reason": "parked for module s3",
    "module": "s3",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s3"
+   ]
   },
   {
    "id": "https://share.transistor.fm/s/964292e1",
@@ -528,7 +651,10 @@
    "reason": "parked for module s5",
    "module": "s5",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s5"
+   ]
   },
   {
    "id": "k1njvbBmfsw",
@@ -541,7 +667,10 @@
    "reason": "parked for module s9",
    "module": "s9",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s9"
+   ]
   },
   {
    "id": "gq5uGNSUVx4",
@@ -550,11 +679,14 @@
    "channel": "Philipp Lackner",
    "published": "2026-03-22",
    "duration": "00:58:47",
-   "status": "discarded",
-   "reason": "off-topic for s1: Claude Code (coding agent) tutorial, not the API — belongs to s17 territory and is education content",
-   "module": "s1",
+   "status": "candidate",
+   "reason": "re-eligible: off-topic for s1: Claude Code (coding agent) tutorial, not the API — belongs to s17 territory and is education content (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "module": "s17",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "I4sGn8Z1vpI",
@@ -567,7 +699,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "oHu_xWe0agI",
@@ -580,7 +715,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "P6Qxj5UXYXM",
@@ -593,7 +731,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "AZDSpS5v57w",
@@ -606,7 +747,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "osV7GpzBcBg",
@@ -619,7 +763,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "74Jok8nyZFc",
@@ -632,7 +779,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "mwN75EiGfCE",
@@ -645,7 +795,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "ZVPlLaehjLk",
@@ -654,11 +807,14 @@
    "channel": "IBM Technology",
    "published": "2026-07-09",
    "duration": "00:11:53",
-   "status": "discarded",
-   "reason": "corporate explainer; one representative IBM video selected (AI stack); this one belongs to s13 (frameworks) or repeats",
-   "module": "s1",
+   "status": "candidate",
+   "reason": "re-eligible: corporate explainer; one representative IBM video selected (AI stack); this one belongs to s13 (frameworks) or repeats (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "module": "s13",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s13"
+   ]
   },
   {
    "id": "TMRoMHQfBHw",
@@ -671,7 +827,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "WjtBdKrZzf4",
@@ -684,7 +843,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "QoQBzR1NIqI",
@@ -693,11 +855,14 @@
    "channel": "Nick Saraev",
    "published": "2026-02-12",
    "duration": "04:10:43",
-   "status": "discarded",
-   "reason": "off-topic for s1: Claude Code (coding agent) tutorial, not the API — belongs to s17 territory and is education content",
-   "module": "s1",
+   "status": "candidate",
+   "reason": "re-eligible: off-topic for s1: Claude Code (coding agent) tutorial, not the API — belongs to s17 territory and is education content (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "module": "s17",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "wzv4TNTgZdg",
@@ -710,7 +875,10 @@
    "reason": "off-topic: no-code platform, other platform, or interview prep",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "w21XAsgoQ5o",
@@ -723,7 +891,10 @@
    "reason": "consumer plan/product comparison, not provider selection for developers",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "QbtFcbAyxAI",
@@ -736,7 +907,10 @@
    "reason": "consumer plan/product comparison, not provider selection for developers",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "IzC55_KeKYw",
@@ -749,7 +923,10 @@
    "reason": "consumer plan/product comparison, not provider selection for developers",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "ftNYhk3RQ-M",
@@ -762,7 +939,10 @@
    "reason": "consumer plan/product comparison, not provider selection for developers",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "iaXcVUobjEI",
@@ -775,7 +955,10 @@
    "reason": "consumer plan/product comparison, not provider selection for developers",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "ZDTt-Pe7_yw",
@@ -788,7 +971,10 @@
    "reason": "consumer plan/product comparison, not provider selection for developers",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "r2vYObllqJU",
@@ -801,7 +987,10 @@
    "reason": "not selected in s1 authority pass: overlaps a selected primary source",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "H7LZb20-fUY",
@@ -814,7 +1003,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "ntDIxaeo3Wg",
@@ -823,11 +1015,14 @@
    "channel": "Tech With Tim",
    "published": "2026-02-27",
    "duration": "00:35:48",
-   "status": "discarded",
-   "reason": "off-topic for s1: Claude Code (coding agent) tutorial, not the API — belongs to s17 territory and is education content",
-   "module": "s1",
+   "status": "candidate",
+   "reason": "re-eligible: off-topic for s1: Claude Code (coding agent) tutorial, not the API — belongs to s17 territory and is education content (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "module": "s17",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "C2GpeepcmYs",
@@ -836,11 +1031,14 @@
    "channel": "Traversy Media",
    "published": "2026-06-22",
    "duration": "01:03:23",
-   "status": "discarded",
-   "reason": "off-topic for s1: Claude Code (coding agent) tutorial, not the API — belongs to s17 territory and is education content",
-   "module": "s1",
+   "status": "candidate",
+   "reason": "re-eligible: off-topic for s1: Claude Code (coding agent) tutorial, not the API — belongs to s17 territory and is education content (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "module": "s17",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "eMZmDH3T2bY",
@@ -849,11 +1047,14 @@
    "channel": "Kevin Stratvert",
    "published": "2025-12-22",
    "duration": "00:14:43",
-   "status": "discarded",
-   "reason": "off-topic for s1: Claude Code (coding agent) tutorial, not the API — belongs to s17 territory and is education content",
-   "module": "s1",
+   "status": "candidate",
+   "reason": "re-eligible: off-topic for s1: Claude Code (coding agent) tutorial, not the API — belongs to s17 territory and is education content (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "module": "s17",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "IoHPSd6Bh1A",
@@ -866,7 +1067,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "HMGBFguB0qM",
@@ -879,7 +1083,10 @@
    "reason": "consumer plan/product comparison, not provider selection for developers",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "0H6eDOKg6ao",
@@ -892,7 +1099,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "ZIAzZtKWmbI",
@@ -905,7 +1115,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "ELRoo5H5l94",
@@ -918,7 +1131,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "Z3OcrB_rS2Q",
@@ -931,7 +1147,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "KG6dyeXNLxU",
@@ -944,7 +1163,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "tbXu2rAL1Aw",
@@ -957,7 +1179,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "LZf_RNTE7W0",
@@ -970,7 +1195,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "Xk1lq7LZasU",
@@ -983,7 +1211,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "Xg55nTrbYYY",
@@ -996,7 +1227,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "bqJzIWAEn40",
@@ -1005,11 +1239,14 @@
    "channel": "Futurepedia",
    "published": "2026-04-30",
    "duration": "00:40:52",
-   "status": "discarded",
-   "reason": "off-topic for s1: Claude Code (coding agent) tutorial, not the API — belongs to s17 territory and is education content",
-   "module": "s1",
+   "status": "candidate",
+   "reason": "re-eligible: off-topic for s1: Claude Code (coding agent) tutorial, not the API — belongs to s17 territory and is education content (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "module": "s17",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "WSPChlfxJyA",
@@ -1022,7 +1259,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "gaN_kAwMxNw",
@@ -1035,7 +1275,10 @@
    "reason": "consumer plan/product comparison, not provider selection for developers",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "OSaP6bJoU44",
@@ -1048,7 +1291,10 @@
    "reason": "official but a 1–2 minute product announcement; the Build Hour (selected) is the substantive source",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "v4MHGGdW-s4",
@@ -1061,7 +1307,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "FKt7hhNueZQ",
@@ -1074,7 +1323,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "Dj4iv3L8nFI",
@@ -1087,7 +1339,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "T2Hxgfv8cEU",
@@ -1100,7 +1355,10 @@
    "reason": "not selected in s1 authority pass: overlaps a selected primary source",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "u523JOz2VaU",
@@ -1113,7 +1371,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "AxdGI_P11qM",
@@ -1126,7 +1387,10 @@
    "reason": "not selected in s1 authority pass: overlaps a selected primary source",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "g1NNfDhnDPs",
@@ -1139,7 +1403,10 @@
    "reason": "off-topic: no-code platform, other platform, or interview prep",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "E6lvgbayD04",
@@ -1152,7 +1419,10 @@
    "reason": "career/marketing content",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "4KiiKQ9RVvA",
@@ -1165,7 +1435,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "bIryfwdFSoU",
@@ -1178,7 +1451,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "bwvfdFWR1RI",
@@ -1187,11 +1463,14 @@
    "channel": "IBM Technology",
    "published": "2025-12-27",
    "duration": "00:06:31",
-   "status": "discarded",
-   "reason": "corporate explainer; one representative IBM video selected (AI stack); this one belongs to s13 (frameworks) or repeats",
-   "module": "s1",
+   "status": "candidate",
+   "reason": "re-eligible: corporate explainer; one representative IBM video selected (AI stack); this one belongs to s13 (frameworks) or repeats (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "module": "s13",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s13"
+   ]
   },
   {
    "id": "oH00h-zpfTE",
@@ -1204,7 +1483,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "fga7_aUtmWk",
@@ -1217,7 +1499,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "91B_v-wOaws",
@@ -1230,7 +1515,10 @@
    "reason": "career/marketing content",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "2YHa1vhnmK0",
@@ -1243,7 +1531,10 @@
    "reason": "official but a 1–2 minute product announcement; the Build Hour (selected) is the substantive source",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "ibcMs4KUvTw",
@@ -1256,7 +1547,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "pi86am09amg",
@@ -1269,7 +1563,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "1PdgNyOy20w",
@@ -1282,7 +1579,10 @@
    "reason": "career/marketing content",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "roeR9eNioIA",
@@ -1295,7 +1595,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "kW768UnkMuE",
@@ -1308,7 +1611,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "mIgDGCMU4YM",
@@ -1321,7 +1627,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "YHNi88FaGug",
@@ -1334,7 +1643,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "Jz7eIJvxHK0",
@@ -1347,7 +1659,10 @@
    "reason": "off-topic: no-code platform, other platform, or interview prep",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "cEszBvQvB9E",
@@ -1360,7 +1675,10 @@
    "reason": "consumer plan/product comparison, not provider selection for developers",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "Jc0N4uUUqUQ",
@@ -1373,7 +1691,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "3aKVArutiIU",
@@ -1382,11 +1703,14 @@
    "channel": "Sajjaad Khader",
    "published": "2026-01-07",
    "duration": "00:09:56",
-   "status": "discarded",
-   "reason": "off-topic for s1: Claude Code (coding agent) tutorial, not the API — belongs to s17 territory and is education content",
-   "module": "s1",
+   "status": "candidate",
+   "reason": "re-eligible: off-topic for s1: Claude Code (coding agent) tutorial, not the API — belongs to s17 territory and is education content (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "module": "s17",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "wuCGsSA0L-U",
@@ -1399,7 +1723,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "rhA9TRDRDys",
@@ -1412,7 +1739,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "i-v-MsmiM3U",
@@ -1425,7 +1755,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "cHtu_ZJWinw",
@@ -1438,7 +1771,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "TGDS3K-1oZ4",
@@ -1451,7 +1787,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "XVijTYXJuF8",
@@ -1464,7 +1803,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "tWJzCxV6Aqc",
@@ -1477,7 +1819,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "2BpCk4d2Cc0",
@@ -1490,7 +1835,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "DvhFcIRRXyI",
@@ -1503,7 +1851,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "zAkMuMddM2E",
@@ -1516,7 +1867,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "yDHgZRKB7H8",
@@ -1529,7 +1883,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "lZnCO0CuOhc",
@@ -1542,7 +1899,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "9EuNUe-CJRM",
@@ -1555,7 +1915,10 @@
    "reason": "re-upload of a Stanford/Andrew Ng talk on an unofficial channel; use the official DeepLearning.AI course instead",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "LJhu2JC7wVY",
@@ -1568,7 +1931,10 @@
    "reason": "off-topic: no-code platform, other platform, or interview prep",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "g4cO35LCDxc",
@@ -1581,7 +1947,10 @@
    "reason": "off-topic: no-code platform, other platform, or interview prep",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "jDa8GEtpnu4",
@@ -1594,7 +1963,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "P20S5yJLI-s",
@@ -1607,7 +1979,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "GBGUnGWWBWQ",
@@ -1620,7 +1995,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "ZscTNnClmr4",
@@ -1633,7 +2011,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "9oJySubZRSA",
@@ -1646,7 +2027,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "VVkJcN4JDjA",
@@ -1659,7 +2043,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "ALr8bjRu3W4",
@@ -1672,7 +2059,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "c3dPt4_qPbY",
@@ -1685,7 +2075,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "MsppVHXk3e0",
@@ -1698,7 +2091,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "8N_1mYHB3k0",
@@ -1711,7 +2107,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "PCWWoRscSmg",
@@ -1724,7 +2123,10 @@
    "reason": "off-topic: no-code platform, other platform, or interview prep",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "pwWBcsxEoLk",
@@ -1737,7 +2139,10 @@
    "reason": "career/marketing content",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "WlWRTegMj5A",
@@ -1746,11 +2151,14 @@
    "channel": "Technical Rajni",
    "published": "2026-05-08",
    "duration": "00:02:26",
-   "status": "discarded",
-   "reason": "off-topic for s1: Claude Code (coding agent) tutorial, not the API — belongs to s17 territory and is education content",
-   "module": "s1",
+   "status": "candidate",
+   "reason": "re-eligible: off-topic for s1: Claude Code (coding agent) tutorial, not the API — belongs to s17 territory and is education content (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "module": "s17",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "OSrBjHlW42o",
@@ -1763,7 +2171,10 @@
    "reason": "education/opinion channel; no original contribution beyond the primary sources selected",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "QczejEN_LsA",
@@ -1776,7 +2187,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "TL8V41Ea6oM",
@@ -1789,7 +2203,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "qYNs80FKIVc",
@@ -1802,7 +2219,10 @@
    "reason": "corporate explainer; two representative IBM videos already selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "Chl-cRcwVpA",
@@ -1815,7 +2235,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "X4to5jRLEDE",
@@ -1828,7 +2251,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "0C6xYvQhjwQ",
@@ -1841,7 +2267,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "C05XDMGaAn8",
@@ -1854,7 +2283,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "OIPIEiBTyyg",
@@ -1867,7 +2299,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "WBgI9ce_7wM",
@@ -1880,7 +2315,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "2ihEirLXeas",
@@ -1893,7 +2331,10 @@
    "reason": "corporate explainer; two representative IBM videos already selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "ZvDkJsKE80k",
@@ -1906,7 +2347,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "HTNz4L2XM58",
@@ -1919,7 +2363,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "-Zhntlk0v80",
@@ -1932,7 +2379,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "4TvH-OZhwxI",
@@ -1945,7 +2395,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "EsTrWCV0Ph4",
@@ -1958,7 +2411,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "zEreig4ny7U",
@@ -1971,7 +2427,10 @@
    "reason": "off-topic: voice agents",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "tbkU0EvGPGU",
@@ -1984,7 +2443,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "KdKqMfs-8gs",
@@ -1997,7 +2459,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "CAKGKkWf0tI",
@@ -2010,7 +2475,10 @@
    "reason": "corporate explainer; two representative IBM videos already selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "uXI7cv8xs40",
@@ -2023,7 +2491,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "UHWu3FlnLRI",
@@ -2036,7 +2507,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "OAf2etjxNOM",
@@ -2049,7 +2523,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "B1kFPFCBsi8",
@@ -2062,7 +2539,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "3wglqgskzjQ",
@@ -2075,7 +2555,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "OqKBOLplDZ8",
@@ -2088,7 +2571,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "i4bqqTehbhM",
@@ -2101,7 +2587,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "z9FZABTeeBs",
@@ -2114,7 +2603,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "ByWCsa8DbF8",
@@ -2127,7 +2619,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "cUfjql072N8",
@@ -2140,7 +2635,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "XQEXdZOMj4Q",
@@ -2153,7 +2651,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "oo4OeE3yVBI",
@@ -2166,7 +2667,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "eA9Zf2-qYYM",
@@ -2179,7 +2683,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "v_mw4aSLKGY",
@@ -2192,7 +2699,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "42JPAX9MUAk",
@@ -2205,7 +2715,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "JmPBcLcwFHQ",
@@ -2218,7 +2731,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "ZaPbP9DwBOE",
@@ -2231,7 +2747,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "AQZOIr3511U",
@@ -2244,7 +2763,10 @@
    "reason": "off-topic: voice agents",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "Sdrpso7IKtU",
@@ -2257,7 +2779,10 @@
    "reason": "off-topic: voice agents",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "kMyN5LF1BrE",
@@ -2270,7 +2795,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "HzGOWq5UyjY",
@@ -2283,7 +2811,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "PIv5NV9iDXQ",
@@ -2296,7 +2827,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "UyoVmQLekBc",
@@ -2309,7 +2843,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "AYQtRqW1xX4",
@@ -2322,7 +2859,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "-RTgK6qX6A8",
@@ -2335,7 +2875,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "bcM9dP_uXJU",
@@ -2348,7 +2891,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "qfXxWLxNGuM",
@@ -2361,7 +2907,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "vJTEyamAxFk",
@@ -2374,7 +2923,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "sHQQloMG-Fc",
@@ -2387,7 +2939,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "wBnnA8aIxUs",
@@ -2400,7 +2955,10 @@
    "reason": "not selected in s12 authority pass",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "Az4ORALeoVo",
@@ -2413,7 +2971,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "DosHnyq78xY",
@@ -2426,7 +2987,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "5HgVRv37E_U",
@@ -2439,7 +3003,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "_fzpnqt39jQ",
@@ -2452,7 +3019,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "kOhLoixrJXo",
@@ -2465,7 +3035,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "sPtTDDXsew0",
@@ -2478,7 +3051,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "Nci--nlB8CM",
@@ -2491,7 +3067,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "goU9VIXA8II",
@@ -2504,7 +3083,10 @@
    "reason": "corporate explainer; two representative IBM videos already selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "23PzNxw11jc",
@@ -2517,7 +3099,10 @@
    "reason": "corporate explainer; two representative IBM videos already selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "X95MFcYH1_s",
@@ -2530,7 +3115,10 @@
    "reason": "corporate explainer; two representative IBM videos already selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "SGsoonwLI6c",
@@ -2543,7 +3131,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "roCnw07Drlc",
@@ -2556,7 +3147,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "JKz-O-OaRJk",
@@ -2569,7 +3163,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "I7_WXKhyGms",
@@ -2582,7 +3179,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "fB2JQXEH_94",
@@ -2595,7 +3195,10 @@
    "reason": "corporate explainer; two representative IBM videos already selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "JB2P5Gk23VI",
@@ -2608,7 +3211,10 @@
    "reason": "corporate explainer; two representative IBM videos already selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "7LsMd9icgVU",
@@ -2621,7 +3227,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "Y-VCZ_KTuzo",
@@ -2634,7 +3243,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "LLUCyGbyCXA",
@@ -2647,7 +3259,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "wqH1hTkA6qg",
@@ -2660,7 +3275,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "PmpFmclctuM",
@@ -2673,7 +3291,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "mtiOK2QG9Q0",
@@ -2686,7 +3307,10 @@
    "reason": "corporate explainer; two representative IBM videos already selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "HxxoqKV6_WQ",
@@ -2699,7 +3323,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "4_JGRGX2zxo",
@@ -2712,7 +3339,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "yHwi1jq-oqE",
@@ -2725,7 +3355,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "CyB7jpMt144",
@@ -2738,7 +3371,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "IgbXfSdeV4c",
@@ -2751,7 +3387,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "xgPWCuqLoek",
@@ -2764,7 +3403,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "LNkAW4SSgdY",
@@ -2777,7 +3419,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "9_Dw9qcjLgA",
@@ -2790,7 +3435,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "K6wpRkJrcpM",
@@ -2803,7 +3451,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "gHVUMvx_VCc",
@@ -2816,7 +3467,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "JU8tQ8AyU-A",
@@ -2829,7 +3483,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "TlIOk8VuEBU",
@@ -2842,7 +3499,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "81i076H5hDE",
@@ -2855,7 +3515,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "Lg-meK5IU8Q",
@@ -2868,7 +3531,10 @@
    "reason": "corporate explainer; two representative IBM videos already selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "L7FF8Zgab3M",
@@ -2881,7 +3547,10 @@
    "reason": "corporate explainer; two representative IBM videos already selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "olIve0D8pJQ",
@@ -2894,7 +3563,10 @@
    "reason": "education/opinion channel; no original contribution beyond primary sources selected",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "ibFJ--CH3cQ",
@@ -2907,7 +3579,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "Bm84BAtOfQw",
@@ -2920,7 +3595,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "TKnaDGpN7Ns",
@@ -2933,7 +3611,10 @@
    "reason": "no-code / marketing / product demo",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "UZs_yOKcw7A",
@@ -2946,7 +3627,10 @@
    "reason": "not English/Spanish",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "2sEFIziDba4",
@@ -2959,7 +3643,10 @@
    "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
-   "decided": "2026-09-24"
+   "decided": "2026-09-24",
+   "modules": [
+    "s12"
+   ]
   },
   {
    "id": "Gauk0F6UBFo",
@@ -2972,7 +3659,10 @@
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
    "raw": "sources/raw/2026-09-27-market-scan-s01-llm-setup/yt-Gauk0F6UBFo-cursor-ai-foundations-tokens-and-pricing.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "T9aRN5JkmL8",
@@ -2985,7 +3675,10 @@
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
    "raw": "sources/raw/2026-09-27-market-scan-s01-llm-setup/yt-T9aRN5JkmL8-anthropic-ai-prompt-engineering-a-deep-dive.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "hNr5EebepYs",
@@ -2998,7 +3691,10 @@
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
    "raw": "sources/raw/2026-09-27-market-scan-s01-llm-setup/yt-hNr5EebepYs-openai-build-hour-responses-api.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "aZLr962R6Ag",
@@ -3011,7 +3707,10 @@
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
    "raw": "sources/raw/2026-09-27-market-scan-s01-llm-setup/yt-aZLr962R6Ag-anthropic-building-with-mcp-and-the-claude-api.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "7xTGNNLPyMI",
@@ -3024,7 +3723,10 @@
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
    "raw": "sources/raw/2026-09-27-market-scan-s01-llm-setup/yt-7xTGNNLPyMI-karpathy-deep-dive-into-llms.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "8ib4Qnh2HFE",
@@ -3037,7 +3739,10 @@
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
    "raw": "sources/raw/2026-09-27-market-scan-s01-llm-setup/yt-8ib4Qnh2HFE-deeplearningai-full-ai-prompting-course-andrew-ng.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "--XpNP6NsqE",
@@ -3050,7 +3755,10 @@
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
    "raw": "sources/raw/2026-09-27-market-scan-s01-llm-setup/yt---XpNP6NsqE-jetbrains-better-ai-prompts-as-a-developer.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "-uW5-TaVXu4",
@@ -3063,7 +3771,10 @@
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
    "raw": "sources/raw/2026-09-27-market-scan-s01-llm-setup/yt--uW5-TaVXu4-matt-pocock-how-context-windows-work.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "b-BzeHF6WLA",
@@ -3076,7 +3787,10 @@
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
    "raw": "sources/raw/2026-09-27-market-scan-s01-llm-setup/yt-b-BzeHF6WLA-sam-witteveen-open-responses-standard-api.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "ysPbXH0LpIE",
@@ -3089,7 +3803,10 @@
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
    "raw": "sources/raw/2026-09-27-market-scan-s01-llm-setup/yt-ysPbXH0LpIE-anthropic-prompting-101-code-w-claude.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "RRKwmeyIc24",
@@ -3102,7 +3819,10 @@
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
    "raw": "sources/raw/2026-09-27-market-scan-s01-llm-setup/yt-RRKwmeyIc24-ibm-what-is-an-ai-stack.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "2HwtyPE6JuQ",
@@ -3115,7 +3835,10 @@
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
    "raw": "sources/raw/2026-09-27-market-scan-s01-llm-setup/podcast-2HwtyPE6JuQ-podcast-chain-of-thought-dan-klein-plausibility-engines.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "zjkBMFhNj_g",
@@ -3128,7 +3851,10 @@
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
    "raw": "sources/raw/2026-09-27-market-scan-s01-llm-setup/yt-zjkBMFhNj_g-karpathy-intro-to-large-language-models.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "m7a__Z5YayE",
@@ -3141,7 +3867,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "uvVZSgHwvC8",
@@ -3154,7 +3883,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "B_RrXwDupIg",
@@ -3168,7 +3900,10 @@
    "decided": "2026-09-27",
    "status": "applied",
    "reason": "selected by authority test (s2); digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/",
-   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-B_RrXwDupIg-ibm-cag-vs-long-context.md"
+   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-B_RrXwDupIg-ibm-cag-vs-long-context.md",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "I1EGbrH5Xdk",
@@ -3177,11 +3912,14 @@
    "channel": "GritAI Studio",
    "published": "2026-02-05",
    "duration": "00:07:08",
-   "module": "s2",
+   "module": "s17",
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
-   "status": "discarded",
-   "reason": "off-topic for s2: coding-agent or specific-tool usage; s17 territory or product tutorial"
+   "status": "candidate",
+   "reason": "re-eligible: off-topic for s2: coding-agent or specific-tool usage; s17 territory or product tutorial (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "oacYfDZmVwM",
@@ -3194,7 +3932,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "uQSoj9rlslA",
@@ -3207,7 +3948,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "H7VBatLEqzM",
@@ -3220,7 +3964,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "KqKwoGbPRrw",
@@ -3233,7 +3980,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "interview-prep / lecture-series re-explanation; no original contribution"
+   "reason": "interview-prep / lecture-series re-explanation; no original contribution",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "mHa61gUmgqs",
@@ -3246,7 +3996,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "ayn-LO4-QjQ",
@@ -3259,7 +4012,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "H4rClmHPnU8",
@@ -3272,7 +4028,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "w8a5BXzekt8",
@@ -3285,7 +4044,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "interview-prep / lecture-series re-explanation; no original contribution"
+   "reason": "interview-prep / lecture-series re-explanation; no original contribution",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "1rWv6cg-_EI",
@@ -3298,7 +4060,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "pN-LfxNFiTc",
@@ -3311,7 +4076,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "corporate explainer; three representative IBM videos selected for s2 (prompt caching, CAG vs long context, is RAG still needed)"
+   "reason": "corporate explainer; three representative IBM videos selected for s2 (prompt caching, CAG vs long context, is RAG still needed)",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "rXIs4nT-X2U",
@@ -3324,7 +4092,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "vendor event or panel; no original contribution beyond the primary sources selected"
+   "reason": "vendor event or panel; no original contribution beyond the primary sources selected",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "MEOh5fdBWWs",
@@ -3337,7 +4108,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "corporate explainer; three representative IBM videos selected for s2 (prompt caching, CAG vs long context, is RAG still needed)"
+   "reason": "corporate explainer; three representative IBM videos selected for s2 (prompt caching, CAG vs long context, is RAG still needed)",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "01yspnyfUMI",
@@ -3350,7 +4124,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "2CsShdeq0Pc",
@@ -3363,7 +4140,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "vendor event or panel; no original contribution beyond the primary sources selected"
+   "reason": "vendor event or panel; no original contribution beyond the primary sources selected",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "epHo7EWJSok",
@@ -3376,7 +4156,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "vendor event or panel; no original contribution beyond the primary sources selected"
+   "reason": "vendor event or panel; no original contribution beyond the primary sources selected",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "vtugjs2chdA",
@@ -3390,7 +4173,10 @@
    "decided": "2026-09-27",
    "status": "applied",
    "reason": "selected by authority test (s2); digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/",
-   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-vtugjs2chdA-sequoia-harrison-chase-context-engineering-long-horizon-agents.md"
+   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-vtugjs2chdA-sequoia-harrison-chase-context-engineering-long-horizon-agents.md",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "nYsAlHGpH0M",
@@ -3403,7 +4189,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "YNsa4DkJ14E",
@@ -3416,7 +4205,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "etYgu0Q50vI",
@@ -3429,7 +4221,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "eBB0dBqfvuQ",
@@ -3442,7 +4237,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected"
+   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "SkM4k4SKvCM",
@@ -3456,7 +4254,10 @@
    "decided": "2026-09-27",
    "status": "applied",
    "reason": "selected by authority test (s2); digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/",
-   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-SkM4k4SKvCM-hugging-face-prompt-caching-explained.md"
+   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-SkM4k4SKvCM-hugging-face-prompt-caching-explained.md",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "Isv1HUH0HYU",
@@ -3469,7 +4270,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "OdgW9omRfXA",
@@ -3482,7 +4286,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "interview-prep / lecture-series re-explanation; no original contribution"
+   "reason": "interview-prep / lecture-series re-explanation; no original contribution",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "j9wVKM89XFU",
@@ -3495,7 +4302,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected"
+   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "mSNi6toU2aM",
@@ -3508,7 +4318,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "4q0FliPRxXI",
@@ -3521,7 +4334,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "4jI4eXn0wIQ",
@@ -3530,11 +4346,14 @@
    "channel": "Ray Fernando",
    "published": "2026-03-22",
    "duration": "00:06:48",
-   "module": "s2",
+   "module": "s17",
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
-   "status": "discarded",
-   "reason": "off-topic for s2: coding-agent or specific-tool usage; s17 territory or product tutorial"
+   "status": "candidate",
+   "reason": "re-eligible: off-topic for s2: coding-agent or specific-tool usage; s17 territory or product tutorial (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "1JutaOt3qYA",
@@ -3547,7 +4366,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "RqjFxbAZ1g4",
@@ -3560,7 +4382,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "uigUmzsIeno",
@@ -3573,7 +4398,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "xncObRtKRsw",
@@ -3586,7 +4414,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "u57EnkQaUTY",
@@ -3600,7 +4431,10 @@
    "decided": "2026-09-27",
    "status": "applied",
    "reason": "selected by authority test (s2); digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/",
-   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-u57EnkQaUTY-ibm-what-is-prompt-caching.md"
+   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-u57EnkQaUTY-ibm-what-is-prompt-caching.md",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "U2VskjzlxZ4",
@@ -3613,7 +4447,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected"
+   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "A1t53E4vtGo",
@@ -3627,7 +4464,10 @@
    "decided": "2026-09-27",
    "status": "applied",
    "reason": "selected by authority test (s2); digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/",
-   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-A1t53E4vtGo-langchain-summarization-middleware.md"
+   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-A1t53E4vtGo-langchain-summarization-middleware.md",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "lN5tLx2_7HQ",
@@ -3636,11 +4476,14 @@
    "channel": "CampusX",
    "published": "2026-03-28",
    "duration": "00:35:07",
-   "module": "s2",
+   "module": "s17",
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
-   "status": "discarded",
-   "reason": "off-topic for s2: coding-agent or specific-tool usage; s17 territory or product tutorial"
+   "status": "candidate",
+   "reason": "re-eligible: off-topic for s2: coding-agent or specific-tool usage; s17 territory or product tutorial (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "k8jYOcQUB_A",
@@ -3653,7 +4496,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected"
+   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "MkranYs9zZk",
@@ -3662,11 +4508,14 @@
    "channel": "Cathy Cranberry",
    "published": "2026-04-15",
    "duration": "00:16:57",
-   "module": "s2",
+   "module": "s17",
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
-   "status": "discarded",
-   "reason": "off-topic for s2: coding-agent or specific-tool usage; s17 territory or product tutorial"
+   "status": "candidate",
+   "reason": "re-eligible: off-topic for s2: coding-agent or specific-tool usage; s17 territory or product tutorial (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "esY99nYXxR4",
@@ -3680,7 +4529,10 @@
    "decided": "2026-09-27",
    "status": "applied",
    "reason": "selected by authority test (s2); digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/",
-   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-esY99nYXxR4-ai-engineer-sally-ann-delucia-context-management-in-agents.md"
+   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-esY99nYXxR4-ai-engineer-sally-ann-delucia-context-management-in-agents.md",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "11GS9OHJdC0",
@@ -3689,11 +4541,14 @@
    "channel": "Micro Learning",
    "published": "2026-07-06",
    "duration": "00:08:48",
-   "module": "s2",
+   "module": "s17",
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
-   "status": "discarded",
-   "reason": "off-topic for s2: coding-agent or specific-tool usage; s17 territory or product tutorial"
+   "status": "candidate",
+   "reason": "re-eligible: off-topic for s2: coding-agent or specific-tool usage; s17 territory or product tutorial (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "04rgeqrIJxM",
@@ -3706,7 +4561,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "vendor event or panel; no original contribution beyond the primary sources selected"
+   "reason": "vendor event or panel; no original contribution beyond the primary sources selected",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "-BnIfH2J50I",
@@ -3719,7 +4577,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "corporate explainer; three representative IBM videos selected for s2 (prompt caching, CAG vs long context, is RAG still needed)"
+   "reason": "corporate explainer; three representative IBM videos selected for s2 (prompt caching, CAG vs long context, is RAG still needed)",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "2Muxy3wE-E0",
@@ -3732,7 +4593,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "vendor event or panel; no original contribution beyond the primary sources selected"
+   "reason": "vendor event or panel; no original contribution beyond the primary sources selected",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "UC4vDpSJCkM",
@@ -3745,7 +4609,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "corporate explainer; three representative IBM videos selected for s2 (prompt caching, CAG vs long context, is RAG still needed)"
+   "reason": "corporate explainer; three representative IBM videos selected for s2 (prompt caching, CAG vs long context, is RAG still needed)",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "skut_4jdvzc",
@@ -3758,7 +4625,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected"
+   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "6_BcCthVvb8",
@@ -3772,7 +4642,10 @@
    "decided": "2026-09-27",
    "status": "applied",
    "reason": "selected by authority test (s2); digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/",
-   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-6_BcCthVvb8-langchain-manus-context-engineering-for-ai-agents.md"
+   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-6_BcCthVvb8-langchain-manus-context-engineering-for-ai-agents.md",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "RQi7x-navxU",
@@ -3786,7 +4659,10 @@
    "decided": "2026-09-27",
    "status": "applied",
    "reason": "selected by authority test (s2); digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/",
-   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-RQi7x-navxU-ai-engineer-jerry-liu-document-context-layer.md"
+   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-RQi7x-navxU-ai-engineer-jerry-liu-document-context-layer.md",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "Qx0fCqpkBus",
@@ -3799,7 +4675,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "corporate explainer; three representative IBM videos selected for s2 (prompt caching, CAG vs long context, is RAG still needed)"
+   "reason": "corporate explainer; three representative IBM videos selected for s2 (prompt caching, CAG vs long context, is RAG still needed)",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "nkJXADeI62c",
@@ -3813,7 +4692,10 @@
    "decided": "2026-09-27",
    "status": "applied",
    "reason": "selected by authority test (s2); digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/",
-   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-nkJXADeI62c-dave-ebbelaar-effective-context-engineering.md"
+   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-nkJXADeI62c-dave-ebbelaar-effective-context-engineering.md",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "a4otTRdFxdY",
@@ -3826,7 +4708,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected"
+   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "-q_u6nrVdgo",
@@ -3840,7 +4725,10 @@
    "decided": "2026-09-27",
    "status": "applied",
    "reason": "selected by authority test (s2); digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/",
-   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt--q_u6nrVdgo-aws-quit-tokenmaxxing-4-context-engineering-techniques.md"
+   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt--q_u6nrVdgo-aws-quit-tokenmaxxing-4-context-engineering-techniques.md",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "Usufn8IQJgw",
@@ -3854,7 +4742,10 @@
    "decided": "2026-09-27",
    "status": "applied",
    "reason": "selected by authority test (s2); digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/",
-   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-Usufn8IQJgw-pragmatic-engineer-dex-horthy-context-engineering.md"
+   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-Usufn8IQJgw-pragmatic-engineer-dex-horthy-context-engineering.md",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "-h9VVJIqtvA",
@@ -3867,7 +4758,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected"
+   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "YoHXurB3JVY",
@@ -3880,7 +4774,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "xhxTeiT-A1I",
@@ -3893,7 +4790,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "n8iUoNR5Cg8",
@@ -3906,7 +4806,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "k0nUJGhXHBc",
@@ -3919,7 +4822,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "abvUDa1RqmE",
@@ -3932,7 +4838,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "LrPuLxx5LNA",
@@ -3945,7 +4854,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "cD2D_gRESaA",
@@ -3958,7 +4870,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected"
+   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "_u6sGStDX4E",
@@ -3971,7 +4886,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "GPG2X1ExgF4",
@@ -3984,7 +4902,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "WlP1rbAF7IU",
@@ -3997,7 +4918,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "vendor event or panel; no original contribution beyond the primary sources selected"
+   "reason": "vendor event or panel; no original contribution beyond the primary sources selected",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "egNw90ooJ4U",
@@ -4010,7 +4934,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "gDb6eZo8iC8",
@@ -4023,7 +4950,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "3e7twht0sBQ",
@@ -4036,7 +4966,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "V-FT5O2WPE8",
@@ -4049,7 +4982,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "Ua_L4OeUGWo",
@@ -4062,7 +4998,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "O5BjZQYFk1M",
@@ -4075,7 +5014,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "lX3T_Jm1HxE",
@@ -4088,7 +5030,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "kW1eE0ud5ic",
@@ -4101,7 +5046,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "uTTjkSZnkDI",
@@ -4114,7 +5062,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "BRLQDyRnQRQ",
@@ -4127,7 +5078,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "I97FwirBidA",
@@ -4140,7 +5094,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected"
+   "reason": "education/opinion or framework-vendor channel; no original contribution beyond the primary sources selected",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "znJRc1ip3OY",
@@ -4153,7 +5110,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "kbvmFXr3OCw",
@@ -4166,7 +5126,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "vSLadHeolfY",
@@ -4179,7 +5142,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "QeUBKaq577s",
@@ -4192,7 +5158,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "interview-prep / lecture-series re-explanation; no original contribution"
+   "reason": "interview-prep / lecture-series re-explanation; no original contribution",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "9u83yR1YxwE",
@@ -4205,7 +5174,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "zQ0318Ki1UY",
@@ -4218,7 +5190,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "T7tIKT6vAno",
@@ -4231,7 +5206,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "vendor event or panel; no original contribution beyond the primary sources selected"
+   "reason": "vendor event or panel; no original contribution beyond the primary sources selected",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "OwpfhignHSk",
@@ -4240,11 +5218,14 @@
    "channel": "Micro Learning",
    "published": "2026-07-07",
    "duration": "00:08:09",
-   "module": "s2",
+   "module": "s17",
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
-   "status": "discarded",
-   "reason": "off-topic for s2: coding-agent or specific-tool usage; s17 territory or product tutorial"
+   "status": "candidate",
+   "reason": "re-eligible: off-topic for s2: coding-agent or specific-tool usage; s17 territory or product tutorial (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "d-RDksdA_as",
@@ -4257,7 +5238,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "BBPQYtR7oUk",
@@ -4271,7 +5255,10 @@
    "decided": "2026-09-27",
    "status": "applied",
    "reason": "selected by authority test (s2); digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/",
-   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-BBPQYtR7oUk-google-cloud-context-engineering-explained.md"
+   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-BBPQYtR7oUk-google-cloud-context-engineering-explained.md",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "BacJ6sEhqMo",
@@ -4284,7 +5271,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "corporate explainer; three representative IBM videos selected for s2 (prompt caching, CAG vs long context, is RAG still needed)"
+   "reason": "corporate explainer; three representative IBM videos selected for s2 (prompt caching, CAG vs long context, is RAG still needed)",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "IRM88cVDhzs",
@@ -4293,11 +5283,14 @@
    "channel": "Viplove QA - SDET",
    "published": "2026-05-31",
    "duration": "00:13:50",
-   "module": "s2",
+   "module": "s17",
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
-   "status": "discarded",
-   "reason": "off-topic for s2: coding-agent or specific-tool usage; s17 territory or product tutorial"
+   "status": "candidate",
+   "reason": "re-eligible: off-topic for s2: coding-agent or specific-tool usage; s17 territory or product tutorial (was discarded as off-topic for its first scan; 2026-09-30 rule: off-topic-for-this-module means candidate for that module)",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "W-uYaB5WhLs",
@@ -4310,7 +5303,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "OxO8Q_GP_9A",
@@ -4323,7 +5319,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "WCOnjQbxxc4",
@@ -4336,7 +5335,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "eW3oTyfeWZ0",
@@ -4350,7 +5352,10 @@
    "decided": "2026-09-27",
    "status": "applied",
    "reason": "selected by authority test (s2); digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/",
-   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-eW3oTyfeWZ0-claude-context-management-in-claude-code.md"
+   "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-eW3oTyfeWZ0-claude-context-management-in-claude-code.md",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "N0-7wFQz74Y",
@@ -4363,7 +5368,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "sBElWX5zxlY",
@@ -4376,7 +5384,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "Jf0_hdX5PCs",
@@ -4389,7 +5400,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "4x4nM0uPmg0",
@@ -4402,7 +5416,10 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "discarded",
-   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "_IlTcWciEC4",
@@ -4416,7 +5433,10 @@
    "module": "s2",
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/podcast-_IlTcWciEC4-podcast-latent-space-lance-martin-context-engineering-for-agents.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "latent-space--state-of-post-training-from-gpt-4-1-to-",
@@ -4428,7 +5448,10 @@
    "reason": "parked for module s16 (found in s2 RSS pass)",
    "module": "s16",
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s16"
+   ]
   },
   {
    "id": "latent-space-cline-the-open-source-coding-agent-that-",
@@ -4440,7 +5463,10 @@
    "reason": "parked for module s17 (found in s2 RSS pass)",
    "module": "s17",
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
-   "decided": "2026-09-27"
+   "decided": "2026-09-27",
+   "modules": [
+    "s17"
+   ]
   },
   {
    "id": "oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-i",
@@ -4453,7 +5479,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "xcut",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "xcut"
+   ]
   },
   {
    "id": "eugeneyan.com/writing/llm-patterns",
@@ -4466,7 +5495,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "xcut",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "xcut"
+   ]
   },
   {
    "id": "anthropic.com/engineering/building-effective-agents",
@@ -4479,7 +5511,10 @@
    "reason": "cited in principles/21 §6 (s12)",
    "module": "xcut",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "xcut"
+   ]
   },
   {
    "id": "martinfowler.com/articles/gen-ai-patterns",
@@ -4492,7 +5527,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "xcut",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "xcut"
+   ]
   },
   {
    "id": "github.com/humanlayer/12-factor-agents",
@@ -4505,7 +5543,10 @@
    "reason": "author's talk digested in s2 (Pragmatic Engineer); repo not yet read — read for s3",
    "module": "xcut",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "xcut"
+   ]
   },
   {
    "id": "platform.claude.com/llms.txt",
@@ -4518,7 +5559,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s1",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "platform.claude.com/docs/en/build-with-claude/context-windows",
@@ -4531,7 +5575,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s1",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices",
@@ -4544,7 +5591,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s1",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "developers.openai.com/api/docs/guides/prompt-engineering",
@@ -4557,7 +5607,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s1",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "ai.google.dev/gemini-api/docs/long-context",
@@ -4570,7 +5623,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s1",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "huyenchip.com/2023/04/11/llm-engineering.html",
@@ -4583,7 +5639,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s1",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "lilianweng.github.io/posts/2023-03-15-prompt-engineering",
@@ -4596,7 +5655,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s1",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "anthropic.skilljar.com/claude-with-the-anthropic-api",
@@ -4609,7 +5671,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s1",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "deeplearning.ai/courses/chatgpt-prompt-eng",
@@ -4622,7 +5687,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s1",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s1"
+   ]
   },
   {
    "id": "arxiv.org/abs/2412.15605",
@@ -4635,7 +5703,10 @@
    "reason": "cited in principles/11 §3.4",
    "module": "s2",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "platform.claude.com/docs/en/build-with-claude/prompt-caching",
@@ -4648,7 +5719,10 @@
    "reason": "cited in practices/llm-api-calls and context-management READMEs (re-check before promoting to current)",
    "module": "s2",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "developers.openai.com/api/docs/guides/prompt-caching",
@@ -4661,7 +5735,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s2",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "ai.google.dev/gemini-api/docs/caching",
@@ -4674,7 +5751,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s2",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "anthropic.com/engineering/effective-context-engineering-for-ai-agents",
@@ -4687,7 +5767,10 @@
    "reason": "cited in principles/11 §6 and the s2 digest",
    "module": "s2",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "platform.claude.com/docs/en/build-with-claude/compaction",
@@ -4700,7 +5783,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s2",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "arxiv.org/abs/2307.03172",
@@ -4713,7 +5799,10 @@
    "reason": "cited in principles/10 §3.4 and 11 §3.1",
    "module": "s2",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "trychroma.com/research/context-rot",
@@ -4726,7 +5815,10 @@
    "reason": "cited in principles/11 §3.1",
    "module": "s2",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "simonwillison.net/2025/jun/27/context-engineering",
@@ -4739,7 +5831,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s2",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "rlancemartin.github.io/2025/06/23/context_engineering",
@@ -4752,7 +5847,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s2",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "redis.io/blog/prompt-caching-vs-semantic-caching",
@@ -4765,7 +5863,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s2",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s2"
+   ]
   },
   {
    "id": "docs.streamlit.io/develop/tutorials/chat-and-llm-apps/build-conversational-apps",
@@ -4778,7 +5879,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s3"
+   ]
   },
   {
    "id": "gradio.app/guides/creating-a-chatbot-fast",
@@ -4791,7 +5895,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s3"
+   ]
   },
   {
    "id": "docs.litellm.ai/docs/routing",
@@ -4804,7 +5911,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s3"
+   ]
   },
   {
    "id": "docs.litellm.ai/docs/proxy/reliability",
@@ -4817,7 +5927,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s3"
+   ]
   },
   {
    "id": "openrouter.ai/docs/guides/routing/provider-selection",
@@ -4830,7 +5943,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s3"
+   ]
   },
   {
    "id": "openrouter.ai/blog/insights/reliability-failover",
@@ -4843,7 +5959,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s3"
+   ]
   },
   {
    "id": "ai-sdk.dev/docs/introduction",
@@ -4856,7 +5975,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s3"
+   ]
   },
   {
    "id": "platform.claude.com/docs/en/build-with-claude/streaming",
@@ -4869,7 +5991,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s3"
+   ]
   },
   {
    "id": "opentelemetry.io/docs/specs/semconv/gen-ai/gen-ai-spans",
@@ -4882,7 +6007,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s3"
+   ]
   },
   {
    "id": "langfuse.com/docs/observability/overview",
@@ -4895,7 +6023,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s3"
+   ]
   },
   {
    "id": "redis.io/docs/latest/develop/use-cases/semantic-cache",
@@ -4908,7 +6039,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s3"
+   ]
   },
   {
    "id": "arxiv.org/abs/2411.05276",
@@ -4921,7 +6055,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s3"
+   ]
   },
   {
    "id": "platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-latency",
@@ -4934,7 +6071,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s3"
+   ]
   },
   {
    "id": "zrZ1amZBSPw",
@@ -4947,7 +6087,10 @@
    "reason": "listed in the written-canon catalogue (Project doc); to be taken by the s3 scan",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s3"
+   ]
   },
   {
    "id": "8kMaTybvDUw",
@@ -4960,7 +6103,10 @@
    "reason": "listed in the written-canon catalogue (Project doc); to be taken by the s3 scan",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s3"
+   ]
   },
   {
    "id": "deeplearning.ai/courses/fast-prototyping-of-genai-apps-with-streamlit",
@@ -4973,7 +6119,10 @@
    "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
-   "decided": "2026-09-30"
+   "decided": "2026-09-30",
+   "modules": [
+    "s3"
+   ]
   }
  ]
 }

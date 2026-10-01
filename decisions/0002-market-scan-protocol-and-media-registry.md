@@ -30,3 +30,7 @@ Martin wants this knowledge base to be the "guiding star" that any of his projec
 - Re-running a scan is cheap and produces only deltas; the KB can be refreshed per topic whenever the market moves.
 - The registry grows monotonically and must be updated in the same commit as any scan or digest; `kb-check.sh` does not yet validate it (possible follow-up: check that every `raw` path in the registry exists and every transcript in `sources/raw/` is registered).
 - Anyone reading the KB can see not only what it is based on but what it deliberately ignored and why.
+
+## Change log
+
+- 2026-09-30 — clarified: the registry prevents paying twice (search, transcription, triage), never reuse; entries carry a `modules` list; off-topic-for-this-module discards are candidates for their module (17 re-opened); written sources registered too (`type: written`, `scripts/written-filter.py`). Trigger: Martin's question on 2026-09-30.
