@@ -89,7 +89,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 
 ## Scripts
 
-`scripts/kb-sync.sh` — is this copy in sync with `origin/main`? (run first; `--pull` fast-forwards when only behind) · `scripts/kb-check.sh` — self-verification (frontmatter, index coverage, links, applicability fields + vocabulary, placeholders) · `scripts/kb-publish.sh` — branch/commit/push/merge/cleanup · `scripts/scan-filter.py` — drop already-registered media from a new scan result · `scripts/written-filter.py` — same for written sources (URLs)
+`scripts/kb-sync.sh` — is this copy in sync with `origin/main`? (run first; `--pull` fast-forwards when only behind) · `scripts/kb-check.sh` — self-verification (frontmatter, index coverage, links, applicability fields + vocabulary, placeholders) · `scripts/kb-publish.sh` — branch/commit/push/merge/cleanup · `scripts/scan-filter.py` — drop already-registered media from a new scan result · `scripts/written-filter.py` — same for written sources (URLs) · `scripts/applies.py` — which practices apply for a set of facts (helper + consistency check of the playbook's worked shapes)
 
 ## Skills
 

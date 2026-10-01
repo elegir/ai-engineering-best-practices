@@ -34,3 +34,7 @@ The KB must serve as a "guiding star": any repo consults it on day one and gets 
 - The conditional part of the KB stays honest and small; the working-style core is not artificially capped.
 - The first real iteration — running `which-practices-apply.md` + `audit-repo-against-kb.md` on one of Martin's repos — is the next step, and its findings are what may justify more machinery later (bundles, inference scripts). Nothing is built ahead of that evidence.
 - Rejected and recorded so they are not re-proposed without new evidence: profile schema file per repo, boolean grammar + evaluator script, rigor levels / `rigor-min`, risk formula, fixture-profile gates, core-size cap, re-trigger rule in target repos.
+
+## Change log
+
+- 2026-09-30 — one small mechanical consumer added after all: `scripts/applies.py` evaluates the `applies-when` lines for a set of facts and `kb-check.sh` runs it on the four worked shapes, because the playbook's examples drifted from the practices within four days (three practices and two facts added). This is not the evaluator script v1 proposed and rejected — the agent still infers facts with evidence and writes repo-specific reasons; the script only keeps the examples honest and gives a cross-check.

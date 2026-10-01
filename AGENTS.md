@@ -16,7 +16,7 @@ You are reading Martin Weidemann's **AI Engineering Knowledge Base**. It is a re
 - `decisions/NNNN-slug.md` — decisions about how Martin's repos work. Respect any with status `accepted`.
 - `playbooks/` — procedures. Follow them literally. `ingest-new-source.md` (add knowledge) and `publish-change.md` (ship it) are the two this folder runs on itself; `adopt-kb-in-a-repo.md` and `audit-repo-against-kb.md` are for agents in *other* repos.
 - `skills/` — agent-loadable procedures (Agent Skills standard); see `skills/README.md`.
-- `scripts/` — `kb-sync.sh` (is this copy current? run it first), `kb-check.sh` (the KB's own verification) and `kb-publish.sh` (branch/commit/push/merge/cleanup).
+- `scripts/` — `kb-sync.sh` (is this copy current? run it first), `kb-check.sh` (the KB's own verification), `kb-publish.sh` (branch/commit/push/merge/cleanup), `applies.py` (which practices apply for a set of facts — a cross-check for `which-practices-apply.md`).
 - `templates/` — copy these when creating new entries.
 - `CONVENTIONS.md` — formatting rules for anything you write here.
 
