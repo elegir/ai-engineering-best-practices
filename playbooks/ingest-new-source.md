@@ -38,6 +38,8 @@ superseded-by: null
 
    Skepticism rules while assigning verdicts: (a) *who benefits* — a vendor recommending its own protocol, product or model gets "refines/new" only for the mechanism, never for the preference; (b) *how old* — numbers and model names older than ~12 months are historical evidence, not current guidance; (c) *primary beats secondary* — when a corporate explainer or a community video disagrees with the specification or the paper, the spec wins and the disagreement is logged; (d) *one incident is one incident* — a single anecdote becomes "avoid X", never "vendor A is worse than vendor B"; (e) *already-known is the normal case* — expect a third or more of any good source to be "confirms"; recording that is the point, it is how the KB gains authority. Finish the table with a one-paragraph "net effect" (what was created, what was refined, what was parked), and then do only what the table says.
 
+2c. **Clean-context review — mandatory before publishing.** A separate agent that did not write the digest or the principle reads the changed files against the raw transcripts and the vendor pages (read directly, never through a summarising fetch): at least twelve attributed claims spot-checked, every Verify assertion judged for judgeability, every reference implementation run against a stub. Findings are fixed before `kb-publish.sh`. Added 2026-10-01 after s4 (`sources/method-log.md`): three factual slips reached the principle and one reference had dead code.
+
 3. **Update principles.** For each topic the source touches, open the matching `principles/NN-*.md`:
    - If the source *confirms* the principle: add a change-log line "YYYY-MM-DD — reviewed against `sources/…`; no change" and bump `last-reviewed`.
    - If it *refines* it: edit the relevant section, cite the source, add a change-log line saying what changed and why.
@@ -48,7 +50,7 @@ superseded-by: null
 
 3c. **Structural changes need a debate.** When a source suggests changing how the KB itself works (a new schema, a new mechanism, a new folder kind), do not implement from the digest. Write the proposal, have a separate agent that did not write it attack it (concrete examples from this repo and from Martin's real projects, severity per attack, the three most likely to kill it), answer every attack in writing (concede / defend / partly), and record proposal + attack + responses as one `sources/` entry and the outcome as a `decisions/` entry. Worked example: `sources/2026-09-26-selector-debate.md` → `decisions/0003-applicability-by-facts.md`.
 
-3d. **Update practices (continued).** For each *applicable* thing in the source (a config, script, prompt, template, checklist, tool install), add it to the matching `practices/<name>/` — as a new file, a new variant, or an edit — and update that practice's README ("Files", "Adapt", "Verify", "Sources", "Change log", `last-reviewed`). If no practice fits, create one from `practices/_template/` with status `draft`. Rule: a principle change without a practice change is incomplete unless the source was purely conceptual.
+3d. **Update practices (continued).** A reference implementation (a `.py` or other code file) is executed against a stubbed client for every branch its docstring names before publishing, and the practice's change log says so (2026-10-01, `sources/method-log.md`). For each *applicable* thing in the source (a config, script, prompt, template, checklist, tool install), add it to the matching `practices/<name>/` — as a new file, a new variant, or an edit — and update that practice's README ("Files", "Adapt", "Verify", "Sources", "Change log", `last-reviewed`). If no practice fits, create one from `practices/_template/` with status `draft`. Rule: a principle change without a practice change is incomplete unless the source was purely conceptual.
 
 4. **Record decisions.** If Martin decided something ("all repos will use OpenSpec"), add `decisions/NNNN-slug.md` from `templates/decision.md`, status `accepted`, citing the source.
 
@@ -60,5 +62,6 @@ superseded-by: null
 
 ## Change log
 
+- 2026-10-01 — step 2c (mandatory clean-context review) and the stub-run rule in 3d, from `sources/method-log.md`.
 - 2026-10-01 — 3b: the unrouted state is declared with `routed: false` (decision 0004 change log 2026-10-01); kb-check and check-practices.py updated the same day.
 - 2026-09-30 — 3b rewritten: new practices are draft and unrouted until the routing gate (decision 0004 §6); template schema, `when`, `reference-status` and structured Verify required (decision 0005).
