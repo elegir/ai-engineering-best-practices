@@ -76,7 +76,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 8. The feature's eval runs each scenario at least five times and reports the worst case, not the mean — observer: script — negative: an eval that reports an average
 9. `docs/llm-provider.md` exists, is dated, and states the switching cost — observer: Martin — negative: a provider chosen with no written reason
 
-**Example commands (Python):** `grep -rln "import anthropic\|from anthropic\|import openai" src/ | wc -l` → `1`; `python3 llm_call_skeleton.py --demo` prints usage with `cache_read_input_tokens`.
+**Example commands (Python):** `grep -rln "import anthropic\|from anthropic\|import openai" src/ | wc -l` → `1`; `python3 llm_call_skeleton.py --demo` (after the three placeholders are replaced — the file does not parse before) prints the request shape (static system block with `cache_control`, dynamic content last) and the usage fields the log line carries, without calling the API.
 
 ## Sources
 `sources/2026-09-27-s01-llm-setup-digest.md` §3.1–3.5 and impact table §6; primary texts listed in `principles/10-llm-api-fundamentals.md` §6. Vendor docs to re-check before promoting to `current`: Claude prompt engineering and prompt caching guides; OpenAI Responses API guide.

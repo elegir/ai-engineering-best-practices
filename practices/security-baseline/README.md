@@ -53,7 +53,7 @@ This practice has two parts, routed separately (decision `decisions/0004-day-one
 |---|---|---|
 | `threat-model-agentic.md` | `<repo>/docs/threat-model.md` | Checklist of agent-specific threats and the control that covers each |
 | `mcp-trust-register.md` | `<repo>/docs/mcp-trust-register.md` | One row per MCP server/tool: scope, credentials, read/write, blast radius, owner (also useful in core repos that load MCPs; mandatory here) |
-| `injection-fixture.md` | `<repo>/e2e/fixtures/injection.md` + an eval | A page with hidden instructions the agent must ignore (for `practices/verification/harness-evals.md`) |
+| `injection-fixture.md` | `<repo>/e2e/fixtures/injection.md` + an eval | A page with hidden instructions the agent must ignore (for `practices/verification/harness-evals.md`). First-user, not day-zero: it needs an eval runner |
 | `stack-notes/php-laravel.md` | (read) | Secrets paths, `composer audit` semantics, per-tenant keys, `tinker` as a destructive command |
 
 Pending files for the full part (from the s3 scan, see "Notes from later scans"): per-route and per-tenant model keys with spend caps; trace redaction rules. They land when the security module (session 14) is ingested or when a consumer needs them first.

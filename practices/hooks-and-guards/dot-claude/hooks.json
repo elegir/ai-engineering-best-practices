@@ -1,5 +1,5 @@
 {
-  "_comment": "Config for .claude/hooks/guard.py. Replace every <<PLACEHOLDER>> — the guard refuses to run while one remains. Commands: {file} is the edited file. See stack-notes/*.md for each stack's lines. rm with both -r and -f in any spelling is denied; git push --force-with-lease is allowed on purpose.",
+  "_comment": "Config for .claude/hooks/guard.py. Replace every double-angle-bracket placeholder below — the guard refuses to run while one remains. Commands: {file} is the edited file. See stack-notes/*.md for each stack's lines. rm with both -r and -f in any spelling is denied; git push --force-with-lease is allowed on purpose.",
   "protected_paths": [
     "(^|/)\\.env(\\.|$)",
     "(^|/)(package-lock\\.json|pnpm-lock\\.yaml|yarn\\.lock|poetry\\.lock|uv\\.lock|composer\\.lock)$",

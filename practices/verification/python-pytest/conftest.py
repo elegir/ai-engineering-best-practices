@@ -25,6 +25,6 @@ def seeded_db(database_url):
 
 @pytest.fixture
 def dry_run_env(monkeypatch):
-    """Pipelines with side effects (email, posts, payments) must honor DRY_RUN=1."""
-    monkeypatch.setenv("DRY_RUN", "1")
+    """Pipelines with side effects (email, posts, payments) honour one switch (dry-run-and-approval.md rule 1)."""
+    monkeypatch.setenv("<<DRY_RUN_VAR>>", "dry")  # e.g. PUBLISH_MODE=dry; same name everywhere
     yield

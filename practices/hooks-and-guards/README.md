@@ -8,7 +8,7 @@ tags: [hooks, claude-code, lefthook, pre-commit, guards, linters]
 kind: working-style
 applies-when: "always"
 when: day-0   # day-0 | first-user | at-scale — when in a product's life this practice is installed (decision 0004 §5)
-reference-status: untested   # untested | field-tested | reference (decision 0005 §3)
+reference-status: field-tested   # 2026-10-01, shape-B bootstrap: sources/2026-10-01-field-report-shape-b-bootstrap.md
 principle: principles/02-harness-engineering.md
 sources:
   - sources/2026-09-08-how-teams-structure-agent-knowledge.md
@@ -37,7 +37,7 @@ Rules live only as sentences in the instruction file, so the agent can skip test
 
 | File | Copy to | Purpose |
 |---|---|---|
-| `dot-claude/settings.json` | `<repo>/.claude/settings.json` (merge if exists) | Layer 1: native `permissions.deny` for destructive commands and `.env`/`.claude` edits; wires the guard on PreToolUse, PostToolUse and Stop with `|| exit 2` (fail closed) |
+| `dot-claude/settings.json` | `<repo>/.claude/settings.json` (merge if exists) | Layer 1: native `permissions.deny` for destructive commands and `.env`/`.claude` edits (intentionally narrower than `hooks.json`: the native list has no regex, so lockfiles and linter configs are protected by layer 2 only); wires the guard on PreToolUse, PostToolUse and Stop with `|| exit 2` (fail closed) |
 | `dot-claude/hooks/guard.py` | `<repo>/.claude/hooks/guard.py` | Layer 2, one script for all events: protected paths, deny patterns, format + lint after edits, stop gate on the fast tests, `--selftest`. Standard library only; refuses to run while `hooks.json` has a placeholder; any internal error blocks |
 | `dot-claude/hooks.json` | `<repo>/.claude/hooks.json` | The only stack-specific input: protected paths, deny patterns, format/lint commands per extension, the stop test command, timeouts |
 | `lefthook.yml` | `<repo>/lefthook.yml` | Pre-commit: format check, lint, typecheck, unit; pre-push: integration (the human-side gate; the guard is the agent-side gate) |
@@ -88,6 +88,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 — `reference-status: field-tested` after the shape-B bootstrap (`sources/2026-10-01-field-report-shape-b-bootstrap.md`): assertions 1–6 passed with negatives in a real repo; 7 n.a. there (lefthook/gitleaks not installable). `guard.py` formatted with ruff so a bootstrap's own format check accepts it; native deny layer described as intentionally narrower.
 - 2026-09-30 — the four Bash hooks replaced by `guard.py` + `hooks.json` + a rewired `settings.json` (fail closed with `|| exit 2`, refuses placeholders, `--selftest`, native deny list as layer 1); `variants/` renamed `stack-notes/` and `php-laravel.md` added. Decision 0005 §6; `sources/2026-09-30-stack-debate.md` attack 5.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
