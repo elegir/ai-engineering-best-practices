@@ -63,7 +63,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 1. A new session, started with the startup routine, reports the current task, the last session's summary and the health-check result without exploring the repo — observer: agent — negative: the agent lists files or greps before reporting
 2. A task interrupted mid-way and resumed in a new session continues at the recorded step, not from the beginning — observer: agent — negative: a redone step
-3. Ending a session leaves the progress file updated and a commit whose message names the task id — observer: script — negative: a session that ends with the progress file unchanged
+3. Ending a session leaves the progress file updated and a commit whose message (head line or body) names the task id — observer: script — negative: a session that ends with the progress file unchanged
 4. The progress file is valid JSON (or the repo's chosen format) and lists every task with an id, a status and a last-updated date — observer: script — negative: a task without a date, or invalid JSON
 
 **Example commands (Claude Code):** `/start-session`; `/end-session`; `python3 -m json.tool PROGRESS.json`.
@@ -75,6 +75,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 — `PROGRESS.json` template gains `updated` per task (its own Verify 4 required it); assertion 3 accepts the task id in the commit body. Shape-A bootstrap, `sources/2026-10-01-field-report-shape-a-bootstrap.md`.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 

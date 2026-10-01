@@ -25,6 +25,11 @@ This table is the KB's evidence that any of its copyable material works. One row
 | 2026-10-01 | `security-baseline` (core + full) | shape-b-pipeline | Python 3.11 | blank | 2, 9 pass; 1, 3, 5, 8 n.a.; 4, 6, 7 handed to Martin | ≈33k | 13 | 1 (ruff S106) | same |
 | 2026-10-01 | `prompt-library` | shape-b-pipeline | Python 3.11 | blank | 5 pass; 1–4 handed to Martin | ≈33k | 13 | 0 | same |
 | 2026-10-01 | `spec-driven` | shape-b-pipeline | Python 3.11 | blank | 4 pass (vacuous); 1–3 handed to Martin | ≈33k | 13 | 0 | same |
+| 2026-10-01 | `hooks-and-guards` | shape-a-saas (sandbox acceptance repo, outreachhub) | Python 3.11 | blank | 1–6 pass with negatives; 7 partial (lefthook not installable; gates run by hand) | ≈23k of 297k (13 practices) | 23 (whole bootstrap) | 1 (format check on the copied guard) | `sources/2026-10-01-field-report-shape-a-bootstrap.md` |
+| 2026-10-01 | `verification` | shape-a-saas | Python 3.11 | blank | 1, 2, 6 pass with negatives; 3–5 handed to Martin | ≈23k | 23 | 2 (src-layout CLI test; one-line refusal) | same |
+| 2026-10-01 | `worktrees` | shape-a-saas | Python 3.11 | blank | 1–3 pass with negatives after two KB script fixes; 4 handed | ≈23k | 23 | 2 (base branch; include loop) | same |
+| 2026-10-01 | `session-state` | shape-a-saas | Python 3.11 | blank | 3, 4 pass; 1, 2 need a live session; KB template failed its own 4 (fixed) | ≈23k | 23 | 1 | same |
+| 2026-10-01 | `agent-entry-file`, `context-docs-skeleton`, `security-baseline` (core+full), `prompt-library`, `spec-driven`, `llm-api-calls`, `agent-patterns` | shape-a-saas | Python 3.11 | blank | script assertions pass; `Martin`/`agent` ones handed; `llm-api-calls` 8 n.a. (no eval); see report §2 | ≈23k each | 23 | 0 | same |
 | 2026-10-01 | `llm-api-calls` | shape-b-pipeline | Python 3.11 | blank | 1, 2, 4, 6, 9 pass; 3 n.a.; 5, 7 handed; **8 fail** (no eval yet) | ≈33k | 13 | 0 (SDK path not executed) | same |
 
 ## Reading the numbers
@@ -35,5 +40,6 @@ This table is the KB's evidence that any of its copyable material works. One row
 
 ## Change log
 
+- 2026-10-01 (later) — shape-A rows; `worktrees` promoted to field-tested (1–3 with negatives in a real repo, after the two script fixes); `verification` stays `untested` only because assertions 3–5 (observer Martin) have been handed twice and not yet read — the script assertions passed in both repos.
 - 2026-10-01 — first eight rows from the shape-B bootstrap (decision 0004 §8, first arm); `hooks-and-guards` promoted to `reference-status: field-tested` (every script/agent assertion passed with its negative; 7 n.a. for missing tools). The others stay `untested` until their `Martin`/`agent` assertions are judged in an interactive session or, for `llm-api-calls`, an eval exists.
 - 2026-09-30 — created, empty (decision 0005 §7; first debate attack 17: "the KB never measures its own usefulness").

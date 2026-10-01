@@ -30,3 +30,7 @@ Redis: use a distinct DB index (`redis://localhost:6379/${hash % 15}`) or key pr
 
 ## Rule of thumb
 If it holds state or listens on a port, it needs a per-worktree name. Everything else can be shared.
+
+## The app must read `.env`
+
+Every pattern above writes the per-worktree override into that worktree's `.env`. It only works if the application *loads* that file (python-dotenv, Node `dotenv`, Laravel does it natively); a Python app that reads only `os.environ` ignores the override silently and every worktree shares the main database. Verify with the health command printing the database path from inside the worktree. (Found in the shape-A bootstrap, 2026-10-01.)

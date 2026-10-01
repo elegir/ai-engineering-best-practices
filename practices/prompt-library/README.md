@@ -57,6 +57,8 @@ The prompt files themselves are the reference; `commit-skill/SKILL.md` shows the
 
 ## Adapt
 
+- Two kinds of placeholder: `<<KB_PATH>>`-style ones are replaced once at install; the `<<…>>` inside the paste prompts (`readme-by-index.md`, `standards-document.md`, `openapi-from-code.md`, `trajectory-review.md`) are filled **per use** and stay in the file. Keep the paste prompts under `prompts/library/` with a one-line README saying so, so a repo-wide placeholder scan (context-docs assertion 5) excludes that folder.
+
 - Replace `<<…>>` with the repo's test/lint commands and doc paths.
 - Keep prompts short at the top (what to do) and detailed below (how); agents read the first lines most reliably.
 
@@ -78,6 +80,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 — `implement-practice.md` is a clean command (`$ARGUMENTS`, frontmatter); per-use placeholders in paste prompts documented in §Adapt. Two bootstraps: assertion 5 passed.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 

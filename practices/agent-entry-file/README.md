@@ -80,6 +80,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 — two bootstraps: 1, 5, 6 passed (49–50 lines with a 13–14-line facts block); 2–4 await an interactive session.
 - 2026-09-30 — `AGENTS.md` template: session start now runs the guard self-test first (decision 0005 §6) and re-checks the facts block; a **Facts** section added (decision 0004 §4: the repo owns its facts with source `inferred | planned | asked`).
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).

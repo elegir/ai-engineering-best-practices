@@ -42,7 +42,7 @@ A repo is about to add (or already has) a feature where a language model takes a
 | `when-to-build-an-agent.md` | `<repo>/docs/features/<feature>/agent-decision.md` (or the feature spec) | The four-question checklist, filled per feature; records workflow / agent / workflow-of-agents |
 | `patterns-catalogue.md` | read; copy the relevant pattern paragraph into the feature design | The composable patterns with when-to-use and the minimal shape of each |
 | `agent-loop-skeleton.py` | `<repo>/src/<feature>/agent_loop.py` | ~100-line file; the loop itself is ~35 lines (Anthropic Messages API shown); tools as plain functions; bounded iterations; errors returned as text |
-| `tool-definition-template.md` | one copy per tool, next to the tool's code (docstring) | Template + 12-point checklist for a tool description and behaviour |
+| `tool-definition-template.md` | one copy per tool, next to the tool's code (docstring); on day zero, before any tool exists, `<repo>/docs/tool-definition-template.md` as the acceptance test for the first tool | Template + 12-point checklist for a tool description and behaviour |
 | `tool-transport-decision-table.md` | `<repo>/docs/architecture.md` §tools | CLI vs MCP vs skill vs RAG vs memory, and the auth-ladder rung per tool |
 | `agentic-rag-skeleton.py` | `<repo>/src/<feature>/agentic_rag.py` | list / grep (ripgrep) / read tools over a folder of markdown, bounded, with cited structured output |
 | `../prompt-library/trajectory-review.md` | run as a prompt | "Think like your agent": ask the model to critique the raw context and a trajectory |
@@ -81,6 +81,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 — `tool-definition-template.md` gets a day-zero home (`docs/`) before any tool exists; shape-A bootstrap: assertion 1 passed, 2/4/5 n.a. for a tool *provider* with no loop.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 - 2026-09-24 — created from the session-12 market scan (draft).

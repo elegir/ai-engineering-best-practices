@@ -24,7 +24,7 @@ superseded-by: null
 
 ## Step 0 — sync and read the router
 
-`bash <kb>/scripts/kb-sync.sh --pull`; stop only on `ahead` or uncommitted changes. Read `<kb>/ROUTER.md` (under 2 KB) and `<kb>/practices/bundles.md`.
+`bash <kb>/scripts/kb-sync.sh --pull`; stop only on `ahead` or uncommitted changes. (`--pull` writes only inside the guide's `.git/` and is allowed even when the guide is otherwise read-only for the session — AGENTS.md "Rules when applying".) Read `<kb>/ROUTER.md` (under 2 KB) and `<kb>/practices/bundles.md`.
 
 ## Step 1 — one paragraph of intent
 
@@ -46,7 +46,7 @@ From the paragraph and the answers, write every fact of `practices/facts.md` as 
 
 ## Step 4 — the stack and the bundle
 
-Pick the shape's default stack from `practices/stack-defaults.md` unless Martin names another; record it (with the interpreter version actually on the machine) in `docs/stack.md` as soon as `context-docs-skeleton` is copied in step 5. If the stack has no field-tested variant for a capability practice, say in one line: "for `<practice>` the KB gives the contract, the prompt and `stack-notes/<stack>.md`; no file is copied" — and plan that practice through `practices/prompt-library/implement-practice.md` after the working-style files are in.
+Pick the shape's default stack from `practices/stack-defaults.md` unless Martin names another. If a part of that stack cannot be installed on this machine (offline sandbox, missing database), record it as *planned* in `docs/stack.md` and build the walking skeleton with what runs (a CLI entry point and SQLite instead of a web framework and Postgres); the practices' assertions are judged against what runs; record it (with the interpreter version actually on the machine) in `docs/stack.md` as soon as `context-docs-skeleton` is copied in step 5. If the stack has no field-tested variant for a capability practice, say in one line: "for `<practice>` the KB gives the contract, the prompt and `stack-notes/<stack>.md`; no file is copied" — and plan that practice through `practices/prompt-library/implement-practice.md` after the working-style files are in.
 
 ## Step 5 — copy and adapt, in the router's order
 
@@ -63,6 +63,8 @@ Paste the confirmed table from step 2 into the entry file's **Facts** section (`
 One commit: `chore(harness): bootstrap from AI-engineering KB (<kb commit>)` — the Conventional Commits shape the bootstrap's own `lefthook.yml` enforces. Then the field report (`templates/field-report.md`): every practice's assertions with evidence, tokens, minutes, errors caught, and what in the KB was wrong or missing. Martin passes it to the KB (`playbooks/adopt-variant.md`); it is the only evidence the bootstrap works (decision 0004 §8).
 
 ## Change log
+
+- 2026-10-01 (shape A run, 23 min, 13 practices): `--pull` allowed in read-only sessions; offline-stack rule in step 4. Source `sources/2026-10-01-field-report-shape-a-bootstrap.md`.
 
 - 2026-10-01 — first run (shape B, sandbox, 13 min): walking-skeleton rule, `production` wording, asked-facts rule, commit message shape, `PROGRESS.json` fallback, step order for `docs/stack.md`. Source `sources/2026-10-01-field-report-shape-b-bootstrap.md`.
 

@@ -21,8 +21,8 @@ This is the hand-written half of a bundle (decision 0004 §3). The other half �
 
 ## Shape A — multi-tenant agent SaaS that acts on the world
 
-- **Default stack:** Python 3.12 (or the machine's 3.11+) / FastAPI / PostgreSQL (with row-level security for tenants) / a queue for anything that sends or writes outside. Confirmed by one real instance (AI SDR, 2026-09-28), not yet by a bootstrap.
-- **Day-zero copies:** `practices/verification/python-pytest/` + `practices/verification/api-hurl/` + `practices/verification/dry-run-and-approval.md`; `practices/context-docs-skeleton/docs/`; `practices/agent-entry-file/AGENTS.md` + `practices/agent-entry-file/CLAUDE.md`; `practices/hooks-and-guards/dot-claude/` with `practices/hooks-and-guards/stack-notes/python.md`; `practices/security-baseline/lefthook.security.yml` + `practices/security-baseline/dependency-policy.md` and, because `acts_on_world`/`multi_tenant`/`personal_data` are planned, `practices/security-baseline/threat-model-agentic.md` + `practices/security-baseline/mcp-trust-register.md`; `practices/session-state/PROGRESS.json`; `practices/spec-driven/constitution.md`; `practices/prompt-library/` (all); `practices/llm-api-calls/llm_call_skeleton.py` + `practices/llm-api-calls/system-prompt-template.md`; `practices/agent-patterns/tool-definition-template.md` when `exposes_tools` or `tools` is planned.
+- **Default stack:** Python 3.12 (or the machine's 3.11+) / FastAPI / PostgreSQL (with row-level security for tenants) / a queue for anything that sends or writes outside — default: a `jobs` table in the same database, worked by a scheduled command, until volume demands a broker. Confirmed by one real instance (AI SDR, 2026-09-28) and one bootstrap (2026-10-01, `sources/2026-10-01-field-report-shape-a-bootstrap.md`, 23 minutes, 13 practices).
+- **Day-zero copies:** `practices/verification/python-pytest/` + `practices/verification/dry-run-and-approval.md` (`practices/verification/api-hurl/` with the first HTTP endpoint, not before); `practices/context-docs-skeleton/docs/`; `practices/agent-entry-file/AGENTS.md` + `practices/agent-entry-file/CLAUDE.md`; `practices/hooks-and-guards/dot-claude/` with `practices/hooks-and-guards/stack-notes/python.md`; `practices/security-baseline/lefthook.security.yml` + `practices/security-baseline/dependency-policy.md` and, because `acts_on_world`/`multi_tenant`/`personal_data` are planned, `practices/security-baseline/threat-model-agentic.md` + `practices/security-baseline/mcp-trust-register.md`; `practices/session-state/PROGRESS.json`; `practices/spec-driven/constitution.md`; `practices/prompt-library/` (all); `practices/llm-api-calls/llm_call_skeleton.py` + `practices/llm-api-calls/system-prompt-template.md`; `practices/agent-patterns/tool-definition-template.md` when `exposes_tools` or `tools` is planned.
 - **First-user additions** (not on day zero): `practices/llm-gateway/`, `practices/security-baseline/injection-fixture.md`, `practices/token-savings/`.
 
 ## Shape B — scheduled LLM publishing pipeline
@@ -44,6 +44,8 @@ This is the hand-written half of a bundle (decision 0004 §3). The other half �
 - **If an LLM is planned:** `practices/llm-api-calls/` from its contract via the implementation prompt with `practices/llm-api-calls/stack-notes/php-laravel.md` — no PHP file is copied, because none has passed Verify (this is the two-arm experiment of decision 0005 §10).
 
 ## Change log
+
+- 2026-10-01 (shape A run) — queue default named (a jobs table); `api-hurl` moved to "first endpoint"; bootstrap evidence recorded.
 
 - 2026-10-01 — Shape B: full security part added (the router already said so), caching n.a. note, Python version wording; from the first bootstrap field report.
 

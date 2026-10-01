@@ -2,7 +2,7 @@
 description: Implement one practice from the AI-engineering knowledge base in this repo, in its own stack — the practice's Verify is the contract; ends with a field report. Usage /implement-practice <practice-name>.
 ---
 
-You are implementing the practice `$ARGUMENTS` (the practice name; `<<PRACTICE>>` when pasted by hand) from the AI-engineering knowledge base at `<<KB_PATH>>` in **this** repository. Read `<<KB_PATH>>/practices/<<PRACTICE>>/README.md` once, fully, before touching anything. Then work in this order and do not skip a step.
+You are implementing the practice `$ARGUMENTS` (the practice name; `<<PRACTICE>>` when pasted by hand) from the AI-engineering knowledge base at `<<KB_PATH>>` in **this** repository. Read `<<KB_PATH>>/practices/$ARGUMENTS/README.md` once, fully, before touching anything. Then work in this order and do not skip a step.
 
 **1. The contract.** The section `## Verify` is the definition of done. Every numbered assertion must hold at the end; nothing else counts as "done" — not "it looks right", not "the file is copied". Copy the assertions into your plan as a checklist. For each, note its observer: `script` means you will run a command and show its exit code; `agent` means you will demonstrate it in this session and quote what happened; `Martin` means you will prepare exactly what he has to read, in one screen, and stop for him.
 

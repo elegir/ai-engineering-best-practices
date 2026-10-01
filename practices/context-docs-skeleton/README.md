@@ -78,7 +78,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 1. A fresh agent session can run the unit tests using only `docs/development-guide.md`, without asking a question or exploring the tree — observer: agent — negative: the agent asks how to run tests, or opens configuration files to find out
 2. Asked to add a small endpoint or function, the agent cites `docs/backend-standards.md` and `docs/testing-standards.md` in its reasoning instead of inferring style from existing test files — observer: agent — negative: the agent reads three existing tests "to see the convention"
 3. Asked which table stores X and what links it to Y, the agent answers from `docs/data-model.md` — observer: agent — negative: the agent greps migrations to answer
-4. `docs/README.md` lists every file in `docs/`, and the entry file links `docs/README.md` — observer: script — negative: a file in `docs/` absent from the index, or an index entry with no file
+4. `docs/README.md` lists every existing file in `docs/` (planned documents are marked *planned*, never listed as if present), and the entry file links `docs/README.md` — observer: script — negative: a file in `docs/` absent from the index, or an unmarked index entry with no file
 5. No document contains an unreplaced placeholder — observer: script — negative: a `<<…>>` token anywhere under `docs/`
 
 **Example commands (Python / shell):** `ls docs | sort` vs the index; `grep -rn '<<' docs/`.
@@ -91,6 +91,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 — assertion 4 reworded: every *existing* file; planned entries marked. Two bootstraps: 4, 5 passed with negatives.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 

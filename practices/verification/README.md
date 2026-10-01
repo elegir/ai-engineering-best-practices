@@ -42,7 +42,7 @@ The agent declares "done" when the code compiles, because nothing lets it prove 
 | `definition-of-done.md` | Every repo | paste into `docs/workflow.md` §2 |
 | `harness-evals.md` | Every repo once the harness exists | `<repo>/docs/harness-evals.md` |
 | `dry-run-and-approval.md` | **Only when `acts_on_world`** (sends, publishes, pays or writes third-party records on its own, LLM or not) | `<repo>/docs/dry-run-and-approval.md`; its rule 3 tests go into the smoke suite |
-| `stack-notes/php-laravel.md` | (read) | How the contract is usually satisfied in Laravel: Pest smoke group, tenant-aware tests, dry-run switch |
+| `stack-notes/python.md`, `stack-notes/php-laravel.md` | (read) | Python: walking skeleton, src layout, seeding, one-line refusal; Laravel: Pest smoke group, tenant-aware tests, dry-run switch |
 
 ## Reference implementation
 
@@ -82,6 +82,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 — `stack-notes/python.md` added (walking skeleton, src layout, seeding, one-line refusal); `test_smoke.py` CLI test passes `PYTHONPATH=src`; one dry-run switch name across the practice. Two bootstraps (`sources/2026-10-01-field-report-shape-b-bootstrap.md`, `sources/2026-10-01-field-report-shape-a-bootstrap.md`): assertions 1, 2, 6 passed with negatives in both; 3–5 await Martin.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-30 — added `dry-run-and-approval.md`, a section that applies only when the repo's facts include `acts_on_world`; per `decisions/0004-day-one-for-blank-and-existing-repos.md` §7 (debate attack 2: the fintech moves money with no LLM, so the dry-run rule belongs here, not in `llm-gateway`). The practice stays `always`; the file is conditional.
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).

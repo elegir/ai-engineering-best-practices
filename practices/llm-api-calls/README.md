@@ -83,6 +83,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-01 — skeleton logs `attempt`, has `--demo`; assertion 3's n.a. for short prefixes confirmed in both bootstraps; assertion 8 (eval, 5× worst case) is the open item in both repos.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-27 — created from the session-1 market scan (draft).
 - 2026-09-27 (s2) — checklist item 2 sharpened (cache breakers, positive rules); provider row 10 (cached-input price); `context-budget.md` rule 7 (cache limits). Source `sources/2026-09-27-s02-context-caching-digest.md`.

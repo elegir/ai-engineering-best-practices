@@ -4,20 +4,24 @@
 # assigns a port and database name, runs migrations and seed.
 set -euo pipefail
 SLUG="${1:?ticket slug required, e.g. T-003-sso-signup}"
-BASE="${2:-main}"
+BASE="${2:-$(git rev-parse --abbrev-ref HEAD)}"   # default: the branch you are on (main, master, …)
 REPO_DIR="$(git rev-parse --show-toplevel)"
 REPO_NAME="$(basename "$REPO_DIR")"
 WT_DIR="$(dirname "$REPO_DIR")/${REPO_NAME}-${SLUG}"
 BRANCH="$SLUG"
 
-git -C "$REPO_DIR" fetch -q origin "$BASE" || true
-git -C "$REPO_DIR" worktree add -b "$BRANCH" "$WT_DIR" "origin/$BASE" 2>/dev/null \
-  || git -C "$REPO_DIR" worktree add -b "$BRANCH" "$WT_DIR" "$BASE"
+if git -C "$REPO_DIR" remote get-url origin >/dev/null 2>&1; then
+  git -C "$REPO_DIR" fetch -q origin "$BASE" || true
+  git -C "$REPO_DIR" worktree add -b "$BRANCH" "$WT_DIR" "origin/$BASE" 2>/dev/null \
+    || git -C "$REPO_DIR" worktree add -b "$BRANCH" "$WT_DIR" "$BASE"
+else
+  git -C "$REPO_DIR" worktree add -b "$BRANCH" "$WT_DIR" "$BASE"   # no remote yet (a day-zero repo)
+fi
 
 # Copy includes
 if [ -f "$REPO_DIR/.worktreeinclude" ]; then
   grep -Ev '^\s*(#|$)' "$REPO_DIR/.worktreeinclude" | while read -r f; do
-    [ -e "$REPO_DIR/$f" ] && mkdir -p "$WT_DIR/$(dirname "$f")" && cp -r "$REPO_DIR/$f" "$WT_DIR/$f"
+    if [ -e "$REPO_DIR/$f" ]; then mkdir -p "$WT_DIR/$(dirname "$f")"; cp -r "$REPO_DIR/$f" "$WT_DIR/$f"; fi   # an "&&" chain here exits the script under set -e when the last file is missing
   done
 fi
 

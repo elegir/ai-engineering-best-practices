@@ -54,7 +54,7 @@ This practice has two parts, routed separately (decision `decisions/0004-day-one
 | `threat-model-agentic.md` | `<repo>/docs/threat-model.md` | Checklist of agent-specific threats and the control that covers each |
 | `mcp-trust-register.md` | `<repo>/docs/mcp-trust-register.md` | One row per MCP server/tool: scope, credentials, read/write, blast radius, owner (also useful in core repos that load MCPs; mandatory here) |
 | `injection-fixture.md` | `<repo>/e2e/fixtures/injection.md` + an eval | A page with hidden instructions the agent must ignore (for `practices/verification/harness-evals.md`). First-user, not day-zero: it needs an eval runner |
-| `stack-notes/php-laravel.md` | (read) | Secrets paths, `composer audit` semantics, per-tenant keys, `tinker` as a destructive command |
+| `stack-notes/python.md`, `stack-notes/php-laravel.md` | (read) | Python: gitleaks + pip-audit + Ruff S, stop-gaps, logging rule; Laravel: secrets paths, `composer audit` semantics, per-tenant keys, `tinker` |
 
 Pending files for the full part (from the s3 scan, see "Notes from later scans"): per-route and per-tenant model keys with spend caps; trace redaction rules. They land when the security module (session 14) is ingested or when a consumer needs them first.
 
@@ -106,6 +106,7 @@ Full (`acts_on_world or personal_data or regulated or multi_tenant`, in addition
 
 ## Change log
 
+- 2026-10-01 — `stack-notes/python.md` added; `lefthook.security.yml` no longer refuses `.env.example`; injection fixture marked first-user. Two bootstraps: core 2 and full 7, 9 passed; 1 and 3 n.a. where gitleaks/pip-audit could not be installed.
 - 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-09 — created (draft).
 - 2026-09-30 — split into a **core** part (`applies-when: always`) and a **full** part (`full-when: acts_on_world or personal_data or regulated or multi_tenant`), per `decisions/0004-day-one-for-blank-and-existing-repos.md` §7 after the day-one debate (`sources/2026-09-30-day-one-debate.md` attack 2: the safety facts selected no practice). Files regrouped; Verify split; still draft until a real repo passes Verify.

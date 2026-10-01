@@ -21,7 +21,7 @@
     "\\bTRUNCATE\\b",
     "terraform (apply|destroy)",
     "kubectl (delete|apply)[^|]*prod",
-    "<<REPO_SPECIFIC_DENY, e.g. wp db reset | deploy.*production | ssh .*prod>>"
+    "<<REPO_SPECIFIC_DENY, e.g. SEND_MODE=live | APP_ENV=production | wp db reset | deploy.*production | ssh .*prod — for acts_on_world repos the dry-run switch set to live is the first deny>>"
   ],
   "format": {
     ".py": "<<ruff format {file}>>",
