@@ -1,6 +1,6 @@
 {
  "about": "Registry of every source this KB has ever considered — videos and podcast episodes (type video/podcast) AND written sources (type written: docs, papers, articles, courses). Media statuses: transcribed (raw text in sources/raw/), digested (source entry has a digest), applied (knowledge reached principles/practices), candidate (parked for a named module), discarded (do not re-consider unless the reason no longer holds). Written statuses: catalogued (listed as canon, not yet read in full), cited (used in a digest/principle — the reason says where), discarded. One entry per URL; `modules` lists every module that used it (reading an existing transcript again for another module is free and encouraged — the registry prevents paying twice for search, transcription and triage, never reuse); scripts/scan-filter.py (media) and scripts/written-filter.py (written) drop anything already here.",
- "updated": "2026-09-30",
+ "updated": "2026-10-01",
  "items": [
   {
    "id": "BHGTA6ZEls4",
@@ -8076,6 +8076,3009 @@
    ],
    "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
    "decided": "2026-09-30"
+  },
+  {
+   "id": "developers.openai.com/api/docs/guides/structured-outputs",
+   "url": "https://developers.openai.com/api/docs/guides/structured-outputs",
+   "title": "Structured model outputs (OpenAI API docs) + launch post",
+   "channel": "OpenAI",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s4",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s4"
+   ]
+  },
+  {
+   "id": "platform.claude.com/docs/en/build-with-claude/structured-outputs",
+   "url": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+   "title": "Structured outputs (Claude Platform Docs) + announcement",
+   "channel": "Anthropic",
+   "published": "2025-11",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s4",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s4"
+   ]
+  },
+  {
+   "id": "python.useinstructor.com",
+   "url": "https://python.useinstructor.com/",
+   "title": "Instructor — structured outputs for LLMs (docs, repo, 'Pydantic is all you need' keynote write-up)",
+   "channel": "Jason Liu / 567 Labs",
+   "published": "2023–2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s4",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s4"
+   ]
+  },
+  {
+   "id": "docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-templates-and-variables",
+   "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-templates-and-variables",
+   "title": "Use prompt templates and variables · Use XML tags (Claude docs)",
+   "channel": "Anthropic",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s4",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s4"
+   ]
+  },
+  {
+   "id": "docs.anthropic.com/en/docs/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+   "url": "https://docs.anthropic.com/en/docs/test-and-evaluate/strengthen-guardrails/reduce-hallucinations",
+   "title": "Strengthen guardrails: reduce hallucinations · increase consistency · mitigate jailbreaks (Claude docs)",
+   "channel": "Anthropic",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s4",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s4"
+   ]
+  },
+  {
+   "id": "github.com/guardrails-ai/guardrails",
+   "url": "https://github.com/guardrails-ai/guardrails",
+   "title": "Guardrails AI (repo + validator hub docs)",
+   "channel": "Guardrails AI (Shreya Rajpal)",
+   "published": "2023–2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s4",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s4"
+   ]
+  },
+  {
+   "id": "docs.nvidia.com/nemo/guardrails/about-nemo-guardrails-library/overview",
+   "url": "https://docs.nvidia.com/nemo/guardrails/about-nemo-guardrails-library/overview",
+   "title": "NeMo Guardrails (overview, Colang guide, repo)",
+   "channel": "NVIDIA",
+   "published": "2023–2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s4",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s4"
+   ]
+  },
+  {
+   "id": "developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama-guard-4",
+   "url": "https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama-guard-4/",
+   "title": "Llama Guard 4 model card + Llama Protections",
+   "channel": "Meta",
+   "published": "2025-04",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s4",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s4"
+   ]
+  },
+  {
+   "id": "openai.github.io/openai-agents-python/guardrails",
+   "url": "https://openai.github.io/openai-agents-python/guardrails/",
+   "title": "Guardrails (OpenAI Agents SDK) + openai-guardrails-python + guardrails & approvals guide",
+   "channel": "OpenAI",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s4",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s4"
+   ]
+  },
+  {
+   "id": "pair.withgoogle.com/guidebook",
+   "url": "https://pair.withgoogle.com/guidebook/",
+   "title": "People + AI Guidebook (principles & patterns)",
+   "channel": "Google PAIR",
+   "published": "2019–2025",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s4",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s4"
+   ]
+  },
+  {
+   "id": "microsoft.com/en-us/haxtoolkit/ai-guidelines",
+   "url": "https://www.microsoft.com/en-us/haxtoolkit/ai-guidelines/",
+   "title": "Guidelines for Human-AI Interaction (HAX Toolkit)",
+   "channel": "Microsoft Research",
+   "published": "2019–2025",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s4",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s4"
+   ]
+  },
+  {
+   "id": "ai-sdk.dev/docs/ai-sdk-ui/generative-user-interfaces",
+   "url": "https://ai-sdk.dev/docs/ai-sdk-ui/generative-user-interfaces",
+   "title": "Generative User Interfaces (AI SDK UI) · A2UI v0.9",
+   "channel": "Vercel · Google Developers",
+   "published": "2024–2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s4",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s4"
+   ]
+  },
+  {
+   "id": "genai.owasp.org/llm-top-10",
+   "url": "https://genai.owasp.org/llm-top-10/",
+   "title": "OWASP Top 10 for LLM Applications (2025) / GenAI LLM Top 10 (2026)",
+   "channel": "OWASP GenAI Security Project",
+   "published": "2024-11 / 2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s4",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s4"
+   ]
+  },
+  {
+   "id": "deeplearning.ai/courses/pydantic-for-llm-workflows",
+   "url": "https://www.deeplearning.ai/courses/pydantic-for-llm-workflows",
+   "title": "Pydantic for LLM Workflows (course)",
+   "channel": "DeepLearning.AI",
+   "published": "2025",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s4",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s4"
+   ]
+  },
+  {
+   "id": "deeplearning.ai/courses/safe-and-reliable-ai-via-guardrails",
+   "url": "https://www.deeplearning.ai/courses/safe-and-reliable-ai-via-guardrails",
+   "title": "Safe and Reliable AI via Guardrails (course)",
+   "channel": "DeepLearning.AI × Guardrails AI",
+   "published": "2024",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; registered 2026-10-01; read when the module is digested",
+   "module": "s4",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-01",
+   "modules": [
+    "s4"
+   ]
+  },
+  {
+   "id": "2k1EqB0iyq4",
+   "url": "https://www.youtube.com/watch?v=2k1EqB0iyq4",
+   "title": "AI Structured Outputs Explained: Reliable LLM JSON Responses in 2026",
+   "channel": "LearnITGuide Tutorials",
+   "published": "2026-09-29",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "cU4SBH25Y3g",
+   "url": "https://www.youtube.com/watch?v=cU4SBH25Y3g",
+   "title": "Structured Output from LLMs — Stop Playing JSON Roulette",
+   "channel": "Jeff Heidelberger",
+   "published": "2026-05-08",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "XRzpzB-lux8",
+   "url": "https://www.youtube.com/watch?v=XRzpzB-lux8",
+   "title": "Force Any LLM to Return Perfect JSON (Structured Output)",
+   "channel": "The AI Stack",
+   "published": "2026-06-30",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "CllLqPwCjD4",
+   "url": "https://www.youtube.com/watch?v=CllLqPwCjD4",
+   "title": "Getting Structured Output in JSON format",
+   "channel": "Telusko",
+   "published": "2025-10-16",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "Xvp0V-SQULw",
+   "url": "https://www.youtube.com/watch?v=Xvp0V-SQULw",
+   "title": "How to Generate Structured Output from LLMs— Pydantic, JSON Schema & TypedDict",
+   "channel": "Soumyaranjan Nayak",
+   "published": "2025-11-28",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Ibno_G3tCZM",
+   "url": "https://www.youtube.com/watch?v=Ibno_G3tCZM",
+   "title": "OpenAI Structured Outputs + Pydantic: Type-Safe JSON from Any LLM Call",
+   "channel": "ByteBuilder",
+   "published": "2026-03-12",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "59kcnTLVu0Q",
+   "url": "https://www.youtube.com/watch?v=59kcnTLVu0Q",
+   "title": "Stop Trusting LLM JSON: Build a Self-Healing Pipeline",
+   "channel": "Dmitry Finashkin",
+   "published": "2026-06-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "g0Iy2UNXHLc",
+   "url": "https://www.youtube.com/watch?v=g0Iy2UNXHLc",
+   "title": "LLM Guardrails: Stop Injection, Leaks & Hallucination (NeMo Guardrails)",
+   "channel": "AI WITH Rithesh",
+   "published": "2026-07-22",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "juEFmCmpRP4",
+   "url": "https://www.youtube.com/watch?v=juEFmCmpRP4",
+   "title": "NVIDIA NeMo Guardrails · 5/10 · Dynamic PII Detection and Masking",
+   "channel": "DevStoriesEU",
+   "published": "2026-04-22",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "sNMjN-Jcj7Q",
+   "url": "https://www.youtube.com/watch?v=sNMjN-Jcj7Q",
+   "title": "Mastering Structured Outputs: JSON Schemas That Never Break Your Pipeline",
+   "channel": "Owera Software",
+   "published": "2026-06-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "uY9zB_DomQ0",
+   "url": "https://www.youtube.com/watch?v=uY9zB_DomQ0",
+   "title": "LLM Structured Output: Make Models Speak JSON",
+   "channel": "AISLabs AI",
+   "published": "2026-07-28",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Y-tJHWTPlXg",
+   "url": "https://www.youtube.com/watch?v=Y-tJHWTPlXg",
+   "title": "Structured Outputs for AI Agents: Prompting, Schemas, and Validation Compared",
+   "channel": "bhupen",
+   "published": "2026-08-24",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "UnUEuPilsos",
+   "url": "https://www.youtube.com/watch?v=UnUEuPilsos",
+   "title": "LLM Guardrails & Safety | AI Interview Prep Ep 8",
+   "channel": "Agentic AI World",
+   "published": "2026-03-27",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "zf26-YNA9Cc",
+   "url": "https://www.youtube.com/watch?v=zf26-YNA9Cc",
+   "title": "Constrained Decoding Explained: How LLMs Generate Perfect Structured Output",
+   "channel": "Engineering Insider",
+   "published": "2026-06-02",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "AWn7wSa-JKg",
+   "url": "https://www.youtube.com/watch?v=AWn7wSa-JKg",
+   "title": "Deploying NVIDIA NeMo Guardrails on Red Hat AI",
+   "channel": "Red Hat",
+   "published": "2026-09-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "YtAMWn4LyPQ",
+   "url": "https://www.youtube.com/watch?v=YtAMWn4LyPQ",
+   "title": "AI Agent Guardrails Explained: Input, Output, Action",
+   "channel": "Agent Engineering",
+   "published": "2026-09-16",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "RW3y9ABXf10",
+   "url": "https://www.youtube.com/watch?v=RW3y9ABXf10",
+   "title": "What is NeMo Guardrails? The NVIDIA policy layer that would have stopped the Taiwan attack.",
+   "channel": "Elite Dev News",
+   "published": "2026-08-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "lmOJ3L0nT1g",
+   "url": "https://www.youtube.com/watch?v=lmOJ3L0nT1g",
+   "title": "Prompt Injection and LLM Guardrails: Secure Your AI Agent #Shorts",
+   "channel": "Total Technology Zonne",
+   "published": "2026-07-04",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "-3HWSvngGs0",
+   "url": "https://www.youtube.com/watch?v=-3HWSvngGs0",
+   "title": "What is Guardrails AI?",
+   "channel": "Standarity",
+   "published": "2026-07-01",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "28fPGpyTKYE",
+   "url": "https://www.youtube.com/watch?v=28fPGpyTKYE",
+   "title": "Guardrails Crash Course: Build Safe & Reliable AI Agents 🔥",
+   "channel": "DSwithBappy",
+   "published": "2026-07-24",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner tutorial: re-explanation of the vendor docs already in the written canon"
+  },
+  {
+   "id": "T4Vx7X8R-hY",
+   "url": "https://www.youtube.com/watch?v=T4Vx7X8R-hY",
+   "title": "How to Make AI Safe - NVIDIA's Open Guardrail Models, Explained",
+   "channel": "The AI Briefing Book",
+   "published": "2026-07-27",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "-ROpc8jXYig",
+   "url": "https://www.youtube.com/watch?v=-ROpc8jXYig",
+   "title": "Input Guardrails in AI Agents | OpenAI Agent SDK with Typescript",
+   "channel": "Piyush Garg",
+   "published": "2025-11-12",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "Y4XshRMTNtU",
+   "url": "https://www.youtube.com/watch?v=Y4XshRMTNtU",
+   "title": "Comparing Agent, Scrape (JSON format), and Extract Endpoints",
+   "channel": "Firecrawl",
+   "published": "2026-02-05",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "smzw0JCWxlE",
+   "url": "https://www.youtube.com/watch?v=smzw0JCWxlE",
+   "title": "LLM Ops Architecture: Implementing Output Validation and Structured AI Responses",
+   "channel": "Analytics Vidhya",
+   "published": "2026-04-10",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "ruiLq0OzjkI",
+   "url": "https://www.youtube.com/watch?v=ruiLq0OzjkI",
+   "title": "Guardrails with LangChain: A Complete Crash Course for Building Safe AI Agents",
+   "channel": "Krish Naik",
+   "published": "2026-03-05",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner tutorial: re-explanation of the vendor docs already in the written canon"
+  },
+  {
+   "id": "vJTvexWX5I8",
+   "url": "https://www.youtube.com/watch?v=vJTvexWX5I8",
+   "title": "Instructor vs. LangChain: Structured LLM Output Libraries Compared",
+   "channel": "Evan Thacker",
+   "published": "2025-10-01",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "FA4KKREn0u0",
+   "url": "https://www.youtube.com/watch?v=FA4KKREn0u0",
+   "title": "What Stops AI From Going Wrong? 🤯 | AI Guardrails Explained in 6 Minutes",
+   "channel": "SN ByteNexus",
+   "published": "2026-08-17",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "gbOEdSubJAo",
+   "url": "https://www.youtube.com/watch?v=gbOEdSubJAo",
+   "title": "Structured output: get clean JSON from an AI, every time",
+   "channel": "Sage Ideas ",
+   "published": "2026-09-01",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "8E-zmt_JxDc",
+   "url": "https://www.youtube.com/watch?v=8E-zmt_JxDc",
+   "title": "Guardrails and Observability for absolute Begineers",
+   "channel": "Divesh Jadhwani",
+   "published": "2026-06-27",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "7XfBLutnxC8",
+   "url": "https://www.youtube.com/watch?v=7XfBLutnxC8",
+   "title": "Guardrails AI Explained: Make Your LLM Outputs 100% RELIABLE and SAFE",
+   "channel": "STARP AI",
+   "published": "2025-11-05",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "JLNhG2DjcEs",
+   "url": "https://www.youtube.com/watch?v=JLNhG2DjcEs",
+   "title": "Stop Your AI From Leaking Data — LLM Guardrails Explained",
+   "channel": "ByteLearn",
+   "published": "2026-07-26",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "YXiSn_MAjd8",
+   "url": "https://www.youtube.com/watch?v=YXiSn_MAjd8",
+   "title": "Function Calling vs Structured Outputs Which Should AI Developers Use",
+   "channel": "Hired In IT",
+   "published": "2026-08-09",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "F8fBgDCf2Y4",
+   "url": "https://www.youtube.com/watch?v=F8fBgDCf2Y4",
+   "title": "Kent Beck: Software Engineering in the Age of AI | Prodacity 2026",
+   "channel": "Rise8",
+   "published": "2026-09-29",
+   "type": "video",
+   "module": "s17",
+   "modules": [
+    "s17"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s17 (found in the s4 scan): Kent Beck on software engineering in the age of AI — parked for the lab/SDD module"
+  },
+  {
+   "id": "nJHlmLu5P28",
+   "url": "https://www.youtube.com/watch?v=nJHlmLu5P28",
+   "title": "LLM Output Validation — Key Metrics & Strategies for Reliable AI | Uplatz",
+   "channel": "Uplatz",
+   "published": "2025-11-26",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "7V1w5gnZ-kw",
+   "url": "https://www.youtube.com/watch?v=7V1w5gnZ-kw",
+   "title": "Guardrails for LLM Applications | Complete Tutorial for AI Developers WIth Guardrails AI",
+   "channel": "Sunny Savita",
+   "published": "2025-10-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner tutorial: re-explanation of the vendor docs already in the written canon"
+  },
+  {
+   "id": "DDC7G4RifV0",
+   "url": "https://www.youtube.com/watch?v=DDC7G4RifV0",
+   "title": "LLM Benchmarking for Structured JSON Tool Response Processing",
+   "channel": "Think AI ",
+   "published": "2026-03-02",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "8MBJAcGzhnI",
+   "url": "https://www.youtube.com/watch?v=8MBJAcGzhnI",
+   "title": "Reducto Extract Just Got More Accurate and 2× Faster",
+   "channel": "Reducto",
+   "published": "2026-09-08",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "3Mfk-7_8paM",
+   "url": "https://www.youtube.com/watch?v=3Mfk-7_8paM",
+   "title": "Analyzing LLM Performance in Processing Structured Tool Outputs",
+   "channel": "Think AI ",
+   "published": "2026-03-03",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "O7BzofvjAFo",
+   "url": "https://www.youtube.com/watch?v=O7BzofvjAFo",
+   "title": "EP09: Structured Output from Claude: JSON Schemas, Validation & Retry",
+   "channel": "Vivek Amilkanthawar",
+   "published": "2026-06-20",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "bQUqJnKqDhY",
+   "url": "https://www.youtube.com/watch?v=bQUqJnKqDhY",
+   "title": "Native Structured Output in Spring AI - Guaranteed JSON Responses Every Time",
+   "channel": "Dan Vega",
+   "published": "2026-01-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "stack-specific tutorial (Java/.NET), not the module's reference stack"
+  },
+  {
+   "id": "6mixCpOp3YI",
+   "url": "https://www.youtube.com/watch?v=6mixCpOp3YI",
+   "title": "LLM Security: Essential Guardrails for AI Applications | The New Default",
+   "channel": "Monterail",
+   "published": "2026-01-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "3bm1E3_wLWQ",
+   "url": "https://www.youtube.com/watch?v=3bm1E3_wLWQ",
+   "title": "CCA-F Exam Prep 27, Structured Output — JSON and XML",
+   "channel": "Open Exam Prep",
+   "published": "2026-09-03",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "9Ek2cvIHq1c",
+   "url": "https://www.youtube.com/watch?v=9Ek2cvIHq1c",
+   "title": "AI Agent Guardrails Simplified - Prompt Injection, PII & More",
+   "channel": "Applied with AI - Sanjay Kumar",
+   "published": "2026-08-09",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "i-VBGS31ER4",
+   "url": "https://www.youtube.com/watch?v=i-VBGS31ER4",
+   "title": "AI Guardrails Explained: How We STOP AI From Going Rogue 🤖🛡️",
+   "channel": "AI and Tech",
+   "published": "2026-09-13",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "f4ZpzkVtQSU",
+   "url": "https://www.youtube.com/watch?v=f4ZpzkVtQSU",
+   "title": "LLM Guardrails Explained: Securing, Controlling & Scaling AI Safely",
+   "channel": "Subramanyam KMV",
+   "published": "2026-01-10",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "BqE_wOUK4g0",
+   "url": "https://www.youtube.com/watch?v=BqE_wOUK4g0",
+   "title": "LangChain Project 7: Build a Local Structured Data Extractor (JSON Output) | Pydantic + Llama 3",
+   "channel": "NIIT",
+   "published": "2026-02-27",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner tutorial: re-explanation of the vendor docs already in the written canon"
+  },
+  {
+   "id": "LWFRvhCENVA",
+   "url": "https://www.youtube.com/watch?v=LWFRvhCENVA",
+   "title": "L25-Structured Output with LLMs | Extract Data from Images & Documents",
+   "channel": "NeuroVed",
+   "published": "2026-02-02",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "MRzdXO0kKAc",
+   "url": "https://www.youtube.com/watch?v=MRzdXO0kKAc",
+   "title": "OpenAI Structured Outputs with Pydantic (Clean JSON) | AI Engineer Course #6",
+   "channel": "AI Dev Playbook",
+   "published": "2026-09-26",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "iymZjaNcwc8",
+   "url": "https://www.youtube.com/watch?v=iymZjaNcwc8",
+   "title": "Beyond the Chatbot: Gen UI & the Execution Trust Problem - Harshil Agrawal - Cloudflare - dotJS 2026",
+   "channel": "dotconferences",
+   "published": "2026-09-28",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "conference talk (dotAI 2026): generative UI and the execution-trust problem — non-conversational UX",
+   "raw": "sources/raw/2026-10-01-market-scan-s04-structured-outputs/yt-iymZjaNcwc8-dotconf-harshil-agrawal-gen-ui-execution-trust.md",
+   "duration": "00:17:54"
+  },
+  {
+   "id": "Z4aSGCs_O5A",
+   "url": "https://www.youtube.com/watch?v=Z4aSGCs_O5A",
+   "title": "Generative UI: Specs, Patterns, and the Protocols Behind Them (MCP Apps, A2UI, AG-UI)",
+   "channel": "CopilotKit",
+   "published": "2026-01-30",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "primary source (CopilotKit, authors of AG-UI) on generative-UI specs and protocols (MCP Apps, A2UI, AG-UI) — the non-conversational-UX bullet",
+   "raw": "sources/raw/2026-10-01-market-scan-s04-structured-outputs/yt-Z4aSGCs_O5A-copilotkit-generative-ui-specs-patterns-protocols.md",
+   "duration": "00:54:18"
+  },
+  {
+   "id": "7Tn87CvXYzI",
+   "url": "https://www.youtube.com/watch?v=7Tn87CvXYzI",
+   "title": "How to Monetize with ChatGPT 6 Astra | Build AI Apps & Earn",
+   "channel": "theaimart",
+   "published": "2026-09-07",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner tutorial: re-explanation of the vendor docs already in the written canon"
+  },
+  {
+   "id": "gygFMbzzlgw",
+   "url": "https://www.youtube.com/watch?v=gygFMbzzlgw",
+   "title": "LLMOps #14 — LLM Guardrails: Input Checks, Output Checks, and Failing Safely",
+   "channel": "LLMwork",
+   "published": "2026-09-06",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "CTv7YfHVQxA",
+   "url": "https://www.youtube.com/watch?v=CTv7YfHVQxA",
+   "title": "Stop Treating AI Code Like Final Product | Building Production Guardrails",
+   "channel": "Krisvik AI",
+   "published": "2026-07-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "vJZyF-6oB8w",
+   "url": "https://www.youtube.com/watch?v=vJZyF-6oB8w",
+   "title": "AI Tinkerers Generative UI Global Hackathon: Agentic Interfaces in Hong Kong",
+   "channel": "Create with Tim",
+   "published": "2026-05-09",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "rQE3w8Qjx98",
+   "url": "https://www.youtube.com/watch?v=rQE3w8Qjx98",
+   "title": "The Complete AI Security Course In 8 Hours-AI Guardrails, LLM Evals & Memory And AgentOps",
+   "channel": "Krish Naik",
+   "published": "2026-06-18",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner tutorial: re-explanation of the vendor docs already in the written canon"
+  },
+  {
+   "id": "tYEzzMr8Cuo",
+   "url": "https://www.youtube.com/watch?v=tYEzzMr8Cuo",
+   "title": "AI Can Make Products Look Better. Why Are They Still So Hard to Use?",
+   "channel": "Aiven",
+   "published": "2026-09-03",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "XL_bwrue9bA",
+   "url": "https://www.youtube.com/watch?v=XL_bwrue9bA",
+   "title": "Build a Procurement AI Agent with Gen UI",
+   "channel": "DronaHQ",
+   "published": "2026-04-17",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "gdlq6GOMyis",
+   "url": "https://www.youtube.com/watch?v=gdlq6GOMyis",
+   "title": "Beyond the Chat Window: What Will the AI Interfaces of the Future Look Like?",
+   "channel": "TELUS Digital",
+   "published": "2026-01-12",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "eE1spyX9knU",
+   "url": "https://www.youtube.com/watch?v=eE1spyX9knU",
+   "title": "Beyond Chatbots: Why Chat Interfaces Are Shrinking (AI Product Design) - UXPA 2025",
+   "channel": "Sean Savage",
+   "published": "2025-10-04",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "v9wFSDSjb_c",
+   "url": "https://www.youtube.com/watch?v=v9wFSDSjb_c",
+   "title": "Securing LLMs in Production: From OWASP Top-10 to Guardrails that Work - Rohit Bhardwaj",
+   "channel": "Developer Summit",
+   "published": "2026-06-01",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "conference talk (Developer Summit 2026): OWASP LLM Top 10 mapped to guardrails that work in production",
+   "raw": "sources/raw/2026-10-01-market-scan-s04-structured-outputs/yt-v9wFSDSjb_c-developer-summit-rohit-owasp-to-guardrails.md",
+   "duration": "00:59:37"
+  },
+  {
+   "id": "cOf3_r9viSI",
+   "url": "https://www.youtube.com/watch?v=cOf3_r9viSI",
+   "title": "Lecture 23: Pydantic & TypeDict for Structured LLM Outputs - Schema Creation & Validation",
+   "channel": "NeuroVed",
+   "published": "2025-11-13",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "EP8WZCsetDw",
+   "url": "https://www.youtube.com/watch?v=EP8WZCsetDw",
+   "title": "Build an Autonomous Research Agent with LangGraph & Tavily",
+   "channel": "Sukrid LearnHub",
+   "published": "2026-05-07",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "4fsJbZyuVCE",
+   "url": "https://www.youtube.com/watch?v=4fsJbZyuVCE",
+   "title": "PDF Data Extraction With Instructor + Pydantic (Full Build)",
+   "channel": "The Data and AI Guy",
+   "published": "2026-07-13",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "1X3eiL4RAuc",
+   "url": "https://www.youtube.com/watch?v=1X3eiL4RAuc",
+   "title": "with_structured_output in LangChain, Structured Output, TypedDict, Pydantic, JSON Schema",
+   "channel": "Mithilesh yadav",
+   "published": "2026-07-31",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "IDjcn2Uf8jg",
+   "url": "https://www.youtube.com/watch?v=IDjcn2Uf8jg",
+   "title": "Lecture 22: TypeDict & Structured Output - Essential Tools for Agentic AI | Gen AI Series",
+   "channel": "NeuroVed",
+   "published": "2025-11-06",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "16Gk3OiORMM",
+   "url": "https://www.youtube.com/watch?v=16Gk3OiORMM",
+   "title": "LLM Returns Garbage? 🛑 Do This 3-Line Trick Instead! Instructor Tutorial Check Books Below Video 📚👇",
+   "channel": "Joel John J",
+   "published": "2026-09-03",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "VkBMhWePerk",
+   "url": "https://www.youtube.com/watch?v=VkBMhWePerk",
+   "title": "I Built a Production RAG Chatbot With Citations — Technical Breakdown",
+   "channel": "Naif Asswiel",
+   "published": "2026-05-31",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "BYxSzFmx9L8",
+   "url": "https://www.youtube.com/watch?v=BYxSzFmx9L8",
+   "title": "Stop Parsing Strings 🤯 Get Structured AI Outputs with Instructor (Python Guide)",
+   "channel": "AI Learning Hub",
+   "published": "2026-06-16",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "-9Iw86Y991E",
+   "url": "https://www.youtube.com/watch?v=-9Iw86Y991E",
+   "title": "Open-Source AI Tools That Feel ILLEGAL To Use",
+   "channel": "The Stack",
+   "published": "2026-06-22",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "j7Re_09T-co",
+   "url": "https://www.youtube.com/watch?v=j7Re_09T-co",
+   "title": "Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks",
+   "channel": "Padho with Pratyush",
+   "published": "2026-07-13",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner tutorial: re-explanation of the vendor docs already in the written canon"
+  },
+  {
+   "id": "b36zc198IH0",
+   "url": "https://www.youtube.com/watch?v=b36zc198IH0",
+   "title": "Structured Outputs & Validation for Data Engineers (Pydantic + Claude Tutorial)",
+   "channel": "Data Engineer Academy",
+   "published": "2026-08-27",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "xz87YWpL700",
+   "url": "https://www.youtube.com/watch?v=xz87YWpL700",
+   "title": "Typed LLM Structured Outputs with Instructor in Python | 2026",
+   "channel": "FlowForge Lab",
+   "published": "2026-09-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "ZA3FmOmZHC4",
+   "url": "https://www.youtube.com/watch?v=ZA3FmOmZHC4",
+   "title": "Instructor in Python: Extract Validated JSON from Emails and PDFs",
+   "channel": "Professor Py: AI Engineering",
+   "published": "2026-04-17",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "7bPcdmP-Oyc",
+   "url": "https://www.youtube.com/watch?v=7bPcdmP-Oyc",
+   "title": "AI4C Lecture Series: LatteReview: A Multi-Agent Framework for Systematic Review Automation Using...",
+   "channel": "Mass General Brigham AI",
+   "published": "2026-01-08",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "IO1e2C4mUWs",
+   "url": "https://www.youtube.com/watch?v=IO1e2C4mUWs",
+   "title": "Building a Professional Chat User Interface for your Agents | First Steps",
+   "channel": "theailanguage",
+   "published": "2026-01-01",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "zFIjfnmV6Og",
+   "url": "https://www.youtube.com/watch?v=zFIjfnmV6Og",
+   "title": "LangChain 02: Prompt Templates & Chains Explained",
+   "channel": "TechWhistle",
+   "published": "2026-05-09",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "pCIgVKJbiOE",
+   "url": "https://www.youtube.com/watch?v=pCIgVKJbiOE",
+   "title": "AI is now every UI: generative user interfaces explained",
+   "channel": "NEXT with John Koetsier",
+   "published": "2026-01-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner tutorial: re-explanation of the vendor docs already in the written canon"
+  },
+  {
+   "id": "qtlTF4hjwnE",
+   "url": "https://www.youtube.com/watch?v=qtlTF4hjwnE",
+   "title": "Stop Hardcoding Prompts! 🤯 Dynamic Prompt Engineering with Java & LangChain4j",
+   "channel": "CodismLab",
+   "published": "2026-08-18",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "DLEPGhA4NJQ",
+   "url": "https://www.youtube.com/watch?v=DLEPGhA4NJQ",
+   "title": "Beyond Components: The Future of AI UI | Ruben Casas at Agent Conf 2026",
+   "channel": "Callstack",
+   "published": "2026-09-22",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "conference talk (Agent Conf 2026): beyond components, the future of AI UI",
+   "raw": "sources/raw/2026-10-01-market-scan-s04-structured-outputs/yt-DLEPGhA4NJQ-callstack-ruben-casas-beyond-components-ai-ui.md",
+   "duration": "00:20:31"
+  },
+  {
+   "id": "vmM9nmb4Chk",
+   "url": "https://www.youtube.com/watch?v=vmM9nmb4Chk",
+   "title": "Claude AI for Professionals: Moving Beyond Chatbots to Agentic Workflows",
+   "channel": "Your IT Tutorial",
+   "published": "2026-07-13",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "9Ojj6tTYI9c",
+   "url": "https://www.youtube.com/watch?v=9Ojj6tTYI9c",
+   "title": "Ep 06: Our First AI Mini Project | Free AI Engineer Course | 8 Weeks",
+   "channel": "Padho with Pratyush",
+   "published": "2026-07-15",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner tutorial: re-explanation of the vendor docs already in the written canon"
+  },
+  {
+   "id": "QhqTZZprzZg",
+   "url": "https://www.youtube.com/watch?v=QhqTZZprzZg",
+   "title": "The Secret to Controllable AI: Dynamic Chat Prompt Templates Explained Simply | AI Foundations #10 🤖",
+   "channel": "VLSI Design",
+   "published": "2026-08-24",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "2osA9CA1WrM",
+   "url": "https://www.youtube.com/watch?v=2osA9CA1WrM",
+   "title": "Agentic AI in Apps: 7 Anticipatory Interfaces",
+   "channel": "TELUS Digital",
+   "published": "2026-08-27",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "s8uiqVjdeXU",
+   "url": "https://www.youtube.com/watch?v=s8uiqVjdeXU",
+   "title": "13. LangChain Prompt Templates Explained | gen ai playlist",
+   "channel": "learn by doing it",
+   "published": "2026-09-28",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner tutorial: re-explanation of the vendor docs already in the written canon"
+  },
+  {
+   "id": "i8XCnz0PM8g",
+   "url": "https://www.youtube.com/watch?v=i8XCnz0PM8g",
+   "title": "Mastering Prompts in LangChain 2026 | Static vs Dynamic Prompts and Templates @SCALER",
+   "channel": "SCALER",
+   "published": "2026-01-09",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner tutorial: re-explanation of the vendor docs already in the written canon"
+  },
+  {
+   "id": "IVSWtmNr9e0",
+   "url": "https://www.youtube.com/watch?v=IVSWtmNr9e0",
+   "title": "4. AI for Data Engineers | PromptTemplate in LangChain | Build Better AI Prompts",
+   "channel": "SS UNITECH",
+   "published": "2026-08-15",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "n2T09s-m1vo",
+   "url": "https://www.youtube.com/watch?v=n2T09s-m1vo",
+   "title": "✈️ Prompt Templates for AI Agents | Build a Smarter Travel Planner (Atlas Proje",
+   "channel": "Super Data Science",
+   "published": "2026-06-26",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "rzA5Yr_1GzM",
+   "url": "https://www.youtube.com/watch?v=rzA5Yr_1GzM",
+   "title": "Prompt Templates Explained 🚀 | Build Dynamic AI Apps with LangChain",
+   "channel": "Tech Guruji: AI & DevOps",
+   "published": "2026-07-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "-IxuY2JBztg",
+   "url": "https://www.youtube.com/watch?v=-IxuY2JBztg",
+   "title": "Structured Outputs Explained Simply | Get Reliable JSON from LLMs | Agentic AI Series",
+   "channel": "Coding with Neeraj",
+   "published": "2026-08-20",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Q5F8LeqOkc4",
+   "url": "https://www.youtube.com/watch?v=Q5F8LeqOkc4",
+   "title": "How to get Structured Output JSON in Google AI Studio (2026 Full Guide)",
+   "channel": "Tutorialytics",
+   "published": "2026-02-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "vvhPZY0U5fI",
+   "url": "https://www.youtube.com/watch?v=vvhPZY0U5fI",
+   "title": "ChatPromptTemplate in LangChain Explained | Dynamic Prompts with Real Examples | LangChain Tutorial",
+   "channel": "Tech with suprbcoder",
+   "published": "2026-08-22",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "0VxeSyxHVvU",
+   "url": "https://www.youtube.com/watch?v=0VxeSyxHVvU",
+   "title": "How to Create Structured Outputs Using Claude AI Full Guide 2026",
+   "channel": "How To Solve Pro",
+   "published": "2026-05-12",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "FGBUPD-SHMw",
+   "url": "https://www.youtube.com/watch?v=FGBUPD-SHMw",
+   "title": "5 Python Coding Skills That Get You Hired in 2026",
+   "channel": "Tech With Tim",
+   "published": "2026-09-27",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner tutorial: re-explanation of the vendor docs already in the written canon"
+  },
+  {
+   "id": "X117w2Rark8",
+   "url": "https://www.youtube.com/watch?v=X117w2Rark8",
+   "title": "Jev - The Ultimate Classification Model?",
+   "channel": "Sam Witteveen",
+   "published": "2026-09-18",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "recognised practitioner (Sam Witteveen) testing Jev for classification/extraction — 444k views in two weeks",
+   "raw": "sources/raw/2026-10-01-market-scan-s04-structured-outputs/yt-X117w2Rark8-sam-witteveen-jev-classification-model.md",
+   "duration": "00:16:18"
+  },
+  {
+   "id": "_p4FRkFRxjY",
+   "url": "https://www.youtube.com/watch?v=_p4FRkFRxjY",
+   "title": "Jev AI, Clearly Explained in 11 Minutes",
+   "channel": "Javid Shaikh",
+   "published": "2026-09-30",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "mViFYTwWvcM",
+   "url": "https://www.youtube.com/watch?v=mViFYTwWvcM",
+   "title": "Spec-Driven Development: AI Assisted Coding Explained",
+   "channel": "IBM Technology",
+   "published": "2026-02-28",
+   "type": "video",
+   "module": "s17",
+   "modules": [
+    "s17"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s17 (found in the s4 scan): IBM explainer on spec-driven development — parked for s17 (corporate explainer, high reach)"
+  },
+  {
+   "id": "nckyjLeaPB8",
+   "url": "https://www.youtube.com/watch?v=nckyjLeaPB8",
+   "title": "Claude API - Structured Outputs",
+   "channel": "The Sensible Programmer",
+   "published": "2026-08-03",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "rsaLl1ITIAk",
+   "url": "https://www.youtube.com/watch?v=rsaLl1ITIAk",
+   "title": "🧱 Structured Outputs in Agentic AI | Control LLM Responses with Classes",
+   "channel": "Super Data Science",
+   "published": "2026-05-27",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "35PSMmDDKP8",
+   "url": "https://www.youtube.com/watch?v=35PSMmDDKP8",
+   "title": "Jev Explained: The Fast AI Model We Tried to Break on Purpose",
+   "channel": "Boundary",
+   "published": "2026-09-25",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "primary source (Boundary/BAML) on Jev, a 2026 structured-output/classification model; trend signal with authority",
+   "raw": "sources/raw/2026-10-01-market-scan-s04-structured-outputs/yt-35PSMmDDKP8-boundary-jev-explained.md",
+   "duration": "00:42:37"
+  },
+  {
+   "id": "EDItfrU7k1E",
+   "url": "https://www.youtube.com/watch?v=EDItfrU7k1E",
+   "title": "JEV Tutorial: System 1 AI, Structured Outputs & Python Examples",
+   "channel": "Mohamed Naji Aboo",
+   "published": "2026-09-22",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "_-ugoIKQVJQ",
+   "url": "https://www.youtube.com/watch?v=_-ugoIKQVJQ",
+   "title": "News from OpenAI Dev Day 2026",
+   "channel": "AI in C# (Rasmus Wulff Jensen)",
+   "published": "2026-09-29",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "MkSRgptSHns",
+   "url": "https://www.youtube.com/watch?v=MkSRgptSHns",
+   "title": "LLM Guardrails: Verifying Inputs & Outputs | Lothar Schulz | VibeKode 2026",
+   "channel": "VibeKode",
+   "published": "2026-08-13",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "5p-sq8v3OXw",
+   "url": "https://www.youtube.com/watch?v=5p-sq8v3OXw",
+   "title": "AI Agents: The Most Valuable Skill You Can Learn in 2026 (Full Course)",
+   "channel": "Open Residency",
+   "published": "2026-07-22",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner tutorial: re-explanation of the vendor docs already in the written canon"
+  },
+  {
+   "id": "l47w8z7FciM",
+   "url": "https://www.youtube.com/watch?v=l47w8z7FciM",
+   "title": "How AI Guardrails Work — Content Moderation, Prompt Injection, and Agentic Safety",
+   "channel": "Tech Growthspire",
+   "published": "2026-09-18",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "TMwX8BAp0j8",
+   "url": "https://www.youtube.com/watch?v=TMwX8BAp0j8",
+   "title": "LLM Structured Outputs in Production: Stop Parsing JSON with Regex — Deep Dive | effloow.com",
+   "channel": "Effloow",
+   "published": "2026-04-17",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "gsJxuvdSa68",
+   "url": "https://www.youtube.com/watch?v=gsJxuvdSa68",
+   "title": "Prompt Engineering | Hands-On Structured Outputs in LLMs  (JSON Mode, Pydantic, Tool Calling) #llm",
+   "channel": "Techfluencer's Quest",
+   "published": "2026-06-12",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "VeiHsiwMBAU",
+   "url": "https://www.youtube.com/watch?v=VeiHsiwMBAU",
+   "title": "What is a Conversational UI?",
+   "channel": "Standarity",
+   "published": "2026-04-27",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "6kq0oG9D32s",
+   "url": "https://www.youtube.com/watch?v=6kq0oG9D32s",
+   "title": "LangChain PromptTemplate Explained in 2 Minutes | Reusable AI Prompts",
+   "channel": "CodeCraft Academy",
+   "published": "2026-07-01",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "hKx0sn9YR8k",
+   "url": "https://www.youtube.com/watch?v=hKx0sn9YR8k",
+   "title": "Getting Clean JSON from AI - Gemini’s Structured Output",
+   "channel": "Imbila AI",
+   "published": "2025-11-15",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "29a6-IWakEM",
+   "url": "https://www.youtube.com/watch?v=29a6-IWakEM",
+   "title": "Master Prompt Templates in LangChain | Zero to Advanced",
+   "channel": "Code & Canvas",
+   "published": "2026-05-07",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "wSXS73WCWLo",
+   "url": "https://www.youtube.com/watch?v=wSXS73WCWLo",
+   "title": "Build Interactive Dashboards With Generative UI",
+   "channel": "Code With Prince",
+   "published": "2026-05-27",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "MMihC99rNYI",
+   "url": "https://www.youtube.com/watch?v=MMihC99rNYI",
+   "title": "LangChain Chat Templates (2.3): Dynamic Prompts & Messages",
+   "channel": "ItsPrasanna",
+   "published": "2026-09-05",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "2O4XlslGXD4",
+   "url": "https://www.youtube.com/watch?v=2O4XlslGXD4",
+   "title": "Production LLM Guardrails",
+   "channel": "software-engineer-blog",
+   "published": "2026-05-05",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "EEqLhlcD26o",
+   "url": "https://www.youtube.com/watch?v=EEqLhlcD26o",
+   "title": "LangChain Tutorial : LangChain Prompt Templates for Beginners: Why Stop Using F-Strings?",
+   "channel": "Mohamed Naji Aboo",
+   "published": "2026-05-12",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "uaqGfo5E9Mc",
+   "url": "https://www.youtube.com/watch?v=uaqGfo5E9Mc",
+   "title": "Week 2 JSON Schema and Structured Output Design",
+   "channel": "The LLM Note",
+   "published": "2026-07-02",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "q9G3D2h0htA",
+   "url": "https://www.youtube.com/watch?v=q9G3D2h0htA",
+   "title": "Prompt Template | Spring AI",
+   "channel": "Telusko",
+   "published": "2026-04-01",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "stack-specific tutorial (Java/.NET), not the module's reference stack"
+  },
+  {
+   "id": "FJIurPFfHWI",
+   "url": "https://www.youtube.com/watch?v=FJIurPFfHWI",
+   "title": "The Engineering Evolution: Mastering Structured LLM Outputs (From JSON Mode to Strict Schemas)",
+   "channel": "Naveen Tech Hub",
+   "published": "2026-09-15",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "e4J2cg33IqQ",
+   "url": "https://www.youtube.com/watch?v=e4J2cg33IqQ",
+   "title": "LangChain Hands-On #3: Build Dynamic Prompts with Prompt Templates",
+   "channel": "TechFoundry",
+   "published": "2026-09-23",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "E635a2PDyUs",
+   "url": "https://www.youtube.com/watch?v=E635a2PDyUs",
+   "title": "Accessibility by Design | with Matthew Luken",
+   "channel": "Mediaweb Global",
+   "published": "2026-09-29",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "RKSF955IA0E",
+   "url": "https://www.youtube.com/watch?v=RKSF955IA0E",
+   "title": "I Tried to Automate My Life Using AI",
+   "channel": "Jan Schulz AI Engineer & Teacher",
+   "published": "2025-10-08",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "p09yRj47kNM",
+   "url": "https://www.youtube.com/watch?v=p09yRj47kNM",
+   "title": "Google's 9 Hour AI Prompt Engineering Course In 20 Minutes",
+   "channel": "Tina Huang",
+   "published": "2024-12-09",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "general prompting explainer, off the module's bullets"
+  },
+  {
+   "id": "VrTByeEvHF0",
+   "url": "https://www.youtube.com/watch?v=VrTByeEvHF0",
+   "title": "BAML to Cytoscape Graph Data",
+   "channel": "Jason Koo",
+   "published": "2025-05-13",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "886hZl5Qp7g",
+   "url": "https://www.youtube.com/watch?v=886hZl5Qp7g",
+   "title": "Boosting LLMs: Performance, Scaling, and Structured Outputs // MLOps Mini Summit #8",
+   "channel": "AAIF Live",
+   "published": "2024-10-03",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "MKCaSCHEjpU",
+   "url": "https://www.youtube.com/watch?v=MKCaSCHEjpU",
+   "title": "The Science of Prompts: How to Talk to AI Effectively : Episode 8",
+   "channel": "Digital future Ai School",
+   "published": "2025-12-19",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Z1HMnNIXQQM",
+   "url": "https://www.youtube.com/watch?v=Z1HMnNIXQQM",
+   "title": "Freedom Tech DC Day 1",
+   "channel": "Bitcoin Policy Institute",
+   "published": "2026-09-26",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "9FtPkKv98A0",
+   "url": "https://www.youtube.com/watch?v=9FtPkKv98A0",
+   "title": "BAML Overview: Making LLMs Reliable in Your Codebase | Trip Planner Demo",
+   "channel": "Hypermode",
+   "published": "2025-03-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "7wwWRph3Jls",
+   "url": "https://www.youtube.com/watch?v=7wwWRph3Jls",
+   "title": "Agent Engineering with Pydantic + Graphs — with Samuel Colvin, CEO of Pydantic Logfire",
+   "channel": "Latent Space",
+   "published": "2025-02-06",
+   "type": "podcast",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "reference podcast: Pydantic's author on typed/validated agent outputs and PydanticAI",
+   "raw": "sources/raw/2026-10-01-market-scan-s04-structured-outputs/podcast-7wwWRph3Jls-podcast-latent-space-samuel-colvin-pydantic-ai-graphs.md",
+   "duration": "01:02:15"
+  },
+  {
+   "id": "yj-wSRJwrrc",
+   "url": "https://www.youtube.com/watch?v=yj-wSRJwrrc",
+   "title": "Pydantic is all you need: Jason Liu",
+   "channel": "AI Engineer",
+   "published": "2023-11-01",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "canon talk (AI Engineer 2023): Pydantic models as contracts, validators as retry logic — primary structured-extraction source",
+   "raw": "sources/raw/2026-10-01-market-scan-s04-structured-outputs/yt-yj-wSRJwrrc-aie-jason-liu-pydantic-is-all-you-need.md",
+   "duration": "00:17:55"
+  },
+  {
+   "id": "H3hB6AcG93E",
+   "url": "https://www.youtube.com/watch?v=H3hB6AcG93E",
+   "title": "The Rise and Fall of an Abandoned Mining Town | Sleep Story, Dark Screen",
+   "channel": "Whispers In Nightmares",
+   "published": "2026-09-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "qPPqNV5J2N8",
+   "url": "https://www.youtube.com/watch?v=qPPqNV5J2N8",
+   "title": "Get Started with BAML",
+   "channel": "Jason Koo",
+   "published": "2025-05-09",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "8fNP4N46RRo",
+   "url": "https://www.youtube.com/watch?v=8fNP4N46RRo",
+   "title": "Stanford CME295 Transformers & LLMs | Autumn 2025 | Lecture 8 - LLM Evaluation",
+   "channel": "Stanford Online",
+   "published": "2025-12-02",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s5 (found in the s4 scan): Stanford CME295 lecture on LLM evaluation — parked for the evals bullet of s5"
+  },
+  {
+   "id": "bmWZk9vTze0",
+   "url": "https://www.youtube.com/watch?v=bmWZk9vTze0",
+   "title": "MCP is all you need — Samuel Colvin, Pydantic",
+   "channel": "AI Engineer",
+   "published": "2025-07-18",
+   "type": "video",
+   "module": "s13",
+   "modules": [
+    "s13"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s13 (found in the s4 scan): AI Engineer 2025: 'MCP is all you need' (Samuel Colvin) — parked for orchestration/MCP"
+  },
+  {
+   "id": "zM9RYqCcioM",
+   "url": "https://www.youtube.com/watch?v=zM9RYqCcioM",
+   "title": "Finetuning: 500m AI agents in production with 2 engineers — Mustafa Ali & Kyle Corbitt",
+   "channel": "AI Engineer",
+   "published": "2025-04-12",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Jason Liu, Shreya Rajpal, Samuel Colvin); the higher-authority or more recent version was transcribed"
+  },
+  {
+   "id": "_yS9iAOHk6Q",
+   "url": "https://www.youtube.com/watch?v=_yS9iAOHk6Q",
+   "title": "AIE Worlds Fair 2026 Jeffrey Lee Chan - Develop at idea velocity (long form)",
+   "channel": "JLC",
+   "published": "2026-07-26",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "PofH2f3a9bI",
+   "url": "https://www.youtube.com/watch?v=PofH2f3a9bI",
+   "title": "Advanced Context Engineering: Build AI Systems That Actually Work (11+ Hours)",
+   "channel": "Superposition",
+   "published": "2026-09-29",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "YZHPEkfy2kc",
+   "url": "https://www.youtube.com/watch?v=YZHPEkfy2kc",
+   "title": "$1 AI Guardrails: The Unreasonable Effectiveness of Finetuned ModernBERTs – Diego Carpintero",
+   "channel": "AI Engineer",
+   "published": "2026-04-16",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "AI Engineer 2026: cheap guardrails with fine-tuned ModernBERT classifiers — production guardrail architecture",
+   "raw": "sources/raw/2026-10-01-market-scan-s04-structured-outputs/yt-YZHPEkfy2kc-aie-diego-caravana-1-dollar-guardrails-modernbert.md",
+   "duration": "00:43:52"
+  },
+  {
+   "id": "pZ4DIH2BVqg",
+   "url": "https://www.youtube.com/watch?v=pZ4DIH2BVqg",
+   "title": "Pydantic is STILL all you need: Jason Liu",
+   "channel": "AI Engineer",
+   "published": "2024-09-06",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "canon follow-up (AI Engineer 2024): what changed after structured-outputs APIs",
+   "raw": "sources/raw/2026-10-01-market-scan-s04-structured-outputs/yt-pZ4DIH2BVqg-aie-jason-liu-pydantic-is-still-all-you-need.md",
+   "duration": "00:15:21"
+  },
+  {
+   "id": "uiKiHL3XGHU",
+   "url": "https://www.youtube.com/watch?v=uiKiHL3XGHU",
+   "title": "High Agency Pydantic over VC Backed Frameworks — with Jason Liu of Instructor",
+   "channel": "Latent Space",
+   "published": "2024-04-24",
+   "type": "podcast",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Jason Liu, Shreya Rajpal, Samuel Colvin); the higher-authority or more recent version was transcribed"
+  },
+  {
+   "id": "Sir59K8ZDPU",
+   "url": "https://www.youtube.com/watch?v=Sir59K8ZDPU",
+   "title": "Why Agentic Systems Need Ontologies — Frank Coyle, UC Berkeley",
+   "channel": "AI Engineer",
+   "published": "2026-07-23",
+   "type": "video",
+   "module": "s13",
+   "modules": [
+    "s13"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s13 (found in the s4 scan): AI Engineer 2026: why agentic systems need ontologies — parked for orchestration/knowledge modelling"
+  },
+  {
+   "id": "higlHgYDc5E",
+   "url": "https://www.youtube.com/watch?v=higlHgYDc5E",
+   "title": "Instructor with Jason Liu - Weaviate Podcast #88!",
+   "channel": "Weaviate vector database",
+   "published": "2024-02-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Jason Liu, Shreya Rajpal, Samuel Colvin); the higher-authority or more recent version was transcribed"
+  },
+  {
+   "id": "98pxUKDiRNk",
+   "url": "https://www.youtube.com/watch?v=98pxUKDiRNk",
+   "title": "How to Talk to AI Better | Prompt Engineering Made Simple",
+   "channel": "Truly AI",
+   "published": "2025-12-19",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "lDBKEWGDEQM",
+   "url": "https://www.youtube.com/watch?v=lDBKEWGDEQM",
+   "title": "Stop Prompting — Greg Pstrucha, Sentry | AI Engineer World's Fair 2026",
+   "channel": "WorkOS",
+   "published": "2026-07-11",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "wXjZdrS3LqA",
+   "url": "https://www.youtube.com/watch?v=wXjZdrS3LqA",
+   "title": "Samuel Colvin Controlling the wild: Monty, from tool calling to computer use - PyAI Conf 2026",
+   "channel": "Pydantic",
+   "published": "2026-04-01",
+   "type": "video",
+   "module": "s14",
+   "modules": [
+    "s14"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s14 (found in the s4 scan): PyAI Conf: Monty, from tool calling to computer use — parked for sandboxing"
+  },
+  {
+   "id": "nxnQl4AcqFg",
+   "url": "https://www.youtube.com/watch?v=nxnQl4AcqFg",
+   "title": "⚡️Monty: the ultrafast Python interpreter by Agents for Agents — Samuel Colvin, Pydantic",
+   "channel": "Latent Space",
+   "published": "2026-03-14",
+   "type": "podcast",
+   "module": "s14",
+   "modules": [
+    "s14"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s14 (found in the s4 scan): Latent Space: Monty sandboxed interpreter — parked for sandboxing"
+  },
+  {
+   "id": "_h3Lxc665v8",
+   "url": "https://www.youtube.com/watch?v=_h3Lxc665v8",
+   "title": "Serghei's Podcast #13 - Jason Liu (Building with LLMs, ML, Gen AI, Instructor, Pydantic)",
+   "channel": "Serghei's Podcast",
+   "published": "2024-02-12",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "FZdni7nsy7w",
+   "url": "https://www.youtube.com/watch?v=FZdni7nsy7w",
+   "title": "1.5 Structured Outputs and Schema Enforcement with Pydantic and JSON Sc... | LLM Foundations",
+   "channel": "Adsorp AI",
+   "published": "2026-09-12",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "flf_IKnFYnE",
+   "url": "https://www.youtube.com/watch?v=flf_IKnFYnE",
+   "title": "From Stateless Nightmares to Durable Agents — Samuel Colvin, Pydantic",
+   "channel": "AI Engineer",
+   "published": "2025-11-24",
+   "type": "video",
+   "module": "s13",
+   "modules": [
+    "s13"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "candidate",
+   "reason": "parked for module s13 (found in the s4 scan): AI Engineer 2025: Samuel Colvin on durable agents — parked for orchestration"
+  },
+  {
+   "id": "JGs8znv4VBo",
+   "url": "https://www.youtube.com/watch?v=JGs8znv4VBo",
+   "title": "Pydantic + Instructor: Biến LLM Thành Nguồn Dữ Liệu Tin Cậy Cho Ứng Dụng AI",
+   "channel": "aivn360",
+   "published": "2026-05-29",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "y_T5XXLSD2k",
+   "url": "https://www.youtube.com/watch?v=y_T5XXLSD2k",
+   "title": "Building Reliable LLM Apps (For Real)",
+   "channel": "SCB 10X",
+   "published": "2025-11-05",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "9-vGxMoUM9Y",
+   "url": "https://www.youtube.com/watch?v=9-vGxMoUM9Y",
+   "title": "Trust, but Verify: Shreya Rajpal",
+   "channel": "AI Engineer",
+   "published": "2023-11-25",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "transcribed",
+   "reason": "canon talk (AI Engineer 2023): Guardrails AI founder on output validation as a contract",
+   "raw": "sources/raw/2026-10-01-market-scan-s04-structured-outputs/yt-9-vGxMoUM9Y-aie-shreya-rajpal-trust-but-verify.md",
+   "duration": "00:19:41"
+  },
+  {
+   "id": "JrJ-6LGrwkk",
+   "url": "https://www.youtube.com/watch?v=JrJ-6LGrwkk",
+   "title": "Ethical AI Explained | Bias, Fairness & Explainability in LLMs | AI/ML Class 7",
+   "channel": "Fusionpact",
+   "published": "2026-01-08",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "wp0H9WjeobU",
+   "url": "https://www.youtube.com/watch?v=wp0H9WjeobU",
+   "title": "Guardrails AI: The Playbook for Safer, Hallucination-Free LLMs — Shreya Rajpal Explains",
+   "channel": "The MAD Podcast with Matt Turck",
+   "published": "2023-09-27",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Jason Liu, Shreya Rajpal, Samuel Colvin); the higher-authority or more recent version was transcribed"
+  },
+  {
+   "id": "nHmJaoUzGgo",
+   "url": "https://www.youtube.com/watch?v=nHmJaoUzGgo",
+   "title": "How Do We Put Guardrails on AI? with Shreya Rajpal",
+   "channel": "Neural Compass",
+   "published": "2025-07-15",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "mspA9SUgjYw",
+   "url": "https://www.youtube.com/watch?v=mspA9SUgjYw",
+   "title": "Shreya Rajpal: Practical Guardrails for your AI applications",
+   "channel": "FunctionalTV",
+   "published": "2023-07-12",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Jason Liu, Shreya Rajpal, Samuel Colvin); the higher-authority or more recent version was transcribed"
+  },
+  {
+   "id": "8rVQuZlRaqo",
+   "url": "https://www.youtube.com/watch?v=8rVQuZlRaqo",
+   "title": "A Practical AI Agent Workflow For Companies In 2027 (Guide)",
+   "channel": "Nick Saraev",
+   "published": "2026-07-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "97plVwe5hxI",
+   "url": "https://www.youtube.com/watch?v=97plVwe5hxI",
+   "title": "Keeping the AI Revolution on the Rails with Shreya Rajpal of Guardrails AI",
+   "channel": "Cognitive Revolution \"How AI Changes Everything\"",
+   "published": "2023-05-23",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Jason Liu, Shreya Rajpal, Samuel Colvin); the higher-authority or more recent version was transcribed"
+  },
+  {
+   "id": "BZL5QKH8cCc",
+   "url": "https://www.youtube.com/watch?v=BZL5QKH8cCc",
+   "title": "Shreya Rajpal - Guardrails AI",
+   "channel": "Founders You Should Know",
+   "published": "2023-12-12",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "same speaker/topic as a selected item (Jason Liu, Shreya Rajpal, Samuel Colvin); the higher-authority or more recent version was transcribed"
+  },
+  {
+   "id": "likW9A18e6U",
+   "url": "https://www.youtube.com/watch?v=likW9A18e6U",
+   "title": "How Do We Put Guardrails on AI? with Shreya Rajpal",
+   "channel": "Neural Compass",
+   "published": "2026-05-11",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "ubjnwIJerqo",
+   "url": "https://www.youtube.com/watch?v=ubjnwIJerqo",
+   "title": "The AI Arms Race",
+   "channel": "AI Mantra Lab",
+   "published": "2026-09-13",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "brS-QNOJIm0",
+   "url": "https://www.youtube.com/watch?v=brS-QNOJIm0",
+   "title": "Prompt Engineering for Beginners:How to Talk to AI and Get PERFECT Answers | With the Pizza Analogy",
+   "channel": "TechBridgeByTasleem",
+   "published": "2025-12-14",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Z-L1mEGFQYU",
+   "url": "https://www.youtube.com/watch?v=Z-L1mEGFQYU",
+   "title": "PNSQChronicles 2025: Unlock the Future of QA Automation with Generative AI with Bruno Mazzotta",
+   "channel": "PNSQC",
+   "published": "2025-05-13",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "NRmAXDWJVnU",
+   "url": "https://www.youtube.com/watch?v=NRmAXDWJVnU",
+   "title": "Generative AI Explained In 5 Minutes | What Is GenAI? | Introduction To Generative AI | Simplilearn",
+   "channel": "Simplilearn",
+   "published": "2024-11-05",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "corporate-education or beginner tutorial: re-explanation of the vendor docs already in the written canon"
+  },
+  {
+   "id": "Q4EJr2jAx7M",
+   "url": "https://www.youtube.com/watch?v=Q4EJr2jAx7M",
+   "title": "Tambo: React Package for Building Generative UI Experiences",
+   "channel": "Product Grade",
+   "published": "2025-04-25",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "secondary explainer or vendor demo; the primary source for the same point is in the written canon or a selected talk"
+  },
+  {
+   "id": "3a0WHZVb1Gg",
+   "url": "https://www.youtube.com/watch?v=3a0WHZVb1Gg",
+   "title": "Prompt Engineering for Generative AI • James Phoenix, Mike Taylor & Phil Winder • GOTO 2025",
+   "channel": "GOTO Conferences",
+   "published": "2025-03-06",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "general prompting explainer, off the module's bullets"
+  },
+  {
+   "id": "S9xvuxgffMI",
+   "url": "https://www.youtube.com/watch?v=S9xvuxgffMI",
+   "title": "Transforming AI Interfaces with Generative UI Rabi Shanker Guha, Co-Founder, CEO of Thesys | Ep. 4",
+   "channel": "WisdomPlexus",
+   "published": "2025-07-31",
+   "type": "video",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "NjOfH9D8aJo",
+   "url": "https://www.youtube.com/watch?v=NjOfH9D8aJo",
+   "title": "Building AGI with OpenAI's Structured Outputs API — with Michelle Pokrass (From API to AGI)",
+   "channel": "Latent Space",
+   "published": "2024-09-17",
+   "duration": "01:12:23",
+   "type": "podcast",
+   "status": "transcribed",
+   "reason": "reference podcast: OpenAI's structured-outputs lead on constrained decoding, strict schemas, refusals; found via the RSS pass, YouTube version with captions",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "raw": "sources/raw/2026-10-01-market-scan-s04-structured-outputs/podcast-NjOfH9D8aJo-podcast-latent-space-michelle-pokrass-openai-structured-outputs.md",
+   "decided": "2026-10-01"
+  },
+  {
+   "id": "hkhDdcM5V94",
+   "url": "https://www.youtube.com/watch?v=hkhDdcM5V94",
+   "title": "Building with Anthropic Claude: Prompt Workshop with Zack Witten",
+   "channel": "AI Engineer",
+   "published": "2024",
+   "duration": "01:34:00",
+   "type": "video",
+   "status": "transcribed",
+   "reason": "canon workshop (written-canon list, older than the 12-month filter): Anthropic's lead prompt engineer on structured prompts and templates",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "raw": "sources/raw/2026-10-01-market-scan-s04-structured-outputs/yt-hkhDdcM5V94-aie-zack-witten-anthropic-prompt-workshop.md",
+   "decided": "2026-10-01"
+  },
+  {
+   "id": "am_oeAoUhew",
+   "url": "https://www.youtube.com/watch?v=am_oeAoUhew",
+   "title": "Harness Engineering: How to Build Software When Humans Steer, Agents Execute — Ryan Lopopolo, OpenAI",
+   "channel": "AI Engineer",
+   "published": "2026-04-17",
+   "duration": "00:46:20",
+   "type": "video",
+   "status": "candidate",
+   "reason": "parked for module s17 (found in the s4 scan): OpenAI's harness-engineering talk, 244k views",
+   "module": "s17",
+   "modules": [
+    "s17"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01"
+  },
+  {
+   "id": "latent-space-agent-reasoning-interface-karina-nguyen",
+   "url": "https://api.substack.com/feed/podcast/1084089.rss",
+   "title": "The Agent Reasoning Interface: o1/o3, Claude 3, ChatGPT Canvas, Tasks, and Operator — with Karina Nguyen of OpenAI",
+   "channel": "Latent Space",
+   "published": "2025-02-01",
+   "type": "podcast",
+   "status": "discarded",
+   "reason": "RSS pass for s4: product-interface conversation, secondary to the three gen-UI talks selected; time budget",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01"
+  },
+  {
+   "id": "latent-space-one-year-of-mcp",
+   "url": "https://api.substack.com/feed/podcast/1084089.rss",
+   "title": "One Year of MCP — with David Soria Parra and AAIF leads",
+   "channel": "Latent Space",
+   "published": "2025-12-27",
+   "type": "podcast",
+   "status": "candidate",
+   "reason": "parked for module s13 (found in the s4 RSS pass)",
+   "module": "s13",
+   "modules": [
+    "s13"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01"
+  },
+  {
+   "id": "latent-space-shreya-rajpal-guaranteed-quality",
+   "url": "https://api.substack.com/feed/podcast/1084089.rss",
+   "title": "Guaranteed quality and structure in LLM outputs — with Shreya Rajpal of Guardrails AI",
+   "channel": "Latent Space",
+   "published": "2023-05-16",
+   "type": "podcast",
+   "status": "discarded",
+   "reason": "RSS pass for s4: same speaker as the selected AI Engineer talk (9-vGxMoUM9Y), older",
+   "module": "s4",
+   "modules": [
+    "s4"
+   ],
+   "scan": "sources/2026-10-01-market-scan-s04-structured-outputs.md",
+   "decided": "2026-10-01"
   }
  ]
 }
