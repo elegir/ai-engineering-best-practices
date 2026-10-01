@@ -3,7 +3,7 @@ title: "Practice — context management: budget and triggers, reversible compact
 type: practice
 status: draft            # draft until principle 11 is confirmed against LIDR session 2
 date: 2026-09-27
-last-reviewed: 2026-09-27
+last-reviewed: 2026-09-30
 tags: [context-engineering, compaction, prompt-caching, sub-agents, long-context, rag, evals]
 kind: capability
 applies-when: "multi_turn or retrieval"
@@ -61,3 +61,4 @@ The product keeps a conversation or an agent loop across many model calls, or an
 
 ## Change log
 - 2026-09-27 — created from the session-2 market scan (draft).
+- 2026-09-30 (s3) — metrics file points at the OTel GenAI attribute names in `../llm-gateway/tracing-otel.md`.

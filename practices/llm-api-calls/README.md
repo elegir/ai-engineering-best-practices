@@ -3,7 +3,7 @@ title: "Practice — LLM API calls: one client module, a structured versioned pr
 type: practice
 status: draft            # draft until principle 10 is confirmed against LIDR session 1
 date: 2026-09-27
-last-reviewed: 2026-09-27
+last-reviewed: 2026-09-30
 tags: [llm-api, prompting, tokens, prompt-caching, providers, reliability]
 kind: capability
 applies-when: "llm_calls"
@@ -62,3 +62,4 @@ The product calls a language model at runtime and one of these symptoms appears:
 ## Change log
 - 2026-09-27 — created from the session-1 market scan (draft).
 - 2026-09-27 (s2) — checklist item 2 sharpened (cache breakers, positive rules); provider row 10 (cached-input price); `context-budget.md` rule 7 (cache limits). Source `sources/2026-09-27-s02-context-caching-digest.md`.
+- 2026-09-30 (s3) — skeleton comment: one retry owner in production; provider row 8: gateway and provider policies both apply. Source `sources/2026-09-30-s03-wrappers-digest.md`.

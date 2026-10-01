@@ -169,13 +169,14 @@
    "channel": "Latent Space",
    "published": "2026-04-15",
    "status": "applied",
-   "reason": "selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/",
+   "reason": "selected by authority test; digested in sources/2026-09-24-s12-agents-digest.md; knowledge in principles/21 and practices/agent-patterns/ ; reused by s3 (read again, not re-transcribed)",
    "module": "s12",
    "scan": "sources/2026-09-24-market-scan-s12-intro-to-agents.md",
    "raw": "sources/raw/2026-09-24-market-scan-s12-agents/podcast-ATt7QJgt-2k-podcast-latent-space-notion-custom-agents-evals.md",
    "decided": "2026-09-24",
    "modules": [
-    "s12"
+    "s12",
+    "s3"
    ]
   },
   {
@@ -628,18 +629,20 @@
   },
   {
    "id": "https://www.aiengineeringpodcast.com/tensorzero-llm-gateway-prompt-optimization-episode-45",
-   "url": "https://www.aiengineeringpodcast.com/tensorzero-llm-gateway-prompt-optimization-episode-45",
+   "url": "https://www.youtube.com/watch?v=dVl5aQSQuhM",
    "title": "Optimize Your AI Applications Automatically With The TensorZero LLM Gateway",
    "channel": "AI Engineering Podcast",
    "published": "2025-01-22",
-   "status": "candidate",
-   "reason": "parked for module s3",
+   "status": "applied",
+   "reason": "parked by the s1 RSS pass; digested in sources/2026-09-30-s03-wrappers-digest.md; knowledge in principles/12 and practices/llm-gateway/",
    "module": "s3",
-   "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
-   "decided": "2026-09-27",
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
    "modules": [
     "s3"
-   ]
+   ],
+   "raw": "sources/raw/2026-09-30-market-scan-s03-wrappers/podcast-dVl5aQSQuhM-podcast-ai-engineering-podcast-tensorzero-llm-gateway.md",
+   "type": "podcast"
   },
   {
    "id": "https://share.transistor.fm/s/964292e1",
@@ -3687,13 +3690,14 @@
    "channel": "OpenAI",
    "published": "2025-10-14",
    "status": "applied",
-   "reason": "selected by authority test; digested in sources/2026-09-27-s01-llm-setup-digest.md; knowledge in principles/10 and practices/llm-api-calls/",
+   "reason": "selected by authority test; digested in sources/2026-09-27-s01-llm-setup-digest.md; knowledge in principles/10 and practices/llm-api-calls/ ; reused by s3 (read again, not re-transcribed)",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
    "raw": "sources/raw/2026-09-27-market-scan-s01-llm-setup/yt-hNr5EebepYs-openai-build-hour-responses-api.md",
    "decided": "2026-09-27",
    "modules": [
-    "s1"
+    "s1",
+    "s3"
    ]
   },
   {
@@ -3783,13 +3787,14 @@
    "channel": "Sam Witteveen",
    "published": "2026-01-20",
    "status": "applied",
-   "reason": "selected by authority test; digested in sources/2026-09-27-s01-llm-setup-digest.md; knowledge in principles/10 and practices/llm-api-calls/",
+   "reason": "selected by authority test; digested in sources/2026-09-27-s01-llm-setup-digest.md; knowledge in principles/10 and practices/llm-api-calls/ ; reused by s3 (read again, not re-transcribed)",
    "module": "s1",
    "scan": "sources/2026-09-27-market-scan-s01-llm-setup.md",
    "raw": "sources/raw/2026-09-27-market-scan-s01-llm-setup/yt-b-BzeHF6WLA-sam-witteveen-open-responses-standard-api.md",
    "decided": "2026-09-27",
    "modules": [
-    "s1"
+    "s1",
+    "s3"
    ]
   },
   {
@@ -4691,10 +4696,11 @@
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "decided": "2026-09-27",
    "status": "applied",
-   "reason": "selected by authority test (s2); digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/",
+   "reason": "selected by authority test (s2); digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/ ; reused by s3 (read again, not re-transcribed)",
    "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/yt-nkJXADeI62c-dave-ebbelaar-effective-context-engineering.md",
    "modules": [
-    "s2"
+    "s2",
+    "s3"
    ]
   },
   {
@@ -5429,13 +5435,14 @@
    "published": "2025-09-11",
    "duration": "01:03:19",
    "status": "applied",
-   "reason": "reference podcast; digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/",
+   "reason": "reference podcast; digested in sources/2026-09-27-s02-context-caching-digest.md; knowledge in principles/11 and practices/context-management/ ; reused by s3 (read again, not re-transcribed)",
    "module": "s2",
    "scan": "sources/2026-09-27-market-scan-s02-context-caching.md",
    "raw": "sources/raw/2026-09-27-market-scan-s02-context-caching/podcast-_IlTcWciEC4-podcast-latent-space-lance-martin-context-engineering-for-agents.md",
    "decided": "2026-09-27",
    "modules": [
-    "s2"
+    "s2",
+    "s3"
    ]
   },
   {
@@ -5875,8 +5882,8 @@
    "channel": "Streamlit",
    "published": "2026",
    "type": "written",
-   "status": "catalogued",
-   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
+   "status": "cited",
+   "reason": "cited in principles/12 §3.6 (canon for the UI bullet; no video selected)",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
    "decided": "2026-09-30",
@@ -5891,8 +5898,8 @@
    "channel": "Gradio",
    "published": "2026",
    "type": "written",
-   "status": "catalogued",
-   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
+   "status": "cited",
+   "reason": "cited in principles/12 §3.6",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
    "decided": "2026-09-30",
@@ -5907,8 +5914,8 @@
    "channel": "BerriAI",
    "published": "2026",
    "type": "written",
-   "status": "catalogued",
-   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
+   "status": "cited",
+   "reason": "cited in principles/12 §3.2 and practices/llm-gateway/gateway_config.yaml (read 2026-09-30)",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
    "decided": "2026-09-30",
@@ -5939,8 +5946,8 @@
    "channel": "OpenRouter",
    "published": "2026",
    "type": "written",
-   "status": "catalogued",
-   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
+   "status": "cited",
+   "reason": "cited in practices/llm-gateway/README.md (re-read before promoting to current)",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
    "decided": "2026-09-30",
@@ -6003,8 +6010,8 @@
    "channel": "OpenTelemetry",
    "published": "2026",
    "type": "written",
-   "status": "catalogued",
-   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
+   "status": "cited",
+   "reason": "page moved to the semantic-conventions-genai repo (status Development); cited in principles/12 §3.4 and practices/llm-gateway/tracing-otel.md (read 2026-09-30)",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
    "decided": "2026-09-30",
@@ -6035,8 +6042,8 @@
    "channel": "Redis",
    "published": "2025",
    "type": "written",
-   "status": "catalogued",
-   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-01-05.md; read when the module is digested",
+   "status": "cited",
+   "reason": "cited in principles/12 §3.5 and practices/llm-gateway/semantic-cache-decision.md",
    "module": "s3",
    "scan": "sources/catalog-written-canon.md",
    "decided": "2026-09-30",
@@ -6083,14 +6090,15 @@
    "channel": "AI Engineer",
    "published": "2026",
    "type": "video",
-   "status": "candidate",
-   "reason": "listed in the written-canon catalogue (Project doc); to be taken by the s3 scan",
+   "status": "applied",
+   "reason": "canon talk from the written catalogue; digested in sources/2026-09-30-s03-wrappers-digest.md; knowledge in principles/12 and practices/llm-gateway/",
    "module": "s3",
-   "scan": "sources/catalog-written-canon.md",
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
    "decided": "2026-09-30",
    "modules": [
     "s3"
-   ]
+   ],
+   "raw": "sources/raw/2026-09-30-market-scan-s03-wrappers/yt-zrZ1amZBSPw-ai-engineer-kanish-manuja-twilio-productionizing-llm-gateways.md"
   },
   {
    "id": "8kMaTybvDUw",
@@ -6099,14 +6107,15 @@
    "channel": "AI Engineer",
    "published": "2025-06",
    "type": "video",
-   "status": "candidate",
-   "reason": "listed in the written-canon catalogue (Project doc); to be taken by the s3 scan",
+   "status": "applied",
+   "reason": "canon talk from the written catalogue; digested in sources/2026-09-30-s03-wrappers-digest.md; knowledge in principles/12 and practices/llm-gateway/",
    "module": "s3",
-   "scan": "sources/catalog-written-canon.md",
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
    "decided": "2026-09-30",
    "modules": [
     "s3"
-   ]
+   ],
+   "raw": "sources/raw/2026-09-30-market-scan-s03-wrappers/yt-8kMaTybvDUw-ai-engineer-dex-horthy-12-factor-agents.md"
   },
   {
    "id": "deeplearning.ai/courses/fast-prototyping-of-genai-apps-with-streamlit",
@@ -6123,6 +6132,1950 @@
    "modules": [
     "s3"
    ]
+  },
+  {
+   "id": "vZb0Si1p64o",
+   "url": "https://www.youtube.com/watch?v=vZb0Si1p64o",
+   "title": "Orchestrating Intelligence: Multi-Agentic Design Patterns for Production AI - Mary Grygleski",
+   "channel": "Developer Summit",
+   "published": "2026-06-01",
+   "duration": "01:02:35",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "vroQGLD_EAM",
+   "url": "https://www.youtube.com/watch?v=vroQGLD_EAM",
+   "title": "LLM and Agent Foundations Part 5: Patterns, Architecture, HLD & MVP",
+   "channel": "Core Concept Learning",
+   "published": "2026-09-20",
+   "duration": "00:13:41",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "046lh7Nn2_4",
+   "url": "https://www.youtube.com/watch?v=046lh7Nn2_4",
+   "title": "S7 | Layered Architecture Pattern | SDA Best Practices | Uplatz",
+   "channel": "Uplatz",
+   "published": "2026-09-23",
+   "duration": "00:07:32",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "off-topic stack/format or language-specific course; no original contribution"
+  },
+  {
+   "id": "p4e_pt4yCRk",
+   "url": "https://www.youtube.com/watch?v=p4e_pt4yCRk",
+   "title": "LLMOps Architecture Deep Dive | How Production LLM Systems Are Designed",
+   "channel": "StackOps AI",
+   "published": "2026-02-15",
+   "duration": "00:10:12",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "w26y80LfXUw",
+   "url": "https://www.youtube.com/watch?v=w26y80LfXUw",
+   "title": "Enterprise AI Architecture: The 3-Layer Framework That Stops Shadow AI",
+   "channel": "JanisExplains Architecture",
+   "published": "2026-02-23",
+   "duration": "00:34:22",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "kiL53anzcUc",
+   "url": "https://www.youtube.com/watch?v=kiL53anzcUc",
+   "title": "Layered Design in Ruby on Rails: Scalable Architecture Patterns | Uplatz",
+   "channel": "Uplatz",
+   "published": "2026-02-20",
+   "duration": "00:07:50",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "off-topic stack/format or language-specific course; no original contribution"
+  },
+  {
+   "id": "iGpC9eAXUm4",
+   "url": "https://www.youtube.com/watch?v=iGpC9eAXUm4",
+   "title": "06 Add Chat Memory to a Local AI Assistant with Streamlit",
+   "channel": "EasyHarshMods",
+   "published": "2026-06-07",
+   "duration": "00:07:25",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "Streamlit/chatbot tutorial; the Streamlit docs and the DeepLearning.AI course (written canon) are the authority"
+  },
+  {
+   "id": "OFq_CvRCpA0",
+   "url": "https://www.youtube.com/watch?v=OFq_CvRCpA0",
+   "title": "Orchestrating Complex AI Workflows with AI Agents & LLMs",
+   "channel": "IBM Technology",
+   "published": "2025-10-14",
+   "duration": "00:19:51",
+   "type": "video",
+   "module": "s13",
+   "modules": [
+    "s13"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "candidate",
+   "reason": "parked for module s13 (surfaced in the s3 scan)"
+  },
+  {
+   "id": "vBtqfLgzxLg",
+   "url": "https://www.youtube.com/watch?v=vBtqfLgzxLg",
+   "title": "AI Architect Enterprise Complete | Full Course for Production AI Systems (2026)",
+   "channel": "Coding Fever • 1M",
+   "published": "2026-09-18",
+   "duration": "10:27:25",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "off-topic stack/format or language-specific course; no original contribution"
+  },
+  {
+   "id": "M3YnPNpgEj0",
+   "url": "https://www.youtube.com/watch?v=M3YnPNpgEj0",
+   "title": "Ep 2: Designing a Better RAG Architecture (Improving LLM Output Quality)",
+   "channel": "Anirudh Hosur",
+   "published": "2026-02-11",
+   "duration": "00:07:53",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "mRyZZcH4yaQ",
+   "url": "https://www.youtube.com/watch?v=mRyZZcH4yaQ",
+   "title": "Build a Local AI Chatbot with Streamlit & Ollama (Offline LLM)",
+   "channel": "DataNomus",
+   "published": "2026-01-22",
+   "duration": "00:12:40",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "Streamlit/chatbot tutorial; the Streamlit docs and the DeepLearning.AI course (written canon) are the authority"
+  },
+  {
+   "id": "gtdPSn3xMK0",
+   "url": "https://www.youtube.com/watch?v=gtdPSn3xMK0",
+   "title": "Build Your Own ChatGPT for FREE | TinyLlama + Streamlit Tutorial | No OpenAI API Needed",
+   "channel": "thecodeQ",
+   "published": "2026-06-22",
+   "duration": "00:12:11",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "Streamlit/chatbot tutorial; the Streamlit docs and the DeepLearning.AI course (written canon) are the authority"
+  },
+  {
+   "id": "w7HQu_QVBFk",
+   "url": "https://www.youtube.com/watch?v=w7HQu_QVBFk",
+   "title": "Why AI Apps Fail: The HLD/LLD/DSA Framework (Save $190k/Year)",
+   "channel": "Agentic Economics",
+   "published": "2026-02-03",
+   "duration": "00:06:41",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "GDm_uH6VxPY",
+   "url": "https://www.youtube.com/watch?v=GDm_uH6VxPY",
+   "title": "AI agent design patterns",
+   "channel": "Google Cloud Tech",
+   "published": "2026-02-27",
+   "duration": "00:08:21",
+   "type": "video",
+   "module": "s13",
+   "modules": [
+    "s13"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "candidate",
+   "reason": "parked for module s13 (surfaced in the s3 scan)"
+  },
+  {
+   "id": "88TPlitdAbI",
+   "url": "https://www.youtube.com/watch?v=88TPlitdAbI",
+   "title": "Build Your First AI Chatbot in 15 Minutes | Gemini API + Streamlit (Step-by-Step)",
+   "channel": "AgentStax",
+   "published": "2026-06-25",
+   "duration": "00:15:40",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "Streamlit/chatbot tutorial; the Streamlit docs and the DeepLearning.AI course (written canon) are the authority"
+  },
+  {
+   "id": "ucKCmUpM0B4",
+   "url": "https://www.youtube.com/watch?v=ucKCmUpM0B4",
+   "title": "LangChain Tutorial 🔥 | AI Chatbot using Ollama & Streamlit",
+   "channel": "AI with Sharon",
+   "published": "2026-05-28",
+   "duration": "00:08:42",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "Streamlit/chatbot tutorial; the Streamlit docs and the DeepLearning.AI course (written canon) are the authority"
+  },
+  {
+   "id": "o-s2coJtT7E",
+   "url": "https://www.youtube.com/watch?v=o-s2coJtT7E",
+   "title": "#7 End To End LLM QnA Chatbot with LangChain, Google Gemini and Streamlit | Gen-AI Project #llm",
+   "channel": "TechSimPlus Learnings",
+   "published": "2026-01-15",
+   "duration": "00:22:57",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "Streamlit/chatbot tutorial; the Streamlit docs and the DeepLearning.AI course (written canon) are the authority"
+  },
+  {
+   "id": "ctj7hsJClnk",
+   "url": "https://www.youtube.com/watch?v=ctj7hsJClnk",
+   "title": "React Native AI: Bringing On-Device LLMs With AI SDK by Szymon Rybczak | AI Meetup Wrocław, 2025",
+   "channel": "Callstack",
+   "published": "2025-10-03",
+   "duration": "00:18:56",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "education/opinion channel; no original contribution beyond the primary sources selected"
+  },
+  {
+   "id": "7681kpnGlhM",
+   "url": "https://www.youtube.com/watch?v=7681kpnGlhM",
+   "title": "Build an AI Chatbot using Streamlit & GPT-OSS-120B (Python LLM Project)",
+   "channel": "DataNomus",
+   "published": "2026-01-13",
+   "duration": "00:12:53",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "Streamlit/chatbot tutorial; the Streamlit docs and the DeepLearning.AI course (written canon) are the authority"
+  },
+  {
+   "id": "W48Oj-YCzrs",
+   "url": "https://www.youtube.com/watch?v=W48Oj-YCzrs",
+   "title": "Designing an API Layer for AI Providers That Won't Stay Put - API World Talk 2026",
+   "channel": "Isadora Martin-Dye",
+   "published": "2026-09-07",
+   "duration": "00:26:19",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "applied",
+   "reason": "selected by authority test (s3); digested in sources/2026-09-30-s03-wrappers-digest.md; knowledge in principles/12 and practices/llm-gateway/",
+   "raw": "sources/raw/2026-09-30-market-scan-s03-wrappers/yt-W48Oj-YCzrs-api-world-designing-an-api-layer-for-ai-providers.md"
+  },
+  {
+   "id": "NPpyBDRWAts",
+   "url": "https://www.youtube.com/watch?v=NPpyBDRWAts",
+   "title": "Build Your Own AI Chatbot in Python | LangChain + FAISS + Streamlit (Step-by-Step)",
+   "channel": "Polymath with Preetii",
+   "published": "2026-07-23",
+   "duration": "00:02:22",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "Streamlit/chatbot tutorial; the Streamlit docs and the DeepLearning.AI course (written canon) are the authority"
+  },
+  {
+   "id": "oHh9EMN_Dlg",
+   "url": "https://www.youtube.com/watch?v=oHh9EMN_Dlg",
+   "title": "AI Agent with a Chat UI | From Zero to AI Engineer | Terminal to Browser with Streamlit | Session 6",
+   "channel": "CloudlyAI",
+   "published": "2026-05-01",
+   "duration": "00:15:43",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "Streamlit/chatbot tutorial; the Streamlit docs and the DeepLearning.AI course (written canon) are the authority"
+  },
+  {
+   "id": "w_V0ItgPk2I",
+   "url": "https://www.youtube.com/watch?v=w_V0ItgPk2I",
+   "title": "Build our own Chatbot | RAG and Streamlit The ULTIMATE Combo for Document Chatbots in 2026",
+   "channel": "Shweta Tech Studio",
+   "published": "2026-01-19",
+   "duration": "00:11:36",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "Streamlit/chatbot tutorial; the Streamlit docs and the DeepLearning.AI course (written canon) are the authority"
+  },
+  {
+   "id": "vhLUYiYy9F0",
+   "url": "https://www.youtube.com/watch?v=vhLUYiYy9F0",
+   "title": "RAG Chatbot Setup with OpenAI API | Python, LangChain & Streamlit",
+   "channel": "IT Code",
+   "published": "2026-09-09",
+   "duration": "00:18:04",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "Streamlit/chatbot tutorial; the Streamlit docs and the DeepLearning.AI course (written canon) are the authority"
+  },
+  {
+   "id": "s8fdTsoae88",
+   "url": "https://www.youtube.com/watch?v=s8fdTsoae88",
+   "title": "Building the Open Agentic Stack: Founders on Multi-Agent Architecture and Context",
+   "channel": "Databricks Events",
+   "published": "2026-09-13",
+   "duration": "00:38:33",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "3HGSgZoCpws",
+   "url": "https://www.youtube.com/watch?v=3HGSgZoCpws",
+   "title": "Chatbot with Chat History in Streamlit | Day 10 of 30 Days of AI Coding Challenge",
+   "channel": "Learn DATA with Sudeep",
+   "published": "2026-01-18",
+   "duration": "00:07:33",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "Streamlit/chatbot tutorial; the Streamlit docs and the DeepLearning.AI course (written canon) are the authority"
+  },
+  {
+   "id": "PQUxN9ErhzI",
+   "url": "https://www.youtube.com/watch?v=PQUxN9ErhzI",
+   "title": "Build Your First AI Chatbot with Streamlit | AI Engineering Project #3",
+   "channel": "Ram Vegiraju",
+   "published": "2026-08-28",
+   "duration": "00:13:09",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "Streamlit/chatbot tutorial; the Streamlit docs and the DeepLearning.AI course (written canon) are the authority"
+  },
+  {
+   "id": "Mchf6hgvASY",
+   "url": "https://www.youtube.com/watch?v=Mchf6hgvASY",
+   "title": "👉 Build GenAI Chatbot & Mini ChatGPT | Streamlit Project (Python + OpenAI)",
+   "channel": "UiPath RPA",
+   "published": "2026-05-17",
+   "duration": "00:25:59",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "Streamlit/chatbot tutorial; the Streamlit docs and the DeepLearning.AI course (written canon) are the authority"
+  },
+  {
+   "id": "sgrsopf-fzo",
+   "url": "https://www.youtube.com/watch?v=sgrsopf-fzo",
+   "title": "Easily Add GenAI to .NET Apps using Microsoft.Extensions.AI - Brandon Minnick - NDC Copenhagen 2025",
+   "channel": "NDC Conferences",
+   "published": "2026-01-20",
+   "duration": "00:58:14",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "selected (NDC, Microsoft.Extensions.AI abstraction layer) but no transcript could be extracted (captions unavailable); re-try in a later scan"
+  },
+  {
+   "id": "vWHMCrT8CI8",
+   "url": "https://www.youtube.com/watch?v=vWHMCrT8CI8",
+   "title": "Mem0: Long-Term Memory for AI Agents — Full Paper Breakdown + Local RTX 4090 Demo",
+   "channel": "Omar Kamal",
+   "published": "2026-07-23",
+   "duration": "00:17:18",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "candidate",
+   "reason": "parked for module s5 (surfaced in the s3 scan)"
+  },
+  {
+   "id": "N9fk6raGR6w",
+   "url": "https://www.youtube.com/watch?v=N9fk6raGR6w",
+   "title": "AI Observability with OpenTelemetry & Langfuse | Taking AI to Production #2",
+   "channel": "Aman Panjwani",
+   "published": "2026-07-23",
+   "duration": "00:22:13",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "I2HhkwlXw8c",
+   "url": "https://www.youtube.com/watch?v=I2HhkwlXw8c",
+   "title": "LLM Observability with Langfuse: Debugging a Broken RAG Agent",
+   "channel": "Langfuse",
+   "published": "2026-07-02",
+   "duration": "00:03:59",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "qB7N6KkBoxQ",
+   "url": "https://www.youtube.com/watch?v=qB7N6KkBoxQ",
+   "title": "Why Your HPC Integration Logic Is Broken (And How to Fix It)",
+   "channel": "FINOS",
+   "published": "2026-09-22",
+   "duration": "00:37:34",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "off-topic stack/format or language-specific course; no original contribution"
+  },
+  {
+   "id": "eSq7VKaG_PI",
+   "url": "https://www.youtube.com/watch?v=eSq7VKaG_PI",
+   "title": "The Box That Didn't Care What Was Inside: The Standard Powering AI Agents | Ep. 2026.26",
+   "channel": "Joseph H.Schuessler",
+   "published": "2026-09-25",
+   "duration": "00:36:01",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "rRcGKEfmQHs",
+   "url": "https://www.youtube.com/watch?v=rRcGKEfmQHs",
+   "title": "LiteLLM Explained: The Universal AI Gateway Powering Modern AI Apps",
+   "channel": "AgenticEngineering",
+   "published": "2026-05-28",
+   "duration": "00:08:06",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "sedNDoJC-Rc",
+   "url": "https://www.youtube.com/watch?v=sedNDoJC-Rc",
+   "title": "Langfuse + OpenTelemetry: Build Agent Observability from Scratch (Python)",
+   "channel": "ByteBuilder",
+   "published": "2026-03-26",
+   "duration": "00:06:15",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "EE3xRZYRyyQ",
+   "url": "https://www.youtube.com/watch?v=EE3xRZYRyyQ",
+   "title": "Langfuse, OpenLIT, and Phoenix: Observability for the GenAI Era",
+   "channel": "PyCon DE",
+   "published": "2025-10-05",
+   "duration": "00:30:36",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "applied",
+   "reason": "selected by authority test (s3); digested in sources/2026-09-30-s03-wrappers-digest.md; knowledge in principles/12 and practices/llm-gateway/",
+   "raw": "sources/raw/2026-09-30-market-scan-s03-wrappers/yt-EE3xRZYRyyQ-pycon-de-langfuse-openlit-phoenix-observability.md"
+  },
+  {
+   "id": "tKBKvRzHREk",
+   "url": "https://www.youtube.com/watch?v=tKBKvRzHREk",
+   "title": "Langfuse Review: The Best Open-Source LLM Observability Platform",
+   "channel": "QUASA",
+   "published": "2026-06-26",
+   "duration": "00:07:44",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "c4mDP5Qp7iM",
+   "url": "https://www.youtube.com/watch?v=c4mDP5Qp7iM",
+   "title": "LLM Observability: Traces, Spans & OpenTelemetry for AI Apps",
+   "channel": "AI WITH Rithesh",
+   "published": "2026-07-21",
+   "duration": "00:05:40",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "GX3s7eUJk6o",
+   "url": "https://www.youtube.com/watch?v=GX3s7eUJk6o",
+   "title": "Langfuse Launch Week Day 3: Agent Tracing and Evaluation",
+   "channel": "Langfuse",
+   "published": "2025-11-05",
+   "duration": "00:01:49",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "mxp10mfkP_0",
+   "url": "https://www.youtube.com/watch?v=mxp10mfkP_0",
+   "title": "Langfuse vs LangSmith vs Opik. Pick Wrong, Lose Months.",
+   "channel": "Neural Neeraj",
+   "published": "2026-05-08",
+   "duration": "00:03:23",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "bB_wGSz6b-U",
+   "url": "https://www.youtube.com/watch?v=bB_wGSz6b-U",
+   "title": "Langfuse Tutorial in Tamil 🔥 LLM Observability with Python | Trace, Debug & Monitor AI Apps",
+   "channel": "Build with Abi",
+   "published": "2026-08-31",
+   "duration": "00:12:43",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "off-topic stack/format or language-specific course; no original contribution"
+  },
+  {
+   "id": "NmBEWr43ZL0",
+   "url": "https://www.youtube.com/watch?v=NmBEWr43ZL0",
+   "title": "Master Langfuse: Tracing, Integrations, Prompts, Evals + a Real Agent Project",
+   "channel": "AI WITH Rithesh",
+   "published": "2026-07-17",
+   "duration": "00:13:05",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "7u41Sc7CqEk",
+   "url": "https://www.youtube.com/watch?v=7u41Sc7CqEk",
+   "title": "LLM Observability: How to Monitor Large Language Models in Production",
+   "channel": "AI Quality Nerd",
+   "published": "2025-10-30",
+   "duration": "00:06:56",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "ZbcruZB7Irk",
+   "url": "https://www.youtube.com/watch?v=ZbcruZB7Irk",
+   "title": "Muayad Sayed Ali: LLMs in the Wild - Streaming, RAG, and Real Time GenAI at Scale[Scala Days 2025]",
+   "channel": "Scala Days Conferences",
+   "published": "2025-11-26",
+   "duration": "00:43:05",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "applied",
+   "reason": "selected by authority test (s3); digested in sources/2026-09-30-s03-wrappers-digest.md; knowledge in principles/12 and practices/llm-gateway/",
+   "raw": "sources/raw/2026-09-30-market-scan-s03-wrappers/yt-ZbcruZB7Irk-scala-days-llms-in-the-wild-streaming-rag.md"
+  },
+  {
+   "id": "FnH9jmoUuss",
+   "url": "https://www.youtube.com/watch?v=FnH9jmoUuss",
+   "title": "Observability in AI, Explained - Marc Klingen, Langfuse and Jason Lopatecki, Arize AI",
+   "channel": "Mastra",
+   "published": "2025-12-08",
+   "duration": "00:28:49",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "applied",
+   "reason": "selected by authority test (s3); digested in sources/2026-09-30-s03-wrappers-digest.md; knowledge in principles/12 and practices/llm-gateway/",
+   "raw": "sources/raw/2026-09-30-market-scan-s03-wrappers/yt-FnH9jmoUuss-mastra-klingen-lopatecki-observability-in-ai-explained.md"
+  },
+  {
+   "id": "q1X6TMEPfBE",
+   "url": "https://www.youtube.com/watch?v=q1X6TMEPfBE",
+   "title": "Real-Time AI Agents Explained (Streaming, WebSockets, WebRTC)",
+   "channel": "Pushkar Mishra",
+   "published": "2026-04-18",
+   "duration": "00:05:48",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "WoY0EVykRl4",
+   "url": "https://www.youtube.com/watch?v=WoY0EVykRl4",
+   "title": "Streaming Chat Interface with LLM Tool Visualization | React, Node.js & Groq",
+   "channel": "SARVESWARA RAO KOSURI (Sarvea)",
+   "published": "2026-06-26",
+   "duration": "00:07:56",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Wpz5An7KMns",
+   "url": "https://www.youtube.com/watch?v=Wpz5An7KMns",
+   "title": "Build Real-Time AI Interfaces (AGUI on AWS Explained)",
+   "channel": "Pushkar Mishra",
+   "published": "2026-04-17",
+   "duration": "00:06:04",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "9c0S4rgShz4",
+   "url": "https://www.youtube.com/watch?v=9c0S4rgShz4",
+   "title": "Q.1 How ChatGPT Streams Responses in Real Time | SSE, WebSockets & Continuous Batching",
+   "channel": "Learning With Chetna",
+   "published": "2026-05-26",
+   "duration": "00:10:06",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "6Mp7xlANBTc",
+   "url": "https://www.youtube.com/watch?v=6Mp7xlANBTc",
+   "title": "Real Time AI Streams",
+   "channel": "AI ThreatLens",
+   "published": "2026-06-24",
+   "duration": "00:05:57",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "8g57tT1l0-g",
+   "url": "https://www.youtube.com/watch?v=8g57tT1l0-g",
+   "title": "AGENTIC RAG FROM SCRATCH: Episode 2 - LLM call and Streaming (FastAPI + React + LangChain  + Claude)",
+   "channel": "Building Saas",
+   "published": "2026-03-13",
+   "duration": "00:06:24",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "ZdP0onvhe6Q",
+   "url": "https://www.youtube.com/watch?v=ZdP0onvhe6Q",
+   "title": "How Streaming Works | GenAI with JavaScript | Hindi",
+   "channel": "Codecabulary",
+   "published": "2026-05-28",
+   "duration": "00:23:31",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "off-topic stack/format or language-specific course; no original contribution"
+  },
+  {
+   "id": "qDV_j3trfiQ",
+   "url": "https://www.youtube.com/watch?v=qDV_j3trfiQ",
+   "title": "Ep 124: Building a Text Generation App | LLM Mastery Podcast",
+   "channel": "carlos Hernandez",
+   "published": "2026-04-28",
+   "duration": "00:21:48",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "DTnks5zB_qM",
+   "url": "https://www.youtube.com/watch?v=DTnks5zB_qM",
+   "title": "WebSockets vs SSE vs Long Polling | System Design #17",
+   "channel": "Code Goat",
+   "published": "2026-09-14",
+   "duration": "00:26:04",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "RJapRLPxqcg",
+   "url": "https://www.youtube.com/watch?v=RJapRLPxqcg",
+   "title": "Panel: AI's Real-Time Engine: gRPC, WebSockets, or SSE? - A.K. Sachdeva, P. Mamgain, I. Thiagarajan",
+   "channel": "CNCF [Cloud Native Computing Foundation]",
+   "published": "2026-02-05",
+   "duration": "00:35:23",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "applied",
+   "reason": "selected by authority test (s3); digested in sources/2026-09-30-s03-wrappers-digest.md; knowledge in principles/12 and practices/llm-gateway/",
+   "raw": "sources/raw/2026-09-30-market-scan-s03-wrappers/yt-RJapRLPxqcg-cncf-panel-grpc-websockets-or-sse.md"
+  },
+  {
+   "id": "8WkdxoAgM9M",
+   "url": "https://www.youtube.com/watch?v=8WkdxoAgM9M",
+   "title": "Enterprise Scenario Copilot 1",
+   "channel": "Your_Engineer",
+   "published": "2026-08-10",
+   "duration": "00:17:37",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "6cHYdMfF1iA",
+   "url": "https://www.youtube.com/watch?v=6cHYdMfF1iA",
+   "title": "Day 22: The Local Runtime — Serving LLMs Without a Cloud Bill",
+   "channel": "Systemdrllp5",
+   "published": "2026-05-08",
+   "duration": "00:00:47",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "XZPNjgJ4E0c",
+   "url": "https://www.youtube.com/watch?v=XZPNjgJ4E0c",
+   "title": "OpenRouter vs LiteLLM: The $60,000 Routing Trap",
+   "channel": "Jono Finds",
+   "published": "2026-03-14",
+   "duration": "00:08:15",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "tool-vs-tool comparison on a small channel; the vendors' own routing docs (written canon) and the Latent Space OpenRouter episode are the authority"
+  },
+  {
+   "id": "5YaYQmL8vy8",
+   "url": "https://www.youtube.com/watch?v=5YaYQmL8vy8",
+   "title": "OpenRouter vs LiteLLM Comparison 2026: API Features Overview and Performance",
+   "channel": "Mariselle Hartwell",
+   "published": "2026-07-03",
+   "duration": "00:04:09",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "tool-vs-tool comparison on a small channel; the vendors' own routing docs (written canon) and the Latent Space OpenRouter episode are the authority"
+  },
+  {
+   "id": "L1jV8eRvnKc",
+   "url": "https://www.youtube.com/watch?v=L1jV8eRvnKc",
+   "title": "Openrouter vs Litellm: Which Network Routing Software is BETTER in 2026?",
+   "channel": "houdztech",
+   "published": "2026-01-03",
+   "duration": "00:05:12",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "tool-vs-tool comparison on a small channel; the vendors' own routing docs (written canon) and the Latent Space OpenRouter episode are the authority"
+  },
+  {
+   "id": "s4BRivFtrgw",
+   "url": "https://www.youtube.com/watch?v=s4BRivFtrgw",
+   "title": "OpenRouter vs LiteLLM (2026) – Which AI Model Router Is Better for Developers?",
+   "channel": "QuickTweak",
+   "published": "2026-01-03",
+   "duration": "00:01:36",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "tool-vs-tool comparison on a small channel; the vendors' own routing docs (written canon) and the Latent Space OpenRouter episode are the authority"
+  },
+  {
+   "id": "diayzMRtCMM",
+   "url": "https://www.youtube.com/watch?v=diayzMRtCMM",
+   "title": "MCP Ep 4: stdio, Streamable HTTP, OAuth & the Server That Asks You Questions",
+   "channel": "Scale Tales",
+   "published": "2026-07-07",
+   "duration": "00:04:22",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "6krTfsooC9Y",
+   "url": "https://www.youtube.com/watch?v=6krTfsooC9Y",
+   "title": "LiteLLM vs OpenRouter: The Truth Every Business Should Know (Don't Choose Wrong)",
+   "channel": "The Road to Outcome Defined AI Success",
+   "published": "2026-07-07",
+   "duration": "00:01:49",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "tool-vs-tool comparison on a small channel; the vendors' own routing docs (written canon) and the Latent Space OpenRouter episode are the authority"
+  },
+  {
+   "id": "MYzByjdt9aM",
+   "url": "https://www.youtube.com/watch?v=MYzByjdt9aM",
+   "title": "Building a Real-Time LLM Evaluation",
+   "channel": "Zhijun Tian",
+   "published": "2026-05-06",
+   "duration": "00:14:47",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "FqKaLQaHAZs",
+   "url": "https://www.youtube.com/watch?v=FqKaLQaHAZs",
+   "title": "OpenRouter vs Requesty vs LiteLLM: One Of These Takes A Cut Of Everything",
+   "channel": "Suzie Tutorials",
+   "published": "2026-08-28",
+   "duration": "00:02:44",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "tool-vs-tool comparison on a small channel; the vendors' own routing docs (written canon) and the Latent Space OpenRouter episode are the authority"
+  },
+  {
+   "id": "raEBR_2VbXE",
+   "url": "https://www.youtube.com/watch?v=raEBR_2VbXE",
+   "title": "AI Model Routing Explained: Cut LLM Costs With LiteLLM",
+   "channel": "Hunter Sneed",
+   "published": "2026-07-08",
+   "duration": "00:22:09",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "3MoUWojBHf8",
+   "url": "https://www.youtube.com/watch?v=3MoUWojBHf8",
+   "title": "The LLM Gateway: One Endpoint Instead of Five SDKs",
+   "channel": "software-engineer-blog",
+   "published": "2026-05-29",
+   "duration": "00:08:14",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "MRM817loV4c",
+   "url": "https://www.youtube.com/watch?v=MRM817loV4c",
+   "title": "Model Router vs. Gateways: Which One Wins and OpenRouter Dominance",
+   "channel": "Fringe Lines",
+   "published": "2026-09-02",
+   "duration": "00:13:51",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "9k5Vi4MV5JU",
+   "url": "https://www.youtube.com/watch?v=9k5Vi4MV5JU",
+   "title": "5 Seconds The LiteLLM Default Quietly Killing Your Failover",
+   "channel": "Beo Beo",
+   "published": "2026-09-04",
+   "duration": "00:08:46",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "p4KD56w2kpc",
+   "url": "https://www.youtube.com/watch?v=p4KD56w2kpc",
+   "title": "Claude Code + OpenRouter = Free UNLIMITED Coding (No RAM Needed)",
+   "channel": "Bart Slodyczka",
+   "published": "2026-03-08",
+   "duration": "00:08:15",
+   "type": "video",
+   "module": "s17",
+   "modules": [
+    "s17"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "candidate",
+   "reason": "parked for module s17 (surfaced in the s3 scan)"
+  },
+  {
+   "id": "Hmo8-M8dTD4",
+   "url": "https://www.youtube.com/watch?v=Hmo8-M8dTD4",
+   "title": "OpenRouter Tutorial 2026: Connect to 400+ AI Models with One API Key",
+   "channel": "Ai Titan",
+   "published": "2026-08-05",
+   "duration": "00:04:19",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "education/opinion channel; no original contribution beyond the primary sources selected"
+  },
+  {
+   "id": "fkT41ooKBuY",
+   "url": "https://www.youtube.com/watch?v=fkT41ooKBuY",
+   "title": "I cut my OpenClaw API bill by 80% with one config change",
+   "channel": "VelvetShark",
+   "published": "2026-02-04",
+   "duration": "00:09:37",
+   "type": "video",
+   "module": "s17",
+   "modules": [
+    "s17"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "candidate",
+   "reason": "parked for module s17 (surfaced in the s3 scan)"
+  },
+  {
+   "id": "U9XRcut6nUY",
+   "url": "https://www.youtube.com/watch?v=U9XRcut6nUY",
+   "title": "LLM Gateway Tutorial: Routing, Guardrails, Caching & Agent Security | Command Centre by Future AGI",
+   "channel": "Future AGI",
+   "published": "2026-04-20",
+   "duration": "01:01:19",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "MOh1_9cVvz0",
+   "url": "https://www.youtube.com/watch?v=MOh1_9cVvz0",
+   "title": "Why Direct LLM API Calls Will Break Your Production | #NEWIT",
+   "channel": "GilliLab IT Professional Engineeri Logic Salt",
+   "published": "2026-07-18",
+   "duration": "00:24:57",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "r8qwHMldaYc",
+   "url": "https://www.youtube.com/watch?v=r8qwHMldaYc",
+   "title": "AI Gateway Patterns: Routing, Caching & Rate Limiting at Scale",
+   "channel": "Sukrid LearnHub",
+   "published": "2026-06-10",
+   "duration": "00:14:06",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "2EFH0D5eEPA",
+   "url": "https://www.youtube.com/watch?v=2EFH0D5eEPA",
+   "title": "What is an LLM Gateway? A Deep Dive into the Backbone of Scalable AI Applications",
+   "channel": "AI Quality Nerd",
+   "published": "2025-10-29",
+   "duration": "00:06:44",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "LEtUH-2Sydg",
+   "url": "https://www.youtube.com/watch?v=LEtUH-2Sydg",
+   "title": "LLM Gateway: Build Production-Ready AI Apps 🔥",
+   "channel": "DSwithBappy",
+   "published": "2026-08-16",
+   "duration": "00:52:16",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "education/opinion channel; no original contribution beyond the primary sources selected"
+  },
+  {
+   "id": "yCp8gF5CVdg",
+   "url": "https://www.youtube.com/watch?v=yCp8gF5CVdg",
+   "title": "Direct LLM Calls Fail. Build Gateway First",
+   "channel": "ByteLearn",
+   "published": "2026-08-15",
+   "duration": "00:11:53",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "rKx15oygSKE",
+   "url": "https://www.youtube.com/watch?v=rKx15oygSKE",
+   "title": "LLM Serving Architecture: Gateways, Routing, Caching & Cost | Module 2.1",
+   "channel": "KryptoMindz Technologies",
+   "published": "2026-05-30",
+   "duration": "00:08:46",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "WjJ1-lbVpXk",
+   "url": "https://www.youtube.com/watch?v=WjJ1-lbVpXk",
+   "title": "AI Gateways Explained: The Missing Layer for Production AI",
+   "channel": "Yash Patil",
+   "published": "2026-09-29",
+   "duration": "00:23:52",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "jwblSAaFnNc",
+   "url": "https://www.youtube.com/watch?v=jwblSAaFnNc",
+   "title": "Surviving LLM Traffic Spikes: Routing, Rate Limits, and Failover in Python - Sergi Porta",
+   "channel": "EuroPython Conference",
+   "published": "2026-08-19",
+   "duration": "00:23:27",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "applied",
+   "reason": "selected by authority test (s3); digested in sources/2026-09-30-s03-wrappers-digest.md; knowledge in principles/12 and practices/llm-gateway/",
+   "raw": "sources/raw/2026-09-30-market-scan-s03-wrappers/yt-jwblSAaFnNc-europython-surviving-llm-traffic-spikes-routing-failover.md"
+  },
+  {
+   "id": "vjFKOb4-Psg",
+   "url": "https://www.youtube.com/watch?v=vjFKOb4-Psg",
+   "title": "Semantic Caching for LLM Responses Explained",
+   "channel": "Interview Mentor App",
+   "published": "2026-02-22",
+   "duration": "00:01:37",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "off-topic stack/format or language-specific course; no original contribution"
+  },
+  {
+   "id": "xSpvuTtRnfE",
+   "url": "https://www.youtube.com/watch?v=xSpvuTtRnfE",
+   "title": "Production-Ready LLM Architecture: Capstone Blueprint | Module 4.6",
+   "channel": "KryptoMindz Technologies",
+   "published": "2026-05-31",
+   "duration": "00:09:10",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "SHqEZDYjp7U",
+   "url": "https://www.youtube.com/watch?v=SHqEZDYjp7U",
+   "title": "Semantic Caching A 70% Discount With a 14.9% Problem",
+   "channel": "Beo Beo",
+   "published": "2026-08-22",
+   "duration": "00:08:29",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "mKJHPEKso70",
+   "url": "https://www.youtube.com/watch?v=mKJHPEKso70",
+   "title": "7. Your AI Calls Are Out of Control — Here's How Big Tech Fixes It (LLM Gateway Pattern)",
+   "channel": "The Agentic Engineer",
+   "published": "2026-08-28",
+   "duration": "00:07:38",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "zLjFF7TLYac",
+   "url": "https://www.youtube.com/watch?v=zLjFF7TLYac",
+   "title": "Unified AI Gateway Architecture: Stop Hard-Coding Single LLMs",
+   "channel": "vCodeX",
+   "published": "2026-06-28",
+   "duration": "00:03:28",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "U_4zdPk4el8",
+   "url": "https://www.youtube.com/watch?v=U_4zdPk4el8",
+   "title": "What Is Semantic Caching? Why a Hit Is Someone Else's Answer, for Your AI System Design Interview",
+   "channel": "VibeEngines",
+   "published": "2026-09-27",
+   "duration": "00:04:51",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "off-topic stack/format or language-specific course; no original contribution"
+  },
+  {
+   "id": "pu0s9gN3bO8",
+   "url": "https://www.youtube.com/watch?v=pu0s9gN3bO8",
+   "title": "Semantic Caching for LLMs - Redis for Developers",
+   "channel": "The Software Mentor",
+   "published": "2026-07-03",
+   "duration": "00:01:29",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "QE1oytKgBds",
+   "url": "https://www.youtube.com/watch?v=QE1oytKgBds",
+   "title": "Semantic Caching for LLMs: Cache by Meaning, Not Text #Shorts",
+   "channel": "Total Technology Zonne",
+   "published": "2026-07-04",
+   "duration": "00:03:00",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "GsWPOond-3g",
+   "url": "https://www.youtube.com/watch?v=GsWPOond-3g",
+   "title": "Prompt vs. Semantic Caching: The Secret to 15x Faster & 90% Cheaper AI Agents",
+   "channel": "XPLORE AI",
+   "published": "2026-03-19",
+   "duration": "00:06:29",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "RWK6hGBqRU0",
+   "url": "https://www.youtube.com/watch?v=RWK6hGBqRU0",
+   "title": "Build a Semantic Cache That Knows When NOT to Reuse",
+   "channel": "AI Systems with Ayush",
+   "published": "2026-08-15",
+   "duration": "00:02:54",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "7vdFUJgGOSs",
+   "url": "https://www.youtube.com/watch?v=7vdFUJgGOSs",
+   "title": "Semantic Caching with Valkey and Redis: Reducing LLM Cost and Latency - Martin Visser",
+   "channel": "Percona",
+   "published": "2026-01-23",
+   "duration": "00:26:19",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "applied",
+   "reason": "selected by authority test (s3); digested in sources/2026-09-30-s03-wrappers-digest.md; knowledge in principles/12 and practices/llm-gateway/",
+   "raw": "sources/raw/2026-09-30-market-scan-s03-wrappers/yt-7vdFUJgGOSs-percona-semantic-caching-valkey-redis.md"
+  },
+  {
+   "id": "NrqvtsnjIHU",
+   "url": "https://www.youtube.com/watch?v=NrqvtsnjIHU",
+   "title": "Semantic Caching Explained: Reduce AI API Costs with Redis",
+   "channel": "Nariman Codes",
+   "published": "2026-02-21",
+   "duration": "00:25:05",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "zsKcTl4Xfio",
+   "url": "https://www.youtube.com/watch?v=zsKcTl4Xfio",
+   "title": "Stop Paying for the Same LLM Call Twice | Semantic Caching with BetterDB",
+   "channel": "Applied with AI - Sanjay Kumar",
+   "published": "2026-06-16",
+   "duration": "00:12:09",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "education/opinion channel; no original contribution beyond the primary sources selected"
+  },
+  {
+   "id": "joRiZICf_LM",
+   "url": "https://www.youtube.com/watch?v=joRiZICf_LM",
+   "title": "What Is OTEL, and Why Does Langfuse Speak It?",
+   "channel": "Langfuse",
+   "published": "2026-07-23",
+   "duration": "00:03:54",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "applied",
+   "reason": "selected by authority test (s3); digested in sources/2026-09-30-s03-wrappers-digest.md; knowledge in principles/12 and practices/llm-gateway/",
+   "raw": "sources/raw/2026-09-30-market-scan-s03-wrappers/yt-joRiZICf_LM-langfuse-what-is-otel.md"
+  },
+  {
+   "id": "6gdAnaxtBXM",
+   "url": "https://www.youtube.com/watch?v=6gdAnaxtBXM",
+   "title": "NeuronAI Agents: Less Code, More Power for Laravel AI Apps",
+   "channel": "Amitav Roy",
+   "published": "2026-03-23",
+   "duration": "00:11:16",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "off-topic stack/format or language-specific course; no original contribution"
+  },
+  {
+   "id": "h5hqelg0_wc",
+   "url": "https://www.youtube.com/watch?v=h5hqelg0_wc",
+   "title": "RAG Observability and Evaluations with Langfuse",
+   "channel": "Langfuse",
+   "published": "2025-10-31",
+   "duration": "00:05:44",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "2-4Tws1z3H4",
+   "url": "https://www.youtube.com/watch?v=2-4Tws1z3H4",
+   "title": "1-03 How I built an LLM powered system that runs my content publishing",
+   "channel": "Luis Eliezer Martinez",
+   "published": "2026-01-13",
+   "duration": "00:20:01",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "melcG_PNaME",
+   "url": "https://www.youtube.com/watch?v=melcG_PNaME",
+   "title": "LangFuse vs LangSmith Which LLM Monitoring Tool Is Better",
+   "channel": "TWiz",
+   "published": "2026-06-09",
+   "duration": "00:03:22",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "lzotl8fC5gE",
+   "url": "https://www.youtube.com/watch?v=lzotl8fC5gE",
+   "title": "OpenRouter vs LiteLLM 2026 - The Difference Nobody Explains Properly",
+   "channel": "I’m here to help you!",
+   "published": "2026-06-15",
+   "duration": "00:02:00",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "tool-vs-tool comparison on a small channel; the vendors' own routing docs (written canon) and the Latent Space OpenRouter episode are the authority"
+  },
+  {
+   "id": "QqRXP6ESB1w",
+   "url": "https://www.youtube.com/watch?v=QqRXP6ESB1w",
+   "title": "Jev as an AI Gateway: Typed Decisions vs OpenRouter & LiteLLM",
+   "channel": "Agentic AI Explainer",
+   "published": "2026-09-28",
+   "duration": "00:06:51",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "tool-vs-tool comparison on a small channel; the vendors' own routing docs (written canon) and the Latent Space OpenRouter episode are the authority"
+  },
+  {
+   "id": "f7m2IG669m4",
+   "url": "https://www.youtube.com/watch?v=f7m2IG669m4",
+   "title": "AI Gateway Like OpenRouter & EURI | Complete Architecture Explained",
+   "channel": "OrionVexa",
+   "published": "2026-06-23",
+   "duration": "00:40:06",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "qjOo6DaErX0",
+   "url": "https://www.youtube.com/watch?v=qjOo6DaErX0",
+   "title": "Streamlit Session State Explained 💬 | Day 8 of 30 Days of AI Coding Challenge",
+   "channel": "Learn DATA with Sudeep",
+   "published": "2026-01-17",
+   "duration": "00:06:35",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "Streamlit/chatbot tutorial; the Streamlit docs and the DeepLearning.AI course (written canon) are the authority"
+  },
+  {
+   "id": "AyN5piJOLF0",
+   "url": "https://www.youtube.com/watch?v=AyN5piJOLF0",
+   "title": "MuleSoft Agent Fabric: Stop Paying Your LLM Twice | Semantic Caching",
+   "channel": "Mule Ace Academy",
+   "published": "2026-08-23",
+   "duration": "00:04:25",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "education/opinion channel; no original contribution beyond the primary sources selected"
+  },
+  {
+   "id": "p7z4jg3MRc4",
+   "url": "https://www.youtube.com/watch?v=p7z4jg3MRc4",
+   "title": "Structured LLM Generation: Architectures, Frameworks, and Design Patterns | Uplatz",
+   "channel": "Uplatz",
+   "published": "2026-02-08",
+   "duration": "00:08:31",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "off-topic stack/format or language-specific course; no original contribution"
+  },
+  {
+   "id": "-UK2K-5DIkI",
+   "url": "https://www.youtube.com/watch?v=-UK2K-5DIkI",
+   "title": "How to Build AI Features Fast with Spryker AI Foundation and AI Dev SDK",
+   "channel": "Spryker",
+   "published": "2026-01-22",
+   "duration": "00:32:07",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "off-topic stack/format or language-specific course; no original contribution"
+  },
+  {
+   "id": "vo5vCytXfmA",
+   "url": "https://www.youtube.com/watch?v=vo5vCytXfmA",
+   "title": "Semantic Caching",
+   "channel": "AI Guru",
+   "published": "2026-06-19",
+   "duration": "00:01:08",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "3VxAAvaiFNo",
+   "url": "https://www.youtube.com/watch?v=3VxAAvaiFNo",
+   "title": "Provider Fallback in Envoy AI Gateway",
+   "channel": "IMESH",
+   "published": "2026-06-22",
+   "duration": "00:16:10",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "C1t0gUfYBhA",
+   "url": "https://www.youtube.com/watch?v=C1t0gUfYBhA",
+   "title": "Cut LLM Costs with Semantic Caching | Gravitee AI Gateway 4.11",
+   "channel": "Gravitee",
+   "published": "2026-04-15",
+   "duration": "00:04:08",
+   "type": "video",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "latent.space/p/openrouter",
+   "url": "https://www.latent.space/p/openrouter",
+   "title": "OpenRouter: from Seed to Stripe — with OpenRouter’s Alex Atallah & AMP’s Anjney Midha",
+   "channel": "Latent Space",
+   "published": "2026-09-25",
+   "duration": "01:20:43",
+   "type": "podcast",
+   "status": "applied",
+   "reason": "reference podcast on exactly the s3 topic (routing/fallback across providers); digested in sources/2026-09-30-s03-wrappers-digest.md; knowledge in principles/12 and practices/llm-gateway/",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "raw": "sources/raw/2026-09-30-market-scan-s03-wrappers/podcast-latent-space-openrouter-alex-atallah.md",
+   "decided": "2026-09-30"
+  },
+  {
+   "id": "2X3CH1PYnb8",
+   "url": "https://www.youtube.com/watch?v=2X3CH1PYnb8",
+   "title": "Latent Space in 3 minutes: OpenRouter: from Seed to Stripe (The Daily FM)",
+   "channel": "The Daily FM",
+   "published": "2026-09-25",
+   "type": "video",
+   "status": "discarded",
+   "reason": "third-party 3-minute summary of a podcast episode; the episode itself was transcribed",
+   "module": "s3",
+   "modules": [
+    "s3"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30"
+  },
+  {
+   "id": "latent-space-why-ai-infrastructure-must-evolve-for-ag",
+   "url": "https://api.substack.com/feed/podcast/1084089.rss",
+   "title": "Why AI Infrastructure must evolve for Agent Experience — Akshat Bubna, Modal CTO",
+   "channel": "Latent Space",
+   "published": "2026-07-08",
+   "type": "podcast",
+   "status": "candidate",
+   "reason": "parked for module s15 (found in s3 RSS pass)",
+   "module": "s15",
+   "modules": [
+    "s15"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30"
+  },
+  {
+   "id": "latent-space-nvidia's-ai-engineers:-agent-inference-a",
+   "url": "https://api.substack.com/feed/podcast/1084089.rss",
+   "title": "NVIDIA's AI Engineers: Agent Inference at Planetary Scale and 'Speed of Light'",
+   "channel": "Latent Space",
+   "published": "2026-03-10",
+   "type": "podcast",
+   "status": "candidate",
+   "reason": "parked for module s15 (found in s3 RSS pass)",
+   "module": "s15",
+   "modules": [
+    "s15"
+   ],
+   "scan": "sources/2026-09-30-market-scan-s03-wrappers.md",
+   "decided": "2026-09-30"
   }
  ]
 }

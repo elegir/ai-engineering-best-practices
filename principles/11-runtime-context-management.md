@@ -3,7 +3,7 @@ title: "Runtime context management — the window is a budget, not a container: 
 type: principle
 status: draft              # draft until LIDR session 2 (2026-10-22) confirms or contradicts
 date: 2026-09-27
-last-reviewed: 2026-09-27
+last-reviewed: 2026-09-30
 tags: [context-engineering, context-window, compaction, prompt-caching, kv-cache, cag, long-context, rag, sub-agents, s2]
 sources:
   - sources/2026-09-27-s02-context-caching-digest.md
@@ -103,3 +103,4 @@ Compaction triggers and strategy are decided by the harness author today; a few 
 ## 7. Change log
 
 - 2026-09-27 — created from `sources/2026-09-27-s02-context-caching-digest.md` (market scan for LIDR session 2). Status `draft` until the session on 2026-10-22.
+- 2026-09-30 (s3) — reviewed against `sources/2026-09-30-s03-wrappers-digest.md`; §3.3 confirmed, and the boundary stated: provider prompt caching caches the prefix of *your own* request; a **semantic cache** returns a *similar earlier question's* answer and belongs to the gateway layer under the narrow conditions in `12-llm-gateway-layer.md` §3.5. No change to the rules.

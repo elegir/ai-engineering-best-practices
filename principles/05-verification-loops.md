@@ -3,7 +3,7 @@ title: "Verification loops — give the agent a way to check its own work"
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-27
+last-reviewed: 2026-09-30
 tags: [testing, e2e, playwright, hooks, sensors, definition-of-done]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -91,3 +91,4 @@ Beyond code tests: a small set of representative tasks run periodically to check
 - 2026-09-24 — reviewed against `sources/2026-09-24-s12-agents-digest.md`; no change to the recommendation. Two supporting quotations recorded: "if you don't have some mechanism to get feedback as you're iterating, you're not injecting any more signal, you're just going to have noise… the next limiting factor is verification" (Erik Schluntz, Anthropic, 2025-02); Notion (2026-04) runs three eval tiers — CI regression, launch report card per user journey, and "frontier headroom" evals held at ~30 % pass — parked for the evals principle (sessions 5/11/16).
 - 2026-09-27 — refined against `sources/2026-09-27-s01-llm-setup-digest.md`: an LLM checking an LLM does not compound reliability because their failures are correlated ("80 % checking 80 %" lands near 82 %, not 96 % — Dan Klein, 2026-04); an LLM judge is one sensor beside deterministic ones, never the sole gate for anything irreversible. And measure per-scenario consistency (run each case N times, read the worst case), not an aggregate pass rate. One sentence added to §3 "Sensors by layer and speed"; detail parked for the evals principle.
 - 2026-09-27 (s2) — refined against `sources/2026-09-27-s02-context-caching-digest.md`: a new sensor type, the **long-session eval** — load N real turns, test turn N+1 — for failures that only appear after ten or twenty turns (Arize); pattern recorded in `practices/context-management/context-metrics-and-evals.md` and parked for the evals principle. First-person evidence for "the agent must not be able to cheat": Horthy's fully autonomous, unreviewed pipeline ran July–November 2025 and was shut down when a bug in code nobody had read took three weeks to root-cause; replaced by "slow loops" — one small, reviewed PR per run.
+- 2026-09-30 (s3) — refined against `sources/2026-09-30-s03-wrappers-digest.md`: two sensor rules from the observability founders — offline evals are unit tests and online evals are monitoring, with production cases feeding the offline set; and **page on deterministic expectations with ordinary alerting, never on an LLM-judge score**. Replay as a dev loop requires the trace to capture the full prompt, tool definitions and inputs. Cached model responses as test fixtures because live LLM tests are flaky (ManyChat). Game-day the gateway (kill the primary, force 429s, retire a model id, drop a stream).

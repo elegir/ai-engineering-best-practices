@@ -1,0 +1,74 @@
+# gateway_config.yaml — per-route LLM gateway configuration (LiteLLM Router shape; translate the keys for
+# OpenRouter / Vercel AI SDK / a hand-written router — the DECISIONS are the deliverable, not the syntax).
+# Copy to <repo>/config/llm-gateway.yaml. Every number is a placeholder; date each one when you set it.
+# Policy: practices/llm-gateway/routing-policy.md. Principle: principles/12-llm-gateway-layer.md §3.2.
+# Dated: <<YYYY-MM-DD>>
+
+router_settings:
+  routing_strategy: simple-shuffle      # weighted pick; LiteLLM's recommended default for production (docs read 2026-09-30)
+  num_retries: <<1>>                    # THE ONLY retry owner. SDK and agent-framework retries = 0 (ManyChat: 4×4 = 16 attempts)
+  retry_after: <<5>>                    # seconds to wait before a retry on 429 (class-aware: 400 never retries)
+  allowed_fails: <<1>>                  # failures per minute before a deployment is cooled down
+  cooldown_time: <<120>>                # seconds out of the pool (Writer latches ~5 min; ManyChat healthy→cooldown→timeout→healthy)
+  # redis_host/port: <<...>>            # shared failure counters + rpm/tpm across instances; omit for per-instance counters (decide, write it down)
+  default_max_parallel_requests: <<50>> # bound in-flight; derived from provider rpm/tpm; the queue above it is bounded too
+
+model_list:
+  # ---- route: chat (customer-facing, streamed) --------------------------------------------------
+  - model_name: chat                    # the ROUTE name your code calls; never a provider model id
+    litellm_params:
+      model: azure/<<deployment-reserved>>   # tier 1: reserved/committed capacity, sized just above baseline
+      api_base: <<...>>
+      api_key: os.environ/<<AZURE_KEY_CHAT>>  # one key PER ROUTE (and per tenant where tenants exist)
+      timeout: <<20>>                        # chat class; p99 alert per model per route
+      weight: 80
+      rpm: <<600>>
+      tpm: <<400000>>
+  - model_name: chat
+    litellm_params:
+      model: azure/<<deployment-payg>>        # tier 2: pay-as-you-go, kept warm so the path is known to work
+      api_key: os.environ/<<AZURE_KEY_CHAT_PAYG>>
+      timeout: <<20>>
+      weight: 20
+  - model_name: chat
+    litellm_params:
+      model: <<provider-b/same-model-id>>    # tier 3: SAME model elsewhere → transparent fallback (fallback-approval.md: same-model)
+      api_key: os.environ/<<PROVIDER_B_KEY_CHAT>>
+      timeout: <<20>>
+      weight: 0                              # used only on 429 / failure of the tiers above
+
+  # ---- route: extract (structured output, not streamed, parallel guardrail allowed) -------------
+  - model_name: extract
+    litellm_params:
+      model: <<provider/fast-model-id>>
+      api_key: os.environ/<<KEY_EXTRACT>>
+      timeout: <<15>>
+      weight: 100
+
+  # ---- route: reason (deep tasks; reasoning level PINNED; long timeout; never auto-select) -------
+  - model_name: reason
+    litellm_params:
+      model: <<provider/reasoning-model-id>>
+      api_key: os.environ/<<KEY_REASON>>
+      timeout: <<90>>                        # "a reasoning model's normal is a chat model's outage" — Twilio
+      reasoning_effort: <<medium>>           # pinned per route; auto-select = latency risk
+      weight: 100
+
+  # ---- route: embed ----------------------------------------------------------------------------
+  - model_name: embed
+    litellm_params:
+      model: <<provider/embedding-model-id>>
+      api_key: os.environ/<<KEY_EMBED>>
+      timeout: <<5>>
+      weight: 100
+
+# Cross-MODEL fallbacks (different model = different product): ONLY with an approval block in docs/llm-gateway.md
+# fallbacks:
+#   - chat: ["chat-approved-alt"]        # route → route, pre-approved, evals attached (fallback-approval.md)
+
+# Per-route attributes the router does not carry (kept here so one file describes a route):
+routes:
+  chat:    { streaming: true,  guardrails: { input_injection: pre/closed, pii_out: buffered/closed }, priority: 1, spend_cap_usd_day: <<100>> }
+  extract: { streaming: false, guardrails: { schema: post/closed, toxicity: parallel/open },           priority: 2, spend_cap_usd_day: <<50>> }
+  reason:  { streaming: false, guardrails: { pii_out: post/closed },                                   priority: 3, spend_cap_usd_day: <<30>> }
+  embed:   { streaming: false, guardrails: {},                                                         priority: 2, spend_cap_usd_day: <<20>> }

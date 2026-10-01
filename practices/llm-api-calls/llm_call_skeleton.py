@@ -28,7 +28,8 @@ log = logging.getLogger("llm")
 MODEL = "<<MODEL>>"                  # one place. Tier policy: principles/08-model-selection.md
 MAX_OUTPUT_TOKENS = <<MAX_OUTPUT_TOKENS>>   # e.g. 1024 for a classifier, 8192 for a writer
 TIMEOUT_S = <<TIMEOUT_S>>            # e.g. 60; a call without a timeout is an outage waiting
-MAX_RETRIES = 2                      # on rate limit / overload only; never retry a 4xx you caused
+MAX_RETRIES = 2                      # on rate limit / overload only; never retry a 4xx you caused.
+                                     # In production, ONE retry owner: if a gateway/router retries (practices/llm-gateway/), set this to 0.
 
 _client = anthropic.Anthropic(timeout=TIMEOUT_S, max_retries=0)  # we handle retries ourselves
 

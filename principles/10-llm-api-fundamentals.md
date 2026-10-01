@@ -3,7 +3,7 @@ title: "LLM API fundamentals — what a model call is, what the model can and ca
 type: principle
 status: draft              # draft until LIDR session 1 (2026-10-15) confirms or contradicts
 date: 2026-09-27
-last-reviewed: 2026-09-27
+last-reviewed: 2026-09-30
 tags: [llm-api, prompting, tokens, context-window, prompt-caching, reasoning-models, providers, hallucination, s1]
 sources:
   - sources/2026-09-27-s01-llm-setup-digest.md
@@ -106,3 +106,4 @@ The labs' top models are near parity and rotate quarterly (`08-model-selection.m
 
 - 2026-09-27 — created from `sources/2026-09-27-s01-llm-setup-digest.md` (market scan for LIDR session 1). Status `draft` until the session on 2026-10-15.
 - 2026-09-27 (s2) — reviewed against `sources/2026-09-27-s02-context-caching-digest.md`: §3.4 caching rule confirmed and sharpened with the break list (timestamp, cwd or user name at the top; tool list changing per turn; edits to earlier messages; compaction — expected); minimum cacheable prefix ~1,024 tokens and TTLs of 5 min–1 h recorded in the practice; §3.3 gains "positive examples over negative rules; route or phase-swap instead of one growing prompt" (Anthropic's post via Ebbelaar). Multi-turn context management is `11-runtime-context-management.md`.
+- 2026-09-30 (s3) — refined against `sources/2026-09-30-s03-wrappers-digest.md`: the client module's retry on 429/5xx is for a single service; in production the retry owner moves to the gateway layer (`12-llm-gateway-layer.md`) and the SDK's retries go to 0 — stacked retries reached 16 attempts per call at ManyChat. Model ids move from the module constant to a registry with a daily availability check. Store structured prompt inputs and the prompt version, not only the rendered string, so a call can be replayed (TensorZero). Provider checklist row 8: a gateway's data policy (no logging by default) does not override the upstream provider's retention/training policy — both apply.

@@ -3,7 +3,7 @@ title: "Agent design and tools — an agent is a model calling well-designed too
 type: principle
 status: draft              # draft until LIDR session 12 (2027-01-14) is ingested and compared
 date: 2026-09-24
-last-reviewed: 2026-09-27
+last-reviewed: 2026-09-30
 tags: [agents, workflows, tool-design, function-calling, mcp, agentic-rag, react, s12]
 sources:
   - sources/2026-09-24-s12-agents-digest.md
@@ -115,3 +115,4 @@ An agent converges only if each iteration injects signal: a test that passes or 
 - 2026-09-24 — created from the session-12 market scan digest. Status `draft` until the LIDR session of 2027-01-14 is ingested and compared.
 - 2026-09-27 — reviewed against `sources/2026-09-27-s01-llm-setup-digest.md`; the vendor APIs confirm the loop as the unit of the API (typed items in / typed items out; hosted tools and remote MCP with `allowed_tools` / `require_approval`; "tools are prompts", few tools per server). One refinement to §3.3: besides reading what the model saw, feed its *own reasoning* back into the next turn — OpenAI reports better tool use and lower latency when reasoning items persist across turns. The call itself is now `principles/10-llm-api-fundamentals.md`.
 - 2026-09-27 (s2) — refined against `sources/2026-09-27-s02-context-caching-digest.md`: §3.4 gains the addressable-result rule and the fixed-tool-set rule (cache and phantom tools; Manus's three-layer action space). Sub-agents: only the final message crosses the boundary, so it must be self-contained (Chase); default to *communicate* (brief in, structured result out) over *share memory*, which forfeits the cache (Manus); fan out only read-only gathering and converge for anything that must cohere (Cognition vs Anthropic, reconciled). Agentic RAG §3.6 confirmed and refined: a curated manifest (`llms.txt` with good descriptions) plus fetch beat a vector store in Lance Martin's test; leading coding agents do no indexing. Traces: the multi-turn reason ("you don't know what the context at step 14 will be"). Runtime context management itself is `principles/11-runtime-context-management.md`.
+- 2026-09-30 (s3) — reviewed against `sources/2026-09-30-s03-wrappers-digest.md`; 12-Factor Agents confirms the minimal-loop stance in its own words (own prompts, context and control flow; tools are JSON + code; stateless reducer; micro-agents inside deterministic code). §3.3 traces now have a standard: the OpenTelemetry GenAI span attributes in `practices/llm-gateway/tracing-otel.md`. No change to the text.

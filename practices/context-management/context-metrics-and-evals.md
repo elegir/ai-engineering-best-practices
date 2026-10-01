@@ -14,7 +14,7 @@ Per call (the client module already emits these — `../llm-api-calls/llm_call_s
 | `compaction_event` (step 1 / step 2 / none, tokens before → after) | To see how often and how much you compact |
 | `tool_calls[]` with input params and result size | To find the tool that floods the window |
 
-Per session: cache hit rate (`Σ cache_read / Σ (input + cache_read)`), cost, number of compactions, final context size, whether the user's goal was reached. A dashboard with these five columns is the whole observability requirement for this practice. Use the OpenTelemetry GenAI attributes or your tracing tool (Langfuse, LangSmith); the fields matter, the tool does not.
+Per session: cache hit rate (`Σ cache_read / Σ (input + cache_read)`), cost, number of compactions, final context size, whether the user's goal was reached. A dashboard with these five columns is the whole observability requirement for this practice. Use the OpenTelemetry GenAI attributes (names and opt-ins in `../llm-gateway/tracing-otel.md`) or your tracing tool (Langfuse, LangSmith); the fields matter, the tool does not.
 
 **Read one full trace per week.** "You don't actually know what the context at step 14 will be, because there's 13 steps before that that could pull arbitrary things in" (Chase). Bugs that never appear in a five-turn dev test appear at turn 10–20 in production and are obvious in a full trace (Ebbelaar). Name what you see with `context-failure-modes.md`.
 
