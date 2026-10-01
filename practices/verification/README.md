@@ -3,7 +3,7 @@ title: "Practice — verification (deterministic sensors per application type)"
 type: practice
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-08
+last-reviewed: 2026-09-30
 tags: [testing, e2e, playwright, hurl, pytest, bats, evals, definition-of-done]
 kind: working-style
 applies-when: "always"
@@ -39,6 +39,7 @@ The agent declares "done" when the code compiles, because nothing lets it prove 
 | `cli-bats/` — `cli.bats` | CLIs and shell scripts (including WP-CLI / fleet scripts) | `<repo>/test/` |
 | `definition-of-done.md` | Every repo | paste into `docs/workflow.md` §2 |
 | `harness-evals.md` | Every repo once the harness exists | `<repo>/docs/harness-evals.md` |
+| `dry-run-and-approval.md` | **Only when `acts_on_world`** (sends, publishes, pays or writes third-party records on its own, LLM or not) | `<repo>/docs/dry-run-and-approval.md`; its rule 3 tests go into the smoke suite |
 
 ## Adapt
 
@@ -46,7 +47,7 @@ The agent declares "done" when the code compiles, because nothing lets it prove 
 - Replace `<<BASE_URL>>`, seed credentials, and the three or four "must never break" flows. Smoke = the flows that, if broken, make everything else irrelevant (login, the core transaction, the main pipeline step).
 - Prefer accessibility-tree selectors (`getByRole`, `getByLabel`) over CSS; prefer text assertions over screenshots. Use screenshots only in a separate visual-regression job.
 - Wire the smoke command into `.claude/hooks/stop-gate.sh` (`hooks-and-guards/`) and the full suite into CI. Do not put the agent in CI; the agent *writes* tests, CI *runs* them.
-- For pipelines with side effects (emails, posts, payments): a `--dry-run` or sandbox mode is part of the sensor. If the code has none, adding it is the first task.
+- For pipelines with side effects (emails, posts, payments): a `--dry-run` or sandbox mode is part of the sensor. If the code has none, adding it is the first task. The full rule set — one switch, approval before the first live run, smoke tests that run the real path in dry-run mode — is `dry-run-and-approval.md`; copy it only when the repo's facts include `acts_on_world`.
 
 ## Verify
 
@@ -54,6 +55,7 @@ The agent declares "done" when the code compiles, because nothing lets it prove 
 2. Break the core flow on purpose → the smoke suite fails with a readable message; the Stop hook refuses to finish.
 3. `docs/workflow.md` §2 contains the definition-of-done checklist with the exact commands.
 4. `docs/harness-evals.md` lists three tasks; running them after a harness change takes < 30 minutes.
+5. When `acts_on_world`: the four checks in `dry-run-and-approval.md` §Verify pass (nothing leaves in dry-run mode; live refused outside production; dry-run tests in the smoke suite; approval recorded).
 
 ## Sources
 
@@ -61,6 +63,7 @@ The agent declares "done" when the code compiles, because nothing lets it prove 
 - Practitioner guide §5: accessibility tree over screenshots; tools per app type (Playwright, Hurl, bats, Testcontainers); generate with agent, run without it — `sources/2026-09-08-how-teams-structure-agent-knowledge.md` §3.2.
 
 ## Change log
+- 2026-09-30 — added `dry-run-and-approval.md`, a section that applies only when the repo's facts include `acts_on_world`; per `decisions/0004-day-one-for-blank-and-existing-repos.md` §7 (debate attack 2: the fintech moves money with no LLM, so the dry-run rule belongs here, not in `llm-gateway`). The practice stays `always`; the file is conditional.
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 
 - 2026-09-08 — created.

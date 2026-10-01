@@ -7,6 +7,7 @@ last-reviewed: 2026-09-30
 tags: [applicability, selector, day-one, facts, audit]
 sources:
   - decisions/0003-applicability-by-facts.md
+  - decisions/0004-day-one-for-blank-and-existing-repos.md
   - practices/facts.md
   - sources/2026-09-26-selector-debate.md
 supersedes: null
@@ -15,7 +16,7 @@ superseded-by: null
 
 # Which practices apply to this repo?
 
-**Who runs this.** An agent inside the target repository, on Martin's request — on day one of a new repo or before the first audit of an existing one. It is the entry point; `audit-repo-against-kb.md` runs after it and only inspects the practices this playbook marked as applying.
+**Who runs this.** An agent inside an **existing** target repository, on Martin's request, before its first audit. It is the entry point for the existing-repo door; `audit-repo-against-kb.md` runs after it and only inspects the practices this playbook marked as applying. A repository with **no code yet** takes the other door — playbooks/bootstrap-new-repo.md (to be created; decision `decisions/0004-day-one-for-blank-and-existing-repos.md` §3) — where facts are *planned* from intent instead of inferred. The routing fact `brownfield` decides: real commits older than a few weeks, a schema with migrations or a deploy that runs → this playbook; none of those → the bootstrap. Both doors end in the same router, `scripts/applies.py`.
 
 **Output.** A short markdown block in chat (Martin may paste it into the repo's own `docs/`; this playbook writes nothing): the facts found with their evidence, the confirmed facts, and the practice list in two groups — *applies* (in order) and *skipped* (each with a reason about this repo). **No files are changed.**
 
@@ -51,13 +52,13 @@ Stop until Martin confirms.
 
 ## Step 3 — Evaluate every practice
 
-Read the `applies-when` column of `practices/README.md` (do not open every README yet); `python3 <kb>/scripts/applies.py <fact> <fact> …` prints the mechanical result for the confirmed facts as a cross-check. For each practice write one of:
+Run `python3 <kb>/scripts/applies.py <fact> <fact> …` with the confirmed facts: its output **is** the list and the order (decision 0004 §5; the `applies-when` column of `practices/README.md` is what it evaluates, so you may read the column, but you do not re-interpret it). A practice with a `full-when` line is printed as `(core)` or `(full)` — today `security-baseline`: its full part (threat model, injection fixture, trust register) attaches on `acts_on_world or personal_data or regulated or multi_tenant`. A file inside an `always` practice may still be conditional, stated in that practice's README — today `verification/dry-run-and-approval.md`, only when `acts_on_world`. For each practice write one of:
 
 - **applies** — the line holds for the confirmed facts.
 - **skipped — reason** — the line does not hold; the reason must be a fact about *this* repo ("no retrieval: no vector store, no embeddings call, no corpus"), never a preference or a lack of time. Copy the practice's prose "Does not apply when" only if it literally describes this repo.
 - **already present** — the repo has it (say where); the audit will judge the quality.
 
-Order the *applies* list with the rule in `practices/facts.md` §Ordering. Do not add a score.
+Keep the script's order (`practices/facts.md` §Ordering). Do not add a score.
 
 ## Step 4 — Hand over
 
@@ -86,3 +87,7 @@ These are the shapes his repos actually have (2026-09). They are examples for th
 **D. Payments / fintech**. Facts: `regulated` (PCI/KYC), `personal_data`, `production`, `multi_tenant` if several merchants; LLM facts as found. → Working-style incl. `security-baseline/`; the security-by-design and compliance practices attach on `regulated` regardless of whether an LLM is present; capability practices only when the LLM facts are found.
 
 These four lists are produced mechanically by `python3 scripts/applies.py --shapes` from the `applies-when` lines in `practices/README.md`; `scripts/kb-check.sh` runs it so the examples cannot drift from the practices (they did between 2026-09-26 and 2026-09-30). The script is a helper: the agent still writes the evidence and the repo-specific reasons.
+
+## Change log
+
+- 2026-09-30 — decision 0004: this playbook is now the *existing-repo* door; blank repos go to the bootstrap playbook (to be created); `brownfield` is the routing fact; `scripts/applies.py` is the authority for the list and its order; `security-baseline` prints core/full; `verification/dry-run-and-approval.md` noted as conditional on `acts_on_world`.

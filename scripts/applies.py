@@ -32,12 +32,22 @@ def facts_vocabulary():
         if m: words.add(m.group(1))
     return words
 
+def frontmatter_field(name, field):
+    """Value of a frontmatter field in practices/<name>/README.md, or None."""
+    path = os.path.join(ROOT, "practices", name, "README.md")
+    if not os.path.exists(path): return None
+    for line in open(path, encoding="utf-8"):
+        m = re.match(rf"^{field}: *\"?([^\"]*?)\"? *$", line)
+        if m: return m.group(1).strip()
+    return None
+
 def practices():
-    """(name, kind, applies-when) from practices/README.md, in table order."""
+    """(name, kind, applies-when, full-when|None) in practices/README.md table order.
+    applies-when comes from the table (the agent reads it first); full-when from the folder's frontmatter."""
     out = []
     for line in open(os.path.join(ROOT, "practices", "README.md"), encoding="utf-8"):
-        m = re.match(r"\| `([a-z0-9-]+)/` \| (working-style|capability) \| `([^`]+)` \|", line)
-        if m: out.append(m.groups())
+        m = re.match(r"\| `([a-z0-9-]+)/` \| (working-style|capability) \| `([^`]+)`", line)
+        if m: out.append((m.group(1), m.group(2), m.group(3), frontmatter_field(m.group(1), "full-when")))
     return out
 
 def evaluate(expr, facts, vocab):
@@ -53,17 +63,24 @@ def main():
     vocab = facts_vocabulary(); plist = practices()
     if "--check" in args:
         bad = 0
-        for name, kind, expr in plist:
-            try: evaluate(expr, set(), vocab)
-            except Exception as e: print(f"  - {name}: {e}"); bad += 1
+        for name, kind, expr, full in plist:
+            for label, e in (("applies-when", expr), ("full-when", full)):
+                if e is None: continue
+                try: evaluate(e, set(), vocab)
+                except Exception as err: print(f"  - {name} {label}: {err}"); bad += 1
+            fm = frontmatter_field(name, "applies-when")
+            if fm != expr: print(f"  - {name}: README table says `{expr}` but frontmatter says `{fm}`"); bad += 1
         sys.exit(1 if bad else 0)
     shapes = SHAPES if "--shapes" in args else {"given facts": " ".join(args)}
     for title, fstr in shapes.items():
         facts = set(fstr.split())
         unknown = facts - vocab
         if unknown: print(f"unknown facts: {sorted(unknown)}"); sys.exit(1)
-        applies = [(n, k) for n, k, e in plist if evaluate(e, facts, vocab)]
-        skipped = [(n, e) for n, k, e in plist if not evaluate(e, facts, vocab)]
+        def label(n, full):
+            if full is None: return n
+            return f"{n} (full)" if evaluate(full, facts, vocab) else f"{n} (core)"
+        applies = [(label(n, f), k) for n, k, e, f in plist if evaluate(e, facts, vocab)]
+        skipped = [(n, e) for n, k, e, f in plist if not evaluate(e, facts, vocab)]
         print(f"\n## {title}\nfacts: {' '.join(sorted(facts))}")
         print("applies (working-style): " + ", ".join(n for n, k in applies if k == "working-style"))
         print("applies (capability):    " + (", ".join(n for n, k in applies if k == "capability") or "—"))

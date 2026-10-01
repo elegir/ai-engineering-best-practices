@@ -9,7 +9,7 @@ sources:
   - practices/facts.md
   - playbooks/which-practices-apply.md
 supersedes: null
-superseded-by: null
+superseded-by: null   # partly overturned by decisions/0004-day-one-for-blank-and-existing-repos.md (§5 re-trigger, §7 bundles, "evaluated by judgment", draft-until-lecture); the rest stands
 ---
 
 # 0003 — Applicability by facts
@@ -38,3 +38,4 @@ The KB must serve as a "guiding star": any repo consults it on day one and gets 
 ## Change log
 
 - 2026-09-30 — one small mechanical consumer added after all: `scripts/applies.py` evaluates the `applies-when` lines for a set of facts and `kb-check.sh` runs it on the four worked shapes, because the playbook's examples drifted from the practices within four days (three practices and two facts added). This is not the evaluator script v1 proposed and rejected — the agent still infers facts with evidence and writes repo-specific reasons; the script only keeps the examples honest and gives a cross-check.
+- 2026-09-30 — `decisions/0004-day-one-for-blank-and-existing-repos.md` overturns four points after the day-one debate (`sources/2026-09-30-day-one-debate.md`): bundles are generated now rather than after two instances (§7); a re-infer check lives in the repo's own entry file (the "re-trigger" rejected under Consequences); the `applies-when` lines are evaluated by `scripts/applies.py`, not by judgment; practices are promoted by adoption. Facts-as-evidence, one confirmation screen, skip reasons about this repo, and "the KB writes nothing into target repos" (0001) all stand.
