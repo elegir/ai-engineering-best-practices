@@ -3,10 +3,11 @@ title: "Practice — hooks and guards (turn rules into mechanisms)"
 type: practice
 status: current
 date: 2026-09-08
-last-reviewed: 2026-09-08
+last-reviewed: 2026-09-30
 tags: [hooks, claude-code, lefthook, pre-commit, guards, linters]
 kind: working-style
 applies-when: "always"
+reference-status: untested   # untested | field-tested | reference (decision 0005 §3)
 principle: principles/02-harness-engineering.md
 sources:
   - sources/2026-09-08-how-teams-structure-agent-knowledge.md
@@ -45,6 +46,17 @@ Rules live only as sentences in the instruction file, so the agent can skip test
 
 The folder is named `dot-claude/` here because remote tools cannot write `.claude/`; rename it to `.claude/` when copying. Scripts are Bash (Claude Code runs hooks through a shell on Windows too — Git Bash is required; note it in `docs/development-guide.md`).
 
+## Reference implementation
+
+The `dot-claude/hooks/*.sh` scripts are the current reference and are **being replaced** by a single `guard.py` + `hooks.json` (decision 0005 §6; the migration is item 3 of `../../sources/2026-09-30-stack-debate.md` §4). Until then the shell scripts stand with their known weaknesses (sed-parsed JSON; fail-open when the shell is missing). Stack commands (test, format, lint) belong in `hooks.json`, never in the guard itself.
+
+## Stack-sensitive points
+
+- The guard runs on the **developer's machine** around the agent, not on the product's host: its runtime is whatever the developer has (Python 3 is assumed; the `|| exit 2` wiring makes its absence block, not pass).
+- Test / format / lint commands are the only stack-specific input: `pytest` + `ruff`; `npm test` + `biome`; `vendor/bin/pest` + `pint`/`phpcbf`; WP-CLI checks for WordPress. They live in `hooks.json` (see `variants/*.md` for each stack's lines).
+- Protected paths differ: `.env` and lockfiles everywhere; `wp-config.php` on WordPress; `bootstrap/cache/config.php` on Laravel after `config:cache` (secrets are copied there); `*.pem`, `*.key` anywhere.
+- Windows: shell hooks need Git Bash; the Python guard removes that dependency, which is the main reason for the rewrite.
+
 ## Adapt
 
 - Open each `.sh` and replace the `<<…>>` commands with the stack's tools from `variants/`.
@@ -55,11 +67,17 @@ The folder is named `dot-claude/` here because remote tools cannot write `.claud
 
 ## Verify
 
-1. Ask the agent to edit `.env` → the edit is blocked and the agent reports the reason.
-2. Ask it to write a badly formatted file → after the write, it is auto-formatted and any lint error comes back to the agent, which fixes it.
-3. Break a unit test and ask the agent to "finish" → the Stop hook refuses; the agent fixes the test.
-4. `git commit --no-verify` from the agent → blocked by the bash guard. A human running it locally is stopped by review (document it).
-5. `npx lefthook run pre-commit` passes on a clean tree.
+Each numbered line is a stack-neutral assertion — the contract (decision 0005 §2). `observer` says who can judge it: `script` (a command's exit code), `agent` (the agent observes it in a session), `Martin` (a human reads it). `negative` is what must make it fail. `framework: beats` means the assertion wins over the repo's existing framework or library; `bends` means the repo's idiom wins and the assertion adapts to it. Stack-specific commands live only under *Example commands (Python)*.
+
+1. Asked to edit a protected file (`.env`, lockfiles, the hooks themselves), the agent is blocked before the write and reports the reason — observer: agent — negative: the edit lands
+2. After the agent writes a badly formatted file, the file is auto-formatted and any lint error returns to the agent, which fixes it — observer: agent — negative: a file left unformatted, or a lint error the agent never sees
+3. With a failing test, asked to "finish", the agent is refused by the stop gate until the test passes — observer: agent — negative: the session ends green with a red test
+4. A destructive command from the agent (`--no-verify`, force push, a database drop, a production deploy) is blocked by the guard **and** by the tool's native deny list — observer: agent — negative: either layer alone lets it through
+5. The guard fails closed: with the interpreter renamed or missing, every guarded action is blocked and the error names the guard — observer: script — negative: an action that proceeds with "command not found" on stderr (decision 0005 §6)
+6. `guard --selftest` passes on a clean tree and is run by the entry-file startup routine — observer: script — negative: a session that starts without the self-test result
+7. The pre-commit gate (lefthook or the repo's equivalent) passes on a clean tree and fails on a staged secret or a failing lint — observer: script — negative: a clean tree that fails, or a secret that passes — framework: bends
+
+**Example commands (Python / Node):** `python3 .claude/hooks/guard.py --selftest`; `mv $(which python3) /tmp && <any guarded edit>` → blocked; `npx lefthook run pre-commit`.
 
 ## Sources
 
@@ -68,6 +86,8 @@ The folder is named `dot-claude/` here because remote tools cannot write `.claud
 - Claude Code hooks docs: https://code.claude.com/docs/en/hooks-guide
 
 ## Change log
+
+- 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-26 — added `kind` and `applies-when` frontmatter (decision 0003).
 
 - 2026-09-08 — created.

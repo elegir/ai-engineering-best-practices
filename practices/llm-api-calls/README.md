@@ -7,6 +7,7 @@ last-reviewed: 2026-09-30
 tags: [llm-api, prompting, tokens, prompt-caching, providers, reliability]
 kind: capability
 applies-when: "llm_calls"
+reference-status: untested   # untested | field-tested | reference (decision 0005 §3)
 principle: principles/10-llm-api-fundamentals.md
 sources:
   - sources/2026-09-27-s01-llm-setup-digest.md
@@ -41,6 +42,17 @@ The product calls a language model at runtime and one of these symptoms appears:
 | `provider-selection-checklist.md` | `<repo>/docs/llm-provider.md` (next to the model policy from `08-model-selection.md`) | Developer criteria for choosing and re-checking a provider; switching-cost estimate |
 | `context-budget.md` | `<repo>/docs/llm-provider.md` §context, or the feature spec | How to size a request: what shares the window, where the caching boundary goes, when to start a new thread |
 
+## Reference implementation
+
+`llm_call_skeleton.py`: one client module implementing assertions 1, 3, 4, 6 for the Anthropic SDK. **Python idioms, not required:** the `Result` dataclass that returns errors instead of raising (Laravel's idiom is exceptions and the HTTP client's `throw()`; TypeScript's is a thrown error or a discriminated union — either satisfies the contract); the module-level singleton client. The five invariants in its docstring are now assertions 1, 3, 4, 5 and 6 above. See `stack-notes/` for other stacks.
+
+## Stack-sensitive points
+
+- **Retry ownership** depends on the SDK's default: Anthropic's and OpenAI's official Python/TS SDKs retry twice by default (set `max_retries=0` to own retries); community PHP packages differ — check before deciding who owns retries (assertion 4).
+- **Request-scoped runtimes** (PHP-FPM): a per-request client is fine; a cooldown or circuit state must live in the cache store, not in a static variable.
+- **Streaming** needs a long-lived response: trivial in Python/Node servers; in PHP it needs output buffering disabled and a web server configured for it, or a queued job with polling.
+- **Prompt files**: Python/TS load them from disk at import; Laravel repos conventionally put them under `resources/prompts/`, WordPress plugins under the plugin folder — the location is free, the header block is not.
+
 ## Adapt
 - `llm_call_skeleton.py`: set `<<MODEL>>`, `<<MAX_OUTPUT_TOKENS>>`, `<<TIMEOUT_S>>`; keep `call()` as the one entry point. If the product uses OpenAI, replace the SDK block per the comment (`client.responses.create(input=items, …)`; items and output items instead of messages and content blocks) — the loop shape does not change. If a framework (LangChain, Pydantic AI, Vercel AI SDK) is already in place, keep it, but route it through this module so model name, limits and usage logging still live in one file.
 - `system-prompt-template.md`: delete the sections a prompt does not need (a classifier has no conversation history); never reorder static and dynamic parts. Fill the header (purpose, model, version, last evaluated on). Store under version control; the vendor's prompt dashboard (OpenAI prompt objects) is an alternative only if every change still lands in git.
@@ -49,17 +61,27 @@ The product calls a language model at runtime and one of these symptoms appears:
 - Stack variants: Python shown; TypeScript is a direct port (`@anthropic-ai/sdk`, `openai`); keep the same module boundary.
 
 ## Verify
-- `grep -rn "anthropic\|openai" src/ | grep import` returns exactly one file.
-- Every runtime prompt is a file with the header block filled; `git log` on it shows the versions.
-- Logging one multi-turn conversation shows `cache_read_input_tokens > 0` from the second call on; if it is 0, the static/dynamic order is wrong.
-- The feature spec lists which rows of `failure-modes-and-mitigations.md` apply and what covers each.
-- The eval for the feature runs each scenario at least 5× and reports the worst case, not the mean.
-- `docs/llm-provider.md` exists, dated, with the switching-cost line filled in.
+
+Each numbered line is a stack-neutral assertion — the contract (decision 0005 §2). `observer` says who can judge it: `script` (a command's exit code), `agent` (the agent observes it in a session), `Martin` (a human reads it). `negative` is what must make it fail. `framework: beats` means the assertion wins over the repo's existing framework or library; `bends` means the repo's idiom wins and the assertion adapts to it. Stack-specific commands live only under *Example commands (Python)*.
+
+1. Exactly one module in the product imports or instantiates the model vendor's client; every other call site goes through it — observer: script — negative: a second import, or a handler that builds a request itself — framework: beats
+2. Every runtime prompt is a versioned file with the header block (id, version, date, model, owner) filled, and its history is visible in version control — observer: script — negative: a prompt as a string literal, or a file without the header
+3. In a logged multi-turn conversation, cached tokens read are above zero from the second call on — observer: script — negative: zero cached tokens on the second call (variable content is placed before stable content)
+4. Retries have a single owner: either the client or the vendor SDK retries, never both, and the retry count appears in the log — observer: script — negative: a 429 that produces more attempts than the single owner's cap — framework: beats
+5. The model is never asked for facts, counts or arithmetic the code can compute, and no irreversible action is guarded by an LLM's opinion alone — observer: Martin — negative: a prompt that asks "how many…", or a send/pay/publish whose only gate is a model's yes
+6. Per-call usage (input, output, cached tokens, latency, model id) is logged in a form that can be aggregated — observer: script — negative: a call with no usage record
+7. The feature spec lists which rows of `failure-modes-and-mitigations.md` apply and what covers each — observer: Martin — negative: a row that applies with no mitigation named
+8. The feature's eval runs each scenario at least five times and reports the worst case, not the mean — observer: script — negative: an eval that reports an average
+9. `docs/llm-provider.md` exists, is dated, and states the switching cost — observer: Martin — negative: a provider chosen with no written reason
+
+**Example commands (Python):** `grep -rln "import anthropic\|from anthropic\|import openai" src/ | wc -l` → `1`; `python3 llm_call_skeleton.py --demo` prints usage with `cache_read_input_tokens`.
 
 ## Sources
 `sources/2026-09-27-s01-llm-setup-digest.md` §3.1–3.5 and impact table §6; primary texts listed in `principles/10-llm-api-fundamentals.md` §6. Vendor docs to re-check before promoting to `current`: Claude prompt engineering and prompt caching guides; OpenAI Responses API guide.
 
 ## Change log
+
+- 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-27 — created from the session-1 market scan (draft).
 - 2026-09-27 (s2) — checklist item 2 sharpened (cache breakers, positive rules); provider row 10 (cached-input price); `context-budget.md` rule 7 (cache limits). Source `sources/2026-09-27-s02-context-caching-digest.md`.
 - 2026-09-30 (s3) — skeleton comment: one retry owner in production; provider row 8: gateway and provider policies both apply. Source `sources/2026-09-30-s03-wrappers-digest.md`.

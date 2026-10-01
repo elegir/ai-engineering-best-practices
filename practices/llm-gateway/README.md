@@ -7,6 +7,7 @@ last-reviewed: 2026-09-30
 tags: [llm-gateway, routing, fallback, retries, timeouts, streaming, observability, opentelemetry, semantic-cache, model-registry]
 kind: capability
 applies-when: "llm_calls and production"
+reference-status: untested   # untested | field-tested | reference (decision 0005 §3)
 principle: principles/12-llm-gateway-layer.md
 sources:
   - sources/2026-09-30-s03-wrappers-digest.md
@@ -42,6 +43,17 @@ The product depends on model providers in production and one of these symptoms a
 | `tracing-otel.md` | `<repo>/docs/observability.md` §llm | The GenAI span attributes to emit, content opt-in, redaction, session and pseudonymous user ids, replay requirement, what to page on |
 | `semantic-cache-decision.md` | the feature spec | Whether a semantic cache is allowed at all for this route; filters, threshold, TTL, false-positive check |
 
+## Reference implementation
+
+`gateway_config.yaml` (routes, deployments, cooldowns, approvals) read by the policy in `routing-policy.md`. There is no code file: the contract is satisfied by a hosted gateway (LiteLLM, Portkey, a vendor router) or by the repo's own thin layer, as long as assertions 1–7 hold. The YAML schema is the reference shape, not a required format.
+
+## Stack-sensitive points
+
+- **Where cooldown state lives**: a long-lived gateway process holds it in memory; a request-scoped app must keep it in the shared cache (Redis, the framework's cache store) or the cooldown never engages in production even though it "passes" in a single long interactive session.
+- **Retries belong in a queue** in PHP/Laravel (a queued job with backoff), not in the request; in Python/Node they can live in the client.
+- **Streaming** through a gateway needs the whole chain (app server, reverse proxy) to pass server-sent events without buffering; this is configuration, not code, and differs per host.
+- **OpenTelemetry** SDKs exist for Python, Node and PHP; the GenAI semantic-convention attribute names are the same in all three.
+
 ## Adapt
 - `gateway_config.yaml`: it is written in LiteLLM Router terms because that is the most widely used open router; OpenRouter, Vercel AI SDK, a hand-written router or a vendor gateway have the same knobs under other names — keep the *decisions* (one owner of retries, cooldown per deployment, timeout per class, weights, fallback order) and translate the keys. Every number is a placeholder with a date.
 - `routing-policy.md`: delete rules for things the product does not do (no streaming → drop the stream rules); keep the fail-open/closed table even with one guardrail.
@@ -50,16 +62,23 @@ The product depends on model providers in production and one of these symptoms a
 - Central vs library: the default here is a **library in each service with one shared config file**; a shared gateway deployment is a deliberate choice recorded in `docs/llm-gateway.md` with its single-point-of-failure mitigation.
 
 ## Verify
-- Kill the primary deployment in a test environment: calls complete through the fallback; the usage log shows the deployment switch; no request exceeds the route's timeout.
-- Force 429s: the deployment enters cooldown and leaves it; retries counted in the trace never exceed the single owner's cap.
-- `grep -rn "<model id>"` finds exactly one definition (the registry); the daily check ran in the last 24 h and would alert on a fake id.
-- Every fallback in the config has an approval block; every cross-model fallback has an eval result attached.
-- A streamed route: the client receives typed events; a dropped connection (no `[DONE]`) is reported as an error; a 5xx before the first token falls back silently.
-- One trace contains the GenAI attributes, no API key, no raw PII, a session id and a pseudonymous user id; the call can be replayed from the trace.
-- If a semantic cache exists: the false-positive check (20 near-miss pairs) passes at the chosen threshold; tenant and version are in the filter.
+
+Each numbered line is a stack-neutral assertion — the contract (decision 0005 §2). `observer` says who can judge it: `script` (a command's exit code), `agent` (the agent observes it in a session), `Martin` (a human reads it). `negative` is what must make it fail. `framework: beats` means the assertion wins over the repo's existing framework or library; `bends` means the repo's idiom wins and the assertion adapts to it. Stack-specific commands live only under *Example commands (Python)*.
+
+1. With the primary deployment unavailable in a test environment, calls complete through the fallback, the usage log shows the deployment switch, and no request exceeds the route's timeout — observer: script — negative: an error returned to the caller, or a request that outlives the timeout
+2. Under forced rate-limit errors the deployment enters cooldown and leaves it, and the retries counted in the trace never exceed the single owner's cap — observer: script — negative: more attempts than the cap (two retry layers) — framework: beats
+3. Every model identifier is defined exactly once, in the registry; a daily check validates each id against the vendor and would alert on a fake one — observer: script — negative: a model id in a second file, or a check that did not run in the last 24 hours
+4. Every fallback in the configuration carries an approval block (who, when, eval result for cross-model fallbacks) — observer: Martin — negative: a fallback added during an incident with no approval
+5. On a streamed route the client receives typed events; a dropped stream with no terminal event is reported as an error; a server error before the first token falls back silently — observer: script — negative: a stream parsed by regex, or a switch of provider mid-stream
+6. A trace of one call contains the GenAI semantic attributes, a session id and a pseudonymous user id, and contains no API key and no raw personal data; the call can be replayed from the trace — observer: script — negative: a key or an email address in the trace store
+7. If a semantic cache exists, the false-positive check (twenty near-miss pairs) passes at the chosen threshold and tenant and version are part of the cache key — observer: script — negative: another tenant's answer served, or a pair of near-misses treated as equal
+
+**Example commands (Python):** load `gateway_config.yaml`, stop the primary, run the smoke; `grep -rn "<model id>"` → one hit (`model-registry.md`).
 
 ## Sources
 `sources/2026-09-30-s03-wrappers-digest.md` §3.1–3.6 and impact table §6; primary texts in `principles/12-llm-gateway-layer.md` §6. Vendor docs to re-read before promoting to `current`: LiteLLM Router and proxy reliability; OpenRouter provider routing; OTel GenAI conventions (Development status).
 
 ## Change log
+
+- 2026-09-30 — decision 0005: Verify rewritten as the structured contract (observer / negative / framework); `## Reference implementation` and `## Stack-sensitive points` added; `reference-status: untested` until a real repo passes this Verify. Source `sources/2026-09-30-stack-debate.md`.
 - 2026-09-30 — created from the session-3 market scan (draft).
