@@ -1,6 +1,6 @@
 {
  "about": "Registry of every source this KB has ever considered — videos and podcast episodes (type video/podcast) AND written sources (type written: docs, papers, articles, courses). Media statuses: transcribed (raw text in sources/raw/), digested (source entry has a digest), applied (knowledge reached principles/practices), candidate (parked for a named module), discarded (do not re-consider unless the reason no longer holds). Written statuses: catalogued (listed as canon, not yet read in full), cited (used in a digest/principle — the reason says where), discarded. One entry per URL; `modules` lists every module that used it (reading an existing transcript again for another module is free and encouraged — the registry prevents paying twice for search, transcription and triage, never reuse); scripts/scan-filter.py (media) and scripts/written-filter.py (written) drop anything already here.",
- "updated": "2026-10-01",
+ "updated": "2026-10-04",
  "items": [
   {
    "id": "BHGTA6ZEls4",
@@ -16486,12 +16486,13 @@
    "type": "video",
    "module": "s6",
    "modules": [
-    "s6"
+    "s6",
+    "s7"
    ],
    "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
    "decided": "2026-10-01",
    "status": "applied",
-   "reason": "selected by authority test; digested in sources/2026-10-01-s06-data-audit-cleaning-privacy-digest.md; knowledge in principles/16 and practices/data-ingestion/",
+   "reason": "selected by authority test; digested in sources/2026-10-01-s06-data-audit-cleaning-privacy-digest.md; knowledge in principles/16 and practices/data-ingestion/; reused by s7 (chunkless RAG / Docling hybrid chunker)",
    "raw": "sources/raw/2026-10-01-market-scan-s06-data-audit-cleaning-privacy/yt-vRZNJWw78BQ-ibm-chunkless-rag-docling.md",
    "duration": "00:07:00"
   },
@@ -16734,6 +16735,2881 @@
    ],
    "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
    "decided": "2026-10-01"
+  },
+  {
+   "id": "pinecone.io/learn/chunking-strategies",
+   "url": "https://www.pinecone.io/learn/chunking-strategies/",
+   "title": "Chunking Strategies for LLM Applications (Pinecone Learn)",
+   "channel": "Pinecone (Roie Schwaber-Cohen)",
+   "published": "2023, updated",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; snapshot canon-snapshots/pinecone-chunking-strategies.md (read for the s7 digest)",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7"
+   ]
+  },
+  {
+   "id": "weaviate.io/blog/chunking-strategies-for-rag",
+   "url": "https://weaviate.io/blog/chunking-strategies-for-rag",
+   "title": "Chunking Strategies to Improve LLM RAG Pipeline Performance (9 strategies)",
+   "channel": "Weaviate (Plantinga & Slocum)",
+   "published": "2025-09-04",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; snapshot canon-snapshots/weaviate-chunking-strategies-for-rag.md (read for the s7 digest)",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7"
+   ]
+  },
+  {
+   "id": "arxiv.org/abs/2409.04701",
+   "url": "https://arxiv.org/abs/2409.04701",
+   "title": "Late Chunking: Contextual Chunk Embeddings Using Long-Context Embedding Models (arXiv 2409.04701)",
+   "channel": "Jina AI (Günther et al.)",
+   "published": "2024-09 / rev. 2025-07",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; snapshot canon-snapshots/jina-late-chunking-abstract.md (read for the s7 digest)",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7"
+   ]
+  },
+  {
+   "id": "github.com/jina-ai/late-chunking",
+   "url": "https://github.com/jina-ai/late-chunking",
+   "title": "jina-ai/late-chunking (reference implementation)",
+   "channel": "Jina AI",
+   "published": "2024",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; snapshot canon-snapshots/jina-late-chunking-readme.md (read for the s7 digest)",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7"
+   ]
+  },
+  {
+   "id": "weaviate.io/blog/late-chunking",
+   "url": "https://weaviate.io/blog/late-chunking",
+   "title": "Late Chunking: Balancing Precision and Cost in Long Context Retrieval",
+   "channel": "Weaviate blog",
+   "published": "2024",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; snapshot canon-snapshots/weaviate-late-chunking.md (read for the s7 digest)",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7"
+   ]
+  },
+  {
+   "id": "developers.openai.com/api/docs/guides/embeddings",
+   "url": "https://developers.openai.com/api/docs/guides/embeddings",
+   "title": "Vector embeddings guide (OpenAI API docs)",
+   "channel": "OpenAI",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; snapshot canon-snapshots/openai-embeddings-guide.md (read for the s7 digest)",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7"
+   ]
+  },
+  {
+   "id": "arxiv.org/abs/2210.07316",
+   "url": "https://arxiv.org/abs/2210.07316",
+   "title": "MTEB: Massive Text Embedding Benchmark (arXiv 2210.07316)",
+   "channel": "Muennighoff et al. / Hugging Face",
+   "published": "2022-10",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; snapshot canon-snapshots/mteb-abstract.md (read for the s7 digest)",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7"
+   ]
+  },
+  {
+   "id": "huggingface.co/spaces/mteb/leaderboard",
+   "url": "https://huggingface.co/spaces/mteb/leaderboard",
+   "title": "MTEB leaderboard (Hugging Face Space)",
+   "channel": "Hugging Face / MTEB",
+   "published": "live",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; not snapshotted (course page / live leaderboard / notebook); read when the module is digested",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7"
+   ]
+  },
+  {
+   "id": "jxnl.co/writing/2024/05/11/low-hanging-fruit-for-rag-search",
+   "url": "https://jxnl.co/writing/2024/05/11/low-hanging-fruit-for-rag-search/",
+   "title": "Low-Hanging Fruit for RAG Search",
+   "channel": "Jason Liu",
+   "published": "2024-05-11",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; snapshot canon-snapshots/jxnl-low-hanging-fruit-rag-search.md (read for the s7 digest)",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7",
+    "s10"
+   ]
+  },
+  {
+   "id": "research.trychroma.com/evaluating-chunking",
+   "url": "https://research.trychroma.com/evaluating-chunking",
+   "title": "Evaluating Chunking Strategies for Retrieval",
+   "channel": "Chroma Research (Smith & Troynikov)",
+   "published": "2024-07",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; snapshot canon-snapshots/chroma-evaluating-chunking.md (read for the s7 digest)",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7"
+   ]
+  },
+  {
+   "id": "docs.voyageai.com/docs/embeddings",
+   "url": "https://docs.voyageai.com/docs/embeddings",
+   "title": "Text embeddings (Voyage AI docs) — input_type, output_dimension, output_dtype",
+   "channel": "Voyage AI",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; snapshot canon-snapshots/voyage-embeddings-docs.md (read for the s7 digest)",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7"
+   ]
+  },
+  {
+   "id": "docs.cohere.com/docs/embeddings",
+   "url": "https://docs.cohere.com/docs/embeddings",
+   "title": "Embeddings (Cohere docs) — input_type, embedding_types",
+   "channel": "Cohere",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; snapshot canon-snapshots/cohere-embeddings-docs.md (read for the s7 digest)",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7"
+   ]
+  },
+  {
+   "id": "anthropic.com/engineering/contextual-retrieval",
+   "url": "https://www.anthropic.com/engineering/contextual-retrieval",
+   "title": "Introducing Contextual Retrieval",
+   "channel": "Anthropic Engineering",
+   "published": "2024-09-19",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; snapshot canon-snapshots/anthropic-contextual-retrieval.md (read for the s7 digest)",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7",
+    "s10",
+    "s11"
+   ]
+  },
+  {
+   "id": "github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb",
+   "url": "https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb",
+   "title": "5 Levels Of Text Splitting (companion notebook)",
+   "channel": "Greg Kamradt (FullStackRetrieval)",
+   "published": "2024-01",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; not snapshotted (course page / live leaderboard / notebook); read when the module is digested",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7"
+   ]
+  },
+  {
+   "id": "github.com/langchain-ai/rag-from-scratch",
+   "url": "https://github.com/langchain-ai/rag-from-scratch",
+   "title": "rag-from-scratch (LangChain notebooks)",
+   "channel": "LangChain (Lance Martin)",
+   "published": "2024",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; snapshot canon-snapshots/langchain-rag-from-scratch-readme.md (read for the s7 digest)",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7",
+    "s9",
+    "s10"
+   ]
+  },
+  {
+   "id": "deeplearning.ai/short-courses/retrieval-optimization-from-tokenization-to-vector-quantization",
+   "url": "https://www.deeplearning.ai/short-courses/retrieval-optimization-from-tokenization-to-vector-quantization/",
+   "title": "Retrieval Optimization: From Tokenization to Vector Quantization (course)",
+   "channel": "DeepLearning.AI × Qdrant (Kacper Łukawski)",
+   "published": "2024-10",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; not snapshotted (course page / live leaderboard / notebook); read when the module is digested",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7",
+    "s8"
+   ]
+  },
+  {
+   "id": "deeplearning.ai/short-courses/embedding-models-from-architecture-to-implementation",
+   "url": "https://www.deeplearning.ai/short-courses/embedding-models-from-architecture-to-implementation/",
+   "title": "Embedding Models: From Architecture to Implementation (course)",
+   "channel": "DeepLearning.AI × Vectara",
+   "published": "2024",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; not snapshotted (course page / live leaderboard / notebook); read when the module is digested",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7"
+   ]
+  },
+  {
+   "id": "maven.com/applied-llms/rag-playbook",
+   "url": "https://maven.com/applied-llms/rag-playbook",
+   "title": "Systematically Improving RAG Applications (course)",
+   "channel": "Jason Liu (Maven)",
+   "published": "2025",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-04; not snapshotted (course page / live leaderboard / notebook); read when the module is digested",
+   "module": "s7",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-04",
+   "modules": [
+    "s7",
+    "s9",
+    "s11"
+   ]
+  },
+  {
+   "id": "7NRodhkQppM",
+   "url": "https://www.youtube.com/watch?v=7NRodhkQppM",
+   "title": "10 Chunking Strategies for RAG - Every Method Explained (With Pros & Cons)",
+   "channel": "Ai Abhi",
+   "published": "2026-02-24",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:24:13",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Fai9aY1PMCA",
+   "url": "https://www.youtube.com/watch?v=Fai9aY1PMCA",
+   "title": "How ColPali Models Work | Qdrant Multi-Vector Search",
+   "channel": "Qdrant Vector Search",
+   "published": "2026-03-24",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:04:47",
+   "status": "transcribed",
+   "reason": "selected by authority test — vendor short on multi-vector (ColPali) representation",
+   "raw": "sources/raw/2026-10-04-market-scan-s07-embeddings-chunking/yt-Fai9aY1PMCA-qdrant-how-colpali-models-work.md"
+  },
+  {
+   "id": "bJQZFRBLWWs",
+   "url": "https://www.youtube.com/watch?v=bJQZFRBLWWs",
+   "title": "#309 ColPali: Efficient Document Retrieval with VLMs",
+   "channel": "Data Science Gems",
+   "published": "2026-04-17",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:15:15",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "KXB2uHw9eRQ",
+   "url": "https://www.youtube.com/watch?v=KXB2uHw9eRQ",
+   "title": "Forget OCR: This New RAG Technique Reads Documents Like Humans (ColPali Explained)",
+   "channel": "AI Learning Hub",
+   "published": "2026-06-19",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:06:27",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "svwbTL3_GZI",
+   "url": "https://www.youtube.com/watch?v=svwbTL3_GZI",
+   "title": "Unveil AI Secret: Master Document Retrieval (2024)",
+   "channel": "CollapsedLatents",
+   "published": "2026-06-01",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:06:05",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "XvKiTfd6Xvo",
+   "url": "https://www.youtube.com/watch?v=XvKiTfd6Xvo",
+   "title": "The Complete Guide to Hybrid Search in RAG (BM25 + Embeddings + Reranker)",
+   "channel": "Dave Ebbelaar",
+   "published": "2026-05-14",
+   "type": "video",
+   "module": "s10",
+   "modules": [
+    "s10"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:59:17",
+   "status": "candidate",
+   "reason": "parked for module s10 (found in the s7 scan): Ebbelaar complete guide to hybrid search + reranker"
+  },
+  {
+   "id": "dVjdBvwxcSE",
+   "url": "https://www.youtube.com/watch?v=dVjdBvwxcSE",
+   "title": "Multimodal PDF RAG with ColPali in Python: Search Pages by Image and Text",
+   "channel": "Professor Py: AI Engineering",
+   "published": "2026-07-13",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:08:57",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "4mY_h8jR-P0",
+   "url": "https://www.youtube.com/watch?v=4mY_h8jR-P0",
+   "title": "Standard RAG Fails PDFs: Fix Multimodal Retrieval",
+   "channel": "ByteLearn",
+   "published": "2026-08-08",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:09:25",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "8eqMHTmDNtk",
+   "url": "https://www.youtube.com/watch?v=8eqMHTmDNtk",
+   "title": "Stop Using Text-Only RAG! Multi-Modal RAG Architectural Deep-Dive (Theory)",
+   "channel": "Understanding AIML",
+   "published": "2026-07-15",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:05:31",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "wgjqDsdX9CE",
+   "url": "https://www.youtube.com/watch?v=wgjqDsdX9CE",
+   "title": "ColPali Multimodal RAG in Python: Search PDF Tables and Charts Without OCR",
+   "channel": "Professor Py: AI Engineering",
+   "published": "2026-07-16",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:07:55",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "gF7ex_QKmFA",
+   "url": "https://www.youtube.com/watch?v=gF7ex_QKmFA",
+   "title": "Sentence Transformers 6.0 Adds Multi-Vector ColBERT Late Interaction Retrieval",
+   "channel": "CosmoX",
+   "published": "2026-08-24",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:07:22",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "pZ_MCGulN6Q",
+   "url": "https://www.youtube.com/watch?v=pZ_MCGulN6Q",
+   "title": "Bot Thoughts Podcast — Multimodal RAG: When Text-Only Retrieval Isn't Enough",
+   "channel": "Toc am",
+   "published": "2026-04-25",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:13:11",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "6Q1owRgBgL8",
+   "url": "https://www.youtube.com/watch?v=6Q1owRgBgL8",
+   "title": "How to Make Multimodal RAG 2x Faster using ColPali",
+   "channel": "AI Everday",
+   "published": "2026-09-18",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:04:18",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "hOIPy7xh0RU",
+   "url": "https://www.youtube.com/watch?v=hOIPy7xh0RU",
+   "title": "Late Chunking Explained: Better RAG Embeddings #AI #GenAI #MachineLearning #RAG #LLM #Embeddings",
+   "channel": "AI Learning Hub",
+   "published": "2026-06-25",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:05:27",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Lv6377C2K_4",
+   "url": "https://www.youtube.com/watch?v=Lv6377C2K_4",
+   "title": "⚔️ RAG Chunking Battle: Fixed vs Sentence vs Recursive vs Semantic vs Sliding Window | Benchmark",
+   "channel": "Mapping AI",
+   "published": "2026-09-27",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:08:40",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "BzEV2gGtmKw",
+   "url": "https://www.youtube.com/watch?v=BzEV2gGtmKw",
+   "title": "IRPAPERS Explained!",
+   "channel": "Weaviate vector database",
+   "published": "2026-02-24",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:21:49",
+   "status": "discarded",
+   "reason": "1–3 minute vendor short or low-reach explainer; the written Weaviate blog is the s7 source"
+  },
+  {
+   "id": "RgD52UGa8xw",
+   "url": "https://www.youtube.com/watch?v=RgD52UGa8xw",
+   "title": "Demystifying Multimodal RAG",
+   "channel": "CloudAndQueries",
+   "published": "2026-07-19",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:06:59",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "9ztE_pX7Ltc",
+   "url": "https://www.youtube.com/watch?v=9ztE_pX7Ltc",
+   "title": "Only 5% Engineers Understand Chunking for RAG | AI Interview Series",
+   "channel": "Think in Models",
+   "published": "2026-03-31",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:25:30",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "GhRsmmisgsg",
+   "url": "https://www.youtube.com/watch?v=GhRsmmisgsg",
+   "title": "RAG Chunking Masterclass: Overlap, Layout, Semantic, Contextual & Late Chunking",
+   "channel": "cholakovit",
+   "published": "2026-09-16",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:46:10",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "VfjIYjYFVt4",
+   "url": "https://www.youtube.com/watch?v=VfjIYjYFVt4",
+   "title": "RAG Chunking Strategies Benchmark - LlamaIndex + pgvector 2026",
+   "channel": "Alex Hanhaliuk",
+   "published": "2026-04-11",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:10:23",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "y4TFjCPbs-s",
+   "url": "https://www.youtube.com/watch?v=y4TFjCPbs-s",
+   "title": "Perplexity AI Multilingual Open-Weight Retrieval Models. Late Chunking and Context Aware Embeddings.",
+   "channel": "Byte Goose AI.",
+   "published": "2026-02-28",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:13:54",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Gjl1Jnj8qX8",
+   "url": "https://www.youtube.com/watch?v=Gjl1Jnj8qX8",
+   "title": "Master Intermediate RAG: 10 Questions That Separate Junior from Senior AI Engineers",
+   "channel": "AI WITH Rithesh",
+   "published": "2026-06-17",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:26:53",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "XiOr3OvEtPM",
+   "url": "https://www.youtube.com/watch?v=XiOr3OvEtPM",
+   "title": "RAG Chunking Explained: When to Use Structure-Aware Chunking",
+   "channel": "CodeCraft Academy",
+   "published": "2026-08-12",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:02:50",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "b4-uhrk71vk",
+   "url": "https://www.youtube.com/watch?v=b4-uhrk71vk",
+   "title": "Late Chunking & Jina Embeddings: Context-Preserving Token Span Pooling (Production Deep Dive)",
+   "channel": "Lets learn with Ajay",
+   "published": "2026-09-08",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:17:38",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "LjdDzbWtwg0",
+   "url": "https://www.youtube.com/watch?v=LjdDzbWtwg0",
+   "title": "RAG Anatomy - Inside a real RAG pipeline: what actually happens step by step - Part 1",
+   "channel": "cholakovit",
+   "published": "2026-05-25",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:14:16",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "MBDiJAWx8xk",
+   "url": "https://www.youtube.com/watch?v=MBDiJAWx8xk",
+   "title": "What is RAG? Retrieval Augmented Generation Explained in Under 30 Minutes",
+   "channel": "MLTut",
+   "published": "2026-05-04",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:27:33",
+   "status": "discarded",
+   "reason": "re-explanation of the selected primary sources"
+  },
+  {
+   "id": "WmXYRhQkJoU",
+   "url": "https://www.youtube.com/watch?v=WmXYRhQkJoU",
+   "title": "RAG Chunking Strategies: Split Documents for Max Accuracy",
+   "channel": "Sukrid LearnHub",
+   "published": "2026-06-04",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:09:46",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "NbrN-NwKvuc",
+   "url": "https://www.youtube.com/watch?v=NbrN-NwKvuc",
+   "title": "초보자들을 위한 RAG 개념 20분 마스터클래스 (3년 RAG 프로젝트 압축 경험을 곁들인)",
+   "channel": "샘 호트만 : AI 엔지니어의 시선",
+   "published": "2026-03-06",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:24:52",
+   "status": "discarded",
+   "reason": "re-explanation of the selected primary sources"
+  },
+  {
+   "id": "ZYrhUIGJ6l0",
+   "url": "https://www.youtube.com/watch?v=ZYrhUIGJ6l0",
+   "title": "The Hidden Geometry of Meaning — Embeddings Explained",
+   "channel": "Deploy Wright",
+   "published": "2026-09-24",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:08:49",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Q6TBHDgWCDQ",
+   "url": "https://www.youtube.com/watch?v=Q6TBHDgWCDQ",
+   "title": "Learn Text Embeddings in 20 Minutes (full guide for beginners)",
+   "channel": "Thu Vu",
+   "published": "2026-05-24",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:19:56",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "Gcsb1YBcxkY",
+   "url": "https://www.youtube.com/watch?v=Gcsb1YBcxkY",
+   "title": "Production RAG Starts with Smart Chunking",
+   "channel": "I Love Coding",
+   "published": "2026-07-18",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:08:30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "RQ2mP5wq8vs",
+   "url": "https://www.youtube.com/watch?v=RQ2mP5wq8vs",
+   "title": "3A  RAG L Evoluzione della Memoria IA",
+   "channel": "Mauro Rinelli",
+   "published": "2026-08-09",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:08:50",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "t_HytIH_Bq8",
+   "url": "https://www.youtube.com/watch?v=t_HytIH_Bq8",
+   "title": "Embeddings Explained | Understanding AI Embeddings & Vector Representations",
+   "channel": "IT Code",
+   "published": "2026-08-14",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:05:19",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "QqagUPASVQc",
+   "url": "https://www.youtube.com/watch?v=QqagUPASVQc",
+   "title": "I Faced 20+ MNC AI Interviews — Here Are 100+ Questions They Asked - Part 1",
+   "channel": "NitMonk",
+   "published": "2026-08-20",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "01:39:04",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "HJFrRCAJQIg",
+   "url": "https://www.youtube.com/watch?v=HJFrRCAJQIg",
+   "title": "Chunking Techniques in AI Explained  Fixed, Recursive, Semantic & Document Chunking",
+   "channel": "Cloudsoft Solutions",
+   "published": "2026-07-27",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "01:24:14",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "HOPUlKGGQwQ",
+   "url": "https://www.youtube.com/watch?v=HOPUlKGGQwQ",
+   "title": "“Most RAG Systems Fail at Chunking — Here’s the Right Way”",
+   "channel": "NeuraArch",
+   "published": "2026-03-14",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:29:59",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "r0Dciuq0knU",
+   "url": "https://www.youtube.com/watch?v=r0Dciuq0knU",
+   "title": "Top 3 RAG Retrieval Strategies: Sparse, Dense, & Hybrid Explained",
+   "channel": "IBM Technology",
+   "published": "2025-10-21",
+   "type": "video",
+   "module": "s10",
+   "modules": [
+    "s10"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:08:28",
+   "status": "candidate",
+   "reason": "parked for module s10 (found in the s7 scan): IBM sparse/dense/hybrid explainer — advanced retrieval"
+  },
+  {
+   "id": "NDkmlsuliyc",
+   "url": "https://www.youtube.com/watch?v=NDkmlsuliyc",
+   "title": "RAG Chunking Part 1 — The Baseline Patterns Every Team Uses First",
+   "channel": "cholakovit",
+   "published": "2026-06-07",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:11:40",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "QZTcaxV5bIk",
+   "url": "https://www.youtube.com/watch?v=QZTcaxV5bIk",
+   "title": "Why AI Makes Things Up, and How RAG Fixes It",
+   "channel": "Lu",
+   "published": "2026-10-02",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:11:22",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "VrqyXC32ONY",
+   "url": "https://www.youtube.com/watch?v=VrqyXC32ONY",
+   "title": "Semantic Chunking for RAG How It Works & When to Use It",
+   "channel": "Hired In IT",
+   "published": "2026-08-11",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:36:51",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "XstmWe9pR5o",
+   "url": "https://www.youtube.com/watch?v=XstmWe9pR5o",
+   "title": "How Text Becomes Numbers: Tokens, IDs & Embeddings | From Math to LLM Ep. 1",
+   "channel": "From Math to LLM",
+   "published": "2026-08-27",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:12:30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "W0s42lVEF1g",
+   "url": "https://www.youtube.com/watch?v=W0s42lVEF1g",
+   "title": "Vector Databases Explained | Embeddings, Semantic Search & RAG | AI/ML Class 11",
+   "channel": "Fusionpact",
+   "published": "2026-01-20",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:05:32",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "RdWUT_xetv8",
+   "url": "https://www.youtube.com/watch?v=RdWUT_xetv8",
+   "title": "How AI Understands Text — Tokens, Multi-Hot, One-hot Vectors, Embeddings & NLP Explained",
+   "channel": "Pallence AI",
+   "published": "2026-03-26",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:43:02",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "nPpbj9PsOJU",
+   "url": "https://www.youtube.com/watch?v=nPpbj9PsOJU",
+   "title": "LLM internals explained — Tokens, Context, Embeddings & Output Flow | #5 ( AI Security Masterclass)",
+   "channel": "Security Bit",
+   "published": "2026-02-16",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:07:03",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Yex_rcUkH-E",
+   "url": "https://www.youtube.com/watch?v=Yex_rcUkH-E",
+   "title": "From Strings to Vectors  Architecting the LLM Input Pipeline",
+   "channel": "Dr. Partha Majumdar",
+   "published": "2026-04-22",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:08:12",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "c0iHD9BJWRs",
+   "url": "https://www.youtube.com/watch?v=c0iHD9BJWRs",
+   "title": "RAG Chunking: Which Technique Is Best? 9 Tested on Retail Data",
+   "channel": "santosh dataclass",
+   "published": "2026-08-12",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:29:20",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "r_BJ_3yAdMA",
+   "url": "https://www.youtube.com/watch?v=r_BJ_3yAdMA",
+   "title": "What is Embedding in Gen AI? | LLM Interview Question Explained Simply",
+   "channel": "Tech By Sketch",
+   "published": "2026-03-21",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:09:25",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "tJp7PHK4Z4s",
+   "url": "https://www.youtube.com/watch?v=tJp7PHK4Z4s",
+   "title": "How AI Converts Words Into Numbers (Tokens → Embeddings Explained)",
+   "channel": "Dinesh AI Lab",
+   "published": "2026-03-21",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:05:47",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "g0AibOjtPvg",
+   "url": "https://www.youtube.com/watch?v=g0AibOjtPvg",
+   "title": "AI Embeddings Explained: How Machines Understand Meaning | PYPROVERSE",
+   "channel": "PYPRO VERSE",
+   "published": "2026-10-01",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:08:40",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "4EIDv6UKihw",
+   "url": "https://www.youtube.com/watch?v=4EIDv6UKihw",
+   "title": "This is why AI is so smart | LLM Fundamentals: Embeddings | L4",
+   "channel": "Somesh Ghosh - AI for Software Engineers",
+   "published": "2026-06-19",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:08:45",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "NjMK2Hignh4",
+   "url": "https://www.youtube.com/watch?v=NjMK2Hignh4",
+   "title": "AI Embeddings Explained: Vectors Behind RAG Search",
+   "channel": "AI Mechanics",
+   "published": "2026-08-21",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:14:33",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "pQVd85bV6Zg",
+   "url": "https://www.youtube.com/watch?v=pQVd85bV6Zg",
+   "title": "RAG in 80 Minutes — Full Course (Embeddings, Vector Databases, LangChain)",
+   "channel": "TAI Labs",
+   "published": "2026-09-04",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "01:21:28",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "7mu_daDIRco",
+   "url": "https://www.youtube.com/watch?v=7mu_daDIRco",
+   "title": "Most People FAIL RAG Interview Questions (Say This Instead) 2026",
+   "channel": "Manifold AI Learning",
+   "published": "2025-12-12",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:09:47",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "GIrr6XMYX3A",
+   "url": "https://www.youtube.com/watch?v=GIrr6XMYX3A",
+   "title": "Databricks GenAI Course #7: Chunking Strategies and Embedding Context-Length Tradeoffs",
+   "channel": "StackLessons",
+   "published": "2026-06-17",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:26:30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "nMCII_xtUbw",
+   "url": "https://www.youtube.com/watch?v=nMCII_xtUbw",
+   "title": "Chunking Methods for RAG Explained: Overlapped vs Semantic vs Late Chunking (2026)",
+   "channel": "TecAdRise",
+   "published": "2026-03-10",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:07:35",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "aQ2SuLsNXYo",
+   "url": "https://www.youtube.com/watch?v=aQ2SuLsNXYo",
+   "title": "Best Chunking Techniques for RAG Systems in 2026",
+   "channel": "AIGrounded",
+   "published": "2026-04-27",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:07:34",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "WAiscGs8Yr4",
+   "url": "https://www.youtube.com/watch?v=WAiscGs8Yr4",
+   "title": "RAG Chunking: Strategies for Splitting and Structuring Documents",
+   "channel": "Logical Lenses",
+   "published": "2025-11-08",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:13:58",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "MgZ_Egy-DXI",
+   "url": "https://www.youtube.com/watch?v=MgZ_Egy-DXI",
+   "title": "L31- Embeddings & Chunking Strategies in RAG | Recursive, Parent-Child, Semantic, & Agentic Chunking",
+   "channel": "Zero to Deployed",
+   "published": "2026-06-08",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "01:25:52",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "tnHVyg7l5_U",
+   "url": "https://www.youtube.com/watch?v=tnHVyg7l5_U",
+   "title": "Embeddings Production: FAISS, Hybrid Search, and RAG Eval Traps",
+   "channel": "CalibreOS",
+   "published": "2026-10-01",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:03:47",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "-CFuDJl3KUY",
+   "url": "https://www.youtube.com/watch?v=-CFuDJl3KUY",
+   "title": "Why Research Agents Fail — and What a Tree Fixes",
+   "channel": "MLSlops",
+   "published": "2026-07-10",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:09:24",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "HU-2jJAetEw",
+   "url": "https://www.youtube.com/watch?v=HU-2jJAetEw",
+   "title": "Retrieval Augmented Generation and Agentic LLM Workflows",
+   "channel": "Bite Technology",
+   "published": "2026-08-10",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:08:11",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "7TVCa4HVgn8",
+   "url": "https://www.youtube.com/watch?v=7TVCa4HVgn8",
+   "title": "Vector Search Config: 3 Engineers, 3 Different Setups",
+   "channel": "Official Elastic Community",
+   "published": "2026-07-02",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:16:44",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Ye9J0HHu9Hs",
+   "url": "https://www.youtube.com/watch?v=Ye9J0HHu9Hs",
+   "title": "Embedding Models Explained for RAG | Complete AI Embeddings Tutorial (2026)",
+   "channel": "aipreper",
+   "published": "2026-07-09",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:02:12",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "H6q1UWCCnKw",
+   "url": "https://www.youtube.com/watch?v=H6q1UWCCnKw",
+   "title": "Vector Embeddings. How to choose the embedding model based on the task at hand. Semantic Search RAG.",
+   "channel": "Byte Goose AI.",
+   "published": "2026-03-01",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:20:57",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "Y1kr_Tu83R8",
+   "url": "https://www.youtube.com/watch?v=Y1kr_Tu83R8",
+   "title": "From Embeddings To Index: A Practitioner's Guide To Domain-Adapted Neural Search - Samuel Herman",
+   "channel": "OpenSearch",
+   "published": "2026-04-23",
+   "type": "video",
+   "module": "s16",
+   "modules": [
+    "s16"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:41:01",
+   "status": "candidate",
+   "reason": "parked for module s16 (found in the s7 scan): OpenSearch: domain-adapted neural search (embedding fine-tuning) — fine-tuning module"
+  },
+  {
+   "id": "S7B1vmcWnkU",
+   "url": "https://www.youtube.com/watch?v=S7B1vmcWnkU",
+   "title": "Hybrid search at idealo: from fine-tuning to production - Gennady Shabanov & Atakan Filgöz - MICES",
+   "channel": "MIx-Camp E-commerce Search",
+   "published": "2026-06-30",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:30:26",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "jJbVy3hHx_4",
+   "url": "https://www.youtube.com/watch?v=jJbVy3hHx_4",
+   "title": "An In-Depth Introduction to Retrieval-Augmented Generation (RAG) - Dec. 18, 2025",
+   "channel": "PubHealthAI Collaborative Network",
+   "published": "2025-12-18",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:51:55",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "MuATtQTZJ-c",
+   "url": "https://www.youtube.com/watch?v=MuATtQTZJ-c",
+   "title": "Introduction to RAG & Fine-tuning: Building Smarter AI with your own data",
+   "channel": "Ghana AI Research Network",
+   "published": "2026-01-22",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "01:32:43",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "2bq64wjtgnQ",
+   "url": "https://www.youtube.com/watch?v=2bq64wjtgnQ",
+   "title": "Learn How to Make AI Models w/ ML: 4. Embeddings & RAG",
+   "channel": "Tonbi's AI Garage",
+   "published": "2026-04-23",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:24:45",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "QueVGv3rw7g",
+   "url": "https://www.youtube.com/watch?v=QueVGv3rw7g",
+   "title": "PLUM: Adapting Pre-trained LLMs for YouTube-Scale Generative Recommendations",
+   "channel": "AI Papers Explained",
+   "published": "2026-05-20",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:12:31",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "_JsNUmPnQrs",
+   "url": "https://www.youtube.com/watch?v=_JsNUmPnQrs",
+   "title": "Нейросети и машинное обучение, дайджест 30.03.2026 #ChatGPT #ИИ #ИскусственныйИнтеллект #Нейросети",
+   "channel": "Uproger / Machine Learning / Ai",
+   "published": "2026-03-31",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:03:49",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "788FrXP-jus",
+   "url": "https://www.youtube.com/watch?v=788FrXP-jus",
+   "title": "Fine tuning Large Language Models (LLMs) with Domain Specific Datasets",
+   "channel": "San Diego Supercomputer Center",
+   "published": "2026-04-15",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:54:05",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "7dwI62BlIw4",
+   "url": "https://www.youtube.com/watch?v=7dwI62BlIw4",
+   "title": "LLM Fine-Tuning vs RAG vs Prompt Engineering, Explained",
+   "channel": "Devsplainers",
+   "published": "2026-05-01",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:08:36",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "yKFislZpFbI",
+   "url": "https://www.youtube.com/watch?v=yKFislZpFbI",
+   "title": "Fine-Tuning LLMs on Your Own Data: LoRA, QLoRA & PEFT Explained (with Code) ⭐",
+   "channel": "From Prompts to Loops — Ankit Khowal",
+   "published": "2026-07-03",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:42:06",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "sh0pCujj8Y0",
+   "url": "https://www.youtube.com/watch?v=sh0pCujj8Y0",
+   "title": "Implementing Fine-Tuned Domain Knowledge Augmentation using RAG.",
+   "channel": "SystemDR - Scalable System Design ",
+   "published": "2026-05-30",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:21:52",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "DB1Zqh_QIa0",
+   "url": "https://www.youtube.com/watch?v=DB1Zqh_QIa0",
+   "title": "Rex Ying | A Riemannian Geometry Perspective on Foundation Models",
+   "channel": "Harvard CMSA",
+   "published": "2026-09-13",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:50:09",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "OtdnFtHOu40",
+   "url": "https://www.youtube.com/watch?v=OtdnFtHOu40",
+   "title": "LLM Fine-Tuning 14: Train LLMs on Your PDF/Text Data | Domain-Specific Fine-Tuning with Hugging Face",
+   "channel": "Sunny Savita",
+   "published": "2025-10-23",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "01:44:41",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "uWsKSHqMXnA",
+   "url": "https://www.youtube.com/watch?v=uWsKSHqMXnA",
+   "title": "jina-embeddings-v5-text: Task-Targeted Embedding Distillation (Feb 2026)",
+   "channel": "AI Paper Slop",
+   "published": "2026-02-22",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:12:39",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "RIMaCaCucqU",
+   "url": "https://www.youtube.com/watch?v=RIMaCaCucqU",
+   "title": "Advanced RAG Techniques Explained | CRAG, GraphRAG, Agentic RAG, HyDE & More",
+   "channel": "AmanAI Lab",
+   "published": "2026-08-03",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:19:45",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "ukje3l9Ywyg",
+   "url": "https://www.youtube.com/watch?v=ukje3l9Ywyg",
+   "title": "RAG vs Fine tuning which one is better for your AI project — Shao Hang He",
+   "channel": "ConFoo Developer Conference",
+   "published": "2025-12-04",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:43:33",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "YqQ0laSZCxM",
+   "url": "https://www.youtube.com/watch?v=YqQ0laSZCxM",
+   "title": "5 Core Embeddings Choices for Developers | MongoDB.local San Francisco 2026",
+   "channel": "MongoDB",
+   "published": "2026-01-29",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:19:58",
+   "status": "transcribed",
+   "reason": "selected by authority test — vendor conference talk: five embedding choices (dimensions, quantization, model)",
+   "raw": "sources/raw/2026-10-04-market-scan-s07-embeddings-chunking/yt-YqQ0laSZCxM-mongodb-5-core-embeddings-choices.md"
+  },
+  {
+   "id": "w_FYoEy-PhE",
+   "url": "https://www.youtube.com/watch?v=w_FYoEy-PhE",
+   "title": "🥇 ColPali Explained: Search PDFs as Images, Not Text #genai #llm #ai",
+   "channel": "AI Learning Hub",
+   "published": "2026-07-04",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:06:42",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "bbahUrQTQ04",
+   "url": "https://www.youtube.com/watch?v=bbahUrQTQ04",
+   "title": "\"How GPT Turns ‘apple’ Into Vectors: Tokenization, Embeddings, and Weight Tying Explained",
+   "channel": "Katick Sharma",
+   "published": "2026-04-15",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:11:37",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "0KUHkwkThyc",
+   "url": "https://www.youtube.com/watch?v=0KUHkwkThyc",
+   "title": "Stop Picking Embedding Models Off The MTEB Leaderboard",
+   "channel": "Hamel Husain",
+   "published": "2026-08-31",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:21:55",
+   "status": "transcribed",
+   "reason": "selected by authority test — recognised practitioner, 2026: embedding-model selection beyond the leaderboard",
+   "raw": "sources/raw/2026-10-04-market-scan-s07-embeddings-chunking/yt-0KUHkwkThyc-hamel-husain-stop-picking-embedding-models-off-mteb.md"
+  },
+  {
+   "id": "HdP_BIzgNAo",
+   "url": "https://www.youtube.com/watch?v=HdP_BIzgNAo",
+   "title": "Chunking Strategies for RAG: Fixed vs Semantic vs Recursive (Full Guide)",
+   "channel": "EngineerToAI",
+   "published": "2026-07-27",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:13:31",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "kuu75CrJICU",
+   "url": "https://www.youtube.com/watch?v=kuu75CrJICU",
+   "title": "RAG is NOT Dead — Here's What It's Actually Becoming (10 Patterns + Multimodal)",
+   "channel": "AI Adil",
+   "published": "2026-04-30",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:02:10",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "d5vvGN6Hq7I",
+   "url": "https://www.youtube.com/watch?v=d5vvGN6Hq7I",
+   "title": "Embedding in LLMs",
+   "channel": "The Search for Why",
+   "published": "2026-06-04",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:04:54",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "yOkOA_BjvX0",
+   "url": "https://www.youtube.com/watch?v=yOkOA_BjvX0",
+   "title": "LLM Fine-Tuning 15: Instruction Fine-Tuning Explained | Domain-Specific FineTuning with Hugging Face",
+   "channel": "Sunny Savita",
+   "published": "2025-11-08",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:55:52",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "Z43qO0Nh18Y",
+   "url": "https://www.youtube.com/watch?v=Z43qO0Nh18Y",
+   "title": "What Production RAG Actually Costs (Real Numbers)",
+   "channel": "Cyber Creed",
+   "published": "2026-07-15",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:12:58",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "t185OVCrB-w",
+   "url": "https://www.youtube.com/watch?v=t185OVCrB-w",
+   "title": "Chunking Strategies for RAG with C# | Fixed-Size, Semantic, Parent-Child and more",
+   "channel": "Deployed in Azure",
+   "published": "2026-04-09",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:54:01",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "zSyppqyTboA",
+   "url": "https://www.youtube.com/watch?v=zSyppqyTboA",
+   "title": "Advanced RAG Chunking: Contextual & Structural Chunking with LangChain & Ollama (100% Local)",
+   "channel": "Venelin Valkov",
+   "published": "2026-01-12",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:13:36",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "KgYFnbjtIXU",
+   "url": "https://www.youtube.com/watch?v=KgYFnbjtIXU",
+   "title": "The Complete RAG Architecture — Embeddings, Vector Search & Pinecone",
+   "channel": "NitMonk",
+   "published": "2026-08-15",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "01:37:55",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "aYfZN8t6AQs",
+   "url": "https://www.youtube.com/watch?v=aYfZN8t6AQs",
+   "title": "Agent Memory EXPLAINED - Complete Architecture",
+   "channel": "Hugging Face",
+   "published": "2026-08-17",
+   "type": "video",
+   "module": "s5",
+   "modules": [
+    "s5"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:28:33",
+   "status": "candidate",
+   "reason": "parked for module s5 (found in the s7 scan): Hugging Face agent memory architecture — s5 validation pass"
+  },
+  {
+   "id": "xWrlHwez_Tw",
+   "url": "https://www.youtube.com/watch?v=xWrlHwez_Tw",
+   "title": "How RAG Chunking Actually Works — 20+ Techniques for Production AI",
+   "channel": "NitMonk",
+   "published": "2026-07-28",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:47:36",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "EKFo87t04ZM",
+   "url": "https://www.youtube.com/watch?v=EKFo87t04ZM",
+   "title": "Context is Everything: Inside Anthropic's Contextual Retrieval",
+   "channel": "Intellectually Curious Podcast",
+   "published": "2026-08-02",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:08:36",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "yeBoSXO-T7c",
+   "url": "https://www.youtube.com/watch?v=yeBoSXO-T7c",
+   "title": "What is AI agent memory? Why agents forget between sessions",
+   "channel": "Cybersapien Technologies",
+   "published": "2026-10-04",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:01:19",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "u-ocR-2P_YA",
+   "url": "https://www.youtube.com/watch?v=u-ocR-2P_YA",
+   "title": "Build Contextual Retrieval with Anthropic and Pinecone",
+   "channel": "Pinecone",
+   "published": "2024-11-12",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7",
+    "s10"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:53:44",
+   "status": "transcribed",
+   "reason": "selected by authority test — primary vendor implementation of contextual retrieval (Anthropic + Pinecone)",
+   "raw": "sources/raw/2026-10-04-market-scan-s07-embeddings-chunking/yt-u-ocR-2P_YA-pinecone-contextual-retrieval-anthropic.md"
+  },
+  {
+   "id": "HJHSNVqQBJI",
+   "url": "https://www.youtube.com/watch?v=HJHSNVqQBJI",
+   "title": "Chunking for beginners: 3 simple techniques in RAG systems",
+   "channel": "Weaviate vector database",
+   "published": "2025-09-02",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:01:24",
+   "status": "discarded",
+   "reason": "1–3 minute vendor short or low-reach explainer; the written Weaviate blog is the s7 source"
+  },
+  {
+   "id": "v0ynfDPpe4E",
+   "url": "https://www.youtube.com/watch?v=v0ynfDPpe4E",
+   "title": "RAG Explained in 12 Minutes",
+   "channel": "Aishwarya Srinivasan",
+   "published": "2026-03-22",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:12:05",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "CmmkNAUGin8",
+   "url": "https://www.youtube.com/watch?v=CmmkNAUGin8",
+   "title": "Advanced Chunking Techniques: Semantic & LLM-Based Chunking (Simply!) Explained",
+   "channel": "Weaviate vector database",
+   "published": "2025-09-03",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:01:24",
+   "status": "discarded",
+   "reason": "1–3 minute vendor short or low-reach explainer; the written Weaviate blog is the s7 source"
+  },
+  {
+   "id": "sVcwVQRHIc8",
+   "url": "https://www.youtube.com/watch?v=sVcwVQRHIc8",
+   "title": "Learn RAG From Scratch – Python AI Tutorial from a LangChain Engineer",
+   "channel": "freeCodeCamp.org",
+   "published": "2024-04-17",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7",
+    "s9",
+    "s10"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "02:33:11",
+   "status": "transcribed",
+   "reason": "selected by authority test — canon: Lance Martin RAG from scratch compilation (indexing/embeddings parts for s7; query/retrieval parts for s9–s10)",
+   "raw": "sources/raw/2026-10-04-market-scan-s07-embeddings-chunking/yt-sVcwVQRHIc8-freecodecamp-lance-martin-rag-from-scratch.md"
+  },
+  {
+   "id": "sUoNoaatRvU",
+   "url": "https://www.youtube.com/watch?v=sUoNoaatRvU",
+   "title": "THIS is how you build agentic RAG systems that work",
+   "channel": "Weaviate vector database",
+   "published": "2026-07-10",
+   "type": "video",
+   "module": "s10",
+   "modules": [
+    "s10"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:11:22",
+   "status": "candidate",
+   "reason": "parked for module s10 (found in the s7 scan): Weaviate: agentic RAG systems"
+  },
+  {
+   "id": "vD0E3EUb8-8",
+   "url": "https://www.youtube.com/watch?v=vD0E3EUb8-8",
+   "title": "Context Engineering vs. Prompt Engineering: Smarter AI with RAG & Agents",
+   "channel": "IBM Technology",
+   "published": "2025-08-18",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:07:52",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "n4jTQ6ZYQmI",
+   "url": "https://www.youtube.com/watch?v=n4jTQ6ZYQmI",
+   "title": "從零開始學 RAG：檢索增強生成完整入門｜LangChain 免費課程",
+   "channel": "Markluce AI",
+   "published": "2026-07-25",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:11:24",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "T-D1OfcDW1M",
+   "url": "https://www.youtube.com/watch?v=T-D1OfcDW1M",
+   "title": "What is Retrieval-Augmented Generation (RAG)?",
+   "channel": "IBM Technology",
+   "published": "2023-08-23",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:06:35",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "33rgqrJccZY",
+   "url": "https://www.youtube.com/watch?v=33rgqrJccZY",
+   "title": "Stop Using Basic RAG: Hybrid Search, Chunking, & Re-ranking Explained",
+   "channel": "Cloud Codes",
+   "published": "2026-06-21",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:09:38",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "hmZAgksb1ZQ",
+   "url": "https://www.youtube.com/watch?v=hmZAgksb1ZQ",
+   "title": "Game-Changer: Contextual Retrieval from Anthropic",
+   "channel": "techkigai",
+   "published": "2024-10-07",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:09:09",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "xOxB2avAbug",
+   "url": "https://www.youtube.com/watch?v=xOxB2avAbug",
+   "title": "Deep Dive into AI: Unpacking Anthropic's Contextual Retrieval and Beyond",
+   "channel": "Brendan Chambers",
+   "published": "2024-09-23",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:08:30",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "1VaZWDxxWiw",
+   "url": "https://www.youtube.com/watch?v=1VaZWDxxWiw",
+   "title": "Understanding late chunking in RAG systems (for beginners!)",
+   "channel": "Weaviate vector database",
+   "published": "2025-09-11",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:01:19",
+   "status": "discarded",
+   "reason": "1–3 minute vendor short or low-reach explainer; the written Weaviate blog is the s7 source"
+  },
+  {
+   "id": "o126p1QN_RI",
+   "url": "https://www.youtube.com/watch?v=o126p1QN_RI",
+   "title": "Complete RAG Crash Course With Langchain In 2 Hours",
+   "channel": "Krish Naik",
+   "published": "2025-10-06",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "02:08:09",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "HqLnIVvUgAg",
+   "url": "https://www.youtube.com/watch?v=HqLnIVvUgAg",
+   "title": "Building LLM Applications on Langchain with Lance Martin | Decoding AI",
+   "channel": "SeedToScale",
+   "published": "2023-09-07",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:55:06",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "zgP6aWRQBb0",
+   "url": "https://www.youtube.com/watch?v=zgP6aWRQBb0",
+   "title": "Is RAG (Really) Dead? | RAG with Long Context LLMs | @LangChain  x Timescale",
+   "channel": "Tiger Data (creators of TimescaleDB)",
+   "published": "2024-03-26",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:48:12",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "djp4205tHGU",
+   "url": "https://www.youtube.com/watch?v=djp4205tHGU",
+   "title": "How to choose an embedding model",
+   "channel": "Weaviate vector database",
+   "published": "2025-01-28",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:04:03",
+   "status": "transcribed",
+   "reason": "selected by authority test — vendor short on choosing an embedding model",
+   "raw": "sources/raw/2026-10-04-market-scan-s07-embeddings-chunking/yt-djp4205tHGU-weaviate-how-to-choose-an-embedding-model.md"
+  },
+  {
+   "id": "iORZMW6rGNE",
+   "url": "https://www.youtube.com/watch?v=iORZMW6rGNE",
+   "title": "SF Unstructured Data Meetup March 19 2024",
+   "channel": "Zilliz",
+   "published": "2024-03-20",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "01:22:41",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "lN_DMNfOFiU",
+   "url": "https://www.youtube.com/watch?v=lN_DMNfOFiU",
+   "title": "Inverting the RAG Pipeline: Why Late Chunking is the New Standard",
+   "channel": "The Code Architect",
+   "published": "2026-04-13",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:06:15",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "WS1uVMGhlWQ",
+   "url": "https://www.youtube.com/watch?v=WS1uVMGhlWQ",
+   "title": "Intro to Sentence Embeddings with Transformers",
+   "channel": "James Briggs",
+   "published": "2021-10-20",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:31:05",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "Hj7PuK1bMZU",
+   "url": "https://www.youtube.com/watch?v=Hj7PuK1bMZU",
+   "title": "Stop Losing Context! How Late Chunking Can Enhance Your Retrieval Systems",
+   "channel": "Prompt Engineering",
+   "published": "2024-10-11",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:16:48",
+   "status": "transcribed",
+   "reason": "selected by authority test — practitioner explainer of late chunking (no primary Jina video exists; paper snapshotted)",
+   "raw": "sources/raw/2026-10-04-market-scan-s07-embeddings-chunking/yt-Hj7PuK1bMZU-prompt-engineering-late-chunking.md"
+  },
+  {
+   "id": "RHXZKUr8qOY",
+   "url": "https://www.youtube.com/watch?v=RHXZKUr8qOY",
+   "title": "Training State-of-the-Art Sentence Embedding Models",
+   "channel": "Nils Reimers",
+   "published": "2021-06-30",
+   "type": "video",
+   "module": "s16",
+   "modules": [
+    "s16"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:43:43",
+   "status": "candidate",
+   "reason": "parked for module s16 (found in the s7 scan): Reimers 2021: training SOTA sentence embedding models"
+  },
+  {
+   "id": "4P8QvSlwgTg",
+   "url": "https://www.youtube.com/watch?v=4P8QvSlwgTg",
+   "title": "Accurate Data Retrieval with Contextual Compression and ChatGPT",
+   "channel": "MG",
+   "published": "2023-08-22",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:16:39",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "wgfSDrqYMJ4",
+   "url": "https://www.youtube.com/watch?v=wgfSDrqYMJ4",
+   "title": "What are Word Embeddings?",
+   "channel": "IBM Technology",
+   "published": "2024-08-20",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:08:38",
+   "status": "discarded",
+   "reason": "education/explainer or interview channel; no original contribution beyond the primary sources selected (basics, interview prep, LLM fine-tuning rather than embeddings, off-topic)"
+  },
+  {
+   "id": "Z_4rohX4Ki8",
+   "url": "https://www.youtube.com/watch?v=Z_4rohX4Ki8",
+   "title": "What is Neural Search? Nils Reimers - Sentence Transformers and Embedding Evaluation",
+   "channel": "Cohere",
+   "published": "2023-01-20",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:07:20",
+   "status": "discarded",
+   "reason": "clip of the selected Cohere talk apuDeylm1uE (Reimers); the full talk is transcribed"
+  },
+  {
+   "id": "S6XY9mFRHGs",
+   "url": "https://www.youtube.com/watch?v=S6XY9mFRHGs",
+   "title": "Evaluating Embeddings with MTEB Massive text embeddings benchmark - Nils Reimers",
+   "channel": "Cohere",
+   "published": "2023-01-20",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:05:05",
+   "status": "discarded",
+   "reason": "clip of the selected Cohere talk apuDeylm1uE (Reimers); the full talk is transcribed"
+  },
+  {
+   "id": "6ltSB44icWs",
+   "url": "https://www.youtube.com/watch?v=6ltSB44icWs",
+   "title": "Nils Reimers: Advances in Neural Search",
+   "channel": "KUIS AI",
+   "published": "2022-06-03",
+   "type": "video",
+   "module": "s16",
+   "modules": [
+    "s16"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:56:29",
+   "status": "candidate",
+   "reason": "parked for module s16 (found in the s7 scan): Reimers 2022 KUIS AI: advances in neural search"
+  },
+  {
+   "id": "d4NazjBl094",
+   "url": "https://www.youtube.com/watch?v=d4NazjBl094",
+   "title": "Agentic AI: Episode 14: From Messy to Model-Ready: ETL for the Age of Agentic AI",
+   "channel": "RAG to Riches AI",
+   "published": "2026-08-24",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:49:19",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "buzWGXOydD8",
+   "url": "https://www.youtube.com/watch?v=buzWGXOydD8",
+   "title": "Late chunking improves context recall in RAG pipelines",
+   "channel": "Weaviate vector database",
+   "published": "2024-10-04",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:02:44",
+   "status": "discarded",
+   "reason": "1–3 minute vendor short or low-reach explainer; the written Weaviate blog is the s7 source"
+  },
+  {
+   "id": "0bXsoaMPE3M",
+   "url": "https://www.youtube.com/watch?v=0bXsoaMPE3M",
+   "title": "What is Late Chunking?",
+   "channel": "Standarity",
+   "published": "2026-07-12",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:04:52",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "ukIYZw3uRX0",
+   "url": "https://www.youtube.com/watch?v=ukIYZw3uRX0",
+   "title": "Introduction - Recent Developments in Neural Search",
+   "channel": "Nils Reimers",
+   "published": "2021-09-20",
+   "type": "video",
+   "module": "s16",
+   "modules": [
+    "s16"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:19:01",
+   "status": "candidate",
+   "reason": "parked for module s16 (found in the s7 scan): Reimers 2021: recent developments in neural search"
+  },
+  {
+   "id": "apuDeylm1uE",
+   "url": "https://www.youtube.com/watch?v=apuDeylm1uE",
+   "title": "Sentence Transformers and Embedding Evaluation - Nils Reimers - Talking Language AI Ep#3",
+   "channel": "Cohere",
+   "published": "2022-12-20",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:59:32",
+   "status": "transcribed",
+   "reason": "selected by authority test — primary: MTEB co-author on sentence transformers and embedding evaluation",
+   "raw": "sources/raw/2026-10-04-market-scan-s07-embeddings-chunking/yt-apuDeylm1uE-cohere-nils-reimers-sentence-transformers-embedding-evaluation.md"
+  },
+  {
+   "id": "aQV6wsGreeo",
+   "url": "https://www.youtube.com/watch?v=aQV6wsGreeo",
+   "title": "How to Build an Advanced RAG Agent (Late Chunking & RAPTOR)",
+   "channel": "PARAM",
+   "published": "2026-06-01",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:27:33",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation"
+  },
+  {
+   "id": "GnY4mdma7TU",
+   "url": "https://www.youtube.com/watch?v=GnY4mdma7TU",
+   "title": "Production-Grade Retrieval: Lessons from Superlinked’s Daniel Svonava",
+   "channel": "Jason Liu",
+   "published": "2025-11-25",
+   "type": "video",
+   "module": "s10",
+   "modules": [
+    "s10"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:56:49",
+   "status": "candidate",
+   "reason": "parked for module s10 (found in the s7 scan): Superlinked production-grade retrieval"
+  },
+  {
+   "id": "wexpoR1R03A",
+   "url": "https://www.youtube.com/watch?v=wexpoR1R03A",
+   "title": "Why Your RAG System Is Broken, and How to Fix It with Jason Liu - 709",
+   "channel": "The TWIML AI Podcast with Sam Charrington",
+   "published": "2024-11-11",
+   "type": "podcast",
+   "module": "s7",
+   "modules": [
+    "s7",
+    "s10"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:57:34",
+   "status": "transcribed",
+   "reason": "selected by authority test — reference podcast episode (TWIML): Jason Liu on RAG failure and embeddings",
+   "raw": "sources/raw/2026-10-04-market-scan-s07-embeddings-chunking/podcast-wexpoR1R03A-twiml-jason-liu-why-your-rag-system-is-broken.md"
+  },
+  {
+   "id": "QMxCCxBYoaE",
+   "url": "https://www.youtube.com/watch?v=QMxCCxBYoaE",
+   "title": "Improving retrievers by Reranking and embedding fine-tuning",
+   "channel": "Jason Liu",
+   "published": "2025-08-26",
+   "type": "video",
+   "module": "s10",
+   "modules": [
+    "s10"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:53:28",
+   "status": "candidate",
+   "reason": "parked for module s10 (found in the s7 scan): Jason Liu: improving retrievers by reranking and embedding fine-tuning"
+  },
+  {
+   "id": "Pk2BeaGbcTE",
+   "url": "https://www.youtube.com/watch?v=Pk2BeaGbcTE",
+   "title": "The BEST Way to Chunk Text for RAG",
+   "channel": "Adam Lucek",
+   "published": "2024-12-09",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:33:16",
+   "status": "transcribed",
+   "reason": "selected by authority test — practitioner comparison of chunkers with evaluation",
+   "raw": "sources/raw/2026-10-04-market-scan-s07-embeddings-chunking/yt-Pk2BeaGbcTE-adam-lucek-best-way-to-chunk-text-for-rag.md"
+  },
+  {
+   "id": "qaPMdcCqtWk",
+   "url": "https://www.youtube.com/watch?v=qaPMdcCqtWk",
+   "title": "5 Levels Of LLM Summarizing: Novice to Expert",
+   "channel": "Greg Kamradt",
+   "published": "2023-05-04",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:19:19",
+   "status": "discarded",
+   "reason": "off-topic Kamradt video surfaced by the canon query (summarising, chain types, pandas)"
+  },
+  {
+   "id": "EOjTVUueVFM",
+   "url": "https://www.youtube.com/watch?v=EOjTVUueVFM",
+   "title": "Data Flywheels & Fine-Tuning Re-Rankers for Retrieval Systems | Office Hours",
+   "channel": "Jason Liu",
+   "published": "2024-11-27",
+   "type": "video",
+   "module": "s10",
+   "modules": [
+    "s10"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:29:17",
+   "status": "candidate",
+   "reason": "parked for module s10 (found in the s7 scan): Jason Liu office hours: data flywheels and fine-tuning rerankers"
+  },
+  {
+   "id": "npkp4mSweEg",
+   "url": "https://www.youtube.com/watch?v=npkp4mSweEg",
+   "title": "From Text-RAG to Vision-RAG",
+   "channel": "Jason Liu",
+   "published": "2025-05-22",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7",
+    "s10"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:51:11",
+   "status": "transcribed",
+   "reason": "selected by authority test — primary practitioner on vision/multimodal embeddings (ColPali) for document retrieval",
+   "raw": "sources/raw/2026-10-04-market-scan-s07-embeddings-chunking/yt-npkp4mSweEg-jason-liu-text-rag-to-vision-rag.md"
+  },
+  {
+   "id": "jU6E1JFaF2M",
+   "url": "https://www.youtube.com/watch?v=jU6E1JFaF2M",
+   "title": "Optimizing Planner and Feedback Mechanisms in RAG Systems | APAC Office Hours",
+   "channel": "Jason Liu",
+   "published": "2024-12-16",
+   "type": "video",
+   "module": "s9",
+   "modules": [
+    "s9"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:44:24",
+   "status": "candidate",
+   "reason": "parked for module s9 (found in the s7 scan): Jason Liu APAC office hours: planner and feedback in RAG"
+  },
+  {
+   "id": "DS4w1CMGJes",
+   "url": "https://www.youtube.com/watch?v=DS4w1CMGJes",
+   "title": "Better RAG Throught Better Data with Reducto CEO",
+   "channel": "Jason Liu",
+   "published": "2025-08-05",
+   "type": "video",
+   "module": "s6",
+   "modules": [
+    "s6"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:53:18",
+   "status": "candidate",
+   "reason": "parked for module s6 (found in the s7 scan): Jason Liu × Reducto CEO: better RAG through better data — s6 validation pass"
+  },
+  {
+   "id": "8OJC21T2SL4",
+   "url": "https://www.youtube.com/watch?v=8OJC21T2SL4",
+   "title": "The 5 Levels Of Text Splitting For Retrieval",
+   "channel": "Greg Kamradt",
+   "published": "2024-01-08",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "01:08:59",
+   "status": "transcribed",
+   "reason": "selected by authority test — canon: the reference chunking walk-through (5 levels)",
+   "raw": "sources/raw/2026-10-04-market-scan-s07-embeddings-chunking/yt-8OJC21T2SL4-kamradt-5-levels-of-text-splitting.md"
+  },
+  {
+   "id": "f9_BWhCI4Zo",
+   "url": "https://www.youtube.com/watch?v=f9_BWhCI4Zo",
+   "title": "Workaround OpenAI's Token Limit With Chain Types",
+   "channel": "Greg Kamradt",
+   "published": "2023-03-01",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:15:52",
+   "status": "discarded",
+   "reason": "off-topic Kamradt video surfaced by the canon query (summarising, chain types, pandas)"
+  },
+  {
+   "id": "h0DHDp1FbmQ",
+   "url": "https://www.youtube.com/watch?v=h0DHDp1FbmQ",
+   "title": "LangChain101: Question A 300 Page Book (w/ OpenAI + Pinecone)",
+   "channel": "Greg Kamradt",
+   "published": "2023-02-27",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:11:32",
+   "status": "discarded",
+   "reason": "off-topic Kamradt video surfaced by the canon query (summarising, chain types, pandas)"
+  },
+  {
+   "id": "xcN3s3Kij_8",
+   "url": "https://www.youtube.com/watch?v=xcN3s3Kij_8",
+   "title": "Pandas Merge (Join Data) | pd.DataFrame.merge()",
+   "channel": "Greg Kamradt",
+   "published": "2020-09-21",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:04:40",
+   "status": "discarded",
+   "reason": "off-topic Kamradt video surfaced by the canon query (summarising, chain types, pandas)"
+  },
+  {
+   "id": "XHY-3FzaLGc",
+   "url": "https://www.youtube.com/watch?v=XHY-3FzaLGc",
+   "title": "Training State-of-the-Art Text Embedding & Neural Search Models",
+   "channel": "Nils Reimers",
+   "published": "2021-09-23",
+   "type": "video",
+   "module": "s16",
+   "modules": [
+    "s16"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:38:26",
+   "status": "candidate",
+   "reason": "parked for module s16 (found in the s7 scan): Reimers 2021: training text embedding and neural search models"
+  },
+  {
+   "id": "gl1r1XV0SLw",
+   "url": "https://www.youtube.com/watch?v=gl1r1XV0SLw",
+   "title": "What is a Vector Database? Powering Semantic Search & AI Applications",
+   "channel": "IBM Technology",
+   "published": "2025-03-24",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:09:48",
+   "status": "candidate",
+   "reason": "parked for module s8 (found in the s7 scan): IBM: what is a vector database"
+  },
+  {
+   "id": "jTBsWJ2TKy8",
+   "url": "https://www.youtube.com/watch?v=jTBsWJ2TKy8",
+   "title": "Inside Glean: Fine-Tuning Embedding Models for Optimized AI and Enterprise Search",
+   "channel": "Jason Liu",
+   "published": "2025-03-05",
+   "type": "video",
+   "module": "s7",
+   "modules": [
+    "s7"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04",
+   "duration": "00:47:25",
+   "status": "transcribed",
+   "reason": "selected by authority test — primary enterprise case: fine-tuning embedding models at Glean",
+   "raw": "sources/raw/2026-10-04-market-scan-s07-embeddings-chunking/yt-jTBsWJ2TKy8-jason-liu-glean-fine-tuning-embedding-models.md"
+  },
+  {
+   "id": "latent-space-2026-03-12-turbopuffer",
+   "url": "https://www.latent.space/p/turbopuffer",
+   "title": "Retrieval After RAG: Hybrid Search, Agents, and Database Design — Simon Hørup Eskildsen (Turbopuffer)",
+   "channel": "Latent Space",
+   "published": "2026-03-12",
+   "type": "podcast",
+   "status": "candidate",
+   "reason": "parked for module s8 (found in the s7 RSS pass): vector database design from Turbopuffer; search YouTube for the episode when s8 runs",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04"
+  },
+  {
+   "id": "latent-space-2025-05-01-vector-db-category",
+   "url": "https://www.latent.space/p/vector-db",
+   "title": "The Rise and Fall of the Vector DB Category",
+   "channel": "Latent Space",
+   "published": "2025-05-01",
+   "type": "podcast",
+   "status": "candidate",
+   "reason": "parked for module s8 (found in the s7 RSS pass): vector-DB category essay episode",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04"
+  },
+  {
+   "id": "latent-space-2025-01-10-exa",
+   "url": "https://www.latent.space/p/exa",
+   "title": "Beating Google at Search with Neural PageRank — Will Bryk (Exa.ai)",
+   "channel": "Latent Space",
+   "published": "2025-01-10",
+   "type": "podcast",
+   "status": "candidate",
+   "reason": "parked for module s10 (found in the s7 RSS pass): neural search at scale",
+   "module": "s10",
+   "modules": [
+    "s10"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04"
+  },
+  {
+   "id": "chain-of-thought-2025-01-08-weaviate",
+   "url": "https://feeds.transistor.fm/chain-of-thought",
+   "title": "AI Infrastructure & the Evolution of RAG — Bob van Luijt (Weaviate)",
+   "channel": "Chain of Thought",
+   "published": "2025-01-08",
+   "type": "podcast",
+   "status": "candidate",
+   "reason": "parked for module s8 (found in the s7 RSS pass): Weaviate founder on vector infrastructure",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04"
+  },
+  {
+   "id": "aiengineeringpodcast-episode-39-pgai",
+   "url": "https://www.aiengineeringpodcast.com/pgai-vectorizer-postgres-vector-embedding-episode-39",
+   "title": "Building AI Systems on Postgres: pgai Vectorizer",
+   "channel": "AI Engineering Podcast",
+   "published": "2024-11-11",
+   "type": "podcast",
+   "status": "candidate",
+   "reason": "parked for module s8 (found in the s7 RSS pass): embeddings kept in sync inside Postgres",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04"
+  },
+  {
+   "id": "aiengineeringpodcast-episode-37-graphrag",
+   "url": "https://www.aiengineeringpodcast.com/graphrag-knowledge-graph-semantic-retrieval-episode-37",
+   "title": "Enhancing AI Retrieval with Knowledge Graphs: GraphRAG",
+   "channel": "AI Engineering Podcast",
+   "published": "2024-09-10",
+   "type": "podcast",
+   "status": "candidate",
+   "reason": "parked for module s10 (found in the s7 RSS pass): GraphRAG",
+   "module": "s10",
+   "modules": [
+    "s10"
+   ],
+   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
+   "decided": "2026-10-04"
   }
  ]
 }
