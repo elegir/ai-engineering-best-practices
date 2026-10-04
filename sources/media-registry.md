@@ -17,7 +17,7 @@ superseded-by: null
 
 Statuses: **transcribed** — verbatim text in `sources/raw/`, digest pending · **digested** — a source entry has a full digest · **applied** — the knowledge reached `principles/` / `practices/` · **candidate** — parked on purpose for a named module · **discarded** — do not re-consider unless the reason no longer holds (e.g. the channel later publishes primary-source material).
 
-Updated: 2026-10-04. Totals: applied 99, candidate 103, catalogued 63, cited 43, discarded 881, transcribed 13.
+Updated: 2026-10-04. Totals: applied 99, candidate 103, catalogued 63, cited 43, digested 13, discarded 881.
 
 ## applied (99)
 
@@ -123,23 +123,23 @@ Updated: 2026-10-04. Totals: applied 99, candidate 103, catalogued 63, cited 43,
 | Spec-Driven Development: Cómo escalar tu productividad con IA y Contexto (prompts & settings) | LIDR - Carreras potenciadas por IA | 2026-09 | workshop-2026-09-08 | LIDR harness workshop; digested into principles 00-09 | 2026-09-08 | https://www.youtube.com/watch?v=eca3lWJgRmA |
 | ¿Qué es un Agentic Engineer? El rol de software más demandado hoy | LIDR - Carreras potenciadas por IA | 2026-09 | workshop-2026-09-08 | LIDR harness workshop; digested into principles 00-09 | 2026-09-08 | https://www.youtube.com/watch?v=rdrtQyGhjYE |
 
-## transcribed (13)
+## digested (13)
 
 | Title | Channel | Published | Module | Reason / note | Decided | Link |
 |---|---|---|---|---|---|---|
-| 5 Core Embeddings Choices for Developers / MongoDB.local San Francisco 2026 | MongoDB | 2026-01-29 | s7 | selected by authority test — vendor conference talk: five embedding choices (dimensions, quantization, model) | 2026-10-04 | https://www.youtube.com/watch?v=YqQ0laSZCxM |
-| Build Contextual Retrieval with Anthropic and Pinecone | Pinecone | 2024-11-12 | s7 | selected by authority test — primary vendor implementation of contextual retrieval (Anthropic + Pinecone) | 2026-10-04 | https://www.youtube.com/watch?v=u-ocR-2P_YA |
-| From Text-RAG to Vision-RAG | Jason Liu | 2025-05-22 | s7 | selected by authority test — primary practitioner on vision/multimodal embeddings (ColPali) for document retrieval | 2026-10-04 | https://www.youtube.com/watch?v=npkp4mSweEg |
-| How ColPali Models Work / Qdrant Multi-Vector Search | Qdrant Vector Search | 2026-03-24 | s7 | selected by authority test — vendor short on multi-vector (ColPali) representation | 2026-10-04 | https://www.youtube.com/watch?v=Fai9aY1PMCA |
-| How to choose an embedding model | Weaviate vector database | 2025-01-28 | s7 | selected by authority test — vendor short on choosing an embedding model | 2026-10-04 | https://www.youtube.com/watch?v=djp4205tHGU |
-| Inside Glean: Fine-Tuning Embedding Models for Optimized AI and Enterprise Search | Jason Liu | 2025-03-05 | s7 | selected by authority test — primary enterprise case: fine-tuning embedding models at Glean | 2026-10-04 | https://www.youtube.com/watch?v=jTBsWJ2TKy8 |
-| Learn RAG From Scratch – Python AI Tutorial from a LangChain Engineer | freeCodeCamp.org | 2024-04-17 | s7 | selected by authority test — canon: Lance Martin RAG from scratch compilation (indexing/embeddings parts for s7; query/retrieval parts for s9–s10) | 2026-10-04 | https://www.youtube.com/watch?v=sVcwVQRHIc8 |
-| Sentence Transformers and Embedding Evaluation - Nils Reimers - Talking Language AI Ep#3 | Cohere | 2022-12-20 | s7 | selected by authority test — primary: MTEB co-author on sentence transformers and embedding evaluation | 2026-10-04 | https://www.youtube.com/watch?v=apuDeylm1uE |
-| Stop Losing Context! How Late Chunking Can Enhance Your Retrieval Systems | Prompt Engineering | 2024-10-11 | s7 | selected by authority test — practitioner explainer of late chunking (no primary Jina video exists; paper snapshotted) | 2026-10-04 | https://www.youtube.com/watch?v=Hj7PuK1bMZU |
-| Stop Picking Embedding Models Off The MTEB Leaderboard | Hamel Husain | 2026-08-31 | s7 | selected by authority test — recognised practitioner, 2026: embedding-model selection beyond the leaderboard | 2026-10-04 | https://www.youtube.com/watch?v=0KUHkwkThyc |
-| The 5 Levels Of Text Splitting For Retrieval | Greg Kamradt | 2024-01-08 | s7 | selected by authority test — canon: the reference chunking walk-through (5 levels) | 2026-10-04 | https://www.youtube.com/watch?v=8OJC21T2SL4 |
-| The BEST Way to Chunk Text for RAG | Adam Lucek | 2024-12-09 | s7 | selected by authority test — practitioner comparison of chunkers with evaluation | 2026-10-04 | https://www.youtube.com/watch?v=Pk2BeaGbcTE |
-| Why Your RAG System Is Broken, and How to Fix It with Jason Liu - 709 | The TWIML AI Podcast with Sam Charrington | 2024-11-11 | s7 | selected by authority test — reference podcast episode (TWIML): Jason Liu on RAG failure and embeddings | 2026-10-04 | https://www.youtube.com/watch?v=wexpoR1R03A |
+| 5 Core Embeddings Choices for Developers / MongoDB.local San Francisco 2026 | MongoDB | 2026-01-29 | s7 | selected by authority test — vendor conference talk: five embedding choices (dimensions, quantization, model); digested in sources/2026-10-04-s07-embeddings-chunking-digest.md | 2026-10-04 | https://www.youtube.com/watch?v=YqQ0laSZCxM |
+| Build Contextual Retrieval with Anthropic and Pinecone | Pinecone | 2024-11-12 | s7 | selected by authority test — primary vendor implementation of contextual retrieval (Anthropic + Pinecone); digested in sources/2026-10-04-s07-embeddings-chunking-digest.md | 2026-10-04 | https://www.youtube.com/watch?v=u-ocR-2P_YA |
+| From Text-RAG to Vision-RAG | Jason Liu | 2025-05-22 | s7 | selected by authority test — primary vendor voice: Nils Reimers (Cohere, VP AI Search) on vision/multimodal embeddings for document retrieval, hosted by Jason Liu; digested in sources/2026-10-04-s07-embeddings-chunking-digest.md | 2026-10-04 | https://www.youtube.com/watch?v=npkp4mSweEg |
+| How ColPali Models Work / Qdrant Multi-Vector Search | Qdrant Vector Search | 2026-03-24 | s7 | selected by authority test — vendor short on multi-vector (ColPali) representation; digested in sources/2026-10-04-s07-embeddings-chunking-digest.md | 2026-10-04 | https://www.youtube.com/watch?v=Fai9aY1PMCA |
+| How to choose an embedding model | Weaviate vector database | 2025-01-28 | s7 | selected by authority test — vendor short on choosing an embedding model; digested in sources/2026-10-04-s07-embeddings-chunking-digest.md | 2026-10-04 | https://www.youtube.com/watch?v=djp4205tHGU |
+| Inside Glean: Fine-Tuning Embedding Models for Optimized AI and Enterprise Search | Jason Liu | 2025-03-05 | s7 | selected by authority test — primary enterprise case: Manav (Glean) on fine-tuning embedding models at Glean, hosted by Jason Liu; digested in sources/2026-10-04-s07-embeddings-chunking-digest.md | 2026-10-04 | https://www.youtube.com/watch?v=jTBsWJ2TKy8 |
+| Learn RAG From Scratch – Python AI Tutorial from a LangChain Engineer | freeCodeCamp.org | 2024-04-17 | s7 | selected by authority test — canon: Lance Martin RAG from scratch compilation (indexing/embeddings parts for s7; query/retrieval parts for s9–s10); digested in sources/2026-10-04-s07-embeddings-chunking-digest.md | 2026-10-04 | https://www.youtube.com/watch?v=sVcwVQRHIc8 |
+| Sentence Transformers and Embedding Evaluation - Nils Reimers - Talking Language AI Ep#3 | Cohere | 2022-12-20 | s7 | selected by authority test — primary: MTEB co-author on sentence transformers and embedding evaluation; digested in sources/2026-10-04-s07-embeddings-chunking-digest.md | 2026-10-04 | https://www.youtube.com/watch?v=apuDeylm1uE |
+| Stop Losing Context! How Late Chunking Can Enhance Your Retrieval Systems | Prompt Engineering | 2024-10-11 | s7 | selected by authority test — practitioner explainer of late chunking (no primary Jina video exists; paper snapshotted); digested in sources/2026-10-04-s07-embeddings-chunking-digest.md | 2026-10-04 | https://www.youtube.com/watch?v=Hj7PuK1bMZU |
+| Stop Picking Embedding Models Off The MTEB Leaderboard | Hamel Husain | 2026-08-31 | s7 | selected by authority test — recognised practitioner, 2026: Radu Gheorghe (Vespa) on embedding-model selection beyond the leaderboard, guest lecture on Hamel Husain's channel; digested in sources/2026-10-04-s07-embeddings-chunking-digest.md | 2026-10-04 | https://www.youtube.com/watch?v=0KUHkwkThyc |
+| The 5 Levels Of Text Splitting For Retrieval | Greg Kamradt | 2024-01-08 | s7 | selected by authority test — canon: the reference chunking walk-through (5 levels); digested in sources/2026-10-04-s07-embeddings-chunking-digest.md | 2026-10-04 | https://www.youtube.com/watch?v=8OJC21T2SL4 |
+| The BEST Way to Chunk Text for RAG | Adam Lucek | 2024-12-09 | s7 | selected by authority test — practitioner comparison of chunkers with evaluation; digested in sources/2026-10-04-s07-embeddings-chunking-digest.md | 2026-10-04 | https://www.youtube.com/watch?v=Pk2BeaGbcTE |
+| Why Your RAG System Is Broken, and How to Fix It with Jason Liu - 709 | The TWIML AI Podcast with Sam Charrington | 2024-11-11 | s7 | selected by authority test — reference podcast episode (TWIML): Jason Liu on RAG failure and embeddings; digested in sources/2026-10-04-s07-embeddings-chunking-digest.md | 2026-10-04 | https://www.youtube.com/watch?v=wexpoR1R03A |
 
 ## candidate (103)
 
