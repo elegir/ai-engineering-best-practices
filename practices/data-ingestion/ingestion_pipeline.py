@@ -315,6 +315,7 @@ class Envelope(BaseModel):
     parser_version: str
     bbox: Optional[tuple[float, float, float, float]] = None
     confidence: float = 1.0
+    document_date: Optional[str] = None      # ISO date of the source document; rendered into the chunk text by ../embeddings-and-chunking/ (added 2026-10-04, s7)
 
     @field_validator("owner", "tenant")
     @classmethod
@@ -568,7 +569,7 @@ def ingest_document(doc: RawDocument, parser: Parser, store: Store, identity: Id
         env = Envelope(source_id=doc.source_id, filename=doc.filename, title=title, page=e.page, element_type=e.type,
                        content_hash=clean.content_hash, document_hash=doc.content_hash, owner=owner, tenant=tenant,
                        sensitivity=doc.sensitivity, region=doc.region, ingested_at=stamp, parser_version=parser.version,
-                       bbox=e.bbox, confidence=e.confidence)
+                       bbox=e.bbox, confidence=e.confidence, document_date=doc.document_date)
         indexed.append(IndexedElement(id=f"{tenant}:{doc.source_id}:{clean.content_hash}", envelope=env,
                                       markdown=clean.to_markdown(), html=clean.to_html(),
                                       embedding_text=clean.to_embedding_text(), subject_ids=subject_ids or []))

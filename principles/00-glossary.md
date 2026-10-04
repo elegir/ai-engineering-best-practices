@@ -3,7 +3,7 @@ title: "Glossary — the vocabulary of building software with AI agents"
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-10-01
+last-reviewed: 2026-10-04
 tags: [glossary, vocabulary]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -176,10 +176,27 @@ This field renames itself every few months. Below are the terms as used in this 
 
 **Row Level Security (RLS).** A database policy filtering every query by the request's identity, so a similarity search returns only authorised rows — the tenant-isolation enforcement point on Postgres. Supabase (read 2026-10-01). `16-data-for-ai-products.md` §3.7.
 
+**Embedding (dense vector); pooling.** A fixed-length vector obtained by pooling (mean, CLS or max) a transformer's token vectors; lossy, trained on positive pairs, so it encodes topic-level similarity, not exact identifiers, dates or negation — "very very c[oar]se grain topic driven". Reimers (2022-12; 2025-05); Unstructured (2024-07). `17-embeddings-and-chunking.md` §3.1.
+
+**Chunk; chunking commandment.** The unit of text that is embedded and retrieved; chosen for the downstream task (the generator's unit) and the embedding model's maximum input, never "for chunking's sake". Kamradt (2024-01). `17-embeddings-and-chunking.md` §3.2; `practices/embeddings-and-chunking/chunking-decision-table.md`.
+
+**Token-level retrieval metrics (recall, precision, Precision_Ω, IoU).** Relevance measured on the tokens of verbatim excerpts rather than on whole documents, so a chunker can be evaluated; Precision_Ω is the precision if every chunk holding excerpt tokens were retrieved (an upper bound on token efficiency); IoU counts redundant excerpt tokens once in the numerator and all retrieved tokens in the denominator, so overlap is penalised. Chroma (2024-07-03). `17-embeddings-and-chunking.md` §3.3; `practices/embeddings-and-chunking/chunk-eval-harness.md`.
+
+**`input_type` (query vs document embedding).** The provider's per-side parameter: Cohere takes the enum values `search_query` and `search_document`; Voyage takes `query` or `document` and prepends a prompt itself ("Represent the query for retrieving supporting documents: " / "Represent the document for retrieval: "); OpenAI's guide has none. One model for both sides, the convention applied by the code path, not the caller. Voyage; Cohere (read 2026-10-04); Reimers (2022-12) on one encoder rather than two. `17-embeddings-and-chunking.md` §3.4.
+
+**Contextual retrieval / contextual chunking.** Prepending 50–100 tokens of chunk-specific, LLM-written context ("This chunk is from an SEC filing on ACME corp's performance in Q2 2023; the previous quarter's revenue was $314 million.") to each chunk before embedding and BM25 indexing; generic document summaries on every chunk did not help. Anthropic (2024-09-19). `17-embeddings-and-chunking.md` §3.5.
+
+**Late chunking.** Embedding the whole document with a long-context, mean-pooling model and pooling per chunk *after* the transformer, so each chunk vector carries document context at the storage cost of naive chunking. Jina (arXiv 2409.04701, 2024-09); Weaviate (2024-09-05). `17-embeddings-and-chunking.md` §3.5.
+
+**Matryoshka representation learning (MRL).** Training an embedding model so the first dimensions carry the most information, letting a vector be truncated to a declared shorter length (then normalised) without re-embedding; a different dimension is still a different configuration. OpenAI, Voyage and Cohere pages (read 2026-10-04). `17-embeddings-and-chunking.md` §3.7; `practices/embeddings-and-chunking/embedding-config-and-versioning.md`.
+
+**Late interaction / multi-vector (ColBERT, ColPali); MaxSim.** One vector per token (ColBERT) or per image patch (ColPali) instead of one per chunk, scored by summing, over the query's tokens, the maximum similarity to any document vector; higher fidelity, hundreds of times the storage, so used as a re-ranking phase. Martin (2024-04); Qdrant (2026-03); Weaviate (2024-09). `17-embeddings-and-chunking.md` §3.8.
+
 **Brownfield / greenfield.** Existing codebase vs. new project. Most real work is brownfield; frameworks that require describing the whole system up front fit it badly.
 
 ## Change log
 
+- 2026-10-04 (s7) — added Embedding (dense vector) / pooling, Chunk / chunking commandment, Token-level retrieval metrics (recall, precision, Precision_Ω, IoU), `input_type` (query vs document embedding), Contextual retrieval / contextual chunking, Late chunking, Matryoshka representation learning, Late interaction / multi-vector (ColBERT, ColPali) / MaxSim. Source: `sources/2026-10-04-s07-embeddings-chunking-digest.md` §7.4.
 - 2026-09-08 — created from the LIDR workshop and the structuring-research entry.
 - 2026-10-01 (s6) — added Document parsing, Layout detection / element-typed document / provenance, Agentic OCR, Data-centric AI, Data contract / control plane / AI approval gate, Chunkless RAG / structure navigation, Anonymisation vs pseudonymisation, Row Level Security. Source: `sources/2026-10-01-s06-data-audit-cleaning-privacy-digest.md` §7.6.
 - 2026-10-01 (s5) — "Eval" rewritten (systematic measurement preceded by error analysis); added Error analysis, Theoretical saturation, Benevolent dictator, Criteria drift, Judge calibration, Judge bias, Task/trial/grader/transcript/outcome/harness/suite, Capability vs regression and pass@k vs pass^k, Memory (types and scopes), Extract → consolidate, Sleep-time compute, Forgetting vs deleting, Memory engineering vs context engineering, NHI / just-in-time access, Pre-filter vs post-filter authorisation, Approval (interruption with resumable state). Source: `sources/2026-10-01-s05-context-memory-permissions-evals-digest.md` §7.8.
