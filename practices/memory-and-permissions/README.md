@@ -1,7 +1,7 @@
 ---
 title: "Practice — memory and permissions: a memory store the application owns (extract → consolidate, identity-scoped reads, forgetting with a trail), the provider's files, web search and memory tool used within their tenancy rules, and permissions carried from identity through retrieval to the tool boundary"
 type: practice
-status: draft            # draft until principle 15 is confirmed against LIDR session 5 (2026-11-12) and a real repo passes Verify
+status: draft            # draft until the course session confirms the principle or a real repo passes Verify (field report); routed since 2026-10-05 (decision 0006)
 date: 2026-10-01
 last-reviewed: 2026-10-05
 tags: [memory, long-term-memory, mem0, memory-tool, consolidation, forgetting, files-api, web-search, permissions, rebac, approvals, nhi, s5]
@@ -10,7 +10,6 @@ applies-when: "multi_turn"
 full-when: "multi_turn and (multi_tenant or personal_data or regulated or acts_on_world)"
 when: first-user       # memory is not a day-0 artifact: a single loop passes its eval before memory is added (s2 rule); the Files and web-search notes are read whenever those provider tools are used
 reference-status: untested   # decision 0005 §3; only a field report moves it
-routed: false          # unrouted until the routing gate of decision 0004 §6 (the previous module's day-0 files must pass Verify in one real repo); no row in practices/README.md, absent from ROUTER.md
 principle: principles/15-memory-external-context-and-permissions.md
 sources:
   - sources/2026-10-01-s05-context-memory-permissions-evals-digest.md
@@ -97,6 +96,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-05 — **routed** (decision `../../decisions/0006-complete-agnostic-catalogue.md`): row in `../README.md`, present in `../../ROUTER.md`; `reference-status` stays `untested` until a field report. The "unrouted" wording in earlier change-log lines describes the state before this date.
 - 2026-10-05 (s8) — `permission-model.md` §3 gains a fourth placement row, **in-graph (filter-aware) filtering and the planner** (Qdrant's filter-aware edges, Weaviate's ACORN variant, pgvector's iterative scan), and the RLS row gains "with an iterative scan or a partition for recall": a filter applied after an approximate scan loses recall (pgvector README, read 2026-10-05). From `sources/2026-10-05-s08-vector-databases-digest.md`.
 - 2026-10-01 (s6) — `permission-model.md` §3 gains a third placement row, **RLS in the store**: the policy reads the request identity (`auth.uid()`, a session variable, a JWT claim), is preferred over a `WHERE` in application code, and reaches permissions held elsewhere through a foreign data wrapper (Supabase, read 2026-10-01); the day-one owner column is written at ingestion (`../data-ingestion/` Verify 2). Source: `../../sources/2026-10-01-s06-data-audit-cleaning-privacy-digest.md` §7.2.
 - 2026-10-01 — created from the session-5 market scan digest (draft, **unrouted** per decision 0004 §6: no row in `practices/README.md`, absent from `ROUTER.md` until the previous module's day-0 files pass Verify in a real repo). Reference `memory_store.py` run with `--demo` (offline, rule-based stand-ins for the extraction and consolidation models, no network) on 2026-10-01: two identities with overlapping facts → each read returns only its owner's units (Lisbon never appears for Bob, Madrid never for Alice); ADD on new facts; NOOP on an identical duplicate; UPDATE on "I moved to Porto" → the Lisbon unit becomes `forgotten` with a trail entry `superseded by <new id>`; FORGET on "I don't drink coffee anymore" → status change, excluded from reads, still in the store; `erase()` → unit and trail gone with an audit line; a secret-shaped string (`sk-…`) and an excluded field (`ssn`) dropped at extraction; crafted namespaces (`bob`, `../bob`, `alice%2F..`, `alice/bob`) refused, and Alice forgetting Bob's unit refused; a bounded read returns 3 units / 927 characters from a 23-unit store at `k=5, max 1000`; a fresh unit outranks a 200-day-old one of equal relevance; an unparseable consolidator answer → NOOP, nothing appended. No field report yet.
