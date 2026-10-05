@@ -1,0 +1,373 @@
+[
+ {
+  "url": "https://www.youtube.com/results?search_query=Qdrant+filterable+HNSW+talk&sp=CAASAhAB",
+  "input": "Qdrant filterable HNSW talk"
+ },
+ {
+  "url": "https://www.youtube.com/results?search_query=Yury+Malkov+HNSW+talk&sp=CAASAhAB",
+  "input": "Yury Malkov HNSW talk"
+ },
+ {
+  "title": "How Notion Cut Millions from Their Vector DB Bill Without Sacrificing Search Quality",
+  "id": "_yb6Nw21QxA",
+  "url": "https://www.youtube.com/watch?v=_yb6Nw21QxA",
+  "viewCount": 7264,
+  "date": "2025-05-29T15:51:37.000Z",
+  "channelName": "AI Council",
+  "numberOfSubscribers": 48900,
+  "duration": "00:34:25",
+  "input": "Turbopuffer object storage vector search talk"
+ },
+ {
+  "title": "How to Build 10x Cheaper Object Storage, with Simon Eskildsen, CEO at Turbopuffer",
+  "id": "3KB_Ly6ZJ_E",
+  "url": "https://www.youtube.com/watch?v=3KB_Ly6ZJ_E&t=2547s",
+  "viewCount": 1919,
+  "date": "2025-08-05T21:00:02.000Z",
+  "channelName": "Barrchives Podcast",
+  "numberOfSubscribers": 268,
+  "duration": "00:49:35",
+  "input": "Turbopuffer object storage vector search talk"
+ },
+ {
+  "title": "Vector databases are so hot right now. WTF are they?",
+  "id": "klTvEwg3oJ4",
+  "url": "https://www.youtube.com/watch?v=klTvEwg3oJ4",
+  "viewCount": 1130510,
+  "date": "2023-04-07T17:34:13.000Z",
+  "channelName": "Fireship",
+  "numberOfSubscribers": 4290000,
+  "duration": "00:03:21",
+  "input": "LanceDB Milvus vector database internals talk"
+ },
+ {
+  "title": "pgvector | Postgres.FM 081 | #PostgreSQL #Postgres podcast",
+  "id": "vvImP6A_dDU",
+  "url": "https://www.youtube.com/watch?v=vvImP6A_dDU",
+  "viewCount": 1096,
+  "date": "2024-01-19T14:30:09.000Z",
+  "channelName": "PostgresTV",
+  "numberOfSubscribers": 6440,
+  "duration": "00:49:05",
+  "input": "pgvector Jonathan Katz talk HNSW Postgres"
+ },
+ {
+  "title": "Vector Databases simply explained! (Embeddings & Indexes)",
+  "id": "dN0lsF2cvm4",
+  "url": "https://www.youtube.com/watch?v=dN0lsF2cvm4",
+  "viewCount": 689732,
+  "date": "2023-05-06T14:00:31.000Z",
+  "channelName": "AssemblyAI",
+  "numberOfSubscribers": 184000,
+  "duration": "00:04:23",
+  "input": "LanceDB Milvus vector database internals talk"
+ },
+ {
+  "title": "The Infrastructure Company Powering the Top AI Apps",
+  "id": "LsvBqkF8Jvs",
+  "url": "https://www.youtube.com/watch?v=LsvBqkF8Jvs",
+  "viewCount": 3969,
+  "date": "2025-07-22T13:00:11.000Z",
+  "channelName": "Unsupervised Learning: With Jacob Effron",
+  "numberOfSubscribers": 30400,
+  "duration": "00:51:55",
+  "input": "Turbopuffer object storage vector search talk"
+ },
+ {
+  "title": "How would you design a database on Object Storage?",
+  "id": "RFmajOeUKnE",
+  "url": "https://www.youtube.com/watch?v=RFmajOeUKnE",
+  "viewCount": 8095,
+  "date": "2024-11-16T13:31:26.000Z",
+  "channelName": "The Geek Narrator",
+  "numberOfSubscribers": 113000,
+  "duration": "01:08:26",
+  "input": "Turbopuffer object storage vector search talk"
+ },
+ {
+  "title": "The Weaviate Vector Database \u2014 Bring AI-native applications to life.",
+  "id": "pHB-m-ZITw4",
+  "url": "https://www.youtube.com/watch?v=pHB-m-ZITw4",
+  "viewCount": 3321,
+  "date": "2025-02-21T16:54:44.000Z",
+  "channelName": "CMU Database Group",
+  "numberOfSubscribers": 91800,
+  "duration": "00:12:17",
+  "input": "CMU Database Group Weaviate vector database lecture"
+ },
+ {
+  "title": "What is a Vector Database? Powering Semantic Search & AI Applications",
+  "id": "gl1r1XV0SLw",
+  "url": "https://www.youtube.com/watch?v=gl1r1XV0SLw",
+  "viewCount": 982087,
+  "date": "2025-03-24T11:00:56.000Z",
+  "channelName": "IBM Technology",
+  "numberOfSubscribers": 1810000,
+  "duration": "00:09:48",
+  "input": "LanceDB Milvus vector database internals talk"
+ },
+ {
+  "title": "Billion Scale Vector Storage for RAG",
+  "id": "l2N4DT35PKg",
+  "url": "https://www.youtube.com/watch?v=l2N4DT35PKg",
+  "viewCount": 1359,
+  "date": "2025-11-04T14:01:19.000Z",
+  "channelName": "Jason Liu",
+  "numberOfSubscribers": 9190,
+  "duration": "00:50:51",
+  "input": "Turbopuffer object storage vector search talk"
+ },
+ {
+  "title": "Vector Database Explained | What is Vector Database?",
+  "id": "72XgD322wZ8",
+  "url": "https://www.youtube.com/watch?v=72XgD322wZ8",
+  "viewCount": 279088,
+  "date": "2023-09-09T13:30:12.000Z",
+  "channelName": "codebasics",
+  "numberOfSubscribers": 1580000,
+  "duration": "00:06:52",
+  "input": "LanceDB Milvus vector database internals talk"
+ },
+ {
+  "title": "Lance: A Modern Columnar Data Format (Chang She)",
+  "id": "ixpbVyrsuL8",
+  "url": "https://www.youtube.com/watch?v=ixpbVyrsuL8",
+  "viewCount": 8315,
+  "date": "2023-10-27T11:41:23.000Z",
+  "channelName": "CMU Database Group",
+  "numberOfSubscribers": 91800,
+  "duration": "00:57:51",
+  "input": "Etienne Dilocker Weaviate vector index compression talk"
+ },
+ {
+  "title": "Qdrant: Open Source Vector Search Engine and Vector Database (Andrey Vasnetsov)",
+  "id": "bU38Ovdh3NY",
+  "url": "https://www.youtube.com/watch?v=bU38Ovdh3NY",
+  "viewCount": 16882,
+  "date": "2023-09-15T17:28:43.000Z",
+  "channelName": "CMU Database Group",
+  "numberOfSubscribers": 91800,
+  "duration": "01:02:38",
+  "input": "CMU Database Group Weaviate vector database lecture"
+ },
+ {
+  "title": "Vector Search RAG Tutorial \u2013 Combine Your Data with LLMs with Advanced Search",
+  "id": "JEBDfGqrAUA",
+  "url": "https://www.youtube.com/watch?v=JEBDfGqrAUA",
+  "viewCount": 357507,
+  "date": "2023-12-11T15:09:17.000Z",
+  "channelName": "freeCodeCamp.org",
+  "numberOfSubscribers": 11900000,
+  "duration": "01:11:46",
+  "input": "LanceDB Milvus vector database internals talk"
+ },
+ {
+  "title": "Enabling Vectorized Engine in Apache Spark",
+  "id": "YcOVzx2AKc4",
+  "url": "https://www.youtube.com/watch?v=YcOVzx2AKc4",
+  "viewCount": 2270,
+  "date": "2021-07-27T22:47:00.000Z",
+  "channelName": "Databricks",
+  "numberOfSubscribers": 167000,
+  "duration": "00:21:59",
+  "input": "CMU Database Group Weaviate vector database lecture"
+ },
+ {
+  "title": "Jonathan S. Katz - Dissimilarity search... (PGConf.EU 2024)",
+  "id": "XeJIo8Mo66g",
+  "url": "https://www.youtube.com/watch?v=XeJIo8Mo66g",
+  "viewCount": 286,
+  "date": "2024-11-04T14:09:42.000Z",
+  "channelName": "PostgreSQL Europe",
+  "numberOfSubscribers": 3040,
+  "duration": "00:54:20",
+  "input": "pgvector Jonathan Katz talk HNSW Postgres"
+ },
+ {
+  "title": "15 - Vectorized Execution (CMU Databases / Spring 2020)",
+  "id": "Hn4l8XC3-PQ",
+  "url": "https://www.youtube.com/watch?v=Hn4l8XC3-PQ",
+  "viewCount": 5204,
+  "date": "2020-03-06T02:56:13.000Z",
+  "channelName": "CMU Database Group",
+  "numberOfSubscribers": 91800,
+  "duration": "01:27:29",
+  "input": "CMU Database Group Weaviate vector database lecture"
+ },
+ {
+  "title": "Why are Vector Databases so Hot in Today's AI Landscape?",
+  "id": "rZuEHQLA48Q",
+  "url": "https://www.youtube.com/watch?v=rZuEHQLA48Q",
+  "viewCount": 110,
+  "date": "2023-08-12T09:00:38.000Z",
+  "channelName": "Brian Tan Seng",
+  "numberOfSubscribers": 13,
+  "duration": "00:21:19",
+  "input": "LanceDB Milvus vector database internals talk"
+ },
+ {
+  "title": "Weaviate: An Architectural Deep Dive (Etienne Dilocker)",
+  "id": "4sLJapXEPd4",
+  "url": "https://www.youtube.com/watch?v=4sLJapXEPd4",
+  "viewCount": 4830,
+  "date": "2023-10-08T14:27:02.000Z",
+  "channelName": "CMU Database Group",
+  "numberOfSubscribers": 91800,
+  "duration": "01:04:20",
+  "input": "CMU Database Group Weaviate vector database lecture"
+ },
+ {
+  "title": "Lecture #21 - Vectorized Execution [CMU Database Systems Spring 2016]",
+  "id": "01dPh1gZ3cc",
+  "url": "https://www.youtube.com/watch?v=01dPh1gZ3cc",
+  "viewCount": 700,
+  "date": "2016-05-16T11:02:38.000Z",
+  "channelName": "CMU Database Group",
+  "numberOfSubscribers": 91800,
+  "duration": "01:05:43",
+  "input": "CMU Database Group Weaviate vector database lecture"
+ },
+ {
+  "title": "Faster vector search with Turbopuffer CEO, Simon Eskildsen",
+  "id": "K3ivDkMEclg",
+  "url": "https://www.youtube.com/watch?v=K3ivDkMEclg&t=1154s",
+  "viewCount": 5047,
+  "date": "2025-11-13T17:00:30.000Z",
+  "channelName": "The Database School Podcast",
+  "numberOfSubscribers": 3890,
+  "duration": "01:06:47",
+  "input": "Turbopuffer object storage vector search talk"
+ },
+ {
+  "title": "Reinventing Amazon Redshift (Ippokratis Pandis)",
+  "id": "ir6V7DkBe-w",
+  "url": "https://www.youtube.com/watch?v=ir6V7DkBe-w",
+  "viewCount": 5618,
+  "date": "2021-10-19T20:04:01.000Z",
+  "channelName": "CMU Database Group",
+  "numberOfSubscribers": 91800,
+  "duration": "00:59:18",
+  "input": "Pinecone serverless architecture Edo Liberty talk"
+ },
+ {
+  "title": "BYOC Panel: Edo (Pinecone), Spencer (Cockroach), and Nikhil (Materialize)",
+  "id": "yc9-PPzZIdY",
+  "url": "https://www.youtube.com/watch?v=yc9-PPzZIdY",
+  "viewCount": 799,
+  "date": "2025-01-16T17:55:10.000Z",
+  "channelName": "Git With It",
+  "numberOfSubscribers": 45,
+  "duration": "01:12:15",
+  "input": "Pinecone serverless architecture Edo Liberty talk"
+ },
+ {
+  "title": "Building Vector Search Applications",
+  "id": "_kOiA3EV3YE",
+  "url": "https://www.youtube.com/watch?v=_kOiA3EV3YE",
+  "viewCount": 3,
+  "date": "2024-04-14T22:59:56.000Z",
+  "channelName": "The Enterprise AI Show",
+  "numberOfSubscribers": 7450,
+  "duration": "00:39:24",
+  "input": "Pinecone serverless architecture Edo Liberty talk"
+ },
+ {
+  "title": "turbopuffer: Object Storage-native Database for Search (Simon Eskildsen)",
+  "id": "pqoRNwNaxfs",
+  "url": "https://www.youtube.com/watch?v=pqoRNwNaxfs",
+  "viewCount": 11115,
+  "date": "2026-03-10T15:05:40.000Z",
+  "channelName": "CMU Database Group",
+  "numberOfSubscribers": 91800,
+  "duration": "01:08:54",
+  "input": "Turbopuffer object storage vector search talk"
+ },
+ {
+  "title": "Data Talks on the Rocks hosted by Rill | NYC",
+  "id": "S5mcxLWeuM8",
+  "url": "https://www.youtube.com/watch?v=S5mcxLWeuM8",
+  "viewCount": 320,
+  "date": "2023-10-06T20:04:37.000Z",
+  "channelName": "Rill Data",
+  "numberOfSubscribers": 595,
+  "duration": "00:50:34",
+  "input": "Pinecone serverless architecture Edo Liberty talk"
+ },
+ {
+  "title": "#18 - Optimistic Concurrency Control \u2738 Weaviate Database Talk (CMU Intro to Database Systems)",
+  "id": "-TA0QIwFUnU",
+  "url": "https://www.youtube.com/watch?v=-TA0QIwFUnU",
+  "viewCount": 7470,
+  "date": "2024-11-07T04:14:17.000Z",
+  "channelName": "CMU Database Group",
+  "numberOfSubscribers": 91800,
+  "duration": "01:20:53",
+  "input": "CMU Database Group Weaviate vector database lecture"
+ },
+ {
+  "title": "The Pinecone Vector Database System (Edo Liberty)",
+  "id": "8LXotdzX_84",
+  "url": "https://www.youtube.com/watch?v=8LXotdzX_84",
+  "viewCount": 5346,
+  "date": "2021-11-05T00:19:56.000Z",
+  "channelName": "CMU Database Group",
+  "numberOfSubscribers": 91800,
+  "duration": "01:06:35",
+  "input": "CMU Database Group Weaviate vector database lecture"
+ },
+ {
+  "title": "No Priors Ep. 52 | With Pinecone CEO Edo Liberty",
+  "id": "6R7YCX4Q91Q",
+  "url": "https://www.youtube.com/watch?v=6R7YCX4Q91Q",
+  "viewCount": 1794,
+  "date": "2024-02-22T10:00:06.000Z",
+  "channelName": "No Priors: AI, Machine Learning, Tech, & Startups",
+  "numberOfSubscribers": 98000,
+  "duration": "00:31:28",
+  "input": "Pinecone serverless architecture Edo Liberty talk"
+ },
+ {
+  "title": "Debunking \u201cPurpose-built Data Systems\u201d: Enter the Universal Database",
+  "id": "RwnpxND6JO8",
+  "url": "https://www.youtube.com/watch?v=RwnpxND6JO8",
+  "viewCount": 809,
+  "date": "2021-08-04T19:24:41.000Z",
+  "channelName": "Tileai",
+  "numberOfSubscribers": 357,
+  "duration": "01:05:51",
+  "input": "Pinecone serverless architecture Edo Liberty talk"
+ },
+ {
+  "title": "Convex: Life Without a Backend Team (James Cowling)",
+  "id": "iizcidmSwJ4",
+  "url": "https://www.youtube.com/watch?v=iizcidmSwJ4",
+  "viewCount": 3636,
+  "date": "2021-11-30T12:57:50.000Z",
+  "channelName": "CMU Database Group",
+  "numberOfSubscribers": 91800,
+  "duration": "01:01:41",
+  "input": "Pinecone serverless architecture Edo Liberty talk"
+ },
+ {
+  "title": "How We Build Firebolt (Benjamin Wagner)",
+  "id": "9rW9uEJ15tU",
+  "url": "https://www.youtube.com/watch?v=9rW9uEJ15tU",
+  "viewCount": 9415,
+  "date": "2021-12-15T01:26:33.000Z",
+  "channelName": "CMU Database Group",
+  "numberOfSubscribers": 91800,
+  "duration": "01:03:38",
+  "input": "Pinecone serverless architecture Edo Liberty talk"
+ },
+ {
+  "title": "How do vector (search) databases work? ft: turbopuffer",
+  "id": "64jzC0sdd-k",
+  "url": "https://www.youtube.com/watch?v=64jzC0sdd-k",
+  "viewCount": 9943,
+  "date": "2025-03-29T05:56:16.000Z",
+  "channelName": "The Geek Narrator",
+  "numberOfSubscribers": 113000,
+  "duration": "01:08:59",
+  "input": "Turbopuffer object storage vector search talk"
+ }
+]
