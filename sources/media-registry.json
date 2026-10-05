@@ -16196,8 +16196,8 @@
    ],
    "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
    "decided": "2026-10-05",
-   "status": "transcribed",
-   "reason": "selected by authority test — parked by s6, taken now: Notion + turbopuffer on cost at scale (user-side case) (earlier: parked for module s8 (found in the s6 scan): AI Council: how Notion cut millions from its vector DB bill — parked for vector databases)",
+   "status": "digested",
+   "reason": "selected by authority test — parked by s6, taken now: Notion + turbopuffer on cost at scale (user-side case) (earlier: parked for module s8 (found in the s6 scan): AI Council: how Notion cut millions from its vector DB bill — parked for vector databases); digested in sources/2026-10-05-s08-vector-databases-digest.md",
    "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-_yb6Nw21QxA-ai-council-notion-vector-db-bill-eskildsen-mickey-liu.md"
   },
   {
@@ -19495,8 +19495,8 @@
    "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
    "decided": "2026-10-05",
    "duration": "00:09:48",
-   "status": "transcribed",
-   "reason": "selected by authority test — parked by s7, taken now: corporate explainer as the entry-level framing (earlier: parked for module s8 (found in the s7 scan): IBM: what is a vector database)",
+   "status": "digested",
+   "reason": "selected by authority test — parked by s7, taken now: corporate explainer as the entry-level framing (earlier: parked for module s8 (found in the s7 scan): IBM: what is a vector database); digested in sources/2026-10-05-s08-vector-databases-digest.md",
    "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-gl1r1XV0SLw-ibm-what-is-a-vector-database.md"
   },
   {
@@ -20409,8 +20409,8 @@
    "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
    "decided": "2026-10-05",
    "duration": "00:08:20",
-   "status": "transcribed",
-   "reason": "selected by authority test — primary vendor course module: quantization",
+   "status": "digested",
+   "reason": "selected by authority test — primary vendor course module: quantization; digested in sources/2026-10-05-s08-vector-databases-digest.md",
    "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-oExGyAEOpP4-qdrant-essentials-vector-quantization.md"
   },
   {
@@ -20750,8 +20750,8 @@
    "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
    "decided": "2026-10-05",
    "duration": "00:04:46",
-   "status": "transcribed",
-   "reason": "selected by authority test — primary vendor course module: filterable HNSW",
+   "status": "digested",
+   "reason": "selected by authority test — primary vendor course module: filterable HNSW; digested in sources/2026-10-05-s08-vector-databases-digest.md",
    "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-VJVHU47IAik-qdrant-essentials-filterable-hnsw.md"
   },
   {
@@ -20768,8 +20768,8 @@
    "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
    "decided": "2026-10-05",
    "duration": "00:04:19",
-   "status": "transcribed",
-   "reason": "selected by authority test — vendor short: HNSW in an OLAP engine (exception: below views floor, cheap primary)",
+   "status": "digested",
+   "reason": "selected by authority test — vendor short: HNSW in an OLAP engine (exception: below views floor, cheap primary); digested in sources/2026-10-05-s08-vector-databases-digest.md",
    "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-sBQiHWl3qYw-clickhouse-approx-vector-search.md"
   },
   {
@@ -21466,8 +21466,8 @@
    "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
    "decided": "2026-10-05",
    "duration": "00:50:51",
-   "status": "transcribed",
-   "reason": "selected by authority test — primary practitioner session on trillion-scale object-storage vector search (Eskildsen with Jason Liu); overlaps the CMU talk, kept for the production lessons",
+   "status": "digested",
+   "reason": "selected by authority test — primary practitioner session on trillion-scale object-storage vector search (Eskildsen with Jason Liu); overlaps the CMU talk, kept for the production lessons; digested in sources/2026-10-05-s08-vector-databases-digest.md",
    "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-l2N4DT35PKg-jason-liu-turbopuffer-billion-scale-vector-storage.md"
   },
   {
@@ -21620,8 +21620,8 @@
    "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
    "decided": "2026-10-05",
    "duration": "00:49:05",
-   "status": "transcribed",
-   "reason": "selected by authority test — reference Postgres podcast with a pgvector contributor (Katz)",
+   "status": "digested",
+   "reason": "selected by authority test — reference Postgres podcast with a pgvector contributor (Katz); digested in sources/2026-10-05-s08-vector-databases-digest.md",
    "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/podcast-vvImP6A_dDU-postgres-fm-081-pgvector-jonathan-katz.md"
   },
   {
@@ -21689,8 +21689,8 @@
    "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
    "decided": "2026-10-05",
    "duration": "00:12:17",
-   "status": "transcribed",
-   "reason": "selected by authority test — primary vendor guest lecture, 2025 (Dilocker, CMU intro class)",
+   "status": "digested",
+   "reason": "selected by authority test — primary vendor guest lecture, 2025 (Dilocker, CMU intro class); digested in sources/2026-10-05-s08-vector-databases-digest.md",
    "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-pHB-m-ZITw4-cmu-weaviate-ai-native-applications-dilocker-2025.md"
   },
   {
@@ -21741,8 +21741,8 @@
    "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
    "decided": "2026-10-05",
    "duration": "01:02:38",
-   "status": "transcribed",
-   "reason": "selected by authority test — primary at an academic venue: Qdrant architecture (Vasnetsov, CMU 2023)",
+   "status": "digested",
+   "reason": "selected by authority test — primary at an academic venue: Qdrant architecture (Vasnetsov, CMU 2023); digested in sources/2026-10-05-s08-vector-databases-digest.md",
    "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-bU38Ovdh3NY-cmu-qdrant-andrey-vasnetsov.md"
   },
   {
@@ -21793,8 +21793,8 @@
    "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
    "decided": "2026-10-05",
    "duration": "00:54:20",
-   "status": "transcribed",
-   "reason": "selected by authority test — primary conference talk by a pgvector contributor (PGConf.EU 2024); below the reach floor, taken by authorship",
+   "status": "digested",
+   "reason": "selected by authority test — primary conference talk by a pgvector contributor (PGConf.EU 2024); below the reach floor, taken by authorship; digested in sources/2026-10-05-s08-vector-databases-digest.md",
    "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-XeJIo8Mo66g-pgconf-eu-2024-jonathan-katz-dissimilarity-search.md"
   },
   {
@@ -21845,8 +21845,8 @@
    "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
    "decided": "2026-10-05",
    "duration": "01:04:20",
-   "status": "transcribed",
-   "reason": "selected by authority test — primary at an academic venue: Weaviate architecture (Dilocker, CMU 2023)",
+   "status": "digested",
+   "reason": "selected by authority test — primary at an academic venue: Weaviate architecture (Dilocker, CMU 2023); digested in sources/2026-10-05-s08-vector-databases-digest.md",
    "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-4sLJapXEPd4-cmu-weaviate-architectural-deep-dive-etienne-dilocker.md"
   },
   {
@@ -21948,8 +21948,8 @@
    "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
    "decided": "2026-10-05",
    "duration": "01:08:54",
-   "status": "transcribed",
-   "reason": "selected by authority test — primary at an academic venue, 2026: object-storage-native search (Eskildsen, CMU)",
+   "status": "digested",
+   "reason": "selected by authority test — primary at an academic venue, 2026: object-storage-native search (Eskildsen, CMU); digested in sources/2026-10-05-s08-vector-databases-digest.md",
    "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-pqoRNwNaxfs-cmu-turbopuffer-object-storage-native-simon-eskildsen.md"
   },
   {
@@ -22000,8 +22000,8 @@
    "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
    "decided": "2026-10-05",
    "duration": "01:06:35",
-   "status": "transcribed",
-   "reason": "selected by authority test — canon: Pinecone system design (Liberty, CMU 2021)",
+   "status": "digested",
+   "reason": "selected by authority test — canon: Pinecone system design (Liberty, CMU 2021); digested in sources/2026-10-05-s08-vector-databases-digest.md",
    "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-8LXotdzX_84-cmu-pinecone-vector-database-system-edo-liberty.md"
   },
   {

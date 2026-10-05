@@ -47,6 +47,9 @@ The authority test of the pilot. Reach floor 5k/500 unless primary. Exceptions r
 | Approx vector search in ClickHouse | ClickHouse presenter | ClickHouse | 2026-01 | 4 m | vendor short (exception) | HNSW outside dedicated engines | `yt-sBQiHWl3qYw-…` |
 | What is a vector database? | Martin Keen (IBM) | IBM Technology | 2025-03 | 10 m | corporate explainer (parked by s7) | entry framing | `yt-gl1r1XV0SLw-…` |
 
+
+*Correction (2026-10-05, found by the digest step).* Two "Serves" cells above promise content the talk does not deliver. Dilocker (CMU 2023-10, `yt-4sLJapXEPd4`) announced a multi-tenancy section and then skipped it for time — "I would have another section on multi-tenancy, but I don't want to go even more over" — and said one sentence on hybrid search; multi-tenancy at the index layer comes from the Weaviate docs and the Qdrant guides in `canon-snapshots/`, not from this talk. Katz (PGConf.EU 2024-11, `yt-XeJIo8Mo66g`) names iterative scans and defers them — "iterative search we're not going to talk about today, that's a feature about to come out"; the mechanism is in the pgvector README and the 0.8.0 release note. The lesson for the scan step: a "Serves" cell is written from the transcript, not from the title or the abstract.
+
 ## 4. Considered — not transcribed (every item is in `sources/media-registry.json` with its reason)
 
 - **Parked (5):** CMU Lance columnar format (Chang She, 2023-10) and the CMU intro-class concurrency-control talk with Weaviate (2024-11) → s8 validation pass; the Geek Narrator and Database School interviews with Eskildsen → duplicates of the CMU talk, validation pass only; freeCodeCamp vector-search RAG tutorial (MongoDB, 2023-12) → s9. The four RSS episodes parked by s7 stay candidates for the validation pass.
