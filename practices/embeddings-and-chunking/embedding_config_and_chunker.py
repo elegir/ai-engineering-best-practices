@@ -487,6 +487,13 @@ class EvalRecord:
     date: str
 
 
+def _flat_index() -> dict:
+    """Day-0 index block (added 2026-10-05, s8): exact search, no store quantization, vectors in RAM. An approximate index, a
+    quantization or another placement is a first-user decision recorded by ../vector-store/vector_store.py's StoreManifest, whose
+    check() refuses a store manifest that disagrees with this block (principles/18-vector-stores.md §3.1)."""
+    return {"type": "flat", "params": {}, "quantization": None, "placement": "ram"}
+
+
 @dataclass
 class IndexManifest:
     config_fingerprint: str
@@ -494,6 +501,7 @@ class IndexManifest:
     chunker: Optional[ChunkerRecord] = None
     corpus_hash: str = ""
     eval: Optional[EvalRecord] = None
+    index: dict = field(default_factory=_flat_index)   # s8: states "exact search" on day zero; see _flat_index()
 
     def check(self, config: EmbeddingConfig) -> None:
         if self.config_fingerprint != config.fingerprint():
@@ -504,6 +512,16 @@ class IndexManifest:
             raise ManifestIncomplete("manifest has no chunker record (strategy, size, overlap, tokenizer)")
         if self.chunker.tokenizer_name != config.tokenizer_name:
             raise ConfigMismatch(f"chunker counted with {self.chunker.tokenizer_name!r}, configuration pins {config.tokenizer_name!r}")
+        ix = self.index
+        if not isinstance(ix, dict) or ix.get("type") not in ("flat", "hnsw", "ivf", "clustered") or not isinstance(ix.get("params", {}), dict) \
+                or {"params", "quantization", "placement"} - set(ix) :
+            raise ManifestIncomplete(f"manifest index block {ix!r} must carry type (flat|hnsw|ivf|clustered), params, quantization and placement (s8: exact search is 'flat')")
+        if ix["type"] == "flat" and ix["params"]:
+            raise ManifestIncomplete(f"index block says flat (exact search) but carries parameters {ix['params']}: an exact index has none")
+        if ix["type"] == "hnsw" and not {"m", "ef_construction", "ef_search"} <= set(ix["params"]):
+            raise ManifestIncomplete(f"index block says hnsw with params {ix['params']}: m, ef_construction and ef_search are required (../vector-store/ IndexSpec)")
+        if ix["type"] in ("ivf", "clustered") and not {"lists", "probes"} <= set(ix["params"]):
+            raise ManifestIncomplete(f"index block says {ix['type']} with params {ix['params']}: lists and probes are required")
 
 
 def require_eval(manifest: IndexManifest) -> None:
@@ -719,6 +737,11 @@ def demo() -> int:
     rec = RecursiveChunker(config, tok, 60); ok(f"recursive chunker declared: {asdict(rec.record())}")
     refused("manifest without a chunker record", lambda: IndexManifest(config.fingerprint(), 1536, None).check(config), ManifestIncomplete)
     refused("manifest whose chunker counted with another tokenizer", lambda: IndexManifest(config.fingerprint(), 1536, ChunkerRecord("recursive", 60, 0, "cl100k_base")).check(config), ConfigMismatch)
+    rec_ok = ChunkerRecord("recursive", 60, 0, config.tokenizer_name)
+    refused("index block {type: hnsw} with no params", lambda: IndexManifest(config.fingerprint(), 1536, rec_ok, index={"type": "hnsw", "params": {}, "quantization": None, "placement": "ram"}).check(config), ManifestIncomplete)
+    refused("index block {type: flat} carrying m=16", lambda: IndexManifest(config.fingerprint(), 1536, rec_ok, index={"type": "flat", "params": {"m": 16}, "quantization": None, "placement": "ram"}).check(config), ManifestIncomplete)
+    refused("index block with an unknown type 'annoy'", lambda: IndexManifest(config.fingerprint(), 1536, rec_ok, index={"type": "annoy", "params": {}, "quantization": None, "placement": "ram"}).check(config), ManifestIncomplete)
+    ok(f"default index block on a day-0 manifest: {IndexManifest(config.fingerprint(), 1536, rec_ok).index} (exact search; ../vector-store/ rewrites it when an approximate index is decided)")
 
     print("\n[4] chunks follow the element tree (Verify 4)")
     rows = [["Plan", "Refund window", "Fee"]] + [[f"Plan {i}", f"{10 + i} days", f"{i} USD"] for i in range(40)]

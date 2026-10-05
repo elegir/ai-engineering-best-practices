@@ -3,7 +3,7 @@ title: "Practice — security baseline for agent-driven repos"
 type: practice
 status: draft
 date: 2026-09-09
-last-reviewed: 2026-10-01
+last-reviewed: 2026-10-05
 tags: [security, secrets, dependencies, mcp, threat-model]
 kind: working-style
 applies-when: "always"
@@ -107,6 +107,7 @@ Full (`acts_on_world or personal_data or regulated or multi_tenant`, in addition
 
 ## Change log
 
+- 2026-10-05 (s8) — `threat-model-agentic.md`: T20's control gains the capacity estimate before any index build, build CPU-hours and the re-index on a model change as budget lines, and object-storage `LIST` calls and per-query metadata round trips as metered items (`sources/2026-10-05-s08-vector-databases-digest.md`; `../vector-store/`).
 - 2026-10-01 (s6) — `threat-model-agentic.md`: T7 gains the local-parser control (Docling, MIT, local execution for sensitive data); T14 gains "poisoning of documents on your own infrastructure is the likelier vector" (Jarmul 2026-01) and the audit's authoritative-source table as a control; T20 gains embedding and re-embedding budgets (Gambill 2026-06). Source: `../../sources/2026-10-01-s06-data-audit-cleaning-privacy-digest.md` §7.2.
 - 2026-10-01 (s5) — `threat-model-agentic.md`: T9 gains vault-issued short-lived credentials and non-human identities controlled like human users (IBM; one narrower identity per spawned sub-agent marked as this KB's extension); Verify 6 names the two new register columns and scopes them to the memory-and-permissions full part; T15/T16 gain hidden characters in shared prompt bundles (Block's red team); new **T21** untrusted file reference (a user-supplied `file_id`; control: server-side references, one workspace per tenant). `mcp-trust-register.md`: columns "identity the tool runs as (NHI) and credential lifetime" and "admitted by review on <date>; destructive annotations honoured". Source `sources/2026-10-01-s05-context-memory-permissions-evals-digest.md` rows 32, 34, 35.
 - 2026-10-01 (s4) — `threat-model-agentic.md` rows T11–T20 (attack vectors + OWASP 2025 mapping, `GAP` where uncovered); `mcp-trust-register.md` column "full description reviewed"; note in "Notes from later scans". Source `sources/2026-10-01-s04-structured-outputs-digest.md`.

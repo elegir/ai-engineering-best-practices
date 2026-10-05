@@ -3,7 +3,7 @@ title: "Glossary — the vocabulary of building software with AI agents"
 type: principle
 status: current
 date: 2026-09-08
-last-reviewed: 2026-10-04
+last-reviewed: 2026-10-05
 tags: [glossary, vocabulary]
 sources:
   - sources/2026-09-08-lidr-workshop-harness-engineering.md
@@ -156,7 +156,7 @@ This field renames itself every few months. Below are the terms as used in this 
 
 **Non-human identity (NHI); just-in-time access.** An identity for an agent, controlled with the same visibility as a human user's, with short-lived, vault-issued credentials granted only while needed. IBM (2026-02). That each spawned sub-agent gets its own narrower identity is this KB's extension (opinion).
 
-**Pre-filter vs post-filter authorisation (RAG).** Constraining the query to authorised ids vs checking each result after retrieval; chosen by hit rate. Pinecone/AuthZed (2026-01).
+**Pre-filter vs post-filter authorisation (RAG).** Constraining the query to authorised ids vs checking each result after retrieval; chosen by hit rate. Pinecone/AuthZed (2026-01). On an approximate index post-filtering loses recall — see *Filterable HNSW* (s8).
 
 **Approval (interruption with resumable state).** A tool call that pauses the run, returns serialisable state, resumes on a human decision; fails closed when review is unavailable. OpenAI Agents SDK (read 2026-10-01). Rule: `practices/verification/dry-run-and-approval.md` 2b.
 
@@ -174,7 +174,7 @@ This field renames itself every few months. Below are the terms as used in this 
 
 **Anonymisation vs pseudonymisation (EDPB three criteria).** Anonymous: no record isolation, no linkage, no inference; a reversible placeholder keeps linkage and is pseudonymised — still personal data. EDPB (2026-07-08); Huyen (2024-07).
 
-**Row Level Security (RLS).** A database policy filtering every query by the request's identity, so a similarity search returns only authorised rows — the tenant-isolation enforcement point on Postgres. Supabase (read 2026-10-01). `16-data-for-ai-products.md` §3.7.
+**Row Level Security (RLS).** A database policy filtering every query by the request's identity, so a similarity search returns only authorised rows — the tenant-isolation enforcement point on Postgres. Supabase (read 2026-10-01). `16-data-for-ai-products.md` §3.7. A post-scan predicate on pgvector's HNSW: partition or iterative scan beside it (`18-vector-stores.md` §3.7).
 
 **Embedding (dense vector); pooling.** A fixed-length vector obtained by pooling (mean, CLS or max) a transformer's token vectors; lossy, trained on positive pairs, so it encodes topic-level similarity, not exact identifiers, dates or negation — "very very c[oar]se grain topic driven". Reimers (2022-12; 2025-05); Unstructured (2024-07). `17-embeddings-and-chunking.md` §3.1.
 
@@ -192,10 +192,23 @@ This field renames itself every few months. Below are the terms as used in this 
 
 **Late interaction / multi-vector (ColBERT, ColPali); MaxSim.** One vector per token (ColBERT) or per image patch (ColPali) instead of one per chunk, scored by summing, over the query's tokens, the maximum similarity to any document vector; higher fidelity, hundreds of times the storage, so used as a re-ranking phase. Martin (2024-04); Qdrant (2026-03); Weaviate (2024-09). `17-embeddings-and-chunking.md` §3.8.
 
+**Approximate nearest neighbour (ANN) index; recall@k.** An index returning neighbours that are probably, not certainly, the closest, trading recall for speed and memory; results change on rebuild and differ from exact search; recall@k is the share of the exact top-k returned. Vasnetsov (2023); Katz (2024-11); pgvector README (read 2026-10-05). `18-vector-stores.md` §3.1.
+
+**HNSW (`M`, `ef_construction`, `ef`).** A layered proximity graph searched greedily from a sparse top layer; `M` edges per node (memory, recall), `ef_construction` the build beam (quality, build time), `ef` the query beam (recall, latency, and a cap on results). Malkov and Yashunin (2016–18); Dilocker (2023). `18-vector-stores.md` §3.2.
+
+**Clustered (IVF) index; flat index; dynamic index.** Centroids from k-means and a search of the nearest lists — fewer, longer reads, suited to disk and object storage; flat is exact search; dynamic starts flat and becomes HNSW past a threshold. Katz (2024-01); Pinecone guide (2024-05); Weaviate docs (read 2026-10-05). `18-vector-stores.md` §3.1, §3.3.
+
+**Filterable HNSW; percolation threshold; iterative scan.** Filtering a graph in place disconnects it once about 1/k of its nodes remain; fixes are extra edges per payload value, a planner switching by cardinality, or scanning until *k* results pass. Vasnetsov (2019, 2023); pgvector 0.8.0 (2024-11). `18-vector-stores.md` §3.4.
+
+**Store quantization (SQ, BQ, PQ, RQ); oversampling and rescoring.** Compressing stored vectors for memory and speed, then re-ranking an oversampled candidate list against the originals; a second quantization after the embedding dtype. Dilocker (2023); Qdrant and Weaviate docs (read 2026-10-05). `18-vector-stores.md` §3.5.
+
+**Object-storage-native store; placement (hot / warm / cold).** A store whose only stateful dependency is object storage, coordinated by compare-and-swap, with caches warming hot namespaces into SSD and RAM; placement names where vectors and index live and what cold latency costs. Eskildsen (2026-03). `18-vector-stores.md` §3.6.
+
 **Brownfield / greenfield.** Existing codebase vs. new project. Most real work is brownfield; frameworks that require describing the whole system up front fit it badly.
 
 ## Change log
 
+- 2026-10-05 (s8) — added Approximate nearest neighbour (ANN) index / recall@k, HNSW (`M`, `ef_construction`, `ef`), Clustered (IVF) / flat / dynamic index, Filterable HNSW / percolation threshold / iterative scan, Store quantization / oversampling and rescoring, Object-storage-native store / placement; *Pre-filter vs post-filter authorisation* and *Row Level Security* each gain a clause on recall under an approximate index. Source: `sources/2026-10-05-s08-vector-databases-digest.md` §7.4.
 - 2026-10-04 (s7) — added Embedding (dense vector) / pooling, Chunk / chunking commandment, Token-level retrieval metrics (recall, precision, Precision_Ω, IoU), `input_type` (query vs document embedding), Contextual retrieval / contextual chunking, Late chunking, Matryoshka representation learning, Late interaction / multi-vector (ColBERT, ColPali) / MaxSim. Source: `sources/2026-10-04-s07-embeddings-chunking-digest.md` §7.4.
 - 2026-09-08 — created from the LIDR workshop and the structuring-research entry.
 - 2026-10-01 (s6) — added Document parsing, Layout detection / element-typed document / provenance, Agentic OCR, Data-centric AI, Data contract / control plane / AI approval gate, Chunkless RAG / structure navigation, Anonymisation vs pseudonymisation, Row Level Security. Source: `sources/2026-10-01-s06-data-audit-cleaning-privacy-digest.md` §7.6.
