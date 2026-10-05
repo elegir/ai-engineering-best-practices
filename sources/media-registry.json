@@ -1,6 +1,6 @@
 {
  "about": "Registry of every source this KB has ever considered — videos and podcast episodes (type video/podcast) AND written sources (type written: docs, papers, articles, courses). Media statuses: transcribed (raw text in sources/raw/), digested (source entry has a digest), applied (knowledge reached principles/practices), candidate (parked for a named module), discarded (do not re-consider unless the reason no longer holds). Written statuses: catalogued (listed as canon, not yet read in full), cited (used in a digest/principle — the reason says where), discarded. One entry per URL; `modules` lists every module that used it (reading an existing transcript again for another module is free and encouraged — the registry prevents paying twice for search, transcription and triage, never reuse); scripts/scan-filter.py (media) and scripts/written-filter.py (written) drop anything already here.",
- "updated": "2026-10-04",
+ "updated": "2026-10-05",
  "items": [
   {
    "id": "BHGTA6ZEls4",
@@ -16194,10 +16194,11 @@
    "modules": [
     "s8"
    ],
-   "scan": "sources/2026-10-01-market-scan-s06-data-audit-cleaning-privacy.md",
-   "decided": "2026-10-01",
-   "status": "candidate",
-   "reason": "parked for module s8 (found in the s6 scan): AI Council: how Notion cut millions from its vector DB bill — parked for vector databases"
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "status": "transcribed",
+   "reason": "selected by authority test — parked by s6, taken now: Notion + turbopuffer on cost at scale (user-side case) (earlier: parked for module s8 (found in the s6 scan): AI Council: how Notion cut millions from its vector DB bill — parked for vector databases)",
+   "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-_yb6Nw21QxA-ai-council-notion-vector-db-bill-eskildsen-mickey-liu.md"
   },
   {
    "id": "kOMmE4wRxKc",
@@ -19491,11 +19492,12 @@
    "modules": [
     "s8"
    ],
-   "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
-   "decided": "2026-10-04",
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
    "duration": "00:09:48",
-   "status": "candidate",
-   "reason": "parked for module s8 (found in the s7 scan): IBM: what is a vector database"
+   "status": "transcribed",
+   "reason": "selected by authority test — parked by s7, taken now: corporate explainer as the entry-level framing (earlier: parked for module s8 (found in the s7 scan): IBM: what is a vector database)",
+   "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-gl1r1XV0SLw-ibm-what-is-a-vector-database.md"
   },
   {
    "id": "jTBsWJ2TKy8",
@@ -19610,6 +19612,2482 @@
    ],
    "scan": "sources/2026-10-04-market-scan-s07-embeddings-chunking.md",
    "decided": "2026-10-04"
+  },
+  {
+   "id": "arxiv.org/abs/1603.09320",
+   "url": "https://arxiv.org/abs/1603.09320",
+   "title": "Efficient and robust approximate nearest neighbor search using HNSW graphs (arXiv 1603.09320)",
+   "channel": "Malkov & Yashunin",
+   "published": "2016 / rev. 2018",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/hnsw-paper-abstract.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "pinecone.io/learn/series/faiss/hnsw",
+   "url": "https://www.pinecone.io/learn/series/faiss/hnsw/",
+   "title": "Hierarchical Navigable Small Worlds (HNSW) — Faiss: The Missing Manual",
+   "channel": "Pinecone Learn (James Briggs)",
+   "published": "2022–23",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/pinecone-faiss-hnsw.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "pinecone.io/learn/a-developers-guide-to-ann-algorithms",
+   "url": "https://www.pinecone.io/learn/a-developers-guide-to-ann-algorithms/",
+   "title": "A Developer's Guide to ANN Algorithms",
+   "channel": "Pinecone Learn",
+   "published": "2024",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/pinecone-ann-algorithms-guide.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "docs.weaviate.io/weaviate/concepts/vector-index",
+   "url": "https://docs.weaviate.io/weaviate/concepts/vector-index",
+   "title": "Vector Indexing (concepts) — Weaviate docs",
+   "channel": "Weaviate",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/weaviate-vector-index-concepts.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "docs.weaviate.io/weaviate/concepts/vector-quantization",
+   "url": "https://docs.weaviate.io/weaviate/concepts/vector-quantization",
+   "title": "Vector Quantization / Compression (concepts) — Weaviate docs",
+   "channel": "Weaviate",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/weaviate-vector-quantization.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "qdrant.tech/articles/filtrable-hnsw",
+   "url": "https://qdrant.tech/articles/filtrable-hnsw/",
+   "title": "Filterable HNSW Without Recall Loss",
+   "channel": "Qdrant (Andrei Vasnetsov)",
+   "published": "2019-11-24",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/qdrant-filtrable-hnsw.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "qdrant.tech/articles/vector-search-filtering",
+   "url": "https://qdrant.tech/articles/vector-search-filtering/",
+   "title": "A Complete Guide to Filtering in Vector Search",
+   "channel": "Qdrant",
+   "published": "2024–25",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/qdrant-vector-search-filtering.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8",
+    "s10"
+   ]
+  },
+  {
+   "id": "qdrant.tech/articles/vector-search-resource-optimization",
+   "url": "https://qdrant.tech/articles/vector-search-resource-optimization/",
+   "title": "Vector Search Resource Optimization Guide",
+   "channel": "Qdrant",
+   "published": "2025",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/qdrant-resource-optimization.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "qdrant.tech/documentation/ops-optimization/optimize",
+   "url": "https://qdrant.tech/documentation/ops-optimization/optimize/",
+   "title": "Optimize Performance (ops) — Qdrant docs",
+   "channel": "Qdrant",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/qdrant-optimize-performance.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "github.com/pgvector/pgvector",
+   "url": "https://github.com/pgvector/pgvector",
+   "title": "pgvector README (HNSW, IVFFlat, halfvec, iterative index scans)",
+   "channel": "pgvector (Andrew Kane)",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/pgvector-readme.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "postgresql.org/about/news/pgvector-080-released-2952",
+   "url": "https://www.postgresql.org/about/news/pgvector-080-released-2952/",
+   "title": "pgvector 0.8.0 released",
+   "channel": "PostgreSQL.org news",
+   "published": "2024-10-30",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/pgvector-080-release.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "ann-benchmarks.com",
+   "url": "https://ann-benchmarks.com/",
+   "title": "ANN-Benchmarks (site)",
+   "channel": "Aumüller, Bernhardsson, Faithfull",
+   "published": "live",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; not snapshotted (live site / course page); read when the module is digested",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "github.com/erikbern/ann-benchmarks",
+   "url": "https://github.com/erikbern/ann-benchmarks",
+   "title": "erikbern/ann-benchmarks (repository README)",
+   "channel": "Erik Bernhardsson et al.",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/ann-benchmarks-readme.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "qdrant.tech/benchmarks",
+   "url": "https://qdrant.tech/benchmarks/",
+   "title": "Qdrant vector database benchmarks",
+   "channel": "Qdrant",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/qdrant-benchmarks.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "docs.weaviate.io/weaviate/benchmarks/ann",
+   "url": "https://docs.weaviate.io/weaviate/benchmarks/ann",
+   "title": "ANN benchmark — Weaviate docs",
+   "channel": "Weaviate",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/weaviate-ann-benchmarks.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "docs.pinecone.io/guides/search/hybrid-search",
+   "url": "https://docs.pinecone.io/guides/search/hybrid-search",
+   "title": "Hybrid search overview — Pinecone docs",
+   "channel": "Pinecone",
+   "published": "2026",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/pinecone-hybrid-search-docs.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8",
+    "s10"
+   ]
+  },
+  {
+   "id": "learn.deeplearning.ai/courses/vector-databases-embeddings-applications/lesson/dqe6y/introduction",
+   "url": "https://learn.deeplearning.ai/courses/vector-databases-embeddings-applications/lesson/dqe6y/introduction",
+   "title": "Vector Databases: from Embeddings to Applications (course)",
+   "channel": "DeepLearning.AI × Weaviate (Sebastian Witalec)",
+   "published": "2023",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; not snapshotted (live site / course page); read when the module is digested",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "qdrant.tech/course/essentials/day-2/what-is-hnsw",
+   "url": "https://qdrant.tech/course/essentials/day-2/what-is-hnsw/",
+   "title": "Qdrant Essentials course, day 2: What is HNSW",
+   "channel": "Qdrant",
+   "published": "2025",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/qdrant-course-what-is-hnsw.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "qdrant.tech/course/essentials/day-2/filterable-hnsw",
+   "url": "https://qdrant.tech/course/essentials/day-2/filterable-hnsw/",
+   "title": "Qdrant Essentials course, day 2: Filterable HNSW",
+   "channel": "Qdrant",
+   "published": "2025",
+   "type": "written",
+   "status": "catalogued",
+   "reason": "written canon for the module, catalogued 2026-09-24 in the Project doc curso-fuentes-sesiones-06-11.md; registered 2026-10-05; snapshot canon-snapshots/qdrant-course-filterable-hnsw.md (read for the s8 digest)",
+   "module": "s8",
+   "scan": "sources/catalog-written-canon.md",
+   "decided": "2026-10-05",
+   "modules": [
+    "s8"
+   ]
+  },
+  {
+   "id": "fqlOeE1kPtc",
+   "url": "https://www.youtube.com/watch?v=fqlOeE1kPtc",
+   "title": "Do You Really Need a Vector Database? pgvector vs Dedicated",
+   "channel": "Dev Compiled",
+   "published": "2026-09-14",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:08:40",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "99OC4CHoLlM",
+   "url": "https://www.youtube.com/watch?v=99OC4CHoLlM",
+   "title": "Build Multi-Tenant RAG in Python: Prevent Data Leaks",
+   "channel": "Professor Py: AI Engineering",
+   "published": "2026-01-27",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:06:37",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "j07Xk215Mg8",
+   "url": "https://www.youtube.com/watch?v=j07Xk215Mg8",
+   "title": "Pinecone vs Weaviate vs Qdrant vs Chroma vs FAISS: Pick Wrong and It Bleeds You",
+   "channel": "The Explainer ",
+   "published": "2026-07-26",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:07:20",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "U56PZPA39iU",
+   "url": "https://www.youtube.com/watch?v=U56PZPA39iU",
+   "title": "Your Vector DB Charges 100x To Find One Customer",
+   "channel": "Beo Beo",
+   "published": "2026-09-02",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:08:26",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "3MK3XktBw9s",
+   "url": "https://www.youtube.com/watch?v=3MK3XktBw9s",
+   "title": "🔥 Vector Databases 2026: Ultimate Comparison Guide (Benchmarks, Pricing, Speed) 🚀",
+   "channel": "Learn AI Bytes",
+   "published": "2026-04-16",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:24:07",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "MmG6bmIgoqk",
+   "url": "https://www.youtube.com/watch?v=MmG6bmIgoqk",
+   "title": "You Probably Do Not Need a Vector Database",
+   "channel": "Stack Current",
+   "published": "2026-08-26",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:08:37",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "psUAL0MDe7Y",
+   "url": "https://www.youtube.com/watch?v=psUAL0MDe7Y",
+   "title": "Pinecone Multi-Tenant Retrieval: Namespaces, Metadata Filters",
+   "channel": "Professor Py: Information Retrieval with Python",
+   "published": "2026-01-17",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:07:56",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "W_44NXK-2Lk",
+   "url": "https://www.youtube.com/watch?v=W_44NXK-2Lk",
+   "title": "Vector Databases Are Dying: Here’s What We’re Using Instead",
+   "channel": "CodeRash with Gaurav 🚀",
+   "published": "2026-07-24",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:15:16",
+   "status": "discarded",
+   "reason": "explainer, opinion or business-interview channel; no original contribution beyond the primary vendor talks selected (what-is-a-vector-DB basics, 'Postgres killed vector DBs' opinion, CEO interviews)"
+  },
+  {
+   "id": "C-Hb4gFeN_8",
+   "url": "https://www.youtube.com/watch?v=C-Hb4gFeN_8",
+   "title": "Vector Databases vs GraphRAG: Which AI Memory Actually Wins?",
+   "channel": "Use AI with Tech Dad",
+   "published": "2026-06-03",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:03:31",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "DUtFZfiSli0",
+   "url": "https://www.youtube.com/watch?v=DUtFZfiSli0",
+   "title": "Stop Using Dedicated Vector DBs! (Use Postgres Instead)clean Vector Databases Explained",
+   "channel": "The Code Path",
+   "published": "2026-07-19",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:09:16",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "S9wilRiSatM",
+   "url": "https://www.youtube.com/watch?v=S9wilRiSatM",
+   "title": "HNSW vs IVF indexing for vector databases | Principles and Architectures",
+   "channel": "frugle",
+   "published": "2026-01-09",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:07:37",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "8nqP_K7qfow",
+   "url": "https://www.youtube.com/watch?v=8nqP_K7qfow",
+   "title": "Pinecone vs Weaviate vs Qdrant vs pgvector — 2026 Guide",
+   "channel": "Sukrid LearnHub",
+   "published": "2026-06-01",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:13:09",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "8WCfA7ZGA8w",
+   "url": "https://www.youtube.com/watch?v=8WCfA7ZGA8w",
+   "title": "How Do Vector Databases Search Millions of Vectors So Fast? | HNSW, IVF & PQ Explained",
+   "channel": "VisualStack",
+   "published": "2026-08-16",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:06:15",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "88gXo16cLtk",
+   "url": "https://www.youtube.com/watch?v=88gXo16cLtk",
+   "title": "Stop Choosing the Wrong Vector Database - Here's How to Pick the Right One",
+   "channel": "Ai Abhi",
+   "published": "2026-03-21",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:23:22",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "gNVmoHegSGc",
+   "url": "https://www.youtube.com/watch?v=gNVmoHegSGc",
+   "title": "Vector Index Design for RAG: Graph Theory & ANN Algorithm #rag #opensearch #vectorsearch #agenticai",
+   "channel": "Physics Meets AI",
+   "published": "2026-09-25",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:26:20",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "Qf3ilo7sZOo",
+   "url": "https://www.youtube.com/watch?v=Qf3ilo7sZOo",
+   "title": "Vector Databases for Deep Learning: Embeddings, ANN & RAG",
+   "channel": "Ganapathy LakshmanaPerumal",
+   "published": "2026-05-09",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:13:48",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "9FP-RYOSN8E",
+   "url": "https://www.youtube.com/watch?v=9FP-RYOSN8E",
+   "title": "Why RAG Use Flat Index Brute Force Search 100% accuracy",
+   "channel": "AI Code with Haritha",
+   "published": "2026-05-29",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:04:14",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "aW9sA3jQ8ck",
+   "url": "https://www.youtube.com/watch?v=aW9sA3jQ8ck",
+   "title": "The Only Vector DB You Need for 1T+ Vectors",
+   "channel": "Coding Kitty",
+   "published": "2026-08-07",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:10:17",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "UpBFa4nY0Go",
+   "url": "https://www.youtube.com/watch?v=UpBFa4nY0Go",
+   "title": "Vector Databases Explained (And Why 1 in 10 Searches Misses)",
+   "channel": "ZeroClick Automation",
+   "published": "2026-09-28",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:03:27",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "D2wKT-7e2lQ",
+   "url": "https://www.youtube.com/watch?v=D2wKT-7e2lQ",
+   "title": "MILVUS Explained: The Enterprise Vector Database Trusted by Walmart & NVIDIA for BILLION-SCALE AI",
+   "channel": "STARP AI",
+   "published": "2025-11-02",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:06:33",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "HBeq7x2P-SA",
+   "url": "https://www.youtube.com/watch?v=HBeq7x2P-SA",
+   "title": "Vector Databases for Deep Learning: Embeddings, ANN & RAG",
+   "channel": "Ganapathy LakshmanaPerumal",
+   "published": "2026-05-03",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:11:04",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "6onymGLCliw",
+   "url": "https://www.youtube.com/watch?v=6onymGLCliw",
+   "title": "Scaling Vector Search With GPU Acceleration on OpenSearch 3.0 - Chintan Agrawal, Amazon Web Service",
+   "channel": "OpenSearch",
+   "published": "2026-07-01",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:39:53",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "vXOXtZ_2ars",
+   "url": "https://www.youtube.com/watch?v=vXOXtZ_2ars",
+   "title": "HNSW Parameters Explained | ef_search, M & ef_construction (Vector DB Deep Dive)",
+   "channel": "AdvSkill Learning",
+   "published": "2026-01-05",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:05:46",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "wXAFCx7Tt_U",
+   "url": "https://www.youtube.com/watch?v=wXAFCx7Tt_U",
+   "title": "Vector Databases  Under the Hood",
+   "channel": "Krishnamoorthy Dharmalingam",
+   "published": "2026-04-14",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:07:37",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "f7tn-FWQFrI",
+   "url": "https://www.youtube.com/watch?v=f7tn-FWQFrI",
+   "title": "Vector Databases Deep Dive | Indexing, ANN Search & Large-Scale AI Systems",
+   "channel": "LeafTech Solutions Learnings",
+   "published": "2026-01-02",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:06:57",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "K2CoQ1LsidM",
+   "url": "https://www.youtube.com/watch?v=K2CoQ1LsidM",
+   "title": "How AI Searches a Billion Vectors in Milliseconds (Vector DBs Explained)",
+   "channel": "ByteLearn",
+   "published": "2026-07-21",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:13:13",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "QGz2zhb3K4A",
+   "url": "https://www.youtube.com/watch?v=QGz2zhb3K4A",
+   "title": "𝗧𝗼𝗽 𝗩𝗲𝗰𝘁𝗼𝗿 𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲𝘀 𝗳𝗼𝗿 𝗔𝗜: 𝗥𝗶𝗴𝗵𝘁 𝗢𝗻𝗲 𝗳𝗼𝗿 𝗬𝗼𝘂𝗿 𝗥𝗔𝗚 𝗔𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻",
+   "channel": "I Love Coding",
+   "published": "2026-07-17",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:07:12",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "BpG21SftCrE",
+   "url": "https://www.youtube.com/watch?v=BpG21SftCrE",
+   "title": "Ultimate Generative AI Interview Guide 2026 | Python, ML, RAG & Agentic AI Interview Questions",
+   "channel": "Analytics Vidhya",
+   "published": "2026-04-22",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:34:03",
+   "status": "discarded",
+   "reason": "explainer, opinion or business-interview channel; no original contribution beyond the primary vendor talks selected (what-is-a-vector-DB basics, 'Postgres killed vector DBs' opinion, CEO interviews)"
+  },
+  {
+   "id": "oExGyAEOpP4",
+   "url": "https://www.youtube.com/watch?v=oExGyAEOpP4",
+   "title": "Qdrant Essentials | Reduce Storage & Maintain Accuracy with Qdrant Vector Quantization",
+   "channel": "Qdrant Vector Search",
+   "published": "2025-10-22",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:08:20",
+   "status": "transcribed",
+   "reason": "selected by authority test — primary vendor course module: quantization",
+   "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-oExGyAEOpP4-qdrant-essentials-vector-quantization.md"
+  },
+  {
+   "id": "fhPKVcd74D8",
+   "url": "https://www.youtube.com/watch?v=fhPKVcd74D8",
+   "title": "30. Scaling Vector Databases to Billions: The Vector Optimization Playbook",
+   "channel": "SH AI Academy",
+   "published": "2025-10-20",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:25:15",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "oGKjwGq2G2s",
+   "url": "https://www.youtube.com/watch?v=oGKjwGq2G2s",
+   "title": "How CockroachDB Solved Vector Search at Scale 🤯 #ai",
+   "channel": "Artificial IQ",
+   "published": "2026-05-26",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:08:08",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "Lc4dzmSFb14",
+   "url": "https://www.youtube.com/watch?v=Lc4dzmSFb14",
+   "title": "Vector Search and HNSW Explained Visually",
+   "channel": "Satyajit Das",
+   "published": "2026-05-30",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:08:22",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "kXmSte9HsqQ",
+   "url": "https://www.youtube.com/watch?v=kXmSte9HsqQ",
+   "title": "Qdrant: The High-Performance Vector Database Built in RUST That Crushes Billions of Vectors",
+   "channel": "STARP AI",
+   "published": "2025-11-02",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:07:34",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "f3fhSZLf9cM",
+   "url": "https://www.youtube.com/watch?v=f3fhSZLf9cM",
+   "title": "Why You Can't Linear-Scan a Billion Vectors (AI System Design #3)",
+   "channel": "LoopWire",
+   "published": "2026-09-17",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:02:35",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "EjHcLHhNWx4",
+   "url": "https://www.youtube.com/watch?v=EjHcLHhNWx4",
+   "title": "Vector Databases Explained: The Core of Modern AI Search Systems",
+   "channel": "AI-Driven Architecture",
+   "published": "2026-05-01",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:07:15",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "JHrdBU9YQTM",
+   "url": "https://www.youtube.com/watch?v=JHrdBU9YQTM",
+   "title": "Agentic AI: Episode 4: Vectorize your data: from large-scale to fully customized solutions",
+   "channel": "RAG to Riches AI",
+   "published": "2026-06-08",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:50:43",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "4eCj3GOhpW4",
+   "url": "https://www.youtube.com/watch?v=4eCj3GOhpW4",
+   "title": "How Vector Databases Work: Embeddings, HNSW & Semantic Search",
+   "channel": "AI Mechanics",
+   "published": "2026-08-25",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:10:28",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "c8e5aJBnjeg",
+   "url": "https://www.youtube.com/watch?v=c8e5aJBnjeg",
+   "title": "How Vector Databases Search at Scale | HNSW Explained Simply",
+   "channel": "AdvSkill Learning",
+   "published": "2026-01-04",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:05:08",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "-Olfl00I4QU",
+   "url": "https://www.youtube.com/watch?v=-Olfl00I4QU",
+   "title": "Most Teams Pick the WRONG Vector Database #AI #GenAI #MachineLearning #VectorDatabase #RAG",
+   "channel": "AI Learning Hub",
+   "published": "2026-06-25",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:05:39",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "Oq3pq6-UlV8",
+   "url": "https://www.youtube.com/watch?v=Oq3pq6-UlV8",
+   "title": "Vector Database Comparison: Qdrant vs Milvus vs Weaviate + PostgreSQL with pgai",
+   "channel": "Vamaze Tech",
+   "published": "2025-10-21",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:06:18",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "q52oMEOGYaU",
+   "url": "https://www.youtube.com/watch?v=q52oMEOGYaU",
+   "title": "Vector Databases Explained: Embeddings, ANN & HNSW",
+   "channel": "The Right Trade-off",
+   "published": "2026-07-27",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:02:13",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "V_a3Bd4DJKE",
+   "url": "https://www.youtube.com/watch?v=V_a3Bd4DJKE",
+   "title": "Vector Databases Explained: Embeddings, Similarity Search & Architecture",
+   "channel": "DatabaseTown",
+   "published": "2026-09-21",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:04:47",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "9aAXq9NfF38",
+   "url": "https://www.youtube.com/watch?v=9aAXq9NfF38",
+   "title": "The Vector DB Optimization Senior AI Engineers Don't Talk About (HNSW Secret)",
+   "channel": "Bit Yodha",
+   "published": "2026-06-07",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:02:59",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "L6rIzK3x6bY",
+   "url": "https://www.youtube.com/watch?v=L6rIzK3x6bY",
+   "title": "HNSW Search Explained: Fast Vector Search Without Scanning Everything",
+   "channel": "The Logic Blueprint",
+   "published": "2026-05-19",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:01:59",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "qVPO1qOa8Cs",
+   "url": "https://www.youtube.com/watch?v=qVPO1qOa8Cs",
+   "title": "RAG Module 05: How Vector Search Actually Works — FAISS, HNSW & ANN Under the Hood",
+   "channel": "AI Adil",
+   "published": "2026-06-22",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:25:05",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "gesejdJ67Js",
+   "url": "https://www.youtube.com/watch?v=gesejdJ67Js",
+   "title": "Inside the Vector Database: The Geometry of AI Memory",
+   "channel": "SynapByte",
+   "published": "2026-07-30",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:05:17",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "wJpLyx6x6HY",
+   "url": "https://www.youtube.com/watch?v=wJpLyx6x6HY",
+   "title": "Implementing Semantic Search with OpenAI",
+   "channel": "ByteDistrict",
+   "published": "2026-10-03",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:09:55",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "mXyEuNJflSQ",
+   "url": "https://www.youtube.com/watch?v=mXyEuNJflSQ",
+   "title": "Vector Databases: The Future of AI Search & Memory Explained",
+   "channel": "TalkTensors: AI Podcast Covering ML Papers",
+   "published": "2026-02-01",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:15:46",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "VJVHU47IAik",
+   "url": "https://www.youtube.com/watch?v=VJVHU47IAik",
+   "title": "Qdrant Essentials | Combine Search & Filtering with Qdrant Filterable HNSW",
+   "channel": "Qdrant Vector Search",
+   "published": "2025-10-22",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:04:46",
+   "status": "transcribed",
+   "reason": "selected by authority test — primary vendor course module: filterable HNSW",
+   "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-VJVHU47IAik-qdrant-essentials-filterable-hnsw.md"
+  },
+  {
+   "id": "sBQiHWl3qYw",
+   "url": "https://www.youtube.com/watch?v=sBQiHWl3qYw",
+   "title": "Approx vector search in ClickHouse",
+   "channel": "ClickHouse",
+   "published": "2026-01-28",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:04:19",
+   "status": "transcribed",
+   "reason": "selected by authority test — vendor short: HNSW in an OLAP engine (exception: below views floor, cheap primary)",
+   "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-sBQiHWl3qYw-clickhouse-approx-vector-search.md"
+  },
+  {
+   "id": "BvYW2ISbqGA",
+   "url": "https://www.youtube.com/watch?v=BvYW2ISbqGA",
+   "title": "Searching 100 Million Vectors in 50ms | HNSW Explained Visually (Vector Databases & RAG)",
+   "channel": "CodeCraft Academy",
+   "published": "2026-08-11",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:03:20",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "DTmwGMe-dk8",
+   "url": "https://www.youtube.com/watch?v=DTmwGMe-dk8",
+   "title": "New Advanced Lexical Prefilters for Vector Search Tutorial (New Search Operator!) | MongoDB",
+   "channel": "MongoDB for Developers",
+   "published": "2026-06-15",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:12:44",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "mBjLjSyYuSk",
+   "url": "https://www.youtube.com/watch?v=mBjLjSyYuSk",
+   "title": "Vector Databases Are Broken?! ACORN’s Hybrid Search Breakthrough [SIGMOD 2024] with Liana Patel",
+   "channel": "Disseminate: The Computer Science Research Podcast",
+   "published": "2025-10-24",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:52:51",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "nwqDmobADGs",
+   "url": "https://www.youtube.com/watch?v=nwqDmobADGs",
+   "title": "Day 13: Vector DB: HNSW Graphs, Advanced Retrievers, & AI Data Pipelines | System Design Masterclass",
+   "channel": "rkTech",
+   "published": "2026-08-23",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:09:35",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "tu8vzdW84KE",
+   "url": "https://www.youtube.com/watch?v=tu8vzdW84KE",
+   "title": "How Vector Search Algorithms & Mechanics Actually Work",
+   "channel": "Kandi Brian",
+   "published": "2026-09-28",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:06:00",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "FoFuf6vQgNA",
+   "url": "https://www.youtube.com/watch?v=FoFuf6vQgNA",
+   "title": "Qdrant Metadata Filtering: Fast HNSW Payload Indexing",
+   "channel": "Lets learn with Ajay",
+   "published": "2026-09-16",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:17:36",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "rwZUdUTgHx4",
+   "url": "https://www.youtube.com/watch?v=rwZUdUTgHx4",
+   "title": "Pinecone vs Chroma vs Weaviate: Which Vector DB Should You Ship to Production?",
+   "channel": "Analytics Vidhya",
+   "published": "2026-05-29",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:11:59",
+   "status": "discarded",
+   "reason": "explainer, opinion or business-interview channel; no original contribution beyond the primary vendor talks selected (what-is-a-vector-DB basics, 'Postgres killed vector DBs' opinion, CEO interviews)"
+  },
+  {
+   "id": "MfzH0rvOuKg",
+   "url": "https://www.youtube.com/watch?v=MfzH0rvOuKg",
+   "title": "Design a Vector Search System: One Embedding Function, Four Old Parts (Season 3)",
+   "channel": "Borrow My Brain",
+   "published": "2026-07-26",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:11:42",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "zEWnzUZnVoQ",
+   "url": "https://www.youtube.com/watch?v=zEWnzUZnVoQ",
+   "title": "Design a Vector Database — ML System Design Interview (Staff-Level, 2026)",
+   "channel": "Craqit - Crack the interview ",
+   "published": "2026-07-23",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:44:58",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "ok2ZfPIvGz0",
+   "url": "https://www.youtube.com/watch?v=ok2ZfPIvGz0",
+   "title": "Running PostgreSQL and pgvector on Kubernetes: High-Performance AI Databases with Dell PowerFlex",
+   "channel": "Dell Technologies",
+   "published": "2026-05-14",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:04:13",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "aQV3wqdRMuQ",
+   "url": "https://www.youtube.com/watch?v=aQV3wqdRMuQ",
+   "title": "pgvector: Postgres as your vector database",
+   "channel": "myDBA",
+   "published": "2026-08-08",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:04:17",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "H7gEkgzu62E",
+   "url": "https://www.youtube.com/watch?v=H7gEkgzu62E",
+   "title": "OWASP LLM08:2025: Securing Vector and Embedding Databases | AI Security Top 10",
+   "channel": "ASTRANOVA LABS",
+   "published": "2026-01-30",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:06:03",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "gbIpB2TMbvo",
+   "url": "https://www.youtube.com/watch?v=gbIpB2TMbvo",
+   "title": "I Benchmarked pgvector vs Qdrant ; One Number Didn't Survive",
+   "channel": "Edward Blake",
+   "published": "2026-10-03",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:16:26",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "m9IY-JnR98E",
+   "url": "https://www.youtube.com/watch?v=m9IY-JnR98E",
+   "title": "What is a Vector Database. And do you REALLY need one.",
+   "channel": "Dawn Choo",
+   "published": "2026-08-01",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:07:56",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "PfWf6tuaQVk",
+   "url": "https://www.youtube.com/watch?v=PfWf6tuaQVk",
+   "title": "Laravel AI SDK + pgvector: Build Semantic Search & RAG",
+   "channel": "Xcode Sol",
+   "published": "2026-09-21",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:07:20",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "rx_NDfOggI8",
+   "url": "https://www.youtube.com/watch?v=rx_NDfOggI8",
+   "title": "Vector Database Tutorial For Beginners | PostgreSQL| Open AI | Node.js",
+   "channel": "Indian Coders",
+   "published": "2025-11-24",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:01:19",
+   "status": "discarded",
+   "reason": "explainer, opinion or business-interview channel; no original contribution beyond the primary vendor talks selected (what-is-a-vector-DB basics, 'Postgres killed vector DBs' opinion, CEO interviews)"
+  },
+  {
+   "id": "OE279t8377o",
+   "url": "https://www.youtube.com/watch?v=OE279t8377o",
+   "title": "How I Added Vector Search to my Course (Postgres + PGVector )",
+   "channel": "Web Dev Cody",
+   "published": "2026-01-01",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:08:37",
+   "status": "discarded",
+   "reason": "explainer, opinion or business-interview channel; no original contribution beyond the primary vendor talks selected (what-is-a-vector-DB basics, 'Postgres killed vector DBs' opinion, CEO interviews)"
+  },
+  {
+   "id": "DPLFLsvPxmo",
+   "url": "https://www.youtube.com/watch?v=DPLFLsvPxmo",
+   "title": "INSTAR — Agent Skills That Learn From Failure | CockroachDB × AWS Agentic Memory",
+   "channel": "Bong Bin Yong",
+   "published": "2026-08-17",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:02:49",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "4pUYfY-b5CQ",
+   "url": "https://www.youtube.com/watch?v=4pUYfY-b5CQ",
+   "title": "Vector Databases Explained: The Complete Guide for 2026",
+   "channel": "Aishwarya Srinivasan",
+   "published": "2026-04-18",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:09:52",
+   "status": "discarded",
+   "reason": "explainer, opinion or business-interview channel; no original contribution beyond the primary vendor talks selected (what-is-a-vector-DB basics, 'Postgres killed vector DBs' opinion, CEO interviews)"
+  },
+  {
+   "id": "Uzn8Xa12C3g",
+   "url": "https://www.youtube.com/watch?v=Uzn8Xa12C3g",
+   "title": "pgvector: Vector Search Inside Postgres (No Extra DB)",
+   "channel": "Michael Jamieson",
+   "published": "2026-05-23",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:20:08",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "16jwWXsRCkI",
+   "url": "https://www.youtube.com/watch?v=16jwWXsRCkI",
+   "title": "Vector DB Showdown: pgvector vs Pinecone vs Chroma vs Weaviate (2026)",
+   "channel": "Data & AI with Varath",
+   "published": "2026-05-05",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:02:02",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "rmcV8IYeiUg",
+   "url": "https://www.youtube.com/watch?v=rmcV8IYeiUg",
+   "title": "pgvector   Advanced Vector Data Management in PostgreSQL",
+   "channel": "Percona",
+   "published": "2026-06-11",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:31:03",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "YmogVoZLAco",
+   "url": "https://www.youtube.com/watch?v=YmogVoZLAco",
+   "title": "Design a Multi-Tenant AI SaaS Platform for Your AI System Design Interview",
+   "channel": "VibeEngines",
+   "published": "2026-09-15",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:24:52",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "YqFQkjc_UcU",
+   "url": "https://www.youtube.com/watch?v=YqFQkjc_UcU",
+   "title": "I Build Complete End to End Tenant based RAG Pipeline for Large Enterprises",
+   "channel": "AI Notes",
+   "published": "2026-03-10",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:09:16",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "EPqO2UrG8pI",
+   "url": "https://www.youtube.com/watch?v=EPqO2UrG8pI",
+   "title": "Architecting a Secure GenAI Pipeline: Mitigating Prompt Injection & Data Leaks",
+   "channel": "Defensive Pipeline",
+   "published": "2026-05-21",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:04:12",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "SvVB457EH6Q",
+   "url": "https://www.youtube.com/watch?v=SvVB457EH6Q",
+   "title": "Advanced Vector Database Strategies for Scaling Production RAG Generation Systems",
+   "channel": "Apoorv Sharma",
+   "published": "2026-05-28",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:07:02",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "tjEznowIhBo",
+   "url": "https://www.youtube.com/watch?v=tjEznowIhBo",
+   "title": "Knowledge Graphs MCP w/ Claude Desktop, Graphiti and FalkorDB",
+   "channel": "FalkorDB",
+   "published": "2025-12-14",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:01:54",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "n-nDsGD_CrQ",
+   "url": "https://www.youtube.com/watch?v=n-nDsGD_CrQ",
+   "title": "Day 5: AI Security & Guardrails | OWASP LLM Top 10, Production Hardening | System Design Masterclass",
+   "channel": "rkTech",
+   "published": "2026-08-12",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:10:00",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "7069hfwTjmY",
+   "url": "https://www.youtube.com/watch?v=7069hfwTjmY",
+   "title": "LangGraph Multi-Tenant: Tenant Scoping, RLS & RBAC Guide",
+   "channel": "Lets learn with Ajay",
+   "published": "2026-09-20",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:17:44",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "O789NXnF9UA",
+   "url": "https://www.youtube.com/watch?v=O789NXnF9UA",
+   "title": "I Tested 7 Vector Databases. Only 3 Are Worth It.",
+   "channel": "swa",
+   "published": "2026-10-04",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:22:54",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "rPbI5igIrQw",
+   "url": "https://www.youtube.com/watch?v=rPbI5igIrQw",
+   "title": "AI Agent Development Lifecycle - Learning Path",
+   "channel": "Five Minute Tech",
+   "published": "2026-06-28",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:11:59",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "EImKUQgaxzQ",
+   "url": "https://www.youtube.com/watch?v=EImKUQgaxzQ",
+   "title": "The $700 Vector Database Bill That Should Have Been $100",
+   "channel": "Macro Lens",
+   "published": "2026-05-23",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:19:35",
+   "status": "discarded",
+   "reason": "explainer, opinion or business-interview channel; no original contribution beyond the primary vendor talks selected (what-is-a-vector-DB basics, 'Postgres killed vector DBs' opinion, CEO interviews)"
+  },
+  {
+   "id": "_9fj9oY_xek",
+   "url": "https://www.youtube.com/watch?v=_9fj9oY_xek",
+   "title": "Postgres Just Killed the Vector Database Market",
+   "channel": "Macro Lens",
+   "published": "2026-06-29",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:09:07",
+   "status": "discarded",
+   "reason": "explainer, opinion or business-interview channel; no original contribution beyond the primary vendor talks selected (what-is-a-vector-DB basics, 'Postgres killed vector DBs' opinion, CEO interviews)"
+  },
+  {
+   "id": "5iCKncFbs5c",
+   "url": "https://www.youtube.com/watch?v=5iCKncFbs5c",
+   "title": "Moorcheh Proof of Value POV, Part 2, by CTO and co-founder of Edge AI Innovations, Dr. Majid Fekri",
+   "channel": "Moorcheh AI",
+   "published": "2026-04-27",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:21:26",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "wfgmP30b0eE",
+   "url": "https://www.youtube.com/watch?v=wfgmP30b0eE",
+   "title": "01. Introduction to Building a Vector Database",
+   "channel": "simeetnayan",
+   "published": "2026-08-12",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:18:04",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "0T3A3PzrV7w",
+   "url": "https://www.youtube.com/watch?v=0T3A3PzrV7w",
+   "title": "How to Use Pgvector in Supabase [Full Guide 2026]",
+   "channel": "The How-To Learning Academy",
+   "published": "2026-09-17",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:02:20",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "NFofNNfbk2c",
+   "url": "https://www.youtube.com/watch?v=NFofNNfbk2c",
+   "title": "Storing High Dimensional Data at Scale - Jeevan DC | Mitramandal.ai Bengaluru",
+   "channel": "One2N",
+   "published": "2026-05-11",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:32:04",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "rtoHobLnbVc",
+   "url": "https://www.youtube.com/watch?v=rtoHobLnbVc",
+   "title": "Amazon S3 Vectors Explained: Build Serverless RAG Without a Vector Database",
+   "channel": "Naveen Tech Hub",
+   "published": "2026-07-11",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:12:33",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "WmdN_WGrgZM",
+   "url": "https://www.youtube.com/watch?v=WmdN_WGrgZM",
+   "title": "Accuracy vs Performance in Vector Search: Navigating the High-Dimensional Frontier | Uplatz",
+   "channel": "Uplatz",
+   "published": "2026-02-17",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:07:44",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "55dPnylfXqU",
+   "url": "https://www.youtube.com/watch?v=55dPnylfXqU",
+   "title": "sqlite vs pgvector",
+   "channel": "Use AI with Tech Dad",
+   "published": "2026-07-01",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:06:12",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "l2N4DT35PKg",
+   "url": "https://www.youtube.com/watch?v=l2N4DT35PKg",
+   "title": "Billion Scale Vector Storage for RAG",
+   "channel": "Jason Liu",
+   "published": "2025-11-04",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:50:51",
+   "status": "transcribed",
+   "reason": "selected by authority test — primary practitioner session on trillion-scale object-storage vector search (Eskildsen with Jason Liu); overlaps the CMU talk, kept for the production lessons",
+   "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-l2N4DT35PKg-jason-liu-turbopuffer-billion-scale-vector-storage.md"
+  },
+  {
+   "id": "AqVaU1aPuSo",
+   "url": "https://www.youtube.com/watch?v=AqVaU1aPuSo",
+   "title": "Vector Indexing + HNSW + Reranker + GraphRAG Explained | Neo4j + Knowledge Graphs | Advanced RAG",
+   "channel": "Switch 2 AI",
+   "published": "2026-06-12",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:59:41",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "vo-jHhKdg1k",
+   "url": "https://www.youtube.com/watch?v=vo-jHhKdg1k",
+   "title": "How Qdrant filters vector search (in 90 seconds)",
+   "channel": "NumeracyHQ",
+   "published": "2026-07-10",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:01:23",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "djt2K4Mxxts",
+   "url": "https://www.youtube.com/watch?v=djt2K4Mxxts",
+   "title": "Vector Search in Azure AI Search Masterclass | HNSW, RBAC + C# example",
+   "channel": "Deployed in Azure",
+   "published": "2026-02-09",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:35:58",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "xgKkd9bJJuU",
+   "url": "https://www.youtube.com/watch?v=xgKkd9bJJuU",
+   "title": "AI Security Lesson 22: Securing Vector Databases Explained for Teams",
+   "channel": "SecureTechIn",
+   "published": "2026-10-01",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:12:03",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "Z5ANiCNqhTg",
+   "url": "https://www.youtube.com/watch?v=Z5ANiCNqhTg",
+   "title": "Can I restrict my AI agent's data access in the system prompt?",
+   "channel": "Rogue Agent Security",
+   "published": "2026-09-05",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:02:00",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "XkaTD-DGrPY",
+   "url": "https://www.youtube.com/watch?v=XkaTD-DGrPY",
+   "title": "Production RAG System Design in 10 Minutes: Where It Breaks",
+   "channel": "Sumit Paul",
+   "published": "2026-09-28",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:09:29",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "3KB_Ly6ZJ_E",
+   "url": "https://www.youtube.com/watch?v=3KB_Ly6ZJ_E",
+   "title": "How to Build 10x Cheaper Object Storage, with Simon Eskildsen, CEO at Turbopuffer",
+   "channel": "Barrchives Podcast",
+   "published": "2025-08-05",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:49:35",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "klTvEwg3oJ4",
+   "url": "https://www.youtube.com/watch?v=klTvEwg3oJ4",
+   "title": "Vector databases are so hot right now. WTF are they?",
+   "channel": "Fireship",
+   "published": "2023-04-07",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:03:21",
+   "status": "discarded",
+   "reason": "explainer, opinion or business-interview channel; no original contribution beyond the primary vendor talks selected (what-is-a-vector-DB basics, 'Postgres killed vector DBs' opinion, CEO interviews)"
+  },
+  {
+   "id": "vvImP6A_dDU",
+   "url": "https://www.youtube.com/watch?v=vvImP6A_dDU",
+   "title": "pgvector | Postgres.FM 081 | #PostgreSQL #Postgres podcast",
+   "channel": "PostgresTV",
+   "published": "2024-01-19",
+   "type": "podcast",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:49:05",
+   "status": "transcribed",
+   "reason": "selected by authority test — reference Postgres podcast with a pgvector contributor (Katz)",
+   "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/podcast-vvImP6A_dDU-postgres-fm-081-pgvector-jonathan-katz.md"
+  },
+  {
+   "id": "dN0lsF2cvm4",
+   "url": "https://www.youtube.com/watch?v=dN0lsF2cvm4",
+   "title": "Vector Databases simply explained! (Embeddings & Indexes)",
+   "channel": "AssemblyAI",
+   "published": "2023-05-06",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:04:23",
+   "status": "discarded",
+   "reason": "explainer, opinion or business-interview channel; no original contribution beyond the primary vendor talks selected (what-is-a-vector-DB basics, 'Postgres killed vector DBs' opinion, CEO interviews)"
+  },
+  {
+   "id": "LsvBqkF8Jvs",
+   "url": "https://www.youtube.com/watch?v=LsvBqkF8Jvs",
+   "title": "The Infrastructure Company Powering the Top AI Apps",
+   "channel": "Unsupervised Learning: With Jacob Effron",
+   "published": "2025-07-22",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:51:55",
+   "status": "discarded",
+   "reason": "explainer, opinion or business-interview channel; no original contribution beyond the primary vendor talks selected (what-is-a-vector-DB basics, 'Postgres killed vector DBs' opinion, CEO interviews)"
+  },
+  {
+   "id": "RFmajOeUKnE",
+   "url": "https://www.youtube.com/watch?v=RFmajOeUKnE",
+   "title": "How would you design a database on Object Storage?",
+   "channel": "The Geek Narrator",
+   "published": "2024-11-16",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:08:26",
+   "status": "discarded",
+   "reason": "explainer, opinion or business-interview channel; no original contribution beyond the primary vendor talks selected (what-is-a-vector-DB basics, 'Postgres killed vector DBs' opinion, CEO interviews)"
+  },
+  {
+   "id": "pHB-m-ZITw4",
+   "url": "https://www.youtube.com/watch?v=pHB-m-ZITw4",
+   "title": "The Weaviate Vector Database — Bring AI-native applications to life.",
+   "channel": "CMU Database Group",
+   "published": "2025-02-21",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:12:17",
+   "status": "transcribed",
+   "reason": "selected by authority test — primary vendor guest lecture, 2025 (Dilocker, CMU intro class)",
+   "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-pHB-m-ZITw4-cmu-weaviate-ai-native-applications-dilocker-2025.md"
+  },
+  {
+   "id": "72XgD322wZ8",
+   "url": "https://www.youtube.com/watch?v=72XgD322wZ8",
+   "title": "Vector Database Explained | What is Vector Database?",
+   "channel": "codebasics",
+   "published": "2023-09-09",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:06:52",
+   "status": "discarded",
+   "reason": "explainer, opinion or business-interview channel; no original contribution beyond the primary vendor talks selected (what-is-a-vector-DB basics, 'Postgres killed vector DBs' opinion, CEO interviews)"
+  },
+  {
+   "id": "ixpbVyrsuL8",
+   "url": "https://www.youtube.com/watch?v=ixpbVyrsuL8",
+   "title": "Lance: A Modern Columnar Data Format (Chang She)",
+   "channel": "CMU Database Group",
+   "published": "2023-10-27",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:57:51",
+   "status": "candidate",
+   "reason": "parked for module s8 (found in the s8 scan): CMU: Lance columnar format (Chang She) — s8 validation pass, LanceDB internals"
+  },
+  {
+   "id": "bU38Ovdh3NY",
+   "url": "https://www.youtube.com/watch?v=bU38Ovdh3NY",
+   "title": "Qdrant: Open Source Vector Search Engine and Vector Database (Andrey Vasnetsov)",
+   "channel": "CMU Database Group",
+   "published": "2023-09-15",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:02:38",
+   "status": "transcribed",
+   "reason": "selected by authority test — primary at an academic venue: Qdrant architecture (Vasnetsov, CMU 2023)",
+   "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-bU38Ovdh3NY-cmu-qdrant-andrey-vasnetsov.md"
+  },
+  {
+   "id": "JEBDfGqrAUA",
+   "url": "https://www.youtube.com/watch?v=JEBDfGqrAUA",
+   "title": "Vector Search RAG Tutorial – Combine Your Data with LLMs with Advanced Search",
+   "channel": "freeCodeCamp.org",
+   "published": "2023-12-11",
+   "type": "video",
+   "module": "s9",
+   "modules": [
+    "s9"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:11:46",
+   "status": "candidate",
+   "reason": "parked for module s9 (found in the s8 scan): freeCodeCamp vector search RAG tutorial (MongoDB) — RAG fundamentals, reference-course candidate"
+  },
+  {
+   "id": "YcOVzx2AKc4",
+   "url": "https://www.youtube.com/watch?v=YcOVzx2AKc4",
+   "title": "Enabling Vectorized Engine in Apache Spark",
+   "channel": "Databricks",
+   "published": "2021-07-27",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:21:59",
+   "status": "discarded",
+   "reason": "explainer, opinion or business-interview channel; no original contribution beyond the primary vendor talks selected (what-is-a-vector-DB basics, 'Postgres killed vector DBs' opinion, CEO interviews)"
+  },
+  {
+   "id": "XeJIo8Mo66g",
+   "url": "https://www.youtube.com/watch?v=XeJIo8Mo66g",
+   "title": "Jonathan S. Katz - Dissimilarity search... (PGConf.EU 2024)",
+   "channel": "PostgreSQL Europe",
+   "published": "2024-11-04",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:54:20",
+   "status": "transcribed",
+   "reason": "selected by authority test — primary conference talk by a pgvector contributor (PGConf.EU 2024); below the reach floor, taken by authorship",
+   "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-XeJIo8Mo66g-pgconf-eu-2024-jonathan-katz-dissimilarity-search.md"
+  },
+  {
+   "id": "Hn4l8XC3-PQ",
+   "url": "https://www.youtube.com/watch?v=Hn4l8XC3-PQ",
+   "title": "15 - Vectorized Execution (CMU Databases / Spring 2020)",
+   "channel": "CMU Database Group",
+   "published": "2020-03-06",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:27:29",
+   "status": "discarded",
+   "reason": "CMU seminar surfaced by the canon query but off-topic for vector search (vectorized execution, Redshift, Firebolt, Convex)"
+  },
+  {
+   "id": "rZuEHQLA48Q",
+   "url": "https://www.youtube.com/watch?v=rZuEHQLA48Q",
+   "title": "Why are Vector Databases so Hot in Today's AI Landscape?",
+   "channel": "Brian Tan Seng",
+   "published": "2023-08-12",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:21:19",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "4sLJapXEPd4",
+   "url": "https://www.youtube.com/watch?v=4sLJapXEPd4",
+   "title": "Weaviate: An Architectural Deep Dive (Etienne Dilocker)",
+   "channel": "CMU Database Group",
+   "published": "2023-10-08",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:04:20",
+   "status": "transcribed",
+   "reason": "selected by authority test — primary at an academic venue: Weaviate architecture (Dilocker, CMU 2023)",
+   "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-4sLJapXEPd4-cmu-weaviate-architectural-deep-dive-etienne-dilocker.md"
+  },
+  {
+   "id": "01dPh1gZ3cc",
+   "url": "https://www.youtube.com/watch?v=01dPh1gZ3cc",
+   "title": "Lecture #21 - Vectorized Execution [CMU Database Systems Spring 2016]",
+   "channel": "CMU Database Group",
+   "published": "2016-05-16",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:05:43",
+   "status": "discarded",
+   "reason": "CMU seminar surfaced by the canon query but off-topic for vector search (vectorized execution, Redshift, Firebolt, Convex)"
+  },
+  {
+   "id": "K3ivDkMEclg",
+   "url": "https://www.youtube.com/watch?v=K3ivDkMEclg",
+   "title": "Faster vector search with Turbopuffer CEO, Simon Eskildsen",
+   "channel": "The Database School Podcast",
+   "published": "2025-11-13",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:06:47",
+   "status": "candidate",
+   "reason": "parked for module s8 (found in the s8 scan): Database School podcast with Simon Eskildsen — duplicate; validation pass only"
+  },
+  {
+   "id": "ir6V7DkBe-w",
+   "url": "https://www.youtube.com/watch?v=ir6V7DkBe-w",
+   "title": "Reinventing Amazon Redshift (Ippokratis Pandis)",
+   "channel": "CMU Database Group",
+   "published": "2021-10-19",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:59:18",
+   "status": "discarded",
+   "reason": "CMU seminar surfaced by the canon query but off-topic for vector search (vectorized execution, Redshift, Firebolt, Convex)"
+  },
+  {
+   "id": "yc9-PPzZIdY",
+   "url": "https://www.youtube.com/watch?v=yc9-PPzZIdY",
+   "title": "BYOC Panel: Edo (Pinecone), Spencer (Cockroach), and Nikhil (Materialize)",
+   "channel": "Git With It",
+   "published": "2025-01-16",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:12:15",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "_kOiA3EV3YE",
+   "url": "https://www.youtube.com/watch?v=_kOiA3EV3YE",
+   "title": "Building Vector Search Applications",
+   "channel": "The Enterprise AI Show",
+   "published": "2024-04-14",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:39:24",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "pqoRNwNaxfs",
+   "url": "https://www.youtube.com/watch?v=pqoRNwNaxfs",
+   "title": "turbopuffer: Object Storage-native Database for Search (Simon Eskildsen)",
+   "channel": "CMU Database Group",
+   "published": "2026-03-10",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:08:54",
+   "status": "transcribed",
+   "reason": "selected by authority test — primary at an academic venue, 2026: object-storage-native search (Eskildsen, CMU)",
+   "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-pqoRNwNaxfs-cmu-turbopuffer-object-storage-native-simon-eskildsen.md"
+  },
+  {
+   "id": "S5mcxLWeuM8",
+   "url": "https://www.youtube.com/watch?v=S5mcxLWeuM8",
+   "title": "Data Talks on the Rocks hosted by Rill | NYC",
+   "channel": "Rill Data",
+   "published": "2023-10-06",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:50:34",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "-TA0QIwFUnU",
+   "url": "https://www.youtube.com/watch?v=-TA0QIwFUnU",
+   "title": "#18 - Optimistic Concurrency Control ✸ Weaviate Database Talk (CMU Intro to Database Systems)",
+   "channel": "CMU Database Group",
+   "published": "2024-11-07",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:20:53",
+   "status": "candidate",
+   "reason": "parked for module s8 (found in the s8 scan): CMU intro class: optimistic concurrency control with a Weaviate talk — s8 validation pass"
+  },
+  {
+   "id": "8LXotdzX_84",
+   "url": "https://www.youtube.com/watch?v=8LXotdzX_84",
+   "title": "The Pinecone Vector Database System (Edo Liberty)",
+   "channel": "CMU Database Group",
+   "published": "2021-11-05",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:06:35",
+   "status": "transcribed",
+   "reason": "selected by authority test — canon: Pinecone system design (Liberty, CMU 2021)",
+   "raw": "sources/raw/2026-10-05-market-scan-s08-vector-databases/yt-8LXotdzX_84-cmu-pinecone-vector-database-system-edo-liberty.md"
+  },
+  {
+   "id": "6R7YCX4Q91Q",
+   "url": "https://www.youtube.com/watch?v=6R7YCX4Q91Q",
+   "title": "No Priors Ep. 52 | With Pinecone CEO Edo Liberty",
+   "channel": "No Priors: AI, Machine Learning, Tech, & Startups",
+   "published": "2024-02-22",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "00:31:28",
+   "status": "discarded",
+   "reason": "explainer, opinion or business-interview channel; no original contribution beyond the primary vendor talks selected (what-is-a-vector-DB basics, 'Postgres killed vector DBs' opinion, CEO interviews)"
+  },
+  {
+   "id": "RwnpxND6JO8",
+   "url": "https://www.youtube.com/watch?v=RwnpxND6JO8",
+   "title": "Debunking “Purpose-built Data Systems”: Enter the Universal Database",
+   "channel": "Tileai",
+   "published": "2021-08-04",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:05:51",
+   "status": "discarded",
+   "reason": "below reach/authority floor (<5k subs or <500 views), re-explanation or vendor-comparison opinion"
+  },
+  {
+   "id": "iizcidmSwJ4",
+   "url": "https://www.youtube.com/watch?v=iizcidmSwJ4",
+   "title": "Convex: Life Without a Backend Team (James Cowling)",
+   "channel": "CMU Database Group",
+   "published": "2021-11-30",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:01:41",
+   "status": "discarded",
+   "reason": "CMU seminar surfaced by the canon query but off-topic for vector search (vectorized execution, Redshift, Firebolt, Convex)"
+  },
+  {
+   "id": "9rW9uEJ15tU",
+   "url": "https://www.youtube.com/watch?v=9rW9uEJ15tU",
+   "title": "How We Build Firebolt (Benjamin Wagner)",
+   "channel": "CMU Database Group",
+   "published": "2021-12-15",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:03:38",
+   "status": "discarded",
+   "reason": "CMU seminar surfaced by the canon query but off-topic for vector search (vectorized execution, Redshift, Firebolt, Convex)"
+  },
+  {
+   "id": "64jzC0sdd-k",
+   "url": "https://www.youtube.com/watch?v=64jzC0sdd-k",
+   "title": "How do vector (search) databases work? ft: turbopuffer",
+   "channel": "The Geek Narrator",
+   "published": "2025-03-29",
+   "type": "video",
+   "module": "s8",
+   "modules": [
+    "s8"
+   ],
+   "scan": "sources/2026-10-05-market-scan-s08-vector-databases.md",
+   "decided": "2026-10-05",
+   "duration": "01:08:59",
+   "status": "candidate",
+   "reason": "parked for module s8 (found in the s8 scan): Geek Narrator interview with turbopuffer — duplicate of the CMU talk; validation pass only"
   }
  ]
 }
