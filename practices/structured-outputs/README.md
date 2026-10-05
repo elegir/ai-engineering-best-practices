@@ -1,7 +1,7 @@
 ---
 title: "Practice — structured outputs and guardrails: a typed object from every model call, validators with one bounded re-ask, decisions as classifications, a guardrail policy per checkpoint and tier, and generative UI through an allow-list"
 type: practice
-status: draft            # draft until principle 13 is confirmed against LIDR session 4 (2026-11-05) and a real repo passes Verify
+status: draft            # draft until the course session confirms the principle or a real repo passes Verify (field report); routed since 2026-10-05 (decision 0006)
 date: 2026-10-01
 last-reviewed: 2026-10-01
 tags: [structured-outputs, json-schema, pydantic, validation, re-ask, guardrails, classifiers, generative-ui, s4]
@@ -10,7 +10,6 @@ applies-when: "llm_calls"
 full-when: "llm_calls and (acts_on_world or personal_data or regulated or multi_tenant)"
 when: day-0            # schema, client and validation files are day-0; the classifier tier is documented as first-user inside guardrail-policy.md
 reference-status: untested   # decision 0005 §3; only a field report moves it
-routed: false          # unrouted until the routing gate of decision 0004 §6 (the previous module's day-0 files must pass Verify in one real repo); no row in practices/README.md, absent from ROUTER.md
 principle: principles/13-structured-outputs-and-guardrails.md
 sources:
   - sources/2026-10-01-s04-structured-outputs-digest.md
@@ -96,6 +95,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-05 — **routed** (decision `../../decisions/0006-complete-agnostic-catalogue.md`): row in `../README.md`, present in `../../ROUTER.md`; `reference-status` stays `untested` until a field report. The "unrouted" wording in earlier change-log lines describes the state before this date.
 - 2026-10-01 (s6) — `guardrail-policy.md`: new checkpoint `ingestion` and row **G0** (PII, secrets or a wrong tenant in a document entering the index — checksum + regex, scrub or quarantine then log, closed, blocking, fixture §ingestion; `../data-ingestion/` Verify 6); G3 notes the reversible placeholder dictionary kept outside the index (Huyen 2024-07); G6 notes that on Postgres the ACL is an RLS policy, not an application filter (Supabase, read 2026-10-01); rule 2 "ingestion before the index" inserted, later rules renumbered (the `guardrail-tiers.md` pointer updated). Source: `../../sources/2026-10-01-s06-data-audit-cleaning-privacy-digest.md` §7.2.
 - 2026-10-01 (s5) — `decision-vs-generation.md` rule 4: for a *grader*, binary per failure mode first, five classes only for a graded decision; `guardrail-policy.md` G4 (an approval is a paused run with serialised, resumable state) and G6 (authorisation pre-filter or post-filter chosen by hit rate → `../memory-and-permissions/permission-model.md`). Source `sources/2026-10-01-s05-context-memory-permissions-evals-digest.md` rows 6, 36, 37.
 - 2026-10-01 — created from the session-4 market scan digest (draft, **unrouted** per decision 0004 §6: no row in `practices/README.md`, absent from `ROUTER.md` until the previous module's day-0 files pass Verify in a real repo). Reference `structured_call.py` parses once placeholders are replaced and prints the request shape with `--demo`; no field report yet.

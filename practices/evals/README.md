@@ -1,7 +1,7 @@
 ---
 title: "Practice — evals and error analysis: a human reads traces first, binary graders one per failure mode, judges calibrated like classifiers, a 20-task regression suite reported as pass^k, judges gating every change and a production sample on a cadence"
 type: practice
-status: draft            # draft until principle 14 is confirmed against LIDR session 5 (2026-11-12) and a real repo passes Verify
+status: draft            # draft until the course session confirms the principle or a real repo passes Verify (field report); routed since 2026-10-05 (decision 0006)
 date: 2026-10-01
 last-reviewed: 2026-10-01
 tags: [evals, error-analysis, open-coding, llm-as-judge, judge-calibration, pass-k, regression-suite, annotation, s5]
@@ -9,7 +9,6 @@ kind: capability
 applies-when: "llm_calls"
 when: day-0            # the error-analysis log, the first 20-task regression set and a code grader are day-0 ("evals get harder to build the longer you wait" — Anthropic 2026-01); judge calibration (4), the production sample (7, second half) and the weekly trace reading (8, ongoing) are first-user, stated inside eval-policy.md
 reference-status: untested   # decision 0005 §3; only a field report moves it
-routed: false          # unrouted until the routing gate of decision 0004 §6 (the previous module's day-0 files must pass Verify in one real repo); no row in practices/README.md, absent from ROUTER.md
 principle: principles/14-evals-and-error-analysis.md
 sources:
   - sources/2026-10-01-s05-context-memory-permissions-evals-digest.md
@@ -88,6 +87,7 @@ Each numbered line is a stack-neutral assertion — the contract (decision 0005 
 
 ## Change log
 
+- 2026-10-05 — **routed** (decision `../../decisions/0006-complete-agnostic-catalogue.md`): row in `../README.md`, present in `../../ROUTER.md`; `reference-status` stays `untested` until a field report. The "unrouted" wording in earlier change-log lines describes the state before this date.
 - 2026-10-01 (s6) — `eval-policy.md` §3: the golden set carries lineage (source, version, date, labeller) and passes the same gates as product data; an erasure request reaches the eval set (Gambill 2026-06; `../data-ingestion/`). Source: `../../sources/2026-10-01-s06-data-audit-cleaning-privacy-digest.md` §7.2.
 - 2026-10-01 — created from the session-5 market scan digest (draft, **unrouted** per decision 0004 §6: no row in `practices/README.md`, absent from `ROUTER.md` until the previous module's day-0 files pass Verify in a real repo). Reference `eval_harness.py` run with `--demo` (offline, fake agent and fake judge, no network) on 2026-10-01: code grader pass and outcome check → pass^k; a task that passes 4 of 5 trials → pass@k `True`, pass^k `False`, worst case printed; a task whose reference solution fails its own grader → flagged `BROKEN TASK`, not counted against the agent; judge `pass` / `fail` / `unknown` verdicts with reasoning first; an unparseable judge answer → `unknown`; partial credit 0.67 on a three-part task; a judge file whose header names a different model than the configured one → refused; calibration over 10 labelled rows → TP 4, TN 3, FP 1, FN 1, unknown 1, TPR 0.80, TNR 0.75, κ 0.55 (checked by hand against the marginals) → below the κ floor, refused; an always-pass judge on a 10 %-failure set → agreement 0.90, TPR 0.00, κ 0.00. No field report yet.
 - 2026-10-01 (review) — clean-context review: `JudgeSpec.load` now enforces assertion 4 before any call (requires `calibrated`, `calibration-set` and TPR+TNR or κ; refuses `<<…>>` placeholders, a placeholder model id, agreement-only records and values below the floors; `--calibrate` loads without a record because it produces one); partial credit counts failed checks instead of parsing the reason string; without pydantic a judged task still runs its code graders and returns `unknown` for the judge; the report column `mean` renamed `credit` (diagnostic, not the number). "Reason first, then discard" re-attributed to Anthropic's docs page. Verify 7 defines "stable"; assertion 8 classified first-user. `--demo` re-run 2026-10-01 after the changes: all earlier branches as above, plus five judge files refused before any call — no record, placeholders, agreement only, TPR 0.95 / TNR 0.40 below floor, `<<JUDGE_MODEL>>` — and the no-record file accepted only with `require_record=False`; the multi-part task's `credit` 0.67 asserted from counts.

@@ -10,7 +10,7 @@ applies-when: "always | <one line using only words from practices/facts.md>"
 # full-when: "<facts that attach the practice's conditional part>"   # optional (see security-baseline)
 when: day-0            # day-0 | first-user | at-scale — when in a product's life it is installed (decision 0004 §5)
 reference-status: untested   # untested | field-tested | reference — decision 0005 §3; only a field report moves it
-# routed: false              # add while the practice must stay unrouted (decision 0004 §6): no row in practices/README.md, absent from ROUTER.md; kb-check reads it. Remove the key when the routing gate is met.
+# routed: false              # only while the practice is being written (before its clean-context review): no row in practices/README.md, absent from ROUTER.md; kb-check reads it. Remove the key in the same publish as the review fixes (decision 0006).
 principle: principles/NN-topic.md
 sources:
   - sources/YYYY-MM-DD-slug.md

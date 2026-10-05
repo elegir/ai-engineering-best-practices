@@ -16,10 +16,13 @@ facts: `llm_calls exposes_tools acts_on_world multi_tenant production personal_d
   6. prompt-library [day-0; ref untested]
   7. spec-driven [day-0; ref untested]
   8. security-baseline (full) [day-0; ref untested; draft]
-  9. llm-api-calls [day-0; ref untested; draft]
-  10. agent-patterns [day-0; ref untested; draft]
+  9. structured-outputs (full) [day-0; ref untested; draft]
+  10. llm-api-calls [day-0; ref untested; draft]
+  11. agent-patterns [day-0; ref untested; draft]
+  12. structured-outputs [day-0; ref untested; draft]
+  13. evals [day-0; ref untested; draft]
   deferred until inferred: token-savings
-  skipped: session-state, worktrees, context-management, llm-gateway
+  skipped: session-state, worktrees, context-management, llm-gateway, memory-and-permissions, data-ingestion, embeddings-and-chunking, vector-store
 
 **Existing repo (facts inferred):**
 
@@ -34,10 +37,13 @@ facts: `llm_calls exposes_tools acts_on_world multi_tenant production personal_d
   9. worktrees [day-0; ref field-tested]
   10. token-savings [first-user; ref untested]
   11. security-baseline (full) [day-0; ref untested; draft]
-  12. llm-api-calls [day-0; ref untested; draft]
-  13. agent-patterns [day-0; ref untested; draft]
-  14. llm-gateway [first-user; ref untested; draft]
-  skipped: context-management
+  12. structured-outputs (full) [day-0; ref untested; draft]
+  13. llm-api-calls [day-0; ref untested; draft]
+  14. agent-patterns [day-0; ref untested; draft]
+  15. structured-outputs [day-0; ref untested; draft]
+  16. evals [day-0; ref untested; draft]
+  17. llm-gateway [first-user; ref untested; draft]
+  skipped: context-management, memory-and-permissions, data-ingestion, embeddings-and-chunking, vector-store
 
 ## B scheduled LLM publishing pipeline (Content Central)
 
@@ -53,9 +59,12 @@ facts: `llm_calls acts_on_world production brownfield`
   6. prompt-library [day-0; ref untested]
   7. spec-driven [day-0; ref untested]
   8. security-baseline (full) [day-0; ref untested; draft]
-  9. llm-api-calls [day-0; ref untested; draft]
+  9. structured-outputs (full) [day-0; ref untested; draft]
+  10. llm-api-calls [day-0; ref untested; draft]
+  11. structured-outputs [day-0; ref untested; draft]
+  12. evals [day-0; ref untested; draft]
   deferred until inferred: token-savings
-  skipped: session-state, worktrees, context-management, llm-gateway, agent-patterns
+  skipped: session-state, worktrees, context-management, llm-gateway, agent-patterns, memory-and-permissions, data-ingestion, embeddings-and-chunking, vector-store
 
 **Existing repo (facts inferred):**
 
@@ -68,9 +77,12 @@ facts: `llm_calls acts_on_world production brownfield`
   7. spec-driven [day-0; ref untested]
   8. token-savings [first-user; ref untested]
   9. security-baseline (full) [day-0; ref untested; draft]
-  10. llm-api-calls [day-0; ref untested; draft]
-  11. llm-gateway [first-user; ref untested; draft]
-  skipped: session-state, worktrees, context-management, agent-patterns
+  10. structured-outputs (full) [day-0; ref untested; draft]
+  11. llm-api-calls [day-0; ref untested; draft]
+  12. structured-outputs [day-0; ref untested; draft]
+  13. evals [day-0; ref untested; draft]
+  14. llm-gateway [first-user; ref untested; draft]
+  skipped: session-state, worktrees, context-management, agent-patterns, memory-and-permissions, data-ingestion, embeddings-and-chunking, vector-store
 
 ## C content/marketing site, no LLM at runtime
 
@@ -86,7 +98,7 @@ facts: `production brownfield`
   6. prompt-library [day-0; ref untested]
   7. spec-driven [day-0; ref untested]
   deferred until inferred: token-savings
-  skipped: session-state, worktrees, llm-api-calls, context-management, llm-gateway, agent-patterns
+  skipped: session-state, worktrees, llm-api-calls, context-management, llm-gateway, agent-patterns, structured-outputs, evals, memory-and-permissions, data-ingestion, embeddings-and-chunking, vector-store
 
 **Existing repo (facts inferred):**
 
@@ -98,7 +110,7 @@ facts: `production brownfield`
   6. prompt-library [day-0; ref untested]
   7. spec-driven [day-0; ref untested]
   8. token-savings [first-user; ref untested]
-  skipped: session-state, worktrees, llm-api-calls, context-management, llm-gateway, agent-patterns
+  skipped: session-state, worktrees, llm-api-calls, context-management, llm-gateway, agent-patterns, structured-outputs, evals, memory-and-permissions, data-ingestion, embeddings-and-chunking, vector-store
 
 ## D payments/fintech, LLM facts as found
 
@@ -115,7 +127,7 @@ facts: `regulated personal_data production multi_tenant brownfield`
   7. spec-driven [day-0; ref untested]
   8. security-baseline (full) [day-0; ref untested; draft]
   deferred until inferred: token-savings
-  skipped: session-state, worktrees, llm-api-calls, context-management, llm-gateway, agent-patterns
+  skipped: session-state, worktrees, llm-api-calls, context-management, llm-gateway, agent-patterns, structured-outputs, evals, memory-and-permissions, data-ingestion, embeddings-and-chunking, vector-store
 
 **Existing repo (facts inferred):**
 
@@ -128,7 +140,7 @@ facts: `regulated personal_data production multi_tenant brownfield`
   7. spec-driven [day-0; ref untested]
   8. token-savings [first-user; ref untested]
   9. security-baseline (full) [day-0; ref untested; draft]
-  skipped: session-state, worktrees, llm-api-calls, context-management, llm-gateway, agent-patterns
+  skipped: session-state, worktrees, llm-api-calls, context-management, llm-gateway, agent-patterns, structured-outputs, evals, memory-and-permissions, data-ingestion, embeddings-and-chunking, vector-store
 
 ---
 

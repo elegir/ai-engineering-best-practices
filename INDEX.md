@@ -66,7 +66,7 @@ Every file in this knowledge base, one line each. Update in the same commit as a
 
 (Which practices apply to a repo: `ROUTER.md` (generated) → `scripts/applies.py --explain <facts…>`; facts from `playbooks/which-practices-apply.md` (existing repo) or `playbooks/bootstrap-new-repo.md` (blank repo); vocabulary in `practices/facts.md`.)
 
-All fourteen routed practices (and the unrouted `structured-outputs/`, `evals/`, `memory-and-permissions/`, `data-ingestion/`, `embeddings-and-chunking/` and `vector-store/` drafts) carry a structured Verify (the contract), `## Reference implementation`, `## Stack-sensitive points`, `when` and `reference-status: untested` since 2026-09-30 (decision 0005); `ROUTER.md` is the generated summary.
+All twenty routed practices (including the six capability drafts routed on 2026-10-05 by decision 0006: `structured-outputs/`, `evals/`, `memory-and-permissions/`, `data-ingestion/`, `embeddings-and-chunking/`, `vector-store/`) carry a structured Verify (the contract), `## Reference implementation`, `## Stack-sensitive points`, `when` and `reference-status: untested` since 2026-09-30 (decision 0005); `ROUTER.md` is the generated summary.
 
 | Practice | Implements | Files | Status | Last reviewed |
 |---|---|---|---|---|
@@ -99,6 +99,7 @@ All fourteen routed practices (and the unrouted `structured-outputs/`, `evals/`,
 | 0001 | `decisions/0001-knowledge-base-structure.md` — single local KB consulted by pointer | accepted |
 | 0003 | `decisions/0003-applicability-by-facts.md` — practices declare `kind` + `applies-when` over the fact vocabulary in `practices/facts.md`; facts inferred from the repo; no profile schema, grammar, rigor levels or risk formula | accepted |
 | 0005 | `decisions/0005-contract-first-practices-and-stacks.md` — a practice is a contract (structured Verify) + stack-sensitive points + one Python reference (`reference-status`) + an implementation prompt; no speculative ports, fifteen-line stack-notes instead; variants authored by the KB from field reports; the security guard is one fail-closed artefact; TypeScript not promised until a variant exists; two-arm Laravel experiment before module 4 is routed | accepted |
+| 0006 | `decisions/0006-complete-agnostic-catalogue.md` — the catalogue is complete and agnostic: every reviewed practice is routed with `status` and `reference-status` visible; the 0004 §6 routing gate is retired; the KB never applies — a repo navigates, chooses and adapts (2026-10-05) |
 | 0004 | `decisions/0004-day-one-for-blank-and-existing-repos.md` — two entry doors (blank repo: planned facts + bootstrap; existing repo: inferred facts + audit), one router (`scripts/applies.py` as authority); safety facts select `security-baseline` (full) and `verification/dry-run-and-approval.md`; practices promoted by adoption; new practices routed only after the previous module passed Verify in a real repo | accepted |
 | 0002 | `decisions/0002-market-scan-protocol-and-media-registry.md` — fixed market-scan protocol; registry of every video/podcast considered; new scans only look at new items | accepted |
 
