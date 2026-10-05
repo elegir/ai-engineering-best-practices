@@ -46,6 +46,8 @@ Two quantizations, not one (Radu, 2026-08-31). **The model's weights**: "int8 is
 
 The ladder: **float32 → bfloat16 → int8 → binary**. Each step down is adopted only with a before/after on the eval set and a recorded storage and latency gain (README Verify 8: "a binary index with no measurement beside it" is the negative). bfloat16 is the default when the store supports it; below it, measure.
 
+**The store's side (added 2026-10-05, s8).** Quantization *inside the index* — scalar, binary, product or rotational, with oversampling and rescoring against the originals — is a second quantization and is recorded in the **store manifest** (`../vector-store/vector_store.py`, `StoreManifest.set_quantization()`), not in `EmbeddingConfig`: the configuration's `dtype` says what the embedder produces, the store manifest says how the index holds it, and the two are checked together. Vendors' methods, factors and the originals' placement: `../vector-store/tuning-and-capacity.md` §5.
+
 ## 5. Metric
 
 OpenAI's guide (read 2026-10-04): OpenAI embeddings "are normalized to length 1", so cosine "can be computed slightly faster using just a dot product" and cosine and Euclidean "will result in the identical rankings"; "the choice of distance function typically doesn't matter much". Radu: dot product on normalised vectors, Hamming on bit vectors. The configuration records the metric because the store's index is built for one, and a metric change is a configuration change.
@@ -54,6 +56,7 @@ OpenAI's guide (read 2026-10-04): OpenAI embeddings "are normalized to length 1"
 
 Glean (2025-03-05) on why: "if your model does change… you have no way around it or else the quality of your embedding search is going to become a lot worse over time if you don't reindex everything". Any change to model, version, dimensions, dtype, metric or convention is a new fingerprint and runs this protocol:
 
+0. **Not every change is a re-embed (added 2026-10-05, s8).** An index type, parameter, placement or store-quantization change is **not** a re-embed: rebuild the index from the stored vectors under a new store manifest (`../vector-store/`), run the same shadow comparison of step 2, keep the fingerprint. Only a change to the fields of `EmbeddingConfig` runs steps 1–4.
 1. **New index, new manifest.** Build `index-<fingerprint>` with its own manifest (config fingerprint, dimensions, chunker record, corpus hash, eval record). The old index is not touched. `Index.upsert()` refuses a vector whose fingerprint or dimension differs from its manifest's, so a job that writes into the wrong index fails at the first row.
 2. **Shadow comparison.** Run the retrieval eval (`chunk-eval-harness.md`) against both indexes with the same questions; record both rows in `docs/eval-policy.md` §retrieval with the date. The new index must meet the recorded floor; a context prefix, a dtype step or a dimension cut introduced at the same time gets its own before/after row — that row is Verify 8's record.
 3. **Cut-over.** Point the query path at the new index in one change (configuration, not code); the query embedder is the new configuration — `Index.search()` refuses an embedder of another fingerprint, so a half-switched deployment fails loudly.

@@ -40,7 +40,7 @@ Who can unmask:            <<role>>, logged on every unmask
 
 ## 4. Where the owner and tenant tags are written
 
-By the ingestion identity, from the corpus manifest or the job — `tag_owner(doc, ingestion_identity)` — never from the request that triggered a re-index. On Postgres the owner column feeds the RLS policy: `documents.owner_id … default auth.uid()`, `document_sections` with `embedding`, a `select` policy `document_id in (select id from documents where owner_id = (select auth.uid()))`; "semantic search… will continue to respect these RLS policies"; an application `WHERE` is not the control because "RLS is always applied even as new queries and application logic is introduced in the future" (Supabase). Elsewhere: the store's partition plus the mandatory filter of `../memory-and-permissions/permission-model.md` §3. Proof: two tenants, overlapping content, zero cross-tenant hits (Verify 8). "No side door": a user who cannot open a record cannot have a chatbot summarise it (Gambill).
+By the ingestion identity, from the corpus manifest or the job — `tag_owner(doc, ingestion_identity)` — never from the request that triggered a re-index. On Postgres the owner column feeds the RLS policy: `documents.owner_id … default auth.uid()`, `document_sections` with `embedding`, a `select` policy `document_id in (select id from documents where owner_id = (select auth.uid()))`; "semantic search… will continue to respect these RLS policies"; an application `WHERE` is not the control because "RLS is always applied even as new queries and application logic is introduced in the future" (Supabase). On an approximate index the RLS predicate is applied *after* the scan (pgvector README, read 2026-10-05; the worked example is in `../vector-store/tuning-and-capacity.md` §3): keep recall with `hnsw.iterative_scan`, a partial index per tenant when tenants are few, `PARTITION BY LIST (tenant_id)` when many (added 2026-10-05, s8; `../vector-store/tenant-isolation-in-the-store.md`). Elsewhere: the store's partition plus the mandatory filter of `../memory-and-permissions/permission-model.md` §3. Proof: two tenants, overlapping content, the production index and `ef_search` in place, *k* results each, zero cross-tenant hits (Verify 8). "No side door": a user who cannot open a record cannot have a chatbot summarise it (Gambill).
 
 ## 5. The erasure path (Gambill; IBM)
 
@@ -48,7 +48,7 @@ By the ingestion identity, from the corpus manifest or the job — `tag_owner(do
 
 | Place | How a subject's data gets there | Erasure step | Proof |
 |---|---|---|---|
-| Index / vector store | elements with `subject_ids` | delete by `(tenant, subject_id)` | `mentions()` = 0 |
+| Index / vector store | elements with `subject_ids` | delete by `(tenant, subject_id)`; on an HNSW index the vector is hidden before it is gone (tombstone, repair, vacuum — `../../principles/18-vector-stores.md` §3.2) | `mentions()` = 0 **by query at the production `ef`, not by row count** (added 2026-10-05, s8) |
 | Answer cache | cached replies that used the elements | invalidate by subject id | 0 |
 | Eval datasets | golden cases built from production traces | remove cases tagged with the subject; note the removal in `../evals/eval-policy.md` lineage | 0 |
 | Logs and traces | prompts and replies quoting content | redact or delete by subject id within the retention window | 0 |
